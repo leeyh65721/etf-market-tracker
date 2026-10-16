@@ -135,6 +135,16 @@ def main():
                          "No company fundamentals, ETF flows or verified news",
                          "USD historical returns; no KRW FX impact"],
                 technical_candidates=frame[frame.screen=="candidate"].head(15).to_dict("records"))
-    (OUT/"latest.json").write_text(json.dumps(report,ensure_ascii=False,indent=2,allow_nan=False)+"\n")
+    report_json = json.dumps(report,ensure_ascii=False,indent=2,allow_nan=False)+"\n"
+    (OUT/"latest.json").write_text(report_json,encoding="utf-8")
+
+    # Preserve dated snapshots so weekly reports can compare real historical screens.
+    # Re-runs for the same US trading date replace that date's snapshot (idempotent).
+    history_dir = OUT / "history"
+    history_dir.mkdir(parents=True, exist_ok=True)
+    market_date = str(asof.date())
+    frame.to_csv(history_dir / f"{market_date}.csv", index=False)
+    (history_dir / f"{market_date}.json").write_text(report_json,encoding="utf-8")
+
     print("COMPLETE",len(frame),"valid",asof.date(),flush=True)
 if __name__=="__main__":main()
