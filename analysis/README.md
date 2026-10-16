@@ -1,0 +1,53 @@
+# ETF market decision journal (public market research only)
+
+This folder is for **public market research**, not brokerage accounts, trades, personal holdings, portfolio amounts or account-level P&L. Do not record sensitive user information here.
+
+## Data flow
+
+- `data/latest.json`, `data/latest.csv`: latest daily screen (overwritten each run).
+- `data/history/YYYY-MM-DD.json`, `data/history/YYYY-MM-DD.csv`: market-date snapshots saved by the scanner. Compare at least two distinct market dates; never treat a same-day rerun as a new trading session.
+- `analysis/daily/YYYY-MM-DD.md`: material, sourced **daily opportunity research** (macro + cross-asset + industry + eligible ETFs). One file per *Korea reporting date*.
+- `analysis/events/YYYY-MM-DD-HHMM-<short-id>.md`: **material new intraday events** ONLY; no entry required if there is no meaningful change.
+- `analysis/weekly/YYYY-MM-DD.md`: public market regime assessment and evaluation of dated evidence. Weekly ChatGPT output may include private portfolio-weight recommendations, but **do not write those private weights to this public repo**.
+
+## Daily research format
+
+# Daily market research — YYYY-MM-DD KST
+- Time checked (KST) and latest US trading session:
+- Source freshness: GitHub files/market prices/news (separate what is verified from what is delayed or unknown)
+- Macro: Fed, nominal/real yields and curve, CPI/PCE/PPI, employment, growth, PMIs, consumption, credit, liquidity
+- Cross-asset: WTI/Brent oil, gas, gold, copper, USD and USD/KRW, bond spreads, volatility, global markets
+- Corporate/industry: verified earnings, guidance, revisions, policy, supply chains, ETF flows (only if sourced)
+- New or strengthened ETF candidates: ticker, reasons, dates, performance vs SPY, liquidity/structure check, counterarguments, invalidate conditions
+- Weakened/discarded candidates:
+- Newly changed information since previous report:
+- Sources (specific URLs, timestamps):
+- Limitations and unverified items:
+
+Do **not** manufacture every data point in every report; cover material verified inputs, state gaps, and avoid implying a source was checked when it was not. Scanned candidates are not recommendations; exclude complex/illiquid products.
+
+## Event entry format
+
+- Event and original occurrence time (KST / market local)
+- New evidence versus previous event/news
+- Reliable source URLs and verification time
+- Macro/cross-asset implications and sector/ETF transmission mechanism
+- Counterargument and invalidation/monitoring conditions
+- Urgency: does this genuinely justify reassessing before the weekly review?
+- No personal holdings or precise portfolio percentages
+
+Do not log hourly heartbeat, duplicate news, unchanged calls, or speculative shocks.
+
+## Weekly workflow
+
+1. Read the latest summary and dated market snapshots in `data/history/` for all sessions since last review, plus the current `latest.*`.
+2. Read all available `analysis/daily/` and `analysis/events/` files from the week; **do not assume missing days were monitored**.
+3. Independently verify current macro, cross-asset, industry fundamentals, ETF structure/AUM/fees/spreads, news and flow data via reliable sources.
+4. Distinguish genuine regime changes from noise, recognize conflicting evidence, test alternatives, check concentration/correlation and drawdown risk.
+5. In the private ChatGPT report only, compare the user's latest disclosed portfolio with alternatives. Recommend new 100% target weights **only if the evidence merits change**; otherwise explicitly recommend maintaining positions. User decides and executes trades.
+
+## Storage and access limitations
+
+Scheduled ChatGPT tasks can only persist research here **if their GitHub connection permits writing during the run**. If access fails, clearly report that the analysis wasn't saved. Never claim an event or daily report was durably recorded without successful read-after-write verification. The GitHub Actions price scanner cannot see ChatGPT's hourly/daily conclusions automatically; its date snapshots are a separate automated input.
+
+Market data is approximate, delayed and third-party sourced. This project does not place orders and does not guarantee the user's maximum acceptable portfolio loss.
