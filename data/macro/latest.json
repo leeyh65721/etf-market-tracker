@@ -1,0 +1,38 @@
+{
+  "market_date": "2026-10-20",
+  "generated_at_utc": "2026-10-20T23:58:15.451322+00:00",
+  "status": "unavailable",
+  "requested_series_count": 18,
+  "retrieved_series_count": 0,
+  "current_series_count": 0,
+  "source": "FRED public graph CSV downloads (best effort, not FRED API)",
+  "series": [],
+  "conditional_signals": [],
+  "errors": {
+    "DGS2": "RuntimeError: TimeoutError: The read operation timed out",
+    "DGS10": "RuntimeError: TimeoutError: The read operation timed out",
+    "DFII10": "RuntimeError: TimeoutError: The read operation timed out",
+    "T10Y2Y": "RuntimeError: TimeoutError: The read operation timed out",
+    "DFF": "RuntimeError: TimeoutError: The read operation timed out",
+    "BAMLH0A0HYM2": "RuntimeError: TimeoutError: The read operation timed out",
+    "VIXCLS": "RuntimeError: TimeoutError: The read operation timed out",
+    "DCOILWTICO": "RuntimeError: TimeoutError: The read operation timed out",
+    "DCOILBRENTEU": "RuntimeError: TimeoutError: The read operation timed out",
+    "DTWEXBGS": "RuntimeError: TimeoutError: The read operation timed out",
+    "DEXKOUS": "RuntimeError: TimeoutError: The read operation timed out",
+    "CPIAUCSL": "RuntimeError: TimeoutError: The read operation timed out",
+    "PCEPILFE": "RuntimeError: TimeoutError: The read operation timed out",
+    "UNRATE": "RuntimeError: TimeoutError: The read operation timed out",
+    "PAYEMS": "RuntimeError: TimeoutError: The read operation timed out",
+    "INDPRO": "RuntimeError: TimeoutError: The read operation timed out",
+    "RSXFS": "RuntimeError: TimeoutError: The read operation timed out",
+    "GDPC1": "RuntimeError: TimeoutError: The read operation timed out"
+  },
+  "limitations": [
+    "Series have different observation dates and release frequency. FRED historical values may be revised.",
+    "No as-released/vintage data: do not treat historical figures as available in real time.",
+    "Conditions are hypotheses, not AI interpretations or investment advice.",
+    "No verified news, issuer fundamentals, futures term structure or ETF flows.",
+    "No user personal portfolio or account information."
+  ]
+}
