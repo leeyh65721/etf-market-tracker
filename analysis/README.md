@@ -51,3 +51,9 @@ Do not log hourly heartbeat, duplicate news, unchanged calls, or speculative sho
 Scheduled ChatGPT tasks can only persist research here **if their GitHub connection permits writing during the run**. If access fails, clearly report that the analysis wasn't saved. Never claim an event or daily report was durably recorded without successful read-after-write verification. The GitHub Actions price scanner cannot see ChatGPT's hourly/daily conclusions automatically; its date snapshots are a separate automated input.
 
 Market data is approximate, delayed and third-party sourced. This project does not place orders and does not guarantee the user's maximum acceptable portfolio loss.
+
+## Deterministic automatic archive (GitHub Actions fallback)
+
+The GitHub Actions workflow runs `scan.py` and then `build_journal.py` to create `analysis/technical/YYYY-MM-DD.md` from the verified daily screen, including screen transitions versus the previous saved market date. This text is mechanically generated from historical CSV/JSON only; it is **not** the ChatGPT daily market narrative and **contains no independently verified macro/news**. `analysis/technical/` is written by GitHub Actions together with `data/`, bypassing the need for ChatGPT scheduled tasks to push commits. Scheduled Actions may be delayed or fail; verify the relevant file really exists.
+
+Weekly analysis should read `analysis/technical/` first as the reliable record of ETF-screen changes, then any existing `analysis/daily/` and `analysis/events/` research, and perform a fresh independent macro, rates, oil, FX, credit, earnings and cross-asset review. Missing ChatGPT research must not be represented as saved; all private portfolio allocation judgment stays in ChatGPT, not in public GitHub.
