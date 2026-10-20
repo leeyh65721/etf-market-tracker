@@ -20,11 +20,12 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python scan.py
+      - run: python build_journal.py
       - name: Save public market data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ analysis/technical/
           if ! git diff --cached --quiet; then
             git commit -m "Update ETF market scan"
             git push
@@ -33,5 +34,5 @@ jobs:
         if: always()
         with:
           name: daily-report
-          path: data/
+          path: |\n            data/\n            analysis/technical/
           if-no-files-found: warn
