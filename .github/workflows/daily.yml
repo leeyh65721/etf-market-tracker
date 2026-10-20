@@ -34,5 +34,7 @@ jobs:
         if: always()
         with:
           name: daily-report
-          path: |\n            data/\n            analysis/technical/
+          path: |
+            data/
+            analysis/technical/
           if-no-files-found: warn
