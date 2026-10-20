@@ -21,11 +21,12 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scan.py
       - run: python build_journal.py
+      - run: python macro_scan.py
       - name: Save public market data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ analysis/technical/
+          git add data/ analysis/technical/ analysis/macro/
           if ! git diff --cached --quiet; then
             git commit -m "Update ETF market scan"
             git push
@@ -37,4 +38,5 @@ jobs:
           path: |
             data/
             analysis/technical/
+            analysis/macro/
           if-no-files-found: warn
