@@ -1,6 +1,6 @@
 {
   "status": "OK",
-  "market_date": "2026-10-20",
+  "market_date": "2026-10-21",
   "source_macro_status": "ok",
   "requested": 22,
   "retrieved": 22,
@@ -45,8 +45,8 @@
   },
   "messages": [],
   "source_errors": {},
-  "macro_generated_at_utc": "2026-10-21T07:13:53.485544+00:00",
-  "technical_generated_at_utc": "2026-10-21T07:13:42.047980+00:00",
-  "checked_at_utc": "2026-10-21T07:13:53.563300+00:00",
+  "macro_generated_at_utc": "2026-10-21T23:52:47.640206+00:00",
+  "technical_generated_at_utc": "2026-10-21T23:52:43.962147+00:00",
+  "checked_at_utc": "2026-10-21T23:52:47.739017+00:00",
   "important_note": "Data collection health only; not a statement about market risk. Publication and revision lag still require verification."
 }

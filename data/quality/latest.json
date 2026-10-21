@@ -1,12 +1,12 @@
 {
-  "asof": "2026-10-20",
-  "locked_sessions": 1,
-  "signal_count": 0,
+  "asof": "2026-10-21",
+  "locked_sessions": 2,
+  "signal_count": 1,
   "summaries": {
     "5": {
-      "signals": 0,
+      "signals": 1,
       "observed": 0,
-      "pending": 0,
+      "pending": 1,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -15,9 +15,9 @@
       "assessment": "insufficient_observations"
     },
     "10": {
-      "signals": 0,
+      "signals": 1,
       "observed": 0,
-      "pending": 0,
+      "pending": 1,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -26,9 +26,9 @@
       "assessment": "insufficient_observations"
     },
     "20": {
-      "signals": 0,
+      "signals": 1,
       "observed": 0,
-      "pending": 0,
+      "pending": 1,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -37,13 +37,38 @@
       "assessment": "insufficient_observations"
     }
   },
-  "observations": [],
-  "generated_at_utc": "2026-10-21T07:13:42.807126+00:00",
-  "new_daily_lock_created": false,
-  "locked_current_us_date": "2026-10-20",
-  "current_technical_candidate_entries": 0,
-  "latest_verified_universe_fraction": 0.96034,
-  "last_expected_closed_us_session": "2026-10-20",
+  "observations": [
+    {
+      "signal_day": "2026-10-21",
+      "ticker": "XLF",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-22",
+      "reference_exit_day": "2026-10-29",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-21",
+      "ticker": "XLF",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-22",
+      "reference_exit_day": "2026-11-05",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-21",
+      "ticker": "XLF",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-22",
+      "reference_exit_day": "2026-11-19",
+      "result": "pending"
+    }
+  ],
+  "generated_at_utc": "2026-10-21T23:52:45.106216+00:00",
+  "new_daily_lock_created": true,
+  "locked_current_us_date": "2026-10-21",
+  "current_technical_candidate_entries": 1,
+  "latest_verified_universe_fraction": 0.94901,
+  "last_expected_closed_us_session": "2026-10-21",
   "warnings": [],
   "status": "OK",
   "interpretation": "Audit of technical-screen transitions ONLY, not ChatGPT ETF buy/hold recommendations. Next-session-close to subsequent-close is an observation proxy, NOT a tradable fill. The Yahoo auto-adjusted closes in separate frozen downloads may be revised around distributions, splits and provider corrections. Do not claim total-return accuracy, causality, live execution, or strategy superiority. No fees, FX or slippage included. A prospective sample of 30+ observations is exploratory, not proof."

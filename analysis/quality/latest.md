@@ -1,20 +1,20 @@
 # ETF technical screen prospective accuracy audit
 
 > **Not investment recommendations or a trading backtest.**
-- Latest locked US session: **2026-10-20**
-- Verified universe coverage: **96.0%**
-- Preserved NYSE sessions: **1**
-- Recorded new candidate transitions: **0**
-- New locked baseline created on this execution: **False**
+- Latest locked US session: **2026-10-21**
+- Verified universe coverage: **94.9%**
+- Preserved NYSE sessions: **2**
+- Recorded new candidate transitions: **1**
+- New locked baseline created on this execution: **True**
 - Audit status (data quality only): **OK**
 
 ## Observation-to-observation results
 
 | Holding window | Signals | Observed | Awaiting maturity | Unverifiable | Beat SPY | Mean excess | Interpretation |
 |---|---:|---:|---:|---:|---:|---:|---|
-|5 NYSE sessions|0|0|0|0|0/0|n/a|insufficient_observations|
-|10 NYSE sessions|0|0|0|0|0/0|n/a|insufficient_observations|
-|20 NYSE sessions|0|0|0|0|0/0|n/a|insufficient_observations|
+|5 NYSE sessions|1|0|1|0|0/0|n/a|insufficient_observations|
+|10 NYSE sessions|1|0|1|0|0/0|n/a|insufficient_observations|
+|20 NYSE sessions|1|0|1|0|0/0|n/a|insufficient_observations|
 
 ## Freshness and quality concerns
 

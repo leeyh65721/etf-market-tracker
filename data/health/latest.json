@@ -1,19 +1,19 @@
 {
-  "us_market_date": "2026-10-20",
-  "github_run_id": "39560355101",
-  "expected_latest_closed_nyse_session": "2026-10-20",
-  "generated_at_utc": "2026-10-21T07:15:43.920340+00:00",
-  "status": "ERROR",
+  "us_market_date": "2026-10-21",
+  "github_run_id": "39696026705",
+  "expected_latest_closed_nyse_session": "2026-10-21",
+  "generated_at_utc": "2026-10-21T23:54:37.310279+00:00",
+  "status": "WARN",
   "counts": {
-    "etf_verified": 339,
+    "etf_verified": 335,
     "etf_universe": 353,
-    "etf_fraction": 0.96034,
+    "etf_fraction": 0.94901,
     "base_macro_ok": 22,
     "base_macro_expected": 22,
-    "supplemental_ok": 4,
+    "supplemental_ok": 5,
     "supplemental_expected": 10,
     "manual_expected": 2,
-    "supplemental_missing_automatic": 3
+    "supplemental_missing_automatic": 2
   },
   "supplemental_statuses": {
     "CORE_PCE": "ok",
@@ -21,7 +21,7 @@
     "RETAIL_SALES": "unavailable",
     "NFCI": "stale",
     "MFG_NEW_ORDERS": "unavailable",
-    "DURABLE_NEW_ORDERS": "unavailable",
+    "DURABLE_NEW_ORDERS": "ok",
     "ISM_MANUFACTURING": "manual",
     "ISM_SERVICES": "manual",
     "REAL_GDP": "ok",
@@ -44,14 +44,14 @@
   },
   "findings": [
     {
+      "level": "WARN",
+      "code": "ETF_COVERAGE_WATCH",
+      "detail": "Verified ETF universe 335/353 (94.9%)"
+    },
+    {
       "level": "KNOWN",
       "code": "NFCI_NOT_LIVE",
       "detail": "NFCI latest official CSV status=stale, requires permitted manual verification"
-    },
-    {
-      "level": "WARN",
-      "code": "EXTRA_UNAVAILABLE_DURABLE_NEW_ORDERS",
-      "detail": "Supplemental automatic metric DURABLE_NEW_ORDERS is unavailable; don't use as current"
     },
     {
       "level": "WARN",
@@ -62,18 +62,10 @@
       "level": "WARN",
       "code": "EXTRA_UNAVAILABLE_RETAIL_SALES",
       "detail": "Supplemental automatic metric RETAIL_SALES is unavailable; don't use as current"
-    },
-    {
-      "level": "ERROR",
-      "code": "EXTRA_MULTIPLE_LOSSES",
-      "detail": "At least 3/7 normally automated supplemental metrics failed: DURABLE_NEW_ORDERS, MFG_NEW_ORDERS, RETAIL_SALES"
     }
   ],
   "new_alert_codes": [
-    "EXTRA_UNAVAILABLE_DURABLE_NEW_ORDERS",
-    "EXTRA_UNAVAILABLE_MFG_NEW_ORDERS",
-    "EXTRA_UNAVAILABLE_RETAIL_SALES",
-    "EXTRA_MULTIPLE_LOSSES"
+    "ETF_COVERAGE_WATCH"
   ],
   "alert_summary": "new non-expected warning/error codes only; KNOWN values excluded",
   "not_a_market_signal": true,
