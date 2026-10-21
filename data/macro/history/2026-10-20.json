@@ -1,10 +1,10 @@
 {
   "market_date": "2026-10-20",
-  "generated_at_utc": "2026-10-21T01:38:11.576919+00:00",
-  "status": "partial",
+  "generated_at_utc": "2026-10-21T02:19:08.931810+00:00",
+  "status": "ok",
   "requested_series_count": 22,
-  "retrieved_series_count": 21,
-  "current_series_count": 20,
+  "retrieved_series_count": 22,
+  "current_series_count": 22,
   "source": "US Treasury, BLS, EIA, Cboe, ECB, and New York Fed official public sources",
   "credit_etf_proxies": {
     "status": "ok",
@@ -76,6 +76,22 @@
       "five_observation_reference_date": "2026-10-13",
       "five_observation_change": -0.09,
       "five_observation_pct": -1.7274
+    },
+    {
+      "series_id": "T10Y_REAL",
+      "name": "미국 실질 국채 10년",
+      "frequency": "daily",
+      "unit": "%",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "observation_date": "2026-10-20",
+      "value": 2.77,
+      "previous_date": "2026-10-19",
+      "previous_value": 2.8,
+      "change_previous": -0.03,
+      "status": "ok",
+      "five_observation_reference_date": "2026-10-13",
+      "five_observation_change": -0.11,
+      "five_observation_pct": -3.8194
     },
     {
       "series_id": "T10Y2Y",
@@ -307,7 +323,7 @@
       "previous_date": "2026-07-01",
       "previous_value": 7335.0,
       "change_previous": -256.0,
-      "status": "stale",
+      "status": "ok",
       "year_over_year_change_pct": 2.3125,
       "year_over_year_reference_date": "2025-08-01"
     },
@@ -382,9 +398,7 @@
       "independently_verify": "공급 차질인지 수요 증가인지, 브렌트와 선물 가격·뉴스를 독립 확인"
     }
   ],
-  "errors": {
-    "T10Y_REAL": "RuntimeError: ValueError: Treasury CSV has no Date/10 Yr columns"
-  },
+  "errors": {},
   "limitations": [
     "Observation dates differ from release dates; official data may be revised.",
     "No as-released/vintage data: do not treat historical figures as available in real time.",

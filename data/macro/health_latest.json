@@ -1,0 +1,52 @@
+{
+  "status": "OK",
+  "market_date": "2026-10-20",
+  "source_macro_status": "ok",
+  "requested": 22,
+  "retrieved": 22,
+  "current": 22,
+  "critical_missing": [],
+  "categories": {
+    "treasury": {
+      "ok": 4,
+      "required": 4,
+      "missing_or_stale": []
+    },
+    "inflation": {
+      "ok": 4,
+      "required": 4,
+      "missing_or_stale": []
+    },
+    "labor": {
+      "ok": 6,
+      "required": 6,
+      "missing_or_stale": []
+    },
+    "energy": {
+      "ok": 2,
+      "required": 2,
+      "missing_or_stale": []
+    },
+    "volatility": {
+      "ok": 2,
+      "required": 2,
+      "missing_or_stale": []
+    },
+    "foreign_exchange": {
+      "ok": 2,
+      "required": 2,
+      "missing_or_stale": []
+    },
+    "money_markets": {
+      "ok": 2,
+      "required": 2,
+      "missing_or_stale": []
+    }
+  },
+  "messages": [],
+  "source_errors": {},
+  "macro_generated_at_utc": "2026-10-21T02:19:08.931810+00:00",
+  "technical_generated_at_utc": "2026-10-21T02:18:58.686561+00:00",
+  "checked_at_utc": "2026-10-21T02:19:09.029659+00:00",
+  "important_note": "Data collection health only; not a statement about market risk. Publication and revision lag still require verification."
+}
