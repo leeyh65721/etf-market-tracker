@@ -19,6 +19,9 @@ jobs:
           python-version: '3.11'
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Smoke-test macro parsers (offline)
+        continue-on-error: true
+        run: python -m unittest discover -s tests -p 'test_macro_scan.py' -v
       - run: python scan.py
       - run: python build_journal.py
       - name: Collect official macroeconomic indicators
