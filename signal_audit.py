@@ -75,7 +75,7 @@ def current_first_published(source_json, source_csv):
         raise ValueError("ETF scanner CSV missing required fields")
     if frame.empty or frame.ticker.isna().any() or frame.ticker.duplicated().any():
         raise ValueError("ETF scanner CSV empty or has missing/duplicate tickers")
-    if not frame.asof.astype(str).eq(day).all():
+    if not frame["asof"].astype(str).eq(day).all():
         raise ValueError("ETF scanner CSV has a different market date")
     if not frame.screen.isin(VALID_SCREENS).all():
         raise ValueError("ETF scanner CSV contains unrecognized statuses")
