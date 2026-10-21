@@ -48,6 +48,17 @@ jobs:
                pos=match.start()
                print('RAW_MATCH',pat,pos,repr(r.text[max(0,pos-220):pos+470]),flush=True)
              if 'current-data-aws' in url:
+              candidates=[
+               'https://www.chicagofed.org/~/media/publications/nfci/nfci-data-series.csv',
+               'https://www.chicagofed.org/-/media/publications/nfci/nfci-data-series.csv',
+               'https://www.chicagofed.org/digital_assets/others/research/data/nfci/nfci-data-series.csv',
+               'https://www.chicagofed.org/~/media/publications/nfci/nfci-data-series-csv.csv',
+              ]
+              for candidate in candidates:
+               try:
+                fr=requests.get(candidate,timeout=8,allow_redirects=True)
+                print('NFCI_STATIC_CANDIDATE',fr.status_code,len(fr.content),fr.url,repr(fr.text[:130]),flush=True)
+               except Exception as ex:print('NFCI_STATIC_ERROR',repr(ex)[:130],flush=True)
               endpoint='https://nonprod.data.chicagofed.org/cfed-drm-dev-chicago/NFCI'
               try:
                er=requests.get(endpoint,timeout=18,headers={'Content-Type':'application/json','AuthRole':'default'})
