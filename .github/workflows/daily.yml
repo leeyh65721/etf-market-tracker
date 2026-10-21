@@ -25,17 +25,21 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Smoke-test macro parsers (offline)
         continue-on-error: true
-        run: python -m unittest discover -s tests -p 'test_macro_scan.py' -v
+        run: python -m unittest discover -s tests -p 'test_macro*.py' -v
       - run: python scan.py
       - run: python build_journal.py
       - name: Collect official macroeconomic indicators
         continue-on-error: true
         run: python macro_scan.py
+      - name: Validate macro series completeness and freshness
+        if: always()
+        continue-on-error: true
+        run: python macro_health.py
       - name: Save public market data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ analysis/technical/ analysis/macro/
+          git add data/ analysis/technical/ analysis/macro/ analysis/diagnostics/macro-health-latest.md analysis/diagnostics/history/
           if ! git diff --cached --quiet; then
             git commit -m "Update ETF market scan"
             git push
