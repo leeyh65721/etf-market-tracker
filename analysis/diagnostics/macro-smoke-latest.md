@@ -1,6 +1,6 @@
 # Official macro source smoke-test diagnostic
 
-- Checked at UTC: 2026-10-21T01:39:29.766330+00:00
+- Checked at UTC: 2026-10-21T01:40:08.907273+00:00
 - Offline parser test outcome: success
 - Macro collection process outcome: success
 - Requested series: 22
@@ -47,7 +47,7 @@ test_required_coverage_is_unique (test_macro_scan.MacroParserSmokeTests.test_req
 test_source_group_routing_fx (test_macro_scan.MacroParserSmokeTests.test_source_group_routing_fx) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.036s
+Ran 7 tests in 0.030s
 
 OK
 ```
@@ -64,8 +64,8 @@ MACRO_SOURCE_OK ecb_fx
 MACRO_SOURCE_OK nyfed_sofr
 MACRO_SOURCE_OK bls_CPI_HEADLINE
 MACRO_SOURCE_OK bls_CPI_CORE
-MACRO_SOURCE_OK bls_UNRATE
 MACRO_SOURCE_OK bls_PAYROLLS
+MACRO_SOURCE_OK bls_UNRATE
 MACRO_SOURCE_OK bls_JOLTS_OPENINGS
 MACRO_SOURCE_OK bls_PPI_FD
 MACRO_SOURCE_OK bls_LFPR
