@@ -1,0 +1,25 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "archived_on_utc_date": "2026-10-21",
+  "provenance": "retrospective_archived_report",
+  "comparison_baseline": "SPY",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "trade_instruction": false,
+  "record_id": "2026-10-20-IHF-watch",
+  "ticker": "IHF",
+  "stance": "watch",
+  "us_market_date": "2026-10-20",
+  "original_report_date_kst": "2026-10-21",
+  "source_report": "analysis/daily/2026-10-21.md",
+  "verbatim_source_excerpt": "**IHF — 의료서비스·보험**",
+  "original_close_usd": 60.32,
+  "original_spy_close_usd": 769.05,
+  "thesis": "IHF was specifically highlighted for closer healthcare providers and insurers observation, distinct from a new automated candidate entry or buy signal.",
+  "counterevidence": "Insurance cost ratios, reimbursement/regulatory sensitivity, narrower exposure than XLV and weaker than expected volume confirmation.",
+  "invalidation": "Deteriorating SPY relative strength, adverse insurance policy/claims outcomes, issuer results or liquidity deterioration.",
+  "revisit_trigger": "Reassess after 5/10/20 US sessions and independently review health-insurer regulatory and earnings updates."
+}
