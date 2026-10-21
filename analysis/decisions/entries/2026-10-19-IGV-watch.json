@@ -1,0 +1,25 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "archived_on_utc_date": "2026-10-21",
+  "provenance": "retrospective_archived_report",
+  "comparison_baseline": "SPY",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "trade_instruction": false,
+  "record_id": "2026-10-19-IGV-watch",
+  "ticker": "IGV",
+  "stance": "watch",
+  "us_market_date": "2026-10-19",
+  "original_report_date_kst": "2026-10-20",
+  "source_report": "analysis/daily/2026-10-20.md",
+  "verbatim_source_excerpt": "Opportunity watch list: **XLY, IGV** (newly highlighted in the 2026-10-20 morning report).",
+  "original_close_usd": 105.99,
+  "original_spy_close_usd": 766.48,
+  "thesis": "IGV was newly highlighted for observation due to longer relative strength, not a buy call, while short-term five-session performance was negative.",
+  "counterevidence": "The five-session return was weak and rising discount rates could pressure software sector valuations.",
+  "invalidation": "Further deterioration in relative strength, credit stress or weak independent earnings evidence would invalidate improvement thesis.",
+  "revisit_trigger": "Reassess after 5/10/20 US sessions and verify independently reported software earnings and guidance."
+}
