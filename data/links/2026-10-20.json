@@ -1,6 +1,6 @@
 {
   "us_market_date": "2026-10-20",
-  "generated_at_utc": "2026-10-21T06:53:21.470446+00:00",
+  "generated_at_utc": "2026-10-21T07:15:42.446113+00:00",
   "market": {
     "status": "ok",
     "market_date": "2026-10-20",
@@ -460,45 +460,6 @@
       "observation_date": "2026-10-10",
       "source_url": "https://www.dol.gov/ui/data.pdf",
       "frequency": "weekly",
-      "publication_date_verified": false,
-      "same_market_date_observation": false,
-      "value_changed": null
-    },
-    {
-      "series_id": "RETAIL_SALES",
-      "source_group": "supplemental",
-      "name": "미국 소매·음식서비스 매출(월간 전월비)",
-      "value": 0.8,
-      "unit": "% m/m",
-      "observation_date": "2026-09-01",
-      "source_url": "https://www.census.gov/retail/sales.html",
-      "frequency": "monthly",
-      "publication_date_verified": false,
-      "same_market_date_observation": false,
-      "value_changed": null
-    },
-    {
-      "series_id": "MFG_NEW_ORDERS",
-      "source_group": "supplemental",
-      "name": "미국 제조업 신규주문(전월비)",
-      "value": 0.1,
-      "unit": "% m/m",
-      "observation_date": "2026-08-01",
-      "source_url": "https://www.census.gov/manufacturing/m3/current/index.html",
-      "frequency": "monthly",
-      "publication_date_verified": false,
-      "same_market_date_observation": false,
-      "value_changed": null
-    },
-    {
-      "series_id": "DURABLE_NEW_ORDERS",
-      "source_group": "supplemental",
-      "name": "미국 내구재 신규주문(전월비)",
-      "value": 0.0,
-      "unit": "% m/m",
-      "observation_date": "2026-08-01",
-      "source_url": "https://www.census.gov/manufacturing/m3/adv/current/index.html",
-      "frequency": "monthly",
       "publication_date_verified": false,
       "same_market_date_observation": false,
       "value_changed": null

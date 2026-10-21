@@ -1,7 +1,7 @@
 # 경제지표 관측과 ETF 시장 움직임 — 2026-10-20 미국장
 
 > **단순 동시 관측 표. 인과관계·예측력·매수신호가 아님.**
-- 작성(UTC): 2026-10-21T06:53:21.470446+00:00
+- 작성(UTC): 2026-10-21T07:15:42.446113+00:00
 - ETF 가격 관측일: 2026-10-19 → 2026-10-20
 - 검증된 대표 ETF 종가 쌍: 17/17
 - 거시지표 관측 기간과 실제 발표 시각은 다를 수 있음. 경제지표가 ETF를 움직였다고 단정하지 않음.
@@ -51,9 +51,6 @@
 |AVG_HOURLY_EARNINGS|2026-09-01|37.81 USD/hour|+0.05 USD/hour|아니오|[기관](https://api.bls.gov/publicAPI/v2/timeseries/data/CES0500000003)|
 |CORE_PCE|2026-08-01|3 % YoY|+0 % YoY|아니오|[기관](https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy)|
 |INITIAL_CLAIMS|2026-10-10|199000 persons|비교 원자료 없음|아니오|[기관](https://www.dol.gov/ui/data.pdf)|
-|RETAIL_SALES|2026-09-01|0.8 % m/m|비교 원자료 없음|아니오|[기관](https://www.census.gov/retail/sales.html)|
-|MFG_NEW_ORDERS|2026-08-01|0.1 % m/m|비교 원자료 없음|아니오|[기관](https://www.census.gov/manufacturing/m3/current/index.html)|
-|DURABLE_NEW_ORDERS|2026-08-01|0 % m/m|비교 원자료 없음|아니오|[기관](https://www.census.gov/manufacturing/m3/adv/current/index.html)|
 |REAL_GDP|2026-04-01|2.2 % q/q annualized|비교 원자료 없음|아니오|[기관](https://www.bea.gov/data/gdp/gross-domestic-product)|
 |SP500_BREADTH|2026-10-20|80.3181 % constituents up|비교 원자료 없음|예(발표시각 미확인)|[기관](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies)|
 |AVG_WEEKLY_HOURS|2026-09-01|34.4 hours|+0 hours|아니오|[기관](https://api.bls.gov/publicAPI/v2/timeseries/data/CES0500000002)|

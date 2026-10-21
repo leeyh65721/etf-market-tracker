@@ -1,0 +1,120 @@
+{
+  "generated_at_utc": "2026-10-21T07:15:43.431580+00:00",
+  "status": "OK",
+  "valid_count": 4,
+  "retrospective_count": 4,
+  "prospective_count": 0,
+  "invalid_count": 0,
+  "reports_missing_structured_records_count": 0,
+  "reports_missing_structured_records": [],
+  "entries": [
+    {
+      "record_id": "2026-10-19-IGV-watch",
+      "ticker": "IGV",
+      "stance": "watch",
+      "us_market_date": "2026-10-19",
+      "original_report_date_kst": "2026-10-20",
+      "archived_on_utc_date": "2026-10-21",
+      "provenance": "retrospective_archived_report",
+      "source_report": "analysis/daily/2026-10-20.md",
+      "original_close_usd": 105.99,
+      "original_spy_close_usd": 766.48,
+      "thesis": "IGV was newly highlighted for observation due to longer relative strength, not a buy call, while short-term five-session performance was negative.",
+      "counterevidence": "The five-session return was weak and rising discount rates could pressure software sector valuations.",
+      "invalidation": "Further deterioration in relative strength, credit stress or weak independent earnings evidence would invalidate improvement thesis.",
+      "revisit_trigger": "Reassess after 5/10/20 US sessions and verify independently reported software earnings and guidance.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-20",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "historical_backfill_not_prospectively_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-10-19-XLY-watch",
+      "ticker": "XLY",
+      "stance": "watch",
+      "us_market_date": "2026-10-19",
+      "original_report_date_kst": "2026-10-20",
+      "archived_on_utc_date": "2026-10-21",
+      "provenance": "retrospective_archived_report",
+      "source_report": "analysis/daily/2026-10-20.md",
+      "original_close_usd": 114.46,
+      "original_spy_close_usd": 766.48,
+      "thesis": "XLY was highlighted as a watch list candidate based on relative strength, with continuation unproven and the prior 63-session return slightly negative.",
+      "counterevidence": "Fragile market breadth, potentially elevated interest rates and soft 63-session trend reduce confidence in continuation.",
+      "invalidation": "Fading relative strength, persistently weak real demand or declining earnings and company guidance undermine the watch thesis.",
+      "revisit_trigger": "Reassess after 5/10/20 US sessions against SPY and independently verify sector earnings and consumer trends.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-20",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "historical_backfill_not_prospectively_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-10-20-IHF-watch",
+      "ticker": "IHF",
+      "stance": "watch",
+      "us_market_date": "2026-10-20",
+      "original_report_date_kst": "2026-10-21",
+      "archived_on_utc_date": "2026-10-21",
+      "provenance": "retrospective_archived_report",
+      "source_report": "analysis/daily/2026-10-21.md",
+      "original_close_usd": 60.32,
+      "original_spy_close_usd": 769.05,
+      "thesis": "IHF was specifically highlighted for closer healthcare providers and insurers observation, distinct from a new automated candidate entry or buy signal.",
+      "counterevidence": "Insurance cost ratios, reimbursement/regulatory sensitivity, narrower exposure than XLV and weaker than expected volume confirmation.",
+      "invalidation": "Deteriorating SPY relative strength, adverse insurance policy/claims outcomes, issuer results or liquidity deterioration.",
+      "revisit_trigger": "Reassess after 5/10/20 US sessions and independently review health-insurer regulatory and earnings updates.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-21",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "historical_backfill_not_prospectively_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-10-20-XLV-watch",
+      "ticker": "XLV",
+      "stance": "positive_watch",
+      "us_market_date": "2026-10-20",
+      "original_report_date_kst": "2026-10-21",
+      "archived_on_utc_date": "2026-10-21",
+      "provenance": "retrospective_archived_report",
+      "source_report": "analysis/daily/2026-10-21.md",
+      "original_close_usd": 179.82,
+      "original_spy_close_usd": 769.05,
+      "thesis": "The report began closer observation of XLV on relative strength and a price above its 50-session average, without proposing a purchase.",
+      "counterevidence": "A prior price rally may already be reflected, while pharmaceutical, insurance and equipment fundamentals and regulation differ.",
+      "invalidation": "Persistent deterioration relative to SPY, a renewed break below the 50-session average, or worsening major company earnings.",
+      "revisit_trigger": "Reassess 5/10/20 US sessions later with sector-wide results, ETF structure and valuation.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-21",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "historical_backfill_not_prospectively_scored",
+      "not_a_buy_recommendation": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "This is a ledger of manually saved dated public analyst research, not an automatically generated view.",
+    "Past analysis uploaded afterward is NOT a validated forward-only call.",
+    "Prospective results must be scored only after genuine future US sessions mature.",
+    "Technical scanner candidates are separate from explicitly expressed judgments.",
+    "No actual brokerage positions, targets, trades, fees or P&L are stored here."
+  ]
+}
