@@ -1,0 +1,50 @@
+{
+  "asof": "2026-10-20",
+  "locked_sessions": 1,
+  "signal_count": 0,
+  "summaries": {
+    "5": {
+      "signals": 0,
+      "observed": 0,
+      "pending": 0,
+      "unverifiable": 0,
+      "outperformed_spy_count": 0,
+      "observed_outperformance_fraction": null,
+      "mean_excess_pp": null,
+      "median_excess_pp": null,
+      "assessment": "insufficient_observations"
+    },
+    "10": {
+      "signals": 0,
+      "observed": 0,
+      "pending": 0,
+      "unverifiable": 0,
+      "outperformed_spy_count": 0,
+      "observed_outperformance_fraction": null,
+      "mean_excess_pp": null,
+      "median_excess_pp": null,
+      "assessment": "insufficient_observations"
+    },
+    "20": {
+      "signals": 0,
+      "observed": 0,
+      "pending": 0,
+      "unverifiable": 0,
+      "outperformed_spy_count": 0,
+      "observed_outperformance_fraction": null,
+      "mean_excess_pp": null,
+      "median_excess_pp": null,
+      "assessment": "insufficient_observations"
+    }
+  },
+  "observations": [],
+  "generated_at_utc": "2026-10-21T06:37:53.635836+00:00",
+  "new_daily_lock_created": true,
+  "locked_current_us_date": "2026-10-20",
+  "current_technical_candidate_entries": 0,
+  "latest_verified_universe_fraction": 0.96034,
+  "last_expected_closed_us_session": "2026-10-20",
+  "warnings": [],
+  "status": "OK",
+  "interpretation": "Audit of technical-screen transitions ONLY, not ChatGPT ETF buy/hold recommendations. Next-session-close to subsequent-close is an observation proxy, NOT a tradable fill. The Yahoo auto-adjusted closes in separate frozen downloads may be revised around distributions, splits and provider corrections. Do not claim total-return accuracy, causality, live execution, or strategy superiority. No fees, FX or slippage included. A prospective sample of 30+ observations is exploratory, not proof."
+}
