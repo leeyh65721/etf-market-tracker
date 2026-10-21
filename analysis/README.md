@@ -156,3 +156,15 @@ First-day seeds and insufficiently mature observations **must not be interpreted
 
 See [weekly quality review rules](WEEKLY_REVIEW_RULES.md).
 
+
+
+## ETF research decision quality: four-pillar pipeline (2026-10-21)
+
+Read the policy at [DECISION_QUALITY_FRAMEWORK.md](DECISION_QUALITY_FRAMEWORK.md). No new economic indicators are added here: this improves *how the existing 32 are interpreted*.
+
+1. **Economic data ↔ ETF co-movements:** `market_links.py` compares official scanner observations with 17 representative ETF closes from consecutive, exact NYSE sessions; files in `data/links/latest.json`, `data/links/YYYY-MM-DD.json`, `analysis/links/latest.md`, and `analysis/links/YYYY-MM-DD.md`. It does NOT know official public release timestamps, so **causality is explicitly not established**. Official macro observation dates and public announcement dates must be distinguished, and SPY-relative USD adjusted price moves are not transactions.
+2. **Issuer/industry fundamentals:** manually checked public SEC issuer filing evidence in `data/industry/events/*.json`, validated by `industry_evidence.py` to `data/industry/quality_latest.json` and `analysis/industry/latest.md`. At present the ledger's first sample is SMCI's October 20 after-hours preliminary fiscal Q1 revenue and margin guidance; its numbers are *guidance ranges*, not actual chip orders or final audited profit. SEC filing dates are verified manually and the validator only enforces field integrity. Unreported shipments/orders/inventory stay unreported. Analysis must follow issuer-level exposures to actual ETF constituents before making sector claims.
+3. **Prospective decision follow-up:** `signal_audit.py` freezes source-data technical screen observations without backfilling past history. Its 5/10/20-NYSE-session future price comparisons and missing observation statuses are research diagnostics, **not investment recommendation hit rates**. Actual narrative analyst recommendations and original source evidence are separately reviewed in `analysis/daily/`, `analysis/events/` and `analysis/weekly/`.
+4. **Private portfolio allocation judgment:** scheduled ChatGPT weekly research reads the above sources and compares maintain/rotate/reduce-cash alternatives while checking trend, fundamentals, correlations, overlaps, liquidity, valuation, fees, FX and counterarguments. Only if persuasive evidence supports a change does the **private** report propose weights summing to 100%; brokerage assets, exact holdings, account returns and allocation proposals never go into a public GitHub file. User decides and executes any trade.
+
+Live GitHub Actions verification of the first macro-to-ETF and industry evidence reports succeeded on 2026-10-21. Future signal outcomes have not yet matured sufficiently to establish superior returns; schedule write permissions and source availability can change.
