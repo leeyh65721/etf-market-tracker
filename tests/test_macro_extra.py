@@ -45,6 +45,19 @@ class ExtraMacroTests(unittest.TestCase):
         self.assertEqual(r["value"],2.2)
         self.assertEqual(r["observation_date"],"2026-04-01")
 
+    def test_dol_pdf_week_year_from_release_header(self):
+        from unittest.mock import MagicMock
+        import macro_extra as e
+        text=("TRANSMISSION EMBARGOED UNTIL 8:30 A.M. (Eastern) Thursday, August 6, 2026 "
+              "UNEMPLOYMENT INSURANCE WEEKLY CLAIMS SEASONALLY ADJUSTED DATA "
+              "In the week ending August 1, the advance figure for seasonally adjusted "
+              "initial claims was 199,000, an increase of 1,000.")
+        with patch.object(e,"PdfReader") as reader:
+            reader.return_value.pages=[MagicMock(extract_text=lambda:text)]
+            row=e.parse_claims_pdf(b"%PDF mock")
+        self.assertEqual(row["value"],199000)
+        self.assertEqual(row["observation_date"],"2026-08-01")
+
     def test_stale_and_future_are_rejected(self):
         x=e.record("CORE_PCE",3.0,date(2026,7,1),"% YoY","fixture")
         self.assertEqual(e.evaluate("CORE_PCE",x,date(2026,10,20))["status"],"stale")
