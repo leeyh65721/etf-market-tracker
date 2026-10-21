@@ -1,5 +1,5 @@
-name: Verify PCE GDP NFCI repairs
-# Full retest after replacing dynamic Chicago Fed link with the official static CSV.
+name: Verify BEA data and NFCI freshness
+# On-demand regression: BEA current values, Chicago Fed source freshness.
 on:
   workflow_dispatch:
   push:
@@ -38,4 +38,6 @@ jobs:
           assert validated["REAL_GDP"]["observation_date"]=="2026-04-01"
           print("BEA_BOTH_VALIDATED",flush=True)
           print("NFCI_STATUS",validated["NFCI"]["status"],flush=True)
+          if validated["NFCI"]["status"]!="ok":
+            print("::warning::NFCI value from original Chicago Fed feed is not current; source still needs manual review",flush=True)
           PY
