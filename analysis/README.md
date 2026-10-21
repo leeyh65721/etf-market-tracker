@@ -58,26 +58,38 @@ The GitHub Actions workflow runs `scan.py` and then `build_journal.py` to create
 
 Weekly analysis should read `analysis/technical/` first as the reliable record of ETF-screen changes, then any existing `analysis/daily/` and `analysis/events/` research, and perform a fresh independent macro, rates, oil, FX, credit, earnings and cross-asset review. Missing ChatGPT research must not be represented as saved; all private portfolio allocation judgment stays in ChatGPT, not in public GitHub.
 
-## Automated macro evidence archive — direct government sources (2026-10-21 revision)
+## Automated macro evidence archive — 2026-10-21 expanded coverage
 
-The daily GitHub Actions workflow runs `macro_scan.py` after the ETF technical scan.
+`macro_scan.py` runs in GitHub Actions after `scan.py` and `build_journal.py`.
+The 2026-10-20 FRED graph downloader failed on all 18 requests and was retired. **Do not obtain archived ICE BofA credit OAS data from FRED:** the ICE indices have third-party reproduction restrictions. This repo never pretends ETF returns are actual OAS.
 
-**Earlier approach retired:** the original 2026-10-20 macro scanner attempted 18 sequential FRED graph CSV requests. The scheduled run timed out on all 18. FRED's current service terms also place restrictions on AI/ML-connected reuse and storing/archiving FRED service content. This workflow therefore does **not** download or store FRED-supplied data or try to bypass those restrictions.
+### Automatically attempted (22 series, 6 primary publishers)
 
-**New primary sources (no paid API keys):**
-- U.S. Treasury daily official yield curve CSV: 2-year, 10-year, their spread, and 10-year real rate.
-- Bureau of Labor Statistics public API: headline CPI, core CPI, unemployment, nonfarm payrolls and final-demand PPI (with individual seasonal adjustment labels).
-- U.S. Energy Information Administration official historical XLS tables: WTI and Brent **spot** crude oil prices. XLS parsing requires `xlrd`.
+| Publisher | Requested indicators |
+|---|---|
+| US Treasury | 2y, 10y nominal Treasury yields, 10y real Treasury yield, 10y−2y curve spread |
+| BLS (public API) | headline CPI, core CPI, shelter CPI, unemployment rate, payrolls, labor participation, JOLTS job openings, private average hourly earnings, private weekly hours, producer price index |
+| EIA | WTI and Brent **spot** oil |
+| Cboe | VIX and VVIX **indices** |
+| ECB | EUR/USD published reference quote and USD/KRW **derived by KRW-per-EUR divided by USD-per-EUR**; neither is a New York end-of-day FX quote |
+| New York Fed | effective federal funds rate (EFFR) and secured overnight financing rate (SOFR); **neither equals an FOMC target range** |
 
-Up to 11 named series are requested from nine source downloads, using up to four parallel workers, short request timeouts and bounded retries. If one institution is unavailable, other data may still be saved as a **partial** report. Status `ok`, `partial` or `unavailable`, specific source failures, observation date, lag and uncollected indicator list are recorded. This change has not yet passed a live scheduled-run test.
+These are *requested* inputs, not a claim that 22 were retrieved. Data from the official publishers may be delayed, revised, have differing publication days, or fail entirely. Sources are individually retried with bounded timeouts using at most four workers. The workflow's macro step is non-blocking so a provider failure will not stop the ETF scanner from saving its report.
 
-Outputs:
-- `data/macro/latest.json` and `data/macro/history/YYYY-MM-DD.json`: actual source URLs, values/dates, errors and coverage (may contain a zero-series failure record).
-- `data/macro/latest_nonempty.json`: last run with one or more retrieved series (check market date and staleness; **not** necessarily current).
-- `analysis/macro/YYYY-MM-DD.md`: mechanically generated numeric observations and **conditional interpretation prompts**, not independently researched macroeconomic news.
+### Credit-market proxy (not OAS)
 
-**Not included automatically:** credit spreads, VIX, USD/KRW, dollar index, gold, copper, PCE, PMI, GDP and other important factors; do not interpret omissions as a neutral or unchanged market. Daily/weekly ChatGPT reports should independently check these against timely, permitted sources alongside corporate earnings and ETF flows. Spot oil prices must not be described as futures settlements. Macro data can be revised; previous observations are not original release vintages. No personal portfolio/account data may be written to this public repository.
+If market-date-matching HYG, LQD and IEF rows exist in `data/latest.csv`, the scanner computes **5d and 21d percentage-point differences in ETF price returns**, HYG minus IEF and LQD minus IEF. These differ structurally from **HY and IG corporate yield spread indices or option-adjusted credit spreads**; duration, default risk, distributions, yield levels and portfolio exposures create bias. Do not use proxy returns as OAS percentages or assert spreads widened unless actual licensed yield-spread evidence is available.
 
-The macro step in GitHub Actions is non-blocking so a macro failure does not prevent ETF history from being committed. Verify data files and workflow logs after execution. If scheduled ChatGPT's commentary is not successfully written to `analysis/daily/`, it must be manually archived rather than assumed to exist.
+### Persisted and still not automated
 
-**Sources/terms:** https://home.treasury.gov/treasury-daily-interest-rate-xml-feed · https://www.bls.gov/developers/api_signature_v2.htm · https://www.eia.gov/dnav/pet/pet_pri_spt_s1_w.htm · https://fred.stlouisfed.org/legal/
+`data/macro/latest.json` and `data/macro/history/YYYY-MM-DD.json` contain values with their source URL, observation date, coverage, individual errors, status and proxy notes.
+`data/macro/latest_nonempty.json` is the *last* report with nonzero data, potentially stale; check its date before use.
+`analysis/macro/YYYY-MM-DD.md` contains mechanical conditional indicators only; it does **not** archive the assistant's independent investment analysis.
+
+**Not in the automatic numeric archive:** direct HY/IG OAS spreads, FOMC target range, broad dollar index/DXY, core PCE, GDP, ISM manufacturing/services PMI, U.S. retail sales, weekly initial jobless claims, gold/copper/gas, comprehensive financial-conditions indices, corporate earnings, ETF flows, geopolitics. The daily and weekly ChatGPT research must investigate material changes independently via legitimate, timely primary sources or mark them unverified. Never infer "no change" merely from a missing record or empty series.
+
+### Verification and data use
+
+First verify that GitHub Actions produced new files with `requested_series_count=22`, compare `retrieved_series_count`, `current_series_count`, `errors`, `market_date`, and each observation date. A status of `partial` or `unavailable` requires explicit caution. The adjusted / unadjusted BLS series labels are included; some indices are levels, not inflation percentages. A CPI release-date check must be done separately; time-series observation month is **not** the publication date. No API subscription or generative model fee was added. No account holdings, cash, allocation or returns are saved in this public repository.
+
+**Upstream pages:** [US Treasury](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml) · [BLS Public API](https://www.bls.gov/developers/api_signature_v2.htm) · [EIA Spot Oil](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm) · [Cboe VIX history](https://www.cboe.com/tradable-products/vix/vix-historical-data) · [ECB euro reference exchange rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) · [New York Fed markets API](https://markets.newyorkfed.org/static/docs/markets-api.html) · [ICE index distribution restrictions](https://fred.stlouisfed.org/series/BAMLH0A0HYM2).
