@@ -1,8 +1,9 @@
 # Official macro source smoke-test diagnostic
 
-- Checked at UTC: 2026-10-21T01:41:49.668774+00:00
+- Checked at UTC: 2026-10-21T02:20:31.738598+00:00
 - Offline parser test outcome: success
 - Macro collection process outcome: success
+- Coverage health process outcome: success
 - Requested series: 22
 - Retrieved series: 22
 - Current series: 22
@@ -38,6 +39,12 @@
 ## Offline unit test log
 
 ```text
+test_empty_data_error (test_macro_health.MacroHealthTests.test_empty_data_error) ... ok
+test_full_coverage_is_ok (test_macro_health.MacroHealthTests.test_full_coverage_is_ok) ... ok
+test_market_date_mismatch_warning (test_macro_health.MacroHealthTests.test_market_date_mismatch_warning) ... ok
+test_partial_is_warning (test_macro_health.MacroHealthTests.test_partial_is_warning) ... ok
+test_stale_generation_warning (test_macro_health.MacroHealthTests.test_stale_generation_warning) ... ok
+test_stale_record_warning_even_when_complete (test_macro_health.MacroHealthTests.test_stale_record_warning_even_when_complete) ... ok
 test_cboe_parses_daily_close (test_macro_scan.MacroParserSmokeTests.test_cboe_parses_daily_close) ... ok
 test_cboe_single_value_column (test_macro_scan.MacroParserSmokeTests.test_cboe_single_value_column) ... ok
 test_credit_etf_proxies_are_not_oas (test_macro_scan.MacroParserSmokeTests.test_credit_etf_proxies_are_not_oas) ... ok
@@ -49,7 +56,7 @@ test_source_group_routing_fx (test_macro_scan.MacroParserSmokeTests.test_source_
 test_treasury_real_header_uppercase (test_macro_scan.MacroParserSmokeTests.test_treasury_real_header_uppercase) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.092s
+Ran 15 tests in 0.086s
 
 OK
 ```
@@ -59,11 +66,11 @@ OK
 ```text
 MACRO_SOURCE_OK treasury_nominal
 MACRO_SOURCE_OK treasury_real
-MACRO_SOURCE_OK cboe_vvix
 MACRO_SOURCE_OK cboe_vix
+MACRO_SOURCE_OK cboe_vvix
+MACRO_SOURCE_OK ecb_fx
 MACRO_SOURCE_OK nyfed_effr
 MACRO_SOURCE_OK nyfed_sofr
-MACRO_SOURCE_OK ecb_fx
 MACRO_SOURCE_OK bls_CPI_HEADLINE
 MACRO_SOURCE_OK bls_CPI_CORE
 MACRO_SOURCE_OK bls_UNRATE
