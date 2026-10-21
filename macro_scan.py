@@ -119,10 +119,14 @@ def cboe(symbol):
     url=f"https://cdn.cboe.com/api/global/us_indices/daily_prices/{symbol}_History.csv"
     df=pd.read_csv(StringIO(request_bytes(url,timeout=16).decode("utf-8-sig")))
     df.columns=df.columns.map(str).str.strip().str.upper()
-    if not {"DATE","CLOSE"}.issubset(df.columns):
-        raise ValueError(f"Cboe {symbol} daily CSV missing DATE/CLOSE")
+    # VIX often uses DATE/OPEN/HIGH/LOW/CLOSE; some Cboe indices use DATE/SYMBOL.
+    if "DATE" not in df.columns:
+        raise ValueError(f"Cboe {symbol} CSV missing DATE")
+    value_col="CLOSE" if "CLOSE" in df.columns else symbol.upper()
+    if value_col not in df.columns:
+        raise ValueError(f"Cboe {symbol} CSV missing CLOSE or {symbol.upper()}")
     out=pd.DataFrame({"date":pd.to_datetime(df["DATE"],errors="coerce"),
-                      "value":pd.to_numeric(df["CLOSE"],errors="coerce")})
+                      "value":pd.to_numeric(df[value_col],errors="coerce")})
     return out,url
 
 def ecb_fx():
