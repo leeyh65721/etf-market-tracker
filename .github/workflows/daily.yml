@@ -1,6 +1,6 @@
 name: Daily ETF market scan
 on:
-  # Verify supplemental-source parsers, final 8-area archive and rebase-safe push.
+  # Verify corrected BEA PCE and GDP and original-source NFCI freshness safeguards.
   push:
     paths:
       - '.github/workflows/daily.yml'
