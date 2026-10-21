@@ -88,6 +88,17 @@ If market-date-matching HYG, LQD and IEF rows exist in `data/latest.csv`, the sc
 
 **Not in the automatic numeric archive:** direct HY/IG OAS spreads, FOMC target range, broad dollar index/DXY, core PCE, GDP, ISM manufacturing/services PMI, U.S. retail sales, weekly initial jobless claims, gold/copper/gas, comprehensive financial-conditions indices, corporate earnings, ETF flows, geopolitics. The daily and weekly ChatGPT research must investigate material changes independently via legitimate, timely primary sources or mark them unverified. Never infer "no change" merely from a missing record or empty series.
 
+### Automatic quality monitoring after each scheduled scan
+
+The scheduled `daily.yml` runs `macro_health.py` after macro collection and archives:
+- `data/macro/health_latest.json`: machine-readable **OK / WARN / ERROR** assessment, category coverage, missing critical series, source errors, and generation timestamps.
+- `analysis/diagnostics/macro-health-latest.md`: readable summary of coverage and detected problems.
+- `analysis/diagnostics/history/YYYY-MM-DD.md`: same health report indexed by US market date, updated on same-date reruns.
+
+The monitor validates the **22 expected indicator IDs**, internal reported counts and uniqueness, individual staleness labels, numeric/date/HTTPS source sanity, that the market date matches the ETF scanner, and that macro generation is not older than the relevant ETF scan. It flags missing critical indicators (Treasury rates, VIX, FX and EFFR) and emits GitHub Actions warnings plus the job summary. The health status is about **data availability**, not safety of the stock market or investment advice.
+
+When macro collection fails, the ETF scan/archive remains available; missing data is marked WARN/ERROR rather than silently replaced by an earlier `latest_nonempty` snapshot. A GitHub Actions warning is **not automatically a ChatGPT push notification**. The assistant's daily/weekly reports should read the health JSON and describe the implications and missing evidence.
+
 ### Verification and data use
 
 First verify that GitHub Actions produced new files with `requested_series_count=22`, compare `retrieved_series_count`, `current_series_count`, `errors`, `market_date`, and each observation date. A status of `partial` or `unavailable` requires explicit caution. The adjusted / unadjusted BLS series labels are included; some indices are levels, not inflation percentages. A CPI release-date check must be done separately; time-series observation month is **not** the publication date. No API subscription or generative model fee was added. No account holdings, cash, allocation or returns are saved in this public repository.
