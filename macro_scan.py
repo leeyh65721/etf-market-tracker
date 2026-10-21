@@ -1,5 +1,5 @@
 """Public macro-economic time series with conditional evidence notes.
-Official US Treasury, BLS and EIA series (no FRED or paid API key).
+Direct official public Treasury, BLS, EIA, Cboe, ECB and NY Fed series.
 No personal portfolio, paid APIs, financial trades or generative model calls.
 """
 import json
@@ -16,7 +16,7 @@ import pandas as pd
 ROOT = Path(__file__).parent
 DATA = ROOT / "data"
 MACRO = DATA / "macro"
-# No FRED requests: obtain the series directly from the US government publishers.
+# No FRED requests: read from original public data publishers (US agencies, Cboe, ECB).
 SPECS = [
  ("T2Y", "미국 국채 2년", "daily", "%"),
  ("T10Y", "미국 국채 10년", "daily", "%"),
@@ -318,7 +318,10 @@ def main():
             errors[sid]=f"{type(exc).__name__}: {str(exc)[:130]}"
             print("MACRO_ERROR",sid,errors[sid],flush=True)
     signals=conditional_signals(rows)
-    credit_proxies=etf_credit_proxies(market_date)
+    try:
+        credit_proxies=etf_credit_proxies(market_date)
+    except Exception as exc:
+        credit_proxies={"status":"unavailable","reason":f"{type(exc).__name__}: {str(exc)[:120]}"}
     state="ok" if len(rows)==len(SPECS) and all(r["status"]=="ok" for r in rows) else ("partial" if rows else "unavailable")
     report={
       "market_date":str(market_date),
