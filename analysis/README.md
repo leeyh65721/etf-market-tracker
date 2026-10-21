@@ -106,6 +106,14 @@ First verify that GitHub Actions produced new files with `requested_series_count
 **Upstream pages:** [US Treasury](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml) · [BLS Public API](https://www.bls.gov/developers/api_signature_v2.htm) · [EIA Spot Oil](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm) · [Cboe VIX history](https://www.cboe.com/tradable-products/vix/vix-historical-data) · [ECB euro reference exchange rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) · [New York Fed markets API](https://markets.newyorkfed.org/static/docs/markets-api.html) · [ICE index distribution restrictions](https://fred.stlouisfed.org/series/BAMLH0A0HYM2).
 
 
+## BEA PCE / GDP and Chicago Fed NFCI source repair (2026-10-21)
+
+- **Core PCE:** the BEA chart lists most recent first. The parser previously reversed its two most recent months. It now selects the maximum reference month as current and the immediately preceding month as previous. Live verified **August 2026** at **+3.0% year-over-year** (released September 30); period date is not release date.
+- **Real GDP:** BEA displays `Q2 2026 (3rd) | +2.2%`, which the former parser skipped because of the estimate qualifier. Parser now accepts advance/second/third estimates. Live verified **2026 Q2** **+2.2% annualized quarter-over-quarter** (third estimate; released September 30). Quarter reference stored as 2026-04-01.
+- **NFCI:** confirmed Chicago Fed direct official CSV `https://www.chicagofed.org/~/media/publications/nfci/nfci-data-series-csv.csv` with validated columns `Friday_of_Week,NFCI,ANFCI`. However its **last available row was 2026-04-24 during the Oct 21 live test**, which is too old for weekly risk analysis. The institution's newer website drives its downloads through an API which **returned HTTP 403 for the GitHub-hosted runner's IP**. The repository must **keep NFCI marked stale**, never pretend this historical CSV is current. Evaluate a newly permitted publisher feed or ask the research report to consult the current official Chicago Fed release manually. Do not use IP/copyright circumvention or third-party mirrors without access approval.
+- A standalone on-demand GitHub Actions workflow `macro-repair-check.yml` tests parser regressions and separately queries the three official source feeds. It can succeed with NFCI marked `stale` but must report that status explicitly.
+- The existing **22-series** base macro health report remains separate and does not assert that the extra eight categories are fully available.
+
 ## 8 additional macro research categories (2026-10-21)
 
 The daily workflow calls `macro_extra.py` **after** the already-validated 22 series. This is an independent, best-effort layer; errors do **not** change the trusted 22-series `data/macro/latest.json` or its health status.
