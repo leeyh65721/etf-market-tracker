@@ -58,12 +58,26 @@ The GitHub Actions workflow runs `scan.py` and then `build_journal.py` to create
 
 Weekly analysis should read `analysis/technical/` first as the reliable record of ETF-screen changes, then any existing `analysis/daily/` and `analysis/events/` research, and perform a fresh independent macro, rates, oil, FX, credit, earnings and cross-asset review. Missing ChatGPT research must not be represented as saved; all private portfolio allocation judgment stays in ChatGPT, not in public GitHub.
 
-## Automated macro evidence archive
+## Automated macro evidence archive — direct government sources (2026-10-21 revision)
 
-GitHub Actions now runs macro_scan.py after the ETF technical scan. It retrieves a best-effort set of U.S. macro/cross-asset series from the free public FRED graph CSV download endpoints (the FRED API itself may require a key), and saves:
-- data/macro/latest.json and data/macro/history/YYYY-MM-DD.json: source URLs, each indicator's observation date and latest/previous changes, coverage and missing data.
-- analysis/macro/YYYY-MM-DD.md: plain-language **conditional interpretation prompts** for material changes in rates, oil, credit, VIX, USD and employment.
+The daily GitHub Actions workflow runs `macro_scan.py` after the ETF technical scan.
 
-These files are mechanically generated. They are NOT ChatGPT's independent macro news analysis or verified explanations of causality. Missing/stale indicators stay flagged. The files contain NO account/portfolio/holding details. No new paid model or API is involved. Confirm each Actions run creates these files before claiming success.
+**Earlier approach retired:** the original 2026-10-20 macro scanner attempted 18 sequential FRED graph CSV requests. The scheduled run timed out on all 18. FRED's current service terms also place restrictions on AI/ML-connected reuse and storing/archiving FRED service content. This workflow therefore does **not** download or store FRED-supplied data or try to bypass those restrictions.
 
-Weekly ChatGPT research must read analysis/macro/ and data/macro/history/ in addition to data/history/, analysis/technical/, and any successfully saved analysis/daily/ and analysis/events/. Independently verify FRED data and the week's news, actual ETF flows, corporate earnings and forecasts, especially where news could contradict simple macro rules.
+**New primary sources (no paid API keys):**
+- U.S. Treasury daily official yield curve CSV: 2-year, 10-year, their spread, and 10-year real rate.
+- Bureau of Labor Statistics public API: headline CPI, core CPI, unemployment, nonfarm payrolls and final-demand PPI (with individual seasonal adjustment labels).
+- U.S. Energy Information Administration official historical XLS tables: WTI and Brent **spot** crude oil prices. XLS parsing requires `xlrd`.
+
+Up to 11 named series are requested from nine source downloads, using up to four parallel workers, short request timeouts and bounded retries. If one institution is unavailable, other data may still be saved as a **partial** report. Status `ok`, `partial` or `unavailable`, specific source failures, observation date, lag and uncollected indicator list are recorded. This change has not yet passed a live scheduled-run test.
+
+Outputs:
+- `data/macro/latest.json` and `data/macro/history/YYYY-MM-DD.json`: actual source URLs, values/dates, errors and coverage (may contain a zero-series failure record).
+- `data/macro/latest_nonempty.json`: last run with one or more retrieved series (check market date and staleness; **not** necessarily current).
+- `analysis/macro/YYYY-MM-DD.md`: mechanically generated numeric observations and **conditional interpretation prompts**, not independently researched macroeconomic news.
+
+**Not included automatically:** credit spreads, VIX, USD/KRW, dollar index, gold, copper, PCE, PMI, GDP and other important factors; do not interpret omissions as a neutral or unchanged market. Daily/weekly ChatGPT reports should independently check these against timely, permitted sources alongside corporate earnings and ETF flows. Spot oil prices must not be described as futures settlements. Macro data can be revised; previous observations are not original release vintages. No personal portfolio/account data may be written to this public repository.
+
+The macro step in GitHub Actions is non-blocking so a macro failure does not prevent ETF history from being committed. Verify data files and workflow logs after execution. If scheduled ChatGPT's commentary is not successfully written to `analysis/daily/`, it must be manually archived rather than assumed to exist.
+
+**Sources/terms:** https://home.treasury.gov/treasury-daily-interest-rate-xml-feed · https://www.bls.gov/developers/api_signature_v2.htm · https://www.eia.gov/dnav/pet/pet_pri_spt_s1_w.htm · https://fred.stlouisfed.org/legal/
