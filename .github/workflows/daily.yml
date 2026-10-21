@@ -41,6 +41,11 @@ jobs:
           ETF_SCAN_OUTCOME: ${{ steps.etf_scan.outcome }}
           MACRO_COLLECTION_OUTCOME: ${{ steps.macro_collect.outcome }}
         run: python macro_health.py
+      - name: Collect eight supplemental macro categories
+        id: macro_extra
+        continue-on-error: true
+        timeout-minutes: 12
+        run: python macro_extra.py
       - name: Save public market data and diagnostics
         if: always()
         run: |
