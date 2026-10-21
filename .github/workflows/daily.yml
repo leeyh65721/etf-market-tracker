@@ -32,6 +32,10 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_market_links.py' -v
           python -m unittest discover -s tests -p 'test_industry_evidence.py' -v
+      - name: Test collection health and public judgment provenance (offline)
+        run: |
+          python -m unittest discover -s tests -p 'test_system_health.py' -v
+          python -m unittest discover -s tests -p 'test_decision_journal.py' -v
       - name: ETF daily scan
         id: etf_scan
         run: python scan.py
@@ -64,6 +68,23 @@ jobs:
         id: industry_evidence
         continue-on-error: true
         run: python industry_evidence.py
+      - name: Validate dated public ETF investment judgments
+        id: decision_archive
+        continue-on-error: true
+        run: python decision_journal.py
+      - name: Publish comprehensive data health report
+        id: system_health
+        if: always()
+        continue-on-error: true
+        env:
+          ETF_SCAN_OUTCOME: ${{ steps.etf_scan.outcome }}
+          MACRO_COLLECTION_OUTCOME: ${{ steps.macro_collect.outcome }}
+          EXTRA_COLLECTION_OUTCOME: ${{ steps.macro_extra.outcome }}
+          SCREEN_AUDIT_OUTCOME: ${{ steps.signal_audit.outcome }}
+          MARKET_LINKS_OUTCOME: ${{ steps.market_links.outcome }}
+          INDUSTRY_EVIDENCE_OUTCOME: ${{ steps.industry_evidence.outcome }}
+          JUDGMENT_ARCHIVE_OUTCOME: ${{ steps.decision_archive.outcome }}
+        run: python system_health.py
       - name: Save public market data and diagnostics
         if: always()
         run: |
@@ -73,6 +94,8 @@ jobs:
           if [ -d analysis/quality ]; then git add analysis/quality/; fi
           if [ -d analysis/links ]; then git add analysis/links/; fi
           if [ -d analysis/industry ]; then git add analysis/industry/; fi
+          if [ -d analysis/decisions ]; then git add analysis/decisions/; fi
+          if [ -d analysis/health ]; then git add analysis/health/; fi
           if ! git diff --cached --quiet; then
             git commit -m "Update ETF market scan"
             # Interactive GitHub edits can land while the scan is running.
@@ -99,6 +122,39 @@ jobs:
             analysis/quality/
             analysis/links/
             analysis/industry/
+            analysis/decisions/
+            analysis/health/
             analysis/macro/
             analysis/diagnostics/macro-health-latest.md
           if-no-files-found: warn
+
+      - name: Fail run only after report is saved, if essential data are unsafe
+        if: always()
+        env:
+          GITHUB_RUN_ID: ${{ github.run_id }}
+        run: |
+          python - <<'PY'
+          import json,os,sys
+          from pathlib import Path
+          p=Path("data/health/latest.json")
+          if not p.is_file():
+              print("::error::No end-to-end health report was published")
+              sys.exit(1)
+          try:
+              report=json.loads(p.read_text(encoding="utf-8"))
+          except (OSError,ValueError) as e:
+              print(f"::error::Health report unreadable: {e}")
+              sys.exit(1)
+          if str(report.get("github_run_id")) != os.environ["GITHUB_RUN_ID"]:
+              print("::error::Health report belongs to a DIFFERENT workflow run")
+              sys.exit(1)
+          print("DAILY_MARKET_HEALTH",report.get("status"),report.get("us_market_date"))
+          if report.get("status") == "ERROR":
+              print("::error::End-to-end data integrity failed; see analysis/health/latest.md")
+              sys.exit(1)
+          if report.get("status") not in ("WARN","OK"):
+              print("::error::Unknown health state")
+              sys.exit(1)
+          if report.get("status")=="WARN":
+              print("::warning::Partial data; report not fully current. See analysis/health/latest.md")
+          PY
