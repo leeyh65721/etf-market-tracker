@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-10-21T02:38:23.028833+00:00",
+  "generated_at_utc": "2026-10-21T02:42:20.164299+00:00",
   "market_date": "2026-10-20",
   "coverage": "8 named categories, 10 separately labelled indicators",
   "requested_indicators": 10,
-  "ok_indicators": 4,
+  "ok_indicators": 5,
   "status": "partial",
   "categories": {
     "pce": {
@@ -17,7 +17,7 @@
       "indicators": [
         "INITIAL_CLAIMS"
       ],
-      "observed": 0,
+      "observed": 1,
       "total": 1
     },
     "retail_sales": {
@@ -84,9 +84,15 @@
     {
       "series_id": "INITIAL_CLAIMS",
       "name": "미국 주간 신규 실업수당 청구(계절조정)",
-      "status": "unavailable",
+      "frequency": "weekly",
+      "value": 199000.0,
+      "unit": "persons",
+      "observation_date": "2026-10-10",
       "source_url": "https://www.dol.gov/ui/data.pdf",
-      "error": "ValueError: No validated official week/seasonally-adjusted initial claims in DOL PDF"
+      "collection_method": "DOL Weekly Claims PDF",
+      "notes": "Seasonally adjusted initial claims; week ending date",
+      "status": "ok",
+      "age_days": 10
     },
     {
       "series_id": "RETAIL_SALES",
@@ -105,8 +111,8 @@
       "series_id": "NFCI",
       "name": "시카고 연준 금융여건지수",
       "status": "unavailable",
-      "source_url": "https://www.chicagofed.org/research/data/nfci/current-data-aws",
-      "error": "ValueError: Chicago Fed current page has no documented NFCI CSV link"
+      "source_url": "https://www.chicagofed.org/research/data/nfci/current-data",
+      "error": "ValueError: No verifiable Chicago Fed NFCI CSV or dated official summary"
     },
     {
       "series_id": "MFG_NEW_ORDERS",
