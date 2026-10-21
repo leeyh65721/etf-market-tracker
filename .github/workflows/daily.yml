@@ -26,10 +26,16 @@ jobs:
       - name: Smoke-test macro parsers (offline)
         continue-on-error: true
         run: python -m unittest discover -s tests -p 'test_macro*.py' -v
+      - name: Verify forward-audit logic (offline)
+        run: python -m unittest discover -s tests -p 'test_signal_audit.py' -v
       - name: ETF daily scan
         id: etf_scan
         run: python scan.py
       - run: python build_journal.py
+      - name: Freeze and audit prospective ETF candidate observations
+        id: signal_audit
+        continue-on-error: true
+        run: python signal_audit.py
       - name: Collect official macroeconomic indicators
         id: macro_collect
         continue-on-error: true
@@ -51,7 +57,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ analysis/technical/ analysis/macro/ analysis/diagnostics/macro-health-latest.md analysis/diagnostics/history/
+          git add data/ analysis/technical/ analysis/macro/ analysis/diagnostics/macro-health-latest.md analysis/diagnostics/history/ analysis/quality/
           if ! git diff --cached --quiet; then
             git commit -m "Update ETF market scan"
             # Interactive GitHub edits can land while the scan is running.
@@ -75,6 +81,7 @@ jobs:
           path: |
             data/
             analysis/technical/
+            analysis/quality/
             analysis/macro/
             analysis/diagnostics/macro-health-latest.md
           if-no-files-found: warn
