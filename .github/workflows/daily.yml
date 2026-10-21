@@ -1,6 +1,6 @@
 name: Daily ETF market scan
 on:
-  # Run once when updating the workflow itself; normal jobs still run on schedule.
+  # Verify supplemental-source parsers, final 8-area archive and rebase-safe push.
   push:
     paths:
       - '.github/workflows/daily.yml'
