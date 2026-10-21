@@ -1,0 +1,40 @@
+name: Verify PCE GDP NFCI repairs
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/macro-repair-check.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Run offline regression tests
+        run: python -m unittest discover -s tests -p 'test_macro_extra.py' -v
+      - name: Test BEA core PCE, real GDP and Chicago Fed NFCI against live sources
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import date
+          from macro_extra import collect_one
+          market=date(2026,10,20)
+          results=[]
+          for key in ("CORE_PCE","REAL_GDP","NFCI"):
+            row=collect_one(key,market)
+            results.append(row)
+            print("REPAIR_CHECK",json.dumps(row,ensure_ascii=False),flush=True)
+          validated={r["series_id"]:r for r in results}
+          for key in ("CORE_PCE","REAL_GDP"):
+            assert validated[key]["status"]=="ok",f"{key} is not current; cannot claim repaired"
+          assert validated["CORE_PCE"]["observation_date"]=="2026-08-01"
+          assert validated["REAL_GDP"]["observation_date"]=="2026-04-01"
+          print("BEA_BOTH_VALIDATED",flush=True)
+          print("NFCI_STATUS",validated["NFCI"]["status"],flush=True)
+          PY
