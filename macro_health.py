@@ -193,6 +193,11 @@ def main():
     technical, technical_error = read_json(ROOT / "data" / "latest.json")
     macro, macro_error = read_json(MACRO / "latest.json")
     result = inspect(technical, macro)
+    for step_name in ("ETF_SCAN_OUTCOME", "MACRO_COLLECTION_OUTCOME"):
+        outcome = os.environ.get(step_name)
+        if outcome and outcome != "success":
+            result["messages"].append(f"GitHub Actions step {step_name} = {outcome}")
+            result["status"] = "ERROR"
     for issue in (technical_error, macro_error):
         if issue:
             result["messages"].append(issue)
