@@ -112,7 +112,7 @@ def parse_core_pce(raw):
         values.append((stamp,float(m.group(3))))
     if len(set(d for d,_ in values))<2:raise ValueError("BEA PCE chart rows not found")
     series=dict(values)
-    current,prior=sorted(series)[-2:]
+    prior,current=sorted(series)[-2:]
     return record("CORE_PCE",series[current],current,"% YoY","BEA headline chart",
                   "Released core PCE year-over-year rate; release date requires independent checking",
                   previous=series[prior],previous_observed=prior)
@@ -121,11 +121,13 @@ def parse_core_pce(raw):
 def parse_real_gdp(raw):
     txt=BeautifulSoup(raw,"html.parser").get_text(" ",strip=True)
     # BEA front-page chart: '2nd Quarter 2026 +2.2%' or 'Q2 2026 +2.2%'.
-    rx=r"\b(?:Q([1-4])\s*(20\d{2})|([1-4])(?:st|nd|rd|th)?\s+Quarter\s+(20\d{2}))\s*(?:\||:)?\s*([+-]?\d{1,2}(?:\.\d+)?)\s*%"
+    rx=(r"\b(?:Q([1-4])\s*(20\d{2})|([1-4])(?:st|nd|rd|th)?\s+Quarter\s+(20\d{2}))"
+        r"\s*(?:\((?:[1-3](?:st|nd|rd)|Adv(?:ance)?|Final)\))?\s*(?:\||:)?\s*"
+        r"([+-]?\d{1,2}(?:\.\d+)?)\s*%")
     values={}
     for m in re.finditer(rx,txt,re.I):
         q=int(m.group(1) or m.group(3));y=int(m.group(2) or m.group(4))
-        values[date(y,(q-1)*3+1,1)]=float(m.group(5))
+        values.setdefault(date(y,(q-1)*3+1,1),float(m.group(5)))
     if values:
         d=max(values)
         return record("REAL_GDP",values[d],d,"% q/q annualized","BEA headline GDP chart",
