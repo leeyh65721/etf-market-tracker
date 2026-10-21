@@ -1,0 +1,25 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "archived_on_utc_date": "2026-10-21",
+  "provenance": "retrospective_archived_report",
+  "comparison_baseline": "SPY",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "trade_instruction": false,
+  "record_id": "2026-10-19-XLY-watch",
+  "ticker": "XLY",
+  "stance": "watch",
+  "us_market_date": "2026-10-19",
+  "original_report_date_kst": "2026-10-20",
+  "source_report": "analysis/daily/2026-10-20.md",
+  "verbatim_source_excerpt": "Opportunity watch list: **XLY, IGV** (newly highlighted in the 2026-10-20 morning report).",
+  "original_close_usd": 114.46,
+  "original_spy_close_usd": 766.48,
+  "thesis": "XLY was highlighted as a watch list candidate based on relative strength, with continuation unproven and the prior 63-session return slightly negative.",
+  "counterevidence": "Fragile market breadth, potentially elevated interest rates and soft 63-session trend reduce confidence in continuation.",
+  "invalidation": "Fading relative strength, persistently weak real demand or declining earnings and company guidance undermine the watch thesis.",
+  "revisit_trigger": "Reassess after 5/10/20 US sessions against SPY and independently verify sector earnings and consumer trends."
+}
