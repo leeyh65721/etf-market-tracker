@@ -26,16 +26,23 @@ jobs:
       - name: Smoke-test macro parsers (offline)
         continue-on-error: true
         run: python -m unittest discover -s tests -p 'test_macro*.py' -v
-      - run: python scan.py
+      - name: ETF daily scan
+        id: etf_scan
+        run: python scan.py
       - run: python build_journal.py
       - name: Collect official macroeconomic indicators
+        id: macro_collect
         continue-on-error: true
         run: python macro_scan.py
       - name: Validate macro series completeness and freshness
         if: always()
         continue-on-error: true
+        env:
+          ETF_SCAN_OUTCOME: ${{ steps.etf_scan.outcome }}
+          MACRO_COLLECTION_OUTCOME: ${{ steps.macro_collect.outcome }}
         run: python macro_health.py
-      - name: Save public market data
+      - name: Save public market data and diagnostics
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -52,4 +59,5 @@ jobs:
             data/
             analysis/technical/
             analysis/macro/
+            analysis/diagnostics/macro-health-latest.md
           if-no-files-found: warn
