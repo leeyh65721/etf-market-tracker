@@ -77,9 +77,11 @@ def treasury(real, year):
          f"daily-treasury-rates.csv/{year}/all?type={kind}"
          f"&field_tdr_date_value={year}&page&_format=csv")
     df=pd.read_csv(StringIO(request_bytes(url).decode("utf-8-sig")))
-    df.columns=df.columns.map(str).str.strip()
-    if not {"Date","10 Yr"}.issubset(df.columns):
-        raise ValueError("Treasury CSV has no Date/10 Yr columns")
+    # Treasury nominal CSV uses "10 Yr" while real/TIPS CSV uses "10 YR".
+    # Normalize column names before checking to handle both source schemas.
+    df.columns=df.columns.map(str).str.strip().str.upper()
+    if not {"DATE","10 YR"}.issubset(df.columns):
+        raise ValueError(f"Treasury CSV missing DATE/10 YR; got {list(df.columns)[:10]}")
     return df,url
 
 def bls(sid):
@@ -232,11 +234,11 @@ def collect(sid, start, date):
     if group=="ecb_fx":
         result=pd.DataFrame({"date":df["date"],"value":df["usdkrw" if sid=="USD_KRW_ECB" else "eurusd"]})
     elif group.startswith("treasury"):
-        d=pd.to_datetime(df["Date"],errors="coerce")
+        d=pd.to_datetime(df["DATE"],errors="coerce")
         if sid=="T10Y2Y":
-            value=pd.to_numeric(df["10 Yr"],errors="coerce") - pd.to_numeric(df["2 Yr"],errors="coerce")
+            value=pd.to_numeric(df["10 YR"],errors="coerce") - pd.to_numeric(df["2 YR"],errors="coerce")
         else:
-            col="2 Yr" if sid=="T2Y" else "10 Yr"
+            col="2 YR" if sid=="T2Y" else "10 YR"
             value=pd.to_numeric(df[col],errors="coerce")
         result=pd.DataFrame({"date":d,"value":value})
     else:
@@ -252,7 +254,10 @@ def measure(spec,start,date):
     current=t.iloc[-1]
     previous=t.iloc[-2]
     ago=t.iloc[-6] if len(t)>=6 else None
-    stale=(date-current.date.date()).days > {"daily":10,"monthly":78,"quarterly":190}[freq]
+    # JOLTS is generally released with a longer lag than CPI/payrolls; avoid
+    # mislabeling the latest official observation as stale solely on its month.
+    max_age_days=105 if sid=="JOLTS_OPENINGS" else {"daily":10,"monthly":78,"quarterly":190}[freq]
+    stale=(date-current.date.date()).days > max_age_days
     row={
       "series_id":sid,"name":name,"frequency":freq,"unit":unit,"source_url":url,
       "observation_date":str(current.date.date()),
