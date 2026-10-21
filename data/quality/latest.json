@@ -38,8 +38,8 @@
     }
   },
   "observations": [],
-  "generated_at_utc": "2026-10-21T06:37:53.635836+00:00",
-  "new_daily_lock_created": true,
+  "generated_at_utc": "2026-10-21T06:52:14.409772+00:00",
+  "new_daily_lock_created": false,
   "locked_current_us_date": "2026-10-20",
   "current_technical_candidate_entries": 0,
   "latest_verified_universe_fraction": 0.96034,

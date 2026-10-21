@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-10-21T06:39:15.059283+00:00",
+  "generated_at_utc": "2026-10-21T06:53:20.985433+00:00",
   "market_date": "2026-10-20",
   "coverage": "8 named categories, 10 separately labelled indicators",
   "requested_indicators": 10,
-  "ok_indicators": 5,
+  "ok_indicators": 7,
   "status": "partial",
   "categories": {
     "pce": {
@@ -24,7 +24,7 @@
       "indicators": [
         "RETAIL_SALES"
       ],
-      "observed": 0,
+      "observed": 1,
       "total": 1
     },
     "financial_conditions": {
@@ -39,7 +39,7 @@
         "MFG_NEW_ORDERS",
         "DURABLE_NEW_ORDERS"
       ],
-      "observed": 1,
+      "observed": 2,
       "total": 2
     },
     "ism_pmi": {
@@ -97,9 +97,15 @@
     {
       "series_id": "RETAIL_SALES",
       "name": "미국 소매·음식서비스 매출(월간 전월비)",
-      "status": "unavailable",
+      "frequency": "monthly",
+      "value": 0.8,
+      "unit": "% m/m",
+      "observation_date": "2026-09-01",
       "source_url": "https://www.census.gov/retail/sales.html",
-      "error": "RuntimeError: HTTPError: 500 Server Error: Internal Server Error for url: https://www.census.gov/retail/sales.html"
+      "collection_method": "Census advance retail release summary",
+      "notes": "Seasonally adjusted but nominal; retail plus food services, subject to revisions",
+      "status": "ok",
+      "age_days": 49
     },
     {
       "series_id": "NFCI",
@@ -132,9 +138,15 @@
     {
       "series_id": "DURABLE_NEW_ORDERS",
       "name": "미국 내구재 신규주문(전월비)",
-      "status": "unavailable",
+      "frequency": "monthly",
+      "value": 0.0,
+      "unit": "% m/m",
+      "observation_date": "2026-08-01",
       "source_url": "https://www.census.gov/manufacturing/m3/adv/current/index.html",
-      "error": "RuntimeError: HTTPError: 404 Client Error: Not Found for url: https://www.census.gov/manufacturing/m3/adv/current/index.html"
+      "collection_method": "Census M3 release summary",
+      "notes": "Nominal seasonally adjusted order change; zero may be rounded 'virtually unchanged'",
+      "status": "ok",
+      "age_days": 80
     },
     {
       "series_id": "ISM_MANUFACTURING",
