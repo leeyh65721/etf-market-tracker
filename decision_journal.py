@@ -104,7 +104,7 @@ def check_entry(item,root=ROOT):
     excerpt=str(item.get("verbatim_source_excerpt",""))
     if len(excerpt)<14 or excerpt not in text:
         raise ValueError("Specific original text excerpt not found in stored report")
-    if symbol not in excerpt and symbol not in str(item.get("thesis","")):
+    if symbol!="MARKET" and symbol not in excerpt and symbol not in str(item.get("thesis","")):
         raise ValueError("ETF not anchored to original report excerpt")
     if str(kst) not in src.name:
         # Events may have US date in title; verify explicit report day for dated daily/weekly files.
