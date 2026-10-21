@@ -54,7 +54,19 @@ jobs:
           git add data/ analysis/technical/ analysis/macro/ analysis/diagnostics/macro-health-latest.md analysis/diagnostics/history/
           if ! git diff --cached --quiet; then
             git commit -m "Update ETF market scan"
-            git push
+            # Interactive GitHub edits can land while the scan is running.
+            # Rebase over them and retry instead of dropping collected data.
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then
+                break
+              fi
+              if [ "$attempt" = 3 ]; then
+                echo "::error::Unable to publish public scan after 3 retries"
+                exit 1
+              fi
+              sleep 3
+            done
           fi
       - uses: actions/upload-artifact@v4
         if: always()
