@@ -28,6 +28,10 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_macro*.py' -v
       - name: Verify forward-audit logic (offline)
         run: python -m unittest discover -s tests -p 'test_signal_audit.py' -v
+      - name: Verify macro ETF matching and industry evidence rules (offline)
+        run: |
+          python -m unittest discover -s tests -p 'test_market_links.py' -v
+          python -m unittest discover -s tests -p 'test_industry_evidence.py' -v
       - name: ETF daily scan
         id: etf_scan
         run: python scan.py
@@ -52,6 +56,14 @@ jobs:
         continue-on-error: true
         timeout-minutes: 12
         run: python macro_extra.py
+      - name: Link same-date macro observations and ETF market movement
+        id: market_links
+        continue-on-error: true
+        run: python market_links.py
+      - name: Verify issuer filings and industry evidence ledger
+        id: industry_evidence
+        continue-on-error: true
+        run: python industry_evidence.py
       - name: Save public market data and diagnostics
         if: always()
         run: |
@@ -59,6 +71,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/ analysis/technical/ analysis/macro/ analysis/diagnostics/macro-health-latest.md analysis/diagnostics/history/
           if [ -d analysis/quality ]; then git add analysis/quality/; fi
+          if [ -d analysis/links ]; then git add analysis/links/; fi
+          if [ -d analysis/industry ]; then git add analysis/industry/; fi
           if ! git diff --cached --quiet; then
             git commit -m "Update ETF market scan"
             # Interactive GitHub edits can land while the scan is running.
@@ -83,6 +97,8 @@ jobs:
             data/
             analysis/technical/
             analysis/quality/
+            analysis/links/
+            analysis/industry/
             analysis/macro/
             analysis/diagnostics/macro-health-latest.md
           if-no-files-found: warn
