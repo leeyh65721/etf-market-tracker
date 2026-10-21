@@ -70,6 +70,24 @@ class MacroParserSmokeTests(unittest.TestCase):
             self.assertIn("not yield spread",actual["metric_type"])
             self.assertEqual(actual["series"]["HY_vs_treasury"]["5d_price_return_gap_pp"],-1.5)
 
+    def test_treasury_real_header_uppercase(self):
+        # Treasury TIPS CSV uses 10 YR, unlike nominal 10 Yr.
+        csv=b"Date,5 YR,7 YR,10 YR,20 YR\n10/19/2026,2.7,2.8,2.9,3.0\n10/20/2026,2.8,2.9,3.1,3.2\n"
+        with patch.object(m,"request_bytes",return_value=csv):
+            df,url=m.treasury(True,2026)
+        self.assertIn("10 YR",df.columns)
+        self.assertIn("DATE",df.columns)
+        self.assertAlmostEqual(float(df["10 YR"].iloc[-1]),3.1)
+
+    def test_jolts_recent_month_is_not_stale(self):
+        from datetime import date
+        df=pd.DataFrame({"date":[pd.Timestamp("2026-07-01"),pd.Timestamp("2026-08-01")],
+                         "value":[7200.0,7100.0]})
+        with patch.object(m,"collect",return_value=(df,"https://api.bls.gov/test")):
+            row=m.measure(("JOLTS_OPENINGS","구인공석","monthly","thousand"),
+                          "2026-01-01",date(2026,10,20))
+        self.assertEqual(row["status"],"ok")
+
     def test_source_group_routing_fx(self):
         from datetime import date
         data=pd.DataFrame([
