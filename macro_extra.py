@@ -324,6 +324,10 @@ def main():
                 results[k]={"series_id":k,"name":SOURCES[k][0],"status":"unavailable",
                             "source_url":SOURCES[k][2],"error":f"{type(exc).__name__}: {str(exc)[:120]}"}
             print("EXTRA_MACRO",k,results[k]["status"],flush=True)
+            if k in ("CORE_PCE","REAL_GDP","NFCI") and results[k]["status"]!="ok":
+                observed=results[k].get("observation_date","no valid official observation")
+                issue=results[k].get("error","published data are older than the permitted monitoring window")
+                print(f"::warning::{k} not current ({observed}): {issue}",flush=True)
     categories={}
     for group,ids in CATEGORIES:
         categories[group]={"indicators":list(ids),"observed":sum(results[x]["status"]=="ok" for x in ids),
