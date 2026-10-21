@@ -1,5 +1,5 @@
 name: Macro data smoke test
-# One-shot push trigger for the expanded 22-series official-source collector.
+# Re-test the fixed Treasury real-yield header and updated JOLTS lag handling.
 on:
   workflow_dispatch:
   push:
