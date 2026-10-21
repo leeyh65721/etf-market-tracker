@@ -1,0 +1,25 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "archived_on_utc_date": "2026-10-21",
+  "provenance": "retrospective_archived_report",
+  "comparison_baseline": "SPY",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "trade_instruction": false,
+  "record_id": "2026-10-20-XLV-watch",
+  "ticker": "XLV",
+  "stance": "positive_watch",
+  "us_market_date": "2026-10-20",
+  "original_report_date_kst": "2026-10-21",
+  "source_report": "analysis/daily/2026-10-21.md",
+  "verbatim_source_excerpt": "**XLV — 헬스케어 전반**",
+  "original_close_usd": 179.82,
+  "original_spy_close_usd": 769.05,
+  "thesis": "The report began closer observation of XLV on relative strength and a price above its 50-session average, without proposing a purchase.",
+  "counterevidence": "A prior price rally may already be reflected, while pharmaceutical, insurance and equipment fundamentals and regulation differ.",
+  "invalidation": "Persistent deterioration relative to SPY, a renewed break below the 50-session average, or worsening major company earnings.",
+  "revisit_trigger": "Reassess 5/10/20 US sessions later with sector-wide results, ETF structure and valuation."
+}
