@@ -39,6 +39,13 @@ class MacroParserSmokeTests(unittest.TestCase):
         self.assertEqual(len(df),2)
         self.assertAlmostEqual(float(df.iloc[-1]["value"]),23)
 
+    def test_cboe_single_value_column(self):
+        sample=b"DATE,VVIX\n10/19/2026,110.5\n10/20/2026,112.25\n"
+        with patch.object(m,"request_bytes",return_value=sample):
+            df,url=m.cboe("VVIX")
+        self.assertEqual(len(df),2)
+        self.assertAlmostEqual(float(df.iloc[-1]["value"]),112.25)
+
     def test_nyfed_parses_effective_dates(self):
         payload={"refRates":[
             {"type":"EFFR","effectiveDate":"2026-10-19","percentRate":4.9},
