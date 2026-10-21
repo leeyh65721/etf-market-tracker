@@ -47,6 +47,24 @@ jobs:
               for match in matches[-3:]:
                pos=match.start()
                print('RAW_MATCH',pat,pos,repr(r.text[max(0,pos-220):pos+470]),flush=True)
+             if 'current-data-aws' in url:
+              endpoint='https://nonprod.data.chicagofed.org/cfed-drm-dev-chicago/NFCI'
+              try:
+               er=requests.get(endpoint,timeout=18,headers={'Content-Type':'application/json','AuthRole':'default'})
+               print('API_STATUS',er.status_code,len(er.content),er.url,flush=True)
+               if er.status_code==200:
+                data=er.json()
+                print('API_TOP_KEYS',list(data.keys()),'PUBLISHED',data.get('publish_datetime'),flush=True)
+                print('API_DATA_KEYS',list(data.get('data',{}).keys())[:45],flush=True)
+                keys=['nfciChartSeriesCsvCsv','nfciDataSeriesCsvCsv']
+                for key in keys:
+                 item=data.get('data',{}).get(key)
+                 print('API_CSV_ITEM',key,repr(item)[:1200],flush=True)
+                 if isinstance(item,dict) and str(item.get('file_path','')).startswith('https://'):
+                  fr=requests.get(item['file_path'],timeout=18)
+                  print('CSV_STATUS',fr.status_code,len(fr.content),'HEAD',repr(fr.text[:500]),flush=True)
+               else:print('API_ERROR',repr(er.text[:300]),flush=True)
+              except Exception as ex:print('API_FETCH_ERROR',repr(ex),flush=True)
              print('JS_ASSETS',[(x.get('src','') or '') for x in soup.select('script[src]')][:80],flush=True)
              from urllib.parse import urljoin
              for script in soup.select('script[src]'):
