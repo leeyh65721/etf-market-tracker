@@ -7,3 +7,6 @@ requests>=2.31,<3
 beautifulsoup4>=4.12,<5
 pypdf>=5,<7
 lxml>=5,<7
+
+# Official XNYS trading sessions; required for unbiased 5/10/20-session evaluation.
+exchange-calendars>=4.5,<5
