@@ -234,6 +234,7 @@ def analyze(root=ROOT,now=None,steps=None):
            and z["code"] not in prior_codes]
     return {
         "us_market_date":market,
+        "github_run_id":os.environ.get("GITHUB_RUN_ID"),
         "expected_latest_closed_nyse_session":expected,
         "generated_at_utc":now.astimezone(timezone.utc).isoformat(),
         "status":severity,
