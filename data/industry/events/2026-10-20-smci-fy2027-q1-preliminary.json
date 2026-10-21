@@ -1,0 +1,54 @@
+{
+  "event_id": "2026-10-20-smci-fy2027-q1-preliminary",
+  "issuer": "Super Micro Computer, Inc.",
+  "ticker": "SMCI",
+  "industry": "AI server integration and datacenter systems",
+  "published_at_utc": "2026-10-20T20:44:26Z",
+  "period_label": "FY2027 Q1, quarter ended 2026-09-30",
+  "primary_source_url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm",
+  "source_type": "SEC_EDGAR",
+  "source_checked_date": "2026-10-21",
+  "reporting_status": "preliminary_unaudited",
+  "metrics": [
+    {
+      "name": "Revenue guidance range",
+      "category": "revenue",
+      "unit": "USD billion",
+      "current_low": 18.5,
+      "current_high": 19.5,
+      "comparison_low": 14.5,
+      "comparison_high": 15.5,
+      "comparison_basis": "Prior management guidance for the SAME FY2027 Q1, not prior-year actual revenue",
+      "source_label": "SEC 8-K exhibit 99.1 preliminary business update"
+    },
+    {
+      "name": "Gross margin guidance range",
+      "category": "gross_margin",
+      "unit": "%",
+      "current_low": 12,
+      "current_high": 12.5,
+      "comparison_low": 10.4,
+      "comparison_high": 10.8,
+      "comparison_basis": "Prior management guidance for the SAME FY2027 Q1, not audited realized gross margin",
+      "source_label": "SEC 8-K exhibit 99.1 preliminary business update"
+    }
+  ],
+  "not_disclosed": [
+    "Manufacturer-level chip new order counts",
+    "Customer purchase orders and backlog",
+    "Component inventory and shipment quantities",
+    "Final audited net income or realized cash flow"
+  ],
+  "related_etfs": [
+    "SOXX",
+    "XLK"
+  ],
+  "transmission_hypothesis": "Higher preliminary server vendor revenue may support an indirect demand hypothesis for some upstream chips only if corroborated by supplier orders, actual shipments and cash conversion. It does not imply SOXX constituents gained revenue or SOXX price rose on October 20.",
+  "counterevidence": [
+    "Company estimates are unaudited and may change when finalized.",
+    "One downstream AI-server integrator cannot establish broad semiconductor orders or shipment growth.",
+    "Higher revenue can reflect timing, backlog conversion, product mix or competitive shifts, not necessarily new chip bookings.",
+    "Filing acceptance was after the 2026-10-20 NYSE close; that session's ETF close cannot be attributed to the filing."
+  ],
+  "recheck_trigger": "Company's November 3, 2026 final FY2027 Q1 results; SEC follow-up filings and matched supplier order/shipment reports."
+}
