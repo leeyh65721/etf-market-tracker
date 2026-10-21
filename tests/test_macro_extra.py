@@ -45,6 +45,24 @@ class ExtraMacroTests(unittest.TestCase):
         self.assertEqual(r["value"],2.2)
         self.assertEqual(r["observation_date"],"2026-04-01")
 
+    def test_bea_gdp_q2_third_estimate_not_previous_quarter(self):
+        src=('<html><body><h2>GDP (Third Estimate), 2nd Quarter 2026</h2>'
+             '<div>Q2 2026 (3rd) | +2.2%</div>'
+             '<div>Q1 2026 | +2.5%</div></body></html>').encode()
+        row=e.parse_real_gdp(src)
+        self.assertEqual(row["observation_date"],"2026-04-01")
+        self.assertEqual(row["value"],2.2)
+
+    def test_core_pce_most_recent_observation_even_when_page_is_reverse_sorted(self):
+        src=('<html><body><h2>Change From Month One Year Ago</h2>'
+             'August 2026 +3.0% July 2026 +2.9% June 2026 +3.1% '
+             'May 2026 +3.2%</body></html>').encode()
+        row=e.parse_core_pce(src)
+        self.assertEqual(row["observation_date"],"2026-08-01")
+        self.assertEqual(row["previous_date"],"2026-07-01")
+        self.assertEqual(row["value"],3.0)
+        self.assertEqual(row["previous_value"],2.9)
+
     def test_dol_pdf_week_year_from_release_header(self):
         from unittest.mock import MagicMock
         import macro_extra as e
