@@ -51,10 +51,15 @@ jobs:
              from urllib.parse import urljoin
              for script in soup.select('script[src]'):
               jurl=urljoin(url,script.get('src',''))
-              if 'nfci-downloads' not in jurl:continue
+              if not ('nfci-downloads' in jurl or 'drm-utils' in jurl):continue
               try:
                jr=requests.get(jurl,timeout=15,headers={'User-Agent':'Mozilla/5.0'})
-               print('DOWNLOAD_JS',jr.status_code,len(jr.content),jurl,repr(jr.text[:12000]),flush=True)
+               print('DOWNLOAD_JS',jr.status_code,len(jr.content),jurl,repr(jr.text[:550]),flush=True)
+               for pat in ['requestDownloadsData','downloadsEndpoint','apiEndpoint','data.chicagofed','nfciChartSeriesCsvCsv','fetch(']:
+                matches=list(re.finditer(re.escape(pat),jr.text,re.I))
+                for match in matches[-4:]:
+                 pos=match.start()
+                 print('JS_MATCH',pat,pos,repr(jr.text[max(0,pos-600):pos+1400]),flush=True)
               except Exception as exc:print('DOWNLOAD_JS_ERR',repr(exc),flush=True)
              for node in soup.find_all('script'):
               text=node.get_text(' ',strip=True)
