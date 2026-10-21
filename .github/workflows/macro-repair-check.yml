@@ -1,4 +1,5 @@
 name: Verify PCE GDP NFCI repairs
+# Full retest after replacing dynamic Chicago Fed link with the official static CSV.
 on:
   workflow_dispatch:
   push:
