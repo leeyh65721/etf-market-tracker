@@ -1,16 +1,16 @@
 {
-  "generated_at_utc": "2026-10-21T02:42:20.164299+00:00",
+  "generated_at_utc": "2026-10-21T03:10:06.471111+00:00",
   "market_date": "2026-10-20",
   "coverage": "8 named categories, 10 separately labelled indicators",
   "requested_indicators": 10,
-  "ok_indicators": 5,
+  "ok_indicators": 7,
   "status": "partial",
   "categories": {
     "pce": {
       "indicators": [
         "CORE_PCE"
       ],
-      "observed": 0,
+      "observed": 1,
       "total": 1
     },
     "weekly_claims": {
@@ -54,7 +54,7 @@
       "indicators": [
         "REAL_GDP"
       ],
-      "observed": 0,
+      "observed": 1,
       "total": 1
     },
     "market_breadth": {
@@ -72,14 +72,14 @@
       "frequency": "monthly",
       "value": 3.0,
       "unit": "% YoY",
-      "observation_date": "2026-07-01",
+      "observation_date": "2026-08-01",
       "source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
       "collection_method": "BEA headline chart",
       "notes": "Released core PCE year-over-year rate; release date requires independent checking",
       "previous_value": 3.0,
-      "previous_date": "2026-08-01",
-      "status": "stale",
-      "age_days": 111
+      "previous_date": "2026-07-01",
+      "status": "ok",
+      "age_days": 80
     },
     {
       "series_id": "INITIAL_CLAIMS",
@@ -110,9 +110,17 @@
     {
       "series_id": "NFCI",
       "name": "시카고 연준 금융여건지수",
-      "status": "unavailable",
-      "source_url": "https://www.chicagofed.org/research/data/nfci/current-data",
-      "error": "ValueError: No verifiable Chicago Fed NFCI CSV or dated official summary"
+      "frequency": "weekly",
+      "value": -0.518,
+      "unit": "index",
+      "observation_date": "2026-04-24",
+      "source_url": "https://www.chicagofed.org/~/media/publications/nfci/nfci-data-series-csv.csv",
+      "collection_method": "Chicago Fed official weekly NFCI indexes CSV",
+      "notes": "Weekly Friday observation; positive=tighter, negative=looser than historical average. Revisions possible.",
+      "previous_value": -0.498,
+      "previous_date": "2026-04-17",
+      "status": "stale",
+      "age_days": 179
     },
     {
       "series_id": "MFG_NEW_ORDERS",
@@ -158,28 +166,29 @@
       "series_id": "REAL_GDP",
       "name": "미국 실질 GDP 성장률(전기비 연율)",
       "frequency": "quarterly",
-      "value": 2.5,
+      "value": 2.2,
       "unit": "% q/q annualized",
-      "observation_date": "2026-01-01",
+      "observation_date": "2026-04-01",
       "source_url": "https://www.bea.gov/data/gdp/gross-domestic-product",
       "collection_method": "BEA headline GDP chart",
       "notes": "Quarterly real GDP, annualized; check latest revision",
-      "status": "stale",
-      "age_days": 292
+      "previous_value": 2.5,
+      "status": "ok",
+      "age_days": 202
     },
     {
       "series_id": "SP500_BREADTH",
       "name": "S&P 500 구성종목 상승 비율(자체 산출)",
       "frequency": "daily",
-      "value": 80.47809,
+      "value": 80.31809,
       "unit": "% constituents up",
       "observation_date": "2026-10-20",
       "source_url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
       "collection_method": "S&P 500 listed constituents via Wikipedia, adjusted daily close via yfinance",
       "notes": "Advancing / all valid constituents; not NYSE-wide A/D ratio; prices unofficial",
-      "sample_size": 502,
+      "sample_size": 503,
       "advanced": 404,
-      "declined": 98,
+      "declined": 99,
       "unchanged": 0,
       "universe_size": 503,
       "status": "ok",
