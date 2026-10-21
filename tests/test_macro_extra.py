@@ -63,6 +63,25 @@ class ExtraMacroTests(unittest.TestCase):
         self.assertEqual(row["value"],3.0)
         self.assertEqual(row["previous_value"],2.9)
 
+    def test_nfci_official_csv_schema_and_market_date_filter(self):
+        sample=(b"Friday_of_Week,NFCI,ANFCI,Risk,Credit,Leverage,Nonfinancial_Leverage\n"
+                b"10/09/2026,-0.51,-0.52,-0.1,-0.2,0.0,-0.1\n"
+                b"10/16/2026,-0.48,-0.50,-0.1,-0.2,0.0,-0.1\n"
+                b"10/23/2026,-0.30,-0.32,-0.1,-0.1,0.0,-0.1\n")
+        with patch.object(e,"fetch",return_value=sample) as got:
+            r=e.nfci(date(2026,10,20))
+        self.assertEqual(r["observation_date"],"2026-10-16")
+        self.assertEqual(r["value"],-0.48)
+        self.assertEqual(r["previous_date"],"2026-10-09")
+        self.assertEqual(r["previous_value"],-0.51)
+        self.assertIn("chicagofed.org",r["source_url"])
+        self.assertIn("nfci-data-series-csv.csv",got.call_args.args[0])
+
+    def test_nfci_rejects_csv_without_original_source_schema(self):
+        with patch.object(e,"fetch",return_value=b"DATE,VALUE\n2026-10-16,-0.5\n"):
+            with self.assertRaises(ValueError):
+                e.nfci(date(2026,10,20))
+
     def test_dol_pdf_week_year_from_release_header(self):
         from unittest.mock import MagicMock
         import macro_extra as e
