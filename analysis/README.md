@@ -139,3 +139,20 @@ This adds **8 requested areas and 10 separately identified metrics** (manufactur
 Weekly research should integrate verified observations and explicitly mark anything unavailable; examine official ISM PMI reports through permitted human reading or an authorized license rather than scraping. Publication dates can differ from referenced month or week and official macro data may be revised. Independently verify ETF prices, company information, news and the source date before financial decisions.
 
 Official source pages: [BEA core PCE](https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy), [DOL unemployment claims](https://www.dol.gov/ui/data.pdf), [Census retail](https://www.census.gov/retail/sales.html), [Chicago Fed NFCI](https://www.chicagofed.org/research/data/nfci/current-data-aws), [Census manufacturing orders](https://www.census.gov/manufacturing/m3/current/index.html), [Census durable orders](https://www.census.gov/manufacturing/m3/adv/current/index.html), [ISM reports and restrictions](https://www.ismworld.org/footer/terms-of-use/), [BEA real GDP](https://www.bea.gov/data/gdp/gross-domestic-product).
+
+
+## Prospective technical-screen evaluation (accuracy-quality improvement, 2026-10-21)
+
+`signal_audit.py` runs after the daily ETF screen and before the macro collection. It validates the source daily CSV/JSON as-of date, SPY benchmark, unique tickers, post-NYSE-close generation time, real adjusted price fields, valid screen labels and counts. **It does not modify the momentum ranking or select investments based on historical backtest fitting.**
+
+**Public data paths:**
+- `data/quality/snapshots/YYYY-MM-DD.json`: first successfully stored scanner snapshot for the specific US session (all screened tickers' source close, status, liquidity, rank). Same-session reruns cannot overwrite it. Starts prospectively from first generated audit date; earlier `data/history/` dates are intentionally NOT reconstructed as if they had been locked in real time.
+- `data/quality/latest.json`: new `candidate` transition counts, status of each forward observation, validated source coverage, 5/10/20-session summary and data-quality warnings.
+- `analysis/quality/latest.md`: reader-friendly mechanical audit summary.
+
+A signal requires both the current first-locked `candidate` label **and** a known noncandidate label from the **immediately previous NYSE session**. An absent session makes the new-candidate determination unknowable. A new observation is only scored against SPY at the **following NYSE session's close** to the close 5/10/20 genuine NYSE sessions after that reference, preventing hindsight use of the signal day's closing price as a hypothetical fill. These are *relative adjusted-price snapshot observations*, not real available fills; actual next-day open, spread, costs, distributions, Yahoo revisions, FX and investment adviser confirmation may differ materially. A missing precise session snapshot or quote is explicitly unverified, never interpolated.
+
+First-day seeds and insufficiently mature observations **must not be interpreted as any measured hit rate**, and one ticker or overlapping sectors are not independent trials. Even after 30 observed signals, numbers remain exploratory. The mechanical screen's outcomes must stay separate from sourced narrative ETF theses/recommendations (which need separately dated judgments), and private user account decisions must never enter this repository.
+
+See [weekly quality review rules](WEEKLY_REVIEW_RULES.md).
+
