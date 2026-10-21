@@ -42,9 +42,16 @@ jobs:
               anchors.append((href,label))
             print('LINKS',repr(anchors[:65]),flush=True)
             if 'chicagofed' in url:
-             for pat in ['NFCI Indexes','Download Center','nfci-data','series.csv','csv']:
-              pos=r.text.lower().find(pat.lower())
-              if pos>=0: print('RAW_MATCH',pat,repr(r.text[max(0,pos-300):pos+600]),flush=True)
+             for pat in ['nfcidownloadindexes', 'NFCI Indexes','Download Center','nfci-data','series.csv','csv']:
+              matches=list(re.finditer(re.escape(pat),r.text,re.I))
+              for match in matches[-3:]:
+               pos=match.start()
+               print('RAW_MATCH',pat,pos,repr(r.text[max(0,pos-220):pos+470]),flush=True)
+             print('JS_ASSETS',[(x.get('src','') or '') for x in soup.select('script[src]')][:80],flush=True)
+             for node in soup.find_all('script'):
+              text=node.get_text(' ',strip=True)
+              if 'nfcidownloadindexes' in text.lower() or 'nfci' in text.lower():
+               print('INLINE_SCRIPT',repr(text[:6000]),flush=True)
            except Exception as exc:
             print('ERROR',type(exc).__name__,str(exc)[:350],flush=True)
           PY
