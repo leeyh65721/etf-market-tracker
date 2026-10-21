@@ -115,6 +115,22 @@ class DecisionsTest(unittest.TestCase):
         self.assertEqual(errors,[])
         self.assertEqual(missing,[])
 
+    def test_genuine_no_new_candidate_without_fictitious_trade(self):
+        neutral="- No verified new ETF candidate exists; no change to public watchlist."
+        report=self.root/"analysis/daily/2026-10-20.md"
+        report.write_text(report.read_text(encoding="utf-8")+neutral+"\n",encoding="utf-8")
+        item=record()
+        item.update(record_id="2026-10-19-MARKET-no-new-candidate",
+                    ticker="MARKET",stance="no_new_candidate",
+                    verbatim_source_excerpt=neutral,
+                    thesis="No new validated ETF ideas meet our public-market criteria")
+        del item["original_close_usd"]
+        del item["original_spy_close_usd"]
+        check=a.check_entry(item,self.root)
+        self.assertEqual(check["ticker"],"MARKET")
+        self.assertIsNone(check["original_close_usd"])
+        self.assertFalse(check["eligible_for_prospective_judgment_scoring"])
+
     def test_missing_countercase_is_invalid(self):
         item=record()
         item["counterevidence"]="none"
