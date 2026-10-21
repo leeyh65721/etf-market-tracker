@@ -18,6 +18,22 @@ For each concrete candidate found in the dated ChatGPT `analysis/daily/` archive
 
 **Do not call a 1-day rise a successful 20-day forecast.** Technical-candidate labels are observations, not promises or buy signals. For outcomes, compute return based on the same adjusted-close methodology for both date endpoints. As-of candidates without an authentic dated analyst judgment must not be converted into prior recommendations.
 
+
+## Forward-only scorecard: technical screen versus actual investment call
+
+A separate **prospective-only technical screen audit** runs in GitHub Actions. It is *not* an estimate of the assistant's recommendation accuracy. Use `data/quality/latest.json`, `data/quality/snapshots/YYYY-MM-DD.json`, and `analysis/quality/latest.md` only after fetching the real files. Never infer they exist simply because a workflow ran.
+
+1. A daily first-captured `data/quality/snapshots/YYYY-MM-DD.json` is **locked on creation**. Same-US-session reruns cannot overwrite baseline ticker prices or historical candidate transitions. Earlier dated ordinary `data/history/` snapshots are not backfilled or disguised as contemporaneously frozen evidence.
+2. A new technical candidate is eligible for forward assessment **only** when the immediately prior NYSE session has a locked record and the ticker transitioned from a known noncandidate state into `candidate`. Existing first-day candidates seed the baseline; they are not new investment calls.
+3. The technical screen is known after the US close. For avoiding a retrospective same-day purchase, the research comparison starts at the **following NYSE session's frozen adjusted-close proxy**; evaluation ends at the close **5, 10, or 20 NYSE sessions after** that reference. No trade at any of these proxy prices is assumed. NYSE holidays and weekends are skipped by a real exchange calendar.
+4. Each candidate gets `pending`, `observed`, or `unverifiable` status per horizon. An absent snapshot on the **exact** entry or exit day must never be filled in with a neighboring date or market return.
+5. ETF return and SPY return must use the same observation horizon. The saved `close_usd` values are yfinance's auto-adjusted price snapshots from separate collection times; corporate actions, adjusted-price revisions, delayed prices and rounding can produce distortions. Do not call this verified total returns or executable backtests.
+6. Interpret the summary only after enough forward observations mature. `observed=0` means **no supportable hit rate**. Even 30+ observed entries remain exploratory due overlapping tickers, market regime, selection bias and short sample length; it does not prove predictive power.
+7. Keep three distinct ledgers: **(a)** mechanical scanner screen transitions and forward SPY price comparisons; **(b)** public analyst thesis, named ETF candidate, date, source, counterargument, falsifier and proposed entry/exit conditions; **(c)** the user's private portfolio decisions and real trades. Do not mix them or publish personal data.
+
+Evaluate whether new prospective evidence justifies improving filters or ranking **only after several distinct market regimes and adequate observations**, and only when comparison with a simple baseline is credible. Do not tune scanner scores opportunistically to recent outcomes. No forecast accuracy, return guarantee, or account drawdown promise is currently established.
+
+
 ## 2. Risk quality gate
 
 Before recommending a changed ETF allocation, consider:
