@@ -200,34 +200,49 @@ def parse_manufacturing(raw, sid):
                   "Nominal seasonally adjusted order change; zero may be rounded 'virtually unchanged'")
 
 
-def nfci():
-    url=SOURCES["NFCI"][2]
-    text,soup=html_text(url)
+def nfci(market_date):
+    source=SOURCES["NFCI"][2]
+    text,soup=html_text(source)
     urls=[]
     for a in soup.find_all("a",href=True):
         href=a.get("href","")
         label=a.get_text(" ",strip=True).lower()
-        if ("csv" in label or ".csv" in href.lower()) and ("nfci" in href.lower() or "data" in label):
+        if "csv" in label or ".csv" in href.lower():
             from urllib.parse import urljoin
-            u=urljoin(url,href)
-            if u.startswith("https://") and (".csv" in u.lower()):
-                urls.append(u)
-    # No invented CSV endpoint or parsing of narrative text that may be months old.
-    if not urls:raise ValueError("Chicago Fed current page has no documented NFCI CSV link")
-    url=urls[0]
-    f=pd.read_csv(StringIO(fetch(url,20).decode("utf-8-sig")))
-    f.columns=f.columns.map(str).str.strip().str.lower()
-    datecol=next((c for c in f.columns if c in ("date","observation_date","week","week ending")),None)
-    valcol=next((c for c in f.columns if c in ("nfci","nfci_index","nfci index")),None)
-    if not datecol or not valcol:
-        raise ValueError(f"NFCI CSV unknown columns {list(f.columns)[:10]}")
-    df=pd.DataFrame({"date":pd.to_datetime(f[datecol],errors="coerce"),
-                     "value":pd.to_numeric(f[valcol],errors="coerce")}).dropna()
-    if len(df)<2:raise ValueError("Insufficient NFCI CSV history")
-    df=df.sort_values("date")
-    return record("NFCI",float(df.value.iloc[-1]),df.date.iloc[-1].date(),"index",
-                  "Chicago Fed own CSV",url=url,previous=df.value.iloc[-2],
-                  previous_observed=df.date.iloc[-2].date())
+            url=urljoin(source,href)
+            if url.startswith("https://") and ".csv" in url.lower():
+                urls.append(url)
+    for url in urls:
+        try:
+            f=pd.read_csv(StringIO(fetch(url,20).decode("utf-8-sig")))
+            f.columns=f.columns.map(str).str.strip().str.lower()
+            datecol=next((c for c in f.columns if c in ("date","observation_date","week","week ending")),None)
+            valcol=next((c for c in f.columns if c in ("nfci","nfci_index","nfci index")),None)
+            if datecol and valcol:
+                df=pd.DataFrame({"date":pd.to_datetime(f[datecol],errors="coerce"),
+                                 "value":pd.to_numeric(f[valcol],errors="coerce")}).dropna()
+                df=df[df.date.dt.date<=market_date].sort_values("date")
+                if len(df)>=2:
+                    return record("NFCI",float(df.value.iloc[-1]),df.date.iloc[-1].date(),
+                        "index","Chicago Fed official CSV",url=url,
+                        previous=df.value.iloc[-2],previous_observed=df.date.iloc[-2].date())
+        except Exception:
+            continue
+    # Official news summary fallback: mark older dated values stale instead
+    # of silently using stale HTML as the current index.
+    rx=(r"\bNFCI\s+(?:decreased|increased|was unchanged).*?\bto\s+([+\-−]?\d+\.\d+)"
+        r".{0,100}?\bweek ending\s+("+"|".join(MONTHS)+r")\s+(\d{1,2})")
+    m=re.search(rx,text,re.I)
+    if not m:raise ValueError("No verifiable Chicago Fed NFCI CSV or dated official summary")
+    value=float(m.group(1).replace("−","-"))
+    month=MONTHS[m.group(2).lower()]
+    day=int(m.group(3))
+    year=market_date.year
+    stamped=date(year,month,day)
+    if stamped>market_date:stamped=date(year-1,month,day)
+    return record("NFCI",value,stamped,"index",
+                  "Chicago Fed official dated public summary",
+                  "No verified official CSV was discoverable; dated summary may be stale")
 
 
 def breadth(market_date):
@@ -295,7 +310,7 @@ def collect_one(sid,market_date):
                 "source_url":SOURCES[sid][2],"notes":
                 "ISM forbids automated harvesting and republishing; user must consult licensed report."}
     try:
-        if sid=="NFCI":r=nfci()
+        if sid=="NFCI":r=nfci(market_date)
         elif sid=="SP500_BREADTH":r=breadth(market_date)
         else:
             raw=fetch(SOURCES[sid][2])
