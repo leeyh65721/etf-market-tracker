@@ -1,5 +1,9 @@
 name: Daily ETF market scan
 on:
+  # Run once when updating the workflow itself; normal jobs still run on schedule.
+  push:
+    paths:
+      - '.github/workflows/daily.yml'
   workflow_dispatch:
   schedule:
     - cron: '30 23 * * 1-5'
