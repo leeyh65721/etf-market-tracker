@@ -6,6 +6,7 @@ import json
 import time
 from datetime import datetime, timezone, timedelta
 from io import StringIO, BytesIO
+from xml.etree import ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.error import HTTPError
 from pathlib import Path
@@ -28,13 +29,31 @@ SPECS = [
  ("PPI_FD", "미국 PPI 최종수요 비계절조정", "monthly", "index"),
  ("WTI", "WTI 현물유가", "daily", "USD/barrel"),
  ("BRENT", "브렌트 현물유가", "daily", "USD/barrel"),
+ ("VIX", "Cboe VIX 공포지수", "daily", "index"),
+ ("VVIX", "Cboe VVIX 변동성의 변동성", "daily", "index"),
+ ("USD_KRW_ECB", "ECB 기준 USD/KRW 교차환율", "daily", "KRW/USD"),
+ ("EUR_USD_ECB", "ECB 기준 EUR/USD", "daily", "USD/EUR"),
+ ("EFFR", "뉴욕연준 실효 연방기금금리", "daily", "%"),
+ ("SOFR", "뉴욕연준 담보부 익일조달금리", "daily", "%"),
+ ("JOLTS_OPENINGS", "미국 전체 구인 공석 JOLTS", "monthly", "thousand"),
+ ("LFPR", "미국 경제활동참가율", "monthly", "%"),
+ ("AVG_HOURLY_EARNINGS", "미국 민간 시간당 평균임금", "monthly", "USD/hour"),
+ ("AVG_WEEKLY_HOURS", "미국 민간 평균 주간 근로시간", "monthly", "hours"),
+ ("CPI_SHELTER", "미국 주거비 CPI 계절조정", "monthly", "index"),
 ]
 BLS_SERIES = {"CPI_HEADLINE":"CUSR0000SA0", "CPI_CORE":"CUSR0000SA0L1E",
-              "UNRATE":"LNS14000000", "PAYROLLS":"CES0000000001", "PPI_FD":"WPUFD4"}
+              "UNRATE":"LNS14000000", "PAYROLLS":"CES0000000001", "PPI_FD":"WPUFD4",
+              "JOLTS_OPENINGS":"JTS000000000000000JOL", "LFPR":"LNS11300000",
+              "AVG_HOURLY_EARNINGS":"CES0500000003",
+              "AVG_WEEKLY_HOURS":"CES0500000002",
+              "CPI_SHELTER":"CUSR0000SAH1"}
 SOURCE_RESULTS = {}
 SOURCE_ERRORS = {}
-UNAVAILABLE_OTHER = ["VIX", "하이일드 회사채 신용스프레드", "달러지수", "USD/KRW",
-                     "연방기금금리", "근원 PCE", "미국 GDP", "PMI", "금", "구리"]
+UNAVAILABLE_OTHER = ["회사채 옵션조정 신용스프레드(HY/IG OAS: 라이선스 확인 필요)",
+                     "연준 목표 기준금리 상·하한(실효금리 EFFR과 구별)",
+                     "광의 달러지수(DXY: ECB 환율과 다름)", "근원 PCE", "미국 GDP",
+                     "제조업·서비스업 PMI", "미국 소매판매", "주간 신규 실업수당청구",
+                     "금", "구리", "천연가스", "은행 금융여건 지수"]
 
 def request_bytes(url, timeout=12):
     req=Request(url,headers={"User-Agent":"Mozilla/5.0 (ETFMarketTracker public research)",
@@ -95,11 +114,87 @@ def eia(code):
                      "value":pd.to_numeric(table.iloc[:,1],errors="coerce")})
     return df,url
 
+def cboe(symbol):
+    # CSV is published directly by the exchange; header usually DATE,OPEN,HIGH,LOW,CLOSE.
+    url=f"https://cdn.cboe.com/api/global/us_indices/daily_prices/{symbol}_History.csv"
+    df=pd.read_csv(StringIO(request_bytes(url,timeout=16).decode("utf-8-sig")))
+    df.columns=df.columns.map(str).str.strip().str.upper()
+    if not {"DATE","CLOSE"}.issubset(df.columns):
+        raise ValueError(f"Cboe {symbol} daily CSV missing DATE/CLOSE")
+    out=pd.DataFrame({"date":pd.to_datetime(df["DATE"],errors="coerce"),
+                      "value":pd.to_numeric(df["CLOSE"],errors="coerce")})
+    return out,url
+
+def ecb_fx():
+    # ECB publishes reference rates per EUR. USD/KRW is a cross rate, not a direct quote.
+    url="https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml"
+    root=ET.fromstring(request_bytes(url,timeout=16))
+    observations=[]
+    for node in root.iter():
+        when=node.attrib.get("time")
+        if not when:continue
+        rates={child.attrib.get("currency"):child.attrib.get("rate") for child in node
+               if "currency" in child.attrib}
+        try:
+            usd=float(rates["USD"]);krw=float(rates["KRW"])
+            stamp=pd.Timestamp(when)
+            observations.append((stamp,krw/usd,usd))
+        except (ValueError,KeyError,TypeError):
+            continue
+    if len(observations)<2:
+        raise ValueError("Insufficient valid ECB USD/KRW reference rates")
+    frame=pd.DataFrame(observations,columns=["date","usdkrw","eurusd"])
+    return frame,url
+
+def nyfed(rate):
+    # Public rate history directly from the administrator. Last 120 observations;
+    # do not request a rate for dates later than market_date.
+    group="unsecured" if rate=="effr" else "secured"
+    url=f"https://markets.newyorkfed.org/api/rates/{group}/{rate}/last/120.json"
+    j=json.loads(request_bytes(url,timeout=16).decode("utf-8-sig"))
+    data=[]
+    for x in j.get("refRates",[]):
+        if str(x.get("type","")).lower()!=rate: continue
+        try:
+            data.append((pd.Timestamp(x["effectiveDate"]),float(x["percentRate"])))
+        except (TypeError,KeyError,ValueError):
+            continue
+    if len(data)<2:raise ValueError(f"No valid NY Fed {rate} history")
+    return pd.DataFrame(data,columns=["date","value"]),url
+
+def etf_credit_proxies(market_date):
+    """Credit risk-on proxies, NOT option-adjusted credit spreads."""
+    path=DATA/"latest.csv"
+    if not path.exists():return {"status":"unavailable","reason":"ETF latest.csv missing"}
+    f=pd.read_csv(path).set_index("ticker")
+    targets=("HYG","LQD","IEF")
+    if any(t not in f.index or str(f.loc[t,"asof"])!=str(market_date) for t in targets):
+        return {"status":"unavailable","reason":"HYG/LQD/IEF missing or ETF price dates inconsistent"}
+    out={}
+    for name,credit in (("HY_vs_treasury","HYG"),("IG_vs_treasury","LQD")):
+        series={}
+        for window in ("5d","21d"):
+            key=f"return_{window}_pct"
+            x=float(f.loc[credit,key]);b=float(f.loc["IEF",key])
+            series[window+"_price_return_gap_pp"]=round(x-b,3)
+        out[name]={"credit_etf":credit,"treasury_etf":"IEF",**series}
+    return {"status":"ok","asof":str(market_date),
+            "metric_type":"difference in ETF price returns, not yield spread/OAS",
+            "caveats":["ETF price returns exclude FX and may differ in duration, fees and distributions.",
+                       "Credit, Treasury interest-rate and duration sensitivity can confound the difference.",
+                       "Do not compare the figures numerically with high-yield/IG option-adjusted spreads."],
+            "series":out}
+
 def load_sources(market_date):
     jobs={"treasury_nominal":lambda:treasury(False,market_date.year),
           "treasury_real":lambda:treasury(True,market_date.year),
           "eia_wti":lambda:eia("RWTCd"),
-          "eia_brent":lambda:eia("RBRTEd")}
+          "eia_brent":lambda:eia("RBRTEd"),
+          "cboe_vix":lambda:cboe("VIX"),
+          "cboe_vvix":lambda:cboe("VVIX"),
+          "ecb_fx":ecb_fx,
+          "nyfed_effr":lambda:nyfed("effr"),
+          "nyfed_sofr":lambda:nyfed("sofr")}
     jobs.update({f"bls_{key}":(lambda sid=sid:bls(sid)) for key,sid in BLS_SERIES.items()})
     with ThreadPoolExecutor(max_workers=4) as pool:
         future_map={pool.submit(fn):label for label,fn in jobs.items()}
@@ -119,12 +214,20 @@ def collect(sid, start, date):
         group="treasury_real"
     elif sid in ("WTI","BRENT"):
         group="eia_wti" if sid=="WTI" else "eia_brent"
+    elif sid in ("VIX","VVIX"):
+        group="cboe_"+sid.lower()
+    elif sid in ("USD_KRW_ECB","EUR_USD_ECB"):
+        group="ecb_fx"
+    elif sid in ("EFFR","SOFR"):
+        group="nyfed_"+sid.lower()
     else:
         group=f"bls_{sid}"
     if group not in SOURCE_RESULTS:
         raise RuntimeError(SOURCE_ERRORS.get(group,"source unavailable"))
     df,url=SOURCE_RESULTS[group]
-    if group.startswith("treasury"):
+    if group=="ecb_fx":
+        result=pd.DataFrame({"date":df["date"],"value":df["usdkrw" if sid=="USD_KRW_ECB" else "eurusd"]})
+    elif group.startswith("treasury"):
         d=pd.to_datetime(df["Date"],errors="coerce")
         if sid=="T10Y2Y":
             value=pd.to_numeric(df["10 Yr"],errors="coerce") - pd.to_numeric(df["2 Yr"],errors="coerce")
@@ -181,6 +284,12 @@ def conditional_signals(records):
     add("T10Y","five_observation_change",15,"미국 장기금리 변화",
         "상승은 기업 차입비용과 주식 할인율에 부담이 될 수 있으나 성장 기대로 움직였을 수도 있음",
         "연준과 국채 실질금리·기대물가·입찰 및 증시를 재확인",100)
+    add("VIX","five_observation_change",4,"VIX 단기 변동성 확대",
+        "증시 옵션시장의 위험회피가 커질 수 있으나 단기 이벤트의 영향일 수도 있음",
+        "신용시장과 시장 폭·증시 추세를 함께 확인")
+    add("USD_KRW_ECB","five_observation_pct",1.5,"원·달러 ECB 교차환율 변화",
+        "달러 강세는 원화 기준 미국 ETF 평가액에는 긍정적일 수 있지만 환율 반전 위험도 증가",
+        "서울 외환시장 USD/KRW 종가와 뉴욕 거래시각·교차환율 차이를 확인")
     add("WTI","five_observation_pct",5,"원유 현물가격 변화",
         "상승은 에너지 업종에 유리할 수 있으나 물가·운송비에 부담이 될 수 있음",
         "공급 차질인지 수요 증가인지, 브렌트와 선물 가격·뉴스를 독립 확인")
@@ -209,6 +318,7 @@ def main():
             errors[sid]=f"{type(exc).__name__}: {str(exc)[:130]}"
             print("MACRO_ERROR",sid,errors[sid],flush=True)
     signals=conditional_signals(rows)
+    credit_proxies=etf_credit_proxies(market_date)
     state="ok" if len(rows)==len(SPECS) and all(r["status"]=="ok" for r in rows) else ("partial" if rows else "unavailable")
     report={
       "market_date":str(market_date),
@@ -216,7 +326,8 @@ def main():
       "status":state,"requested_series_count":len(SPECS),
       "retrieved_series_count":len(rows),
       "current_series_count":sum(r["status"]=="ok" for r in rows),
-      "source":"Direct US Treasury CSV, BLS public API, and EIA public XLS",
+      "source":"US Treasury, BLS, EIA, Cboe, ECB, and New York Fed official public sources",
+      "credit_etf_proxies":credit_proxies,
       "uncovered_indicators":UNAVAILABLE_OTHER,
       "series":rows,"conditional_signals":signals,"errors":errors,
       "limitations":[
@@ -263,6 +374,12 @@ def main():
     if errors:
         lines.extend(["","## 수집 누락"])
         lines.extend(f"- {sid}: {error}" for sid,error in errors.items())
+    lines.extend(["","## 신용 위험의 ETF 가격 보조지표(옵션조정 스프레드가 아님)","",
+        f"- 자료 상태: {credit_proxies['status']} / {credit_proxies.get('asof',credit_proxies.get('reason',''))}"])
+    if credit_proxies["status"]=="ok":
+        for label,p in credit_proxies["series"].items():
+            lines.append(f"- {label} ({p['credit_etf']}-IEF): 후행 5일 {p['5d_price_return_gap_pp']:+.2f}%p, 21일 {p['21d_price_return_gap_pp']:+.2f}%p")
+        lines.append("- **주의: 회사채 신용스프레드/OAS를 계산한 것이 아니라 ETF 가격수익률 차이. 듀레이션·금리 영향으로 왜곡될 수 있음.**")
     lines.extend(["","## 자동 수집하지 못하는 지표","",
         ", ".join(UNAVAILABLE_OTHER), "", "## 주간 판단 주의점","",
         "- 관측일, 공표일, 실시간 시세를 혼동하지 않고 지표 시차와 수정 가능성을 검토.",
