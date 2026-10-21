@@ -104,3 +104,30 @@ When macro collection fails, the ETF scan/archive remains available; missing dat
 First verify that GitHub Actions produced new files with `requested_series_count=22`, compare `retrieved_series_count`, `current_series_count`, `errors`, `market_date`, and each observation date. A status of `partial` or `unavailable` requires explicit caution. The adjusted / unadjusted BLS series labels are included; some indices are levels, not inflation percentages. A CPI release-date check must be done separately; time-series observation month is **not** the publication date. No API subscription or generative model fee was added. No account holdings, cash, allocation or returns are saved in this public repository.
 
 **Upstream pages:** [US Treasury](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml) · [BLS Public API](https://www.bls.gov/developers/api_signature_v2.htm) · [EIA Spot Oil](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm) · [Cboe VIX history](https://www.cboe.com/tradable-products/vix/vix-historical-data) · [ECB euro reference exchange rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) · [New York Fed markets API](https://markets.newyorkfed.org/static/docs/markets-api.html) · [ICE index distribution restrictions](https://fred.stlouisfed.org/series/BAMLH0A0HYM2).
+
+
+## 8 additional macro research categories (2026-10-21)
+
+The daily workflow calls `macro_extra.py` **after** the already-validated 22 series. This is an independent, best-effort layer; errors do **not** change the trusted 22-series `data/macro/latest.json` or its health status.
+
+| Category | Tracked series | Data source and limits |
+|---|---|---|
+| Core PCE inflation | CORE_PCE | U.S. BEA published YoY core-PCE rate, release chart; not a reconstructed PCE index |
+| Initial unemployment claims | INITIAL_CLAIMS | Department of Labor Weekly Claims public PDF; seasonally-adjusted initial claims, week-end date |
+| Retail sales | RETAIL_SALES | Census monthly **nominal** advance retail-and-food-service month-over-month change |
+| Financial conditions | NFCI | Federal Reserve Bank of Chicago official CSV *if discoverable* from public data page |
+| Manufacturing orders | MFG_NEW_ORDERS, DURABLE_NEW_ORDERS | Census monthly full M3 orders and advance durable goods monthly changes are distinct releases |
+| Manufacturing/services PMI | ISM_MANUFACTURING, ISM_SERVICES | **manual/licensed only**: no automated ISM access, redistribution or archive of PMI values |
+| Real GDP | REAL_GDP | BEA published quarterly real GDP annualized growth, revision-prone |
+| Market participation | SP500_BREADTH | **S&P 500 constituent** daily advancers divided by stocks with validated price pairs. This is not NYSE breadth or all US-listed equities; unofficial Yahoo quotes and Wikipedia current symbols |
+
+This adds **8 requested areas and 10 separately identified metrics** (manufacturing orders and PMI each have two). A metric status can be `ok`, `stale`, `unavailable`, or `manual`. Partial coverage is explicitly recorded; there is no assumption of 8/8 successful automatic collection. Not all public web sources are consistently machine-readable; changes to official web-page markup may temporarily make a metric unavailable rather than produce speculative values.
+
+- `data/macro/extra_latest.json` = latest attempt and per-indicator source/status/value/observation date where supported.
+- `data/macro/history/extra-YYYY-MM-DD.json` = dated attempt.
+- `analysis/macro/extra-YYYY-MM-DD.md` = human-readable results, unavailable reasons and cautions.
+- `tests/test_macro_extra.py` contains offline parser, date sanity and manual-only ISM checks.
+
+Weekly research should integrate verified observations and explicitly mark anything unavailable; examine official ISM PMI reports through permitted human reading or an authorized license rather than scraping. Publication dates can differ from referenced month or week and official macro data may be revised. Independently verify ETF prices, company information, news and the source date before financial decisions.
+
+Official source pages: [BEA core PCE](https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy), [DOL unemployment claims](https://www.dol.gov/ui/data.pdf), [Census retail](https://www.census.gov/retail/sales.html), [Chicago Fed NFCI](https://www.chicagofed.org/research/data/nfci/current-data-aws), [Census manufacturing orders](https://www.census.gov/manufacturing/m3/current/index.html), [Census durable orders](https://www.census.gov/manufacturing/m3/adv/current/index.html), [ISM reports and restrictions](https://www.ismworld.org/footer/terms-of-use/), [BEA real GDP](https://www.bea.gov/data/gdp/gross-domestic-product).
