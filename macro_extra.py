@@ -31,7 +31,7 @@ SOURCES={
  "RETAIL_SALES":("미국 소매·음식서비스 매출(월간 전월비)", "monthly",
              "https://www.census.gov/retail/sales.html"),
  "NFCI":("시카고 연준 금융여건지수", "weekly",
-             "https://www.chicagofed.org/research/data/nfci/current-data-aws"),
+             "https://www.chicagofed.org/research/data/nfci/current-data"),
  "MFG_NEW_ORDERS":("미국 제조업 신규주문(전월비)", "monthly",
              "https://www.census.gov/manufacturing/m3/current/index.html"),
  "DURABLE_NEW_ORDERS":("미국 내구재 신규주문(전월비)", "monthly",
@@ -113,10 +113,7 @@ def parse_core_pce(raw):
     if len(set(d for d,_ in values))<2:raise ValueError("BEA PCE chart rows not found")
     series=dict(values)
     current,prior=sorted(series)[-2:]
-    return record("CORE_PCE",series[prior],prior,"% YoY","BEA headline chart",
-                  "Released core PCE price YoY change; not the underlying index level",
-                  previous=series[current],previous_observed=current) if False else record(
-                  "CORE_PCE",series[current],current,"% YoY","BEA headline chart",
+    return record("CORE_PCE",series[current],current,"% YoY","BEA headline chart",
                   "Released core PCE year-over-year rate; release date requires independent checking",
                   previous=series[prior],previous_observed=prior)
 
@@ -150,12 +147,21 @@ def parse_claims_pdf(raw):
     if len(reader.pages)<1:raise ValueError("Empty DOL report")
     txt=" ".join((page.extract_text() or "") for page in reader.pages[:3])
     txt=re.sub(r"\s+"," ",txt)
-    d=re.search(r"week ending\s+([A-Z][a-z]+)\s+(\d{1,2}),?\s+(20\d{2})",txt,re.I)
-    value=re.search(r"(?:seasonally adjusted\s+)?initial claims (?:was|were)\s+([\d,]{5,9})",txt,re.I)
-    if not value:
-        value=re.search(r"advance figure for seasonally adjusted initial claims was\s+([\d,]{5,9})",txt,re.I)
-    if not d or not value:raise ValueError("No validated official week/seasonally-adjusted initial claims in DOL PDF")
-    day=date(int(d.group(3)),MONTHS[d.group(1).lower()],int(d.group(2)))
+    # DOL release prose usually omits the year after "week ending".
+    # Pair the reporting week with the PDF's own publication year instead.
+    heading=re.search(r"(?:Thursday|Friday|Wednesday),?\s+[A-Z][a-z]+\s+\d{1,2},?\s+(20\d{2})",txt,re.I)
+    d=re.search(r"In the week ending\s+([A-Z][a-z]+)\s+(\d{1,2})(?:,?\s+(20\d{2}))?",txt,re.I)
+    value=re.search(r"advance figure for seasonally adjusted initial claims was\s+([\d,]{5,9})",txt,re.I)
+    if not d or not value or (not d.group(3) and not heading):
+        raise ValueError("No validated DOL week, issue year or seasonally adjusted claims")
+    year=int(d.group(3) or heading.group(1))
+    month=MONTHS[d.group(1).lower()]
+    if heading and not d.group(3):
+        # December weekly claims published in January refer to previous year.
+        release_year=int(heading.group(1))
+        if month==12 and year==release_year:
+            year-=1
+    day=date(year,month,int(d.group(2)))
     return record("INITIAL_CLAIMS",int(value.group(1).replace(",","")),day,"persons",
                   "DOL Weekly Claims PDF", "Seasonally adjusted initial claims; week ending date")
 
@@ -181,8 +187,12 @@ def parse_manufacturing(raw, sid):
     if not m:raise ValueError("Census release summary new orders/period not parsed")
     year=m.group(2)
     if not year:
-        date_match=re.search(r"(?:release|September|October)\s+\d{1,2},?\s+(20\d{2})",txt,re.I)
-        year=date_match.group(1) if date_match else None
+        stamp_rx=r"\b("+"|".join(MONTHS)+r")\s+\d{1,2},?\s+(20\d{2})\b"
+        issued=re.search(stamp_rx,txt,re.I)
+        if issued:
+            yy=int(issued.group(2))
+            if MONTHS[m.group(1).lower()]>MONTHS[issued.group(1).lower()]:yy-=1
+            year=str(yy)
     if not year:raise ValueError("Census report has no verifiable reference year")
     val=0.0 if m.group(4) else float(m.group(5))*(-1 if m.group(3).lower()=="decreased" else 1)
     return record(sid,val,monthdate(m.group(1),year),"% m/m",
