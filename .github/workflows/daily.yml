@@ -21,7 +21,9 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scan.py
       - run: python build_journal.py
-      - run: python macro_scan.py
+      - name: Collect official macroeconomic indicators
+        continue-on-error: true
+        run: python macro_scan.py
       - name: Save public market data
         run: |
           git config user.name "github-actions[bot]"
