@@ -1,0 +1,26 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-10-22-MARKET-no_new_candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-10-21",
+  "original_report_date_kst": "2026-10-22",
+  "archived_on_utc_date": "2026-10-22",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-10-22.md",
+  "verbatim_source_excerpt": "**새로 확정된 매수 후보 없음.** 신규 ETF 추천이나 비중 변경 근거 부족.",
+  "original_close_usd": null,
+  "original_spy_close_usd": null,
+  "thesis": "No newly validated ETF purchase candidate or allocation change; retain existing observations and do not treat one-day SOXX rebound as trend reversal.",
+  "counterevidence": "Lam Research sales and Meta data-center capital expenditure increased, but do not establish broad SOXX constituent demand.",
+  "invalidation": "Reassess if multiple suppliers' orders, shipments, cash flow, rates, ETF relative strength and issuer information are independently verified.",
+  "revisit_trigger": "Revisit market stance after 5, 10 and 20 NYSE trading sessions using SPY as context; no ticker-specific return attribution for this MARKET entry.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true
+}
