@@ -1,12 +1,14 @@
 {
-  "generated_at_utc": "2026-10-21T23:54:36.561774+00:00",
-  "status": "OK",
+  "generated_at_utc": "2026-10-22T23:54:14.813848+00:00",
+  "status": "ERROR",
   "valid_count": 4,
   "retrospective_count": 4,
   "prospective_count": 0,
-  "invalid_count": 0,
-  "reports_missing_structured_records_count": 0,
-  "reports_missing_structured_records": [],
+  "invalid_count": 1,
+  "reports_missing_structured_records_count": 1,
+  "reports_missing_structured_records": [
+    "analysis/daily/2026-10-22.md"
+  ],
   "entries": [
     {
       "record_id": "2026-10-19-IGV-watch",
@@ -109,7 +111,12 @@
       "not_a_buy_recommendation": true
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "file": "2026-10-22-MARKET-no_new_candidate.json",
+      "error": "ValueError: Invalid record ID"
+    }
+  ],
   "limitations": [
     "This is a ledger of manually saved dated public analyst research, not an automatically generated view.",
     "Past analysis uploaded afterward is NOT a validated forward-only call.",

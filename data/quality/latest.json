@@ -1,12 +1,12 @@
 {
-  "asof": "2026-10-21",
-  "locked_sessions": 2,
-  "signal_count": 1,
+  "asof": "2026-10-22",
+  "locked_sessions": 3,
+  "signal_count": 2,
   "summaries": {
     "5": {
-      "signals": 1,
+      "signals": 2,
       "observed": 0,
-      "pending": 1,
+      "pending": 2,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -15,9 +15,9 @@
       "assessment": "insufficient_observations"
     },
     "10": {
-      "signals": 1,
+      "signals": 2,
       "observed": 0,
-      "pending": 1,
+      "pending": 2,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -26,9 +26,9 @@
       "assessment": "insufficient_observations"
     },
     "20": {
-      "signals": 1,
+      "signals": 2,
       "observed": 0,
-      "pending": 1,
+      "pending": 2,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -61,14 +61,38 @@
       "reference_entry_day": "2026-10-22",
       "reference_exit_day": "2026-11-19",
       "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-22",
+      "ticker": "IYG",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-23",
+      "reference_exit_day": "2026-10-30",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-22",
+      "ticker": "IYG",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-23",
+      "reference_exit_day": "2026-11-06",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-22",
+      "ticker": "IYG",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-23",
+      "reference_exit_day": "2026-11-20",
+      "result": "pending"
     }
   ],
-  "generated_at_utc": "2026-10-21T23:52:45.106216+00:00",
+  "generated_at_utc": "2026-10-22T23:52:23.734603+00:00",
   "new_daily_lock_created": true,
-  "locked_current_us_date": "2026-10-21",
+  "locked_current_us_date": "2026-10-22",
   "current_technical_candidate_entries": 1,
-  "latest_verified_universe_fraction": 0.94901,
-  "last_expected_closed_us_session": "2026-10-21",
+  "latest_verified_universe_fraction": 0.95467,
+  "last_expected_closed_us_session": "2026-10-22",
   "warnings": [],
   "status": "OK",
   "interpretation": "Audit of technical-screen transitions ONLY, not ChatGPT ETF buy/hold recommendations. Next-session-close to subsequent-close is an observation proxy, NOT a tradable fill. The Yahoo auto-adjusted closes in separate frozen downloads may be revised around distributions, splits and provider corrections. Do not claim total-return accuracy, causality, live execution, or strategy superiority. No fees, FX or slippage included. A prospective sample of 30+ observations is exploratory, not proof."

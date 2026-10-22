@@ -1,0 +1,69 @@
+{
+  "us_market_date": "2026-10-22",
+  "github_run_id": "39874405812",
+  "expected_latest_closed_nyse_session": "2026-10-22",
+  "generated_at_utc": "2026-10-22T23:54:15.522474+00:00",
+  "status": "ERROR",
+  "counts": {
+    "etf_verified": 337,
+    "etf_universe": 353,
+    "etf_fraction": 0.95467,
+    "base_macro_ok": 22,
+    "base_macro_expected": 22,
+    "supplemental_ok": 7,
+    "supplemental_expected": 10,
+    "manual_expected": 2,
+    "supplemental_missing_automatic": 0
+  },
+  "supplemental_statuses": {
+    "CORE_PCE": "ok",
+    "INITIAL_CLAIMS": "ok",
+    "RETAIL_SALES": "ok",
+    "NFCI": "stale",
+    "MFG_NEW_ORDERS": "ok",
+    "DURABLE_NEW_ORDERS": "ok",
+    "ISM_MANUFACTURING": "manual",
+    "ISM_SERVICES": "manual",
+    "REAL_GDP": "ok",
+    "SP500_BREADTH": "ok"
+  },
+  "module_status": {
+    "screen_audit": "OK",
+    "macro_etf_links": "available",
+    "industry_evidence": "OK",
+    "judgment_archive": "ERROR"
+  },
+  "stage_outcomes": {
+    "ETF_SCAN": "success",
+    "BASE_MACRO": "success",
+    "EXTRA_MACRO": "success",
+    "SCREEN_AUDIT": "success",
+    "MARKET_LINKS": "success",
+    "INDUSTRY_EVIDENCE": "success",
+    "JUDGMENT_ARCHIVE": "success"
+  },
+  "findings": [
+    {
+      "level": "KNOWN",
+      "code": "NFCI_NOT_LIVE",
+      "detail": "NFCI latest official CSV status=stale, requires permitted manual verification"
+    },
+    {
+      "level": "ERROR",
+      "code": "MODULE_JUDGMENT_ARCHIVE_ERROR",
+      "detail": "data/decisions/latest.json reports status ERROR"
+    },
+    {
+      "level": "ERROR",
+      "code": "DECISIONS_INVALID_RECORD",
+      "detail": "ETF research decision evidence contains invalid records"
+    }
+  ],
+  "new_alert_codes": [
+    "MODULE_JUDGMENT_ARCHIVE_ERROR",
+    "DECISIONS_INVALID_RECORD"
+  ],
+  "alert_summary": "new non-expected warning/error codes only; KNOWN values excluded",
+  "not_a_market_signal": true,
+  "guidance": "ERROR fails GitHub Actions after archival; WARN annotates success; KNOWN must still be reported separately."
+}

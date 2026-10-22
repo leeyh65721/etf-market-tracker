@@ -1,26 +1,26 @@
 {
-  "us_market_date": "2026-10-21",
-  "github_run_id": "39696026705",
-  "expected_latest_closed_nyse_session": "2026-10-21",
-  "generated_at_utc": "2026-10-21T23:54:37.310279+00:00",
-  "status": "WARN",
+  "us_market_date": "2026-10-22",
+  "github_run_id": "39874405812",
+  "expected_latest_closed_nyse_session": "2026-10-22",
+  "generated_at_utc": "2026-10-22T23:54:15.522474+00:00",
+  "status": "ERROR",
   "counts": {
-    "etf_verified": 335,
+    "etf_verified": 337,
     "etf_universe": 353,
-    "etf_fraction": 0.94901,
+    "etf_fraction": 0.95467,
     "base_macro_ok": 22,
     "base_macro_expected": 22,
-    "supplemental_ok": 5,
+    "supplemental_ok": 7,
     "supplemental_expected": 10,
     "manual_expected": 2,
-    "supplemental_missing_automatic": 2
+    "supplemental_missing_automatic": 0
   },
   "supplemental_statuses": {
     "CORE_PCE": "ok",
     "INITIAL_CLAIMS": "ok",
-    "RETAIL_SALES": "unavailable",
+    "RETAIL_SALES": "ok",
     "NFCI": "stale",
-    "MFG_NEW_ORDERS": "unavailable",
+    "MFG_NEW_ORDERS": "ok",
     "DURABLE_NEW_ORDERS": "ok",
     "ISM_MANUFACTURING": "manual",
     "ISM_SERVICES": "manual",
@@ -31,7 +31,7 @@
     "screen_audit": "OK",
     "macro_etf_links": "available",
     "industry_evidence": "OK",
-    "judgment_archive": "OK"
+    "judgment_archive": "ERROR"
   },
   "stage_outcomes": {
     "ETF_SCAN": "success",
@@ -44,28 +44,24 @@
   },
   "findings": [
     {
-      "level": "WARN",
-      "code": "ETF_COVERAGE_WATCH",
-      "detail": "Verified ETF universe 335/353 (94.9%)"
-    },
-    {
       "level": "KNOWN",
       "code": "NFCI_NOT_LIVE",
       "detail": "NFCI latest official CSV status=stale, requires permitted manual verification"
     },
     {
-      "level": "WARN",
-      "code": "EXTRA_UNAVAILABLE_MFG_NEW_ORDERS",
-      "detail": "Supplemental automatic metric MFG_NEW_ORDERS is unavailable; don't use as current"
+      "level": "ERROR",
+      "code": "MODULE_JUDGMENT_ARCHIVE_ERROR",
+      "detail": "data/decisions/latest.json reports status ERROR"
     },
     {
-      "level": "WARN",
-      "code": "EXTRA_UNAVAILABLE_RETAIL_SALES",
-      "detail": "Supplemental automatic metric RETAIL_SALES is unavailable; don't use as current"
+      "level": "ERROR",
+      "code": "DECISIONS_INVALID_RECORD",
+      "detail": "ETF research decision evidence contains invalid records"
     }
   ],
   "new_alert_codes": [
-    "ETF_COVERAGE_WATCH"
+    "MODULE_JUDGMENT_ARCHIVE_ERROR",
+    "DECISIONS_INVALID_RECORD"
   ],
   "alert_summary": "new non-expected warning/error codes only; KNOWN values excluded",
   "not_a_market_signal": true,
