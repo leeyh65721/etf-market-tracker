@@ -1,0 +1,26 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-10-23-SOXX-risk-watch",
+  "ticker": "SOXX",
+  "stance": "risk_watch",
+  "us_market_date": "2026-10-22",
+  "original_report_date_kst": "2026-10-23",
+  "archived_on_utc_date": "2026-10-23",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-10-23.md",
+  "verbatim_source_excerpt": "**SOXX 관찰 위험도 상향: 10월 22일 반도체 급락은 10월 21일의 하루 반등이 지속 추세로 확인되지 않았음을 보여준다.**",
+  "original_close_usd": 475.69,
+  "original_spy_close_usd": 763.96,
+  "thesis": "SOXX risk-watch raised after -6.79% single-session decline, -15.91% trailing 21 sessions and underperformance against SPY; not a sell order.",
+  "counterevidence": "Lam Research equipment sales rose, TI analog sales improved, Meta increased capex; single-day selloff need not persist.",
+  "invalidation": "SOXX relative strength recovers, several semiconductor suppliers confirm orders, shipments and cash flow, funding and credit risks ease, and ETF holdings/liquidity/valuation are independently verified.",
+  "revisit_trigger": "Evaluate SOXX versus same-session SPY after 5, 10 and 20 NYSE sessions from 2026-10-22 close, without treating future prices as known today.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true
+}
