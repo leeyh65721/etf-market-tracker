@@ -65,7 +65,7 @@ def check_entry(item,root=ROOT):
     if item.get("schema")!=SCHEMA:
         raise ValueError("Unsupported decision-archive schema")
     rid=str(item.get("record_id",""))
-    if not re.fullmatch(r"20\d\d-\d\d-\d\d-[A-Z0-9.-]+-[a-z0-9-]+",rid):
+    if not re.fullmatch(r"20\d\d-\d\d-\d\d-[A-Z0-9.-]+-[a-z0-9_-]+",rid):
         raise ValueError("Invalid record ID")
     symbol=str(item.get("ticker",""))
     if not SYMBOL_PATTERN.fullmatch(symbol):
