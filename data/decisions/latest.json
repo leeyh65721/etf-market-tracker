@@ -1,14 +1,12 @@
 {
-  "generated_at_utc": "2026-10-22T23:54:14.813848+00:00",
+  "generated_at_utc": "2026-10-23T23:53:02.462999+00:00",
   "status": "ERROR",
-  "valid_count": 4,
+  "valid_count": 6,
   "retrospective_count": 4,
-  "prospective_count": 0,
+  "prospective_count": 2,
   "invalid_count": 1,
-  "reports_missing_structured_records_count": 1,
-  "reports_missing_structured_records": [
-    "analysis/daily/2026-10-22.md"
-  ],
+  "reports_missing_structured_records_count": 0,
+  "reports_missing_structured_records": [],
   "entries": [
     {
       "record_id": "2026-10-19-IGV-watch",
@@ -109,12 +107,62 @@
       "eligible_for_prospective_judgment_scoring": false,
       "assessment": "historical_backfill_not_prospectively_scored",
       "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-10-22-MARKET-no_new_candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-10-21",
+      "original_report_date_kst": "2026-10-22",
+      "archived_on_utc_date": "2026-10-22",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-10-22.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "No newly validated ETF purchase candidate or allocation change; retain existing observations and do not treat one-day SOXX rebound as trend reversal.",
+      "counterevidence": "Lam Research sales and Meta data-center capital expenditure increased, but do not establish broad SOXX constituent demand.",
+      "invalidation": "Reassess if multiple suppliers' orders, shipments, cash flow, rates, ETF relative strength and issuer information are independently verified.",
+      "revisit_trigger": "Revisit market stance after 5, 10 and 20 NYSE trading sessions using SPY as context; no ticker-specific return attribution for this MARKET entry.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-22",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-10-23-MARKET-no-new-candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-10-22",
+      "original_report_date_kst": "2026-10-23",
+      "archived_on_utc_date": "2026-10-23",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-10-23.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "No new verified ETF buy candidate or account allocation change in the Oct 23 public research report because the latest health gate was ERROR and issuer, fund structure, valuation and liquidity evidence did not support a new entry.",
+      "counterevidence": "XLV and IHF exhibited relative strength, XLP and XLU had defensive momentum, chip equipment and analog company revenues grew, and a substantial share of S&P 500 constituents rose despite index weakness.",
+      "invalidation": "Reconsider the no-new-candidate stance when the judgment-ledger health error is revalidated as resolved and independent ETF fund characteristics, relative strength, company orders, cash flow and macro/credit evidence support a clearly better opportunity.",
+      "revisit_trigger": "Review the overall opportunity set after 5, 10 and 20 NYSE sessions without attributing ticker-specific predictive hit rates to a MARKET no-new-candidate entry.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-23",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
     }
   ],
   "errors": [
     {
-      "file": "2026-10-22-MARKET-no_new_candidate.json",
-      "error": "ValueError: Invalid record ID"
+      "file": "2026-10-23-SOXX-risk-watch.json",
+      "error": "ValueError: Stance not in controlled public vocabulary"
     }
   ],
   "limitations": [

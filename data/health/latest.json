@@ -1,13 +1,13 @@
 {
-  "us_market_date": "2026-10-22",
-  "github_run_id": "39874405812",
-  "expected_latest_closed_nyse_session": "2026-10-22",
-  "generated_at_utc": "2026-10-22T23:54:15.522474+00:00",
+  "us_market_date": "2026-10-23",
+  "github_run_id": "40041797407",
+  "expected_latest_closed_nyse_session": "2026-10-23",
+  "generated_at_utc": "2026-10-23T23:53:03.088598+00:00",
   "status": "ERROR",
   "counts": {
-    "etf_verified": 337,
+    "etf_verified": 338,
     "etf_universe": 353,
-    "etf_fraction": 0.95467,
+    "etf_fraction": 0.95751,
     "base_macro_ok": 22,
     "base_macro_expected": 22,
     "supplemental_ok": 7,
@@ -59,10 +59,7 @@
       "detail": "ETF research decision evidence contains invalid records"
     }
   ],
-  "new_alert_codes": [
-    "MODULE_JUDGMENT_ARCHIVE_ERROR",
-    "DECISIONS_INVALID_RECORD"
-  ],
+  "new_alert_codes": [],
   "alert_summary": "new non-expected warning/error codes only; KNOWN values excluded",
   "not_a_market_signal": true,
   "guidance": "ERROR fails GitHub Actions after archival; WARN annotates success; KNOWN must still be reported separately."
