@@ -9,8 +9,6 @@
   "provenance": "contemporaneous_report",
   "source_report": "analysis/weekly/2026-10-24.md",
   "verbatim_source_excerpt": "**새 후보 없음 — 이번 주 새로 검증된 ETF 매수 후보가 없으며, 공개 근거만으로 신규 ETF 편입이나 즉각적인 비중 변경이 기존 노출 유지보다 명백히 우월하다고 판단하지 않는다.**",
-  "original_close_usd": null,
-  "original_spy_close_usd": null,
   "thesis": "No new fully validated ETF buy candidate or allocation change is supported. Maintain watch and avoid expanding risk while judgment archive health remains ERROR, oil and global credit spreads are elevated, and fund/issuer valuation and ETF flow evidence is incomplete.",
   "counterevidence": "Lam Research equipment revenue +22% QoQ, Texas Instruments revenue +28% YoY, SMCI higher preliminary same-quarter guidance, and SOXX +0.53% on Oct 23 indicate positive offsetting signals; XLE, XLV and XLP have positive trailing SPY-relative performance.",
   "invalidation": "Reassess if judgment-ledger schema error is repaired and independently verified supplier orders/shipments/cash conversion, US IG/HY OAS and funding liquidity, oil supply normalization, issuer valuation, ETF liquidity/AUM/spread/flows demonstrate a superior opportunity.",
@@ -22,5 +20,6 @@
   ],
   "comparison_baseline": "SPY",
   "trade_instruction": false,
-  "not_a_buy_recommendation": true
+  "not_a_buy_recommendation": true,
+  "schema_correction_note": "2026-10-27: removed null ETF/benchmark prices from market-wide no-new-candidate observation, which never claimed an ETF return."
 }
