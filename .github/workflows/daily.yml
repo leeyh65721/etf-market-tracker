@@ -1,6 +1,7 @@
 name: Daily ETF market scan
 on:
   # Verify corrected BEA PCE and GDP and original-source NFCI freshness safeguards.
+  # 2026-10-27 verification rerun after correcting two public judgment-record schema errors.
   push:
     paths:
       - '.github/workflows/daily.yml'
