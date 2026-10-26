@@ -1,0 +1,24 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-10-27-MARKET-no-new-candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-10-26",
+  "original_report_date_kst": "2026-10-27",
+  "archived_on_utc_date": "2026-10-26",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-10-27.md",
+  "verbatim_source_excerpt": "**새로 검증된 ETF 매수 후보 없음.**",
+  "thesis": "The 2026-10-26 SOXX rebound does not yet validate a medium-term recovery, Meta launched $35bn equity-linked offerings and only planned up to $60bn ATM, and Brazil's severe local selloff did not establish a US-wide funding shock. With current judgment archive ERROR and unverified new ETF structure/AUM/fees/spreads, no new ETF purchase or daily allocation change is supported.",
+  "counterevidence": "SOXX rose 2.85% against SPY 0.71%, the Philadelphia Semiconductor Index rebounded around 2.8%, Meta's planned equity funding may sustain data-center investment, and US major stock indices advanced despite Brazil's shock.",
+  "invalidation": "Revisit when the corrected judgment archive is rerun successfully, Meta financing prices on orderly terms, semiconductor issuers independently verify new orders, shipments and cash conversion, SOXX maintains positive SPY-relative strength, and US IG/HY credit conditions, ETF AUM/fees/spreads/holdings/valuation support a superior new candidate.",
+  "revisit_trigger": "Reassess broad no-new-candidate judgment after 5, 10 and 20 NYSE trading sessions with dated ETF, issuer, macro and funding evidence; do not score a MARKET record as a ticker return prediction.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true
+}
