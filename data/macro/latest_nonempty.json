@@ -1,6 +1,6 @@
 {
-  "market_date": "2026-10-23",
-  "generated_at_utc": "2026-10-23T23:51:10.016537+00:00",
+  "market_date": "2026-10-26",
+  "generated_at_utc": "2026-10-26T23:54:42.981646+00:00",
   "status": "ok",
   "requested_series_count": 22,
   "retrieved_series_count": 22,
@@ -8,7 +8,7 @@
   "source": "US Treasury, BLS, EIA, Cboe, ECB, and New York Fed official public sources",
   "credit_etf_proxies": {
     "status": "ok",
-    "asof": "2026-10-23",
+    "asof": "2026-10-26",
     "metric_type": "difference in ETF price returns, not yield spread/OAS",
     "caveats": [
       "ETF price returns exclude FX and may differ in duration, fees and distributions.",
@@ -19,14 +19,14 @@
       "HY_vs_treasury": {
         "credit_etf": "HYG",
         "treasury_etf": "IEF",
-        "5d_price_return_gap_pp": -0.45,
-        "21d_price_return_gap_pp": -2.504
+        "5d_price_return_gap_pp": -0.673,
+        "21d_price_return_gap_pp": -2.001
       },
       "IG_vs_treasury": {
         "credit_etf": "LQD",
         "treasury_etf": "IEF",
-        "5d_price_return_gap_pp": -0.262,
-        "21d_price_return_gap_pp": -0.753
+        "5d_price_return_gap_pp": -0.047,
+        "21d_price_return_gap_pp": -0.374
       }
     }
   },
@@ -51,15 +51,15 @@
       "frequency": "daily",
       "unit": "%",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
-      "observation_date": "2026-10-23",
-      "value": 4.69,
-      "previous_date": "2026-10-22",
-      "previous_value": 4.65,
-      "change_previous": 0.04,
+      "observation_date": "2026-10-26",
+      "value": 4.68,
+      "previous_date": "2026-10-23",
+      "previous_value": 4.69,
+      "change_previous": -0.01,
       "status": "ok",
-      "five_observation_reference_date": "2026-10-16",
-      "five_observation_change": -0.05,
-      "five_observation_pct": -1.0549
+      "five_observation_reference_date": "2026-10-19",
+      "five_observation_change": -0.09,
+      "five_observation_pct": -1.8868
     },
     {
       "series_id": "T10Y",
@@ -67,15 +67,15 @@
       "frequency": "daily",
       "unit": "%",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
-      "observation_date": "2026-10-23",
+      "observation_date": "2026-10-26",
       "value": 5.0,
-      "previous_date": "2026-10-22",
-      "previous_value": 4.96,
-      "change_previous": 0.04,
+      "previous_date": "2026-10-23",
+      "previous_value": 5.0,
+      "change_previous": 0.0,
       "status": "ok",
-      "five_observation_reference_date": "2026-10-16",
-      "five_observation_change": -0.09,
-      "five_observation_pct": -1.7682
+      "five_observation_reference_date": "2026-10-19",
+      "five_observation_change": -0.15,
+      "five_observation_pct": -2.9126
     },
     {
       "series_id": "T10Y_REAL",
@@ -83,15 +83,15 @@
       "frequency": "daily",
       "unit": "%",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026&page&_format=csv",
-      "observation_date": "2026-10-23",
+      "observation_date": "2026-10-26",
       "value": 2.66,
-      "previous_date": "2026-10-22",
-      "previous_value": 2.64,
-      "change_previous": 0.02,
+      "previous_date": "2026-10-23",
+      "previous_value": 2.66,
+      "change_previous": 0.0,
       "status": "ok",
-      "five_observation_reference_date": "2026-10-16",
-      "five_observation_change": -0.08,
-      "five_observation_pct": -2.9197
+      "five_observation_reference_date": "2026-10-19",
+      "five_observation_change": -0.14,
+      "five_observation_pct": -5.0
     },
     {
       "series_id": "T10Y2Y",
@@ -99,15 +99,15 @@
       "frequency": "daily",
       "unit": "%p",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
-      "observation_date": "2026-10-23",
-      "value": 0.31,
-      "previous_date": "2026-10-22",
+      "observation_date": "2026-10-26",
+      "value": 0.32,
+      "previous_date": "2026-10-23",
       "previous_value": 0.31,
-      "change_previous": 0.0,
+      "change_previous": 0.01,
       "status": "ok",
-      "five_observation_reference_date": "2026-10-16",
-      "five_observation_change": -0.04,
-      "five_observation_pct": -11.4286
+      "five_observation_reference_date": "2026-10-19",
+      "five_observation_change": -0.06,
+      "five_observation_pct": -15.7895
     },
     {
       "series_id": "CPI_HEADLINE",
@@ -222,15 +222,15 @@
       "frequency": "daily",
       "unit": "index",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-      "observation_date": "2026-10-22",
-      "value": 19.03,
-      "previous_date": "2026-10-21",
-      "previous_value": 16.68,
-      "change_previous": 2.35,
+      "observation_date": "2026-10-23",
+      "value": 19.45,
+      "previous_date": "2026-10-22",
+      "previous_value": 19.03,
+      "change_previous": 0.42,
       "status": "ok",
-      "five_observation_reference_date": "2026-10-15",
-      "five_observation_change": 2.57,
-      "five_observation_pct": 15.6136
+      "five_observation_reference_date": "2026-10-16",
+      "five_observation_change": -0.54,
+      "five_observation_pct": -2.7014
     },
     {
       "series_id": "VVIX",
@@ -238,15 +238,15 @@
       "frequency": "daily",
       "unit": "index",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VVIX_History.csv",
-      "observation_date": "2026-10-23",
-      "value": 109.7,
-      "previous_date": "2026-10-22",
-      "previous_value": 107.94,
-      "change_previous": 1.76,
+      "observation_date": "2026-10-26",
+      "value": 101.43,
+      "previous_date": "2026-10-23",
+      "previous_value": 109.7,
+      "change_previous": -8.27,
       "status": "ok",
-      "five_observation_reference_date": "2026-10-16",
-      "five_observation_change": -0.21,
-      "five_observation_pct": -0.1911
+      "five_observation_reference_date": "2026-10-19",
+      "five_observation_change": -5.5,
+      "five_observation_pct": -5.1436
     },
     {
       "series_id": "USD_KRW_ECB",
@@ -254,15 +254,15 @@
       "frequency": "daily",
       "unit": "KRW/USD",
       "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml",
-      "observation_date": "2026-10-23",
-      "value": 1324.45278,
-      "previous_date": "2026-10-22",
-      "previous_value": 1324.63186,
-      "change_previous": -0.17908,
+      "observation_date": "2026-10-26",
+      "value": 1325.27708,
+      "previous_date": "2026-10-23",
+      "previous_value": 1324.45278,
+      "change_previous": 0.8243,
       "status": "ok",
-      "five_observation_reference_date": "2026-10-16",
-      "five_observation_change": -7.64532,
-      "five_observation_pct": -0.5739
+      "five_observation_reference_date": "2026-10-19",
+      "five_observation_change": -4.21067,
+      "five_observation_pct": -0.3167
     },
     {
       "series_id": "EUR_USD_ECB",
@@ -270,15 +270,15 @@
       "frequency": "daily",
       "unit": "USD/EUR",
       "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml",
-      "observation_date": "2026-10-23",
-      "value": 1.1193,
-      "previous_date": "2026-10-22",
-      "previous_value": 1.1205,
-      "change_previous": -0.0012,
+      "observation_date": "2026-10-26",
+      "value": 1.1188,
+      "previous_date": "2026-10-23",
+      "previous_value": 1.1193,
+      "change_previous": -0.0005,
       "status": "ok",
-      "five_observation_reference_date": "2026-10-16",
-      "five_observation_change": -0.006,
-      "five_observation_pct": -0.5332
+      "five_observation_reference_date": "2026-10-19",
+      "five_observation_change": -0.0037,
+      "five_observation_pct": -0.3296
     },
     {
       "series_id": "EFFR",
@@ -286,13 +286,13 @@
       "frequency": "daily",
       "unit": "%",
       "source_url": "https://markets.newyorkfed.org/api/rates/unsecured/effr/last/120.json",
-      "observation_date": "2026-10-22",
+      "observation_date": "2026-10-23",
       "value": 3.88,
-      "previous_date": "2026-10-21",
+      "previous_date": "2026-10-22",
       "previous_value": 3.88,
       "change_previous": 0.0,
       "status": "ok",
-      "five_observation_reference_date": "2026-10-15",
+      "five_observation_reference_date": "2026-10-16",
       "five_observation_change": 0.0,
       "five_observation_pct": 0.0
     },
@@ -302,15 +302,15 @@
       "frequency": "daily",
       "unit": "%",
       "source_url": "https://markets.newyorkfed.org/api/rates/secured/sofr/last/120.json",
-      "observation_date": "2026-10-22",
-      "value": 3.9,
-      "previous_date": "2026-10-21",
-      "previous_value": 3.88,
+      "observation_date": "2026-10-23",
+      "value": 3.92,
+      "previous_date": "2026-10-22",
+      "previous_value": 3.9,
       "change_previous": 0.02,
       "status": "ok",
-      "five_observation_reference_date": "2026-10-15",
-      "five_observation_change": 0.01,
-      "five_observation_pct": 0.2571
+      "five_observation_reference_date": "2026-10-16",
+      "five_observation_change": 0.04,
+      "five_observation_pct": 1.0309
     },
     {
       "series_id": "JOLTS_OPENINGS",
@@ -389,6 +389,14 @@
     }
   ],
   "conditional_signals": [
+    {
+      "indicator": "T10Y",
+      "title": "미국 장기금리 변화",
+      "evidence": "-15.00",
+      "period": "2026-10-19 to 2026-10-26",
+      "conditional_interpretation": "상승은 기업 차입비용과 주식 할인율에 부담이 될 수 있으나 성장 기대로 움직였을 수도 있음",
+      "independently_verify": "연준과 국채 실질금리·기대물가·입찰 및 증시를 재확인"
+    },
     {
       "indicator": "WTI",
       "title": "원유 현물가격 변화",

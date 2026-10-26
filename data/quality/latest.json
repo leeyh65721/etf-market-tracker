@@ -1,12 +1,12 @@
 {
-  "asof": "2026-10-23",
-  "locked_sessions": 4,
-  "signal_count": 4,
+  "asof": "2026-10-26",
+  "locked_sessions": 5,
+  "signal_count": 18,
   "summaries": {
     "5": {
-      "signals": 4,
+      "signals": 18,
       "observed": 0,
-      "pending": 4,
+      "pending": 18,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -15,9 +15,9 @@
       "assessment": "insufficient_observations"
     },
     "10": {
-      "signals": 4,
+      "signals": 18,
       "observed": 0,
-      "pending": 4,
+      "pending": 18,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -26,9 +26,9 @@
       "assessment": "insufficient_observations"
     },
     "20": {
-      "signals": 4,
+      "signals": 18,
       "observed": 0,
-      "pending": 4,
+      "pending": 18,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -133,14 +133,350 @@
       "reference_entry_day": "2026-10-26",
       "reference_exit_day": "2026-11-23",
       "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "BOAT",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "BOAT",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "BOAT",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "CIBR",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "CIBR",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "CIBR",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "FDIS",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "FDIS",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "FDIS",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "HACK",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "HACK",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "HACK",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "IBB",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "IBB",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "IBB",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "KBE",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "KBE",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "KBE",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "KRE",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "KRE",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "KRE",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "SCHH",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "SCHH",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "SCHH",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "SHLD",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "SHLD",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "SHLD",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "SKYY",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "SKYY",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "SKYY",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "VCR",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "VCR",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "VCR",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "XLF",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "XLF",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "XLF",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "XLRE",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "XLRE",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "XLRE",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "XLY",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "XLY",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-26",
+      "ticker": "XLY",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-27",
+      "reference_exit_day": "2026-11-24",
+      "result": "pending"
     }
   ],
-  "generated_at_utc": "2026-10-23T23:51:07.818710+00:00",
+  "generated_at_utc": "2026-10-26T23:54:41.292535+00:00",
   "new_daily_lock_created": true,
-  "locked_current_us_date": "2026-10-23",
-  "current_technical_candidate_entries": 2,
-  "latest_verified_universe_fraction": 0.95751,
-  "last_expected_closed_us_session": "2026-10-23",
+  "locked_current_us_date": "2026-10-26",
+  "current_technical_candidate_entries": 14,
+  "latest_verified_universe_fraction": 0.95467,
+  "last_expected_closed_us_session": "2026-10-26",
   "warnings": [],
   "status": "OK",
   "interpretation": "Audit of technical-screen transitions ONLY, not ChatGPT ETF buy/hold recommendations. Next-session-close to subsequent-close is an observation proxy, NOT a tradable fill. The Yahoo auto-adjusted closes in separate frozen downloads may be revised around distributions, splits and provider corrections. Do not claim total-return accuracy, causality, live execution, or strategy superiority. No fees, FX or slippage included. A prospective sample of 30+ observations is exploratory, not proof."
