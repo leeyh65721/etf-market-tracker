@@ -2,7 +2,7 @@
   "schema": "public_etf_judgment_v1",
   "record_id": "2026-10-23-SOXX-risk-watch",
   "ticker": "SOXX",
-  "stance": "risk_watch",
+  "stance": "watch_weaker",
   "us_market_date": "2026-10-22",
   "original_report_date_kst": "2026-10-23",
   "archived_on_utc_date": "2026-10-23",
@@ -22,5 +22,7 @@
   ],
   "comparison_baseline": "SPY",
   "trade_instruction": false,
-  "not_a_buy_recommendation": true
+  "not_a_buy_recommendation": true,
+  "original_stance_label": "risk_watch",
+  "schema_correction_note": "2026-10-27: normalized original risk_watch label to permitted watch_weaker; thesis, source excerpt and original prices unchanged."
 }
