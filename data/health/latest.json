@@ -1,19 +1,19 @@
 {
-  "us_market_date": "2026-10-26",
-  "github_run_id": "40423328117",
-  "expected_latest_closed_nyse_session": "2026-10-26",
-  "generated_at_utc": "2026-10-27T00:02:04.772755+00:00",
-  "status": "ERROR",
+  "us_market_date": "2026-10-27",
+  "github_run_id": "40605159014",
+  "expected_latest_closed_nyse_session": "2026-10-27",
+  "generated_at_utc": "2026-10-27T23:56:56.331424+00:00",
+  "status": "WARN",
   "counts": {
-    "etf_verified": 309,
+    "etf_verified": 336,
     "etf_universe": 353,
-    "etf_fraction": 0.87535,
+    "etf_fraction": 0.95184,
     "base_macro_ok": 22,
     "base_macro_expected": 22,
-    "supplemental_ok": 4,
+    "supplemental_ok": 6,
     "supplemental_expected": 10,
     "manual_expected": 2,
-    "supplemental_missing_automatic": 3
+    "supplemental_missing_automatic": 1
   },
   "supplemental_statuses": {
     "CORE_PCE": "ok",
@@ -21,11 +21,11 @@
     "RETAIL_SALES": "ok",
     "NFCI": "stale",
     "MFG_NEW_ORDERS": "stale",
-    "DURABLE_NEW_ORDERS": "unavailable",
+    "DURABLE_NEW_ORDERS": "ok",
     "ISM_MANUFACTURING": "manual",
     "ISM_SERVICES": "manual",
     "REAL_GDP": "ok",
-    "SP500_BREADTH": "unavailable"
+    "SP500_BREADTH": "ok"
   },
   "module_status": {
     "screen_audit": "OK",
@@ -44,41 +44,17 @@
   },
   "findings": [
     {
-      "level": "WARN",
-      "code": "ETF_COVERAGE_WATCH",
-      "detail": "Verified ETF universe 309/353 (87.5%)"
-    },
-    {
       "level": "KNOWN",
       "code": "NFCI_NOT_LIVE",
       "detail": "NFCI latest official CSV status=stale, requires permitted manual verification"
     },
     {
       "level": "WARN",
-      "code": "EXTRA_UNAVAILABLE_DURABLE_NEW_ORDERS",
-      "detail": "Supplemental automatic metric DURABLE_NEW_ORDERS is unavailable; don't use as current"
-    },
-    {
-      "level": "WARN",
       "code": "EXTRA_UNAVAILABLE_MFG_NEW_ORDERS",
       "detail": "Supplemental automatic metric MFG_NEW_ORDERS is stale; don't use as current"
-    },
-    {
-      "level": "WARN",
-      "code": "EXTRA_UNAVAILABLE_SP500_BREADTH",
-      "detail": "Supplemental automatic metric SP500_BREADTH is unavailable; don't use as current"
-    },
-    {
-      "level": "ERROR",
-      "code": "EXTRA_MULTIPLE_LOSSES",
-      "detail": "At least 3/7 normally automated supplemental metrics failed: DURABLE_NEW_ORDERS, MFG_NEW_ORDERS, SP500_BREADTH"
     }
   ],
-  "new_alert_codes": [
-    "ETF_COVERAGE_WATCH",
-    "EXTRA_UNAVAILABLE_SP500_BREADTH",
-    "EXTRA_MULTIPLE_LOSSES"
-  ],
+  "new_alert_codes": [],
   "alert_summary": "new non-expected warning/error codes only; KNOWN values excluded",
   "not_a_market_signal": true,
   "guidance": "ERROR fails GitHub Actions after archival; WARN annotates success; KNOWN must still be reported separately."
