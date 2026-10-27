@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-26T23:56:09.264049+00:00",
-  "status": "ERROR",
-  "valid_count": 6,
+  "generated_at_utc": "2026-10-27T00:02:04.182949+00:00",
+  "status": "OK",
+  "valid_count": 9,
   "retrospective_count": 4,
-  "prospective_count": 2,
-  "invalid_count": 2,
+  "prospective_count": 5,
+  "invalid_count": 0,
   "reports_missing_structured_records_count": 0,
   "reports_missing_structured_records": [],
   "entries": [
@@ -157,18 +157,84 @@
       "eligible_for_prospective_judgment_scoring": true,
       "assessment": "awaiting_forward_observation",
       "not_a_buy_recommendation": true
-    }
-  ],
-  "errors": [
-    {
-      "file": "2026-10-23-SOXX-risk-watch.json",
-      "error": "ValueError: Stance not in controlled public vocabulary"
     },
     {
-      "file": "2026-10-24-MARKET-no-new-candidate.json",
-      "error": "ValueError: MARKET no-new-idea record must not fabricate ETF prices"
+      "record_id": "2026-10-23-SOXX-risk-watch",
+      "ticker": "SOXX",
+      "stance": "watch_weaker",
+      "us_market_date": "2026-10-22",
+      "original_report_date_kst": "2026-10-23",
+      "archived_on_utc_date": "2026-10-23",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-10-23.md",
+      "original_close_usd": 475.69,
+      "original_spy_close_usd": 763.96,
+      "thesis": "SOXX risk-watch raised after -6.79% single-session decline, -15.91% trailing 21 sessions and underperformance against SPY; not a sell order.",
+      "counterevidence": "Lam Research equipment sales rose, TI analog sales improved, Meta increased capex; single-day selloff need not persist.",
+      "invalidation": "SOXX relative strength recovers, several semiconductor suppliers confirm orders, shipments and cash flow, funding and credit risks ease, and ETF holdings/liquidity/valuation are independently verified.",
+      "revisit_trigger": "Evaluate SOXX versus same-session SPY after 5, 10 and 20 NYSE sessions from 2026-10-22 close, without treating future prices as known today.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-23",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-10-24-MARKET-no-new-candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-10-23",
+      "original_report_date_kst": "2026-10-24",
+      "archived_on_utc_date": "2026-10-24",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/weekly/2026-10-24.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "No new fully validated ETF buy candidate or allocation change is supported. Maintain watch and avoid expanding risk while judgment archive health remains ERROR, oil and global credit spreads are elevated, and fund/issuer valuation and ETF flow evidence is incomplete.",
+      "counterevidence": "Lam Research equipment revenue +22% QoQ, Texas Instruments revenue +28% YoY, SMCI higher preliminary same-quarter guidance, and SOXX +0.53% on Oct 23 indicate positive offsetting signals; XLE, XLV and XLP have positive trailing SPY-relative performance.",
+      "invalidation": "Reassess if judgment-ledger schema error is repaired and independently verified supplier orders/shipments/cash conversion, US IG/HY OAS and funding liquidity, oil supply normalization, issuer valuation, ETF liquidity/AUM/spread/flows demonstrate a superior opportunity.",
+      "revisit_trigger": "Review this broad market stance after 5, 10 and 20 NYSE sessions, with dated macro, sector, credit and ETF evidence. No ticker-specific price hit-rate is attributed to a MARKET/no_new_candidate entry.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-26",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-10-27-MARKET-no-new-candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-10-26",
+      "original_report_date_kst": "2026-10-27",
+      "archived_on_utc_date": "2026-10-26",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-10-27.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "The 2026-10-26 SOXX rebound does not yet validate a medium-term recovery, Meta launched $35bn equity-linked offerings and only planned up to $60bn ATM, and Brazil's severe local selloff did not establish a US-wide funding shock. With current judgment archive ERROR and unverified new ETF structure/AUM/fees/spreads, no new ETF purchase or daily allocation change is supported.",
+      "counterevidence": "SOXX rose 2.85% against SPY 0.71%, the Philadelphia Semiconductor Index rebounded around 2.8%, Meta's planned equity funding may sustain data-center investment, and US major stock indices advanced despite Brazil's shock.",
+      "invalidation": "Revisit when the corrected judgment archive is rerun successfully, Meta financing prices on orderly terms, semiconductor issuers independently verify new orders, shipments and cash conversion, SOXX maintains positive SPY-relative strength, and US IG/HY credit conditions, ETF AUM/fees/spreads/holdings/valuation support a superior new candidate.",
+      "revisit_trigger": "Reassess broad no-new-candidate judgment after 5, 10 and 20 NYSE trading sessions with dated ETF, issuer, macro and funding evidence; do not score a MARKET record as a ticker return prediction.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-27",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
     }
   ],
+  "errors": [],
   "limitations": [
     "This is a ledger of manually saved dated public analyst research, not an automatically generated view.",
     "Past analysis uploaded afterward is NOT a validated forward-only call.",

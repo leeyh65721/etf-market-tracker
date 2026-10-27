@@ -1,6 +1,6 @@
 {
   "us_market_date": "2026-10-26",
-  "generated_at_utc": "2026-10-26T23:56:07.744968+00:00",
+  "generated_at_utc": "2026-10-27T00:02:03.054004+00:00",
   "market": {
     "status": "ok",
     "market_date": "2026-10-26",
@@ -488,19 +488,6 @@
       "frequency": "quarterly",
       "publication_date_verified": false,
       "same_market_date_observation": false,
-      "value_changed": null
-    },
-    {
-      "series_id": "SP500_BREADTH",
-      "source_group": "supplemental",
-      "name": "S&P 500 구성종목 상승 비율(자체 산출)",
-      "value": 57.45527,
-      "unit": "% constituents up",
-      "observation_date": "2026-10-26",
-      "source_url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
-      "frequency": "daily",
-      "publication_date_verified": false,
-      "same_market_date_observation": true,
       "value_changed": null
     },
     {

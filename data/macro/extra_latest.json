@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-10-26T23:56:06.957858+00:00",
+  "generated_at_utc": "2026-10-27T00:02:02.449911+00:00",
   "market_date": "2026-10-26",
   "coverage": "8 named categories, 10 separately labelled indicators",
   "requested_indicators": 10,
-  "ok_indicators": 5,
+  "ok_indicators": 4,
   "status": "partial",
   "categories": {
     "pce": {
@@ -61,7 +61,7 @@
       "indicators": [
         "SP500_BREADTH"
       ],
-      "observed": 1,
+      "observed": 0,
       "total": 1
     }
   },
@@ -138,15 +138,9 @@
     {
       "series_id": "DURABLE_NEW_ORDERS",
       "name": "미국 내구재 신규주문(전월비)",
-      "frequency": "monthly",
-      "value": 0.0,
-      "unit": "% m/m",
-      "observation_date": "2026-08-01",
+      "status": "unavailable",
       "source_url": "https://www.census.gov/manufacturing/m3/adv/current/index.html",
-      "collection_method": "Census M3 release summary",
-      "notes": "Nominal seasonally adjusted order change; zero may be rounded 'virtually unchanged'",
-      "status": "stale",
-      "age_days": 86
+      "error": "RuntimeError: HTTPError: 404 Client Error: Not Found for url: https://www.census.gov/manufacturing/m3/adv/current/index.html"
     },
     {
       "series_id": "ISM_MANUFACTURING",
@@ -179,20 +173,9 @@
     {
       "series_id": "SP500_BREADTH",
       "name": "S&P 500 구성종목 상승 비율(자체 산출)",
-      "frequency": "daily",
-      "value": 57.45527,
-      "unit": "% constituents up",
-      "observation_date": "2026-10-26",
+      "status": "unavailable",
       "source_url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
-      "collection_method": "S&P 500 listed constituents via Wikipedia, adjusted daily close via yfinance",
-      "notes": "Advancing / all valid constituents; not NYSE-wide A/D ratio; prices unofficial",
-      "sample_size": 503,
-      "advanced": 289,
-      "declined": 211,
-      "unchanged": 3,
-      "universe_size": 503,
-      "status": "ok",
-      "age_days": 0
+      "error": "ValueError: S&P breadth too sparse: 0/503"
     }
   ],
   "limitations": [
