@@ -1,0 +1,26 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "us_market_date": "2026-10-27",
+  "original_report_date_kst": "2026-10-28",
+  "archived_on_utc_date": "2026-10-28",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-10-28.md",
+  "original_spy_close_usd": 769.66,
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true,
+  "record_id": "2026-10-28-BUG-positive-watch",
+  "ticker": "BUG",
+  "stance": "positive_watch",
+  "verbatim_source_excerpt": "**BUG — 2~6주 보안 ETF 눌림목의 신규 긍정 관찰, 현재가 추격 매수는 보류.**",
+  "original_close_usd": 52.35,
+  "thesis": "BUG cybersecurity ETF showed +15.77% over 5 and +15.31% over 21 NYSE sessions (+14.78pp against SPY over 21), above rising 20-day and 50-day technical levels. New positive watch for a 2-6-week pullback and stabilization near $49.9-50.5, with volume and SPY-relative confirmation, not a current buy call. Fund liquidity, AUM, fee and spread pass baseline checks.",
+  "counterevidence": "The 5-session +15.77% run creates chase/reversal risk; current volume ratio 0.954 does not confirm an accelerating breakout. Fund constituent valuations/P-E were not independently verified, and FOMC rate/earnings gaps or a cybersecurity sector repricing could undermine the theme; HACK overlaps in top holdings.",
+  "invalidation": "No trade idea if the proposed $49.9-50.5 reference zone fails to stabilize or BUG breaks below the prior Oct 22 $47.56 reference with weak SPY-relative strength, fund liquidity/spread degrades, issuer guidance weakens, or a >2:1 risk/reward setup cannot be validated.",
+  "revisit_trigger": "Watch next 1-5 NYSE sessions for a non-chasing pullback and actual volume/relative strength; re-evaluate 2-6-week setup and independently compare original Oct 27 BUG $52.35 vs SPY $769.66 after 5, 10, 20 NYSE sessions; no fabricated future price."
+}
