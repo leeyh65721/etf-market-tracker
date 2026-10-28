@@ -1,0 +1,29 @@
+# Microsoft FY27 Q1 earnings call: new Q2 Azure guidance and capacity delivery constraints
+
+**Checked:** 2026-10-29 08:21 KST (2026-10-28 19:21 EDT). **Event:** Microsoft earnings conference call began 2026-10-28 17:30 EDT (2026-10-29 06:30 KST), after the previously recorded 06:04 KST release-only analysis. Public-market research only. No personal portfolio information.
+
+## What changed vs earlier event and daily/weekly notes
+- Existing `analysis/events/2026-10-29-0604-hyperscaler-fcf-klac.md` already recorded Microsoft's actual September-quarter Azure growth (+48%), operating cash flow ($58.0bn), cash property/equipment additions ($39.367bn), and indicative cash FCF ($18.633bn), alongside Alphabet's negative quarterly FCF and KLA's equipment outlook. At 06:04 KST the Microsoft earnings call **had not yet occurred**. Do not present those existing actuals, the FOMC hold, past CPI or SOXX selloff as newly announced.
+- **New management guidance from Oct 28 earnings call, reported after 17:30 EDT:** FY27 fiscal Q2 Azure revenue growth **49%-50% YoY**; company total Q2 revenue **$96.0bn-$97.1bn**. These are forward-looking estimates, not realized sales, and may be revised. Reuters reports both above analysts' expectations.
+- Microsoft total September-quarter capex **$45.2bn**, below earlier **~$50bn** plan/market estimate, but differs from **$39.367bn cash PP&E** used in the cash FCF calculation. Some external GPU/data-center capacity was delivered later than expected; management expects spending to accelerate as capacity arrives. Financial press reports calendar-2026 capex estimate **~$170bn versus ~$175bn** previously. The modest revision is attributed to timing/delivery constraints, **not evidence that Azure customer demand or semiconductor orders were cancelled**. Calendar-year vs fiscal-year timing and lease/cash accounting matter.
+- Reuters reports the cash FCF **~$18.6bn**, around $10bn above market expectation; after-hours Microsoft shares rose **roughly 4%-5%** in time-specific post-earnings observations. These are not Oct 29 regular-session closes.
+- Countercase: physical data-center power, construction and GPU capacity delays can defer semiconductor purchases/revenue recognition even when cloud demand is strong; elevated long yields, oil and AI capex financing could still compress valuations. Alphabet's same-night negative FCF remains an independently verified risk, already recorded, not a new event.
+
+## Market transmission, timing and risk decision
+- **Positive:** better-than-expected Azure outlook and internal cash generation → stronger evidence that a major AI customer can fund expansion → supports, but does not prove, future semiconductor orders and SOXX earnings.
+- **Negative:** delivery delays / high power and equipment costs → timing risk for GPU orders and semiconductor supplier revenue; elevated 10Y/real yields and expensive energy keep discount-rate and capital-intensity risks.
+- Cross-check: Reuters Oct 28 US regular session S&P500 **+0.28%**, Nasdaq **+0.27%**, Dow **+0.19%**; regular closes **precede** Microsoft/Alphabet earnings. Yahoo Oct 28 VIX close **16.91** vs Oct 27 **17.52** (secondary price vendor; FRED official series only available through Oct 27 at this check). Reuters Oct 28 Brent settlement **$115.32**, WTI **$102.78**; existing Middle East supply concern, no newly confirmed physical shutdown. Reuters DXY snapshot **102.15 (-0.2%)** after FOMC, not current KST 08:21 spot. FRED/ICE HY OAS **3.18%** and IG OAS **0.88%** are **Oct 27** observations, pre-earnings; new Oct 28 official credit data not yet published.
+- Latest cross-checked simultaneous US 2Y/10Y/real yields, USD/KRW, gold, natural gas, copper, repo/market funding liquidity, ETF after-hours spreads and 29 Oct regular-session semiconductor breadth **not available**. Do not infer stability from missing data or confuse differently timestamped/delayed prices.
+- **Assessment:** new, significant forward guidance and execution detail, *counterweight* to previously logged Alphabet FCF risk; **not a new verified market-wide structural shock, funding freeze, or urgent allocation trigger**. No immediate ETF buy/sell or weight change. Routine portfolio decision belongs to weekly review; next check Oct 29 US GDP/PCE, other hyperscaler guidance, regular-session SOXX/SPY relative breadth and credit response.
+- **Escalate if:** multiple cloud operators confirm order cancellations, large delivery delays, simultaneous persistent semiconductor selling and widening credit spreads, or severe liquidity shock.
+- **De-escalate if:** delayed capacity arrives and Azure orders/revenue meet guidance, positive cash conversion persists, sector order books and credit remain orderly.
+- No trade placed. No account allocations, holdings, cash, personal performance or private financial data in this public file.
+
+## Public sources
+- Microsoft official Q1 FY27 results, dated 2026-10-28: https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast
+- Reuters Oct 28 updated Microsoft Q2 outlook and cash generation: https://www.reuters.com/business/retail-consumer/microsoft-beats-quarterly-cloud-revenue-estimates-2026-10-28/
+- Financial Times Oct 28 capacity delivery / capex timing: https://www.ft.com/content/93f53cb4-1fc8-4ca5-aa91-186b77b03d92
+- Reuters Oct 28 oil settlements: https://www.reuters.com/world/asia-pacific/oil-prices-rise-after-attack-saudi-arabian-refinery-reignites-supply-concerns-2026-10-28/
+- Reuters Oct 28 US index close: https://www.reuters.com/world/asia-pacific/nasdaq-futures-rise-sk-hynix-boosts-chips-before-fed-decision-earnings-2026-10-28/
+- FRED credit data (Oct 27): https://fred.stlouisfed.org/series/BAMLH0A0HYM2 ; https://fred.stlouisfed.org/series/BAMLC0A0CM
+- Yahoo Oct 28 VIX historical: https://es-us.finanzas.yahoo.com/quote/%5EVIX/history/
