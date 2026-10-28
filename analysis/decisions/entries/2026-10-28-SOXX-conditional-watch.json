@@ -1,0 +1,26 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "us_market_date": "2026-10-27",
+  "original_report_date_kst": "2026-10-28",
+  "archived_on_utc_date": "2026-10-28",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-10-28.md",
+  "original_spy_close_usd": 769.66,
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true,
+  "record_id": "2026-10-28-SOXX-conditional-watch",
+  "ticker": "SOXX",
+  "stance": "watch",
+  "verbatim_source_excerpt": "**SOXX — 1~5거래일 반등의 조건부 양방향 관찰 신규 설정, 기존 중기 위험 경계는 유지.**",
+  "original_close_usd": 511.06,
+  "thesis": "SOXX rose 3.91% on the 2026-10-27 US session, 3.35pp above SPY, and 6.87% over the preceding two sessions. New tactical two-way research watch: possible 1-5-session pullback-and-recovery scenario around $500-505 with independently confirmed volume/relative strength; consider reversal failure below $491.83. Not a current buy/sell call and existing medium-term caution remains.",
+  "counterevidence": "Trailing 21-session SOXX return was -8.87% and -9.40pp against SPY; under 50-day average with falling 20-day trend, volume ratio only 0.991. Broadcom financing is not current realized chip orders, NXP earnings were published after the Oct 27 market close, and FOMC/earnings gaps may defeat stops.",
+  "invalidation": "Conditional bullish scenario fails if close falls below $491.83 with weak SPY-relative strength, volume does not confirm or the FOMC/issuer evidence deteriorates; a sustained relative-strength recovery and independent orders/shipments/cash conversion could ease the pre-existing medium-term risk watch.",
+  "revisit_trigger": "Recheck 1-5 NYSE sessions for real entry/exit conditions and FOMC gap risk; independently compare original Oct 27 SOXX $511.06 vs SPY $769.66 after 5, 10, and 20 NYSE sessions when actual dated closes exist; no pre-known outcomes."
+}
