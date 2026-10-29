@@ -1,12 +1,12 @@
 {
-  "asof": "2026-10-27",
-  "locked_sessions": 6,
-  "signal_count": 23,
+  "asof": "2026-10-28",
+  "locked_sessions": 7,
+  "signal_count": 27,
   "summaries": {
     "5": {
-      "signals": 23,
+      "signals": 27,
       "observed": 0,
-      "pending": 23,
+      "pending": 27,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -15,9 +15,9 @@
       "assessment": "insufficient_observations"
     },
     "10": {
-      "signals": 23,
+      "signals": 27,
       "observed": 0,
-      "pending": 23,
+      "pending": 27,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -26,9 +26,9 @@
       "assessment": "insufficient_observations"
     },
     "20": {
-      "signals": 23,
+      "signals": 27,
       "observed": 0,
-      "pending": 23,
+      "pending": 27,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -589,14 +589,110 @@
       "reference_entry_day": "2026-10-28",
       "reference_exit_day": "2026-11-25",
       "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "VAW",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-05",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "VAW",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-12",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "VAW",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-27",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "XES",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-05",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "XES",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-12",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "XES",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-27",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "XLF",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-05",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "XLF",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-12",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "XLF",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-27",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "XT",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-05",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "XT",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-12",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-10-28",
+      "ticker": "XT",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-10-29",
+      "reference_exit_day": "2026-11-27",
+      "result": "pending"
     }
   ],
-  "generated_at_utc": "2026-10-27T23:55:03.323589+00:00",
+  "generated_at_utc": "2026-10-28T23:58:48.899880+00:00",
   "new_daily_lock_created": true,
-  "locked_current_us_date": "2026-10-27",
-  "current_technical_candidate_entries": 5,
-  "latest_verified_universe_fraction": 0.95184,
-  "last_expected_closed_us_session": "2026-10-27",
+  "locked_current_us_date": "2026-10-28",
+  "current_technical_candidate_entries": 4,
+  "latest_verified_universe_fraction": 0.95467,
+  "last_expected_closed_us_session": "2026-10-28",
   "warnings": [],
   "status": "OK",
   "interpretation": "Audit of technical-screen transitions ONLY, not ChatGPT ETF buy/hold recommendations. Next-session-close to subsequent-close is an observation proxy, NOT a tradable fill. The Yahoo auto-adjusted closes in separate frozen downloads may be revised around distributions, splits and provider corrections. Do not claim total-return accuracy, causality, live execution, or strategy superiority. No fees, FX or slippage included. A prospective sample of 30+ observations is exploratory, not proof."

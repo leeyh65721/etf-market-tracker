@@ -1,0 +1,61 @@
+{
+  "us_market_date": "2026-10-28",
+  "github_run_id": "40790838376",
+  "expected_latest_closed_nyse_session": "2026-10-28",
+  "generated_at_utc": "2026-10-29T00:00:17.735841+00:00",
+  "status": "WARN",
+  "counts": {
+    "etf_verified": 337,
+    "etf_universe": 353,
+    "etf_fraction": 0.95467,
+    "base_macro_ok": 22,
+    "base_macro_expected": 22,
+    "supplemental_ok": 6,
+    "supplemental_expected": 10,
+    "manual_expected": 2,
+    "supplemental_missing_automatic": 1
+  },
+  "supplemental_statuses": {
+    "CORE_PCE": "ok",
+    "INITIAL_CLAIMS": "ok",
+    "RETAIL_SALES": "ok",
+    "NFCI": "stale",
+    "MFG_NEW_ORDERS": "stale",
+    "DURABLE_NEW_ORDERS": "ok",
+    "ISM_MANUFACTURING": "manual",
+    "ISM_SERVICES": "manual",
+    "REAL_GDP": "ok",
+    "SP500_BREADTH": "ok"
+  },
+  "module_status": {
+    "screen_audit": "OK",
+    "macro_etf_links": "available",
+    "industry_evidence": "OK",
+    "judgment_archive": "OK"
+  },
+  "stage_outcomes": {
+    "ETF_SCAN": "success",
+    "BASE_MACRO": "success",
+    "EXTRA_MACRO": "success",
+    "SCREEN_AUDIT": "success",
+    "MARKET_LINKS": "success",
+    "INDUSTRY_EVIDENCE": "success",
+    "JUDGMENT_ARCHIVE": "success"
+  },
+  "findings": [
+    {
+      "level": "KNOWN",
+      "code": "NFCI_NOT_LIVE",
+      "detail": "NFCI latest official CSV status=stale, requires permitted manual verification"
+    },
+    {
+      "level": "WARN",
+      "code": "EXTRA_UNAVAILABLE_MFG_NEW_ORDERS",
+      "detail": "Supplemental automatic metric MFG_NEW_ORDERS is stale; don't use as current"
+    }
+  ],
+  "new_alert_codes": [],
+  "alert_summary": "new non-expected warning/error codes only; KNOWN values excluded",
+  "not_a_market_signal": true,
+  "guidance": "ERROR fails GitHub Actions after archival; WARN annotates success; KNOWN must still be reported separately."
+}

@@ -1,7 +1,7 @@
 # ETF 분석 판단 보존 원장
 
 > 실제 분석에 적힌 표현과 기준가격을 대조한 공개 시장연구 원장. 자동 스크리너 후보·사용자 거래와 구분.
-- 유효하게 연결된 의견: **9건**
+- 유효하게 연결된 의견: **11건**
 - 원문을 사후 보관해 적중률 산정이 불가능한 의견: **4건**
 - 형식·출처 확인 실패: **0건**
 - 구조화되지 않은 일일 분석 파일: **0개**
@@ -18,6 +18,8 @@
 |2026-10-23-SOXX-risk-watch|SOXX|watch_weaker|2026-10-22|2026-10-23|2026-10-23|prospective|
 |2026-10-24-MARKET-no-new-candidate|MARKET|no_new_candidate|2026-10-23|2026-10-24|2026-10-24|prospective|
 |2026-10-27-MARKET-no-new-candidate|MARKET|no_new_candidate|2026-10-26|2026-10-27|2026-10-26|prospective|
+|2026-10-28-BUG-positive-watch|BUG|positive_watch|2026-10-27|2026-10-28|2026-10-28|prospective|
+|2026-10-28-SOXX-conditional-watch|SOXX|watch|2026-10-27|2026-10-28|2026-10-28|prospective|
 
 ## 아직 독립 기록이 없는 보고서
 
