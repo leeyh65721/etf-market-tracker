@@ -21,7 +21,7 @@ Prior events and daily notes discussed high oil prices, regional attacks, centra
 
 ## Sources
 1. World Bank official press release, October 28, 2026: https://www.worldbank.org/en/news/press-release/2026/10/28/commodity-markets-outlook-october-2026
-2. Reuters independent report, October 28, 2026: https://www.reuters.com/world/us/world-bank-sees-commodity-prices-up-23-2026-due-middle-east-war-other-shocks-2026-10-28/ (article path should be rechecked if not accessible; primary-source release above controls)
+2. Reuters independent report, October 28, 2026: https://www.reuters.com/business/world-bank-sees-commodity-prices-up-23-2026-due-middle-east-war-other-shocks-2026-10-28/ (Reuters reports a slightly different rounded Brent annual average; the World Bank's official release is the primary source for the $91 forecast)
 3. Reuters oil-price market report, October 29, 2026 (0351 UTC snapshot): https://www.reuters.com/business/energy/us-oil-prices-fall-investors-gauge-risks-mideast-supply-2026-10-29/
 
 **Limitations:** No same-time verified 2026-10-29 US credit OAS, Treasury real yields, USD/KRW, copper, gas, market breadth, or fund execution quotes. No account data, personal positions, allocation, cash, profit/loss, or orders included.
