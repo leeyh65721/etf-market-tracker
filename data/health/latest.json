@@ -1,19 +1,19 @@
 {
-  "us_market_date": "2026-10-28",
-  "github_run_id": "40790838376",
-  "expected_latest_closed_nyse_session": "2026-10-28",
-  "generated_at_utc": "2026-10-29T00:00:17.735841+00:00",
-  "status": "WARN",
+  "us_market_date": "2026-10-29",
+  "github_run_id": "40976558858",
+  "expected_latest_closed_nyse_session": "2026-10-29",
+  "generated_at_utc": "2026-10-30T00:00:25.978504+00:00",
+  "status": "ERROR",
   "counts": {
-    "etf_verified": 337,
+    "etf_verified": 338,
     "etf_universe": 353,
-    "etf_fraction": 0.95467,
+    "etf_fraction": 0.95751,
     "base_macro_ok": 22,
     "base_macro_expected": 22,
-    "supplemental_ok": 6,
+    "supplemental_ok": 5,
     "supplemental_expected": 10,
     "manual_expected": 2,
-    "supplemental_missing_automatic": 1
+    "supplemental_missing_automatic": 2
   },
   "supplemental_statuses": {
     "CORE_PCE": "ok",
@@ -25,13 +25,13 @@
     "ISM_MANUFACTURING": "manual",
     "ISM_SERVICES": "manual",
     "REAL_GDP": "ok",
-    "SP500_BREADTH": "ok"
+    "SP500_BREADTH": "unavailable"
   },
   "module_status": {
     "screen_audit": "OK",
     "macro_etf_links": "available",
     "industry_evidence": "OK",
-    "judgment_archive": "OK"
+    "judgment_archive": "ERROR"
   },
   "stage_outcomes": {
     "ETF_SCAN": "success",
@@ -52,9 +52,28 @@
       "level": "WARN",
       "code": "EXTRA_UNAVAILABLE_MFG_NEW_ORDERS",
       "detail": "Supplemental automatic metric MFG_NEW_ORDERS is stale; don't use as current"
+    },
+    {
+      "level": "WARN",
+      "code": "EXTRA_UNAVAILABLE_SP500_BREADTH",
+      "detail": "Supplemental automatic metric SP500_BREADTH is unavailable; don't use as current"
+    },
+    {
+      "level": "ERROR",
+      "code": "MODULE_JUDGMENT_ARCHIVE_ERROR",
+      "detail": "data/decisions/latest.json reports status ERROR"
+    },
+    {
+      "level": "ERROR",
+      "code": "DECISIONS_INVALID_RECORD",
+      "detail": "ETF research decision evidence contains invalid records"
     }
   ],
-  "new_alert_codes": [],
+  "new_alert_codes": [
+    "EXTRA_UNAVAILABLE_SP500_BREADTH",
+    "MODULE_JUDGMENT_ARCHIVE_ERROR",
+    "DECISIONS_INVALID_RECORD"
+  ],
   "alert_summary": "new non-expected warning/error codes only; KNOWN values excluded",
   "not_a_market_signal": true,
   "guidance": "ERROR fails GitHub Actions after archival; WARN annotates success; KNOWN must still be reported separately."
