@@ -8,7 +8,7 @@
   "archived_on_utc_date": "2026-10-28",
   "provenance": "contemporaneous_report",
   "source_report": "analysis/daily/2026-10-29.md",
-  "verbatim_source_excerpt": "새 매수 후보 없음.",
+  "verbatim_source_excerpt": "**새 매수 후보 없음.** 오늘은 전일 기록한 SOXX 초단기 양방향 관찰 및 BUG 2~6주 눌림목 관찰을 유지하며",
   "thesis": "No newly validated ETF buy recommendation after the Oct 28 US session. Existing SOXX 1-5-session conditional rebound watch and BUG 2-6-week pullback watch did not trigger at the specified levels; latest GitHub machine snapshot remained at Oct 27, and Oct 28 independently sourced market prices have minor discrepancies. New official FOMC and post-close Microsoft, Alphabet, KLA disclosures are material but do not by themselves validate a new ETF entry.",
   "counterevidence": "SOXX rose about 2.1% on Oct 28 and about 9.7% over four NYSE sessions since the Oct 22 risk watch, so holding cash incurs missed-rally opportunity cost; strong KLAC sales and Microsoft/Azure/Google Cloud revenue growth provide sector demand evidence. Nevertheless higher capex, Alphabet negative quarterly FCF, higher-rate risk, uncertain ETF valuation and gaps constrain immediate entry.",
   "invalidation": "Reassess if the Oct 28 GitHub ETF/macro data snapshot is published and passes health, if SOXX or BUG satisfies the previously archived entry trigger with independently verified intraday prices, relative strength and volume, or if broad verified constituent orders/shipments/cash conversion support a distinct new thesis.",
