@@ -1,0 +1,29 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-10-30-BUG-watch-weaker",
+  "ticker": "BUG",
+  "stance": "watch_weaker",
+  "us_market_date": "2026-10-29",
+  "original_report_date_kst": "2026-10-30",
+  "archived_on_utc_date": "2026-10-30",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-10-30.md",
+  "verbatim_source_excerpt": "**BUG — 10월 29일 눌림목 가격대는 장중 통과했지만 SPY 상대강도 확인이 없어 기존 긍정 관찰을 경계 관찰(watch_weaker)로 낮춘다. 확정 매수 신호 없음.**",
+  "original_close_usd": 51.02,
+  "original_spy_close_usd": 769.36,
+  "thesis": "The original Oct 27 BUG positive pullback watch was downgraded to watch_weaker on Oct 29. Verified Oct 29 GitHub close $51.02 vs SPY $769.36, intraday low ~$48.30 entered the pre-archived $49.9-50.5 zone and price closed above it, but BUG lost 1.71% versus SPY -0.38% (about -1.32pp relative), so the required relative-strength and intraday support sequence was not confirmed. Volume increased to ~1.80 times 20-day average. This is a risk/entry-quality judgment, not a sell recommendation.",
+  "counterevidence": "Intraday recovery from ~$48.30 to $51.02 and 3.58m shares (20d volume ratio 1.802) show buyers emerged; BUG trailing 21-session return +10.481% and +9.598pp versus SPY remains positive. However single-day intraday low/high/close cannot establish a tradable entry sequence, and cybersecurity constituent valuation and event gap risk remain unresolved.",
+  "invalidation": "Upgrade back to positive watch only after independently verified intraday stabilization around $50.0-50.5, positive relative strength against SPY and normal bid-ask spreads; a close below the archived $47.56 reference or sustained relative weakness would invalidate the earlier bullish pullback thesis. At current $51.02, hypothetical $57 target vs $47.56 stop has ~1.73:1 pre-cost reward/risk, below the prior >=2:1 threshold.",
+  "revisit_trigger": "Check trigger activation and executable timestamp/price in the next 1, 3 and 5 NYSE sessions using actual intraday volume and price sequence; do not infer fills from OHLC. Independently compare Oct 29 BUG $51.02 versus SPY $769.36 after 5, 10 and 20 NYSE sessions only when those dates have matured. Do not count untriggered watch as successful trade.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true,
+  "trigger_status": "partial_unconfirmed",
+  "trigger_evidence": "Oct 29 intraday low ~$48.30 and close $51.02 entered and exited prior $49.9-50.5 interest zone, but daily relative return vs SPY was -1.32pp; intraday support sequence and actual executable fill unverified.",
+  "evaluation_status": "pending"
+}
