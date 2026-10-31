@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-10-30T00:00:22.745834+00:00",
-  "market_date": "2026-10-29",
+  "generated_at_utc": "2026-10-31T00:00:12.834329+00:00",
+  "market_date": "2026-10-30",
   "coverage": "8 named categories, 10 separately labelled indicators",
   "requested_indicators": 10,
-  "ok_indicators": 5,
+  "ok_indicators": 6,
   "status": "partial",
   "categories": {
     "pce": {
@@ -61,7 +61,7 @@
       "indicators": [
         "SP500_BREADTH"
       ],
-      "observed": 0,
+      "observed": 1,
       "total": 1
     }
   },
@@ -79,7 +79,7 @@
       "previous_value": 3.0,
       "previous_date": "2026-08-01",
       "status": "ok",
-      "age_days": 58
+      "age_days": 59
     },
     {
       "series_id": "INITIAL_CLAIMS",
@@ -92,7 +92,7 @@
       "collection_method": "DOL Weekly Claims PDF",
       "notes": "Seasonally adjusted initial claims; week ending date",
       "status": "ok",
-      "age_days": 5
+      "age_days": 6
     },
     {
       "series_id": "RETAIL_SALES",
@@ -105,7 +105,7 @@
       "collection_method": "Census advance retail release summary",
       "notes": "Seasonally adjusted but nominal; retail plus food services, subject to revisions",
       "status": "ok",
-      "age_days": 58
+      "age_days": 59
     },
     {
       "series_id": "NFCI",
@@ -120,7 +120,7 @@
       "previous_value": -0.498,
       "previous_date": "2026-04-17",
       "status": "stale",
-      "age_days": 188
+      "age_days": 189
     },
     {
       "series_id": "MFG_NEW_ORDERS",
@@ -133,7 +133,7 @@
       "collection_method": "Census M3 release summary",
       "notes": "Nominal seasonally adjusted order change; zero may be rounded 'virtually unchanged'",
       "status": "stale",
-      "age_days": 89
+      "age_days": 90
     },
     {
       "series_id": "DURABLE_NEW_ORDERS",
@@ -146,7 +146,7 @@
       "collection_method": "Census M3 release summary",
       "notes": "Nominal seasonally adjusted order change; zero may be rounded 'virtually unchanged'",
       "status": "ok",
-      "age_days": 58
+      "age_days": 59
     },
     {
       "series_id": "ISM_MANUFACTURING",
@@ -174,14 +174,25 @@
       "notes": "Quarterly real GDP, annualized; check latest revision",
       "previous_value": 2.2,
       "status": "ok",
-      "age_days": 120
+      "age_days": 121
     },
     {
       "series_id": "SP500_BREADTH",
       "name": "S&P 500 구성종목 상승 비율(자체 산출)",
-      "status": "unavailable",
+      "frequency": "daily",
+      "value": 43.31066,
+      "unit": "% constituents up",
+      "observation_date": "2026-10-30",
       "source_url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
-      "error": "ValueError: S&P breadth too sparse: 378/503"
+      "collection_method": "S&P 500 listed constituents via Wikipedia, adjusted daily close via yfinance",
+      "notes": "Advancing / all valid constituents; not NYSE-wide A/D ratio; prices unofficial",
+      "sample_size": 441,
+      "advanced": 191,
+      "declined": 250,
+      "unchanged": 0,
+      "universe_size": 503,
+      "status": "ok",
+      "age_days": 0
     }
   ],
   "limitations": [

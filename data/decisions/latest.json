@@ -1,14 +1,12 @@
 {
-  "generated_at_utc": "2026-10-30T00:00:25.181578+00:00",
-  "status": "ERROR",
-  "valid_count": 11,
+  "generated_at_utc": "2026-10-31T00:00:14.521492+00:00",
+  "status": "OK",
+  "valid_count": 13,
   "retrospective_count": 4,
-  "prospective_count": 7,
-  "invalid_count": 1,
-  "reports_missing_structured_records_count": 1,
-  "reports_missing_structured_records": [
-    "analysis/daily/2026-10-29.md"
-  ],
+  "prospective_count": 9,
+  "invalid_count": 0,
+  "reports_missing_structured_records_count": 0,
+  "reports_missing_structured_records": [],
   "entries": [
     {
       "record_id": "2026-10-19-IGV-watch",
@@ -284,14 +282,59 @@
       "eligible_for_prospective_judgment_scoring": true,
       "assessment": "awaiting_forward_observation",
       "not_a_buy_recommendation": true
-    }
-  ],
-  "errors": [
+    },
     {
-      "file": "2026-10-29-MARKET-no-new-candidate.json",
-      "error": "ValueError: Specific original text excerpt not found in stored report"
+      "record_id": "2026-10-29-MARKET-no-new-candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-10-28",
+      "original_report_date_kst": "2026-10-29",
+      "archived_on_utc_date": "2026-10-28",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-10-29.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "No newly validated ETF buy recommendation after the Oct 28 US session. Existing SOXX 1-5-session conditional rebound watch and BUG 2-6-week pullback watch did not trigger at the specified levels; latest GitHub machine snapshot remained at Oct 27, and Oct 28 independently sourced market prices have minor discrepancies. New official FOMC and post-close Microsoft, Alphabet, KLA disclosures are material but do not by themselves validate a new ETF entry.",
+      "counterevidence": "SOXX rose about 2.1% on Oct 28 and about 9.7% over four NYSE sessions since the Oct 22 risk watch, so holding cash incurs missed-rally opportunity cost; strong KLAC sales and Microsoft/Azure/Google Cloud revenue growth provide sector demand evidence. Nevertheless higher capex, Alphabet negative quarterly FCF, higher-rate risk, uncertain ETF valuation and gaps constrain immediate entry.",
+      "invalidation": "Reassess if the Oct 28 GitHub ETF/macro data snapshot is published and passes health, if SOXX or BUG satisfies the previously archived entry trigger with independently verified intraday prices, relative strength and volume, or if broad verified constituent orders/shipments/cash conversion support a distinct new thesis.",
+      "revisit_trigger": "Re-evaluate 1/3/5 NYSE sessions for trigger activation, and 5/10/20 NYSE sessions for contextual SPY comparison only; MARKET no_new_candidate has no ticker-specific performance and no theoretical fill. Never count an untriggered watch as a successful trade.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-29",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-10-30-BUG-watch-weaker",
+      "ticker": "BUG",
+      "stance": "watch_weaker",
+      "us_market_date": "2026-10-29",
+      "original_report_date_kst": "2026-10-30",
+      "archived_on_utc_date": "2026-10-30",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-10-30.md",
+      "original_close_usd": 51.02,
+      "original_spy_close_usd": 769.36,
+      "thesis": "The original Oct 27 BUG positive pullback watch was downgraded to watch_weaker on Oct 29. Verified Oct 29 GitHub close $51.02 vs SPY $769.36, intraday low ~$48.30 entered the pre-archived $49.9-50.5 zone and price closed above it, but BUG lost 1.71% versus SPY -0.38% (about -1.32pp relative), so the required relative-strength and intraday support sequence was not confirmed. Volume increased to ~1.80 times 20-day average. This is a risk/entry-quality judgment, not a sell recommendation.",
+      "counterevidence": "Intraday recovery from ~$48.30 to $51.02 and 3.58m shares (20d volume ratio 1.802) show buyers emerged; BUG trailing 21-session return +10.481% and +9.598pp versus SPY remains positive. However single-day intraday low/high/close cannot establish a tradable entry sequence, and cybersecurity constituent valuation and event gap risk remain unresolved.",
+      "invalidation": "Upgrade back to positive watch only after independently verified intraday stabilization around $50.0-50.5, positive relative strength against SPY and normal bid-ask spreads; a close below the archived $47.56 reference or sustained relative weakness would invalidate the earlier bullish pullback thesis. At current $51.02, hypothetical $57 target vs $47.56 stop has ~1.73:1 pre-cost reward/risk, below the prior >=2:1 threshold.",
+      "revisit_trigger": "Check trigger activation and executable timestamp/price in the next 1, 3 and 5 NYSE sessions using actual intraday volume and price sequence; do not infer fills from OHLC. Independently compare Oct 29 BUG $51.02 versus SPY $769.36 after 5, 10 and 20 NYSE sessions only when those dates have matured. Do not count untriggered watch as successful trade.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-10-30",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
     }
   ],
+  "errors": [],
   "limitations": [
     "This is a ledger of manually saved dated public analyst research, not an automatically generated view.",
     "Past analysis uploaded afterward is NOT a validated forward-only call.",
