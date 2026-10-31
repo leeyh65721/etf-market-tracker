@@ -14,7 +14,7 @@
   "thesis": "2026-10-30 SOXX fell 8.2415% in one session, underperforming SPY by 6.4686 percentage points. Its trailing 21 NYSE-session return was -18.187%, 17.105pp behind SPY, with 50-day MA below and 20-day MA falling. Prefer reduction of concentrated semiconductor risk exposure to expanding risk, without implying any actual trade.",
   "counterevidence": "Intel DCAI revenue +78% YoY and Amazon AWS +39.3% growth suggest pockets of demand; a short-term oversold rebound is plausible. Weekly SOXX return was -1.399%, not -8.2415%.",
   "invalidation": "Sustained SOXX relative-strength recovery against SPY, improving multi-issuer guidance and verified semiconductor orders/shipments/cash flow, plus reduced funding/valuation stress.",
-  "revisit_trigger": "Risk reassessment after close on 2026-10-30; review fresh open, relative strength, issuer events and spread on next NYSE session; no automatic sell trigger or fill.",
+  "revisit_trigger": "Observe Oct 30 verified SOXX intraday low $460.13 and high $483.31 (close $471.51, volume ~17.85m) as reference, not stop/entry signals. A break below $460.13 accompanied by weak SPY-relative performance and heavy volume strengthens risk-reduction case; sustained reclaim above $483.31 plus verified issuer fundamentals weakens it. AMD Q3 earnings after Nov 3 close are a future catalyst. Adjust these nominal reference levels by 1/3 after SOXX 3:1 split effective Nov 5; compare future same-window SOXX and SPY after 5/10/20 NYSE sessions. No actual fill.",
   "review_horizons_nyse_sessions": [
     5,
     10,
