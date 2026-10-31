@@ -1,0 +1,31 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-10-31-XLV-positive-watch",
+  "ticker": "XLV",
+  "stance": "positive_watch",
+  "us_market_date": "2026-10-30",
+  "original_report_date_kst": "2026-10-31",
+  "archived_on_utc_date": "2026-10-31",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/weekly/2026-10-31.md",
+  "verbatim_source_excerpt": "**XLV — 방어 업종 상대강세 관찰, 추격 매수 보류(positive_watch).**",
+  "original_close_usd": 184.87,
+  "original_spy_close_usd": 755.72,
+  "thesis": "XLV close $184.87 on 2026-10-30, trailing 21-session +11.233% versus SPY -1.082%, 20-day average rising and above 50-day average. Relative strength watch only; no new entry while valuation/flows/current spreads and issuer fundamentals remain unverified.",
+  "counterevidence": "After an 11.233% trailing rally, a pullback or valuation reversal could outweigh further momentum. Health insurers and pharmaceutical companies have divergent earnings and regulatory risks.",
+  "invalidation": "Sustained weakening vs SPY, break below 50-session average, adverse sector-wide issuer cashflow/earnings or regulatory changes.",
+  "revisit_trigger": "Only reconsider a pullback/relative strength setup with verified price and spread and current holdings; no triggered buy signal.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true,
+  "first_theoretical_reference_session": "2026-11-02",
+  "eligible_for_prospective_judgment_scoring": true,
+  "assessment": "awaiting_forward_observation",
+  "signal_status": "watch_only_not_triggered",
+  "execution_verified": false
+}
