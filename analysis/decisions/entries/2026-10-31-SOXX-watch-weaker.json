@@ -1,0 +1,31 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-10-31-SOXX-watch-weaker",
+  "ticker": "SOXX",
+  "stance": "watch_weaker",
+  "us_market_date": "2026-10-30",
+  "original_report_date_kst": "2026-10-31",
+  "archived_on_utc_date": "2026-10-31",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/weekly/2026-10-31.md",
+  "verbatim_source_excerpt": "**SOXX — 반도체 위험노출 축소 우선 검토(watch_weaker).**",
+  "original_close_usd": 471.51,
+  "original_spy_close_usd": 755.72,
+  "thesis": "2026-10-30 SOXX fell 8.2415% in one session, underperforming SPY by 6.4686 percentage points. Its trailing 21 NYSE-session return was -18.187%, 17.105pp behind SPY, with 50-day MA below and 20-day MA falling. Prefer reduction of concentrated semiconductor risk exposure to expanding risk, without implying any actual trade.",
+  "counterevidence": "Intel DCAI revenue +78% YoY and Amazon AWS +39.3% growth suggest pockets of demand; a short-term oversold rebound is plausible. Weekly SOXX return was -1.399%, not -8.2415%.",
+  "invalidation": "Sustained SOXX relative-strength recovery against SPY, improving multi-issuer guidance and verified semiconductor orders/shipments/cash flow, plus reduced funding/valuation stress.",
+  "revisit_trigger": "Risk reassessment after close on 2026-10-30; review fresh open, relative strength, issuer events and spread on next NYSE session; no automatic sell trigger or fill.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true,
+  "first_theoretical_reference_session": "2026-11-02",
+  "eligible_for_prospective_judgment_scoring": true,
+  "assessment": "awaiting_forward_observation",
+  "signal_status": "watch_only_not_triggered",
+  "execution_verified": false
+}
