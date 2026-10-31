@@ -25,7 +25,19 @@
   "not_a_buy_recommendation": true,
   "first_theoretical_reference_session": "2026-11-02",
   "eligible_for_prospective_judgment_scoring": true,
-  "assessment": "awaiting_forward_observation",
+  "assessment": "risk_review_trigger_confirmed_forward_return_pending",
   "signal_status": "watch_only_not_triggered",
-  "execution_verified": false
+  "execution_verified": false,
+  "previous_precommitted_risk_condition": {
+    "source_report": "analysis/daily/2026-10-30.md",
+    "source_us_market_date": "2026-10-29",
+    "precommitted_condition": "Close below $491.83 with further relative weakness versus SPY prompts risk-reduction review",
+    "observed_on_us_market_date": "2026-10-30",
+    "observed_soxx_close_usd": 471.51,
+    "observed_spy_close_usd": 755.72,
+    "observed_spy_excess_1d_pp": -6.4686,
+    "status": "risk_review_trigger_confirmed",
+    "trade_entry_signal_triggered": false,
+    "trade_executed": false
+  }
 }
