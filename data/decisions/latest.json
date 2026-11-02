@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-31T00:00:14.521492+00:00",
-  "status": "OK",
-  "valid_count": 13,
+  "generated_at_utc": "2026-11-02T23:59:55.646594+00:00",
+  "status": "ERROR",
+  "valid_count": 15,
   "retrospective_count": 4,
-  "prospective_count": 9,
-  "invalid_count": 0,
+  "prospective_count": 11,
+  "invalid_count": 1,
   "reports_missing_structured_records_count": 0,
   "reports_missing_structured_records": [],
   "entries": [
@@ -332,9 +332,64 @@
       "eligible_for_prospective_judgment_scoring": true,
       "assessment": "awaiting_forward_observation",
       "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-10-31-SOXX-watch-weaker",
+      "ticker": "SOXX",
+      "stance": "watch_weaker",
+      "us_market_date": "2026-10-30",
+      "original_report_date_kst": "2026-10-31",
+      "archived_on_utc_date": "2026-10-31",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/weekly/2026-10-31.md",
+      "original_close_usd": 471.51,
+      "original_spy_close_usd": 755.72,
+      "thesis": "2026-10-30 SOXX fell 8.2415% in one session, underperforming SPY by 6.4686 percentage points. Its trailing 21 NYSE-session return was -18.187%, 17.105pp behind SPY, with 50-day MA below and 20-day MA falling. Prefer reduction of concentrated semiconductor risk exposure to expanding risk, without implying any actual trade.",
+      "counterevidence": "Intel DCAI revenue +78% YoY and Amazon AWS +39.3% growth suggest pockets of demand; a short-term oversold rebound is plausible. Weekly SOXX return was -1.399%, not -8.2415%.",
+      "invalidation": "Sustained SOXX relative-strength recovery against SPY, improving multi-issuer guidance and verified semiconductor orders/shipments/cash flow, plus reduced funding/valuation stress.",
+      "revisit_trigger": "Observe Oct 30 verified SOXX intraday low $460.13 and high $483.31 (close $471.51, volume ~17.85m) as reference, not stop/entry signals. A break below $460.13 accompanied by weak SPY-relative performance and heavy volume strengthens risk-reduction case; sustained reclaim above $483.31 plus verified issuer fundamentals weakens it. AMD Q3 earnings after Nov 3 close are a future catalyst. Adjust these nominal reference levels by 1/3 after SOXX 3:1 split effective Nov 5; compare future same-window SOXX and SPY after 5/10/20 NYSE sessions. No actual fill.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-02",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-10-31-XLV-positive-watch",
+      "ticker": "XLV",
+      "stance": "positive_watch",
+      "us_market_date": "2026-10-30",
+      "original_report_date_kst": "2026-10-31",
+      "archived_on_utc_date": "2026-10-31",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/weekly/2026-10-31.md",
+      "original_close_usd": 184.87,
+      "original_spy_close_usd": 755.72,
+      "thesis": "XLV close $184.87 on 2026-10-30, trailing 21-session +11.233% versus SPY -1.082%, 20-day average rising and above 50-day average. Relative strength watch only; no new entry while valuation/flows/current spreads and issuer fundamentals remain unverified.",
+      "counterevidence": "After an 11.233% trailing rally, a pullback or valuation reversal could outweigh further momentum. Health insurers and pharmaceutical companies have divergent earnings and regulatory risks.",
+      "invalidation": "Sustained weakening vs SPY, break below 50-session average, adverse sector-wide issuer cashflow/earnings or regulatory changes.",
+      "revisit_trigger": "Only reconsider a pullback/relative strength setup with verified price and spread and current holdings; no triggered buy signal.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-02",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "file": "2026-10-31-MARKET-no-new-candidate.json",
+      "error": "ValueError: MARKET no-new-idea record must not fabricate ETF prices"
+    }
+  ],
   "limitations": [
     "This is a ledger of manually saved dated public analyst research, not an automatically generated view.",
     "Past analysis uploaded afterward is NOT a validated forward-only call.",
