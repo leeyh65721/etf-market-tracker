@@ -1,0 +1,28 @@
+# Marvell–Lumentum definitive $115bn all-stock acquisition — AI optical connectivity event
+
+- **Checked:** 2026-11-02 around 22:31 KST (13:31 UTC), before US regular market open (09:30 EST / 23:30 KST). **Public-market research only.** No private holdings, account, P&L, cash or order information.
+- **Announcement:** 2026-11-02 about 07:05 EST / 21:05 KST, from company release; Reuters independently reported 12:10 UTC / 21:10 KST.
+- **Status:** Definitive merger agreement **announced, not completed**. Closing expected in H1 calendar 2028, subject to shareholder and regulatory approvals.
+
+## Newly confirmed terms and distinction from prior coverage
+- Marvell Technology (MRVL) to acquire Lumentum (LITE) in a **fixed 4.500 MRVL shares per LITE share** all-stock transaction. **Implied Lumentum enterprise value $115bn** and **equity value ~$102.54bn**, based on the unaffected 2026-10-28 reference prices; **23.9% premium** versus Lumentum's unaffected close. The reference **$1,132/share is not a guaranteed cash consideration or current executable value**: the fixed share ratio changes its dollar value with MRVL's share price.
+- Lumentum shareholders expected to own ~33% and current Marvell shareholders ~67% of combined equity, fully diluted, after closing. These are expected ownership proportions, not an immediate completed dilution.
+- The transaction is intended to integrate custom AI silicon, electrical interconnect and networking with optical lasers, transceivers, optical circuit switching and specialized manufacturing. Management projects >$1bn annual run-rate cost synergies and an expanded **$550bn total addressable market**; these are management forecasts, **not realized savings, sales, or orders**.
+- **New versus earlier news:** Reuters had reported advanced merger talks on 2026-10-28 without agreed terms; today brings a signed definitive agreement, fixed exchange ratio, disclosed valuation and proposed ownership split. GitHub search for 'Marvell' and 'Lumentum' returned no indexed matches at check; complete events directory listing was unavailable, so absence of a duplicate is not proven by exhaustive listing.
+- **Company operating update:** Marvell says preliminary fiscal Q3 2027 revenue remains at the prior guidance midpoint, with range narrowed to ±2% from ±5%; **not an upward revenue revision**. Reuters separately reported Lumentum fiscal Q2 revenue guidance $1.58–1.63bn versus LSEG consensus $1.48bn. Forecasts do not establish hyperscaler returns on invested capital.
+
+## Transmission, opposing evidence, urgency
+- **Sector / ETF:** A very large strategic bet on optical networking for AI data centers, relevant to semiconductor suppliers, competitors (including Broadcom), and potentially US semiconductor ETFs such as SOXX. **No verified up-to-the-minute ETF constituent weight, market breadth, fund flows or bid-ask spread**; no direct ETF trade inference.
+- **Positive case:** Combining complementary silicon and photonics could address bandwidth/power bottlenecks; Lumentum revenue guidance and Marvell's unchanged preliminary revenue offer *company-specific* counter-evidence to a blanket collapse in AI networking demand.
+- **Negative case:** Large equity issuance and possible shareholder dilution, fixed exchange ratio market sensitivity, elevated implied price, antitrust/regulatory review, integration risk and long delay to H1 2028. An acquisition agreement is **not proof** that AI capex will yield acceptable free cash flow; this does not refute the 2026-10-30 Amazon cash-flow/Intel margin concerns or erase the 2026-10-31 SOXX risk reassessment.
+- **Market context checked:** Public delayed quote page showed Nasdaq futures approximately +0.9%, S&P 500 futures +0.5%, WTI ~$99.6/bbl, Brent ~$108.4/bbl, US 10y Treasury ~4.91%, DXY ~101.45, natural gas ~$2.92, gold ~$3,907/oz, copper ~$6.52/lb. **Quotes were dynamic, not synchronized or guaranteed real-time**; no causal attribution to the deal. FRED official HY OAS 3.26%, IG OAS 0.89%, VIX 17.20 still reflect 2026-10-29, not today's credit response. US cash-market SOXX breadth and precise premarket spreads not verified.
+- **Decision:** **Material new company event worth recording, but not a verified market-wide systemic shock or a reason for immediate ETF allocation change.** No new ETF recommendation or trade. Existing semiconductor concentration-risk review remains active. Re-evaluate after US regular-session price/relative strength and credit-market updates, formal merger disclosures, integration financing and materially revised customer orders/cash flows. Withdraw a positive strategic inference if customer demand or margins weaken, synergies are revised downward, or transaction approval fails; withdraw the immediate merger-specific risk if transaction is cancelled or terms materially change. Ordinary portfolio changes belong in weekly review.
+
+## Sources (public)
+1. Marvell official 2026-11-02 release: https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity
+2. Reuters 2026-11-02 12:10 UTC: https://www.reuters.com/legal/transactional/marvell-buy-lumentum-115-billion-deal-ai-data-center-bet-2026-11-02/
+3. Reuters earlier talks 2026-10-28: https://www.reuters.com/business/marvell-advanced-talks-buy-lumentum-bloomberg-news-reports-2026-10-28/
+4. FRED HY OAS: https://fred.stlouisfed.org/series/BAMLH0A0HYM2
+5. FRED IG OAS: https://fred.stlouisfed.org/series/BAMLC0A0CM
+6. FRED VIX: https://fred.stlouisfed.org/series/VIXCLS
+7. Dynamic delayed quotes (not timestamped tick data): https://www.investing.com/charts/futures-charts
