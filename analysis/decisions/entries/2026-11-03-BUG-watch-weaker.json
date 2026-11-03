@@ -1,0 +1,30 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-03-BUG-watch-weaker",
+  "ticker": "BUG",
+  "stance": "watch_weaker",
+  "us_market_date": "2026-11-02",
+  "original_report_date_kst": "2026-11-03",
+  "archived_on_utc_date": "2026-11-03",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-11-03.md",
+  "verbatim_source_excerpt": "**BUG — 기존 $47.56 철회선 하회에 따른 위험 경계 강화(watch_weaker).**",
+  "original_close_usd": 46.47,
+  "original_spy_close_usd": 752.1,
+  "thesis": "GitHub 2026-11-02 BUG EOD $46.47 vs precommitted $47.56 invalidation, daily excess vs SPY -5.395pp; existing bullish pullback thesis fails on scanner price pending external final-close corroboration.",
+  "counterevidence": "Some external pages are cached at 10/30 or intraday 11/02 and independent 11/02 final close is unverified. A swift reclaim and positive relative strength could revive a watch thesis.",
+  "invalidation": "If independent Nov 2 final EOD differs materially or BUG recovers $47.56 and then $49.9-$50.5 with confirmed relative strength, revisit weaker view.",
+  "revisit_trigger": "Verify official/independent Nov 2 final EOD; review 1/3/5 day trigger and executable data. 5/10/20 NYSE sessions vs same-date SPY; no assumed fill.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true,
+  "signal_status": "watch_only_not_triggered",
+  "execution_verified": false,
+  "mae_mfe_status": "pending_unverified_intraday",
+  "assessment": "awaiting_forward_observation"
+}
