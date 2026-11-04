@@ -1,0 +1,25 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-04-MARKET-no-new-candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-11-03",
+  "original_report_date_kst": "2026-11-04",
+  "archived_on_utc_date": "2026-11-04",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-11-04.md",
+  "verbatim_source_excerpt": "**새 매수 후보 없음.**",
+  "original_close_usd": null,
+  "original_spy_close_usd": null,
+  "thesis": "Latest Nov 3 ETF OHLCV and trigger execution are unverified; judgment archive ERROR prevents confirmed new ETF entries. No new eligible buy signal.",
+  "counterevidence": "Nasdaq rose 0.83% and semiconductor shares rebounded on Nov 3; XLP demonstrated strong 21-session relative strength on Nov 2.",
+  "invalidation": "Verified Nov 3 onward ETF OHLCV, liquidity, AUM, fee, holdings, valuation and SPY-relative triggers plus repaired archive could justify a new decision.",
+  "revisit_trigger": "Review after 5, 10, 20 NYSE sessions; MARKET entry is not a ticker return prediction.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false
+}
