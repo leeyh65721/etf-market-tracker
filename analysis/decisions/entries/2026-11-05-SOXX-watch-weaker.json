@@ -1,0 +1,29 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-05-SOXX-watch-weaker",
+  "ticker": "SOXX",
+  "stance": "watch_weaker",
+  "us_market_date": "2026-11-03",
+  "original_report_date_kst": "2026-11-05",
+  "archived_on_utc_date": "2026-11-05",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-11-05.md",
+  "verbatim_source_excerpt": "**SOXX — 지수 상승에도 반도체 약세, 위험 축소/재진입 조건 분리.**",
+  "original_close_usd": 465,
+  "original_spy_close_usd": 754.35,
+  "thesis": "November 3 SOXX 21-session -21.121% and SPY excess -18.478pp; November 4 semiconductor constituent weakness despite index rally warrants continued risk caution.",
+  "counterevidence": "Sharp oversold rebound and official company order/earnings upgrades could reverse relative weakness.",
+  "invalidation": "20-day trend recovery, verified volume and SPY-relative reversal supported by issuer fundamentals.",
+  "revisit_trigger": "Risk reduction on verified support breakdown; reentry only on verified trend/volume and fundamentals. Evaluate 5/10/20 NYSE sessions.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "trigger_status": "watch_only_unverified",
+  "execution_verified": false,
+  "evaluation_status": "pending",
+  "note": "Market commentary through Nov 4; ETF/SPY baseline from dated Nov 3 GitHub history only; Nov 4 ETF OHLCV unverified."
+}
