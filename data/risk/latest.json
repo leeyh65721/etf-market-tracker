@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T17:14:31Z",
+  "checked_at_utc": "2026-11-06T17:27:50Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No new urgent alert. Reuters Nov 6 afternoon update reports a relief rally after Thursday's AI-led rout; no verified escalation versus the previous critical warning. Gold declined around 1% as stronger payrolls supported USD/yields, consistent with the already-reported jobs/rate repricing, not a separate emergency. No independently confirmed new systemic credit/liquidity shock.",
+  "change_since_previous": "No new urgent alert. November 6 US semiconductor relief rally remains partial; by 11:01 ET eight major chip stocks had recovered about one-third of Thursday losses versus about 45% at 10:01 ET. Nasdaq around +1.6% at 10:57 ET versus +1.73% at 10:21 ET (different reporting snapshots). No corroborated new systemic credit/liquidity escalation; existing critical alert remains active. New market data insufficient to downgrade risk.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -234,6 +234,18 @@
       "change_pct": -1,
       "observed_at_utc": null,
       "note": "Reuters Nov 6 report; approximate move; quote time not independently verified."
+    },
+    "us_chip_rebound_1101et": {
+      "recovered_prior_day_loss_pct_approx": 33,
+      "previous_1001et_pct_approx": 45,
+      "observed_at_utc": "2026-11-06T16:01:00Z",
+      "note": "StockTitan compilation of eight semiconductor stocks, approximate; not an ETF return or systemic-risk indicator"
+    },
+    "us_equity_1057et": {
+      "nasdaq_change_pct": 1.6,
+      "sp500_change_pct": 1,
+      "observed_at_utc": "2026-11-06T15:57:00Z",
+      "note": "CNBC data relayed by StockTitan; delayed, not synchronized with credit and rates"
     }
   },
   "sources": [
@@ -259,12 +271,14 @@
     "https://www.investing.com/news/economic-indicators/strong-october-jobs-report-sends-yields-higher-5008272",
     "https://www.reuters.com/business/view-strong-october-jobs-report-sends-yields-higher-2026-11-06/",
     "https://www.reuters.com/world/india/gold-eases-inflation-worries-higher-oil-us-payrolls-data-focus-2026-11-06/",
-    "https://www.reuters.com/markets/"
+    "https://www.reuters.com/markets/",
+    "https://www.stocktitan.net/articles/stock-market-today-live-november-6-2026",
+    "https://www.reuters.com/business/wall-st-week-ahead-tech-swoon-roils-market-us-inflation-data-tap-2026-11-06/"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T17:14:31Z; market snapshots are delayed, not synchronized real-time prices.",
-    "Fresh synchronized US credit spreads, real yields, VIX, WTI/Brent, natural gas, copper, USD/KRW, market breadth and ETF bid/ask spreads not independently verified; no figures invented.",
-    "Existing critical semiconductor/global contagion alert retained; no newly verified material worsening. Prior shared JSON and conversation compared; historical analysis report bodies not exhaustively reviewed.",
+    "Checked 2026-11-06T17:27:50Z; delayed reporting snapshots, not synchronized real-time quotes.",
+    "Current US credit spreads, real yields, VIX, WTI/Brent, natural gas, copper, USD/KRW, market breadth and ETF bid/ask spreads not independently verified; no figures invented.",
+    "Previous critical alert retained. Latest corroborated movement does not establish additional systemic worsening. Historical analysis report bodies not exhaustively reviewed.",
     "Public market information only; no personal account information."
   ]
 }
