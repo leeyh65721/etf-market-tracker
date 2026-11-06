@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T11:46:30Z",
+  "checked_at_utc": "2026-11-06T13:18:33Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No verified additional escalation beyond existing critical alert. Reuters Nov 6 US premarket chip rebound and AP global selloff are continuations of already flagged AI/semiconductor contagion. Taiwan stabilization measures are a policy response, not proof of fresh systemic deterioration. No new alert.",
+  "change_since_previous": "No verified escalation beyond prior critical AI/semiconductor contagion. Reuters Nov 6 premarket chip recovery is counterevidence, not resolution. October US employment release scheduled 13:30 UTC, 12 minutes after this check; no official October figure yet. New SoftBank/Asian AI-related credit stress reports require wider credit-spread confirmation before calling systemic contagion. No new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -134,6 +134,22 @@
       "change_pct": -1.5,
       "observed_at_utc": null,
       "note": "WSJ Nov 6 premarket report; exact quote time not established"
+    },
+    "us_10y_treasury_premarket": {
+      "value": 4.855,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "MarketWatch Nov 6 premarket, +1.6bp; exact quote timestamp unverified"
+    },
+    "nasdaq100_futures_reuters_nov6": {
+      "change_pct": 1.41,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 6 premarket; exact quote timestamp unverified"
+    },
+    "asian_usd_bond_spread_report": {
+      "change_basis_points": 3,
+      "observed_at_utc": null,
+      "note": "Bloomberg syndicated Nov 6 report of Asian dollar bond yield premiums; methodology, precise observation and broad investment-grade/HY breakdown unverified"
     }
   },
   "sources": [
@@ -150,12 +166,17 @@
     "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/",
     "https://www.reuters.com/markets/europe/european-shares-set-fall-global-ai-rout-gathers-pace-2026-11-06/",
     "https://www.wsj.com/finance/stocks/nasdaq-futures-steady-after-asian-ai-rout-as-investors-brace-for-jobs-day-83415c52",
-    "https://www.wsj.com/finance/commodities-futures/taiwan-activates-market-stabilization-measures-to-stem-ai-bleeding-169e36e1"
+    "https://www.wsj.com/finance/commodities-futures/taiwan-activates-market-stabilization-measures-to-stem-ai-bleeding-169e36e1",
+    "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-tech-stocks-worst-day-since-2020-employment-report/card/treasury-yields-inch-up-from-almost-2-month-lows-ahead-of-jobs-data-U4c0rKv6QJzn9pgYxl0O",
+    "https://www.moneycontrol.com/news/business/markets/it-s-not-just-ai-stocks-anymore-softbank-bonds-slide-as-selloff-spreads-to-credit-markets-14072544.html",
+    "https://www.bls.gov/schedule/2026/11_sched.htm",
+    "https://www.bls.gov/news.release/empsit.nr0.htm"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T11:46:30Z; available Reuters premarket futures quote 09:41 UTC and WSJ premarket figures are delayed; US cash Nov 5 close, Asia Nov 6 close.",
-    "Treasury real yields, current credit spreads, natural gas, copper, gold, USD/KRW, synchronized VIX, breadth and ETF bid-ask quotes not verified; partial coverage, not evidence of stability.",
-    "Compared prior risk JSON and conversation; historical analysis directories not fully reread.",
-    "Public market information only; no personal holdings or account data."
+    "Checked 2026-11-06T13:18:33Z (22:18 KST); US November 6 cash session not yet open, November 5 close and November 6 premarket delayed reports used.",
+    "Official October US employment report scheduled 13:30 UTC; not yet published as of check, BLS current release still September.",
+    "Broad US investment-grade/high-yield credit spreads, real yields, synchronized VIX, WTI, natural gas, copper, gold, USD/KRW, market breadth and ETF bid-ask not verified. Asian bond premium report insufficient to establish systemic credit shock.",
+    "Prior GitHub risk JSON and conversation compared; analysis/events and analysis/daily full historical text not reviewed.",
+    "Public market data only; no personal account data."
   ]
 }
