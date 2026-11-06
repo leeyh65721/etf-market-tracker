@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T18:59:25Z",
+  "checked_at_utc": "2026-11-06T19:51:33Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No new urgent alert. Reuters Nov 6 17:07 UTC quantified elevated credit stress (CoreWeave 5y CDS >1000bp, US HY premium highest since April 2025, CCC near highest since 2020), but described Treasury bond/funding markets as orderly; VIX near 28 and Nasdaq/chips rebounded. These are new details of previously flagged AI selloff, not corroborated new systemic liquidity breakdown. Existing critical alert remains active; no immediate allocation change validated.",
+  "change_since_previous": "No new urgent alert. AP November 6 later-session snapshot: S&P 500 +0.7%, Nasdaq +1.4%, Dow near flat; Nvidia +3.2%. This corroborates a partial rebound from the previously flagged November 5 semiconductor shock, not a newly verified escalation. Reuters-reported elevated HY/CDS risk remains unresolved; no independently verified new system-wide funding disruption. No emergency allocation change validated.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -281,6 +281,14 @@
       "phlx_semiconductor_change_pct": 4,
       "observed_at_utc": null,
       "note": "Reuters Nov 6 intraday global markets report, publication timestamp not reliable as quote timestamp"
+    },
+    "us_equity_ap_nov6_later": {
+      "sp500_change_pct": 0.7,
+      "nasdaq_change_pct": 1.4,
+      "dow_change": "near flat",
+      "nvidia_change_pct": 3.2,
+      "observed_at_utc": null,
+      "note": "AP November 6 article snapshot; precise quote time unknown; not confirmed session close"
     }
   },
   "sources": [
@@ -312,10 +320,9 @@
     "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T18:59:25Z. Reuters November 6 reporting snapshots are delayed and not synchronized live prices.",
-    "Issuer CDS >1000bp and US HY/CCC spread rankings verified in Reuters reporting, but exact spread values/times and market-wide contagion not independently verified.",
-    "Current real yields, WTI/Brent precise quotes, natural gas, copper, USD/KRW, synchronized market breadth and ETF bid/ask not verified.",
-    "Bond and funding markets reported orderly; existing critical alert retained. No new urgent warning. Historical analysis report bodies not exhaustively checked.",
-    "Public market information only; no personal account information."
+    "Checked 2026-11-06T19:51:33Z. AP/Reuters Nov 6 delayed intraday snapshots, not synchronized or confirmed closing quotes.",
+    "Latest verified market-wide HY spread values, real yields, WTI/Brent, gas, copper, USD/KRW, synchronized breadth and ETF quotes unavailable.",
+    "Previously reported CoreWeave CDS >1000bp and HY spread stress persist without new evidence of systemic funding disruption; prior critical alert retained.",
+    "Historical analysis reports not exhaustively read; public market data only, no account information."
   ]
 }
