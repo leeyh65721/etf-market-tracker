@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T17:27:50Z",
+  "checked_at_utc": "2026-11-06T18:59:25Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No new urgent alert. November 6 US semiconductor relief rally remains partial; by 11:01 ET eight major chip stocks had recovered about one-third of Thursday losses versus about 45% at 10:01 ET. Nasdaq around +1.6% at 10:57 ET versus +1.73% at 10:21 ET (different reporting snapshots). No corroborated new systemic credit/liquidity escalation; existing critical alert remains active. New market data insufficient to downgrade risk.",
+  "change_since_previous": "No new urgent alert. Reuters Nov 6 17:07 UTC quantified elevated credit stress (CoreWeave 5y CDS >1000bp, US HY premium highest since April 2025, CCC near highest since 2020), but described Treasury bond/funding markets as orderly; VIX near 28 and Nasdaq/chips rebounded. These are new details of previously flagged AI selloff, not corroborated new systemic liquidity breakdown. Existing critical alert remains active; no immediate allocation change validated.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -246,6 +246,41 @@
       "sp500_change_pct": 1,
       "observed_at_utc": "2026-11-06T15:57:00Z",
       "note": "CNBC data relayed by StockTitan; delayed, not synchronized with credit and rates"
+    },
+    "coreweave_5y_cds_reuters": {
+      "value_lower_bound": 1000,
+      "unit": "basis_points",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 6 17:07 UTC article; exceeds 1000bp; precise quote time unknown, issuer-specific not market-wide"
+    },
+    "us_high_yield_spread_reuters": {
+      "value": null,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 6: highest since April 2025 turbulence; numerical spread and exact timestamp not supplied"
+    },
+    "vix_reuters_nov6": {
+      "value_approx": 28,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 6 17:07 UTC: near Thursday >28, >40% higher this week; not live"
+    },
+    "usd_index_or_dollar_reuters": {
+      "change_pct": 0.6,
+      "observed_at_utc": "2026-11-06T15:00:00Z",
+      "note": "Reuters reports dollar up 0.6% as of 1500 GMT; specific index/basket unspecified"
+    },
+    "us_10y_reuters_nov6": {
+      "value": 4.86,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 6 global markets article, exact quote time unspecified"
+    },
+    "us_equity_reuters_nov6_later": {
+      "nasdaq_change_pct": 1.1,
+      "sp500_change_pct": 0.61,
+      "dow_change_pct": -0.08,
+      "phlx_semiconductor_change_pct": 4,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 6 intraday global markets report, publication timestamp not reliable as quote timestamp"
     }
   },
   "sources": [
@@ -273,12 +308,14 @@
     "https://www.reuters.com/world/india/gold-eases-inflation-worries-higher-oil-us-payrolls-data-focus-2026-11-06/",
     "https://www.reuters.com/markets/",
     "https://www.stocktitan.net/articles/stock-market-today-live-november-6-2026",
-    "https://www.reuters.com/business/wall-st-week-ahead-tech-swoon-roils-market-us-inflation-data-tap-2026-11-06/"
+    "https://www.reuters.com/business/wall-st-week-ahead-tech-swoon-roils-market-us-inflation-data-tap-2026-11-06/",
+    "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T17:27:50Z; delayed reporting snapshots, not synchronized real-time quotes.",
-    "Current US credit spreads, real yields, VIX, WTI/Brent, natural gas, copper, USD/KRW, market breadth and ETF bid/ask spreads not independently verified; no figures invented.",
-    "Previous critical alert retained. Latest corroborated movement does not establish additional systemic worsening. Historical analysis report bodies not exhaustively reviewed.",
+    "Checked 2026-11-06T18:59:25Z. Reuters November 6 reporting snapshots are delayed and not synchronized live prices.",
+    "Issuer CDS >1000bp and US HY/CCC spread rankings verified in Reuters reporting, but exact spread values/times and market-wide contagion not independently verified.",
+    "Current real yields, WTI/Brent precise quotes, natural gas, copper, USD/KRW, synchronized market breadth and ETF bid/ask not verified.",
+    "Bond and funding markets reported orderly; existing critical alert retained. No new urgent warning. Historical analysis report bodies not exhaustively checked.",
     "Public market information only; no personal account information."
   ]
 }
