@@ -1,0 +1,51 @@
+name: Independent US stock opportunity and market breadth
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 0 * * 2-6'
+permissions:
+  contents: write
+concurrency:
+  group: opportunity-scan
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Verify opportunity calculations offline
+        run: python -m unittest discover -s tests -p 'test_opportunity_scan.py' -v
+      - name: Scan US stocks and sector rotation
+        run: python opportunity_scan.py
+      - name: Validate output and freshness
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('data/opportunities/latest.json').read_text())
+          assert d['schema_version']==1
+          assert d['coverage']['valid_liquid_stocks']>=30, 'Insufficient valid stock coverage'
+          assert d['market_breadth']['sample_size']>=30
+          assert d['us_market_date'] and d['generated_at_utc']
+          print('Verified',d['us_market_date'],d['coverage'])
+          PY
+      - name: Save public opportunities and audit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/opportunities/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update stock opportunities and forward audit"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 3
+            done
+          fi
