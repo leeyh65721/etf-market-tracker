@@ -1,14 +1,54 @@
 {
   "schema_version": 1,
-  "status": "awaiting_first_run",
-  "checked_at_utc": null,
-  "market_date": null,
-  "risk_level": "unknown",
-  "change_since_previous": "unknown",
+  "status": "partial",
+  "checked_at_utc": "2026-11-06T01:12:15Z",
+  "market_date": "2026-11-05",
+  "risk_level": "high",
+  "change_since_previous": "No verified new shock or material escalation since prior hourly report; November 5 US closing selloff already reported. Prior shared file was an initialization placeholder.",
   "alerts": [],
-  "indicators": {},
-  "sources": [],
+  "indicators": {
+    "nasdaq_composite": {
+      "value": 24315,
+      "unit": "index_points",
+      "change_pct": -5.52,
+      "observed_at_utc": "2026-11-05T21:00:00Z",
+      "note": "US regular-session close; approximate index level from Reuters"
+    },
+    "sp500": {
+      "value": 7353.73,
+      "unit": "index_points",
+      "change_pct": -4.36,
+      "observed_at_utc": "2026-11-05T21:00:00Z"
+    },
+    "dow_jones": {
+      "value": 51523,
+      "unit": "index_points",
+      "change_pct": -3.44,
+      "observed_at_utc": "2026-11-05T21:00:00Z",
+      "note": "Approximate index level"
+    },
+    "phlx_semiconductor_index": {
+      "change_pct": "less_than_-12",
+      "observed_at_utc": "2026-11-05T21:00:00Z",
+      "note": "Reuters reports more than 12% decline; exact close not independently confirmed"
+    },
+    "vix": {
+      "value": 28.18,
+      "unit": "index_points",
+      "observed_at_utc": "2026-11-05T21:00:00Z",
+      "note": "Secondary financial press; not independently verified against exchange"
+    }
+  },
+  "sources": [
+    "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
+    "https://www.reuters.com/business/energy/global-markets-global-markets-2026-11-05/",
+    "https://www.reuters.com/business/view-tech-stock-rout-accelerates-retreat-ai-trade-2026-11-05/"
+  ],
   "data_limitations": [
-    "Integration write/read test only; no market data collected."
+    "US market closed at check time; closing prices are delayed, not live quotes.",
+    "Same-time verified numeric values unavailable for real/nominal yields, credit spreads, liquidity, WTI/Brent/natural gas/gold/copper, DXY, USD/KRW, futures and ETF bid-ask spreads.",
+    "GitHub analysis/events and analysis/daily directory fetch failed; prior reports compared using conversation history.",
+    "No confirmed post-previous-check structural shock; no alert warranted.",
+    "No private portfolio information included."
   ]
 }
