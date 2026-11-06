@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T23:12:13Z",
+  "checked_at_utc": "2026-11-06T23:54:11Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No new urgent alert. Reuters Nov 6 closing coverage confirms Nasdaq +1.09%, S&P 500 +0.32%, Dow -0.46%, semiconductor rebound and fourth consecutive weekly Nasdaq decline; these were already reflected in prior checks. Nov 6 SoftBank CDS stress and Asia spillover were previously reported. No independently verified incremental systemic funding shock or immediate allocation-changing event. Risk level critical carried forward, not independently recalibrated.",
+  "change_since_previous": "No newly verified urgent event or material deterioration since 2026-11-06T23:12:13Z. Reuters Nov 6 close (+1.09% Nasdaq, +0.32% S&P 500, -0.46% Dow; semiconductor +4.2%) and jobs/credit risks were already covered. AP Nov 6 corroborates partial AI rebound, not systemic recovery. Critical carried forward from prior assessment, not independently recalibrated. No new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -362,11 +362,10 @@
     "https://www.reuters.com/business/energy/global-markets-stagflation-risks-graphic-pix-2026-11-06/"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T21:08:10Z; Reuters unofficial November 6 close, quotes delayed at least 15 minutes.",
-    "Latest synchronized US HY/IG spreads, real yields, WTI/Brent, gas, copper, gold, USD/KRW, market breadth, ETF spreads unavailable; do not infer values.",
     "Prior credit and semiconductor stress remains active; no new verified systemic funding disruption. Historical event/daily files not exhaustively inspected.",
     "Public market data only; no personal account information.",
     "Nov 7 07:17 KST check: US cash market closed; contemporaneous real yields, broad credit spreads, VIX, WTI/Brent, natural gas, copper, USD/KRW, breadth and ETF quotes not independently synchronized or fully verified. Prior analysis/events and analysis/daily directories not accessible via fetch_file; no claim of exhaustive duplicate review.",
-    "Nov 7 08:12 KST check: weekend US cash market closed; cross-checked Reuters Nov 6 closing coverage and chip sector reporting. No synchronized fresh Treasury real yields, IG/HY spreads, oil/gas/copper, FX, breadth or ETF quotes. No claim of exhaustive historical analysis directory review."
+    "Nov 7 08:12 KST check: weekend US cash market closed; cross-checked Reuters Nov 6 closing coverage and chip sector reporting. No synchronized fresh Treasury real yields, IG/HY spreads, oil/gas/copper, FX, breadth or ETF quotes. No claim of exhaustive historical analysis directory review.",
+    "2026-11-06T23:54:11Z check: US cash market closed for weekend; reviewed Nov 6 Reuters/AP closing accounts and existing risk file. No new synchronized verified real yields, IG/HY spreads, VIX, oil/gas/copper, USD/KRW, market breadth, ETF spreads. No exhaustive historical event/daily comparison. Previous risk classification retained provisionally."
   ]
 }
