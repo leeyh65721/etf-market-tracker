@@ -1,11 +1,11 @@
 # ETF 거시경제 자동 수집 품질 점검
 
-- 품질 상태: **OK**
-- 미국 시장 기준일: 2026-11-05
-- 점검 시각 UTC: 2026-11-06T00:03:12.079129+00:00
-- 거시 수집 생성 시각 UTC: 2026-11-06T00:03:12.002259+00:00
-- 기술 데이터 생성 시각 UTC: 2026-11-06T00:03:08.839498+00:00
-- 요청/수집/시차 기준 정상: **22 / 22 / 22**
+- 품질 상태: **WARN**
+- 미국 시장 기준일: 2026-11-06
+- 점검 시각 UTC: 2026-11-06T23:58:52.139534+00:00
+- 거시 수집 생성 시각 UTC: 2026-11-06T23:58:52.053606+00:00
+- 기술 데이터 생성 시각 UTC: 2026-11-06T23:58:49.251747+00:00
+- 요청/수집/시차 기준 정상: **22 / 20 / 20**
 
 ## 분야별 수집 상태
 
@@ -17,15 +17,19 @@
 | energy | 2 | 2 | - |
 | volatility | 2 | 2 | - |
 | foreign_exchange | 2 | 2 | - |
-| money_markets | 2 | 2 | - |
+| money_markets | 0 | 2 | EFFR, SOFR |
 
 ## 발견한 문제
 
-- 자동 품질 검사상 이상 없음. 시장이 안전하다는 의미는 아님.
+- Macro status is partial, not ok
+- Missing required series: EFFR, SOFR
+- Source failures: 2
+- Critical market series not current: EFFR
 
 ## 원출처 오류
 
-- 없음
+- EFFR: RuntimeError: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+- SOFR: RuntimeError: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 
 ## 사용 시 주의
 

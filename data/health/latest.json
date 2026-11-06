@@ -1,14 +1,14 @@
 {
-  "us_market_date": "2026-11-05",
-  "github_run_id": "42133764205",
-  "expected_latest_closed_nyse_session": "2026-11-05",
-  "generated_at_utc": "2026-11-06T00:05:11.778770+00:00",
+  "us_market_date": "2026-11-06",
+  "github_run_id": "42315237432",
+  "expected_latest_closed_nyse_session": "2026-11-06",
+  "generated_at_utc": "2026-11-06T23:59:56.702780+00:00",
   "status": "ERROR",
   "counts": {
     "etf_verified": 337,
     "etf_universe": 353,
     "etf_fraction": 0.95467,
-    "base_macro_ok": 22,
+    "base_macro_ok": 20,
     "base_macro_expected": 22,
     "supplemental_ok": 7,
     "supplemental_expected": 10,
@@ -44,6 +44,16 @@
   },
   "findings": [
     {
+      "level": "ERROR",
+      "code": "BASE_MACRO_INCOMPLETE",
+      "detail": "Baseline 20/22 ok, source state partial"
+    },
+    {
+      "level": "ERROR",
+      "code": "BASE_MACRO_HEALTH_UNSAFE",
+      "detail": "Baseline macro health=WARN date=2026-11-06"
+    },
+    {
       "level": "KNOWN",
       "code": "NFCI_NOT_LIVE",
       "detail": "NFCI latest official CSV status=stale, requires permitted manual verification"
@@ -59,7 +69,10 @@
       "detail": "ETF research decision evidence contains invalid records"
     }
   ],
-  "new_alert_codes": [],
+  "new_alert_codes": [
+    "BASE_MACRO_INCOMPLETE",
+    "BASE_MACRO_HEALTH_UNSAFE"
+  ],
   "alert_summary": "new non-expected warning/error codes only; KNOWN values excluded",
   "not_a_market_signal": true,
   "guidance": "ERROR fails GitHub Actions after archival; WARN annotates success; KNOWN must still be reported separately."

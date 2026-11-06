@@ -1,7 +1,7 @@
 # ETF 분석 판단 보존 원장
 
 > 실제 분석에 적힌 표현과 기준가격을 대조한 공개 시장연구 원장. 자동 스크리너 후보·사용자 거래와 구분.
-- 유효하게 연결된 의견: **21건**
+- 유효하게 연결된 의견: **24건**
 - 원문을 사후 보관해 적중률 산정이 불가능한 의견: **4건**
 - 형식·출처 확인 실패: **1건**
 - 구조화되지 않은 일일 분석 파일: **1개**
@@ -30,6 +30,9 @@
 |2026-11-03-XLP-positive-watch|XLP|positive_watch|2026-11-02|2026-11-03|2026-11-03|prospective|
 |2026-11-05-SOXX-watch-weaker|SOXX|watch_weaker|2026-11-03|2026-11-05|2026-11-05|prospective|
 |2026-11-05-XLF-positive-watch|XLF|positive_watch|2026-11-03|2026-11-05|2026-11-05|prospective|
+|2026-11-06-SOXX-watch_weaker|SOXX|watch_weaker|2026-11-04|2026-11-06|2026-11-06|prospective|
+|2026-11-06-XLF-watch-weaker|XLF|watch_weaker|2026-11-04|2026-11-06|2026-11-06|prospective|
+|2026-11-06-XLP-positive_watch|XLP|positive_watch|2026-11-04|2026-11-06|2026-11-06|prospective|
 
 ## 아직 독립 기록이 없는 보고서
 

@@ -1,11 +1,13 @@
 {
-  "status": "OK",
-  "market_date": "2026-11-05",
-  "source_macro_status": "ok",
+  "status": "WARN",
+  "market_date": "2026-11-06",
+  "source_macro_status": "partial",
   "requested": 22,
-  "retrieved": 22,
-  "current": 22,
-  "critical_missing": [],
+  "retrieved": 20,
+  "current": 20,
+  "critical_missing": [
+    "EFFR"
+  ],
   "categories": {
     "treasury": {
       "ok": 4,
@@ -38,15 +40,26 @@
       "missing_or_stale": []
     },
     "money_markets": {
-      "ok": 2,
+      "ok": 0,
       "required": 2,
-      "missing_or_stale": []
+      "missing_or_stale": [
+        "EFFR",
+        "SOFR"
+      ]
     }
   },
-  "messages": [],
-  "source_errors": {},
-  "macro_generated_at_utc": "2026-11-06T00:03:12.002259+00:00",
-  "technical_generated_at_utc": "2026-11-06T00:03:08.839498+00:00",
-  "checked_at_utc": "2026-11-06T00:03:12.079129+00:00",
+  "messages": [
+    "Macro status is partial, not ok",
+    "Missing required series: EFFR, SOFR",
+    "Source failures: 2",
+    "Critical market series not current: EFFR"
+  ],
+  "source_errors": {
+    "EFFR": "RuntimeError: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "SOFR": "RuntimeError: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  },
+  "macro_generated_at_utc": "2026-11-06T23:58:52.053606+00:00",
+  "technical_generated_at_utc": "2026-11-06T23:58:49.251747+00:00",
+  "checked_at_utc": "2026-11-06T23:58:52.139534+00:00",
   "important_note": "Data collection health only; not a statement about market risk. Publication and revision lag still require verification."
 }
