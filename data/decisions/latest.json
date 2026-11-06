@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-11-05T00:03:21.684325+00:00",
+  "generated_at_utc": "2026-11-06T00:05:11.242865+00:00",
   "status": "ERROR",
-  "valid_count": 19,
+  "valid_count": 21,
   "retrospective_count": 4,
-  "prospective_count": 15,
+  "prospective_count": 17,
   "invalid_count": 1,
   "reports_missing_structured_records_count": 1,
   "reports_missing_structured_records": [
@@ -481,6 +481,56 @@
         20
       ],
       "first_theoretical_reference_session": "2026-11-03",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-05-SOXX-watch-weaker",
+      "ticker": "SOXX",
+      "stance": "watch_weaker",
+      "us_market_date": "2026-11-03",
+      "original_report_date_kst": "2026-11-05",
+      "archived_on_utc_date": "2026-11-05",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-11-05.md",
+      "original_close_usd": 465,
+      "original_spy_close_usd": 754.35,
+      "thesis": "November 3 SOXX 21-session -21.121% and SPY excess -18.478pp; November 4 semiconductor constituent weakness despite index rally warrants continued risk caution.",
+      "counterevidence": "Sharp oversold rebound and official company order/earnings upgrades could reverse relative weakness.",
+      "invalidation": "20-day trend recovery, verified volume and SPY-relative reversal supported by issuer fundamentals.",
+      "revisit_trigger": "Risk reduction on verified support breakdown; reentry only on verified trend/volume and fundamentals. Evaluate 5/10/20 NYSE sessions.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-04",
+      "eligible_for_prospective_judgment_scoring": true,
+      "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-05-XLF-positive-watch",
+      "ticker": "XLF",
+      "stance": "positive_watch",
+      "us_market_date": "2026-11-03",
+      "original_report_date_kst": "2026-11-05",
+      "archived_on_utc_date": "2026-11-05",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-11-05.md",
+      "original_close_usd": 57.19,
+      "original_spy_close_usd": 754.35,
+      "thesis": "November 4 reported financial sector surge and record proximity, versus November 3 XLF -0.643%; November 3 verified 21-session XLF +6.143%, SPY excess +8.786pp. Conditional strength observation, not buy.",
+      "counterevidence": "Post-election one-day relief, rate decline could constrain net interest margins, financial subsector divergence, Nov 4 verified ETF close and spread absent.",
+      "invalidation": "Breakout failure, renewed underperformance versus SPY or weakened official bank fundamentals.",
+      "revisit_trigger": "Confirm November 4 ETF OHLCV and relative strength; monitor 1/3/5 sessions and 5/10/20 NYSE-session SPY-relative returns.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-04",
       "eligible_for_prospective_judgment_scoring": true,
       "assessment": "awaiting_forward_observation",
       "not_a_buy_recommendation": true
