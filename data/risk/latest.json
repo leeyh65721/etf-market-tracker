@@ -1,11 +1,29 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T01:50:10Z",
+  "checked_at_utc": "2026-11-06T03:05:22Z",
   "market_date": "2026-11-05",
-  "risk_level": "high",
-  "change_since_previous": "No new verified market shock or material deterioration since the 2026-11-06T01:12:15Z check; November 5 semiconductor and broad-market selloff remains the same previously reported episode.",
-  "alerts": [],
+  "risk_level": "critical",
+  "change_since_previous": "Existing Nov 5 US semiconductor selloff has materially propagated into Asian markets on Nov 6: KOSPI circuit breaker at 00:03 UTC after -8.52%; Japan Nikkei and Taiwan also sharply lower. New cross-market transmission versus prior risk JSON, not a new independent US event.",
+  "alerts": [
+    {
+      "event_id": "20261106-asia-semiconductor-contagion",
+      "detected_at_utc": "2026-11-06T03:05:22Z",
+      "severity": "critical",
+      "summary": "기존 미국 반도체 급락의 아시아 전이: 한국 코스피 -8% 이상 및 서킷브레이커, 일본·대만 동반 급락",
+      "evidence": [
+        "KOSPI -8.52% at 09:03 KST; 20-minute trading halt",
+        "Reuters reported Nikkei roughly -6%, Taiwan >-8% during morning trading",
+        "VIX 28.36 during November 5 US session; not a synchronized current quote"
+      ],
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/south-korea-stocks-plunge-8-circuit-breaker-triggered-chip-shares-tumble-2026-11-06/",
+        "https://www.reuters.com/business/energy/global-markets-global-markets-2026-11-05/",
+        "https://www.reuters.com/business/wall-street-fear-gauge-jumps-most-since-liberation-day-ai-trade-stumbles-2026-11-05/"
+      ],
+      "status": "active"
+    }
+  ],
   "indicators": {
     "nasdaq_composite": {
       "value": 24315,
@@ -31,17 +49,33 @@
       "change_pct": -12.2,
       "observed_at_utc": "2026-11-05T21:00:00Z",
       "note": "Reuters global markets report gives -12.2% for November 5 regular session"
+    },
+    "kospi": {
+      "value": 4924.61,
+      "unit": "index_points",
+      "change_pct": -8.52,
+      "observed_at_utc": "2026-11-06T00:03:00Z",
+      "note": "circuit-breaker trigger, not latest price"
+    },
+    "vix": {
+      "value": 28.36,
+      "unit": "index_points",
+      "observed_at_utc": "2026-11-05",
+      "note": "Reuters 8-month high during US session; not synchronized with Asia prices"
     }
   },
   "sources": [
     "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
     "https://live.euronext.com/en/financial-news/deep-chip-selloff-drags-global-stocks-lower-ai-spending-concerns",
-    "https://apnews.com/article/7ee9c212805aa5e70cf34d25aab7a36e"
+    "https://apnews.com/article/7ee9c212805aa5e70cf34d25aab7a36e",
+    "https://www.reuters.com/world/asia-pacific/south-korea-stocks-plunge-8-circuit-breaker-triggered-chip-shares-tumble-2026-11-06/",
+    "https://www.reuters.com/business/energy/global-markets-global-markets-2026-11-05/",
+    "https://www.reuters.com/business/wall-street-fear-gauge-jumps-most-since-liberation-day-ai-trade-stumbles-2026-11-05/"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T01:50:10Z; US regular-session close figures from 2026-11-05T21:00:00Z, not live quotes.",
-    "No independently cross-verified synchronized values for nominal/real yields, credit spreads, liquidity, oil/gas/metals, FX, market breadth, VIX or ETF bid-ask spreads.",
-    "No verified new market-wide structural shock after prior check; alerts empty.",
-    "No private portfolio information included."
+    "2026-11-06T03:05:22Z check; US quotes are Nov 5 closing figures, Asian quotes intraday and may have changed.",
+    "No synchronized independent values for credit spreads, nominal/real yields, FX, WTI/Brent, gas, metals, or ETF spreads; cannot confirm systemic credit crisis.",
+    "Risk critical denotes severe equity-market contagion, not verified credit-market failure.",
+    "Public market data only; no personal portfolio data."
   ]
 }
