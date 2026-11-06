@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T15:49:01Z",
+  "checked_at_utc": "2026-11-06T17:14:31Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No new urgent alert. Reuters 10:21 ET Nov 6: Nasdaq +1.73%, S&P 500 +1.0%, Dow roughly flat, Philadelphia semiconductor index +4.6% after previous day's >12% plunge; Nvidia +5.6%. Existing critical semiconductor/global contagion alert remains active, but latest verified direction is partial rebound, not new systemic deterioration. October jobs surprise and Fed December hike probability 78% already discussed in prior check; no duplicate alert.",
+  "change_since_previous": "No new urgent alert. Reuters Nov 6 afternoon update reports a relief rally after Thursday's AI-led rout; no verified escalation versus the previous critical warning. Gold declined around 1% as stronger payrolls supported USD/yields, consistent with the already-reported jobs/rate repricing, not a separate emergency. No independently confirmed new systemic credit/liquidity shock.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -229,6 +229,11 @@
       "unit": "percent",
       "observed_at_utc": null,
       "note": "Reuters Nov 6 market-implied probability after jobs release, approximate, not an official Fed forecast"
+    },
+    "gold_reuters_nov6": {
+      "change_pct": -1,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 6 report; approximate move; quote time not independently verified."
     }
   },
   "sources": [
@@ -252,12 +257,14 @@
     "https://www.bls.gov/news.release/empsit.nr0.htm",
     "https://www.reuters.com/business/us-job-growth-beats-expectations-october-unemployment-rate-falls-41-2026-11-06/",
     "https://www.investing.com/news/economic-indicators/strong-october-jobs-report-sends-yields-higher-5008272",
-    "https://www.reuters.com/business/view-strong-october-jobs-report-sends-yields-higher-2026-11-06/"
+    "https://www.reuters.com/business/view-strong-october-jobs-report-sends-yields-higher-2026-11-06/",
+    "https://www.reuters.com/world/india/gold-eases-inflation-worries-higher-oil-us-payrolls-data-focus-2026-11-06/",
+    "https://www.reuters.com/markets/"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T15:49:01Z; Reuters equity snapshot around 10:21 ET, delayed and not live.",
-    "Latest synchronized US IG/HY spreads, real yields, VIX, WTI/Brent, natural gas, gold, copper, USD/KRW, breadth and ETF spreads unavailable; no fabricated readings.",
-    "Existing critical alert retained; new material systemic deterioration not established. Prior risk JSON and conversation compared; full historical analysis reports not checked.",
-    "Public market data only; no personal account information."
+    "Checked 2026-11-06T17:14:31Z; market snapshots are delayed, not synchronized real-time prices.",
+    "Fresh synchronized US credit spreads, real yields, VIX, WTI/Brent, natural gas, copper, USD/KRW, market breadth and ETF bid/ask spreads not independently verified; no figures invented.",
+    "Existing critical semiconductor/global contagion alert retained; no newly verified material worsening. Prior shared JSON and conversation compared; historical analysis report bodies not exhaustively reviewed.",
+    "Public market information only; no personal account information."
   ]
 }
