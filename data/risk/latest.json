@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T01:12:15Z",
+  "checked_at_utc": "2026-11-06T01:50:10Z",
   "market_date": "2026-11-05",
   "risk_level": "high",
-  "change_since_previous": "No verified new shock or material escalation since prior hourly report; November 5 US closing selloff already reported. Prior shared file was an initialization placeholder.",
+  "change_since_previous": "No new verified market shock or material deterioration since the 2026-11-06T01:12:15Z check; November 5 semiconductor and broad-market selloff remains the same previously reported episode.",
   "alerts": [],
   "indicators": {
     "nasdaq_composite": {
@@ -28,27 +28,20 @@
       "note": "Approximate index level"
     },
     "phlx_semiconductor_index": {
-      "change_pct": "less_than_-12",
+      "change_pct": -12.2,
       "observed_at_utc": "2026-11-05T21:00:00Z",
-      "note": "Reuters reports more than 12% decline; exact close not independently confirmed"
-    },
-    "vix": {
-      "value": 28.18,
-      "unit": "index_points",
-      "observed_at_utc": "2026-11-05T21:00:00Z",
-      "note": "Secondary financial press; not independently verified against exchange"
+      "note": "Reuters global markets report gives -12.2% for November 5 regular session"
     }
   },
   "sources": [
     "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
-    "https://www.reuters.com/business/energy/global-markets-global-markets-2026-11-05/",
-    "https://www.reuters.com/business/view-tech-stock-rout-accelerates-retreat-ai-trade-2026-11-05/"
+    "https://live.euronext.com/en/financial-news/deep-chip-selloff-drags-global-stocks-lower-ai-spending-concerns",
+    "https://apnews.com/article/7ee9c212805aa5e70cf34d25aab7a36e"
   ],
   "data_limitations": [
-    "US market closed at check time; closing prices are delayed, not live quotes.",
-    "Same-time verified numeric values unavailable for real/nominal yields, credit spreads, liquidity, WTI/Brent/natural gas/gold/copper, DXY, USD/KRW, futures and ETF bid-ask spreads.",
-    "GitHub analysis/events and analysis/daily directory fetch failed; prior reports compared using conversation history.",
-    "No confirmed post-previous-check structural shock; no alert warranted.",
+    "Checked 2026-11-06T01:50:10Z; US regular-session close figures from 2026-11-05T21:00:00Z, not live quotes.",
+    "No independently cross-verified synchronized values for nominal/real yields, credit spreads, liquidity, oil/gas/metals, FX, market breadth, VIX or ETF bid-ask spreads.",
+    "No verified new market-wide structural shock after prior check; alerts empty.",
     "No private portfolio information included."
   ]
 }
