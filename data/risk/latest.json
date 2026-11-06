@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T05:24:08Z",
+  "checked_at_utc": "2026-11-06T06:51:47Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No newly verified escalation relative to 2026-11-06T04:34:05Z. Reuters reports KOSPI recovered from >8% early loss to about -3.9% at its intraday snapshot; no confirmed new cross-asset or credit shock. Previously reported Asia semiconductor contagion alert remains active; no new alert.",
+  "change_since_previous": "No independently verified material escalation since 2026-11-06T05:24:08Z. Reuters reports KOSPI recovered to approximately -3.9% in an intraday snapshot after the earlier >8% fall; the US November 5 selloff and Asia contagion are previously alerted. No new alert. New Korean policy response reported (temporary easing of leveraged retail investment rules), but no verified reversal of the underlying AI risk or new credit shock.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -76,7 +76,7 @@
     "kospi_reuters_recovery_report": {
       "change_pct": -3.9,
       "observed_at_utc": null,
-      "note": "Reuters November 6 intraday report; exact market observation time unavailable; not a live quote"
+      "note": "Reuters Nov 6 article: approximately -3.9% after earlier >8% fall; exact quote time unknown; not a closing or live price"
     }
   },
   "sources": [
@@ -90,10 +90,10 @@
     "https://www.reuters.com/world/asia-pacific/dollar-edges-lower-us-election-outcome-cheers-global-markets-2026-11-05/"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T05:24:08Z; November 6 Reuters KOSPI -3.9% is an intraday article snapshot without exact quote timestamp, not a live quote.",
-    "US index and VIX readings remain November 5 session observations; no fresh US cash-session prices.",
-    "Current synchronized verified nominal/real yields, credit spreads, USD/KRW, oil/gas/metals, market breadth, futures and ETF bid-ask spreads unavailable; risk escalation cannot be ruled out.",
-    "Compared prior risk JSON and conversation; analysis/events and analysis/daily histories not fully verified.",
-    "Only public market information; no personal portfolio data."
+    "Checked at 2026-11-06T06:51:47Z. Reuters Nov 6 Korea snapshot -3.9% lacks precise observation timestamp; not live or confirmed closing quote.",
+    "US equity and VIX observations are from Nov 5 cash session, not live.",
+    "No independently synchronized verified updates for US nominal/real yields, credit spreads, FX, oil/gas/metals, breadth, futures or ETF spreads. Material escalation cannot be excluded.",
+    "Compared previous shared risk JSON and conversation; GitHub analysis/events and analysis/daily not exhaustively checked.",
+    "Only public market information; no portfolio data."
   ]
 }
