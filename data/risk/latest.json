@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T03:39:30Z",
-  "market_date": "2026-11-05",
+  "checked_at_utc": "2026-11-06T04:34:05Z",
+  "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No newly verified escalation beyond 03:05 UTC critical warning. Nov 6 AP midday reports KOSPI -7.4%, Nikkei -5.7% (versus earlier intraday troughs); severe cross-Asia contagion remains, but no new independent event or worsening stage confirmed. Existing active alert retained; no new alert.",
+  "change_since_previous": "No new escalation beyond the previously flagged cross-Asia semiconductor selloff. Reuters Nov 6 reports KOSPI pared its >8% intraday plunge to about -3.9% at its reporting snapshot; this is an improvement, not a new emergency. Prior critical alert remains active pending US session confirmation. No new alerts.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -72,6 +72,11 @@
       "change_pct": -5.7,
       "observed_at_utc": "2026-11-06T03:00:00Z",
       "note": "AP midday report; approximate observation time, not live quote"
+    },
+    "kospi_reuters_recovery_report": {
+      "change_pct": -3.9,
+      "observed_at_utc": null,
+      "note": "Reuters November 6 intraday report; exact market observation time unavailable; not a live quote"
     }
   },
   "sources": [
@@ -84,10 +89,10 @@
     "https://apnews.com/article/bba6f0bf9035a6e6b1c4fef3e8230b89"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T03:39:30Z. AP midday Asia figures are delayed news snapshots; US Nov 5 figures are prior regular-session closes.",
-    "No synchronized verified latest readings for credit spreads, real/nominal yields, FX, oil/gas/metals, futures, ETF bid-ask or breadth; cannot establish a new systemic shock.",
-    "GitHub analysis/events and analysis/daily directory reads failed; comparison based on prior shared risk JSON and conversation.",
-    "Risk critical remains from prior equity-market contagion alert, not evidence of a verified credit crisis.",
-    "Public market data only; no personal portfolio information."
+    "Checked 2026-11-06T04:34:05Z; Reuters intraday KOSPI rebound figure has no exact synchronized quote time. US index readings are November 5 closes; not live.",
+    "Current synchronized verified figures unavailable for Treasury nominal/real yields, credit spreads, oil/gas/metals, USD/KRW, futures, breadth and ETF spreads; no inference of a credit crisis.",
+    "GitHub analysis/events and analysis/daily directory fetch failed; prior risk JSON and conversation used for comparison.",
+    "Existing critical risk label retained from earlier equity contagion warning; no newly verified escalation.",
+    "Public market information only; no personal portfolio data."
   ]
 }
