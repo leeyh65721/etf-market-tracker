@@ -1,1 +1,14 @@
-{"status":"awaiting_first_run","alerts":[]}
+{
+  "schema_version": 1,
+  "status": "awaiting_first_run",
+  "checked_at_utc": null,
+  "market_date": null,
+  "risk_level": "unknown",
+  "change_since_previous": "unknown",
+  "alerts": [],
+  "indicators": {},
+  "sources": [],
+  "data_limitations": [
+    "Integration write/read test only; no market data collected."
+  ]
+}
