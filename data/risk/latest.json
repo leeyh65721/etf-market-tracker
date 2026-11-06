@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T13:18:33Z",
+  "checked_at_utc": "2026-11-06T13:52:00Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No verified escalation beyond prior critical AI/semiconductor contagion. Reuters Nov 6 premarket chip recovery is counterevidence, not resolution. October US employment release scheduled 13:30 UTC, 12 minutes after this check; no official October figure yet. New SoftBank/Asian AI-related credit stress reports require wider credit-spread confirmation before calling systemic contagion. No new alert.",
+  "change_since_previous": "NEW verified October US payrolls +165,000 versus Reuters consensus +65,000, unemployment 4.1% versus 4.2% expected, +84,000 revisions for August/September. Stronger labor market increases Fed tightening risk, but Reuters 08:31 ET Nasdaq-100 futures +1.37%, S&P futures +0.11%, Dow futures -0.96%; no verified new systemic credit shock or worsening of prior critical semiconductor contagion. No new urgent alert; existing critical risk remains.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -150,6 +150,39 @@
       "change_basis_points": 3,
       "observed_at_utc": null,
       "note": "Bloomberg syndicated Nov 6 report of Asian dollar bond yield premiums; methodology, precise observation and broad investment-grade/HY breakdown unverified"
+    },
+    "us_october_2026_nonfarm_payrolls": {
+      "value": 165000,
+      "unit": "jobs",
+      "consensus": 65000,
+      "observed_at_utc": "2026-11-06T13:30:00Z",
+      "note": "Official BLS October employment release; Reuters consensus"
+    },
+    "us_october_2026_unemployment": {
+      "value": 4.1,
+      "unit": "percent",
+      "consensus": 4.2,
+      "observed_at_utc": "2026-11-06T13:30:00Z",
+      "note": "Official BLS"
+    },
+    "us_october_2026_hourly_earnings_mom": {
+      "value": 0.4,
+      "unit": "percent",
+      "observed_at_utc": "2026-11-06T13:30:00Z",
+      "note": "Official BLS"
+    },
+    "us_prior_payroll_revisions": {
+      "value": 84000,
+      "unit": "jobs",
+      "observed_at_utc": "2026-11-06T13:30:00Z",
+      "note": "August and September combined upward revision, BLS"
+    },
+    "us_futures_post_jobs": {
+      "nasdaq100_change_pct": 1.37,
+      "sp500_change_pct": 0.11,
+      "dow_change_pct": -0.96,
+      "observed_at_utc": "2026-11-06T13:31:00Z",
+      "note": "Reuters 08:31 ET snapshot, delayed and not cash session"
     }
   },
   "sources": [
@@ -170,13 +203,14 @@
     "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-tech-stocks-worst-day-since-2020-employment-report/card/treasury-yields-inch-up-from-almost-2-month-lows-ahead-of-jobs-data-U4c0rKv6QJzn9pgYxl0O",
     "https://www.moneycontrol.com/news/business/markets/it-s-not-just-ai-stocks-anymore-softbank-bonds-slide-as-selloff-spreads-to-credit-markets-14072544.html",
     "https://www.bls.gov/schedule/2026/11_sched.htm",
-    "https://www.bls.gov/news.release/empsit.nr0.htm"
+    "https://www.bls.gov/news.release/empsit.nr0.htm",
+    "https://www.reuters.com/business/us-job-growth-beats-expectations-october-unemployment-rate-falls-41-2026-11-06/"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T13:18:33Z (22:18 KST); US November 6 cash session not yet open, November 5 close and November 6 premarket delayed reports used.",
-    "Official October US employment report scheduled 13:30 UTC; not yet published as of check, BLS current release still September.",
-    "Broad US investment-grade/high-yield credit spreads, real yields, synchronized VIX, WTI, natural gas, copper, gold, USD/KRW, market breadth and ETF bid-ask not verified. Asian bond premium report insufficient to establish systemic credit shock.",
-    "Prior GitHub risk JSON and conversation compared; analysis/events and analysis/daily full historical text not reviewed.",
+    "Checked approximately 2026-11-06T13:52Z; US November 6 cash session not yet open, futures Reuters 13:31 UTC snapshot; prices delayed.",
+    "Official US October employment report verified with BLS; futures reaction Reuters, no confirmation of sustained cash-market impact.",
+    "Synchronized US credit spreads, real yields, VIX, WTI, natural gas, copper, gold, USD/KRW, market breadth, ETF bid-ask not verified in this run; earlier indicators are historical, not current.",
+    "Prior GitHub risk JSON and conversation compared; full analysis/events and analysis/daily reports not re-read.",
     "Public market data only; no personal account data."
   ]
 }
