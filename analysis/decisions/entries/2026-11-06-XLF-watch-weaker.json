@@ -1,0 +1,28 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-06-XLF-watch-weaker",
+  "ticker": "XLF",
+  "stance": "watch_weaker",
+  "us_market_date": "2026-11-04",
+  "original_report_date_kst": "2026-11-06",
+  "archived_on_utc_date": "2026-11-06",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-11-06.md",
+  "verbatim_source_excerpt": "**XLF — 전일 강세 추격 관찰에서 돌파 실패 위험 재평가.**",
+  "original_close_usd": 59.2,
+  "original_spy_close_usd": 766.81,
+  "thesis": "November 5 selloff following November 4 rally requires revalidation of financial ETF breakout.",
+  "counterevidence": "Financial strength could resume if bank fundamentals and SPY relative strength recover.",
+  "invalidation": "Sustained recovery above verified November 5 high and relative strength improvement.",
+  "revisit_trigger": "Recheck validated volume and OHLCV; evaluate after 5/10/20 NYSE sessions.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "trigger_status": "watch_only_unverified",
+  "execution_verified": false,
+  "evaluation_status": "pending"
+}
