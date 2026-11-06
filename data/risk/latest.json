@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T14:52:09Z",
+  "checked_at_utc": "2026-11-06T15:49:01Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No new urgent alert. Following already-reported October payroll surprise, Reuters Nov 6 US cash open: Nasdaq +1.23%, S&P 500 +0.26%, Dow -0.94%; AP later reported Nasdaq +1.1%, S&P +0.3%, Dow -0.9% with Nvidia +5.6%. This is a narrow technology rebound, not verified systemic worsening or all-clear. Post-payroll 2y Treasury 4.52%, 10y 4.88% from Reuters 08:55 ET report; not simultaneous with equity quotes. Existing critical semiconductor/global contagion warning remains active.",
+  "change_since_previous": "No new urgent alert. Reuters 10:21 ET Nov 6: Nasdaq +1.73%, S&P 500 +1.0%, Dow roughly flat, Philadelphia semiconductor index +4.6% after previous day's >12% plunge; Nvidia +5.6%. Existing critical semiconductor/global contagion alert remains active, but latest verified direction is partial rebound, not new systemic deterioration. October jobs surprise and Fed December hike probability 78% already discussed in prior check; no duplicate alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -214,6 +214,21 @@
       "nvidia_change_pct": 5.6,
       "observed_at_utc": null,
       "note": "AP Nov 6 market report, quote time not specified; not live"
+    },
+    "us_cash_intraday_reuters_1021et": {
+      "nasdaq_change_pct": 1.73,
+      "sp500_change_pct": 1,
+      "dow_change": "roughly flat",
+      "phlx_semiconductor_change_pct": 4.6,
+      "nvidia_change_pct": 5.6,
+      "observed_at_utc": "2026-11-06T15:21:00Z",
+      "note": "Reuters 10:21 ET article snapshot, publication/report time approximate; not live synchronized quote"
+    },
+    "fed_december_hike_probability_report": {
+      "value": 78,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 6 market-implied probability after jobs release, approximate, not an official Fed forecast"
     }
   },
   "sources": [
@@ -236,13 +251,13 @@
     "https://www.bls.gov/schedule/2026/11_sched.htm",
     "https://www.bls.gov/news.release/empsit.nr0.htm",
     "https://www.reuters.com/business/us-job-growth-beats-expectations-october-unemployment-rate-falls-41-2026-11-06/",
-    "https://www.investing.com/news/economic-indicators/strong-october-jobs-report-sends-yields-higher-5008272"
+    "https://www.investing.com/news/economic-indicators/strong-october-jobs-report-sends-yields-higher-5008272",
+    "https://www.reuters.com/business/view-strong-october-jobs-report-sends-yields-higher-2026-11-06/"
   ],
   "data_limitations": [
-    "Checked approximately 2026-11-06T14:52Z; US cash market open, but Reuters/AP equity quotes and Reuters yields are published snapshots, not synchronized live prices.",
-    "No verified new systemic credit spread shock or sustained worsening versus existing critical alert; narrow tech rebound does not establish recovery.",
-    "Current synchronized real yields, US IG/HY spreads, VIX, WTI/Brent, natural gas, gold, copper, USD/KRW, market breadth and ETF bid-ask not fully verified; stale values retained with observation notes.",
-    "Prior GitHub risk JSON and conversation compared; full analysis/events and analysis/daily report bodies not re-read.",
+    "Checked 2026-11-06T15:49:01Z; Reuters equity snapshot around 10:21 ET, delayed and not live.",
+    "Latest synchronized US IG/HY spreads, real yields, VIX, WTI/Brent, natural gas, gold, copper, USD/KRW, breadth and ETF spreads unavailable; no fabricated readings.",
+    "Existing critical alert retained; new material systemic deterioration not established. Prior risk JSON and conversation compared; full historical analysis reports not checked.",
     "Public market data only; no personal account information."
   ]
 }
