@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T07:33:53Z",
+  "checked_at_utc": "2026-11-06T08:52:10Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No verified new escalation relative to 2026-11-06T06:51:47Z. Reuters reports the same KOSPI >8% intraday decline followed by recovery toward -3.9%; AP confirms broader Asia decline. Japanese Nikkei -6.0% closing report is consistent with previously alerted contagion, not a new independent shock. No new alert.",
+  "change_since_previous": "No new independent shock or verified escalation since 07:33:53Z. Reuters confirmed KOSPI November 6 close 5,059.69 (-6.02%), after intraday -8.8% circuit-breaker decline; AP reports Nikkei about -6.1% close. This confirms previously alerted Asian contagion rather than a fresh event. No new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -84,6 +84,18 @@
       "change_pct": -6,
       "observed_at_utc": null,
       "note": "Nov 6 Japan cash-market close reported by WSJ; precise timestamp not verified; not live"
+    },
+    "kospi_close": {
+      "value": 5059.69,
+      "unit": "index_points",
+      "change_pct": -6.02,
+      "observed_at_utc": "2026-11-06T06:30:00Z",
+      "note": "Reuters Nov 6 regular session close; closing timestamp inferred from KRX regular session schedule"
+    },
+    "nikkei_close_ap": {
+      "change_pct": -6.1,
+      "observed_at_utc": "2026-11-06T06:00:00Z",
+      "note": "AP Nov 6 reported closing change, approximate; Reuters/WSJ report around -6.0%"
     }
   },
   "sources": [
@@ -99,9 +111,9 @@
     "https://www.reuters.com/legal/transactional/ai-data-center-stocks-slip-democratic-sweep-clouds-expansion-plans-2026-11-05/"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T07:33:53Z; sources are Nov 5 US closing data and Nov 6 Asia reported intraday/closing snapshots, not live synchronized prices.",
-    "No verified synchronized latest US nominal/real yields, credit spreads, FX, oil/gas/metals, market breadth or ETF spreads; material further escalation cannot be excluded.",
-    "Previous risk JSON and conversation compared; GitHub analysis/events and analysis/daily directory reads failed.",
-    "Public market information only; no personal portfolio data."
+    "Checked 2026-11-06T08:52:10Z. US quotes are Nov 5 close and Asian quotes Nov 6 close, not synchronized live prices.",
+    "No fresh verified same-time US nominal/real yields, corporate credit spreads, USD/KRW, oil/gas/metals, breadth or ETF spreads; additional stress cannot be ruled out.",
+    "Previous risk JSON compared; GitHub analysis/events and analysis/daily directory reads failed.",
+    "Public market data only; no private portfolio information."
   ]
 }
