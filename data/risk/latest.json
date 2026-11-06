@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T22:17:52Z",
+  "checked_at_utc": "2026-11-06T23:12:13Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No new urgent alert. Nov 6 US closing rebound and Nov 6 payroll/rate repricing were already covered. Cross-check of Reuters Nov 6 gold and SoftBank credit risk shows continued stress, but no verified new systemic liquidity shock or escalation beyond prior critical warning. No emergency allocation change. Weekend cash markets closed.",
+  "change_since_previous": "No new urgent alert. Reuters Nov 6 closing coverage confirms Nasdaq +1.09%, S&P 500 +0.32%, Dow -0.46%, semiconductor rebound and fourth consecutive weekly Nasdaq decline; these were already reflected in prior checks. Nov 6 SoftBank CDS stress and Asia spillover were previously reported. No independently verified incremental systemic funding shock or immediate allocation-changing event. Risk level critical carried forward, not independently recalibrated.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -318,6 +318,16 @@
       "unit": "basis_points",
       "observed_at_utc": null,
       "note": "Reuters Nov 6 report; issuer-specific credit risk, not market-wide spread"
+    },
+    "phlx_semiconductor_nov6_close_report": {
+      "change_pct": 4.2,
+      "observed_at_utc": "2026-11-06T21:00:00Z",
+      "note": "Nov 6 regular-session close, IBD reporting; approximate percentage, not live"
+    },
+    "nasdaq_weekly_change_reuters": {
+      "change_pct": -3.4,
+      "observed_at_utc": "2026-11-06T21:00:00Z",
+      "note": "Reuters Nov 6 week-ending report; fourth consecutive weekly decline"
     }
   },
   "sources": [
@@ -347,13 +357,16 @@
     "https://www.stocktitan.net/articles/stock-market-today-live-november-6-2026",
     "https://www.reuters.com/business/wall-st-week-ahead-tech-swoon-roils-market-us-inflation-data-tap-2026-11-06/",
     "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/",
-    "https://www.reuters.com/business/media-telecom/softbank-cds-softbank-cds-2026-11-06/"
+    "https://www.reuters.com/business/media-telecom/softbank-cds-softbank-cds-2026-11-06/",
+    "https://www.investors.com/news/technology/nvidia-stock-other-ai-names-rebound-after-sell-off/",
+    "https://www.reuters.com/business/energy/global-markets-stagflation-risks-graphic-pix-2026-11-06/"
   ],
   "data_limitations": [
     "Checked 2026-11-06T21:08:10Z; Reuters unofficial November 6 close, quotes delayed at least 15 minutes.",
     "Latest synchronized US HY/IG spreads, real yields, WTI/Brent, gas, copper, gold, USD/KRW, market breadth, ETF spreads unavailable; do not infer values.",
     "Prior credit and semiconductor stress remains active; no new verified systemic funding disruption. Historical event/daily files not exhaustively inspected.",
     "Public market data only; no personal account information.",
-    "Nov 7 07:17 KST check: US cash market closed; contemporaneous real yields, broad credit spreads, VIX, WTI/Brent, natural gas, copper, USD/KRW, breadth and ETF quotes not independently synchronized or fully verified. Prior analysis/events and analysis/daily directories not accessible via fetch_file; no claim of exhaustive duplicate review."
+    "Nov 7 07:17 KST check: US cash market closed; contemporaneous real yields, broad credit spreads, VIX, WTI/Brent, natural gas, copper, USD/KRW, breadth and ETF quotes not independently synchronized or fully verified. Prior analysis/events and analysis/daily directories not accessible via fetch_file; no claim of exhaustive duplicate review.",
+    "Nov 7 08:12 KST check: weekend US cash market closed; cross-checked Reuters Nov 6 closing coverage and chip sector reporting. No synchronized fresh Treasury real yields, IG/HY spreads, oil/gas/copper, FX, breadth or ETF quotes. No claim of exhaustive historical analysis directory review."
   ]
 }
