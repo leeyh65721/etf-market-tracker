@@ -21,6 +21,16 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Verify opportunity calculations offline
         run: python -m unittest discover -s tests -p 'test_opportunity_scan.py' -v
+      - name: Verify breadth and earnings parsers offline
+        run: python -m unittest discover -s tests -p 'test_breadth_earnings.py' -v
+      - name: Scan S&P 500 market breadth
+        id: breadth
+        continue-on-error: true
+        run: python breadth_scan.py
+      - name: Track EPS consensus estimate revisions
+        id: earnings
+        continue-on-error: true
+        run: python earnings_scan.py
       - name: Scan US stocks and sector rotation
         run: python opportunity_scan.py
       - name: Validate output and freshness
@@ -34,6 +44,20 @@ jobs:
           assert d['market_breadth']['sample_size']>=30
           assert d['us_market_date'] and d['generated_at_utc']
           print('Verified',d['us_market_date'],d['coverage'])
+          PY
+      - name: Validate optional data status explicitly
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for name in ['breadth','earnings']:
+              p=Path('data')/name/'latest.json'
+              if not p.exists():
+                  print('::warning::',name,'data missing; do not infer success')
+                  continue
+              d=json.loads(p.read_text())
+              print(name,d.get('status'),d.get('generated_at_utc'))
           PY
       - name: Save public opportunities and audit
         run: |
