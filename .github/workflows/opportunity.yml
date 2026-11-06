@@ -23,6 +23,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_opportunity_scan.py' -v
       - name: Verify breadth and earnings parsers offline
         run: python -m unittest discover -s tests -p 'test_breadth_earnings.py' -v
+      - name: Save ISM release calendar metadata (no licensed PMI content)
+        run: python ism_release_check.py
       - name: Scan S&P 500 market breadth
         id: breadth
         continue-on-error: true
