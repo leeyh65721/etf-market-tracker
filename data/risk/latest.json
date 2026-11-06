@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-06T09:37:03Z",
+  "checked_at_utc": "2026-11-06T10:39:39Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No verified new escalation beyond previously alerted Nov 5 US semiconductor rout and Nov 6 Asian contagion. Reuters confirms KOSPI -6.02% close and AP confirms Nikkei roughly -6%; European opening weakness is continuation. No new alert.",
+  "change_since_previous": "No verified new critical escalation. Reuters 09:41 UTC reports Nasdaq futures +1.48%, S&P futures +0.39%, Dow futures -0.66%; divergent premarket rebound after prior selloff, not confirmed risk resolution. Asia losses and European decline are continuation of previously alerted contagion; no new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -106,6 +106,27 @@
       "change_pct": -1.4,
       "observed_at_utc": null,
       "note": "Nov 6 intraday report by WSJ; not synchronized live quote"
+    },
+    "nasdaq_futures_reuters": {
+      "change_pct": 1.48,
+      "observed_at_utc": "2026-11-06T09:41:00Z",
+      "note": "Reuters publication time, not necessarily quote timestamp; premarket delayed snapshot"
+    },
+    "sp500_futures_reuters": {
+      "change_pct": 0.39,
+      "observed_at_utc": "2026-11-06T09:41:00Z",
+      "note": "Reuters publication time, quote time unverified"
+    },
+    "dow_futures_reuters": {
+      "change_pct": -0.66,
+      "observed_at_utc": "2026-11-06T09:41:00Z",
+      "note": "Reuters publication time, quote time unverified"
+    },
+    "stoxx600_reuters_morning": {
+      "value": 648.83,
+      "change_pct": -1,
+      "observed_at_utc": "2026-11-06T09:19:00Z",
+      "note": "Reuters 09:19 GMT report, earlier than current check"
     }
   },
   "sources": [
@@ -118,12 +139,14 @@
     "https://apnews.com/article/bba6f0bf9035a6e6b1c4fef3e8230b89",
     "https://www.reuters.com/world/asia-pacific/dollar-edges-lower-us-election-outcome-cheers-global-markets-2026-11-05/",
     "https://www.wsj.com/finance/stocks/nikkei-falls-5-9-dragged-by-chip-stocks-d8937761",
-    "https://www.reuters.com/legal/transactional/ai-data-center-stocks-slip-democratic-sweep-clouds-expansion-plans-2026-11-05/"
+    "https://www.reuters.com/legal/transactional/ai-data-center-stocks-slip-democratic-sweep-clouds-expansion-plans-2026-11-05/",
+    "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/",
+    "https://www.reuters.com/markets/europe/european-shares-set-fall-global-ai-rout-gathers-pace-2026-11-06/"
   ],
   "data_limitations": [
-    "Checked 2026-11-06T09:37:03Z; US prices are Nov 5 close, Asian prices Nov 6 close, Europe figures Nov 6 intraday reports; not live or synchronized.",
-    "No reliable same-time verified nominal/real yields, corporate credit spreads, oil/gas/metals, FX, breadth or ETF bid-ask spreads; do not infer stability.",
-    "GitHub analysis/events and analysis/daily directory listings accessible; prior risk JSON and conversation compared; not every historical report read.",
-    "Public market data only; no personal portfolio information."
+    "Checked 2026-11-06T10:39:39Z. Reuters futures snapshot published 09:41 UTC; US cash-market prices Nov 5 close, Asia Nov 6 close, Europe Nov 6 morning; not synchronized or live.",
+    "Fresh simultaneous real yields, credit spreads, commodity basket, USD/KRW, breadth and ETF quotes not independently verified; no conclusion of stability from missing data.",
+    "Prior GitHub risk JSON and conversation compared; complete historical event/daily reports not re-read.",
+    "Public market information only; no personal account data."
   ]
 }
