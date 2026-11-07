@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T07:26:20Z",
+  "checked_at_utc": "2026-11-07T08:48:31Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No independently verified new urgent event or material escalation since prior 2026-11-07T06:34:10Z check. Reuters Nov 6 global markets report reiterates inflation, energy, borrowing-cost and technology selloff concerns already present in prior alerts. US cash market closed for weekend. Existing critical risk level provisionally carried forward, not independently recalculated. 신규 경고 없음.",
+  "change_since_previous": "신규 경고 없음. Nov 7 Reuters coverage of Ukraine/Russia refinery strikes and Nov 6 SoftBank CDS/AI selloff does not establish a newly verified material escalation relative to the 07:26 UTC check. Weekend US cash markets closed. Existing critical rating provisionally carried forward, not independently recalculated.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -402,7 +402,8 @@
     "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-after-jobs-data-muted-ai-rebound-945344f6",
     "https://www.wsj.com/finance/jgb-yields-fall-as-stock-markets-drop-sharply-8f5fbed1",
     "https://news.metal.com/newscontent/104210346-us-nonfarm-payrolls-far-exceed-expectations-crude-oil-weekly-drop-over-13-metals-show-mixed-performance-lme-tin-leads-gains-while-lme-zinc-leads-losses-overnight-market",
-    "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-06/"
+    "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-06/",
+    "https://www.reuters.com/business/energy/zelenskiy-says-ukraine-is-continuing-attacks-russias-oil-refining-sector-2026-11-06/"
   ],
   "data_limitations": [
     "Prior credit and semiconductor stress remains active; no new verified systemic funding disruption. Historical event/daily files not exhaustively inspected.",
@@ -417,6 +418,7 @@
     "2026-11-07T05:18:01Z: Weekend US cash markets closed; Reuters Nov 6 rebound and credit stress are not new. Nov 7 SMM reports LME copper -0.64% in previous overnight session but exact quote time unverified, so no synchronized indicator inserted. Real yields, broad credit spreads, FX, full energy basket, market breadth and ETF spreads not independently synchronized. Historical event/daily folders not exhaustively checked; prior critical level provisional.",
     "2026-11-07T05:52:28Z: Weekend US market closure. Reuters Nov 6 reports rising volatility and issuer credit risk but orderly bond/funding markets; no verified material change since prior check. No new synchronized primary quotes for real yields, broad IG/HY spreads, VIX, WTI/Brent, gas, copper, USD/KRW, breadth or ETF bid/ask. Event/daily history not exhaustively compared. Prior critical rating provisional.",
     "2026-11-07T06:34:10Z: Weekend US cash-market closure; Reuters Nov 6 closing/fund flows and WSJ close cross-checked. No fresh synchronized primary-source quotes for real yields, broad IG/HY credit spreads, VIX, natural gas, copper, USD/KRW, market breadth or ETF bid/ask. Existing risk level carried forward, not independently recalculated. Historical analysis/events and analysis/daily not exhaustively inspected.",
-    "2026-11-07T07:26:20Z: Weekend; no new synchronized verification of real yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, market breadth, ETF quotes. Reuters Nov 6 report is background, not a new event. GitHub analysis directory listings not fully enumerated."
+    "2026-11-07T07:26:20Z: Weekend; no new synchronized verification of real yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, market breadth, ETF quotes. Reuters Nov 6 report is background, not a new event. GitHub analysis directory listings not fully enumerated.",
+    "2026-11-07T08:48:31Z: Weekend cash market closed. Reuters Nov 6-7 articles reviewed; refinery strikes are continuing actions, with no newly confirmed magnitude or market-wide spillover relative to last check. No synchronized fresh primary real yields, broad credit spreads, gas/copper, USD/KRW, breadth or ETF bid/ask. Existing critical classification provisional; historical analysis folders not exhaustively checked."
   ]
 }
