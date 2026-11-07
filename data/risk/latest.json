@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T03:41:14Z",
+  "checked_at_utc": "2026-11-07T05:18:01Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No verified new urgent event or material worsening versus 2026-11-07T03:11:44Z. Reuters Nov 6 closing rebound and AI-credit worries were previously covered. Weekend cash markets closed; critical carried forward provisionally, not independently recalculated. No new alerts.",
+  "change_since_previous": "No newly verified urgent event or material deterioration versus prior check at 2026-11-07T03:41:14Z. Nov 6 Reuters closing rebound and issuer credit stresses previously recorded. Weekend market closure; critical retained provisionally, not independently recalculated. No new alerts.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -400,7 +400,8 @@
     "https://journalarta.com/en/2026/11/07/wall-street-close-nasdaq-rises-1-09-and-sp-500-gains-0-32-as-dow-slips-0-46/",
     "https://journalarta.com/en/markets/us-10-year-yield/",
     "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-after-jobs-data-muted-ai-rebound-945344f6",
-    "https://www.wsj.com/finance/jgb-yields-fall-as-stock-markets-drop-sharply-8f5fbed1"
+    "https://www.wsj.com/finance/jgb-yields-fall-as-stock-markets-drop-sharply-8f5fbed1",
+    "https://news.metal.com/newscontent/104210346-us-nonfarm-payrolls-far-exceed-expectations-crude-oil-weekly-drop-over-13-metals-show-mixed-performance-lme-tin-leads-gains-while-lme-zinc-leads-losses-overnight-market"
   ],
   "data_limitations": [
     "Prior credit and semiconductor stress remains active; no new verified systemic funding disruption. Historical event/daily files not exhaustively inspected.",
@@ -411,6 +412,7 @@
     "2026-11-07T00:44:33Z check: weekend US cash market closed. Latest available Reuters closing/credit reports largely duplicate prior checks. Secondary 10Y/VIX closing readings not independently verified; real yields, IG/HY numerical spreads, natural gas, copper, USD/KRW, breadth and ETF spreads not simultaneously validated. No exhaustive events/daily directory review.",
     "2026-11-07T02:06:11Z: US weekend cash market closed; Reuters Nov 6 systemic credit story already known, WSJ Friday close cross-check. No independently synchronized real yields, broad credit spreads, natural gas, copper, USD/KRW, market breadth or ETF bid/ask; event/daily history not exhaustively checked. New values from secondary reporting, not live.",
     "2026-11-07 03:11 UTC check: no synchronized fresh verified quotes for real yields, broad credit spreads, VIX, full commodity basket, USD/KRW, market breadth or ETF bid/ask; latest Reuters articles largely recap Nov 6 session. Prior critical level is carried forward rather than recalculated.",
-    "2026-11-07 03:41 UTC: Weekend; no live synchronized quotes. Fresh broad HY spreads, real yields, natural gas, copper, USD/KRW, breadth and ETF spreads not independently verified. analysis/events and analysis/daily directory listing unavailable. Existing critical classification carried forward."
+    "2026-11-07 03:41 UTC: Weekend; no live synchronized quotes. Fresh broad HY spreads, real yields, natural gas, copper, USD/KRW, breadth and ETF spreads not independently verified. analysis/events and analysis/daily directory listing unavailable. Existing critical classification carried forward.",
+    "2026-11-07T05:18:01Z: Weekend US cash markets closed; Reuters Nov 6 rebound and credit stress are not new. Nov 7 SMM reports LME copper -0.64% in previous overnight session but exact quote time unverified, so no synchronized indicator inserted. Real yields, broad credit spreads, FX, full energy basket, market breadth and ETF spreads not independently synchronized. Historical event/daily folders not exhaustively checked; prior critical level provisional."
   ]
 }
