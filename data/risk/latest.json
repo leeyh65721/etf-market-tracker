@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T11:14:32Z",
+  "checked_at_utc": "2026-11-07T11:34:41Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. 2026-11-07 11:14 UTC: Reuters reported record US investment-grade bond issuance ($1.88tn through Nov 4), with hyperscalers $370.7bn+, and investor absorption/oversubscription. New context on AI financing but not independently verified sudden funding freeze or deterioration beyond existing alert. Existing critical classification provisionally retained; no independent recalculation.",
+  "change_since_previous": "신규 긴급 경고 없음. 2026-11-07 11:34 UTC 점검: Reuters 11월 6일 마감 보도와 11월 7일 게시된 시장 기사 재확인. 나스닥 금요일 +1.09%, 주간 -3.4%, 반도체지수 금요일 +4.2%; 기존 급락 후 반등으로 이전에 보고된 사건. 신규 광범위 신용·유동성 충격 또는 직전 대비 중대한 악화의 독립 증거 없음. 기존 critical 잠정 유지, 독립 재산정 아님.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -425,6 +425,7 @@
     "2026-11-07T07:26:20Z: Weekend; no new synchronized verification of real yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, market breadth, ETF quotes. Reuters Nov 6 report is background, not a new event. GitHub analysis directory listings not fully enumerated.",
     "2026-11-07T08:48:31Z: Weekend cash market closed. Reuters Nov 6-7 articles reviewed; refinery strikes are continuing actions, with no newly confirmed magnitude or market-wide spillover relative to last check. No synchronized fresh primary real yields, broad credit spreads, gas/copper, USD/KRW, breadth or ETF bid/ask. Existing critical classification provisional; historical analysis folders not exhaustively checked.",
     "2026-11-07T09:45:48Z: Weekend US cash market closed; reviewed Nov 6 Reuters employment, SoftBank credit and WSJ tech CDS reports. These are not new after previous check. No synchronized primary-source quotes for real yields, broad IG/HY spreads, commodities, FX, breadth or ETF bid/ask. Historical event/daily records not exhaustively inspected; prior critical rating provisional.",
-    "Weekend US cash-market closure; no simultaneous current quotes verified for real yields, broad IG/HY spreads, gas/copper, FX, market breadth or ETF bid-ask. GitHub historical directory listing unavailable; compared prior risk JSON and conversation."
+    "Weekend US cash-market closure; no simultaneous current quotes verified for real yields, broad IG/HY spreads, gas/copper, FX, market breadth or ETF bid-ask. GitHub historical directory listing unavailable; compared prior risk JSON and conversation.",
+    "2026-11-07 11:34 UTC: US cash market closed for weekend; no synchronous verification of real yields, broad credit spreads, VIX, all commodities, USD/KRW, breadth and ETF bid-ask spreads; earlier observations retained with original timestamps."
   ]
 }
