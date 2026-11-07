@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T19:22:41Z",
+  "checked_at_utc": "2026-11-07T19:34:06Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. 2026-11-07 19:22 UTC 점검: Reuters 11월 5~7일 반도체·신용·유가 보도 및 AP 11월 6일 미국 증시 마감과 직전 기록 비교. 기존 AI/반도체 급락·SoftBank CDS 상승·이란 관련 유가 불안 반복이며 직전 이후 새로 검증된 위험 단계 상승 없음. 미국 현물 주말 휴장. critical은 기존 등급 잠정 유지, 독립 재산정 아님.",
+  "change_since_previous": "신규 긴급 경고 없음. 2026-11-07 19:34 UTC: Reuters 11월 6일 한국 반도체 급락, 글로벌 펀드 자금흐름, 11월 7일 Berkshire 실적 및 AP 시장 보도 대조. 직전 19:22 UTC 점검 이후 새 독립 사건 또는 기존 위험의 검증된 중대한 악화 없음. 기존 critical 등급은 독립 재산정이 아닌 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -421,7 +421,8 @@
     "https://www.reuters.com/legal/transactional/big-tech-drives-us-corporate-bond-sales-annual-record-high-data-shows-2026-11-06/",
     "https://www.reuters.com/business/finance/berkshire-hathaway-accelerates-stock-buybacks-operating-profit-falls-2026-11-07/",
     "https://www.reuters.com/commentary/breakingviews/global-markets-breakingviews-2026-11-07/",
-    "https://www.reuters.com/business/energy/oil-set-sharp-weekly-drop-middle-east-supply-concerns-provide-floor-2026-11-06/"
+    "https://www.reuters.com/business/energy/oil-set-sharp-weekly-drop-middle-east-supply-concerns-provide-floor-2026-11-06/",
+    "https://www.reuters.com/world/asia-pacific/south-korea-stocks-plunge-8-circuit-breaker-triggered-chip-shares-tumble-2026-11-06/"
   ],
   "data_limitations": [
     "2026-11-07T07:26:20Z: Weekend; no new synchronized verification of real yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, market breadth, ETF quotes. Reuters Nov 6 report is background, not a new event. GitHub analysis directory listings not fully enumerated.",
@@ -436,6 +437,7 @@
     "2026-11-07T16:30:09Z: 주말 휴장; 동시점 실질금리·회사채 스프레드·VIX·시장 폭·원자재·환율·ETF 호가 전체 검증 불가. analysis/events 및 analysis/daily 디렉터리 전체 대조 불가. 기존 관측치의 시각은 변경하지 않음.",
     "2026-11-07T17:38:48Z: 미국 현물시장 주말 휴장. 최신 실질금리, 광범위 IG/HY 신용스프레드, VIX, WTI/Brent/천연가스/금/구리, 달러·USD/KRW, 시장 폭, ETF 호가의 동시점 직접 검증 불가. Reuters 11월 5~7일 보도는 기존 사건; 새 수치 입력하지 않음. analysis/events 및 analysis/daily 전체 대조 미완료.",
     "2026-11-07 19:22 UTC: 미국 주말 현물 휴장. 이번 점검에서 실질금리, 투자등급/HY 전체 스프레드, 천연가스·구리·USD/KRW, 시장 폭, ETF 호가의 최신 동시점 검증 불가. 이전 관측치의 시간은 그대로 유지.",
-    "GitHub analysis/events 및 analysis/daily 디렉터리 전체 열람 불가(파일 전용 fetch); 기존 위험 JSON 및 현재 대화와 비교. 신규 위험 사건으로 오인하지 않음."
+    "GitHub analysis/events 및 analysis/daily 디렉터리 전체 열람 불가(파일 전용 fetch); 기존 위험 JSON 및 현재 대화와 비교. 신규 위험 사건으로 오인하지 않음.",
+    "2026-11-07T19:34:06Z: 미국 주말 현물 휴장. 실질금리·IG/HY 신용스프레드·천연가스·구리·USD/KRW·시장 폭·ETF 호가의 최신 동시점 검증 불가. Reuters/AP 11월 6~7일 보도는 이전 위험의 재확인. analysis/events 및 analysis/daily 전체 대조 미완료. 기존 관측 시각 유지."
   ]
 }
