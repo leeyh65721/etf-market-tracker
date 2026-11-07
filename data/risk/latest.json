@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T06:34:10Z",
+  "checked_at_utc": "2026-11-07T07:26:20Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No new independently verified urgent event or material escalation since 2026-11-07T05:52:28Z. Reuters Nov 6 closing and global fund-flow reports corroborate existing AI/semiconductor volatility and mixed risk appetite, not a new systemic credit/funding shock. Prior critical classification provisionally retained; no new alert.",
+  "change_since_previous": "No independently verified new urgent event or material escalation since prior 2026-11-07T06:34:10Z check. Reuters Nov 6 global markets report reiterates inflation, energy, borrowing-cost and technology selloff concerns already present in prior alerts. US cash market closed for weekend. Existing critical risk level provisionally carried forward, not independently recalculated. 신규 경고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -416,6 +416,7 @@
     "2026-11-07 03:41 UTC: Weekend; no live synchronized quotes. Fresh broad HY spreads, real yields, natural gas, copper, USD/KRW, breadth and ETF spreads not independently verified. analysis/events and analysis/daily directory listing unavailable. Existing critical classification carried forward.",
     "2026-11-07T05:18:01Z: Weekend US cash markets closed; Reuters Nov 6 rebound and credit stress are not new. Nov 7 SMM reports LME copper -0.64% in previous overnight session but exact quote time unverified, so no synchronized indicator inserted. Real yields, broad credit spreads, FX, full energy basket, market breadth and ETF spreads not independently synchronized. Historical event/daily folders not exhaustively checked; prior critical level provisional.",
     "2026-11-07T05:52:28Z: Weekend US market closure. Reuters Nov 6 reports rising volatility and issuer credit risk but orderly bond/funding markets; no verified material change since prior check. No new synchronized primary quotes for real yields, broad IG/HY spreads, VIX, WTI/Brent, gas, copper, USD/KRW, breadth or ETF bid/ask. Event/daily history not exhaustively compared. Prior critical rating provisional.",
-    "2026-11-07T06:34:10Z: Weekend US cash-market closure; Reuters Nov 6 closing/fund flows and WSJ close cross-checked. No fresh synchronized primary-source quotes for real yields, broad IG/HY credit spreads, VIX, natural gas, copper, USD/KRW, market breadth or ETF bid/ask. Existing risk level carried forward, not independently recalculated. Historical analysis/events and analysis/daily not exhaustively inspected."
+    "2026-11-07T06:34:10Z: Weekend US cash-market closure; Reuters Nov 6 closing/fund flows and WSJ close cross-checked. No fresh synchronized primary-source quotes for real yields, broad IG/HY credit spreads, VIX, natural gas, copper, USD/KRW, market breadth or ETF bid/ask. Existing risk level carried forward, not independently recalculated. Historical analysis/events and analysis/daily not exhaustively inspected.",
+    "2026-11-07T07:26:20Z: Weekend; no new synchronized verification of real yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, market breadth, ETF quotes. Reuters Nov 6 report is background, not a new event. GitHub analysis directory listings not fully enumerated."
   ]
 }
