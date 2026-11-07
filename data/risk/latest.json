@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T03:11:44Z",
+  "checked_at_utc": "2026-11-07T03:41:14Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No independently verified new urgent event or material deterioration versus 2026-11-07T02:06:11Z. Nov 6 US market close, AI/semiconductor rebound, SoftBank/CoreWeave credit concerns and payroll-driven rate repricing were already covered. US cash markets closed for weekend. Prior critical risk level provisionally retained, not independently recalculated. No new alerts.",
+  "change_since_previous": "No verified new urgent event or material worsening versus 2026-11-07T03:11:44Z. Reuters Nov 6 closing rebound and AI-credit worries were previously covered. Weekend cash markets closed; critical carried forward provisionally, not independently recalculated. No new alerts.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -410,6 +410,7 @@
     "2026-11-06T23:54:11Z check: US cash market closed for weekend; reviewed Nov 6 Reuters/AP closing accounts and existing risk file. No new synchronized verified real yields, IG/HY spreads, VIX, oil/gas/copper, USD/KRW, market breadth, ETF spreads. No exhaustive historical event/daily comparison. Previous risk classification retained provisionally.",
     "2026-11-07T00:44:33Z check: weekend US cash market closed. Latest available Reuters closing/credit reports largely duplicate prior checks. Secondary 10Y/VIX closing readings not independently verified; real yields, IG/HY numerical spreads, natural gas, copper, USD/KRW, breadth and ETF spreads not simultaneously validated. No exhaustive events/daily directory review.",
     "2026-11-07T02:06:11Z: US weekend cash market closed; Reuters Nov 6 systemic credit story already known, WSJ Friday close cross-check. No independently synchronized real yields, broad credit spreads, natural gas, copper, USD/KRW, market breadth or ETF bid/ask; event/daily history not exhaustively checked. New values from secondary reporting, not live.",
-    "2026-11-07 03:11 UTC check: no synchronized fresh verified quotes for real yields, broad credit spreads, VIX, full commodity basket, USD/KRW, market breadth or ETF bid/ask; latest Reuters articles largely recap Nov 6 session. Prior critical level is carried forward rather than recalculated."
+    "2026-11-07 03:11 UTC check: no synchronized fresh verified quotes for real yields, broad credit spreads, VIX, full commodity basket, USD/KRW, market breadth or ETF bid/ask; latest Reuters articles largely recap Nov 6 session. Prior critical level is carried forward rather than recalculated.",
+    "2026-11-07 03:41 UTC: Weekend; no live synchronized quotes. Fresh broad HY spreads, real yields, natural gas, copper, USD/KRW, breadth and ETF spreads not independently verified. analysis/events and analysis/daily directory listing unavailable. Existing critical classification carried forward."
   ]
 }
