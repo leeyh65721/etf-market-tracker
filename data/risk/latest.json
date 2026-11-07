@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T00:44:33Z",
+  "checked_at_utc": "2026-11-07T02:06:11Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No newly verified urgent event or material worsening since 2026-11-06T23:54:11Z. Reuters Nov 6 close and SoftBank CDS 466bp were previously documented; fresh Nov 7 syndication repeats those reports. Existing critical rating provisionally carried forward, not independently recalibrated. No new alert.",
+  "change_since_previous": "No newly verified urgent event or material worsening since 2026-11-07T00:44:33Z. Nov 6 Reuters credit stress and US stock close remain previously documented; weekend cash markets closed. Existing critical classification provisionally retained, not recalculated. No new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -340,6 +340,31 @@
       "unit": "index_points",
       "observed_at_utc": null,
       "note": "JournalArta Nov 6 closing report; secondary, not independently verified against CBOE"
+    },
+    "us_2y_nov6_close_wsj": {
+      "value": 4.52,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "WSJ November 6 closing report; publication does not establish precise quote timestamp; secondary confirmation only"
+    },
+    "us_10y_nov6_close_wsj": {
+      "value": 4.858,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "WSJ November 6 closing report; not live"
+    },
+    "wti_nov6_wsj": {
+      "value": 90.83,
+      "unit": "USD/barrel",
+      "observed_at_utc": null,
+      "note": "WSJ Nov 6 market summary, quote/settlement timing not verified"
+    },
+    "gold_nov6_wsj": {
+      "value": 4064.5,
+      "unit": "USD/troy_ounce",
+      "change_pct": -0.9,
+      "observed_at_utc": null,
+      "note": "WSJ Nov 6 market summary, quote timestamp unverified"
     }
   },
   "sources": [
@@ -373,7 +398,9 @@
     "https://www.investors.com/news/technology/nvidia-stock-other-ai-names-rebound-after-sell-off/",
     "https://www.reuters.com/business/energy/global-markets-stagflation-risks-graphic-pix-2026-11-06/",
     "https://journalarta.com/en/2026/11/07/wall-street-close-nasdaq-rises-1-09-and-sp-500-gains-0-32-as-dow-slips-0-46/",
-    "https://journalarta.com/en/markets/us-10-year-yield/"
+    "https://journalarta.com/en/markets/us-10-year-yield/",
+    "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-after-jobs-data-muted-ai-rebound-945344f6",
+    "https://www.wsj.com/finance/jgb-yields-fall-as-stock-markets-drop-sharply-8f5fbed1"
   ],
   "data_limitations": [
     "Prior credit and semiconductor stress remains active; no new verified systemic funding disruption. Historical event/daily files not exhaustively inspected.",
@@ -381,6 +408,7 @@
     "Nov 7 07:17 KST check: US cash market closed; contemporaneous real yields, broad credit spreads, VIX, WTI/Brent, natural gas, copper, USD/KRW, breadth and ETF quotes not independently synchronized or fully verified. Prior analysis/events and analysis/daily directories not accessible via fetch_file; no claim of exhaustive duplicate review.",
     "Nov 7 08:12 KST check: weekend US cash market closed; cross-checked Reuters Nov 6 closing coverage and chip sector reporting. No synchronized fresh Treasury real yields, IG/HY spreads, oil/gas/copper, FX, breadth or ETF quotes. No claim of exhaustive historical analysis directory review.",
     "2026-11-06T23:54:11Z check: US cash market closed for weekend; reviewed Nov 6 Reuters/AP closing accounts and existing risk file. No new synchronized verified real yields, IG/HY spreads, VIX, oil/gas/copper, USD/KRW, market breadth, ETF spreads. No exhaustive historical event/daily comparison. Previous risk classification retained provisionally.",
-    "2026-11-07T00:44:33Z check: weekend US cash market closed. Latest available Reuters closing/credit reports largely duplicate prior checks. Secondary 10Y/VIX closing readings not independently verified; real yields, IG/HY numerical spreads, natural gas, copper, USD/KRW, breadth and ETF spreads not simultaneously validated. No exhaustive events/daily directory review."
+    "2026-11-07T00:44:33Z check: weekend US cash market closed. Latest available Reuters closing/credit reports largely duplicate prior checks. Secondary 10Y/VIX closing readings not independently verified; real yields, IG/HY numerical spreads, natural gas, copper, USD/KRW, breadth and ETF spreads not simultaneously validated. No exhaustive events/daily directory review.",
+    "2026-11-07T02:06:11Z: US weekend cash market closed; Reuters Nov 6 systemic credit story already known, WSJ Friday close cross-check. No independently synchronized real yields, broad credit spreads, natural gas, copper, USD/KRW, market breadth or ETF bid/ask; event/daily history not exhaustively checked. New values from secondary reporting, not live."
   ]
 }
