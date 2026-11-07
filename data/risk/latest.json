@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T05:18:01Z",
+  "checked_at_utc": "2026-11-07T05:52:28Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No newly verified urgent event or material deterioration versus prior check at 2026-11-07T03:41:14Z. Nov 6 Reuters closing rebound and issuer credit stresses previously recorded. Weekend market closure; critical retained provisionally, not independently recalculated. No new alerts.",
+  "change_since_previous": "No new verified urgent event or material deterioration since 2026-11-07T05:18:01Z. Reuters Nov 6 AI/credit stress reporting repeats existing risk; Reuters explicitly describes bond and funding markets as orderly. US cash markets closed for weekend. Prior critical risk level carried forward provisionally, not independently recalculated; no new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -413,6 +413,7 @@
     "2026-11-07T02:06:11Z: US weekend cash market closed; Reuters Nov 6 systemic credit story already known, WSJ Friday close cross-check. No independently synchronized real yields, broad credit spreads, natural gas, copper, USD/KRW, market breadth or ETF bid/ask; event/daily history not exhaustively checked. New values from secondary reporting, not live.",
     "2026-11-07 03:11 UTC check: no synchronized fresh verified quotes for real yields, broad credit spreads, VIX, full commodity basket, USD/KRW, market breadth or ETF bid/ask; latest Reuters articles largely recap Nov 6 session. Prior critical level is carried forward rather than recalculated.",
     "2026-11-07 03:41 UTC: Weekend; no live synchronized quotes. Fresh broad HY spreads, real yields, natural gas, copper, USD/KRW, breadth and ETF spreads not independently verified. analysis/events and analysis/daily directory listing unavailable. Existing critical classification carried forward.",
-    "2026-11-07T05:18:01Z: Weekend US cash markets closed; Reuters Nov 6 rebound and credit stress are not new. Nov 7 SMM reports LME copper -0.64% in previous overnight session but exact quote time unverified, so no synchronized indicator inserted. Real yields, broad credit spreads, FX, full energy basket, market breadth and ETF spreads not independently synchronized. Historical event/daily folders not exhaustively checked; prior critical level provisional."
+    "2026-11-07T05:18:01Z: Weekend US cash markets closed; Reuters Nov 6 rebound and credit stress are not new. Nov 7 SMM reports LME copper -0.64% in previous overnight session but exact quote time unverified, so no synchronized indicator inserted. Real yields, broad credit spreads, FX, full energy basket, market breadth and ETF spreads not independently synchronized. Historical event/daily folders not exhaustively checked; prior critical level provisional.",
+    "2026-11-07T05:52:28Z: Weekend US market closure. Reuters Nov 6 reports rising volatility and issuer credit risk but orderly bond/funding markets; no verified material change since prior check. No new synchronized primary quotes for real yields, broad IG/HY spreads, VIX, WTI/Brent, gas, copper, USD/KRW, breadth or ETF bid/ask. Event/daily history not exhaustively compared. Prior critical rating provisional."
   ]
 }
