@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T14:11:48Z",
+  "checked_at_utc": "2026-11-07T15:14:38Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 7일 Berkshire Hathaway 3분기 실적·자사주 매입 발표 확인: 보험 영업이익 약화와 자사주 매입 확대는 단일 기업 이슈로, 직전 경고 대비 시장 전반 신용·유동성 위험의 중대한 악화 증거가 아님. 11월 6일 AI/반도체 변동성은 기보고 사건. 기존 critical 등급 잠정 유지(독립 재산정 아님).",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 6~7일 AI·반도체 급락, SoftBank CDS 및 자금조달 관련 기사와 11월 6일 고용 지표 재확인. 모두 직전 기록에 반영된 위험으로 추가 악화 증거 미확보. 기존 critical은 잠정 유지하며 독립 재산정하지 않음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -434,6 +434,7 @@
     "Weekend US cash-market closure; no simultaneous current quotes verified for real yields, broad IG/HY spreads, gas/copper, FX, market breadth or ETF bid-ask. GitHub historical directory listing unavailable; compared prior risk JSON and conversation.",
     "2026-11-07 11:34 UTC: US cash market closed for weekend; no synchronous verification of real yields, broad credit spreads, VIX, all commodities, USD/KRW, breadth and ETF bid-ask spreads; earlier observations retained with original timestamps.",
     "2026-11-07T12:45:55Z: US weekend closure; Reuters Nov 6 closing coverage and Nov 7 commentary checked. No new synchronous validated real yields, broad IG/HY spreads, WTI/Brent, gas, gold, copper, USD/KRW, VIX, breadth or ETF bid-ask quotes. Historical events/daily directory not fully audited. No invented data; earlier indicator timestamps preserved.",
-    "2026-11-07T14:11:48Z: Weekend US cash market closed. New Berkshire report is issuer-specific, no proven broad contagion. No synchronized fresh primary real yields, IG/HY credit spreads, WTI/Brent/gas/gold/copper, USD/KRW, VIX, breadth or ETF quotes. Prior observations retain timestamps; historical events/daily not exhaustively enumerated."
+    "2026-11-07T14:11:48Z: Weekend US cash market closed. New Berkshire report is issuer-specific, no proven broad contagion. No synchronized fresh primary real yields, IG/HY credit spreads, WTI/Brent/gas/gold/copper, USD/KRW, VIX, breadth or ETF quotes. Prior observations retain timestamps; historical events/daily not exhaustively enumerated.",
+    "2026-11-07T15:14:38Z: Weekend US cash market closed. Current synchronized primary-source real yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, breadth, ETF spreads unavailable. Search surfaced predominantly Nov 5-7 already reported events; no new event validated. Historical analysis folders not exhaustively checked."
   ]
 }
