@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T05:52:28Z",
+  "checked_at_utc": "2026-11-07T06:34:10Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "No new verified urgent event or material deterioration since 2026-11-07T05:18:01Z. Reuters Nov 6 AI/credit stress reporting repeats existing risk; Reuters explicitly describes bond and funding markets as orderly. US cash markets closed for weekend. Prior critical risk level carried forward provisionally, not independently recalculated; no new alert.",
+  "change_since_previous": "No new independently verified urgent event or material escalation since 2026-11-07T05:52:28Z. Reuters Nov 6 closing and global fund-flow reports corroborate existing AI/semiconductor volatility and mixed risk appetite, not a new systemic credit/funding shock. Prior critical classification provisionally retained; no new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -401,7 +401,8 @@
     "https://journalarta.com/en/markets/us-10-year-yield/",
     "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-after-jobs-data-muted-ai-rebound-945344f6",
     "https://www.wsj.com/finance/jgb-yields-fall-as-stock-markets-drop-sharply-8f5fbed1",
-    "https://news.metal.com/newscontent/104210346-us-nonfarm-payrolls-far-exceed-expectations-crude-oil-weekly-drop-over-13-metals-show-mixed-performance-lme-tin-leads-gains-while-lme-zinc-leads-losses-overnight-market"
+    "https://news.metal.com/newscontent/104210346-us-nonfarm-payrolls-far-exceed-expectations-crude-oil-weekly-drop-over-13-metals-show-mixed-performance-lme-tin-leads-gains-while-lme-zinc-leads-losses-overnight-market",
+    "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-06/"
   ],
   "data_limitations": [
     "Prior credit and semiconductor stress remains active; no new verified systemic funding disruption. Historical event/daily files not exhaustively inspected.",
@@ -414,6 +415,7 @@
     "2026-11-07 03:11 UTC check: no synchronized fresh verified quotes for real yields, broad credit spreads, VIX, full commodity basket, USD/KRW, market breadth or ETF bid/ask; latest Reuters articles largely recap Nov 6 session. Prior critical level is carried forward rather than recalculated.",
     "2026-11-07 03:41 UTC: Weekend; no live synchronized quotes. Fresh broad HY spreads, real yields, natural gas, copper, USD/KRW, breadth and ETF spreads not independently verified. analysis/events and analysis/daily directory listing unavailable. Existing critical classification carried forward.",
     "2026-11-07T05:18:01Z: Weekend US cash markets closed; Reuters Nov 6 rebound and credit stress are not new. Nov 7 SMM reports LME copper -0.64% in previous overnight session but exact quote time unverified, so no synchronized indicator inserted. Real yields, broad credit spreads, FX, full energy basket, market breadth and ETF spreads not independently synchronized. Historical event/daily folders not exhaustively checked; prior critical level provisional.",
-    "2026-11-07T05:52:28Z: Weekend US market closure. Reuters Nov 6 reports rising volatility and issuer credit risk but orderly bond/funding markets; no verified material change since prior check. No new synchronized primary quotes for real yields, broad IG/HY spreads, VIX, WTI/Brent, gas, copper, USD/KRW, breadth or ETF bid/ask. Event/daily history not exhaustively compared. Prior critical rating provisional."
+    "2026-11-07T05:52:28Z: Weekend US market closure. Reuters Nov 6 reports rising volatility and issuer credit risk but orderly bond/funding markets; no verified material change since prior check. No new synchronized primary quotes for real yields, broad IG/HY spreads, VIX, WTI/Brent, gas, copper, USD/KRW, breadth or ETF bid/ask. Event/daily history not exhaustively compared. Prior critical rating provisional.",
+    "2026-11-07T06:34:10Z: Weekend US cash-market closure; Reuters Nov 6 closing/fund flows and WSJ close cross-checked. No fresh synchronized primary-source quotes for real yields, broad IG/HY credit spreads, VIX, natural gas, copper, USD/KRW, market breadth or ETF bid/ask. Existing risk level carried forward, not independently recalculated. Historical analysis/events and analysis/daily not exhaustively inspected."
   ]
 }
