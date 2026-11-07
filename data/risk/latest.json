@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T12:45:55Z",
+  "checked_at_utc": "2026-11-07T14:11:48Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. 2026-11-07 12:45 UTC 점검: Reuters 11월 6일 마감 및 11월 7일 게시 기사 비교. 기존 AI/반도체 급락·신용 위험과 금요일 반등은 기보고 내용. 직전 점검 이후 새로운 구조적 신용·유동성 충격 또는 검증된 중대한 악화 없음. 기존 critical은 잠정 유지이며 새로 독립 산정한 등급이 아님.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 7일 Berkshire Hathaway 3분기 실적·자사주 매입 발표 확인: 보험 영업이익 약화와 자사주 매입 확대는 단일 기업 이슈로, 직전 경고 대비 시장 전반 신용·유동성 위험의 중대한 악화 증거가 아님. 11월 6일 AI/반도체 변동성은 기보고 사건. 기존 critical 등급 잠정 유지(독립 재산정 아님).",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -377,6 +377,13 @@
       "unit": "USD billion",
       "observed_at_utc": null,
       "note": "Reuters Nov 7 reporting, cumulative as of Nov 4; not a new hourly flow"
+    },
+    "berkshire_q3_2026_operating_profit": {
+      "value": 12.71,
+      "unit": "USD billion",
+      "change_pct_yoy": -6,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 7 quarterly earnings report; issuer-specific; not live quote"
     }
   },
   "sources": [
@@ -417,7 +424,8 @@
     "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-11-06/",
     "https://www.reuters.com/business/energy/zelenskiy-says-ukraine-is-continuing-attacks-russias-oil-refining-sector-2026-11-06/",
     "https://www.wsj.com/livecoverage/october-jobs-report-stock-market-11-06-2026/card/tech-credit-default-spreads-are-at-five-year-highs-KL2BcQ9abhjX52FP7Po9",
-    "https://www.reuters.com/legal/transactional/big-tech-drives-us-corporate-bond-sales-annual-record-high-data-shows-2026-11-06/"
+    "https://www.reuters.com/legal/transactional/big-tech-drives-us-corporate-bond-sales-annual-record-high-data-shows-2026-11-06/",
+    "https://www.reuters.com/business/finance/berkshire-hathaway-accelerates-stock-buybacks-operating-profit-falls-2026-11-07/"
   ],
   "data_limitations": [
     "2026-11-07T07:26:20Z: Weekend; no new synchronized verification of real yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, market breadth, ETF quotes. Reuters Nov 6 report is background, not a new event. GitHub analysis directory listings not fully enumerated.",
@@ -425,6 +433,7 @@
     "2026-11-07T09:45:48Z: Weekend US cash market closed; reviewed Nov 6 Reuters employment, SoftBank credit and WSJ tech CDS reports. These are not new after previous check. No synchronized primary-source quotes for real yields, broad IG/HY spreads, commodities, FX, breadth or ETF bid/ask. Historical event/daily records not exhaustively inspected; prior critical rating provisional.",
     "Weekend US cash-market closure; no simultaneous current quotes verified for real yields, broad IG/HY spreads, gas/copper, FX, market breadth or ETF bid-ask. GitHub historical directory listing unavailable; compared prior risk JSON and conversation.",
     "2026-11-07 11:34 UTC: US cash market closed for weekend; no synchronous verification of real yields, broad credit spreads, VIX, all commodities, USD/KRW, breadth and ETF bid-ask spreads; earlier observations retained with original timestamps.",
-    "2026-11-07T12:45:55Z: US weekend closure; Reuters Nov 6 closing coverage and Nov 7 commentary checked. No new synchronous validated real yields, broad IG/HY spreads, WTI/Brent, gas, gold, copper, USD/KRW, VIX, breadth or ETF bid-ask quotes. Historical events/daily directory not fully audited. No invented data; earlier indicator timestamps preserved."
+    "2026-11-07T12:45:55Z: US weekend closure; Reuters Nov 6 closing coverage and Nov 7 commentary checked. No new synchronous validated real yields, broad IG/HY spreads, WTI/Brent, gas, gold, copper, USD/KRW, VIX, breadth or ETF bid-ask quotes. Historical events/daily directory not fully audited. No invented data; earlier indicator timestamps preserved.",
+    "2026-11-07T14:11:48Z: Weekend US cash market closed. New Berkshire report is issuer-specific, no proven broad contagion. No synchronized fresh primary real yields, IG/HY credit spreads, WTI/Brent/gas/gold/copper, USD/KRW, VIX, breadth or ETF quotes. Prior observations retain timestamps; historical events/daily not exhaustively enumerated."
   ]
 }
