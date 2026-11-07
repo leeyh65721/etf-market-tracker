@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T16:30:09Z",
+  "checked_at_utc": "2026-11-07T17:38:48Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. 2026-11-07 16:30 UTC 점검: Reuters 11월 6일 AI 급락 및 11월 7일 시장 해설과 직전 점검을 비교. 기존 반도체·아시아 전이와 SoftBank CDS 위험은 재보도/기존 사건이며, 채권·자금조달 시장은 질서 유지라는 반대 증거 존재. 주말 미국 현물 휴장. 기존 critical은 잠정 유지하며 독립 재산정 아님.",
+  "change_since_previous": "신규 긴급 경고 없음. 2026-11-07 17:38 UTC: Reuters 11월 5~7일 시장·원유·신용·실적 보도와 직전 위험 기록 대조. 신규 중대한 악화 확인되지 않음. 미국 현물시장 주말 휴장; critical은 직전 등급 잠정 유지(재산정 아님).",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -438,6 +438,7 @@
     "2026-11-07T14:11:48Z: Weekend US cash market closed. New Berkshire report is issuer-specific, no proven broad contagion. No synchronized fresh primary real yields, IG/HY credit spreads, WTI/Brent/gas/gold/copper, USD/KRW, VIX, breadth or ETF quotes. Prior observations retain timestamps; historical events/daily not exhaustively enumerated.",
     "2026-11-07T15:14:38Z: Weekend US cash market closed. Current synchronized primary-source real yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, breadth, ETF spreads unavailable. Search surfaced predominantly Nov 5-7 already reported events; no new event validated. Historical analysis folders not exhaustively checked.",
     "2026-11-07T15:30:59Z UTC 주말 점검: 현물시장 휴장. 실질금리, 광범위 신용스프레드, 천연가스·구리·USD/KRW, 시장 폭 및 ETF 호가의 동시점 최신 수치 검증 불가. GitHub analysis/events 및 analysis/daily 전체 열람 실패.",
-    "2026-11-07T16:30:09Z: 주말 휴장; 동시점 실질금리·회사채 스프레드·VIX·시장 폭·원자재·환율·ETF 호가 전체 검증 불가. analysis/events 및 analysis/daily 디렉터리 전체 대조 불가. 기존 관측치의 시각은 변경하지 않음."
+    "2026-11-07T16:30:09Z: 주말 휴장; 동시점 실질금리·회사채 스프레드·VIX·시장 폭·원자재·환율·ETF 호가 전체 검증 불가. analysis/events 및 analysis/daily 디렉터리 전체 대조 불가. 기존 관측치의 시각은 변경하지 않음.",
+    "2026-11-07T17:38:48Z: 미국 현물시장 주말 휴장. 최신 실질금리, 광범위 IG/HY 신용스프레드, VIX, WTI/Brent/천연가스/금/구리, 달러·USD/KRW, 시장 폭, ETF 호가의 동시점 직접 검증 불가. Reuters 11월 5~7일 보도는 기존 사건; 새 수치 입력하지 않음. analysis/events 및 analysis/daily 전체 대조 미완료."
   ]
 }
