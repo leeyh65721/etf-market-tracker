@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-07T21:51:44Z",
+  "checked_at_utc": "2026-11-07T22:25:35Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-07 21:51 UTC 점검: 신규 긴급 경고 없음. 11월 6~7일 Reuters/FT 보도에서 AI 반도체 급락 이후 제한적 반등, 소프트뱅크 CDS 466bp, 원유 수급 완화 가능성, IMF AI 성장 둔화 경계 재검토. 모두 기존 위험 논리의 후속 설명이며 직전 대비 중대한 신규 악화 확인 안 됨. critical 등급은 기존 평가 잠정 유지, 독립 재산정 아님. 미국 현물 주말 휴장.",
+  "change_since_previous": "2026-11-07 22:25 UTC 점검: 신규 긴급 경고 및 기존 사건의 검증된 중대한 악화 없음. Reuters 11월 5~6일 AI·반도체 급락과 한국 시장 전이, 11월 6일 미국 반등 및 11월 7~8일 주말 시장 해설은 기존 사건 또는 후속 해설. 11월 6일 미국 현물 종가 이후 주말 휴장. 기존 critical 등급 잠정 유지(독립 재산정 아님).",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -428,7 +428,8 @@
     "https://apnews.com/article/4ac9a6a3c35aeec37374fc8083bf9395",
     "https://www.reuters.com/business/energy/high-oil-prices-curb-demand-fresh-signs-glut-appear-2026-11-06/",
     "https://www.reuters.com/business/imfs-georgieva-says-any-slowdown-ai-driven-growth-would-be-factor-central-banks-2026-11-06/",
-    "https://www.ft.com/content/088ed252-ea9c-4b61-b2d1-37295fd0f7c2"
+    "https://www.ft.com/content/088ed252-ea9c-4b61-b2d1-37295fd0f7c2",
+    "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph"
   ],
   "data_limitations": [
     "2026-11-07T07:26:20Z: Weekend; no new synchronized verification of real yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, market breadth, ETF quotes. Reuters Nov 6 report is background, not a new event. GitHub analysis directory listings not fully enumerated.",
@@ -446,6 +447,9 @@
     "GitHub analysis/events 및 analysis/daily 디렉터리 전체 열람 불가(파일 전용 fetch); 기존 위험 JSON 및 현재 대화와 비교. 신규 위험 사건으로 오인하지 않음.",
     "2026-11-07T19:34:06Z: 미국 주말 현물 휴장. 실질금리·IG/HY 신용스프레드·천연가스·구리·USD/KRW·시장 폭·ETF 호가의 최신 동시점 검증 불가. Reuters/AP 11월 6~7일 보도는 이전 위험의 재확인. analysis/events 및 analysis/daily 전체 대조 미완료. 기존 관측 시각 유지.",
     "2026-11-07T20:37:17Z: Weekend cash markets closed. Current synchronized primary-source quotes for real yields, broad IG/HY spreads, VIX, WTI/Brent/gas/gold/copper, USD/KRW, breadth, ETF bid/ask not independently verified. Reuters/AP coverage largely concerns previously recorded Nov 5-7 events. Previous indicator observation times preserved. analysis/events and analysis/daily not exhaustively enumerated.",
-    "2026-11-07T21:51:44Z: weekend cash market closed; synchronized current US real yields, broad HY/IG credit spreads, VIX, WTI/Brent/gas/copper, USD/KRW, breadth and ETF bid-ask not verified; historical analysis directory listing failed; risk level carried forward, not independently recalculated."
+    "2026-11-07T21:51:44Z: weekend cash market closed; synchronized current US real yields, broad HY/IG credit spreads, VIX, WTI/Brent/gas/copper, USD/KRW, breadth and ETF bid-ask not verified; historical analysis directory listing failed; risk level carried forward, not independently recalculated.",
+    "2026-11-07T22:25:35Z: weekend cash market closed; latest synchronized US real yields, credit spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, breadth and ETF bid-ask quotes not verified.",
+    "analysis/events/ and analysis/daily/ directory fetch failed; comparison limited to latest risk JSON and conversation history.",
+    "Existing critical risk level carried forward, not independently recalculated."
   ]
 }
