@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-08T08:51:45Z",
+  "checked_at_utc": "2026-11-08T09:38:36Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-08 08:51 UTC: Reviewed Reuters Nov 8 Gulf-market decline and reports of Iran maritime incidents, alongside Reuters Nov 6 oil physical-market supply recovery and Nov 6-8 rates/equities coverage. New regional incidents warrant watching, but conflicting/uncertain attribution and no verified cross-asset contagion or material worsening versus prior critical alert: no new urgent alert. Critical level provisionally carried forward, not independently recalculated. US cash market closed Sunday; synchronized FX, Treasury real yields, broad credit spreads, commodities, VIX, breadth and ETF quotes unavailable.",
+  "change_since_previous": "Nov 8 09:38 UTC: Reuters reports fresh Houthi missile interceptions in Saudi Arabia and limited debris damage to Saudi Aramco administrative building in Riyadh; Eastern Province warning lifted. Compared with prior Nov 8 Gulf tanker/military tension: escalation in incidents, but no verified oil production interruption, sustained oil repricing, cross-asset contagion or broad credit shock. No new urgent alert; prior critical risk level provisionally carried forward, not independently recalculated.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -435,13 +435,16 @@
     "https://www.reuters.com/commentary/reuters-open-interest/us-stocks-always-rise-after-midterms-is-this-time-different-2026-11-07/",
     "https://www.reuters.com/business/take-five/global-markets-themes-graphic-2026-11-06/",
     "https://www.reuters.com/world/middle-east/gulf-markets-retreat-traders-await-trumps-next-move-iran-2026-11-08/",
-    "https://www.reuters.com/business/caution-over-midterms-ai-cash-burn-drives-surge-us-money-market-fund-inflows-2026-11-06/"
+    "https://www.reuters.com/business/caution-over-midterms-ai-cash-burn-drives-surge-us-money-market-fund-inflows-2026-11-06/",
+    "https://www.reuters.com/business/aerospace-defense/saudi-civil-defence-gives-all-clear-after-alerts-eastern-province-2026-11-08/",
+    "https://www.reuters.com/world/middle-east/loud-booms-heard-saudi-capital-riyadh-after-early-warning-alert-issued-2026-11-08/"
   ],
   "data_limitations": [
     "2026-11-08T06:17:25Z: Sunday US cash market closed. News checked through Nov 8. No new synchronized independently verified readings for nominal/real yields, broad IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, market breadth or ETF bid-ask spreads. Historical indicators retain original observation dates and must not be interpreted as live quotes.",
     "Full GitHub analysis/events and analysis/daily history not enumerated; prior risk JSON and conversation alerts used for duplicate comparison. Critical remains provisional, not independently recomputed.",
     "2026-11-08 06:42 UTC: Sunday cash-market closure; no synchronized live quotes for Treasury real yields, broad credit spreads, VIX, oil/gas/metals, FX, market breadth or ETF spreads. GitHub analysis/events and analysis/daily directory fetch failed; previous conversation and current risk file compared.",
     "2026-11-08 07:50 UTC: Weekend US cash market closed; no same-time independently verified live Treasury real yields, broad IG/HY credit spreads, WTI/Brent/natural gas/gold/copper, USD/KRW, VIX, breadth or ETF bid-ask quotes. Older indicators retain original observation timestamps. GitHub analysis/events and analysis/daily directory reads failed.",
-    "2026-11-08 08:51 UTC: Sunday cash-market closure; no synchronized current quotes for yields/real yields, oil/gas/metals, USD/KRW, credit spreads, VIX, breadth or ETF bid-ask. Gulf maritime incident attribution and systemic financial transmission not verified. Historical analysis directory listing returned no usable entries."
+    "2026-11-08 08:51 UTC: Sunday cash-market closure; no synchronized current quotes for yields/real yields, oil/gas/metals, USD/KRW, credit spreads, VIX, breadth or ETF bid-ask. Gulf maritime incident attribution and systemic financial transmission not verified. Historical analysis directory listing returned no usable entries.",
+    "2026-11-08 09:38 UTC: US equity cash market closed Sunday. Saudi incident reports confirmed, but no independently verified production impact or same-time oil/FX/rates/credit/VIX/breadth quotes. Latest synchronized real yields, broad credit spreads, gas/copper, USD/KRW, ETF bid-ask unavailable; historical readings are stale. Full analysis/events and analysis/daily listing not verified."
   ]
 }
