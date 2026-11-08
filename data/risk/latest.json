@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-08T17:37:24Z",
+  "checked_at_utc": "2026-11-08T19:14:49Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-08 17:37 UTC: Reuters/AP/FT Nov 8 Houthi attack and Gulf shipping reports rechecked; same previously reported incidents, no verified additional production outage or market-wide financial contagion. Reuters Nov 6 oil-demand/glut analysis is countervailing evidence. No new urgent alert. Prior critical rating retained provisionally, not independently recalculated.",
+  "change_since_previous": "2026-11-08 19:14 UTC: Reuters Nov 8 Gulf close and Aramco/Houthi reports, AP and FT corroboration checked against prior hourly reports. Saudi index -0.8%, Qatar -0.5%, Aramco -0.3% (Nov 8 close); no independently verified new production shutdown, cross-asset shock or escalation beyond previously flagged events. Nov 6 US semiconductor/Asia contagion remains existing active alert, not a new incident. Critical level provisionally carried forward, not independently recalculated. No new urgent alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -460,6 +460,7 @@
     "Nov 8 15:17 UTC check: Sunday US cash market closed; no verified simultaneous fresh VIX, US Treasury real yields, broad HY/IG spreads, USD/KRW, oil/gas/metals, breadth or ETF quotes. Earlier indicator timestamps retained.",
     "2026-11-08 15:45 UTC: US cash markets closed Sunday; no synchronized current Treasury real yields, broad IG/HY spreads, WTI/Brent/natural gas/gold/copper, USD/KRW, VIX, breadth or ETF bid-ask verified. Existing indicator observation timestamps preserved. Historical analysis directories not exhaustively checked; absence of incremental damage cannot be proven.",
     "2026-11-08 16:33 UTC: Sunday US cash markets closed. No synchronized fresh verified real yields, IG/HY spreads, energy/metals, USD/KRW, VIX, market breadth or ETF spreads. Existing observations retained with their original timestamps; complete historical analysis folder audit not performed.",
-    "2026-11-08 17:37 UTC: Sunday US cash markets closed. No synchronized verified current real yields, IG/HY spreads, oil/gas/metals, FX, VIX, breadth or ETF bid/ask. Existing historical indicator timestamps retained; full historical event directory audit incomplete."
+    "2026-11-08 17:37 UTC: Sunday US cash markets closed. No synchronized verified current real yields, IG/HY spreads, oil/gas/metals, FX, VIX, breadth or ETF bid/ask. Existing historical indicator timestamps retained; full historical event directory audit incomplete.",
+    "Nov 9 04:14 KST check: US cash market closed Sunday; current synchronized rates, real yields, HY/IG spreads, VIX, breadth, FX, metals, natural gas and ETF bid-ask quotes unavailable; no fabricated live quotes. Prior critical classification not freshly validated."
   ]
 }
