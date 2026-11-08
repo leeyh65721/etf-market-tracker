@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-08T01:23:18Z",
+  "checked_at_utc": "2026-11-08T02:54:56Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-08 01:23 UTC: Weekend review of Reuters Nov 5-7 tech selloff, SoftBank credit risk and Nov 6 US market rebound plus Nov 7 Berkshire earnings. All material stress observations predate previous check; no independently verified new systemic deterioration or new urgent alert. Existing critical classification retained provisionally, not independently recalculated.",
+  "change_since_previous": "2026-11-08 02:54 UTC: Weekend follow-up of Reuters Nov 6-8 reporting. Nov 7 Berkshire results, Nov 6 record IG bond issuance, payrolls and post-midterm AI selloff are known or not new systemic deterioration since prior check. No verified new critical escalation or urgent allocation change. Prior critical rating provisionally carried forward, not independently recomputed. No new alerts.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -431,11 +431,14 @@
     "https://www.ft.com/content/088ed252-ea9c-4b61-b2d1-37295fd0f7c2",
     "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
     "https://www.reuters.com/business/retail-consumer/trader-angst-pivots-inflation-growth-tech-rout-deepens-2026-11-06/",
-    "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/"
+    "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
+    "https://www.reuters.com/commentary/reuters-open-interest/us-stocks-always-rise-after-midterms-is-this-time-different-2026-11-07/"
   ],
   "data_limitations": [
     "2026-11-07T23:47:23Z: Weekend cash markets closed. No fresh synchronized verification of US real/nominal yields, broad IG/HY spreads, VIX, WTI/Brent/gas/gold/copper, USD/KRW, market breadth or ETF spreads. News primarily Nov 6 already recorded. analysis/events and analysis/daily not exhaustively enumerated. Previous indicator observation times retained.",
     "2026-11-08T00:25:29Z: Sunday weekend cash markets closed; current synchronized primary quotes for nominal/real Treasury yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, breadth and ETF bid/ask not verified. Prior indicator timestamps retained. Historical analysis folders not fully compared. Critical risk classification is carried forward provisionally.",
-    "2026-11-08T01:23:18Z: Sunday US cash market closed. No contemporaneous verified primary readings for Treasury real yields, broad IG/HY spreads, natural gas, copper, USD/KRW, market breadth, or ETF spreads. Existing observations remain timestamped and stale. Analysis directories not exhaustively checked. No fresh alert is not proof of risk resolution."
+    "2026-11-08T01:23:18Z: Sunday US cash market closed. No contemporaneous verified primary readings for Treasury real yields, broad IG/HY spreads, natural gas, copper, USD/KRW, market breadth, or ETF spreads. Existing observations remain timestamped and stale. Analysis directories not exhaustively checked. No fresh alert is not proof of risk resolution.",
+    "2026-11-08 02:54 UTC: Sunday US cash-market closed; no synchronized live quotes for yields, real yields, spreads, volatility, breadth, commodities, FX, or ETF bid-ask. Previous indicators retain original observation timestamps.",
+    "Full analysis/events and analysis/daily directory history could not be listed using fetch_file; compared prior risk JSON and conversation history."
   ]
 }
