@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-08T03:30:10Z",
+  "checked_at_utc": "2026-11-08T04:40:52Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-08 03:30 UTC: Sunday follow-up checked Reuters Nov 6 tech/credit/oil reports and Nov 8 Korean weekly outlook. Nov 6 Nasdaq +1.09%, semiconductor +4.2% rebound and prior AI/Asia selloff remain previously reported. No independently verified new systemic deterioration since previous check; no new alerts. Critical carried forward provisionally, not independently recomputed.",
+  "change_since_previous": "2026-11-08 04:40 UTC: Reviewed fresh-indexed Reuters Nov 6 closing/weekly market report, Reuters Nov 6 Asia contagion and Nov 6 week-ahead analysis, plus Nov 8 weekend market outlook. No independently verified material new shock or significant worsening since 03:30 UTC; no new alerts. Prior critical level provisionally carried forward, not recomputed.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -432,11 +432,11 @@
     "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph",
     "https://www.reuters.com/business/retail-consumer/trader-angst-pivots-inflation-growth-tech-rout-deepens-2026-11-06/",
     "https://www.reuters.com/business/sp-500-futures-steady-after-midterm-rally-nasdaq-lags-chip-weakness-2026-11-05/",
-    "https://www.reuters.com/commentary/reuters-open-interest/us-stocks-always-rise-after-midterms-is-this-time-different-2026-11-07/"
+    "https://www.reuters.com/commentary/reuters-open-interest/us-stocks-always-rise-after-midterms-is-this-time-different-2026-11-07/",
+    "https://www.reuters.com/business/take-five/global-markets-themes-graphic-2026-11-06/"
   ],
   "data_limitations": [
-    "2026-11-08 02:54 UTC: Sunday US cash-market closed; no synchronized live quotes for yields, real yields, spreads, volatility, breadth, commodities, FX, or ETF bid-ask. Previous indicators retain original observation timestamps.",
-    "Full analysis/events and analysis/daily directory history could not be listed using fetch_file; compared prior risk JSON and conversation history.",
-    "2026-11-08T03:30:10Z: Weekend US cash markets closed; latest synchronized primary readings for nominal/real yields, IG/HY spreads, VIX, commodities, FX, market breadth, ETF quotes unavailable. Historical indicators retain original observation times. Reuters Nov 6 articles are stale relative to this check; GitHub analysis folders not fully enumerated."
+    "2026-11-08T04:40:52Z: Sunday US cash market closed. Reviewed news through Nov 8, but no new synchronized primary observations for real/nominal yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, breadth or ETF spreads. All existing indicator observations retain original dates and are not current quotes.",
+    "Full GitHub analysis/events and analysis/daily history not enumerated; compared previous risk JSON and conversation history. Critical is carried forward provisionally, not independently recalculated."
   ]
 }
