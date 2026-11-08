@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-08T19:40:13Z",
+  "checked_at_utc": "2026-11-08T20:46:27Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "Nov 9 04:40 KST: Reuters Nov 8 reports Iraq-US understanding on Hormuz oil export corridor and Iraq October exports ~3.5m bpd versus September 2.65m bpd, a supply-recovery counterweight; this is not verified as a new urgent market shock. Saudi Aramco Riyadh office damage and Eastern Province interception remain previously reported, no independently verified new oil production shutdown or cross-market deterioration. No new urgent alert. Prior critical classification carried forward provisionally, not independently recalculated.",
+  "change_since_previous": "2026-11-09 05:46 KST: No independently corroborated new systemic shock or material worsening since prior review. Reuters Nov 8 Aramco office damage and Gulf market declines remain previously reviewed; Iraqi oil export corridor understanding is a counterweight. Reuters Nov 6 crude and Nov 8 Gulf reports are stale relative to this check. No new urgent alert. Prior critical classification retained provisionally, not recalculated.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -463,13 +463,9 @@
     "https://www.reuters.com/business/energy/iraq-has-reached-understandings-with-us-allow-oil-exports-through-hormuz-2026-11-08/"
   ],
   "data_limitations": [
-    "2026-11-08 13:19 UTC: US cash markets closed Sunday; synchronized current quotes for Treasury real yields, IG/HY credit spreads, VIX, oil/gas/metals, USD/KRW, breadth and ETF bid/ask unavailable. Historical indicator observation times unchanged; geopolitical reports are not evidence of verified market-wide financial contagion.",
-    "2026-11-08 13:45 UTC: US cash markets closed Sunday. No synchronized independently verified latest Treasury/real yields, IG/HY credit spreads, WTI/Brent/gas/gold/copper, USD/KRW, VIX, breadth or ETF bid-ask. Gulf equity percentages from Reuters Nov 8 reporting; exact market quote times not independently verified. Prior observations remain dated; full analysis history not independently enumerated.",
-    "Nov 8 15:17 UTC check: Sunday US cash market closed; no verified simultaneous fresh VIX, US Treasury real yields, broad HY/IG spreads, USD/KRW, oil/gas/metals, breadth or ETF quotes. Earlier indicator timestamps retained.",
-    "2026-11-08 15:45 UTC: US cash markets closed Sunday; no synchronized current Treasury real yields, broad IG/HY spreads, WTI/Brent/natural gas/gold/copper, USD/KRW, VIX, breadth or ETF bid-ask verified. Existing indicator observation timestamps preserved. Historical analysis directories not exhaustively checked; absence of incremental damage cannot be proven.",
-    "2026-11-08 16:33 UTC: Sunday US cash markets closed. No synchronized fresh verified real yields, IG/HY spreads, energy/metals, USD/KRW, VIX, market breadth or ETF spreads. Existing observations retained with their original timestamps; complete historical analysis folder audit not performed.",
     "2026-11-08 17:37 UTC: Sunday US cash markets closed. No synchronized verified current real yields, IG/HY spreads, oil/gas/metals, FX, VIX, breadth or ETF bid/ask. Existing historical indicator timestamps retained; full historical event directory audit incomplete.",
     "Nov 9 04:14 KST check: US cash market closed Sunday; current synchronized rates, real yields, HY/IG spreads, VIX, breadth, FX, metals, natural gas and ETF bid-ask quotes unavailable; no fabricated live quotes. Prior critical classification not freshly validated.",
-    "2026-11-08 19:40 UTC: Sunday US cash market closed. No verified synchronized fresh real yields, IG/HY spreads, WTI/Brent/gas/metals, USD/KRW, VIX, market breadth or ETF spreads. Previous observations retained at original timestamps; full historical event directory audit incomplete."
+    "2026-11-08 19:40 UTC: Sunday US cash market closed. No verified synchronized fresh real yields, IG/HY spreads, WTI/Brent/gas/metals, USD/KRW, VIX, market breadth or ETF spreads. Previous observations retained at original timestamps; full historical event directory audit incomplete.",
+    "2026-11-08 20:46 UTC: Sunday US cash market closed. No synchronized verified current real yields, IG/HY spreads, commodity futures, FX, VIX, breadth or ETF bid/ask; prior observations retained with original timestamps. Historical event directory not fully audited; no independent recalculation of critical rating."
   ]
 }
