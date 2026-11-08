@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-08T04:40:52Z",
+  "checked_at_utc": "2026-11-08T06:17:25Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-08 04:40 UTC: Reviewed fresh-indexed Reuters Nov 6 closing/weekly market report, Reuters Nov 6 Asia contagion and Nov 6 week-ahead analysis, plus Nov 8 weekend market outlook. No independently verified material new shock or significant worsening since 03:30 UTC; no new alerts. Prior critical level provisionally carried forward, not recomputed.",
+  "change_since_previous": "2026-11-08 06:17 UTC: Reviewed Reuters Nov 6-7, WSJ Nov 6 and Nov 8 weekend coverage. No verified independent new market shock or material deterioration relative to 04:40 UTC. Existing AI/semiconductor selloff and credit concerns are not re-alerted. Prior critical classification provisionally carried forward; not recalculated.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -436,7 +436,7 @@
     "https://www.reuters.com/business/take-five/global-markets-themes-graphic-2026-11-06/"
   ],
   "data_limitations": [
-    "2026-11-08T04:40:52Z: Sunday US cash market closed. Reviewed news through Nov 8, but no new synchronized primary observations for real/nominal yields, IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, breadth or ETF spreads. All existing indicator observations retain original dates and are not current quotes.",
-    "Full GitHub analysis/events and analysis/daily history not enumerated; compared previous risk JSON and conversation history. Critical is carried forward provisionally, not independently recalculated."
+    "2026-11-08T06:17:25Z: Sunday US cash market closed. News checked through Nov 8. No new synchronized independently verified readings for nominal/real yields, broad IG/HY spreads, VIX, WTI/Brent/natural gas/gold/copper, USD/KRW, market breadth or ETF bid-ask spreads. Historical indicators retain original observation dates and must not be interpreted as live quotes.",
+    "Full GitHub analysis/events and analysis/daily history not enumerated; prior risk JSON and conversation alerts used for duplicate comparison. Critical remains provisional, not independently recomputed."
   ]
 }
