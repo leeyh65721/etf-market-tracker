@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-08T11:27:43Z",
+  "checked_at_utc": "2026-11-08T13:19:07Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-08 11:27 UTC: Reuters and AP Nov 8 Saudi missile interception and limited Aramco Riyadh administrative-building damage reconfirmed; this is the same event assessed at 10:27 UTC. No independently verified new oil production outage, sustained commodity repricing, or broad credit/liquidity deterioration. No new urgent alert. Existing critical rating retained provisionally, not independently recalculated.",
+  "change_since_previous": "2026-11-08 13:19 UTC: Cross-checked Reuters, AP and FT Nov 8 Gulf/Hormuz reporting. Saudi Aramco Riyadh administrative building damage and missile interceptions were already assessed in previous checks; newly reviewed reporting mentions a Gulf of Oman ship fire and Iranian mine claims, but causal linkage, verified incremental production outages, synchronized oil repricing and broad credit/liquidity contagion are not established. No verified material escalation beyond previous warning; no new alert. Previous critical rating provisionally retained, not independently recalculated.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -439,13 +439,15 @@
     "https://www.reuters.com/business/aerospace-defense/saudi-civil-defence-gives-all-clear-after-alerts-eastern-province-2026-11-08/",
     "https://www.reuters.com/world/middle-east/loud-booms-heard-saudi-capital-riyadh-after-early-warning-alert-issued-2026-11-08/",
     "https://apnews.com/article/090d96e25872f5c63e105b9dd3e5dc60",
-    "https://www.aljazeera.com/news/2026/11/8/saudi-arabia-intercepts-houthi-missiles-targeting-riyadh-eastern-province"
+    "https://www.aljazeera.com/news/2026/11/8/saudi-arabia-intercepts-houthi-missiles-targeting-riyadh-eastern-province",
+    "https://www.ft.com/content/eeadc13e-b915-4591-ab85-54db81030996"
   ],
   "data_limitations": [
     "2026-11-08 07:50 UTC: Weekend US cash market closed; no same-time independently verified live Treasury real yields, broad IG/HY credit spreads, WTI/Brent/natural gas/gold/copper, USD/KRW, VIX, breadth or ETF bid-ask quotes. Older indicators retain original observation timestamps. GitHub analysis/events and analysis/daily directory reads failed.",
     "2026-11-08 08:51 UTC: Sunday cash-market closure; no synchronized current quotes for yields/real yields, oil/gas/metals, USD/KRW, credit spreads, VIX, breadth or ETF bid-ask. Gulf maritime incident attribution and systemic financial transmission not verified. Historical analysis directory listing returned no usable entries.",
     "2026-11-08 09:38 UTC: US equity cash market closed Sunday. Saudi incident reports confirmed, but no independently verified production impact or same-time oil/FX/rates/credit/VIX/breadth quotes. Latest synchronized real yields, broad credit spreads, gas/copper, USD/KRW, ETF bid-ask unavailable; historical readings are stale. Full analysis/events and analysis/daily listing not verified.",
     "2026-11-08 10:27 UTC: Sunday US cash market closed; no synchronized independently validated new quotes for rates/real yields, broad credit spreads, WTI/Brent/natural gas, metals, USD/KRW, VIX, market breadth or ETF spreads. Prior indicator timestamps preserved; full events/daily history not enumerated.",
-    "2026-11-08 11:27 UTC: US cash markets closed Sunday; current synchronized real yields, broad IG/HY spreads, WTI/Brent/natural gas/gold/copper, USD/KRW, VIX, breadth and ETF bid-ask not independently verified. Previous indicators retain observation dates; GitHub events/daily history not fully checked."
+    "2026-11-08 11:27 UTC: US cash markets closed Sunday; current synchronized real yields, broad IG/HY spreads, WTI/Brent/natural gas/gold/copper, USD/KRW, VIX, breadth and ETF bid-ask not independently verified. Previous indicators retain observation dates; GitHub events/daily history not fully checked.",
+    "2026-11-08 13:19 UTC: US cash markets closed Sunday; synchronized current quotes for Treasury real yields, IG/HY credit spreads, VIX, oil/gas/metals, USD/KRW, breadth and ETF bid/ask unavailable. Historical indicator observation times unchanged; geopolitical reports are not evidence of verified market-wide financial contagion."
   ]
 }
