@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-09T13:46:13Z",
+  "checked_at_utc": "2026-11-09T14:58:28.103Z",
   "market_date": "2026-11-09",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-09 22:46 KST: AP Nov 9 pre-open futures S&P +0.7%, Dow +1%, Nasdaq +0.4%, Brent -3.6% ($94.76); Nvidia -5% premarket. These are continuations of previously flagged AI/Nvidia risk and oil easing, not verified new systemic deterioration. Reuters Nov 9 Citi US equity downgrade to neutral is an opinion/positioning change, not independently urgent. Existing critical classification retained provisionally; no new alert. Market regular session not yet open.",
+  "change_since_previous": "2026-11-09 US cash open: Reuters reports Dow +1.05%, S&P 500 +0.81%, Nasdaq +0.82%; AP corroborates approximately +0.8% for S&P/Nasdaq. Nvidia around -5% reported, Brent down around 5.4% in AP intraday reporting. Existing AI/Nvidia weakness and oil easing, not verified new systemic deterioration. No new alert. Intraday timestamps and comprehensive synchronized credit/breadth/FX unavailable.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -539,6 +539,16 @@
       "brent_change_pct": -3.6,
       "observed_at_utc": null,
       "note": "AP Nov 9 report; exact market quote timestamps not established; delayed premarket observations, not synchronized live data"
+    },
+    "us_cash_open_nov9_reuters": {
+      "dow_change_pct": 1.05,
+      "sp500_change_pct": 0.81,
+      "nasdaq_change_pct": 0.82,
+      "dow_value": 51826.25,
+      "sp500_value": 7436.76,
+      "nasdaq_value": 24780.15,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 9 opening bell; exact observation time not independently established; delayed article snapshot"
     }
   },
   "sources": [
@@ -610,7 +620,8 @@
     "https://www.wsj.com/finance/stocks/stock-futures-treasurys-steady-but-nvidia-slides-premarket-on-huang-probe-31deea55",
     "https://www.reuters.com/business/nvidia-falls-about-3-after-hours-perpetual-futures-trade-2026-11-09/",
     "https://www.barrons.com/articles/s-p-500-futures-up-in-premarket-trading-immunovant-roivant-sciences-lead-7a4d80dc",
-    "https://www.reuters.com/business/citigroup-downgrades-us-equities-neutral-ai-concerns-2026-11-09/"
+    "https://www.reuters.com/business/citigroup-downgrades-us-equities-neutral-ai-concerns-2026-11-09/",
+    "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
   ],
   "data_limitations": [
     "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
@@ -620,6 +631,7 @@
     "2026-11-09T10:30:26Z: US cash market not open; Nvidia premarket, AP Asia equity and WSJ yields are asynchronous delayed article snapshots, exact quote times unknown. Current broad IG/HY spreads, real yields, VIX, breadth, gas/copper, USD/KRW and ETF spreads not independently verified. Historical events/daily full audit incomplete. Critical rating provisional.",
     "2026-11-09T11:38:22Z: US cash market not yet open. Reuters/AP/MarketWatch figures are non-synchronous article snapshots with unverified exact quote timestamps. Current US real yields, broad IG/HY credit spreads, natural gas/copper, USD/KRW, VIX, breadth and ETF bid-ask quotes not verified. GitHub analysis/events and analysis/daily directory reads failed (directory not file), full historical audit unavailable. No independently recalculated risk rating.",
     "Nov 9 22:15 KST: US regular session not yet open; current synchronized VIX, market breadth, HY/IG spreads, real yields, copper, natural gas and USD/KRW not independently verified. Reuters/Barron's article values delayed and quote times unknown. Historical GitHub directory listing failed; compared prior risk file and conversation instead.",
-    "Nov 9 13:46 UTC: no verified synchronized current real yields, IG/HY credit spreads, VIX, breadth, WTI, natural gas, copper, gold, USD/KRW or ETF bid/ask. US cash session not open. Historical analysis directories could not be listed; prior run history used."
+    "Nov 9 13:46 UTC: no verified synchronized current real yields, IG/HY credit spreads, VIX, breadth, WTI, natural gas, copper, gold, USD/KRW or ETF bid/ask. US cash session not open. Historical analysis directories could not be listed; prior run history used.",
+    "Nov 9 intraday source quotes not synchronous; latest real yields, HY/IG credit spreads, USD/KRW, natural gas, copper, breadth and VIX not independently verified in this run."
   ]
 }
