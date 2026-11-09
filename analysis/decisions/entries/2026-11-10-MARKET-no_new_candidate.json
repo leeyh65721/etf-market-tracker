@@ -1,0 +1,28 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-10-MARKET-no_new_candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-11-09",
+  "original_report_date_kst": "2026-11-10",
+  "archived_on_utc_date": "2026-11-09",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-11-10.md",
+  "verbatim_source_excerpt": "**초단기 적격 확정 매수 후보 없음.**",
+  "original_close_usd": null,
+  "original_spy_close_usd": null,
+  "thesis": "Nov 9 market rally verified, but Nov 9 ETF OHLCV and trigger execution not verified and repository health ERROR; no newly validated entry.",
+  "counterevidence": "A broad rebound may continue after the CPI release and liquid ETFs could present entry opportunities with updated OHLCV.",
+  "invalidation": "Verified fresh ETF OHLCV, liquidity, official catalysts and actual entry triggers after CPI would warrant a new independent decision.",
+  "revisit_trigger": "Reassess after the next US session and at 5/10/20 NYSE sessions; no hypothetical trade outcome scoring.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "trigger_status": "no_validated_trigger",
+  "execution_verified": false,
+  "evaluation_status": "not_applicable_no_trade"
+}
