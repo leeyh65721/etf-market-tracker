@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-09T04:33:25Z",
+  "checked_at_utc": "2026-11-09T05:41:43Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-09 13:33 KST: Reuters Nov 9 01:46 UTC Asian-market report describes stabilization as AI and Middle East jitters ease, with dollar firm on Fed bets. No independently verified new systemic shock or significant worsening compared with 12:49 KST check. Existing critical classification carried forward provisionally; no new alerts.",
+  "change_since_previous": "2026-11-09 14:41 KST: Reuters Nov 9 04:27 UTC oil snapshot shows Brent $98.35 and WTI $91.30, a modest rebound versus prior early quotes; Asian equities rebound (Nikkei +3.5%, Taiwan >6% reported), rather than renewed broad selloff. No verified new systemic shock or material worsening. Prior critical alert retained provisionally; no new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -424,6 +424,25 @@
       "msci_asia_ex_japan_change_pct": 0.8,
       "observed_at_utc": null,
       "note": "Reuters Nov 9 intraday article snapshot; precise observation time unverified, not closing values."
+    },
+    "brent_nov9_0427_reuters": {
+      "value": 98.35,
+      "unit": "USD/barrel",
+      "observed_at_utc": "2026-11-09T04:27:00Z",
+      "note": "Reuters by 04:27 GMT, not live; +$0.03 vs previous settlement"
+    },
+    "wti_nov9_0427_reuters": {
+      "value": 91.3,
+      "unit": "USD/barrel",
+      "observed_at_utc": "2026-11-09T04:27:00Z",
+      "note": "Reuters by 04:27 GMT, +0.5%; delayed snapshot"
+    },
+    "asia_rebound_reuters_nov9_later": {
+      "nikkei_change_pct": 3.5,
+      "taiwan_change_pct_lower_bound": 6,
+      "msci_asia_ex_japan_change_pct": 2,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 9 evolving report; exact quote timestamp unverified, not synchronous and not necessarily at check time"
     }
   },
   "sources": [
@@ -496,6 +515,7 @@
     "2026-11-09T01:30:01Z: US cash market not yet open; no verified synchronous current Treasury/real yields, broad credit spreads, natural gas, metals, USD/KRW, VIX, breadth or ETF bid/ask. Reuters oil story includes 11:34 GMT quotes later than check and excluded. Existing indicator timestamps preserved. Critical carried forward, not independently recalculated; historical events/daily audit incomplete.",
     "2026-11-09T03:13:43Z: Reuters Nov 9 early-session oil snapshots lack exact observation timestamps and may be delayed. Gold article and some market summaries may contain later-session observations, so no precise gold figure added. US cash market not yet open; no synchronized real yields, IG/HY spreads, natural gas/copper, USD/KRW, VIX, breadth or ETF quotes verified. Existing critical provisional. Historical events/daily directory full comparison not completed.",
     "2026-11-09T03:49:10Z: Reuters Asia intraday figures not synchronized with US yields, real yields, broad credit spreads, commodity futures, USD/KRW, VIX, breadth or ETF quotes. US cash session not yet open. Reuters gold/oil stories may include later observation times; no new precise commodity quote added. Critical rating provisional, not independently recalculated; historical directories not fully audited.",
-    "2026-11-09T04:33:25Z: Reuters Nov 9 01:46 UTC market report checked; no synchronous independently verified current US real yields, broad IG/HY spreads, natural gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. US cash market not yet open. Later-updated market articles may include quotes from after this check, so new figures omitted. Critical carried forward provisionally, not independently recalculated. Historical event/daily directory comparison incomplete."
+    "2026-11-09T04:33:25Z: Reuters Nov 9 01:46 UTC market report checked; no synchronous independently verified current US real yields, broad IG/HY spreads, natural gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. US cash market not yet open. Later-updated market articles may include quotes from after this check, so new figures omitted. Critical carried forward provisionally, not independently recalculated. Historical event/daily directory comparison incomplete.",
+    "2026-11-09T05:41:43Z: Reuters 04:27 UTC oil prices verified as delayed snapshots; Asia market article has evolving figures with unspecified quote times. US cash market not open. No synchronized current real yields, broad IG/HY credit spreads, natural gas, copper, USD/KRW, VIX, breadth, or ETF bid/ask; critical is carried forward, not independently reassessed. Full analysis/events and analysis/daily directory audit incomplete."
   ]
 }
