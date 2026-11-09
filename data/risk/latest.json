@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-09T06:27:20Z",
-  "market_date": "2026-11-06",
+  "checked_at_utc": "2026-11-09T07:44:58Z",
+  "market_date": "2026-11-09",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-09 15:27 KST: Reuters/AP/FT Nov 9 report Asian chip-led rebound (Taiwan roughly +5.6% to >6%, Nikkei +3.1% to +3.5%) and US futures positive, rather than renewed market contagion. Nvidia internal CEO security investigation reported, but no verified contracted GPU supply disruption; not yet an independently verified systemic shock. No new or materially worsened urgent event. Existing critical alert provisionally retained, not independently recalculated.",
+  "change_since_previous": "2026-11-09 16:44:58 KST: No independently verified new systemic shock or material worsening since 15:27 KST. Reuters Nov 9 reports Asian rebound, 81% December Fed hike probability versus 71% a week earlier (not a verified hourly jump), oil easing on conditional Iran diplomacy. FT/AP show mixed regional breadth including weaker KOSPI. Existing critical alert provisionally retained, not independently recalculated. New urgent alerts: none.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -457,6 +457,26 @@
       "change_pct": 1.4,
       "observed_at_utc": null,
       "note": "Reuters Nov 9 article, exact quote timestamp unverified; publication snapshot not live"
+    },
+    "us_december_fed_hike_probability_reuters_nov9": {
+      "value": 81,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 9 report, exact pricing observation time unknown; 71% one week prior, not change since last hourly check"
+    },
+    "dollar_index_reuters_nov9": {
+      "value": 102.11,
+      "unit": "index_points",
+      "change_pct": -0.1,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 9 reporting snapshot; exact quote time unverified"
+    },
+    "asia_equities_reuters_nov9": {
+      "nikkei_change_pct_approx": 3.5,
+      "taiwan_change_pct_lower_bound": 6,
+      "msci_asia_ex_japan_change_pct_approx": 2,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 9 delayed intraday snapshots, not synchronized; FT/AP report different earlier levels and Korea negative"
     }
   },
   "sources": [
@@ -521,7 +541,8 @@
     "https://www.reuters.com/world/asia-pacific/global-markets-global-markets-2026-11-09/",
     "https://www.reuters.com/world/asia-pacific/south-korea-says-nvidia-issues-wont-affect-contracted-gpu-supplies-2026-11-09/",
     "https://apnews.com/article/d938f8e6ff42b3706e1d36e6245ec56b",
-    "https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b"
+    "https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b",
+    "https://www.reuters.com/world/asia-pacific/us-dollar-holds-onto-payrolls-gains-nz-dollar-rises-after-election-2026-11-09/"
   ],
   "data_limitations": [
     "2026-11-08 20:46 UTC: Sunday US cash market closed. No synchronized verified current real yields, IG/HY spreads, commodity futures, FX, VIX, breadth or ETF bid/ask; prior observations retained with original timestamps. Historical event directory not fully audited; no independent recalculation of critical rating.",
@@ -534,6 +555,7 @@
     "2026-11-09T03:49:10Z: Reuters Asia intraday figures not synchronized with US yields, real yields, broad credit spreads, commodity futures, USD/KRW, VIX, breadth or ETF quotes. US cash session not yet open. Reuters gold/oil stories may include later observation times; no new precise commodity quote added. Critical rating provisional, not independently recalculated; historical directories not fully audited.",
     "2026-11-09T04:33:25Z: Reuters Nov 9 01:46 UTC market report checked; no synchronous independently verified current US real yields, broad IG/HY spreads, natural gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. US cash market not yet open. Later-updated market articles may include quotes from after this check, so new figures omitted. Critical carried forward provisionally, not independently recalculated. Historical event/daily directory comparison incomplete.",
     "2026-11-09T05:41:43Z: Reuters 04:27 UTC oil prices verified as delayed snapshots; Asia market article has evolving figures with unspecified quote times. US cash market not open. No synchronized current real yields, broad IG/HY credit spreads, natural gas, copper, USD/KRW, VIX, breadth, or ETF bid/ask; critical is carried forward, not independently reassessed. Full analysis/events and analysis/daily directory audit incomplete.",
-    "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated."
+    "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
+    "Nov 9 07:44:58 UTC: synchronized current Treasury real yields, IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW and ETF spreads not independently verified; Nov 9 US cash market not yet open; GitHub historical directories could not be enumerated. No current market-wide credit repricing established."
   ]
 }
