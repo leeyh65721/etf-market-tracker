@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-09T10:10:37Z",
+  "checked_at_utc": "2026-11-09T10:30:26Z",
   "market_date": "2026-11-09",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-09 19:10 KST: Reuters Nov 9 global/European market updates show modest European equity gains, Nvidia premarket weakness, oil easing and persistent ~80% December Fed hike expectations. No independently corroborated material escalation relative to 18:14 KST. Existing critical rating carried forward provisionally, not independently recalculated; no new alert.",
+  "change_since_previous": "Nov 9 19:30 KST: AP/WSJ/Reuters report global equities recovering, Nvidia roughly -4% to -5% premarket on CEO intelligence probe, Treasury 10y near 4.869%, gold around $4094 to above $4100 in non-synchronous reports. Investigation and Nvidia weakness already noted at 19:10 KST; no verified new systemic spillover or material escalation. No new alert; critical carried forward provisionally, not independently recalculated.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -497,6 +497,22 @@
       "change_pct": -2,
       "observed_at_utc": null,
       "note": "Reuters Nov 9 global markets evolving report; precise quote timestamp not verified, may not be synchronous with check"
+    },
+    "us_10y_nov9_wsj_later": {
+      "value": 4.869,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "WSJ Nov 9 evolving article, +0.9bp; exact quote timestamp unknown, not live"
+    },
+    "nvidia_nov9_premarket_report": {
+      "change_pct_approx": -4.1,
+      "observed_at_utc": null,
+      "note": "AP Nov 9 premarket report; quote time unverified, investigation previously covered; not a closing price"
+    },
+    "taiwan_nov9_ap_report": {
+      "change_pct": 4.9,
+      "observed_at_utc": null,
+      "note": "AP Nov 9 market report, time not verified; differs from earlier Reuters intraday snapshots"
     }
   },
   "sources": [
@@ -564,7 +580,9 @@
     "https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b",
     "https://www.reuters.com/world/asia-pacific/us-dollar-holds-onto-payrolls-gains-nz-dollar-rises-after-election-2026-11-09/",
     "https://www.wsj.com/finance/investing/u-s-treasury-yields-edge-lower-as-oil-prices-decline-71869e97",
-    "https://www.reuters.com/markets/europe/europe-shares-tread-water-investors-weigh-ai-trade-banks-focus-2026-11-09/"
+    "https://www.reuters.com/markets/europe/europe-shares-tread-water-investors-weigh-ai-trade-banks-focus-2026-11-09/",
+    "https://www.wsj.com/finance/stocks/stock-futures-treasurys-steady-but-nvidia-slides-premarket-on-huang-probe-31deea55",
+    "https://www.reuters.com/business/nvidia-falls-about-3-after-hours-perpetual-futures-trade-2026-11-09/"
   ],
   "data_limitations": [
     "2026-11-08 20:46 UTC: Sunday US cash market closed. No synchronized verified current real yields, IG/HY spreads, commodity futures, FX, VIX, breadth or ETF bid/ask; prior observations retained with original timestamps. Historical event directory not fully audited; no independent recalculation of critical rating.",
@@ -580,6 +598,7 @@
     "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
     "Nov 9 07:44:58 UTC: synchronized current Treasury real yields, IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW and ETF spreads not independently verified; Nov 9 US cash market not yet open; GitHub historical directories could not be enumerated. No current market-wide credit repricing established.",
     "Nov 9 18:14 KST: no synchronized current real yields, HY/IG credit spreads, natural gas/copper, USD/KRW, VIX, breadth or ETF quotes; historical event/daily directory listing unavailable; existing critical level not independently recalculated.",
-    "2026-11-09T10:10:37Z: Reuters evolving market articles may have later revisions and prices without exact quote timestamps. US cash market not yet open. No synchronized verified current real yields, broad IG/HY spreads, natural gas/copper, USD/KRW, VIX, breadth or ETF quotes; no independent critical rating recalculation. Historical directories not fully audited."
+    "2026-11-09T10:10:37Z: Reuters evolving market articles may have later revisions and prices without exact quote timestamps. US cash market not yet open. No synchronized verified current real yields, broad IG/HY spreads, natural gas/copper, USD/KRW, VIX, breadth or ETF quotes; no independent critical rating recalculation. Historical directories not fully audited.",
+    "2026-11-09T10:30:26Z: US cash market not open; Nvidia premarket, AP Asia equity and WSJ yields are asynchronous delayed article snapshots, exact quote times unknown. Current broad IG/HY spreads, real yields, VIX, breadth, gas/copper, USD/KRW and ETF spreads not independently verified. Historical events/daily full audit incomplete. Critical rating provisional."
   ]
 }
