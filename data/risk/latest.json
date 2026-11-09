@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-09T17:52:36Z",
+  "checked_at_utc": "2026-11-09T19:20:57Z",
   "market_date": "2026-11-09",
   "risk_level": "critical",
-  "change_since_previous": "No independently verified new urgent systemic shock or material worsening relative to 16:35 UTC. Reuters reports Nasdaq rally ~2.7% while Nvidia remains weak, consistent with divergent rather than broad-contagion trading. December Fed hike pricing reported ~85% versus earlier ~80-81%, but article observation timing and synchronized bond/credit confirmation unavailable. Existing critical alert retained provisionally, no new alert.",
+  "change_since_previous": "No newly verified urgent systemic shock or material worsening versus 17:52 UTC. Reuters Nov 9 intraday update reports Dow +1.86%, S&P 500 +2.05%, Nasdaq +2.34%, while Nvidia remains under pressure. Strong broad equity rebound is counterevidence to additional contagion; existing semiconductor/AI risk not resolved. Existing critical alert carried forward provisionally, not freshly independently rescored. No new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -579,6 +579,13 @@
       "unit": "percent",
       "observed_at_utc": null,
       "note": "Reuters Nov 9 report of CME FedWatch probability, observation time unknown; not a Fed forecast or verified hourly move."
+    },
+    "nov9_reuters_intraday_latest": {
+      "dow_change_pct": 1.86,
+      "sp500_change_pct": 2.05,
+      "nasdaq_change_pct": 2.34,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 9 evolving article snapshot; quote timestamp not independently verified; NOT a closing or live price."
     }
   },
   "sources": [
@@ -670,6 +677,7 @@
     "Nov 9 intraday source quotes not synchronous; latest real yields, HY/IG credit spreads, USD/KRW, natural gas, copper, breadth and VIX not independently verified in this run.",
     "Nov 9 15:37 UTC check: no synchronized live quotes for US equity indices, SOXX, VIX, market breadth, IG/HY credit spreads, real yields, gas, copper, USD/KRW or ETF bid-ask. Some available Nov 9 articles contain later-in-day updates not established as published by check time and were not used as contemporaneous evidence. Risk level critical is carried over, not freshly validated; full historical analysis directory comparison unavailable.",
     "Nov 9 16:35 UTC: Reuters markets headline confirms broad rally/Nvidia weakness; third-party intraday index and Nvidia snapshots are delayed, exact quote times unverified and may be subsequently revised. No synchronized verified SOXX, VIX, breadth, real yields, broad credit spreads, USD/KRW, natural gas, copper or ETF bid/ask. GitHub historical analysis directories not fully audited; critical carried over provisionally.",
-    "2026-11-09T17:52:36Z: Reuters report updates and delayed snapshots have unknown quote timestamps; no synchronized independent real yields, IG/HY credit spreads, SOXX, VIX, breadth, WTI, natural gas, copper, USD/KRW or ETF bid/ask; cannot establish whether 85% hike probability is an hourly change. Prior critical not independently re-scored; historical analysis directories not audited."
+    "2026-11-09T17:52:36Z: Reuters report updates and delayed snapshots have unknown quote timestamps; no synchronized independent real yields, IG/HY credit spreads, SOXX, VIX, breadth, WTI, natural gas, copper, USD/KRW or ETF bid/ask; cannot establish whether 85% hike probability is an hourly change. Prior critical not independently re-scored; historical analysis directories not audited.",
+    "2026-11-09T19:20:57Z: Reuters evolving article is delayed/asynchronous; exact quote time unknown. Current synchronized SOXX, VIX, market breadth, Treasury real yields, IG/HY spreads, WTI/Brent, gas, copper, gold, USD/KRW and ETF bid-ask not verified. Prior critical provisional, historical analysis/events and analysis/daily not fully audited."
   ]
 }
