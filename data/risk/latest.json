@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-09T22:37:47Z",
+  "checked_at_utc": "2026-11-09T23:25:55Z",
   "market_date": "2026-11-09",
   "risk_level": "critical",
-  "change_since_previous": "No newly verified urgent event or material worsening since 22:10 UTC check. Reuters/AP Nov 9 closing rally already recorded; AP confirms Russell 2000 +3.1%, Brent -5.8%; IBD reports WTI settlement $86.85 and 10y Treasury near 4.86%. Existing Nov 6 critical alert retained provisionally, not independently rescored. No new alerts.",
+  "change_since_previous": "No newly verified urgent event or material worsening versus 2026-11-09T22:37:47Z. Nov 9 Reuters/AP closing rally and oil decline were already covered; independent source cross-check confirms them. Nov 10 CPI upcoming, not yet released. Existing critical alert retained provisionally, not independently rescored; no new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -647,6 +647,19 @@
       "unit": "USD/barrel",
       "observed_at_utc": null,
       "note": "IBD Nov 9 market wrap; exact settlement timestamp not independently verified"
+    },
+    "us_10y_nov9_ap": {
+      "value": 4.87,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "AP Nov 9 closing market recap, precise quote timestamp unverified; not live; consistent with earlier 4.86% report"
+    },
+    "brent_nov9_ap_close": {
+      "value": 92.57,
+      "unit": "USD/barrel",
+      "change_pct": -5.8,
+      "observed_at_utc": null,
+      "note": "AP Nov 9 recap; precise settlement timestamp unverified; previously reported oil fall, not a new event"
     }
   },
   "sources": [
@@ -729,7 +742,8 @@
     "https://www.barrons.com/livecoverage/stock-market-news-today-110926/card/the-rest-of-the-magnificent-7-are-leaving-nvidia-in-the-dust-zhlm2OjELYB7e0DlNcoo",
     "https://apnews.com/article/f7ec9680fc858e3c2505913e7b3a54e2",
     "https://www.stonex.com/en-us/insights/perspective-morning-commentary-for-november-9-2026-11-09/",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-amazon-tesla-nvidia-cpi-inflation-report/"
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-amazon-tesla-nvidia-cpi-inflation-report/",
+    "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary"
   ],
   "data_limitations": [
     "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
@@ -748,6 +762,7 @@
     "At 19:55 UTC no synchronized live verification of VIX, market breadth, real yields, US IG/HY credit spreads, WTI, natural gas, copper, USD/KRW or ETF bid-ask quotes. GitHub analysis directories could not be fetched. SOXX observation is 84 minutes old.",
     "No synchronized current verification of real yields, broad IG/HY spreads, natural gas, copper, USD/KRW, ETF quotes or market breadth. Nov 9 Barron's snapshot is intraday and timestamp unspecified. Critical rating carried from prior alert, not independently recalculated.",
     "Nov 9 22:10 UTC check: closing equity figures corroborated Reuters/AP, not real-time; no synchronized independently verified current 2y/10y real yields, IG/HY credit spreads, natural gas, copper, USD/KRW, gold, WTI/Brent settlement, ETF bid/ask or latest VIX. Prior critical alert not independently rescored. Full historical event/daily directory audit unavailable.",
-    "2026-11-09T22:37:47Z: Reuters/AP/IBD closing reports are delayed and not synchronized with rates/credit/commodities. No independently verified latest real yields, broad IG/HY spreads, USD/KRW, natural gas, copper, VIX close, ETF bid/ask or synchronized market breadth. Historical analysis directories not fully audited. Existing critical risk rating carried provisionally."
+    "2026-11-09T22:37:47Z: Reuters/AP/IBD closing reports are delayed and not synchronized with rates/credit/commodities. No independently verified latest real yields, broad IG/HY spreads, USD/KRW, natural gas, copper, VIX close, ETF bid/ask or synchronized market breadth. Historical analysis directories not fully audited. Existing critical risk rating carried provisionally.",
+    "2026-11-09T23:25:55Z: 11/9 US close is historical, not live; latest synchronized real yields, IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, ETF bid/ask and Nov 10 Asia prices not independently verified. Prior critical carried over provisionally. No full historical event/daily audit."
   ]
 }
