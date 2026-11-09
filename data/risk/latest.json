@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-09T00:22:28Z",
+  "checked_at_utc": "2026-11-09T00:44:28Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-09 09:22 KST: Nov 9 SBS morning report confirms upcoming Nov 10 CPI and Nov 12 AI-related earnings; these are scheduled catalysts, not newly realized shocks. Reuters Nov 8 oil easing on conditional Iran diplomacy is not verified as systemic deterioration. No newly corroborated urgent event since prior check. Existing critical rating provisionally carried forward, not independently revalidated.",
+  "change_since_previous": "2026-11-09 09:44 KST: No newly corroborated urgent deterioration since 09:22 KST. Reuters Nov 9 report of conditional US-Iran diplomacy and oil easing does not independently establish a new systemic shock; its later-session quotes were excluded because they postdate this check. Prior critical rating carried forward provisionally; no fresh alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -465,10 +465,10 @@
     "https://www.reuters.com/business/energy/oil-falls-open-trump-says-fresh-iran-attacks-unlikely-2026-11-08/"
   ],
   "data_limitations": [
-    "2026-11-08 19:40 UTC: Sunday US cash market closed. No verified synchronized fresh real yields, IG/HY spreads, WTI/Brent/gas/metals, USD/KRW, VIX, market breadth or ETF spreads. Previous observations retained at original timestamps; full historical event directory audit incomplete.",
     "2026-11-08 20:46 UTC: Sunday US cash market closed. No synchronized verified current real yields, IG/HY spreads, commodity futures, FX, VIX, breadth or ETF bid/ask; prior observations retained with original timestamps. Historical event directory not fully audited; no independent recalculation of critical rating.",
     "2026-11-08T21:31:04Z check: no synchronized fresh prices for US Treasury real yields, broad credit spreads, WTI/Brent/natural gas/gold/copper, USD/KRW, VIX, market breadth or ETF quotes; US cash market closed. Historical analysis/events and analysis/daily directory listings unavailable via fetch_file. No new market numbers inferred.",
     "2026-11-08T22:54:09Z: US cash market closed Sunday. No synchronized verified fresh Treasury real yields, IG/HY spreads, WTI/Brent/natural gas/gold/copper, USD/KRW, VIX, market breadth or ETF bid/ask. Historical readings retain original timestamps; full events/daily directory audit not completed. Critical risk rating provisional.",
-    "2026-11-09 00:22 UTC: US cash market closed over weekend; no synchronized fresh credit spreads, VIX, rates, FX, commodity and ETF quotes verified. Reuters oil article search summary includes later-session quote; excluded as potentially future relative to check time. Event/daily directory listing unavailable. Critical is carried forward, not independently reassessed."
+    "2026-11-09 00:22 UTC: US cash market closed over weekend; no synchronized fresh credit spreads, VIX, rates, FX, commodity and ETF quotes verified. Reuters oil article search summary includes later-session quote; excluded as potentially future relative to check time. Event/daily directory listing unavailable. Critical is carried forward, not independently reassessed.",
+    "2026-11-09T00:44:28Z: US cash market remains closed since Friday. No synchronized verified current real yields, broad IG/HY spreads, oil/gas/metals, USD/KRW, VIX, breadth or ETF bid/ask. Reuters Nov 9 oil story contains 11:34 GMT price quotes later than this 00:44 GMT check; excluded. Historical event/daily full audit incomplete. Critical rating not independently revalidated."
   ]
 }
