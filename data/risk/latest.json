@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-09T03:49:10Z",
+  "checked_at_utc": "2026-11-09T04:33:25Z",
   "market_date": "2026-11-06",
   "risk_level": "critical",
-  "change_since_previous": "2026-11-09 12:49 KST: Reuters Nov 9 Asian stocks and US futures recovered modestly as AI and Middle East jitters eased. Nikkei +2.5%, Taiwan approximately +2.5%, MSCI Asia ex-Japan +0.8% in article snapshots; no verified new severe deterioration since 12:13 KST. Previous critical rating carried forward provisionally; no new alert.",
+  "change_since_previous": "2026-11-09 13:33 KST: Reuters Nov 9 01:46 UTC Asian-market report describes stabilization as AI and Middle East jitters ease, with dollar firm on Fed bets. No independently verified new systemic shock or significant worsening compared with 12:49 KST check. Existing critical classification carried forward provisionally; no new alerts.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -495,6 +495,7 @@
     "2026-11-09T00:44:28Z: US cash market remains closed since Friday. No synchronized verified current real yields, broad IG/HY spreads, oil/gas/metals, USD/KRW, VIX, breadth or ETF bid/ask. Reuters Nov 9 oil story contains 11:34 GMT price quotes later than this 00:44 GMT check; excluded. Historical event/daily full audit incomplete. Critical rating not independently revalidated.",
     "2026-11-09T01:30:01Z: US cash market not yet open; no verified synchronous current Treasury/real yields, broad credit spreads, natural gas, metals, USD/KRW, VIX, breadth or ETF bid/ask. Reuters oil story includes 11:34 GMT quotes later than check and excluded. Existing indicator timestamps preserved. Critical carried forward, not independently recalculated; historical events/daily audit incomplete.",
     "2026-11-09T03:13:43Z: Reuters Nov 9 early-session oil snapshots lack exact observation timestamps and may be delayed. Gold article and some market summaries may contain later-session observations, so no precise gold figure added. US cash market not yet open; no synchronized real yields, IG/HY spreads, natural gas/copper, USD/KRW, VIX, breadth or ETF quotes verified. Existing critical provisional. Historical events/daily directory full comparison not completed.",
-    "2026-11-09T03:49:10Z: Reuters Asia intraday figures not synchronized with US yields, real yields, broad credit spreads, commodity futures, USD/KRW, VIX, breadth or ETF quotes. US cash session not yet open. Reuters gold/oil stories may include later observation times; no new precise commodity quote added. Critical rating provisional, not independently recalculated; historical directories not fully audited."
+    "2026-11-09T03:49:10Z: Reuters Asia intraday figures not synchronized with US yields, real yields, broad credit spreads, commodity futures, USD/KRW, VIX, breadth or ETF quotes. US cash session not yet open. Reuters gold/oil stories may include later observation times; no new precise commodity quote added. Critical rating provisional, not independently recalculated; historical directories not fully audited.",
+    "2026-11-09T04:33:25Z: Reuters Nov 9 01:46 UTC market report checked; no synchronous independently verified current US real yields, broad IG/HY spreads, natural gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. US cash market not yet open. Later-updated market articles may include quotes from after this check, so new figures omitted. Critical carried forward provisionally, not independently recalculated. Historical event/daily directory comparison incomplete."
   ]
 }
