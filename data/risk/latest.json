@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-09T19:55:09Z",
+  "checked_at_utc": "2026-11-09T20:26:03Z",
   "market_date": "2026-11-09",
   "risk_level": "critical",
-  "change_since_previous": "No newly verified urgent systemic shock or material worsening since 19:20 UTC. Yahoo Finance SOXX Nov 9 intraday quote $145.88 (+6.85%) as of 13:30:57 EST (18:30:57 UTC), versus Nov 6 close $136.53; broad US indexes had rallied in Reuters prior report. Nvidia investigation remains a previously flagged concern; no fresh verified cross-market contagion. Critical carried forward provisionally from Nov 6 event, not independently rescored. No new alert.",
+  "change_since_previous": "No new verified urgent event or material worsening versus 19:55 UTC. Reuters Nov 9 reporting and Barron's intraday breadth indicate broad US equity rebound despite Nvidia-specific decline. Reuters Nov 6 described funding markets as orderly despite elevated credit stress. Existing Nov 6 critical alert retained provisionally; not independently rescored. New urgent alerts: none.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -593,6 +593,20 @@
       "change_pct": 6.85,
       "observed_at_utc": "2026-11-09T18:30:57Z",
       "note": "Yahoo Finance quote snapshot; delayed versus check, not a close. Nov 6 close $136.53."
+    },
+    "us_market_nov9_barrons_intraday": {
+      "sp500_change_pct": 2.2,
+      "nasdaq_change_pct": 2.7,
+      "dow_change_points": 885,
+      "sp500_advancers_approx": 400,
+      "observed_at_utc": null,
+      "note": "Barron's Nov 9 intraday report; exact quote timestamp not verified; not live or final close"
+    },
+    "vix_nov9_investing_page_snapshot": {
+      "value": 19.77,
+      "change_pct": -22.89,
+      "observed_at_utc": null,
+      "note": "Investing.com dynamic quote embedded in Reuters article; timestamp not established; use as indicative only"
     }
   },
   "sources": [
@@ -671,7 +685,8 @@
     "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-oil-prices-nvidia-stock-nvda-jensen-huang-probe/",
     "https://www.theguardian.com/business/live/2026/nov/09/nvidia-jensen-huang-scandal-investigation-ai-industry-tech-stocks-recovery-slump-latest-news-updates",
     "https://www.reuters.com/business/tsx-futures-climb-softer-oil-eases-inflation-worries-us-inflation-data-awaited-2026-11-09/",
-    "https://finance.yahoo.com/quote/SOXX/history/"
+    "https://finance.yahoo.com/quote/SOXX/history/",
+    "https://www.barrons.com/livecoverage/stock-market-news-today-110926/card/the-rest-of-the-magnificent-7-are-leaving-nvidia-in-the-dust-zhlm2OjELYB7e0DlNcoo"
   ],
   "data_limitations": [
     "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
@@ -687,6 +702,7 @@
     "Nov 9 16:35 UTC: Reuters markets headline confirms broad rally/Nvidia weakness; third-party intraday index and Nvidia snapshots are delayed, exact quote times unverified and may be subsequently revised. No synchronized verified SOXX, VIX, breadth, real yields, broad credit spreads, USD/KRW, natural gas, copper or ETF bid/ask. GitHub historical analysis directories not fully audited; critical carried over provisionally.",
     "2026-11-09T17:52:36Z: Reuters report updates and delayed snapshots have unknown quote timestamps; no synchronized independent real yields, IG/HY credit spreads, SOXX, VIX, breadth, WTI, natural gas, copper, USD/KRW or ETF bid/ask; cannot establish whether 85% hike probability is an hourly change. Prior critical not independently re-scored; historical analysis directories not audited.",
     "2026-11-09T19:20:57Z: Reuters evolving article is delayed/asynchronous; exact quote time unknown. Current synchronized SOXX, VIX, market breadth, Treasury real yields, IG/HY spreads, WTI/Brent, gas, copper, gold, USD/KRW and ETF bid-ask not verified. Prior critical provisional, historical analysis/events and analysis/daily not fully audited.",
-    "At 19:55 UTC no synchronized live verification of VIX, market breadth, real yields, US IG/HY credit spreads, WTI, natural gas, copper, USD/KRW or ETF bid-ask quotes. GitHub analysis directories could not be fetched. SOXX observation is 84 minutes old."
+    "At 19:55 UTC no synchronized live verification of VIX, market breadth, real yields, US IG/HY credit spreads, WTI, natural gas, copper, USD/KRW or ETF bid-ask quotes. GitHub analysis directories could not be fetched. SOXX observation is 84 minutes old.",
+    "No synchronized current verification of real yields, broad IG/HY spreads, natural gas, copper, USD/KRW, ETF quotes or market breadth. Nov 9 Barron's snapshot is intraday and timestamp unspecified. Critical rating carried from prior alert, not independently recalculated."
   ]
 }
