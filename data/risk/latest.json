@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T20:49:25Z",
+  "checked_at_utc": "2026-11-10T21:51:27Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "No verified new independent urgent event or material escalation versus 19:46 UTC. Reuters/AP Nov 10 CPI-related yields and broad technology decline were previously flagged. Yahoo SOXX historical table shows Nov 10 close 145.73 (-0.70% versus Nov 9 146.76), not a fresh semiconductor crash; page also shows inconsistent intraday 145.81 quote, so close treated as provisional. Existing critical rating remains historical/provisional, not independently recalculated. No new alert.",
+  "change_since_previous": "No independently verified new urgent event or material escalation since 20:49 UTC. Reuters Nov 10 CPI-driven Treasury yield rise, tech weakness and dollar/gold moves repeat existing risk. Secondary Nov 10 close report shows S&P 500 -0.38%, Nasdaq -0.74%, 10y 4.98%, but closing numbers not independently corroborated. Prior critical rating remains provisional/historical, not newly reassessed. No new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -976,6 +976,19 @@
       "change_pct": -0.7,
       "observed_at_utc": "2026-11-10T21:00:00Z",
       "note": "Yahoo historical daily row; approximate US regular close timestamp, delayed/possibly revised, not synchronized real-time quote."
+    },
+    "us_10y_nov10_wsj_peak": {
+      "value": 5.012,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "WSJ Nov 10 intraday high, NOT current/close; previously observed CPI-driven event"
+    },
+    "us_equity_nov10_close_unconfirmed": {
+      "sp500_change_pct": -0.38,
+      "nasdaq_change_pct": -0.74,
+      "us_10y_pct": 4.98,
+      "observed_at_utc": "2026-11-10T21:00:00Z",
+      "note": "Secondary source JournalArta closing report; independent authoritative closing verification unavailable, treat as provisional"
     }
   },
   "sources": [
@@ -1082,7 +1095,9 @@
     "https://apnews.com/article/fcd3c7766d3cdb36057f6dab19ff3a8e",
     "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-rally-nvidia-scandal-shares-inflation-data-cpi/card/dow-falls-more-than-200-points-nasdaq-and-s-p-500-plunge-after-hot-inflation-data-treasury-yields-sharply-higher-WyOY5kInsXRIGwNFJzSy",
     "https://www.barrons.com/livecoverage/stock-market-news-today-111026/card/the-10-year-treasury-yield-is-above-5-again-WJeaYP4QEuHZlZSWIz8K",
-    "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-rally-nvidia-scandal-shares-inflation-data-cpi/card/treasury-yields-up-sharply-with-2-year-rates-on-track-for-their-biggest-daily-gain-since-april-2025-AlCyFhVki7ADytg0H3wN"
+    "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-rally-nvidia-scandal-shares-inflation-data-cpi/card/treasury-yields-up-sharply-with-2-year-rates-on-track-for-their-biggest-daily-gain-since-april-2025-AlCyFhVki7ADytg0H3wN",
+    "https://www.wsj.com/economy/central-banking/treasury-yields-edge-up-ahead-of-u-s-inflation-data-7a55db79",
+    "https://journalarta.com/en/2026/11/11/stock-market-today-sp-500-slips-0-38-to-7520-93-and-nasdaq-falls-0-74-as-10-year-yield-rises-to-4-98/"
   ],
   "data_limitations": [
     "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
@@ -1123,6 +1138,7 @@
     "This check lacks synchronized validated SOXX quotes, broad credit spreads, market breadth beyond sector count, real yields, FX, natural gas and copper. Historical analysis directory comparison incomplete; directory fetch failed. AP/Reuters reported delayed snapshots. Historical critical level is carried, not a fresh risk score.",
     "2026-11-10T19:18:34Z: AP later session summary exact quote times unverified; Yahoo SOXX 13:07 ET quote stale ~70 min. No synchronized current IG/HY credit spreads, real yields, VIX, broad breadth, natural gas, copper, USD/KRW or ETF bid-ask; historical analysis directories not fully audited. Critical classification historical/provisional.",
     "2026-11-10T19:46:07Z: current synchronized SOXX, VIX, market breadth, IG/HY credit spreads, real yields, natural gas, copper, USD/KRW and ETF bid/ask unavailable; Reuters/AP/MarketWatch snapshots delayed and nonsynchronous. Historical event/daily full audit unavailable; critical level carried provisionally.",
-    "2026-11-10T20:49:25Z: Yahoo daily SOXX row may be preliminary and conflicts with page intraday quote. No synchronized verified current VIX, broad IG/HY spreads, real yields, market breadth, gas, copper, USD/KRW, ETF bid/ask; Reuters/AP delayed reports. Historical analysis/events and analysis/daily full audit unavailable; critical historical/provisional."
+    "2026-11-10T20:49:25Z: Yahoo daily SOXX row may be preliminary and conflicts with page intraday quote. No synchronized verified current VIX, broad IG/HY spreads, real yields, market breadth, gas, copper, USD/KRW, ETF bid/ask; Reuters/AP delayed reports. Historical analysis/events and analysis/daily full audit unavailable; critical historical/provisional.",
+    "2026-11-10T21:51:27Z: No synchronized verified latest SOXX, VIX, credit spreads, real yields, market breadth, natural gas, copper, USD/KRW, ETF spreads; secondary closing quote uncorroborated. Reuters CPI story is previously covered; no fresh escalation established. Historical risk_level=critical is provisional."
   ]
 }
