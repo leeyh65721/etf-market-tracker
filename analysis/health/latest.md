@@ -1,19 +1,17 @@
 # ETF 자동 수집 종합 품질 상태
 
 - 상태: **ERROR**
-- 미국 시장 기준일: 2026-11-06 (최신 마감일 2026-11-06)
+- 미국 시장 기준일: 2026-11-09 (최신 마감일 2026-11-09)
 - 검증된 ETF: **337/353 (95.5%)**
-- 공식 22개 지표: **20/22**
+- 공식 22개 지표: **22/22**
 - 추가 10개 세부 지표: **7/10 자동 정상**
 - ISM 2개 수동 확인, NFCI가 오래되면 최신값으로 사용하지 않음.
-- 신규 주의/오류 코드: BASE_MACRO_INCOMPLETE, BASE_MACRO_HEALTH_UNSAFE
+- 신규 주의/오류 코드: 없음
 
 ## 발견 문제
 
 | 수준 | 코드 | 내용 |
 |---|---|---|
-|ERROR|BASE_MACRO_INCOMPLETE|Baseline 20/22 ok, source state partial|
-|ERROR|BASE_MACRO_HEALTH_UNSAFE|Baseline macro health=WARN date=2026-11-06|
 |KNOWN|NFCI_NOT_LIVE|NFCI latest official CSV status=stale, requires permitted manual verification|
 |ERROR|MODULE_JUDGMENT_ARCHIVE_ERROR|data/decisions/latest.json reports status ERROR|
 |ERROR|DECISIONS_INVALID_RECORD|ETF research decision evidence contains invalid records|

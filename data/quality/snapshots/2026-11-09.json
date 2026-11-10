@@ -1,0 +1,2112 @@
+{
+  "schema": "etf_screen_freeze_v1",
+  "us_market_date": "2026-11-09",
+  "first_published_scan_generated_at_utc": "2026-11-10T00:00:14.932304+00:00",
+  "source": "Unofficial Yahoo Finance via yfinance (best effort, delayed or incomplete)",
+  "universe_count": 353,
+  "verified_count": 337,
+  "tickers": {
+    "ITB": {
+      "close_usd": 99.45,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 14.095
+    },
+    "IHI": {
+      "close_usd": 58.57,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 12.356
+    },
+    "INDA": {
+      "close_usd": 51.41,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 12.339
+    },
+    "JETS": {
+      "close_usd": 30.2,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 11.971
+    },
+    "EZA": {
+      "close_usd": 69.19,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 11.87
+    },
+    "FIW": {
+      "close_usd": 118.63,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 11.8
+    },
+    "PHO": {
+      "close_usd": 77.4,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 11.533
+    },
+    "EPI": {
+      "close_usd": 43.99,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 11.456
+    },
+    "XHB": {
+      "close_usd": 105.96,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 10.962
+    },
+    "HOMZ": {
+      "close_usd": 44.63,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 10.804
+    },
+    "XRT": {
+      "close_usd": 92.78,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 10.571
+    },
+    "NERD": {
+      "close_usd": 24.185,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 10.403
+    },
+    "XLV": {
+      "close_usd": 188.33,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 10.397
+    },
+    "HERO": {
+      "close_usd": 29.133,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 10.262
+    },
+    "RTH": {
+      "close_usd": 283.195,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 10.097
+    },
+    "XHE": {
+      "close_usd": 96.675,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 10.016
+    },
+    "NOBL": {
+      "close_usd": 60.67,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 10.001
+    },
+    "IYH": {
+      "close_usd": 79.04,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 10.001
+    },
+    "FHLC": {
+      "close_usd": 90.04,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.877
+    },
+    "VHT": {
+      "close_usd": 348.11,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.824
+    },
+    "XHS": {
+      "close_usd": 146.79,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 9.758
+    },
+    "IYC": {
+      "close_usd": 105.87,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.692
+    },
+    "SDY": {
+      "close_usd": 163.52,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 9.641
+    },
+    "FSTA": {
+      "close_usd": 57.8,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.605
+    },
+    "VDC": {
+      "close_usd": 247.95,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.561
+    },
+    "ESPO": {
+      "close_usd": 104.66,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 9.475
+    },
+    "EWW": {
+      "close_usd": 77.56,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 9.225
+    },
+    "USRT": {
+      "close_usd": 66.17,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.201
+    },
+    "BBH": {
+      "close_usd": 259.44,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 9.189
+    },
+    "FAN": {
+      "close_usd": 23.404,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 9.158
+    },
+    "XLP": {
+      "close_usd": 90.89,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.153
+    },
+    "SCHH": {
+      "close_usd": 23.86,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.073
+    },
+    "VNQ": {
+      "close_usd": 97.3,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.037
+    },
+    "IYR": {
+      "close_usd": 103.18,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.024
+    },
+    "XLY": {
+      "close_usd": 121.01,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 9.001
+    },
+    "XLRE": {
+      "close_usd": 44.64,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 8.99
+    },
+    "SPLV": {
+      "close_usd": 77.83,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 8.859
+    },
+    "EWI": {
+      "close_usd": 59.25,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 8.79
+    },
+    "EWH": {
+      "close_usd": 23.38,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 8.758
+    },
+    "REET": {
+      "close_usd": 27.36,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 8.665
+    },
+    "FDIS": {
+      "close_usd": 104.78,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 8.664
+    },
+    "VCR": {
+      "close_usd": 403.37,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 8.662
+    },
+    "IBB": {
+      "close_usd": 219.57,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 8.64
+    },
+    "KIE": {
+      "close_usd": 64.85,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 8.627
+    },
+    "XPH": {
+      "close_usd": 67.37,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 8.539
+    },
+    "TAN": {
+      "close_usd": 45.18,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 8.514
+    },
+    "SMIN": {
+      "close_usd": 70.57,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 8.494
+    },
+    "IYK": {
+      "close_usd": 78.94,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 8.414
+    },
+    "SCHD": {
+      "close_usd": 35.65,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 8.403
+    },
+    "EWP": {
+      "close_usd": 60.21,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 8.269
+    },
+    "HTEC": {
+      "close_usd": 45.745,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 8.132
+    },
+    "IAK": {
+      "close_usd": 149.96,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.921
+    },
+    "VBR": {
+      "close_usd": 248.26,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 7.881
+    },
+    "XLF": {
+      "close_usd": 57.99,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.864
+    },
+    "XLB": {
+      "close_usd": 52.94,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.804
+    },
+    "VNQI": {
+      "close_usd": 44.12,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.787
+    },
+    "KBE": {
+      "close_usd": 67.13,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.785
+    },
+    "KRE": {
+      "close_usd": 73.45,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.765
+    },
+    "IBUY": {
+      "close_usd": 72.758,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 7.756
+    },
+    "EWG": {
+      "close_usd": 42.99,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 7.731
+    },
+    "VIGI": {
+      "close_usd": 99.87,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 7.715
+    },
+    "IDNA": {
+      "close_usd": 43.57,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.667
+    },
+    "FUTY": {
+      "close_usd": 56.54,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.666
+    },
+    "IHF": {
+      "close_usd": 59.72,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.636
+    },
+    "HDV": {
+      "close_usd": 30.55,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 7.629
+    },
+    "VPU": {
+      "close_usd": 189.36,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.626
+    },
+    "XLU": {
+      "close_usd": 43.79,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.618
+    },
+    "GDX": {
+      "close_usd": 91.46,
+      "screen": "watch",
+      "liquid": true,
+      "score": 7.549
+    },
+    "VAW": {
+      "close_usd": 233.53,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.469
+    },
+    "IYG": {
+      "close_usd": 96.77,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.468
+    },
+    "PJP": {
+      "close_usd": 129.681,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 7.467
+    },
+    "ONLN": {
+      "close_usd": 59.47,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 7.437
+    },
+    "KCE": {
+      "close_usd": 160.98,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 7.406
+    },
+    "SCHY": {
+      "close_usd": 33.36,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 7.388
+    },
+    "IYF": {
+      "close_usd": 134.31,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.368
+    },
+    "IPAY": {
+      "close_usd": 50.86,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 7.326
+    },
+    "TLT": {
+      "close_usd": 81.96,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 7.298
+    },
+    "DGRO": {
+      "close_usd": 81.32,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 7.295
+    },
+    "AWAY": {
+      "close_usd": 17.651,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 7.251
+    },
+    "IWS": {
+      "close_usd": 172.5,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 7.194
+    },
+    "VGLT": {
+      "close_usd": 52.59,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 7.166
+    },
+    "SPTL": {
+      "close_usd": 25.02,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 7.133
+    },
+    "NFRA": {
+      "close_usd": 65.28,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 7.111
+    },
+    "IYT": {
+      "close_usd": 83.71,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.11
+    },
+    "XTN": {
+      "close_usd": 103.28,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 7.036
+    },
+    "VIG": {
+      "close_usd": 249.25,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.918
+    },
+    "MUB": {
+      "close_usd": 104.98,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.903
+    },
+    "VONV": {
+      "close_usd": 115.18,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.863
+    },
+    "IWD": {
+      "close_usd": 262.61,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.827
+    },
+    "EWU": {
+      "close_usd": 48.32,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.778
+    },
+    "PTH": {
+      "close_usd": 59.917,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 6.751
+    },
+    "EWA": {
+      "close_usd": 29.67,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.741
+    },
+    "ITA": {
+      "close_usd": 71.67,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 6.731
+    },
+    "RSP": {
+      "close_usd": 220.95,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.651
+    },
+    "XBI": {
+      "close_usd": 156.9,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 6.637
+    },
+    "FXI": {
+      "close_usd": 34.66,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.585
+    },
+    "CGW": {
+      "close_usd": 65.994,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 6.556
+    },
+    "EBIZ": {
+      "close_usd": 29.775,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 6.405
+    },
+    "EWC": {
+      "close_usd": 60.98,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.388
+    },
+    "IUSV": {
+      "close_usd": 116.23,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.334
+    },
+    "KGRN": {
+      "close_usd": 21.88,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 6.331
+    },
+    "SBIO": {
+      "close_usd": 57.6,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 6.316
+    },
+    "IVE": {
+      "close_usd": 240.32,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.293
+    },
+    "IJR": {
+      "close_usd": 141.72,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.229
+    },
+    "IYM": {
+      "close_usd": 185.15,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 6.172
+    },
+    "IEF": {
+      "close_usd": 91.8,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.103
+    },
+    "VYMI": {
+      "close_usd": 102.8,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.097
+    },
+    "SCHM": {
+      "close_usd": 35.45,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.09
+    },
+    "VTV": {
+      "close_usd": 227.38,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.045
+    },
+    "LQD": {
+      "close_usd": 104.67,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 6.043
+    },
+    "GDXJ": {
+      "close_usd": 113.06,
+      "screen": "watch",
+      "liquid": true,
+      "score": 5.973
+    },
+    "IAI": {
+      "close_usd": 181.83,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 5.946
+    },
+    "SCHA": {
+      "close_usd": 33.39,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.886
+    },
+    "IWN": {
+      "close_usd": 215.91,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.857
+    },
+    "AGG": {
+      "close_usd": 96.58,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.845
+    },
+    "USMV": {
+      "close_usd": 102.96,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.842
+    },
+    "VB": {
+      "close_usd": 294.48,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.801
+    },
+    "EFA": {
+      "close_usd": 104.96,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.781
+    },
+    "VCIT": {
+      "close_usd": 79.82,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.781
+    },
+    "BND": {
+      "close_usd": 71.62,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.781
+    },
+    "PPA": {
+      "close_usd": 159.31,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 5.744
+    },
+    "VYM": {
+      "close_usd": 162.72,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.707
+    },
+    "SCHV": {
+      "close_usd": 34.66,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.703
+    },
+    "GOVT": {
+      "close_usd": 22.295,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.658
+    },
+    "SCHR": {
+      "close_usd": 24.14,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.656
+    },
+    "VGIT": {
+      "close_usd": 57.71,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.626
+    },
+    "DIA": {
+      "close_usd": 523.33,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.603
+    },
+    "BNDX": {
+      "close_usd": 47.64,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.548
+    },
+    "KRBN": {
+      "close_usd": 35.04,
+      "screen": "excluded_complex",
+      "liquid": false,
+      "score": 5.532
+    },
+    "SPMD": {
+      "close_usd": 65.18,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.531
+    },
+    "MDY": {
+      "close_usd": 678.61,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.518
+    },
+    "AVUV": {
+      "close_usd": 122.51,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.508
+    },
+    "IJH": {
+      "close_usd": 74.39,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.506
+    },
+    "IYJ": {
+      "close_usd": 160.16,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 5.503
+    },
+    "TIP": {
+      "close_usd": 106.03,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.329
+    },
+    "XSW": {
+      "close_usd": 207.18,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 5.202
+    },
+    "IWR": {
+      "close_usd": 110.74,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.195
+    },
+    "VCSH": {
+      "close_usd": 77.8,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 5.086
+    },
+    "SHY": {
+      "close_usd": 81.59,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 4.95
+    },
+    "SCHO": {
+      "close_usd": 23.97,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 4.943
+    },
+    "VGSH": {
+      "close_usd": 57.83,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 4.94
+    },
+    "BBC": {
+      "close_usd": 44.99,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 4.923
+    },
+    "GREK": {
+      "close_usd": 82.07,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 4.876
+    },
+    "VO": {
+      "close_usd": 81.55,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 4.874
+    },
+    "USFR": {
+      "close_usd": 50.45,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 4.86
+    },
+    "VTIP": {
+      "close_usd": 48.69,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 4.801
+    },
+    "IFRA": {
+      "close_usd": 57.62,
+      "screen": "candidate",
+      "liquid": true,
+      "score": 4.684
+    },
+    "SIL": {
+      "close_usd": 83.44,
+      "screen": "watch",
+      "liquid": true,
+      "score": 4.312
+    },
+    "VNM": {
+      "close_usd": 17.12,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 4.175
+    },
+    "XAR": {
+      "close_usd": 236.4,
+      "screen": "watch",
+      "liquid": true,
+      "score": 4.112
+    },
+    "SILJ": {
+      "close_usd": 26.2,
+      "screen": "watch",
+      "liquid": true,
+      "score": 3.976
+    },
+    "ACES": {
+      "close_usd": 27.83,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 3.557
+    },
+    "GAMR": {
+      "close_usd": 99.539,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 3.411
+    },
+    "MXI": {
+      "close_usd": 110.79,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 3.192
+    },
+    "KBWB": {
+      "close_usd": 89.77,
+      "screen": "watch",
+      "liquid": true,
+      "score": 2.958
+    },
+    "URNJ": {
+      "close_usd": 18.5,
+      "screen": "watch",
+      "liquid": true,
+      "score": 2.844
+    },
+    "RNRG": {
+      "close_usd": 31.909,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 2.825
+    },
+    "IWM": {
+      "close_usd": 282.51,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 2.664
+    },
+    "VTWO": {
+      "close_usd": 114.1,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 2.65
+    },
+    "BAR": {
+      "close_usd": 40.75,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 2.524
+    },
+    "SGOL": {
+      "close_usd": 39.41,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 2.518
+    },
+    "GLDM": {
+      "close_usd": 81.91,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 2.503
+    },
+    "GLD": {
+      "close_usd": 379.53,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 2.489
+    },
+    "IWO": {
+      "close_usd": 357.32,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 2.47
+    },
+    "IAU": {
+      "close_usd": 77.78,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 2.44
+    },
+    "UFO": {
+      "close_usd": 41.57,
+      "screen": "watch",
+      "liquid": true,
+      "score": 2.437
+    },
+    "XLC": {
+      "close_usd": 107.36,
+      "screen": "watch",
+      "liquid": true,
+      "score": 2.418
+    },
+    "HYG": {
+      "close_usd": 77.51,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 2.085
+    },
+    "JNK": {
+      "close_usd": 93.01,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 2.003
+    },
+    "PBW": {
+      "close_usd": 27.25,
+      "screen": "watch",
+      "liquid": true,
+      "score": 1.979
+    },
+    "MCHI": {
+      "close_usd": 51.52,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.85
+    },
+    "VIS": {
+      "close_usd": 325.09,
+      "screen": "watch",
+      "liquid": true,
+      "score": 1.777
+    },
+    "TFLO": {
+      "close_usd": 50.57,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.686
+    },
+    "SGOV": {
+      "close_usd": 100.5,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.678
+    },
+    "SHV": {
+      "close_usd": 110.14,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.67
+    },
+    "BIL": {
+      "close_usd": 91.48,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.669
+    },
+    "STIP": {
+      "close_usd": 100.33,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.667
+    },
+    "KWEB": {
+      "close_usd": 24.31,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.652
+    },
+    "FIDU": {
+      "close_usd": 89.73,
+      "screen": "watch",
+      "liquid": true,
+      "score": 1.642
+    },
+    "EMQQ": {
+      "close_usd": 31.17,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 1.572
+    },
+    "VXF": {
+      "close_usd": 232.93,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.564
+    },
+    "DGRW": {
+      "close_usd": 98.33,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.469
+    },
+    "REM": {
+      "close_usd": 17.4,
+      "screen": "watch",
+      "liquid": true,
+      "score": 1.457
+    },
+    "VEA": {
+      "close_usd": 69.89,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.456
+    },
+    "XLI": {
+      "close_usd": 168.89,
+      "screen": "watch",
+      "liquid": true,
+      "score": 1.411
+    },
+    "ICLN": {
+      "close_usd": 16.61,
+      "screen": "watch",
+      "liquid": true,
+      "score": 1.402
+    },
+    "FINX": {
+      "close_usd": 24.54,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 1.343
+    },
+    "MORT": {
+      "close_usd": 7.72,
+      "screen": "watch",
+      "liquid": true,
+      "score": 1.34
+    },
+    "HAIL": {
+      "close_usd": 32.61,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 1.323
+    },
+    "QUAL": {
+      "close_usd": 56.04,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.301
+    },
+    "SHLD": {
+      "close_usd": 60.9,
+      "screen": "watch",
+      "liquid": true,
+      "score": 1.267
+    },
+    "CNRG": {
+      "close_usd": 81.432,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 1.211
+    },
+    "TUR": {
+      "close_usd": 32.25,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 1.072
+    },
+    "UNG": {
+      "close_usd": 10.08,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": 1.039
+    },
+    "PPLT": {
+      "close_usd": 14.24,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 1.036
+    },
+    "GINN": {
+      "close_usd": 80.34,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 1.033
+    },
+    "PAVE": {
+      "close_usd": 53.33,
+      "screen": "watch",
+      "liquid": true,
+      "score": 0.933
+    },
+    "PKB": {
+      "close_usd": 90.174,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 0.902
+    },
+    "GNOM": {
+      "close_usd": 67.34,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 0.867
+    },
+    "ROKT": {
+      "close_usd": 101.88,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": 0.716
+    },
+    "URNM": {
+      "close_usd": 43.9,
+      "screen": "watch",
+      "liquid": true,
+      "score": 0.563
+    },
+    "AVDV": {
+      "close_usd": 105.7,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.485
+    },
+    "VT": {
+      "close_usd": 155.68,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.474
+    },
+    "DFAX": {
+      "close_usd": 36.03,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.372
+    },
+    "ACWI": {
+      "close_usd": 156.35,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.346
+    },
+    "ASHR": {
+      "close_usd": 31.0,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.346
+    },
+    "VTI": {
+      "close_usd": 370.9,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.29
+    },
+    "VONE": {
+      "close_usd": 341.02,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.209
+    },
+    "ITOT": {
+      "close_usd": 164.5,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.205
+    },
+    "IWB": {
+      "close_usd": 412.33,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.198
+    },
+    "SCHB": {
+      "close_usd": 29.0,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.193
+    },
+    "XT": {
+      "close_usd": 82.66,
+      "screen": "watch",
+      "liquid": true,
+      "score": 0.16
+    },
+    "VBK": {
+      "close_usd": 332.09,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.104
+    },
+    "SCHX": {
+      "close_usd": 29.63,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.054
+    },
+    "IVV": {
+      "close_usd": 756.05,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.032
+    },
+    "VOO": {
+      "close_usd": 691.87,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.029
+    },
+    "SPY": {
+      "close_usd": 752.69,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": 0.024
+    },
+    "VV": {
+      "close_usd": 346.75,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -0.021
+    },
+    "BETZ": {
+      "close_usd": 16.583,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -0.068
+    },
+    "DTEC": {
+      "close_usd": 50.755,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -0.101
+    },
+    "VWO": {
+      "close_usd": 56.61,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -0.483
+    },
+    "QCLN": {
+      "close_usd": 45.32,
+      "screen": "watch",
+      "liquid": true,
+      "score": -0.599
+    },
+    "PALL": {
+      "close_usd": 18.81,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -0.737
+    },
+    "KOMP": {
+      "close_usd": 62.47,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -0.848
+    },
+    "PRNT": {
+      "close_usd": 24.237,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -0.909
+    },
+    "DXJ": {
+      "close_usd": 58.08,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -0.917
+    },
+    "NLR": {
+      "close_usd": 94.57,
+      "screen": "watch",
+      "liquid": true,
+      "score": -0.939
+    },
+    "RCD": {
+      "close_usd": 20.18,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -0.951
+    },
+    "FITE": {
+      "close_usd": 107.325,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -1.16
+    },
+    "IDRV": {
+      "close_usd": 31.14,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -1.217
+    },
+    "ARKX": {
+      "close_usd": 30.03,
+      "screen": "watch",
+      "liquid": true,
+      "score": -1.241
+    },
+    "AMLP": {
+      "close_usd": 50.67,
+      "screen": "watch",
+      "liquid": true,
+      "score": -1.313
+    },
+    "PICK": {
+      "close_usd": 56.4,
+      "screen": "watch",
+      "liquid": true,
+      "score": -1.333
+    },
+    "ARKG": {
+      "close_usd": 48.25,
+      "screen": "watch",
+      "liquid": true,
+      "score": -1.336
+    },
+    "CPER": {
+      "close_usd": 38.43,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -1.386
+    },
+    "MLPX": {
+      "close_usd": 69.91,
+      "screen": "watch",
+      "liquid": true,
+      "score": -1.674
+    },
+    "IHAK": {
+      "close_usd": 69.01,
+      "screen": "watch",
+      "liquid": true,
+      "score": -1.679
+    },
+    "XME": {
+      "close_usd": 98.58,
+      "screen": "watch",
+      "liquid": true,
+      "score": -1.708
+    },
+    "SCHG": {
+      "close_usd": 34.08,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -1.87
+    },
+    "EWJ": {
+      "close_usd": 91.48,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -2.037
+    },
+    "WCLD": {
+      "close_usd": 41.46,
+      "screen": "watch",
+      "liquid": true,
+      "score": -2.052
+    },
+    "CORN": {
+      "close_usd": 17.16,
+      "screen": "excluded_complex",
+      "liquid": false,
+      "score": -2.104
+    },
+    "KARS": {
+      "close_usd": 25.63,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -2.152
+    },
+    "REMX": {
+      "close_usd": 53.72,
+      "screen": "watch",
+      "liquid": true,
+      "score": -2.218
+    },
+    "VUG": {
+      "close_usd": 84.45,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -2.276
+    },
+    "IUSG": {
+      "close_usd": 181.85,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -2.369
+    },
+    "MLPA": {
+      "close_usd": 51.31,
+      "screen": "watch",
+      "liquid": true,
+      "score": -2.48
+    },
+    "IVW": {
+      "close_usd": 133.07,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -2.523
+    },
+    "DFEV": {
+      "close_usd": 39.17,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -2.645
+    },
+    "SIVR": {
+      "close_usd": 50.64,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -2.69
+    },
+    "GSG": {
+      "close_usd": 33.93,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -2.693
+    },
+    "EEM": {
+      "close_usd": 61.03,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -2.696
+    },
+    "BOUT": {
+      "close_usd": 39.693,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -2.699
+    },
+    "SLV": {
+      "close_usd": 48.14,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -2.707
+    },
+    "DBC": {
+      "close_usd": 30.98,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -2.709
+    },
+    "PDBC": {
+      "close_usd": 18.47,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -2.744
+    },
+    "COMT": {
+      "close_usd": 35.26,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -2.789
+    },
+    "DRIV": {
+      "close_usd": 29.449,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -2.817
+    },
+    "IYE": {
+      "close_usd": 65.5,
+      "screen": "watch",
+      "liquid": true,
+      "score": -2.875
+    },
+    "AVEM": {
+      "close_usd": 85.71,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -2.895
+    },
+    "URA": {
+      "close_usd": 34.34,
+      "screen": "watch",
+      "liquid": true,
+      "score": -2.915
+    },
+    "USO": {
+      "close_usd": 142.66,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -2.925
+    },
+    "ARKF": {
+      "close_usd": 42.73,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.017
+    },
+    "DBA": {
+      "close_usd": 26.1,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -3.057
+    },
+    "XLE": {
+      "close_usd": 61.94,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.119
+    },
+    "QQQ": {
+      "close_usd": 679.35,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -3.201
+    },
+    "SOYB": {
+      "close_usd": 25.22,
+      "screen": "excluded_complex",
+      "liquid": false,
+      "score": -3.219
+    },
+    "QQQM": {
+      "close_usd": 279.52,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -3.269
+    },
+    "ROBT": {
+      "close_usd": 54.76,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -3.312
+    },
+    "ARKQ": {
+      "close_usd": 110.53,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.407
+    },
+    "SEA": {
+      "close_usd": 19.87,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -3.434
+    },
+    "BUG": {
+      "close_usd": 45.56,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.438
+    },
+    "FENY": {
+      "close_usd": 33.91,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.441
+    },
+    "IGV": {
+      "close_usd": 101.46,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.442
+    },
+    "IWP": {
+      "close_usd": 129.13,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -3.443
+    },
+    "VDE": {
+      "close_usd": 172.27,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.459
+    },
+    "XTL": {
+      "close_usd": 184.89,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -3.463
+    },
+    "COPX": {
+      "close_usd": 75.25,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.468
+    },
+    "BITB": {
+      "close_usd": 40.57,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -3.594
+    },
+    "IBIT": {
+      "close_usd": 42.32,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -3.594
+    },
+    "FBTC": {
+      "close_usd": 65.02,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -3.607
+    },
+    "ARKB": {
+      "close_usd": 24.78,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -3.629
+    },
+    "IWF": {
+      "close_usd": 115.01,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -3.693
+    },
+    "LIT": {
+      "close_usd": 61.35,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.697
+    },
+    "VONG": {
+      "close_usd": 118.35,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -3.734
+    },
+    "BOTZ": {
+      "close_usd": 31.88,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.774
+    },
+    "BITO": {
+      "close_usd": 9.95,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -3.817
+    },
+    "ROBO": {
+      "close_usd": 73.2,
+      "screen": "watch",
+      "liquid": true,
+      "score": -3.943
+    },
+    "OIH": {
+      "close_usd": 360.58,
+      "screen": "watch",
+      "liquid": true,
+      "score": -4.143
+    },
+    "EIDO": {
+      "close_usd": 10.31,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -4.145
+    },
+    "ARKK": {
+      "close_usd": 78.98,
+      "screen": "watch",
+      "liquid": true,
+      "score": -4.267
+    },
+    "AIQ": {
+      "close_usd": 58.77,
+      "screen": "watch",
+      "liquid": true,
+      "score": -4.402
+    },
+    "BATT": {
+      "close_usd": 12.82,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -4.461
+    },
+    "GRID": {
+      "close_usd": 160.93,
+      "screen": "watch",
+      "liquid": true,
+      "score": -4.467
+    },
+    "IEZ": {
+      "close_usd": 24.92,
+      "screen": "watch",
+      "liquid": true,
+      "score": -4.592
+    },
+    "HACK": {
+      "close_usd": 115.87,
+      "screen": "watch",
+      "liquid": true,
+      "score": -4.754
+    },
+    "WEAT": {
+      "close_usd": 21.65,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -4.84
+    },
+    "FTEC": {
+      "close_usd": 267.23,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.063
+    },
+    "VGT": {
+      "close_usd": 111.98,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.077
+    },
+    "IYW": {
+      "close_usd": 234.02,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.15
+    },
+    "BLOK": {
+      "close_usd": 50.85,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.231
+    },
+    "QTUM": {
+      "close_usd": 130.72,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.346
+    },
+    "BNO": {
+      "close_usd": 58.93,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -5.485
+    },
+    "ARKW": {
+      "close_usd": 143.43,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.548
+    },
+    "IGM": {
+      "close_usd": 147.64,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.589
+    },
+    "PXE": {
+      "close_usd": 38.67,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -5.76
+    },
+    "XOP": {
+      "close_usd": 174.15,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.881
+    },
+    "XSD": {
+      "close_usd": 444.71,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.91
+    },
+    "XLK": {
+      "close_usd": 170.88,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.931
+    },
+    "CIBR": {
+      "close_usd": 94.68,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.943
+    },
+    "SKYY": {
+      "close_usd": 150.71,
+      "screen": "watch",
+      "liquid": true,
+      "score": -5.996
+    },
+    "IXN": {
+      "close_usd": 128.43,
+      "screen": "watch",
+      "liquid": true,
+      "score": -6.178
+    },
+    "CLOU": {
+      "close_usd": 26.15,
+      "screen": "watch",
+      "liquid": true,
+      "score": -6.23
+    },
+    "THNQ": {
+      "close_usd": 82.88,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -6.535
+    },
+    "QTEC": {
+      "close_usd": 280.03,
+      "screen": "watch",
+      "liquid": true,
+      "score": -6.666
+    },
+    "XES": {
+      "close_usd": 97.93,
+      "screen": "watch",
+      "liquid": true,
+      "score": -6.694
+    },
+    "XNTK": {
+      "close_usd": 321.98,
+      "screen": "watch",
+      "liquid": true,
+      "score": -6.718
+    },
+    "BOAT": {
+      "close_usd": 47.02,
+      "screen": "watch",
+      "liquid": true,
+      "score": -6.896
+    },
+    "FETH": {
+      "close_usd": 21.17,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -6.998
+    },
+    "ETHA": {
+      "close_usd": 48.06,
+      "screen": "excluded_complex",
+      "liquid": true,
+      "score": -7.004
+    },
+    "IETC": {
+      "close_usd": 97.43,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -7.221
+    },
+    "MTUM": {
+      "close_usd": 66.87,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -7.379
+    },
+    "DAPP": {
+      "close_usd": 14.15,
+      "screen": "watch",
+      "liquid": true,
+      "score": -7.399
+    },
+    "PXI": {
+      "close_usd": 57.16,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -7.468
+    },
+    "EWT": {
+      "close_usd": 95.65,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -7.993
+    },
+    "HYDR": {
+      "close_usd": 34.35,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -8.226
+    },
+    "SMHX": {
+      "close_usd": 49.673,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -8.243
+    },
+    "SMH": {
+      "close_usd": 487.41,
+      "screen": "watch",
+      "liquid": true,
+      "score": -9.178
+    },
+    "SOXQ": {
+      "close_usd": 79.01,
+      "screen": "watch",
+      "liquid": true,
+      "score": -9.261
+    },
+    "FTXL": {
+      "close_usd": 198.18,
+      "screen": "watch",
+      "liquid": true,
+      "score": -9.309
+    },
+    "SOXX": {
+      "close_usd": 146.76,
+      "screen": "watch",
+      "liquid": true,
+      "score": -9.869
+    },
+    "BITQ": {
+      "close_usd": 18.67,
+      "screen": "excluded_illiquid",
+      "liquid": false,
+      "score": -10.113
+    },
+    "EWY": {
+      "close_usd": 142.1,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -10.135
+    },
+    "CHAT": {
+      "close_usd": 71.32,
+      "screen": "watch",
+      "liquid": true,
+      "score": -10.166
+    },
+    "EWZ": {
+      "close_usd": 32.61,
+      "screen": "watch_non_sector",
+      "liquid": true,
+      "score": -10.47
+    },
+    "PSI": {
+      "close_usd": 112.87,
+      "screen": "watch",
+      "liquid": true,
+      "score": -10.809
+    },
+    "WTAI": {
+      "close_usd": 33.53,
+      "screen": "watch",
+      "liquid": true,
+      "score": -11.658
+    }
+  },
+  "new_technical_entries": [
+    {
+      "ticker": "IAI",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 181.83,
+      "initial_score": 5.946,
+      "previous_screen": "watch"
+    },
+    {
+      "ticker": "IFRA",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 57.62,
+      "initial_score": 4.684,
+      "previous_screen": "watch"
+    },
+    {
+      "ticker": "ITA",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 71.67,
+      "initial_score": 6.731,
+      "previous_screen": "watch"
+    },
+    {
+      "ticker": "IYJ",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 160.16,
+      "initial_score": 5.503,
+      "previous_screen": "watch"
+    },
+    {
+      "ticker": "IYM",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 185.15,
+      "initial_score": 6.172,
+      "previous_screen": "watch"
+    },
+    {
+      "ticker": "IYT",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 83.71,
+      "initial_score": 7.11,
+      "previous_screen": "watch"
+    },
+    {
+      "ticker": "PPA",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 159.31,
+      "initial_score": 5.744,
+      "previous_screen": "watch"
+    },
+    {
+      "ticker": "XBI",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 156.9,
+      "initial_score": 6.637,
+      "previous_screen": "watch"
+    },
+    {
+      "ticker": "XPH",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 67.37,
+      "initial_score": 8.539,
+      "previous_screen": "watch"
+    },
+    {
+      "ticker": "XSW",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 207.18,
+      "initial_score": 5.202,
+      "previous_screen": "watch"
+    },
+    {
+      "ticker": "XTN",
+      "entry_signal_date": "2026-11-09",
+      "first_published_close_usd": 103.28,
+      "initial_score": 7.036,
+      "previous_screen": "watch"
+    }
+  ],
+  "exclusion_note": "Technical candidate status is not analyst advice or a trade order."
+}
