@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T15:11:49Z",
+  "checked_at_utc": "2026-11-10T15:54:25Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "Nov 10 US cash open after already-reported hotter CPI: Reuters opening Nasdaq -0.81%, S&P 500 -0.49%, Dow -0.43%; AP 09:35 ET snapshot Nasdaq -0.8%, S&P -0.6%, 10y Treasury 4.97% versus 4.88% prior, Brent $89.67 (-3.1%). Confirms equity/rate transmission but not a newly verified systemic escalation or immediate allocation-changing emergency beyond prior CPI alert. No new alert. Existing Nov 6 critical remains historical/provisional, not freshly scored.",
+  "change_since_previous": "No newly verified urgent event or major deterioration versus 15:11 UTC check. AP Nov 10 later intraday snapshot S&P -0.2%, Dow -0.4%, Nasdaq -0.1%, 10y yield 4.98% vs 4.88% previous close; Nvidia -3.1% but AMD +5.5%, CoreWeave +3.6%. Reuters gold -2.1% to $4051.50 and December 50bp hike probability ~13.6% after CPI. Existing CPI/rate shock, not independent new alert; mixed semiconductor performance argues against broad new contagion. Prior critical is historical/provisional, not independently recalculated.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -892,6 +892,24 @@
       "change_pct": -3.1,
       "observed_at_utc": null,
       "note": "AP Nov 10 early US trading snapshot, exact quote time unverified"
+    },
+    "us_equities_ap_nov10_later": {
+      "sp500_change_pct": -0.2,
+      "dow_change_pct": -0.4,
+      "nasdaq_change_pct": -0.1,
+      "us_10y_yield_pct": 4.98,
+      "nvidia_change_pct": -3.1,
+      "amd_change_pct": 5.5,
+      "coreweave_change_pct": 3.6,
+      "observed_at_utc": null,
+      "note": "AP Nov 10 evolving intraday report; exact quote timestamp unverified, not live"
+    },
+    "gold_reuters_nov10_post_cpi": {
+      "value": 4051.5,
+      "unit": "USD/troy_ounce",
+      "change_pct": -2.1,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 10 intraday article; precise quote time not verified"
     }
   },
   "sources": [
@@ -1031,6 +1049,7 @@
     "2026-11-10T11:35:45Z: Latest independently verified Reuters oil snapshot is 09:30 UTC; FT quote timing uncertain. No synchronized US real yields, IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, SOXX or ETF spreads; CPI release unverified. Historical event/daily full audit unavailable. Critical is prior-event provisional classification.",
     "2026-11-10T12:36:57Z: US cash market not open, CPI due 13:30 UTC and result unavailable. Reuters oil quote 22 minutes delayed; no synchronized verified real yields, broad IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW or ETF bid-ask. Critical remains historical/provisional; full historical directories not audited.",
     "2026-11-10T13:56:07Z: CPI confirmed; US cash session not open, futures/yield reactions asynchronous. No synchronized verified VIX, broad IG/HY spreads, real yields, breadth, natural gas, copper, USD/KRW, SOXX/ETF bid-ask. Existing critical historical/provisional; full analysis/events and analysis/daily directory audit unavailable.",
-    "2026-11-10T15:11:49Z: US opening Reuters/AP snapshots are delayed and asynchronous, exact quote times unverified; no synchronized latest SOXX, VIX, breadth, IG/HY credit spreads, real yields, natural gas, copper, USD/KRW or ETF bid-ask. Critical classification carried historically; full event/daily directory audit unavailable."
+    "2026-11-10T15:11:49Z: US opening Reuters/AP snapshots are delayed and asynchronous, exact quote times unverified; no synchronized latest SOXX, VIX, breadth, IG/HY credit spreads, real yields, natural gas, copper, USD/KRW or ETF bid-ask. Critical classification carried historically; full event/daily directory audit unavailable.",
+    "2026-11-10T15:54:25Z: AP/Reuters article quotes asynchronous, exact observation times unverified; no synchronized current SOXX, broad IG/HY credit spreads, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid/ask. VIX 20.18 from 06:02 ET is stale and not used as current. Full historical event/daily directory audit unavailable. Existing critical historical/provisional."
   ]
 }
