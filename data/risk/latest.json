@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T07:43:26Z",
+  "checked_at_utc": "2026-11-10T09:07:31Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "No independently verified new systemic emergency or material deterioration versus 06:25 UTC. Reuters/AP Nov 10 Asia rebound and falling oil remain previously documented; no new alert. Historical critical remains provisional and not independently rescored.",
+  "change_since_previous": "No independently verified new systemic emergency or material worsening since 07:43 UTC. Brent/WTI continued to decline on already-reported Iran de-escalation; November 9 US rebound and November 10 Asia rebound already covered. No new alert. Historical critical rating retained provisionally, not rescored.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -760,6 +760,27 @@
       "change_pct": -0.9,
       "observed_at_utc": null,
       "note": "Reuters Nov 10 article snapshot; precise quote timestamp unknown, previously reported"
+    },
+    "brent_nov10_later_reuters": {
+      "value": 90.99,
+      "unit": "USD/barrel",
+      "change_pct": -1.7,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 10 evolving report, exact quote time unknown, not synchronized/live"
+    },
+    "wti_nov10_later_reuters": {
+      "value": 85.2,
+      "unit": "USD/barrel",
+      "change_pct": -1.8,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 10 report, exact quote time unknown"
+    },
+    "gold_nov10_reuters": {
+      "value": 4124.42,
+      "unit": "USD/troy_ounce",
+      "change_pct": -0.4,
+      "observed_at_utc": "2026-11-10T06:18:00Z",
+      "note": "Reuters spot gold snapshot 06:18 GMT, ~3 hours before check"
     }
   },
   "sources": [
@@ -852,7 +873,8 @@
     "https://apnews.com/article/ffe205fbc4fddf65c3e8e64e740355b7",
     "https://www.ft.com/content/efe9653b-6802-485e-8eae-97fa2e6df770",
     "https://www.reuters.com/world/middle-east/saudi-led-coalition-says-it-intercepts-two-houthi-missiles-fired-towards-riyadh-2026-11-10/",
-    "https://www.reuters.com/commentary/reuters-open-interest/chinas-crude-oil-imports-recover-fuel-exports-not-so-much-2026-11-10/"
+    "https://www.reuters.com/commentary/reuters-open-interest/chinas-crude-oil-imports-recover-fuel-exports-not-so-much-2026-11-10/",
+    "https://www.reuters.com/world/india/gold-edges-lower-focus-shifts-us-inflation-data-2026-11-10/"
   ],
   "data_limitations": [
     "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
@@ -880,6 +902,7 @@
     "2026-11-10T05:18:57Z: fresh Reuters/AP/FT articles checked, but exact market quote timestamps unavailable and observations asynchronous. US regular cash session not yet open; no synchronized latest real yields, IG/HY credit spreads, VIX, market breadth, natural gas, copper, gold, USD/KRW or ETF bid-ask. Prior critical remains historical/provisional. GitHub analysis/events and analysis/daily directory fetch failed; no complete duplicate audit.",
     "2026-11-10T05:45:23Z: Reuters/AP reports checked but quote timestamps are not synchronized; US cash market closed. No independently verified contemporaneous real yields, broad HY/IG spreads, VIX, breadth, natural gas, copper, USD/KRW, ETF bid/ask or fresh SOXX price. CPI result not confirmed. Prior critical is historical/provisional, not newly calculated; full analysis directories audit unavailable.",
     "2026-11-10T06:25:38Z: Reuters Nov 10 oil/Asia values are asynchronous delayed reports, not fresh live quotes; new Saudi interception report lacks independently verified new systemic price/credit transmission. US cash market closed; no synchronized real yields, IG/HY spreads, VIX, breadth, gas/copper, USD/KRW or ETF bid/ask. CPI release not verified. Historical critical provisional; full analysis/events and analysis/daily directory audit unavailable.",
-    "2026-11-10T07:43:26Z: Reuters/AP Nov 10 news reviewed; market quote times asynchronous/unknown. US cash session not yet open. Current synchronized real yields, broad IG/HY credit spreads, VIX, breadth, natural gas, gold, copper, USD/KRW and ETF bid/ask unverified. CPI result not verified. Critical rating is carried historical, not independently recalculated; full historical analysis directory audit unavailable."
+    "2026-11-10T07:43:26Z: Reuters/AP Nov 10 news reviewed; market quote times asynchronous/unknown. US cash session not yet open. Current synchronized real yields, broad IG/HY credit spreads, VIX, breadth, natural gas, gold, copper, USD/KRW and ETF bid/ask unverified. CPI result not verified. Critical rating is carried historical, not independently recalculated; full historical analysis directory audit unavailable.",
+    "2026-11-10T09:07:31Z: Reuters oil prices and gold are delayed asynchronous snapshots; latest CPI result not verified. US cash session not open. Current synchronized IG/HY credit spreads, real yields, VIX, breadth, natural gas, copper, USD/KRW, SOXX and ETF bid-ask not independently verified. Existing critical historical/provisional; event/daily directory audit incomplete."
   ]
 }
