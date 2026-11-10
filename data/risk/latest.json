@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T19:18:34Z",
+  "checked_at_utc": "2026-11-10T19:46:07Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "No independently verified NEW urgent event or material escalation beyond previously reported November 10 CPI/rates/semiconductor selloff. AP later session snapshot S&P -0.9%, Nasdaq -1.4%, Dow -0.6%, Nvidia -6.3%, US 10y 5.01% vs 4.88% prior close; Reuters 12:03 ET snapshot Nasdaq -1.27%, S&P -0.85%, 9/11 sectors down. SOXX Yahoo 13:07 ET $144.60 (-1.47%), later historical table $144.45 not adopted as contemporaneous. Critical level remains carried from Nov 6 and NOT independently re-scored. No new alert.",
+  "change_since_previous": "No independently confirmed new urgent event or material escalation since 19:18 UTC check. Reuters Nov 10 12:03 ET and AP afternoon market snapshots show CPI-related yield rise and technology weakness already reported. MarketWatch later 2y 4.737%, 10y 5.001% (+~18bp/+13bp), consistent with existing CPI shock; exact quote timestamps uncertain. Prior critical classification carried provisionally from Nov 6, not independently re-scored. No new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -963,6 +963,12 @@
       "change_pct": -1.47,
       "observed_at_utc": "2026-11-10T18:07:41Z",
       "note": "Yahoo quote labeled 1:07:41 PM EST; delayed at check time; not live."
+    },
+    "us_treasury_nov10_marketwatch_later": {
+      "two_year_yield_pct": 4.737,
+      "ten_year_yield_pct": 5.001,
+      "observed_at_utc": null,
+      "note": "MarketWatch Nov 10 intraday report; quote timestamp unverified, not synchronous with stock prices. Previously reported CPI-driven rise."
     }
   },
   "sources": [
@@ -1108,6 +1114,7 @@
     "2026-11-10T15:54:25Z: AP/Reuters article quotes asynchronous, exact observation times unverified; no synchronized current SOXX, broad IG/HY credit spreads, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid/ask. VIX 20.18 from 06:02 ET is stale and not used as current. Full historical event/daily directory audit unavailable. Existing critical historical/provisional.",
     "2026-11-10T17:07:28Z: new AP 10:45 ET snapshot predates prior later intraday snapshot; Barron's 4.996% 10y has unknown quote time. No independently synchronized current SOXX, VIX, breadth, broad IG/HY credit spreads, real yields, natural gas, copper, USD/KRW, ETF bid-ask. Existing critical historical/provisional; full historical event/daily directory audit incomplete.",
     "This check lacks synchronized validated SOXX quotes, broad credit spreads, market breadth beyond sector count, real yields, FX, natural gas and copper. Historical analysis directory comparison incomplete; directory fetch failed. AP/Reuters reported delayed snapshots. Historical critical level is carried, not a fresh risk score.",
-    "2026-11-10T19:18:34Z: AP later session summary exact quote times unverified; Yahoo SOXX 13:07 ET quote stale ~70 min. No synchronized current IG/HY credit spreads, real yields, VIX, broad breadth, natural gas, copper, USD/KRW or ETF bid-ask; historical analysis directories not fully audited. Critical classification historical/provisional."
+    "2026-11-10T19:18:34Z: AP later session summary exact quote times unverified; Yahoo SOXX 13:07 ET quote stale ~70 min. No synchronized current IG/HY credit spreads, real yields, VIX, broad breadth, natural gas, copper, USD/KRW or ETF bid-ask; historical analysis directories not fully audited. Critical classification historical/provisional.",
+    "2026-11-10T19:46:07Z: current synchronized SOXX, VIX, market breadth, IG/HY credit spreads, real yields, natural gas, copper, USD/KRW and ETF bid/ask unavailable; Reuters/AP/MarketWatch snapshots delayed and nonsynchronous. Historical event/daily full audit unavailable; critical level carried provisionally."
   ]
 }
