@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T03:19:24Z",
+  "checked_at_utc": "2026-11-10T03:33:12Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "No newly verified urgent event or material worsening. Reuters Nov 10 reports KOSPI >5%, Nikkei ~3%, Brent ~$91.56 and WTI ~$86.07 as oil risk premium recedes; these extend previously documented recovery/de-escalation, not a new systemic shock. December Fed hike probability ~84-85% remains near prior checks. No new alert; prior critical retained provisionally, not independently rescored.",
+  "change_since_previous": "No newly verified urgent market shock or material deterioration since 03:19 UTC check. Reuters Nov 10 Asian equity rally and falling Brent were already documented. New China October trade data (exports +35.2% y/y, imports +41.6%, 10-month surplus $1.04tn) show export strength but do not establish an immediate US ETF systemic shock. Existing critical alert retained provisionally, not independently rescored; no new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -707,6 +707,18 @@
       "unit": "percent",
       "observed_at_utc": null,
       "note": "Reuters Nov 10 market pricing, near previous 85%; not official Fed projection"
+    },
+    "china_october_exports_reuters_nov10": {
+      "value": 35.2,
+      "unit": "percent_yoy",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 10 release/report; October monthly data, exact publication/observation time not verified; not an hourly change"
+    },
+    "china_october_imports_reuters_nov10": {
+      "value": 41.6,
+      "unit": "percent_yoy",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 10, October monthly trade data"
     }
   },
   "sources": [
@@ -794,7 +806,8 @@
     "https://www.wsj.com/finance/stocks/nikkei-rises-2-8-led-by-bank-machinery-stocks-c0a653b1",
     "https://www.reuters.com/business/energy/oil-falls-trump-downplays-prospect-escalation-with-iran-2026-11-10/",
     "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-10/",
-    "https://www.reuters.com/world/asia-pacific/dollar-sellers-hit-pause-us-inflation-data-2026-11-10/"
+    "https://www.reuters.com/world/asia-pacific/dollar-sellers-hit-pause-us-inflation-data-2026-11-10/",
+    "https://www.reuters.com/world/asia-pacific/chinas-trade-surplus-soars-past-1-trillion-october-exports-jump-352-yy-2026-11-10/"
   ],
   "data_limitations": [
     "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
@@ -817,6 +830,7 @@
     "2026-11-09T23:25:55Z: 11/9 US close is historical, not live; latest synchronized real yields, IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, ETF bid/ask and Nov 10 Asia prices not independently verified. Prior critical carried over provisionally. No full historical event/daily audit.",
     "Nov 10 00:40 UTC check: synchronized latest real yields, HY/IG credit spreads, VIX, breadth, natural gas, copper, USD/KRW, ETF quotes and current oil settlements not independently verified; Japan equity figure is early-session report; historical analysis directories could not be enumerated.",
     "2026-11-10T02:04:07Z: no synchronized independently verified current real yields, broad IG/HY spreads, VIX, market breadth, natural gas, copper, gold, USD/KRW, ETF bid/ask or updated SOXX quotes. Nov 10 Reuters oil figures are delayed with unspecified quote times. Prior critical carried provisionally; historical analysis directories not fully audited.",
-    "2026-11-10T03:19:24Z: Reuters Nov 10 intraday Asian equity/oil/FX snapshots lack verified exact quote timestamps and are asynchronous. No synchronized current US real yields, IG/HY credit spreads, VIX, breadth, natural gas, copper, USD/KRW or ETF bid/ask; October CPI not yet verified as released. Prior critical provisional, full historical analysis directory audit unavailable."
+    "2026-11-10T03:19:24Z: Reuters Nov 10 intraday Asian equity/oil/FX snapshots lack verified exact quote timestamps and are asynchronous. No synchronized current US real yields, IG/HY credit spreads, VIX, breadth, natural gas, copper, USD/KRW or ETF bid/ask; October CPI not yet verified as released. Prior critical provisional, full historical analysis directory audit unavailable.",
+    "2026-11-10T03:33:12Z: Nov 10 Reuters news is delayed with unspecified precise quote times. No synchronized verified latest real yields, broad IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW or ETF bid-ask; US cash market closed. Existing critical rating carried, not independently recalculated. Full historical event/daily directory audit not completed."
   ]
 }
