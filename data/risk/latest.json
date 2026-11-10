@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T23:07:44Z",
+  "checked_at_utc": "2026-11-10T23:50:15Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "No new independently verified urgent event or material escalation since 2026-11-10T21:51:27Z. Reuters, AP and WSJ confirm Nov 10 US closing weakness after already reported hot CPI: S&P 500 -0.38% (7520.93), Nasdaq -0.74% (25065.87), Dow -0.30% (52231.89). This is not a fresh CPI event; weekly index gains and smaller close losses than intraday lows counter escalation. Existing critical rating is historical/provisional, not recalculated. No new alert.",
+  "change_since_previous": "No new verified urgent event or material deterioration since 2026-11-10T23:07:44Z. Reuters Nov 10 final cross-asset report confirms already-covered CPI shock: 2Y Treasury 4.731% (+18.44bp), 10Y 4.988% (+12.55bp), S&P 500 -0.38%, Nasdaq -0.74%, Dow -0.30%, Brent $91.49, WTI $86.04, gold $4030.56 (-2.62%). No new alert; inherited critical rating remains provisional and not independently reassessed.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1011,6 +1011,18 @@
       "unit": "percent",
       "observed_at_utc": null,
       "note": "WSJ November 10 market recap; precise observation time unverified; not synchronized with equities"
+    },
+    "us_nov10_final_cross_asset_reuters": {
+      "observed_at_utc": "2026-11-10T21:00:00Z",
+      "note": "Nov 10 US closing session Reuters report; rates/commodities not necessarily synchronized to equity close",
+      "us_2y_yield_pct": 4.731,
+      "us_10y_yield_pct": 4.988,
+      "sp500_change_pct": -0.38,
+      "nasdaq_change_pct": -0.74,
+      "dow_change_pct": -0.3,
+      "brent_usd_per_barrel": 91.49,
+      "wti_usd_per_barrel": 86.04,
+      "gold_usd_per_oz": 4030.56
     }
   },
   "sources": [
@@ -1138,6 +1150,7 @@
     "2026-11-10T19:46:07Z: current synchronized SOXX, VIX, market breadth, IG/HY credit spreads, real yields, natural gas, copper, USD/KRW and ETF bid/ask unavailable; Reuters/AP/MarketWatch snapshots delayed and nonsynchronous. Historical event/daily full audit unavailable; critical level carried provisionally.",
     "2026-11-10T20:49:25Z: Yahoo daily SOXX row may be preliminary and conflicts with page intraday quote. No synchronized verified current VIX, broad IG/HY spreads, real yields, market breadth, gas, copper, USD/KRW, ETF bid/ask; Reuters/AP delayed reports. Historical analysis/events and analysis/daily full audit unavailable; critical historical/provisional.",
     "2026-11-10T21:51:27Z: No synchronized verified latest SOXX, VIX, credit spreads, real yields, market breadth, natural gas, copper, USD/KRW, ETF spreads; secondary closing quote uncorroborated. Reuters CPI story is previously covered; no fresh escalation established. Historical risk_level=critical is provisional.",
-    "2026-11-10T23:07:44Z: AP/WSJ confirmed Nov 10 equity close; precise 2y yield timestamp unknown. No synchronized verified current SOXX, VIX, broad IG/HY spreads, real yields, breadth, WTI/Brent settlements, natural gas, copper, USD/KRW, ETF bid-ask. Historical event/daily full directory audit unavailable. Critical carried historically, not freshly scored."
+    "2026-11-10T23:07:44Z: AP/WSJ confirmed Nov 10 equity close; precise 2y yield timestamp unknown. No synchronized verified current SOXX, VIX, broad IG/HY spreads, real yields, breadth, WTI/Brent settlements, natural gas, copper, USD/KRW, ETF bid-ask. Historical event/daily full directory audit unavailable. Critical carried historically, not freshly scored.",
+    "Nov 11 08:50 KST check: latest synchronized SOXX/VIX/credit spreads/real yields/breadth/natural gas/copper/USD-KRW unavailable; last US session close used, no fabricated intraday readings."
   ]
 }
