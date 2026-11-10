@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T13:56:07Z",
+  "checked_at_utc": "2026-11-10T15:11:49Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "New Nov 10 13:30 UTC October CPI: headline +0.4% m/m versus +0.3% consensus; core +0.3% versus +0.2%. Reuters/FT/AP corroborate. 2-year Treasury yield reportedly 4.71% and US equity futures fell after release (FT); 25bp December hike already largely priced, 50bp possibility not yet proven systemic. No independently verified broad credit/volatility contagion or new immediate allocation-changing emergency. Existing Nov 6 critical event remains historical/provisional, not newly scored. No new emergency alert.",
+  "change_since_previous": "Nov 10 US cash open after already-reported hotter CPI: Reuters opening Nasdaq -0.81%, S&P 500 -0.49%, Dow -0.43%; AP 09:35 ET snapshot Nasdaq -0.8%, S&P -0.6%, 10y Treasury 4.97% versus 4.88% prior, Brent $89.67 (-3.1%). Confirms equity/rate transmission but not a newly verified systemic escalation or immediate allocation-changing emergency beyond prior CPI alert. No new alert. Existing Nov 6 critical remains historical/provisional, not freshly scored.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -871,6 +871,27 @@
       "unit": "percent",
       "observed_at_utc": null,
       "note": "FT Nov 10 post-CPI report; exact quote timestamp unverified, delayed/asynchronous"
+    },
+    "us_nov10_cash_open_reuters": {
+      "nasdaq_change_pct": -0.81,
+      "sp500_change_pct": -0.49,
+      "dow_change_pct": -0.43,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 10 opening report; precise quote time not established; delayed, not live"
+    },
+    "us_10y_nov10_ap_open": {
+      "value": 4.97,
+      "unit": "percent",
+      "previous_reported": 4.88,
+      "observed_at_utc": null,
+      "note": "AP Nov 10 approximately 09:35 ET market report; not synchronized live quote"
+    },
+    "brent_nov10_ap": {
+      "value": 89.67,
+      "unit": "USD/barrel",
+      "change_pct": -3.1,
+      "observed_at_utc": null,
+      "note": "AP Nov 10 early US trading snapshot, exact quote time unverified"
     }
   },
   "sources": [
@@ -974,7 +995,8 @@
     "https://www.reuters.com/business/feds-waller-plans-support-least-quarter-point-rate-hike-december-2026-11-10/",
     "https://www.reuters.com/world/us/us-consumer-prices-rise-above-expectations-october-2026-11-10/",
     "https://www.ft.com/content/8b564134-dea6-4272-8ede-e0b12ef5aebd",
-    "https://apnews.com/article/fcd3c7766d3cdb36057f6dab19ff3a8e"
+    "https://apnews.com/article/fcd3c7766d3cdb36057f6dab19ff3a8e",
+    "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-rally-nvidia-scandal-shares-inflation-data-cpi/card/dow-falls-more-than-200-points-nasdaq-and-s-p-500-plunge-after-hot-inflation-data-treasury-yields-sharply-higher-WyOY5kInsXRIGwNFJzSy"
   ],
   "data_limitations": [
     "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
@@ -1008,6 +1030,7 @@
     "2026-11-10T10:43:54Z: article market quotes delayed/asynchronous with unknown precise quote timestamps; no independently synchronized current real yields, broad IG/HY credit spreads, VIX, market breadth, natural gas, copper, USD/KRW, ETF bid/ask or SOXX. CPI outcome not confirmed. Historical event/daily directory audit incomplete; critical rating provisional.",
     "2026-11-10T11:35:45Z: Latest independently verified Reuters oil snapshot is 09:30 UTC; FT quote timing uncertain. No synchronized US real yields, IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, SOXX or ETF spreads; CPI release unverified. Historical event/daily full audit unavailable. Critical is prior-event provisional classification.",
     "2026-11-10T12:36:57Z: US cash market not open, CPI due 13:30 UTC and result unavailable. Reuters oil quote 22 minutes delayed; no synchronized verified real yields, broad IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW or ETF bid-ask. Critical remains historical/provisional; full historical directories not audited.",
-    "2026-11-10T13:56:07Z: CPI confirmed; US cash session not open, futures/yield reactions asynchronous. No synchronized verified VIX, broad IG/HY spreads, real yields, breadth, natural gas, copper, USD/KRW, SOXX/ETF bid-ask. Existing critical historical/provisional; full analysis/events and analysis/daily directory audit unavailable."
+    "2026-11-10T13:56:07Z: CPI confirmed; US cash session not open, futures/yield reactions asynchronous. No synchronized verified VIX, broad IG/HY spreads, real yields, breadth, natural gas, copper, USD/KRW, SOXX/ETF bid-ask. Existing critical historical/provisional; full analysis/events and analysis/daily directory audit unavailable.",
+    "2026-11-10T15:11:49Z: US opening Reuters/AP snapshots are delayed and asynchronous, exact quote times unverified; no synchronized latest SOXX, VIX, breadth, IG/HY credit spreads, real yields, natural gas, copper, USD/KRW or ETF bid-ask. Critical classification carried historically; full event/daily directory audit unavailable."
   ]
 }
