@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T11:35:45Z",
+  "checked_at_utc": "2026-11-10T12:36:57Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "No independently verified new emergency or material worsening since 10:43:54 UTC. Reuters/FT report Brent below $90 as Iran de-escalation narrative continues; Waller conditional 50bp comment already reviewed. Existing Nov 6 critical event retained as historical/provisional, not independently recalculated. No new alert.",
+  "change_since_previous": "No verified new systemic emergency or material worsening versus 11:35:45 UTC. Reuters 12:14 UTC oil snapshot Brent $90.40 (-2.34%), WTI $85.10 (-2%); prior Iran de-escalation trend. New SoftBank quarterly $7bn loss and $3.7bn data-center equipment charge noted as issuer-specific AI financing concern, without verified broad credit/market contagion. Prior critical alert retained provisionally, not independently recalculated; no new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -837,6 +837,26 @@
       "change_pct": -2.43,
       "observed_at_utc": "2026-11-10T09:30:00Z",
       "note": "Reuters snapshot, delayed"
+    },
+    "brent_nov10_1214_reuters": {
+      "value": 90.4,
+      "unit": "USD/barrel",
+      "change_pct": -2.34,
+      "observed_at_utc": "2026-11-10T12:14:00Z",
+      "note": "Reuters reported by 12:14 GMT; delayed, not live"
+    },
+    "wti_nov10_1214_reuters": {
+      "value": 85.1,
+      "unit": "USD/barrel",
+      "change_pct": -2,
+      "observed_at_utc": "2026-11-10T12:14:00Z",
+      "note": "Reuters delayed report"
+    },
+    "softbank_q2_net_loss_reuters_nov10": {
+      "value": 7,
+      "unit": "USD billion loss",
+      "observed_at_utc": null,
+      "note": "Quarterly result, not market-wide credit indicator; $3.7bn data center equipment charge"
     }
   },
   "sources": [
@@ -935,7 +955,9 @@
     "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-rally-nvidia-scandal-shares-inflation-data-cpi/card/treasury-yields-jump-gold-slips-after-hawkish-fed-comments-Kzf3R64jX93ymFvEYXzw",
     "https://www.reuters.com/business/sp-500-dow-futures-climb-oil-slide-lifts-sentiment-2026-11-10/",
     "https://www.ft.com/content/07bdb58c-4557-4def-b8cb-db9be304fd72",
-    "https://www.wsj.com/finance/stocks/global-stocks-strengthen-as-oil-dips-below-90-a-barrel-557620e0"
+    "https://www.wsj.com/finance/stocks/global-stocks-strengthen-as-oil-dips-below-90-a-barrel-557620e0",
+    "https://www.reuters.com/world/asia-pacific/softbank-swings-7-billion-net-loss-second-quarter-2026-11-10/",
+    "https://www.reuters.com/business/feds-waller-plans-support-least-quarter-point-rate-hike-december-2026-11-10/"
   ],
   "data_limitations": [
     "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
@@ -967,6 +989,7 @@
     "2026-11-10T09:07:31Z: Reuters oil prices and gold are delayed asynchronous snapshots; latest CPI result not verified. US cash session not open. Current synchronized IG/HY credit spreads, real yields, VIX, breadth, natural gas, copper, USD/KRW, SOXX and ETF bid-ask not independently verified. Existing critical historical/provisional; event/daily directory audit incomplete.",
     "2026-11-10T09:58:00Z: US regular session not open; news quotes asynchronous with unknown precise observation times. No verified CPI outcome, synchronized real yields, broad IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, SOXX or ETF bid/ask. Waller statement conditional; 10y yield 4.612% in MarketWatch conflicts with earlier 4.86% historical reporting and is not adopted without confirmation. Historical analysis directories not fully audited; critical carried provisionally.",
     "2026-11-10T10:43:54Z: article market quotes delayed/asynchronous with unknown precise quote timestamps; no independently synchronized current real yields, broad IG/HY credit spreads, VIX, market breadth, natural gas, copper, USD/KRW, ETF bid/ask or SOXX. CPI outcome not confirmed. Historical event/daily directory audit incomplete; critical rating provisional.",
-    "2026-11-10T11:35:45Z: Latest independently verified Reuters oil snapshot is 09:30 UTC; FT quote timing uncertain. No synchronized US real yields, IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, SOXX or ETF spreads; CPI release unverified. Historical event/daily full audit unavailable. Critical is prior-event provisional classification."
+    "2026-11-10T11:35:45Z: Latest independently verified Reuters oil snapshot is 09:30 UTC; FT quote timing uncertain. No synchronized US real yields, IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, SOXX or ETF spreads; CPI release unverified. Historical event/daily full audit unavailable. Critical is prior-event provisional classification.",
+    "2026-11-10T12:36:57Z: US cash market not open, CPI due 13:30 UTC and result unavailable. Reuters oil quote 22 minutes delayed; no synchronized verified real yields, broad IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW or ETF bid-ask. Critical remains historical/provisional; full historical directories not audited."
   ]
 }
