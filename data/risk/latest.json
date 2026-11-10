@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T05:18:57Z",
+  "checked_at_utc": "2026-11-10T05:45:23Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "No independently verified new urgent shock or material worsening since 03:33 UTC. Nov 10 Reuters oil decline and AP Asian equity rebound reconfirm prior de-escalation/risk-on evidence; FT defensive rotation is an ongoing trend, not a newly proven systemic deterioration. Existing critical event carried provisionally from Nov 6, not independently rescored. No new alert.",
+  "change_since_previous": "No newly verified urgent event or material worsening since 05:18 UTC. Reuters Nov 10 Asia rally/oil retreat and Nov 9 US broad rebound repeat previously documented de-escalation. Prior critical alert retained provisionally; no fresh independent risk rescoring or new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -855,6 +855,7 @@
     "2026-11-10T02:04:07Z: no synchronized independently verified current real yields, broad IG/HY spreads, VIX, market breadth, natural gas, copper, gold, USD/KRW, ETF bid/ask or updated SOXX quotes. Nov 10 Reuters oil figures are delayed with unspecified quote times. Prior critical carried provisionally; historical analysis directories not fully audited.",
     "2026-11-10T03:19:24Z: Reuters Nov 10 intraday Asian equity/oil/FX snapshots lack verified exact quote timestamps and are asynchronous. No synchronized current US real yields, IG/HY credit spreads, VIX, breadth, natural gas, copper, USD/KRW or ETF bid/ask; October CPI not yet verified as released. Prior critical provisional, full historical analysis directory audit unavailable.",
     "2026-11-10T03:33:12Z: Nov 10 Reuters news is delayed with unspecified precise quote times. No synchronized verified latest real yields, broad IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW or ETF bid-ask; US cash market closed. Existing critical rating carried, not independently recalculated. Full historical event/daily directory audit not completed.",
-    "2026-11-10T05:18:57Z: fresh Reuters/AP/FT articles checked, but exact market quote timestamps unavailable and observations asynchronous. US regular cash session not yet open; no synchronized latest real yields, IG/HY credit spreads, VIX, market breadth, natural gas, copper, gold, USD/KRW or ETF bid-ask. Prior critical remains historical/provisional. GitHub analysis/events and analysis/daily directory fetch failed; no complete duplicate audit."
+    "2026-11-10T05:18:57Z: fresh Reuters/AP/FT articles checked, but exact market quote timestamps unavailable and observations asynchronous. US regular cash session not yet open; no synchronized latest real yields, IG/HY credit spreads, VIX, market breadth, natural gas, copper, gold, USD/KRW or ETF bid-ask. Prior critical remains historical/provisional. GitHub analysis/events and analysis/daily directory fetch failed; no complete duplicate audit.",
+    "2026-11-10T05:45:23Z: Reuters/AP reports checked but quote timestamps are not synchronized; US cash market closed. No independently verified contemporaneous real yields, broad HY/IG spreads, VIX, breadth, natural gas, copper, USD/KRW, ETF bid/ask or fresh SOXX price. CPI result not confirmed. Prior critical is historical/provisional, not newly calculated; full analysis directories audit unavailable."
   ]
 }
