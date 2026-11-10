@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T10:43:54Z",
+  "checked_at_utc": "2026-11-10T11:35:45Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "No verified new emergency or material deterioration versus 09:58 UTC. Brent briefly below $90 and global equity rebound extend previously reported Iran-deescalation/oil-decline narrative; Waller conditional hawkish comments and CPI anticipation already reported. No fresh CPI outcome verified. Existing critical alert carried provisionally, not independently recalculated; no new alert.",
+  "change_since_previous": "No independently verified new emergency or material worsening since 10:43:54 UTC. Reuters/FT report Brent below $90 as Iran de-escalation narrative continues; Waller conditional 50bp comment already reviewed. Existing Nov 6 critical event retained as historical/provisional, not independently recalculated. No new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -823,6 +823,20 @@
     "us_equity_futures_nov10_reuters": {
       "observed_at_utc": null,
       "note": "Reuters Nov 10: S&P 500 and Dow futures higher, Nasdaq 100 near flat; precise quote time/percent not established"
+    },
+    "brent_nov10_0930gmt_reuters": {
+      "value": 90.18,
+      "unit": "USD/barrel",
+      "change_pct": -2.58,
+      "observed_at_utc": "2026-11-10T09:30:00Z",
+      "note": "Reuters snapshot, >2 hours before check, not live"
+    },
+    "wti_nov10_0930gmt_reuters": {
+      "value": 84.74,
+      "unit": "USD/barrel",
+      "change_pct": -2.43,
+      "observed_at_utc": "2026-11-10T09:30:00Z",
+      "note": "Reuters snapshot, delayed"
     }
   },
   "sources": [
@@ -952,6 +966,7 @@
     "2026-11-10T07:43:26Z: Reuters/AP Nov 10 news reviewed; market quote times asynchronous/unknown. US cash session not yet open. Current synchronized real yields, broad IG/HY credit spreads, VIX, breadth, natural gas, gold, copper, USD/KRW and ETF bid/ask unverified. CPI result not verified. Critical rating is carried historical, not independently recalculated; full historical analysis directory audit unavailable.",
     "2026-11-10T09:07:31Z: Reuters oil prices and gold are delayed asynchronous snapshots; latest CPI result not verified. US cash session not open. Current synchronized IG/HY credit spreads, real yields, VIX, breadth, natural gas, copper, USD/KRW, SOXX and ETF bid-ask not independently verified. Existing critical historical/provisional; event/daily directory audit incomplete.",
     "2026-11-10T09:58:00Z: US regular session not open; news quotes asynchronous with unknown precise observation times. No verified CPI outcome, synchronized real yields, broad IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, SOXX or ETF bid/ask. Waller statement conditional; 10y yield 4.612% in MarketWatch conflicts with earlier 4.86% historical reporting and is not adopted without confirmation. Historical analysis directories not fully audited; critical carried provisionally.",
-    "2026-11-10T10:43:54Z: article market quotes delayed/asynchronous with unknown precise quote timestamps; no independently synchronized current real yields, broad IG/HY credit spreads, VIX, market breadth, natural gas, copper, USD/KRW, ETF bid/ask or SOXX. CPI outcome not confirmed. Historical event/daily directory audit incomplete; critical rating provisional."
+    "2026-11-10T10:43:54Z: article market quotes delayed/asynchronous with unknown precise quote timestamps; no independently synchronized current real yields, broad IG/HY credit spreads, VIX, market breadth, natural gas, copper, USD/KRW, ETF bid/ask or SOXX. CPI outcome not confirmed. Historical event/daily directory audit incomplete; critical rating provisional.",
+    "2026-11-10T11:35:45Z: Latest independently verified Reuters oil snapshot is 09:30 UTC; FT quote timing uncertain. No synchronized US real yields, IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, SOXX or ETF spreads; CPI release unverified. Historical event/daily full audit unavailable. Critical is prior-event provisional classification."
   ]
 }
