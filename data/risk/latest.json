@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-10T15:54:25Z",
+  "checked_at_utc": "2026-11-10T17:07:28Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "No newly verified urgent event or major deterioration versus 15:11 UTC check. AP Nov 10 later intraday snapshot S&P -0.2%, Dow -0.4%, Nasdaq -0.1%, 10y yield 4.98% vs 4.88% previous close; Nvidia -3.1% but AMD +5.5%, CoreWeave +3.6%. Reuters gold -2.1% to $4051.50 and December 50bp hike probability ~13.6% after CPI. Existing CPI/rate shock, not independent new alert; mixed semiconductor performance argues against broad new contagion. Prior critical is historical/provisional, not independently recalculated.",
+  "change_since_previous": "No verified new urgent event or major escalation versus 15:54 UTC. AP Nov 10 10:45 ET snapshot S&P -0.7%, Dow -0.6%, Nasdaq -0.8%, 10y Treasury 4.99% versus 4.88% prior close, Nvidia -5.3%; this is an older snapshot than the previous run's later AP data and cannot establish deterioration. Barron's reports 10y 4.996% near 5%, but quote timestamp unverified. Existing CPI/rate risk already covered. Critical carried historically/provisionally, not independently rescored. No new alert.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -910,6 +910,21 @@
       "change_pct": -2.1,
       "observed_at_utc": null,
       "note": "Reuters Nov 10 intraday article; precise quote time not verified"
+    },
+    "us_equity_ap_nov10_1045et": {
+      "sp500_change_pct": -0.7,
+      "dow_change_pct": -0.6,
+      "nasdaq_change_pct": -0.8,
+      "us_10y_yield_pct": 4.99,
+      "nvidia_change_pct": -5.3,
+      "observed_at_utc": "2026-11-10T15:45:00Z",
+      "note": "AP as-of 10:45 ET; older than last check's later snapshot; not live or proof of worsening"
+    },
+    "us_10y_barrons_nov10": {
+      "value": 4.996,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "Nov 10 Barron's intraday report, quote time unverified; not synchronized"
     }
   },
   "sources": [
@@ -1014,7 +1029,8 @@
     "https://www.reuters.com/world/us/us-consumer-prices-rise-above-expectations-october-2026-11-10/",
     "https://www.ft.com/content/8b564134-dea6-4272-8ede-e0b12ef5aebd",
     "https://apnews.com/article/fcd3c7766d3cdb36057f6dab19ff3a8e",
-    "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-rally-nvidia-scandal-shares-inflation-data-cpi/card/dow-falls-more-than-200-points-nasdaq-and-s-p-500-plunge-after-hot-inflation-data-treasury-yields-sharply-higher-WyOY5kInsXRIGwNFJzSy"
+    "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-rally-nvidia-scandal-shares-inflation-data-cpi/card/dow-falls-more-than-200-points-nasdaq-and-s-p-500-plunge-after-hot-inflation-data-treasury-yields-sharply-higher-WyOY5kInsXRIGwNFJzSy",
+    "https://www.barrons.com/livecoverage/stock-market-news-today-111026/card/the-10-year-treasury-yield-is-above-5-again-WJeaYP4QEuHZlZSWIz8K"
   ],
   "data_limitations": [
     "2026-11-09T06:27:20Z: US cash session not open; latest Asia/gold report values are delayed and quote times unspecified. No synchronized independently verified current real yields, broad IG/HY spreads, gas/copper, USD/KRW, VIX, breadth or ETF bid/ask. Historical event/daily directory audit incomplete. Critical retained provisionally, not independently recalculated.",
@@ -1050,6 +1066,7 @@
     "2026-11-10T12:36:57Z: US cash market not open, CPI due 13:30 UTC and result unavailable. Reuters oil quote 22 minutes delayed; no synchronized verified real yields, broad IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW or ETF bid-ask. Critical remains historical/provisional; full historical directories not audited.",
     "2026-11-10T13:56:07Z: CPI confirmed; US cash session not open, futures/yield reactions asynchronous. No synchronized verified VIX, broad IG/HY spreads, real yields, breadth, natural gas, copper, USD/KRW, SOXX/ETF bid-ask. Existing critical historical/provisional; full analysis/events and analysis/daily directory audit unavailable.",
     "2026-11-10T15:11:49Z: US opening Reuters/AP snapshots are delayed and asynchronous, exact quote times unverified; no synchronized latest SOXX, VIX, breadth, IG/HY credit spreads, real yields, natural gas, copper, USD/KRW or ETF bid-ask. Critical classification carried historically; full event/daily directory audit unavailable.",
-    "2026-11-10T15:54:25Z: AP/Reuters article quotes asynchronous, exact observation times unverified; no synchronized current SOXX, broad IG/HY credit spreads, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid/ask. VIX 20.18 from 06:02 ET is stale and not used as current. Full historical event/daily directory audit unavailable. Existing critical historical/provisional."
+    "2026-11-10T15:54:25Z: AP/Reuters article quotes asynchronous, exact observation times unverified; no synchronized current SOXX, broad IG/HY credit spreads, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid/ask. VIX 20.18 from 06:02 ET is stale and not used as current. Full historical event/daily directory audit unavailable. Existing critical historical/provisional.",
+    "2026-11-10T17:07:28Z: new AP 10:45 ET snapshot predates prior later intraday snapshot; Barron's 4.996% 10y has unknown quote time. No independently synchronized current SOXX, VIX, breadth, broad IG/HY credit spreads, real yields, natural gas, copper, USD/KRW, ETF bid-ask. Existing critical historical/provisional; full historical event/daily directory audit incomplete."
   ]
 }
