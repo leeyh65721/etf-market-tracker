@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T19:17:59Z",
+  "checked_at_utc": "2026-11-11T20:05:52Z",
   "market_date": "2026-11-11",
   "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음(검증 범위). 11월 11일 Reuters 11:44 ET 장중 S&P500 +1.25%, Nasdaq +1.85%, 반도체 지수 약 +7%는 직전 점검과 동일한 보도이며 추가 악화가 아님. Reuters는 VIX 4거래일 연속 하락을 보도했으나 최신 수치는 미확인. 11월 11일 Reuters의 아시아 주식 외국인 자금 유출 보도는 10월 누적 및 11월 누적 자료로 새로운 당일 급변을 뜻하지 않음. CPI·SOXX 기존 사건 중복 경고 없음. 신용·실질금리 등 동시점 데이터 부족으로 위험등급 독립 산정 불가.",
+  "change_since_previous": "신규 긴급 경고 없음(검증된 범위). Reuters 11월 11일 미국 증시 S&P500 +1.33%, Nasdaq +1.80%, Dow +0.34%, 반도체 지수 약 +7%로 장중 반등이 종가까지 이어짐. AP의 다른 시점 보도 수치와 차이가 있어 Reuters 수치로 기록. 기존 11월 6일 반도체 급락의 중대한 악화 증거가 아니며 CPI 재경고 없음. 금리·신용·환율·원자재 동시점 데이터 부족으로 위험등급은 unknown 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -64,24 +64,24 @@
       "note": "AP Nov 11 session, exact quote time unknown"
     },
     "sp500_cash_reported": {
-      "change_pct": 1.25,
-      "observed_at_utc": "2026-11-11T16:44:00Z",
-      "note": "Reuters as of 11:44 ET, intraday not final close"
+      "change_pct": 1.33,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 11 US closing report; precise quote timestamp unavailable; not live"
     },
     "nasdaq_composite_reported": {
-      "change_pct": 1.85,
-      "observed_at_utc": "2026-11-11T16:44:00Z",
-      "note": "Reuters as of 11:44 ET, intraday not final close"
+      "change_pct": 1.8,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 11 US closing report; precise quote timestamp unavailable; not live"
     },
     "dow_reported": {
-      "change_pct": -0.1,
+      "change_pct": 0.34,
       "observed_at_utc": null,
-      "note": "AP Nov 11 report, exact observation timestamp unavailable"
+      "note": "Reuters Nov 11 US closing report; precise quote timestamp unavailable; not live"
     },
     "phlx_semiconductor_reported": {
       "change_pct": 7,
-      "observed_at_utc": "2026-11-11T16:44:00Z",
-      "note": "Reuters approximate intraday change; not SOXX"
+      "observed_at_utc": null,
+      "note": "Reuters Nov 11 approximate semiconductor index change, not SOXX; precise observation time unavailable"
     },
     "dollar_index_reported": {
       "change_pct": 0.64,
@@ -89,9 +89,9 @@
       "note": "Reuters Nov 11 global markets article; exact observation time unknown"
     },
     "market_breadth_qualitative": {
-      "value": "slightly more S&P500 decliners than advancers",
+      "value": "Technology-led rally; AP reports only slightly more S&P 500 advancers than decliners",
       "observed_at_utc": null,
-      "note": "AP Nov 11 intraday, not quantified"
+      "note": "AP Nov 11 article; no synchronized numeric breadth"
     }
   },
   "sources": [
@@ -109,6 +109,8 @@
     "US Treasury cash market closed Nov 11 for Veterans Day; previous Treasury yield is not current.",
     "Existing critical alert reflects historical Nov 6 event, not a newly assessed current critical risk.",
     "Latest publicly verified data is delayed; no fresh synchronized SOXX, VIX numeric level, credit spreads, real yields, natural gas, gold, copper or USD/KRW available.",
-    "Past alerts compared to prior risk JSON and conversation; complete analysis/events and analysis/daily audit not performed."
+    "Past alerts compared to prior risk JSON and conversation; complete analysis/events and analysis/daily audit not performed.",
+    "Nov 11 US close sourced to Reuters article; AP article reports different percentage changes, likely different update snapshots. Exact price observation timestamp unavailable.",
+    "This check did not independently verify synchronized real-time Treasury yields, credit spreads, VIX level, SOXX, energy/metals or FX."
   ]
 }
