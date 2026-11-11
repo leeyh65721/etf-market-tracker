@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T11:21:32Z",
+  "checked_at_utc": "2026-11-11T12:13:31Z",
   "market_date": "2026-11-11",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 11일 Reuters 미국 선물 S&P500 +0.74%, Nasdaq100 +1.67%, CoreWeave 실적 및 AI 인프라 관련 반등은 기존 반도체 급락의 추가 악화에 반대. 유가 Brent $92.77, WTI $86.80는 직전 점검과 동일한 지연 관측값. 최신 동시점 신용스프레드·VIX·현물 ETF 검증 불가; 11월 6일 critical은 재산정되지 않은 이월 등급.",
+  "change_since_previous": "신규 긴급 경고 없음. 직전 11:21 UTC 점검 이후 별도 확인된 중대한 악화 없음. Reuters 11월 11일 미국 선물 S&P500 +0.74%, Nasdaq100 +1.67%와 Brent $92.77/WTI $86.80는 이전 점검에서 이미 반영한 지연 수치로 재경고하지 않음. 한국 3년 국고채 금리 3.729%(+9.6bp, 11월 11일 종가) 확인; 미국 금리 상승 위험의 전이지만 독립적인 신규 충격 판단 근거 불충분. 기존 critical은 11월 6일 사건 이월이며 현재 동시점 지표로 재평가하지 못함.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1171,6 +1171,13 @@
       "dow_change_pct": 0.03,
       "observed_at_utc": null,
       "note": "Reuters Nov 11 premarket report; exact quote time unverified; delayed, not cash-market close"
+    },
+    "korea_3y_government_bond_20261111": {
+      "value": 3.729,
+      "unit": "percent",
+      "change_basis_points": 9.6,
+      "observed_at_utc": null,
+      "note": "연합뉴스 2026-11-11 16:56 KST 보도, 11월 11일 서울 채권시장 종가. 정확한 체결시각 미확인."
     }
   },
   "sources": [
@@ -1289,7 +1296,8 @@
     "https://www.reuters.com/world/india/indian-stocks-poised-higher-open-softer-crude-robust-foreign-buying-2026-11-11/",
     "https://www.reuters.com/business/wells-fargo-upgrades-us-ai-infrastructure-view-after-chip-selloff-2026-11-10/",
     "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/",
-    "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/"
+    "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/",
+    "https://www.yna.co.kr/view/AKR20261111150551008"
   ],
   "data_limitations": [
     "Reuters 원유 가격은 11월 11일 보도 기준이며 정확한 체결·관측 시각 불명, 실시간 아님",
@@ -1297,6 +1305,7 @@
     "최신 SOXX, VIX, 광범위 신용스프레드, 실질금리, 시장 폭, 천연가스, 구리, USD/KRW 동시점 검증 불가",
     "11월 6일 critical은 과거 경고의 잠정 이월 등급이며 현재 독립 재산정 불가",
     "기존 사건·일일 기록 전체 개별 대조 미완료",
-    "2026-11-11T11:21:32Z: latest synchronized SOXX/VIX/credit spreads/real yields/market breadth/natural gas/copper/USD-KRW unavailable; US Treasury cash market closed for Veterans Day; analysis directory comparison failed."
+    "2026-11-11T11:21:32Z: latest synchronized SOXX/VIX/credit spreads/real yields/market breadth/natural gas/copper/USD-KRW unavailable; US Treasury cash market closed for Veterans Day; analysis directory comparison failed.",
+    "2026-11-11 12:13 UTC 점검: 미국 국채 현물 휴장(재향군인의 날). 최신 동시점 SOXX, VIX, 미국 신용스프레드, 실질금리, 시장 폭, 천연가스, 구리, USD/KRW 및 ETF 호가 미검증. Reuters 선물·유가 수치는 직전 점검과 같은 지연 관측값. 한국 국고채 종가는 확인했으나 미국 금리와 동시 비교 불가."
   ]
 }
