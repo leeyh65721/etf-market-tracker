@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T16:11:33Z",
+  "checked_at_utc": "2026-11-11T16:31:41Z",
   "market_date": "2026-11-11",
   "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음(확인 가능한 범위). 11월 11일 AP 미국 장중 S&P 500 약 +1%, Nasdaq 약 +1.6%, CoreWeave 강세는 기존 AI/반도체 위험의 추가 악화에 반대되는 근거. S&P 500 하락 종목 수가 상승 종목 수보다 다소 많아 반등의 폭은 제한적. 기존 CPI 및 11월 6일 반도체 충격 중복 경고하지 않음. 동시점 SOXX/VIX/신용지표 미확보로 위험등급 unknown.",
+  "change_since_previous": "신규 긴급 경고 없음(검증 가능한 범위). Reuters 11월 11일 유가 브렌트 92.81달러·WTI 87.12달러 및 AP 미 증시 S&P500 약 +1%, 나스닥 약 +1.6%는 기존 반등·중동 위험의 연속. 11월 6일 반도체 전이 및 11월 10일 CPI 재경고하지 않음. 동시점 신용·변동성·SOXX 데이터 부족으로 위험등급 독립 산정 불가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -36,16 +36,16 @@
       "note": "Reuters reported as of 06:39 ET; delayed versus check"
     },
     "brent": {
-      "value": 93.22,
+      "value": 92.81,
       "unit": "USD/barrel",
       "observed_at_utc": null,
-      "note": "AP Nov 11 report, exact quote timestamp unavailable; not synchronized"
+      "note": "Reuters Nov 11 report; precise price observation timestamp not verified; delayed"
     },
     "wti": {
-      "value": 87.05,
+      "value": 87.12,
       "unit": "USD/barrel",
       "observed_at_utc": null,
-      "note": "AP Nov 11 report, exact quote timestamp unavailable; not synchronized"
+      "note": "Reuters Nov 11 report; precise price observation timestamp not verified; delayed"
     },
     "us_treasury_10y": {
       "value": 4.992,
@@ -83,7 +83,8 @@
     "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/",
     "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/",
     "https://apnews.com/article/297d040c83844a9563327340b370c24e",
-    "https://www.reuters.com/world/china/coreweave-sparks-ai-cloud-stock-rally-lifts-nvidia-results-ease-bubble-fears-2026-11-11/"
+    "https://www.reuters.com/world/china/coreweave-sparks-ai-cloud-stock-rally-lifts-nvidia-results-ease-bubble-fears-2026-11-11/",
+    "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
   ],
   "data_limitations": [
     "No synchronized latest SOXX/VIX, broad credit spreads, real yields, market breadth, natural gas, gold, copper, USD/KRW or ETF quotes verified.",
@@ -92,6 +93,8 @@
     "Current risk severity cannot be independently graded; historic critical alert retained as past event.",
     "AP US stock report quote time not independently verified; price data may be delayed; earlier Reuters futures stale.",
     "Current run lacks synchronized SOXX, VIX, broad credit spread, real yield, breadth, natural gas, gold, copper, USD/KRW readings.",
-    "Latest Reuters/AP market reporting checked; no synchronized live ETF, volatility, credit, commodity or FX snapshot."
+    "Latest Reuters/AP market reporting checked; no synchronized live ETF, volatility, credit, commodity or FX snapshot.",
+    "2026-11-11 16:31 UTC check: no synchronized current SOXX, VIX, HY OAS, real yields, market breadth, natural gas, gold, copper, USD/KRW, ETF spread; current risk unknown.",
+    "Reuters oil prices are reported snapshots, exact quote timestamps unverified."
   ]
 }
