@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T06:50:09Z",
+  "checked_at_utc": "2026-11-11T07:41:45Z",
   "market_date": "2026-11-11",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 11일 원유 보도 브렌트 $92.53(+1.1%), WTI $86.71(+0.8%)는 직전 $92.20/$86.53보다 소폭 상승했으나 신규 대규모 공급 차질 또는 광범위 신용 충격 입증 안 됨. 아시아 주식 반등 및 CoreWeave 실적 개선 보도는 반대 증거. 기존 CPI 및 반도체 급락 중복 경고하지 않음. critical은 11월 6일 과거 사건 이월 잠정 등급이며 독립 재산정 아님.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 11일 AP 아시아 증시 후속 보도 대만 +3.6%, 한국 +2.4%, 일본 +1.3%로 이전 장중 보도보다 상승폭 확대; 아시아 반도체 위험 전이 악화의 반대 증거. 11월 10일 CPI/미국 금리 상승은 이미 반영된 사건. 새로운 시장 전반 신용·유동성 충격이나 긴급 배분 변경 근거 검증되지 않음. risk_level=critical은 11월 6일 과거 사건의 잠정 이월 등급으로 신규 재평가 아님.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1127,6 +1127,13 @@
       "change_pct": 0.8,
       "observed_at_utc": null,
       "note": "Reuters Nov 11 report; precise quote time unknown"
+    },
+    "asia_nov11_ap_later": {
+      "taiwan_change_pct": 3.6,
+      "kospi_change_pct": 2.4,
+      "nikkei_change_pct": 1.3,
+      "observed_at_utc": null,
+      "note": "AP Nov 11 later Asian market report; exact quote timestamps unknown; different observation from prior intraday report, not live synchronized prices"
     }
   },
   "sources": [
@@ -1242,7 +1249,8 @@
     "https://www.reuters.com/legal/transactional/ai-debt-faces-pressure-democrats-prepare-take-over-congress-2026-11-10/",
     "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/",
     "https://apnews.com/article/297d040c83844a9563327340b370c24e",
-    "https://www.reuters.com/world/india/indian-stocks-poised-higher-open-softer-crude-robust-foreign-buying-2026-11-11/"
+    "https://www.reuters.com/world/india/indian-stocks-poised-higher-open-softer-crude-robust-foreign-buying-2026-11-11/",
+    "https://www.reuters.com/business/wells-fargo-upgrades-us-ai-infrastructure-view-after-chip-selloff-2026-11-10/"
   ],
   "data_limitations": [
     "2026-11-10T09:07:31Z: Reuters oil prices and gold are delayed asynchronous snapshots; latest CPI result not verified. US cash session not open. Current synchronized IG/HY credit spreads, real yields, VIX, breadth, natural gas, copper, USD/KRW, SOXX and ETF bid-ask not independently verified. Existing critical historical/provisional; event/daily directory audit incomplete.",
@@ -1268,6 +1276,7 @@
     "2026-11-11T03:27:52Z: No newer independently verified synchronized price snapshot than prior check for oil; US equity data Nov 10 closing, not live. SOXX, VIX, broad IG/HY spreads, real yields, breadth, natural gas, copper, USD/KRW and ETF bid-ask not independently confirmed for this hour. Full event/daily historical audit incomplete. Critical is inherited/provisional.",
     "2026-11-11T04:57:32Z check: latest synchronized SOXX/VIX, credit spread, real yields, market breadth, copper, natural gas, USD/KRW and ETF bid-ask not independently verified; AP Asian quote time unknown; events/daily full content comparison unavailable.",
     "2026-11-11T05:53:48Z: Asia/India article quotes asynchronous, precise quote timestamps unknown. No synchronized verified current SOXX, VIX, HY/IG spreads, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid-ask; Nov 10 US close is stale. Historical events/daily full audit incomplete. Critical inherited/provisional.",
-    "2026-11-11T06:50:09Z: Reuters oil snapshots asynchronous and precise quote time unavailable; US equities Nov 10 close. Latest synchronized SOXX, VIX, HY/IG spreads, real yields, breadth, gas, copper, USD/KRW, ETF bid/ask unverified. Historical event/daily full audit incomplete. Critical historical/provisional."
+    "2026-11-11T06:50:09Z: Reuters oil snapshots asynchronous and precise quote time unavailable; US equities Nov 10 close. Latest synchronized SOXX, VIX, HY/IG spreads, real yields, breadth, gas, copper, USD/KRW, ETF bid/ask unverified. Historical event/daily full audit incomplete. Critical historical/provisional.",
+    "2026-11-11T07:41:45Z: AP Asian equity snapshots delayed and exact observation time unverified; US cash close is Nov 10. No synchronized verified current SOXX, VIX, IG/HY credit spreads, real yields, breadth, natural gas, copper, USD/KRW, ETF bid-ask. Existing critical historical/provisional; full analysis/events and analysis/daily audit not completed."
   ]
 }
