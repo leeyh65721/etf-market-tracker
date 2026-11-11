@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T12:23:09Z",
+  "checked_at_utc": "2026-11-11T13:27:27Z",
   "market_date": "2026-11-11",
   "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음. 직전 12:13 UTC 이후 새 중대 사건 또는 기존 위험의 현저한 악화 확인 불가. 이전 critical은 11월 6일 사건 이월값이며 현재 위험등급으로 재확인할 수 없어 unknown으로 표시. 기존 경고는 과거 사건 기록으로 보존.",
+  "change_since_previous": "신규 긴급 경고 없음. 직전 12:23 UTC 대비 Reuters 06:39 ET(11:39 UTC) 미국 선물 반등 자료 확인(S&P500 +0.86%, Nasdaq100 +1.90%); 직전 보고된 반등의 연속이며 신규 위험 사건 아님. 현재 위험등급 독립 산정에 필요한 동시점 신용/변동성 자료 부족.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -26,28 +26,26 @@
   ],
   "indicators": {
     "sp500_futures": {
-      "change_pct": 0.74,
-      "observed_at_utc": null,
-      "source_report_date": "2026-11-11",
-      "note": "Reuters premarket; precise quote time unknown; previously reported"
+      "change_pct": 0.86,
+      "observed_at_utc": "2026-11-11T11:39:00Z",
+      "note": "Reuters reported as of 06:39 ET; delayed versus check"
     },
     "nasdaq100_futures": {
-      "change_pct": 1.67,
-      "observed_at_utc": null,
-      "source_report_date": "2026-11-11",
-      "note": "Reuters premarket; previously reported"
+      "change_pct": 1.9,
+      "observed_at_utc": "2026-11-11T11:39:00Z",
+      "note": "Reuters reported as of 06:39 ET; delayed versus check"
     },
     "brent": {
-      "value": 92.77,
+      "value": 93.22,
       "unit": "USD/barrel",
       "observed_at_utc": null,
-      "note": "Reuters Nov 11 delayed; previously reported"
+      "note": "AP Nov 11 report, exact quote timestamp unavailable; not synchronized"
     },
     "wti": {
-      "value": 86.8,
+      "value": 87.05,
       "unit": "USD/barrel",
       "observed_at_utc": null,
-      "note": "Reuters Nov 11 delayed; previously reported"
+      "note": "AP Nov 11 report, exact quote timestamp unavailable; not synchronized"
     },
     "us_treasury_10y": {
       "value": 4.992,
@@ -72,9 +70,10 @@
     "https://apnews.com/article/297d040c83844a9563327340b370c24e"
   ],
   "data_limitations": [
+    "Reuters US futures timestamp 06:39 ET (11:39 UTC), delayed versus 13:27 UTC check; AP oil quote timestamp unavailable.",
     "No synchronized latest SOXX/VIX, broad credit spreads, real yields, market breadth, natural gas, gold, copper, USD/KRW or ETF quotes verified.",
-    "Market quotes are delayed and precise quote timestamps unknown.",
-    "GitHub event/daily directory full comparison unavailable via fetch_file (directory not file); prior conversation and risk file compared.",
-    "No independent confirmation of current critical severity; historical event preserved."
+    "US Treasury cash market closed for Veterans Day Nov 11; prior yield not current.",
+    "GitHub event/daily directories could not be listed through fetch_file; prior conversation and risk file compared.",
+    "Current risk severity cannot be independently graded; historic critical alert retained as past event."
   ]
 }
