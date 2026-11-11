@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T22:20:24Z",
+  "checked_at_utc": "2026-11-11T23:16:27Z",
   "market_date": "2026-11-11",
   "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음(검증된 자료 범위). 11월 11일 미국 증시·반도체 반등 및 CoreWeave 실적은 기존 보고 사건. Reuters 최신 갱신 마감 수치와 기존 기록 사이 차이는 출처 업데이트 차이로 보이며 신규 충격 아님. 11월 11일 원유 종가 상승과 이란 관련 위험도 기존 사건의 연속. 신용·실질금리·동시점 VIX 등 미검증으로 위험등급 확정 불가.",
+  "change_since_previous": "신규 긴급 경고 없음(검증 범위). Reuters/AP의 11월 11일 미국 증시 반등, CoreWeave 실적, 달러·원유 상승은 직전 점검에 이미 반영됨. 신규 중대 악화 증거 미확인. 동시점 신용·변동성·실질금리·SOXX 자료 부재로 위험등급 확정 불가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -103,7 +103,9 @@
     "https://www.reuters.com/world/china/foreign-investors-pull-out-50-billion-asian-equities-october-ai-cash-burn-woes-2026-11-11/",
     "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/",
     "https://apnews.com/article/027cd5f4583d1a11c1795150bf065afb",
-    "https://www.investors.com/news/technology/chip-stocks-rally-amd-txn-arm-mtsi-mu/"
+    "https://www.investors.com/news/technology/chip-stocks-rally-amd-txn-arm-mtsi-mu/",
+    "https://www.reuters.com/commentary/reuters-open-interest/bond-storm-2026-may-be-passing-fed-gusts-linger-2026-11-11/",
+    "https://www.wsj.com/finance/currencies/asian-currencies-soften-after-u-s-cpi-data-boosts-dollar-26f03632"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -115,6 +117,7 @@
     "Nov 11 US close sourced to Reuters article; AP article reports different percentage changes, likely different update snapshots. Exact price observation timestamp unavailable.",
     "This check did not independently verify synchronized real-time Treasury yields, credit spreads, VIX level, SOXX, energy/metals or FX.",
     "2026-11-11T20:28:46Z check: no fresh synchronized cross-asset observations; previous indicators retained with their original timestamps; no new numbers fabricated.",
-    "2026-11-11T22:20:24Z: Latest Reuters revisions differ from earlier intraday/closing snapshots; source timestamp is not exchange quote timestamp. No synchronized VIX, SOXX, credit, real yields, gas, gold, copper or KRW data verified; analysis directories could not be enumerated via fetch_file."
+    "2026-11-11T22:20:24Z: Latest Reuters revisions differ from earlier intraday/closing snapshots; source timestamp is not exchange quote timestamp. No synchronized VIX, SOXX, credit, real yields, gas, gold, copper or KRW data verified; analysis directories could not be enumerated via fetch_file.",
+    "2026-11-11T23:16:27Z: Reuters/AP Nov 11 closing figures reconfirmed, not fresh live quotes. Nov 11 Treasury cash market closed. Current synchronized SOXX, VIX, credit spreads, real yields, metals, natural gas, USD/KRW and market breadth unavailable. No full analysis directory audit."
   ]
 }
