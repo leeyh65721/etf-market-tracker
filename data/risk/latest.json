@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T13:27:27Z",
+  "checked_at_utc": "2026-11-11T15:17:08Z",
   "market_date": "2026-11-11",
   "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음. 직전 12:23 UTC 대비 Reuters 06:39 ET(11:39 UTC) 미국 선물 반등 자료 확인(S&P500 +0.86%, Nasdaq100 +1.90%); 직전 보고된 반등의 연속이며 신규 위험 사건 아님. 현재 위험등급 독립 산정에 필요한 동시점 신용/변동성 자료 부족.",
+  "change_since_previous": "신규 긴급 경고 없음. AP 11월 11일 미국 장중 S&P 500 +0.9%, Nasdaq +1.4%, Dow -0.1% 및 AI 반등 보도는 기존 반도체 급락 위험의 추가 악화에 반대되는 증거. 과거 CPI 및 11월 6일 충격은 신규 사건으로 재분류하지 않음. 실시간 동시점 위험 지표 미확보로 위험등급 unknown 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -62,6 +62,21 @@
       "change_pct": 3.6,
       "observed_at_utc": null,
       "note": "AP Nov 11 session, exact quote time unknown"
+    },
+    "sp500_cash_reported": {
+      "change_pct": 0.9,
+      "observed_at_utc": null,
+      "note": "AP Nov 11 US session report, exact observation timestamp unavailable; may not be final close"
+    },
+    "nasdaq_composite_reported": {
+      "change_pct": 1.4,
+      "observed_at_utc": null,
+      "note": "AP Nov 11 report, exact observation timestamp unavailable"
+    },
+    "dow_reported": {
+      "change_pct": -0.1,
+      "observed_at_utc": null,
+      "note": "AP Nov 11 report, exact observation timestamp unavailable"
     }
   },
   "sources": [
@@ -70,10 +85,11 @@
     "https://apnews.com/article/297d040c83844a9563327340b370c24e"
   ],
   "data_limitations": [
-    "Reuters US futures timestamp 06:39 ET (11:39 UTC), delayed versus 13:27 UTC check; AP oil quote timestamp unavailable.",
     "No synchronized latest SOXX/VIX, broad credit spreads, real yields, market breadth, natural gas, gold, copper, USD/KRW or ETF quotes verified.",
     "US Treasury cash market closed for Veterans Day Nov 11; prior yield not current.",
     "GitHub event/daily directories could not be listed through fetch_file; prior conversation and risk file compared.",
-    "Current risk severity cannot be independently graded; historic critical alert retained as past event."
+    "Current risk severity cannot be independently graded; historic critical alert retained as past event.",
+    "AP US stock report quote time not independently verified; price data may be delayed; earlier Reuters futures stale.",
+    "Current run lacks synchronized SOXX, VIX, broad credit spread, real yield, breadth, natural gas, gold, copper, USD/KRW readings."
   ]
 }
