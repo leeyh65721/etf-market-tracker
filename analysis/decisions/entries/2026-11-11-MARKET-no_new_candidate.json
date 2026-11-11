@@ -1,0 +1,26 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-11-MARKET-no_new_candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-11-10",
+  "original_report_date_kst": "2026-11-11",
+  "archived_on_utc_date": "2026-11-11",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-11-11.md",
+  "verbatim_source_excerpt": "**초단기 적격 후보 없음. 신규 확정 매수 후보 없음.**",
+  "original_close_usd": null,
+  "original_spy_close_usd": null,
+  "thesis": "Market-wide conditional ETF observations are not validated executable new buys; CPI surprise and unresolved validation gaps.",
+  "counterevidence": "Some ETFs show positive 21-day relative strength; opportunities may develop after trigger verification.",
+  "invalidation": "Validated intraday entry trigger, liquidity/AUM/fees and primary-source catalysts would permit new candidate reconsideration.",
+  "revisit_trigger": "Reassess next NYSE session and at 5/10/20 NYSE sessions with verified SPY-relative outcomes.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "eligible_for_prospective_judgment_scoring": false,
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true
+}
