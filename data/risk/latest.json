@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T16:31:41Z",
+  "checked_at_utc": "2026-11-11T18:18:28Z",
   "market_date": "2026-11-11",
   "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음(검증 가능한 범위). Reuters 11월 11일 유가 브렌트 92.81달러·WTI 87.12달러 및 AP 미 증시 S&P500 약 +1%, 나스닥 약 +1.6%는 기존 반등·중동 위험의 연속. 11월 6일 반도체 전이 및 11월 10일 CPI 재경고하지 않음. 동시점 신용·변동성·SOXX 데이터 부족으로 위험등급 독립 산정 불가.",
+  "change_since_previous": "신규 긴급 경고 없음(검증 범위). 11월 11일 Reuters 장중 S&P500 +1.25%, Nasdaq +1.85%, 반도체 지수 +7% 및 AP 장중 S&P500 +1.3%, Nasdaq +1.9%는 기존 AI·반도체 반등의 연장. Reuters 별도 보도 달러지수 +0.64%, 원유 2% 이상 상승은 기존 CPI/중동 위험의 연속. AP 시장 폭은 S&P500 하락 종목이 상승 종목보다 소폭 많음. 신규 구조적 신용 충격이나 기존 사건의 중대한 악화는 확인되지 않았으나 동시점 신용·실질금리·SOXX 데이터 부족으로 독립 위험등급 산정 불가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -64,19 +64,34 @@
       "note": "AP Nov 11 session, exact quote time unknown"
     },
     "sp500_cash_reported": {
-      "change_pct": 1,
-      "observed_at_utc": null,
-      "note": "AP Nov 11 report; rounded intraday quote, not independently verified final close"
+      "change_pct": 1.25,
+      "observed_at_utc": "2026-11-11T16:44:00Z",
+      "note": "Reuters as of 11:44 ET, intraday not final close"
     },
     "nasdaq_composite_reported": {
-      "change_pct": 1.6,
-      "observed_at_utc": null,
-      "note": "AP Nov 11 report; rounded intraday quote, not independently verified final close"
+      "change_pct": 1.85,
+      "observed_at_utc": "2026-11-11T16:44:00Z",
+      "note": "Reuters as of 11:44 ET, intraday not final close"
     },
     "dow_reported": {
       "change_pct": -0.1,
       "observed_at_utc": null,
       "note": "AP Nov 11 report, exact observation timestamp unavailable"
+    },
+    "phlx_semiconductor_reported": {
+      "change_pct": 7,
+      "observed_at_utc": "2026-11-11T16:44:00Z",
+      "note": "Reuters approximate intraday change; not SOXX"
+    },
+    "dollar_index_reported": {
+      "change_pct": 0.64,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 11 global markets article; exact observation time unknown"
+    },
+    "market_breadth_qualitative": {
+      "value": "slightly more S&P500 decliners than advancers",
+      "observed_at_utc": null,
+      "note": "AP Nov 11 intraday, not quantified"
     }
   },
   "sources": [
@@ -87,14 +102,10 @@
     "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
   ],
   "data_limitations": [
-    "No synchronized latest SOXX/VIX, broad credit spreads, real yields, market breadth, natural gas, gold, copper, USD/KRW or ETF quotes verified.",
-    "US Treasury cash market closed for Veterans Day Nov 11; prior yield not current.",
-    "GitHub event/daily directories could not be listed through fetch_file; prior conversation and risk file compared.",
-    "Current risk severity cannot be independently graded; historic critical alert retained as past event.",
-    "AP US stock report quote time not independently verified; price data may be delayed; earlier Reuters futures stale.",
-    "Current run lacks synchronized SOXX, VIX, broad credit spread, real yield, breadth, natural gas, gold, copper, USD/KRW readings.",
-    "Latest Reuters/AP market reporting checked; no synchronized live ETF, volatility, credit, commodity or FX snapshot.",
-    "2026-11-11 16:31 UTC check: no synchronized current SOXX, VIX, HY OAS, real yields, market breadth, natural gas, gold, copper, USD/KRW, ETF spread; current risk unknown.",
-    "Reuters oil prices are reported snapshots, exact quote timestamps unverified."
+    "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
+    "Reuters 11:44 ET market quotes are intraday and delayed relative to this check; Reuters dollar index and AP breadth exact observation times unavailable.",
+    "US Treasury cash market closed Nov 11 for Veterans Day; previous Treasury yield is not current.",
+    "Previous risk file and conversation compared; full analysis/events and analysis/daily historical review not completed.",
+    "Existing critical alert reflects historical Nov 6 event, not a newly assessed current critical risk."
   ]
 }
