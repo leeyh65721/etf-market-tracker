@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T10:21:05Z",
+  "checked_at_utc": "2026-11-11T11:21:32Z",
   "market_date": "2026-11-11",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 11일 Reuters 유가 Brent $92.77(+1.4%), WTI $86.80(+0.9%)로 직전 확인치 $92.53/$86.71 대비 소폭 상승. 이란 핵물질 반출 거부와 호르무즈 공격 지속은 기존 위험의 연장; 원유 재고 900만 배럴 증가(잠정)는 반대 근거. 아시아 증시 반등과 미국 선물 강세는 기존 반도체 전이 위험 추가 악화에 반대. 신용·변동성 최신 동시점 수치 부재로 11월 6일 critical은 재평가 불가인 과거 잠정 등급.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 11일 Reuters 미국 선물 S&P500 +0.74%, Nasdaq100 +1.67%, CoreWeave 실적 및 AI 인프라 관련 반등은 기존 반도체 급락의 추가 악화에 반대. 유가 Brent $92.77, WTI $86.80는 직전 점검과 동일한 지연 관측값. 최신 동시점 신용스프레드·VIX·현물 ETF 검증 불가; 11월 6일 critical은 재산정되지 않은 이월 등급.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1164,6 +1164,13 @@
       "unit": "million barrels increase",
       "observed_at_utc": null,
       "note": "Reuters Nov 11 citing preliminary industry data; official EIA pending, not independently verified"
+    },
+    "us_futures_reuters_nov11": {
+      "sp500_change_pct": 0.74,
+      "nasdaq100_change_pct": 1.67,
+      "dow_change_pct": 0.03,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 11 premarket report; exact quote time unverified; delayed, not cash-market close"
     }
   },
   "sources": [
@@ -1281,13 +1288,15 @@
     "https://apnews.com/article/297d040c83844a9563327340b370c24e",
     "https://www.reuters.com/world/india/indian-stocks-poised-higher-open-softer-crude-robust-foreign-buying-2026-11-11/",
     "https://www.reuters.com/business/wells-fargo-upgrades-us-ai-infrastructure-view-after-chip-selloff-2026-11-10/",
-    "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
+    "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/",
+    "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/"
   ],
   "data_limitations": [
     "Reuters 원유 가격은 11월 11일 보도 기준이며 정확한 체결·관측 시각 불명, 실시간 아님",
     "미국 현물 증시는 11월 10일 종가; 11월 11일 미국 국채시장은 Veterans Day 휴장",
     "최신 SOXX, VIX, 광범위 신용스프레드, 실질금리, 시장 폭, 천연가스, 구리, USD/KRW 동시점 검증 불가",
     "11월 6일 critical은 과거 경고의 잠정 이월 등급이며 현재 독립 재산정 불가",
-    "기존 사건·일일 기록 전체 개별 대조 미완료"
+    "기존 사건·일일 기록 전체 개별 대조 미완료",
+    "2026-11-11T11:21:32Z: latest synchronized SOXX/VIX/credit spreads/real yields/market breadth/natural gas/copper/USD-KRW unavailable; US Treasury cash market closed for Veterans Day; analysis directory comparison failed."
   ]
 }
