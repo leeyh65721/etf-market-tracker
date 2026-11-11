@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T23:16:27Z",
+  "checked_at_utc": "2026-11-11T23:48:09Z",
   "market_date": "2026-11-11",
-  "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음(검증 범위). Reuters/AP의 11월 11일 미국 증시 반등, CoreWeave 실적, 달러·원유 상승은 직전 점검에 이미 반영됨. 신규 중대 악화 증거 미확인. 동시점 신용·변동성·실질금리·SOXX 자료 부재로 위험등급 확정 불가.",
+  "risk_level": "high",
+  "change_since_previous": "기존 Nvidia 경영진·안보 의혹의 중대한 악화: 11월 11일 미국 장 마감 후 WSJ가 이사회 CEO 교체 준비를 보도하고 Nvidia 시간외 주가 약 -8%로 반응. 직전 23:16Z 점검에 반영되지 않은 새로운 경영 연속성 위험. 이사회 결정·퇴임은 미확인, 전 시장 전이와 신용충격도 미확인. 잠정 high(사건 위험), 계좌 낙폭 추정 아님.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -20,6 +20,24 @@
         "https://www.reuters.com/world/asia-pacific/south-korea-stocks-plunge-8-circuit-breaker-triggered-chip-shares-tumble-2026-11-06/",
         "https://www.reuters.com/business/energy/global-markets-global-markets-2026-11-05/",
         "https://www.reuters.com/business/wall-street-fear-gauge-jumps-most-since-liberation-day-ai-trade-stumbles-2026-11-05/"
+      ],
+      "status": "active"
+    },
+    {
+      "event_id": "20261111-nvda-ceo-ouster-report",
+      "detected_at_utc": "2026-11-11T23:48:09Z",
+      "severity": "high",
+      "summary": "기존 Nvidia CEO 조사 관련 중대한 악화: WSJ가 이사회 CEO 교체 준비 보도, Nvidia 시간외 약 8% 하락. 교체 확정 아님.",
+      "evidence": [
+        "WSJ Nov 11 reported board preparing to consider ousting CEO; Reuters independently reported WSJ claim but could not verify underlying board deliberations.",
+        "CBS News Nov 11 18:45 ET: NVDA more than -8% in after-hours to about $159.51; not regular-session close.",
+        "Reuters Nov 11 US regular session: Philadelphia semiconductor index +5.7%; broader after-hours semiconductor contagion not yet verified."
+      ],
+      "source_urls": [
+        "https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/",
+        "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+        "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/",
+        "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
       ],
       "status": "active"
     }
@@ -92,6 +110,12 @@
       "value": "Technology-led rally; AP reports only slightly more S&P 500 advancers than decliners",
       "observed_at_utc": null,
       "note": "AP Nov 11 article; no synchronized numeric breadth"
+    },
+    "nvda_afterhours_reported": {
+      "change_pct": -8.1,
+      "price_usd": 159.59,
+      "observed_at_utc": null,
+      "note": "SBS 2026-11-12 08:05 KST reports approx 17:45 ET Nov 11; after-hours indicative and not official close; CBS reports >8% around $159.51."
     }
   },
   "sources": [
@@ -105,7 +129,11 @@
     "https://apnews.com/article/027cd5f4583d1a11c1795150bf065afb",
     "https://www.investors.com/news/technology/chip-stocks-rally-amd-txn-arm-mtsi-mu/",
     "https://www.reuters.com/commentary/reuters-open-interest/bond-storm-2026-may-be-passing-fed-gusts-linger-2026-11-11/",
-    "https://www.wsj.com/finance/currencies/asian-currencies-soften-after-u-s-cpi-data-boosts-dollar-26f03632"
+    "https://www.wsj.com/finance/currencies/asian-currencies-soften-after-u-s-cpi-data-boosts-dollar-26f03632",
+    "https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/",
+    "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+    "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/",
+    "https://news.sbs.co.kr/english/article.do?news_id=N1008842159"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -118,6 +146,7 @@
     "This check did not independently verify synchronized real-time Treasury yields, credit spreads, VIX level, SOXX, energy/metals or FX.",
     "2026-11-11T20:28:46Z check: no fresh synchronized cross-asset observations; previous indicators retained with their original timestamps; no new numbers fabricated.",
     "2026-11-11T22:20:24Z: Latest Reuters revisions differ from earlier intraday/closing snapshots; source timestamp is not exchange quote timestamp. No synchronized VIX, SOXX, credit, real yields, gas, gold, copper or KRW data verified; analysis directories could not be enumerated via fetch_file.",
-    "2026-11-11T23:16:27Z: Reuters/AP Nov 11 closing figures reconfirmed, not fresh live quotes. Nov 11 Treasury cash market closed. Current synchronized SOXX, VIX, credit spreads, real yields, metals, natural gas, USD/KRW and market breadth unavailable. No full analysis directory audit."
+    "2026-11-11T23:16:27Z: Reuters/AP Nov 11 closing figures reconfirmed, not fresh live quotes. Nov 11 Treasury cash market closed. Current synchronized SOXX, VIX, credit spreads, real yields, metals, natural gas, USD/KRW and market breadth unavailable. No full analysis directory audit.",
+    "Nov 11 late-hours Nvidia board ouster remains a sourced media report, not an official board decision; Reuters could not independently verify. NVDA after-hours quotes are delayed/indicative, broad ETF/futures and credit spillover unverified. Risk level high is provisional event risk, not a portfolio drawdown estimate."
   ]
 }
