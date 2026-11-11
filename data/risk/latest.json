@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T18:18:28Z",
+  "checked_at_utc": "2026-11-11T19:17:59Z",
   "market_date": "2026-11-11",
   "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음(검증 범위). 11월 11일 Reuters 장중 S&P500 +1.25%, Nasdaq +1.85%, 반도체 지수 +7% 및 AP 장중 S&P500 +1.3%, Nasdaq +1.9%는 기존 AI·반도체 반등의 연장. Reuters 별도 보도 달러지수 +0.64%, 원유 2% 이상 상승은 기존 CPI/중동 위험의 연속. AP 시장 폭은 S&P500 하락 종목이 상승 종목보다 소폭 많음. 신규 구조적 신용 충격이나 기존 사건의 중대한 악화는 확인되지 않았으나 동시점 신용·실질금리·SOXX 데이터 부족으로 독립 위험등급 산정 불가.",
+  "change_since_previous": "신규 긴급 경고 없음(검증 범위). 11월 11일 Reuters 11:44 ET 장중 S&P500 +1.25%, Nasdaq +1.85%, 반도체 지수 약 +7%는 직전 점검과 동일한 보도이며 추가 악화가 아님. Reuters는 VIX 4거래일 연속 하락을 보도했으나 최신 수치는 미확인. 11월 11일 Reuters의 아시아 주식 외국인 자금 유출 보도는 10월 누적 및 11월 누적 자료로 새로운 당일 급변을 뜻하지 않음. CPI·SOXX 기존 사건 중복 경고 없음. 신용·실질금리 등 동시점 데이터 부족으로 위험등급 독립 산정 불가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -99,13 +99,16 @@
     "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/",
     "https://apnews.com/article/297d040c83844a9563327340b370c24e",
     "https://www.reuters.com/world/china/coreweave-sparks-ai-cloud-stock-rally-lifts-nvidia-results-ease-bubble-fears-2026-11-11/",
-    "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
+    "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/",
+    "https://www.reuters.com/world/china/foreign-investors-pull-out-50-billion-asian-equities-october-ai-cash-burn-woes-2026-11-11/",
+    "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
     "Reuters 11:44 ET market quotes are intraday and delayed relative to this check; Reuters dollar index and AP breadth exact observation times unavailable.",
     "US Treasury cash market closed Nov 11 for Veterans Day; previous Treasury yield is not current.",
-    "Previous risk file and conversation compared; full analysis/events and analysis/daily historical review not completed.",
-    "Existing critical alert reflects historical Nov 6 event, not a newly assessed current critical risk."
+    "Existing critical alert reflects historical Nov 6 event, not a newly assessed current critical risk.",
+    "Latest publicly verified data is delayed; no fresh synchronized SOXX, VIX numeric level, credit spreads, real yields, natural gas, gold, copper or USD/KRW available.",
+    "Past alerts compared to prior risk JSON and conversation; complete analysis/events and analysis/daily audit not performed."
   ]
 }
