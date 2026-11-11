@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T07:41:45Z",
+  "checked_at_utc": "2026-11-11T08:25:51Z",
   "market_date": "2026-11-11",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 11일 AP 아시아 증시 후속 보도 대만 +3.6%, 한국 +2.4%, 일본 +1.3%로 이전 장중 보도보다 상승폭 확대; 아시아 반도체 위험 전이 악화의 반대 증거. 11월 10일 CPI/미국 금리 상승은 이미 반영된 사건. 새로운 시장 전반 신용·유동성 충격이나 긴급 배분 변경 근거 검증되지 않음. risk_level=critical은 11월 6일 과거 사건의 잠정 이월 등급으로 신규 재평가 아님.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 11일 아시아 MSCI +1.9%, Nasdaq 선물 +1.4% 및 CoreWeave 실적 전망 호조로 반도체 위험의 추가 전이 근거 부족. CPI/금리 상승은 기존 사건. 11월 6일 critical은 이월 잠정 등급이며 현재 동시점 재평가 불가. 미국 회사채 신용스프레드·실질금리·시장 폭·원자재 전체 및 USD/KRW 최신 동시점 검증 미완료.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1134,6 +1134,16 @@
       "nikkei_change_pct": 1.3,
       "observed_at_utc": null,
       "note": "AP Nov 11 later Asian market report; exact quote timestamps unknown; different observation from prior intraday report, not live synchronized prices"
+    },
+    "nov11_asia_mscI_reuters": {
+      "change_pct": 1.9,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-11 보도, 시세 시각 불명; 지연 자료"
+    },
+    "nov11_nasdaq_futures_reuters": {
+      "change_pct": 1.4,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-11 보도, 정확한 호가 시각 불명"
     }
   },
   "sources": [
@@ -1250,33 +1260,13 @@
     "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/",
     "https://apnews.com/article/297d040c83844a9563327340b370c24e",
     "https://www.reuters.com/world/india/indian-stocks-poised-higher-open-softer-crude-robust-foreign-buying-2026-11-11/",
-    "https://www.reuters.com/business/wells-fargo-upgrades-us-ai-infrastructure-view-after-chip-selloff-2026-11-10/"
+    "https://www.reuters.com/business/wells-fargo-upgrades-us-ai-infrastructure-view-after-chip-selloff-2026-11-10/",
+    "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
   ],
   "data_limitations": [
-    "2026-11-10T09:07:31Z: Reuters oil prices and gold are delayed asynchronous snapshots; latest CPI result not verified. US cash session not open. Current synchronized IG/HY credit spreads, real yields, VIX, breadth, natural gas, copper, USD/KRW, SOXX and ETF bid-ask not independently verified. Existing critical historical/provisional; event/daily directory audit incomplete.",
-    "2026-11-10T09:58:00Z: US regular session not open; news quotes asynchronous with unknown precise observation times. No verified CPI outcome, synchronized real yields, broad IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, SOXX or ETF bid/ask. Waller statement conditional; 10y yield 4.612% in MarketWatch conflicts with earlier 4.86% historical reporting and is not adopted without confirmation. Historical analysis directories not fully audited; critical carried provisionally.",
-    "2026-11-10T10:43:54Z: article market quotes delayed/asynchronous with unknown precise quote timestamps; no independently synchronized current real yields, broad IG/HY credit spreads, VIX, market breadth, natural gas, copper, USD/KRW, ETF bid/ask or SOXX. CPI outcome not confirmed. Historical event/daily directory audit incomplete; critical rating provisional.",
-    "2026-11-10T11:35:45Z: Latest independently verified Reuters oil snapshot is 09:30 UTC; FT quote timing uncertain. No synchronized US real yields, IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW, SOXX or ETF spreads; CPI release unverified. Historical event/daily full audit unavailable. Critical is prior-event provisional classification.",
-    "2026-11-10T12:36:57Z: US cash market not open, CPI due 13:30 UTC and result unavailable. Reuters oil quote 22 minutes delayed; no synchronized verified real yields, broad IG/HY spreads, VIX, breadth, natural gas, copper, USD/KRW or ETF bid-ask. Critical remains historical/provisional; full historical directories not audited.",
-    "2026-11-10T13:56:07Z: CPI confirmed; US cash session not open, futures/yield reactions asynchronous. No synchronized verified VIX, broad IG/HY spreads, real yields, breadth, natural gas, copper, USD/KRW, SOXX/ETF bid-ask. Existing critical historical/provisional; full analysis/events and analysis/daily directory audit unavailable.",
-    "2026-11-10T15:11:49Z: US opening Reuters/AP snapshots are delayed and asynchronous, exact quote times unverified; no synchronized latest SOXX, VIX, breadth, IG/HY credit spreads, real yields, natural gas, copper, USD/KRW or ETF bid-ask. Critical classification carried historically; full event/daily directory audit unavailable.",
-    "2026-11-10T15:54:25Z: AP/Reuters article quotes asynchronous, exact observation times unverified; no synchronized current SOXX, broad IG/HY credit spreads, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid/ask. VIX 20.18 from 06:02 ET is stale and not used as current. Full historical event/daily directory audit unavailable. Existing critical historical/provisional.",
-    "2026-11-10T17:07:28Z: new AP 10:45 ET snapshot predates prior later intraday snapshot; Barron's 4.996% 10y has unknown quote time. No independently synchronized current SOXX, VIX, breadth, broad IG/HY credit spreads, real yields, natural gas, copper, USD/KRW, ETF bid-ask. Existing critical historical/provisional; full historical event/daily directory audit incomplete.",
-    "This check lacks synchronized validated SOXX quotes, broad credit spreads, market breadth beyond sector count, real yields, FX, natural gas and copper. Historical analysis directory comparison incomplete; directory fetch failed. AP/Reuters reported delayed snapshots. Historical critical level is carried, not a fresh risk score.",
-    "2026-11-10T19:18:34Z: AP later session summary exact quote times unverified; Yahoo SOXX 13:07 ET quote stale ~70 min. No synchronized current IG/HY credit spreads, real yields, VIX, broad breadth, natural gas, copper, USD/KRW or ETF bid-ask; historical analysis directories not fully audited. Critical classification historical/provisional.",
-    "2026-11-10T19:46:07Z: current synchronized SOXX, VIX, market breadth, IG/HY credit spreads, real yields, natural gas, copper, USD/KRW and ETF bid/ask unavailable; Reuters/AP/MarketWatch snapshots delayed and nonsynchronous. Historical event/daily full audit unavailable; critical level carried provisionally.",
-    "2026-11-10T20:49:25Z: Yahoo daily SOXX row may be preliminary and conflicts with page intraday quote. No synchronized verified current VIX, broad IG/HY spreads, real yields, market breadth, gas, copper, USD/KRW, ETF bid/ask; Reuters/AP delayed reports. Historical analysis/events and analysis/daily full audit unavailable; critical historical/provisional.",
-    "2026-11-10T21:51:27Z: No synchronized verified latest SOXX, VIX, credit spreads, real yields, market breadth, natural gas, copper, USD/KRW, ETF spreads; secondary closing quote uncorroborated. Reuters CPI story is previously covered; no fresh escalation established. Historical risk_level=critical is provisional.",
-    "2026-11-10T23:07:44Z: AP/WSJ confirmed Nov 10 equity close; precise 2y yield timestamp unknown. No synchronized verified current SOXX, VIX, broad IG/HY spreads, real yields, breadth, WTI/Brent settlements, natural gas, copper, USD/KRW, ETF bid-ask. Historical event/daily full directory audit unavailable. Critical carried historically, not freshly scored.",
-    "Nov 11 08:50 KST check: latest synchronized SOXX/VIX/credit spreads/real yields/breadth/natural gas/copper/USD-KRW unavailable; last US session close used, no fabricated intraday readings.",
-    "Nov 11 00:33:56 UTC check: no synchronized latest SOXX, VIX, broad HY/IG spreads, real yields, breadth, gas, copper, USD/KRW or ETF bid-ask independently verified; source reports are delayed and not synchronized.",
-    "GitHub analysis/events and analysis/daily directory listing failed; full prior-event reconciliation unavailable.",
-    "2026-11-11T01:47:39Z: US Nov 10 close and delayed Reuters/FT snapshots, not live synchronized quotes. Current broad IG/HY spreads, real yields, VIX, breadth, gas, copper, USD/KRW and ETF bid/ask unverified. No new independently confirmed escalation; historical critical classification provisional.",
-    "2026-11-11T02:26:33Z: HY/IG spreads are Nov 5-6 historical observations, not Nov 11 quotes; Reuters oil quotes 01:19 UTC delayed ~67 min. No synchronized current VIX, SOXX, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid-ask. No verified new urgent escalation; prior critical carried historically. Full analysis/events and analysis/daily audit incomplete.",
-    "2026-11-11T03:27:52Z: No newer independently verified synchronized price snapshot than prior check for oil; US equity data Nov 10 closing, not live. SOXX, VIX, broad IG/HY spreads, real yields, breadth, natural gas, copper, USD/KRW and ETF bid-ask not independently confirmed for this hour. Full event/daily historical audit incomplete. Critical is inherited/provisional.",
-    "2026-11-11T04:57:32Z check: latest synchronized SOXX/VIX, credit spread, real yields, market breadth, copper, natural gas, USD/KRW and ETF bid-ask not independently verified; AP Asian quote time unknown; events/daily full content comparison unavailable.",
-    "2026-11-11T05:53:48Z: Asia/India article quotes asynchronous, precise quote timestamps unknown. No synchronized verified current SOXX, VIX, HY/IG spreads, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid-ask; Nov 10 US close is stale. Historical events/daily full audit incomplete. Critical inherited/provisional.",
-    "2026-11-11T06:50:09Z: Reuters oil snapshots asynchronous and precise quote time unavailable; US equities Nov 10 close. Latest synchronized SOXX, VIX, HY/IG spreads, real yields, breadth, gas, copper, USD/KRW, ETF bid/ask unverified. Historical event/daily full audit incomplete. Critical historical/provisional.",
-    "2026-11-11T07:41:45Z: AP Asian equity snapshots delayed and exact observation time unverified; US cash close is Nov 10. No synchronized verified current SOXX, VIX, IG/HY credit spreads, real yields, breadth, natural gas, copper, USD/KRW, ETF bid-ask. Existing critical historical/provisional; full analysis/events and analysis/daily audit not completed."
+    "미국 정규장 최신 가격은 11월 10일 종가; 선물/아시아 지수 Reuters 보도는 관측 시각 불명",
+    "최신 SOXX, VIX, 신용스프레드, 실질금리, 시장 폭, 천연가스·구리, USD/KRW, ETF 호가를 동일 시점 검증하지 못함",
+    "GitHub analysis/events 및 analysis/daily 디렉터리 조회 실패, 대화의 기존 경고와 비교",
+    "critical은 11월 6일 과거 사건에서 이월한 잠정 등급으로 이번 점검에서 재산정하지 않음"
   ]
 }
