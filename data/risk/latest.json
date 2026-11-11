@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T15:17:08Z",
+  "checked_at_utc": "2026-11-11T16:11:33Z",
   "market_date": "2026-11-11",
   "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음. AP 11월 11일 미국 장중 S&P 500 +0.9%, Nasdaq +1.4%, Dow -0.1% 및 AI 반등 보도는 기존 반도체 급락 위험의 추가 악화에 반대되는 증거. 과거 CPI 및 11월 6일 충격은 신규 사건으로 재분류하지 않음. 실시간 동시점 위험 지표 미확보로 위험등급 unknown 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(확인 가능한 범위). 11월 11일 AP 미국 장중 S&P 500 약 +1%, Nasdaq 약 +1.6%, CoreWeave 강세는 기존 AI/반도체 위험의 추가 악화에 반대되는 근거. S&P 500 하락 종목 수가 상승 종목 수보다 다소 많아 반등의 폭은 제한적. 기존 CPI 및 11월 6일 반도체 충격 중복 경고하지 않음. 동시점 SOXX/VIX/신용지표 미확보로 위험등급 unknown.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -64,14 +64,14 @@
       "note": "AP Nov 11 session, exact quote time unknown"
     },
     "sp500_cash_reported": {
-      "change_pct": 0.9,
+      "change_pct": 1,
       "observed_at_utc": null,
-      "note": "AP Nov 11 US session report, exact observation timestamp unavailable; may not be final close"
+      "note": "AP Nov 11 report; rounded intraday quote, not independently verified final close"
     },
     "nasdaq_composite_reported": {
-      "change_pct": 1.4,
+      "change_pct": 1.6,
       "observed_at_utc": null,
-      "note": "AP Nov 11 report, exact observation timestamp unavailable"
+      "note": "AP Nov 11 report; rounded intraday quote, not independently verified final close"
     },
     "dow_reported": {
       "change_pct": -0.1,
@@ -82,7 +82,8 @@
   "sources": [
     "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/",
     "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/",
-    "https://apnews.com/article/297d040c83844a9563327340b370c24e"
+    "https://apnews.com/article/297d040c83844a9563327340b370c24e",
+    "https://www.reuters.com/world/china/coreweave-sparks-ai-cloud-stock-rally-lifts-nvidia-results-ease-bubble-fears-2026-11-11/"
   ],
   "data_limitations": [
     "No synchronized latest SOXX/VIX, broad credit spreads, real yields, market breadth, natural gas, gold, copper, USD/KRW or ETF quotes verified.",
@@ -90,6 +91,7 @@
     "GitHub event/daily directories could not be listed through fetch_file; prior conversation and risk file compared.",
     "Current risk severity cannot be independently graded; historic critical alert retained as past event.",
     "AP US stock report quote time not independently verified; price data may be delayed; earlier Reuters futures stale.",
-    "Current run lacks synchronized SOXX, VIX, broad credit spread, real yield, breadth, natural gas, gold, copper, USD/KRW readings."
+    "Current run lacks synchronized SOXX, VIX, broad credit spread, real yield, breadth, natural gas, gold, copper, USD/KRW readings.",
+    "Latest Reuters/AP market reporting checked; no synchronized live ETF, volatility, credit, commodity or FX snapshot."
   ]
 }
