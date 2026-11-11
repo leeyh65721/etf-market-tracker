@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T04:57:32Z",
+  "checked_at_utc": "2026-11-11T05:53:48Z",
   "market_date": "2026-11-11",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 11일 AP 아시아 증시 보도에서 대만 +2.1%, 한국 +1.6% 및 TSMC +3.1%로 반도체 전반의 추가 급락과 반대되는 증거 확인. Reuters 11월 10일 CPI/금리 충격 및 11월 11일 원유/신용 위험은 직전 점검에서 이미 다룸. 광범위한 신용·유동성 충격의 신규 증거 미확인. 기존 critical은 11월 6일 사건의 이월 잠정 분류이며 현 시점 독립 재평가 아님.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 11일 AP 아시아 증시 상승(대만 +2.1%, 한국 +1.6%, 일본 +0.8%) 및 Reuters 인도 증시 상승(+1% 이상)은 기존 반도체 위험의 추가 광범위 전이와 반대되는 증거. 기존 11월 10일 CPI/금리 충격 및 AI 신용 우려는 중복 경고하지 않음. 기존 critical은 11월 6일 사건 이월 잠정 등급으로 독립 재산정 아님.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1099,6 +1099,20 @@
       "tsmc_change_pct": 3.1,
       "observed_at_utc": null,
       "note": "AP 2026-11-11 Asian session report; exact quote time unverified, not live"
+    },
+    "asia_nov11_ap": {
+      "taiwan_change_pct": 2.1,
+      "kospi_change_pct": 1.6,
+      "nikkei_change_pct": 0.8,
+      "tsmc_change_pct": 3.1,
+      "observed_at_utc": null,
+      "note": "AP November 11 report; exact quote timestamps unverified; delayed asynchronous snapshots"
+    },
+    "india_nov11_reuters": {
+      "nifty50_change_pct": 1.25,
+      "sensex_change_pct": 1.47,
+      "observed_at_utc": null,
+      "note": "Reuters November 11 report; exact quote time unknown"
     }
   },
   "sources": [
@@ -1213,7 +1227,8 @@
     "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/",
     "https://www.reuters.com/legal/transactional/ai-debt-faces-pressure-democrats-prepare-take-over-congress-2026-11-10/",
     "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/",
-    "https://apnews.com/article/297d040c83844a9563327340b370c24e"
+    "https://apnews.com/article/297d040c83844a9563327340b370c24e",
+    "https://www.reuters.com/world/india/indian-stocks-poised-higher-open-softer-crude-robust-foreign-buying-2026-11-11/"
   ],
   "data_limitations": [
     "2026-11-10T09:07:31Z: Reuters oil prices and gold are delayed asynchronous snapshots; latest CPI result not verified. US cash session not open. Current synchronized IG/HY credit spreads, real yields, VIX, breadth, natural gas, copper, USD/KRW, SOXX and ETF bid-ask not independently verified. Existing critical historical/provisional; event/daily directory audit incomplete.",
@@ -1237,6 +1252,7 @@
     "2026-11-11T01:47:39Z: US Nov 10 close and delayed Reuters/FT snapshots, not live synchronized quotes. Current broad IG/HY spreads, real yields, VIX, breadth, gas, copper, USD/KRW and ETF bid/ask unverified. No new independently confirmed escalation; historical critical classification provisional.",
     "2026-11-11T02:26:33Z: HY/IG spreads are Nov 5-6 historical observations, not Nov 11 quotes; Reuters oil quotes 01:19 UTC delayed ~67 min. No synchronized current VIX, SOXX, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid-ask. No verified new urgent escalation; prior critical carried historically. Full analysis/events and analysis/daily audit incomplete.",
     "2026-11-11T03:27:52Z: No newer independently verified synchronized price snapshot than prior check for oil; US equity data Nov 10 closing, not live. SOXX, VIX, broad IG/HY spreads, real yields, breadth, natural gas, copper, USD/KRW and ETF bid-ask not independently confirmed for this hour. Full event/daily historical audit incomplete. Critical is inherited/provisional.",
-    "2026-11-11T04:57:32Z check: latest synchronized SOXX/VIX, credit spread, real yields, market breadth, copper, natural gas, USD/KRW and ETF bid-ask not independently verified; AP Asian quote time unknown; events/daily full content comparison unavailable."
+    "2026-11-11T04:57:32Z check: latest synchronized SOXX/VIX, credit spread, real yields, market breadth, copper, natural gas, USD/KRW and ETF bid-ask not independently verified; AP Asian quote time unknown; events/daily full content comparison unavailable.",
+    "2026-11-11T05:53:48Z: Asia/India article quotes asynchronous, precise quote timestamps unknown. No synchronized verified current SOXX, VIX, HY/IG spreads, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid-ask; Nov 10 US close is stale. Historical events/daily full audit incomplete. Critical inherited/provisional."
   ]
 }
