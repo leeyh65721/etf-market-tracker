@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T20:28:46Z",
+  "checked_at_utc": "2026-11-11T22:20:24Z",
   "market_date": "2026-11-11",
   "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음(확인 가능한 자료 기준). Reuters/AP 11월 11일 미국 증시 마감 반도체 반등과 CoreWeave 실적은 이전 점검에서 이미 반영한 사건. 이전 위험의 현저한 추가 악화나 신규 독립 충격은 검증되지 않음. 주요 금리·신용·원자재·환율 동시점 자료 부족으로 위험등급 unknown 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(검증된 자료 범위). 11월 11일 미국 증시·반도체 반등 및 CoreWeave 실적은 기존 보고 사건. Reuters 최신 갱신 마감 수치와 기존 기록 사이 차이는 출처 업데이트 차이로 보이며 신규 충격 아님. 11월 11일 원유 종가 상승과 이란 관련 위험도 기존 사건의 연속. 신용·실질금리·동시점 VIX 등 미검증으로 위험등급 확정 불가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -36,16 +36,16 @@
       "note": "Reuters reported as of 06:39 ET; delayed versus check"
     },
     "brent": {
-      "value": 92.81,
+      "value": 92.76,
       "unit": "USD/barrel",
       "observed_at_utc": null,
-      "note": "Reuters Nov 11 report; precise price observation timestamp not verified; delayed"
+      "note": "Reuters Nov 11 settlement, +1.39%; exact settlement time not independently confirmed"
     },
     "wti": {
-      "value": 87.12,
+      "value": 86.53,
       "unit": "USD/barrel",
       "observed_at_utc": null,
-      "note": "Reuters Nov 11 report; precise price observation timestamp not verified; delayed"
+      "note": "Reuters Nov 11 settlement, +0.57%; exact settlement time not independently confirmed"
     },
     "us_treasury_10y": {
       "value": 4.992,
@@ -64,24 +64,24 @@
       "note": "AP Nov 11 session, exact quote time unknown"
     },
     "sp500_cash_reported": {
-      "change_pct": 1.33,
+      "change_pct": 1.31,
       "observed_at_utc": null,
-      "note": "Reuters Nov 11 US closing report; precise quote timestamp unavailable; not live"
+      "note": "Reuters Nov 11 closing article, latest revised report; not live, exact observation time unavailable"
     },
     "nasdaq_composite_reported": {
-      "change_pct": 1.8,
+      "change_pct": 1.6,
       "observed_at_utc": null,
-      "note": "Reuters Nov 11 US closing report; precise quote timestamp unavailable; not live"
+      "note": "Reuters Nov 11 closing article latest revision; AP independently reports 1.6%; exact quote time unknown"
     },
     "dow_reported": {
-      "change_pct": 0.34,
+      "change_pct": 0.49,
       "observed_at_utc": null,
-      "note": "Reuters Nov 11 US closing report; precise quote timestamp unavailable; not live"
+      "note": "Reuters Nov 11 closing article latest revision; AP independently reports approximately 0.5%"
     },
     "phlx_semiconductor_reported": {
-      "change_pct": 7,
+      "change_pct": 5.7,
       "observed_at_utc": null,
-      "note": "Reuters Nov 11 approximate semiconductor index change, not SOXX; precise observation time unavailable"
+      "note": "Reuters Nov 11 latest closing article and Investors Business Daily; supersedes earlier approximate +7%; not SOXX"
     },
     "dollar_index_reported": {
       "change_pct": 0.64,
@@ -101,7 +101,9 @@
     "https://www.reuters.com/world/china/coreweave-sparks-ai-cloud-stock-rally-lifts-nvidia-results-ease-bubble-fears-2026-11-11/",
     "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/",
     "https://www.reuters.com/world/china/foreign-investors-pull-out-50-billion-asian-equities-october-ai-cash-burn-woes-2026-11-11/",
-    "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/"
+    "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/",
+    "https://apnews.com/article/027cd5f4583d1a11c1795150bf065afb",
+    "https://www.investors.com/news/technology/chip-stocks-rally-amd-txn-arm-mtsi-mu/"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -112,6 +114,7 @@
     "Past alerts compared to prior risk JSON and conversation; complete analysis/events and analysis/daily audit not performed.",
     "Nov 11 US close sourced to Reuters article; AP article reports different percentage changes, likely different update snapshots. Exact price observation timestamp unavailable.",
     "This check did not independently verify synchronized real-time Treasury yields, credit spreads, VIX level, SOXX, energy/metals or FX.",
-    "2026-11-11T20:28:46Z check: no fresh synchronized cross-asset observations; previous indicators retained with their original timestamps; no new numbers fabricated."
+    "2026-11-11T20:28:46Z check: no fresh synchronized cross-asset observations; previous indicators retained with their original timestamps; no new numbers fabricated.",
+    "2026-11-11T22:20:24Z: Latest Reuters revisions differ from earlier intraday/closing snapshots; source timestamp is not exchange quote timestamp. No synchronized VIX, SOXX, credit, real yields, gas, gold, copper or KRW data verified; analysis directories could not be enumerated via fetch_file."
   ]
 }
