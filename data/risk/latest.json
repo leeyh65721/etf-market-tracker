@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T20:05:52Z",
+  "checked_at_utc": "2026-11-11T20:28:46Z",
   "market_date": "2026-11-11",
   "risk_level": "unknown",
-  "change_since_previous": "신규 긴급 경고 없음(검증된 범위). Reuters 11월 11일 미국 증시 S&P500 +1.33%, Nasdaq +1.80%, Dow +0.34%, 반도체 지수 약 +7%로 장중 반등이 종가까지 이어짐. AP의 다른 시점 보도 수치와 차이가 있어 Reuters 수치로 기록. 기존 11월 6일 반도체 급락의 중대한 악화 증거가 아니며 CPI 재경고 없음. 금리·신용·환율·원자재 동시점 데이터 부족으로 위험등급은 unknown 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(확인 가능한 자료 기준). Reuters/AP 11월 11일 미국 증시 마감 반도체 반등과 CoreWeave 실적은 이전 점검에서 이미 반영한 사건. 이전 위험의 현저한 추가 악화나 신규 독립 충격은 검증되지 않음. 주요 금리·신용·원자재·환율 동시점 자료 부족으로 위험등급 unknown 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -111,6 +111,7 @@
     "Latest publicly verified data is delayed; no fresh synchronized SOXX, VIX numeric level, credit spreads, real yields, natural gas, gold, copper or USD/KRW available.",
     "Past alerts compared to prior risk JSON and conversation; complete analysis/events and analysis/daily audit not performed.",
     "Nov 11 US close sourced to Reuters article; AP article reports different percentage changes, likely different update snapshots. Exact price observation timestamp unavailable.",
-    "This check did not independently verify synchronized real-time Treasury yields, credit spreads, VIX level, SOXX, energy/metals or FX."
+    "This check did not independently verify synchronized real-time Treasury yields, credit spreads, VIX level, SOXX, energy/metals or FX.",
+    "2026-11-11T20:28:46Z check: no fresh synchronized cross-asset observations; previous indicators retained with their original timestamps; no new numbers fabricated."
   ]
 }
