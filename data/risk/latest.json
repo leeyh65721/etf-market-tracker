@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T02:26:33Z",
+  "checked_at_utc": "2026-11-11T03:27:52Z",
   "market_date": "2026-11-11",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters Nov 11 02:10 UTC oil/Hormuz report and Nov 10 AI credit spread report reviewed. HY 348bp Nov 5 ->342bp Nov 6, not newly escalating. Oil rebound ~0.8% from two-month low; no verified new systemic contagion. Existing critical historical/provisional, not freshly scored.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11 Nov oil report (Brent $92.20, WTI $86.53 at 01:19 UTC) already reviewed at previous 02:26 UTC check. Nov 10 Fed Waller, CPI, AI equity selloff and AP market close previously covered. No independently confirmed escalation or fresh systemic credit/liquidity shock; historical critical remains provisional, not newly scored.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1078,6 +1078,20 @@
       "change_pct": 0.57,
       "observed_at_utc": "2026-11-11T01:19:00Z",
       "note": "Reuters delayed Nov 11 quote"
+    },
+    "brent_nov11_0119_recheck": {
+      "value": 92.2,
+      "unit": "USD/barrel",
+      "change_pct": 0.78,
+      "observed_at_utc": "2026-11-11T01:19:00Z",
+      "note": "Reuters delayed snapshot, same observation as previous check; not new market move"
+    },
+    "wti_nov11_0119_recheck": {
+      "value": 86.53,
+      "unit": "USD/barrel",
+      "change_pct": 0.57,
+      "observed_at_utc": "2026-11-11T01:19:00Z",
+      "note": "Reuters delayed snapshot; previously covered"
     }
   },
   "sources": [
@@ -1213,6 +1227,7 @@
     "Nov 11 00:33:56 UTC check: no synchronized latest SOXX, VIX, broad HY/IG spreads, real yields, breadth, gas, copper, USD/KRW or ETF bid-ask independently verified; source reports are delayed and not synchronized.",
     "GitHub analysis/events and analysis/daily directory listing failed; full prior-event reconciliation unavailable.",
     "2026-11-11T01:47:39Z: US Nov 10 close and delayed Reuters/FT snapshots, not live synchronized quotes. Current broad IG/HY spreads, real yields, VIX, breadth, gas, copper, USD/KRW and ETF bid/ask unverified. No new independently confirmed escalation; historical critical classification provisional.",
-    "2026-11-11T02:26:33Z: HY/IG spreads are Nov 5-6 historical observations, not Nov 11 quotes; Reuters oil quotes 01:19 UTC delayed ~67 min. No synchronized current VIX, SOXX, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid-ask. No verified new urgent escalation; prior critical carried historically. Full analysis/events and analysis/daily audit incomplete."
+    "2026-11-11T02:26:33Z: HY/IG spreads are Nov 5-6 historical observations, not Nov 11 quotes; Reuters oil quotes 01:19 UTC delayed ~67 min. No synchronized current VIX, SOXX, real yields, market breadth, natural gas, copper, USD/KRW or ETF bid-ask. No verified new urgent escalation; prior critical carried historically. Full analysis/events and analysis/daily audit incomplete.",
+    "2026-11-11T03:27:52Z: No newer independently verified synchronized price snapshot than prior check for oil; US equity data Nov 10 closing, not live. SOXX, VIX, broad IG/HY spreads, real yields, breadth, natural gas, copper, USD/KRW and ETF bid-ask not independently confirmed for this hour. Full event/daily historical audit incomplete. Critical is inherited/provisional."
   ]
 }
