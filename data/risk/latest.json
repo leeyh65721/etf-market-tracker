@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T08:25:51Z",
+  "checked_at_utc": "2026-11-11T10:21:05Z",
   "market_date": "2026-11-11",
   "risk_level": "critical",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 11일 아시아 MSCI +1.9%, Nasdaq 선물 +1.4% 및 CoreWeave 실적 전망 호조로 반도체 위험의 추가 전이 근거 부족. CPI/금리 상승은 기존 사건. 11월 6일 critical은 이월 잠정 등급이며 현재 동시점 재평가 불가. 미국 회사채 신용스프레드·실질금리·시장 폭·원자재 전체 및 USD/KRW 최신 동시점 검증 미완료.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 11일 Reuters 유가 Brent $92.77(+1.4%), WTI $86.80(+0.9%)로 직전 확인치 $92.53/$86.71 대비 소폭 상승. 이란 핵물질 반출 거부와 호르무즈 공격 지속은 기존 위험의 연장; 원유 재고 900만 배럴 증가(잠정)는 반대 근거. 아시아 증시 반등과 미국 선물 강세는 기존 반도체 전이 위험 추가 악화에 반대. 신용·변동성 최신 동시점 수치 부재로 11월 6일 critical은 재평가 불가인 과거 잠정 등급.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1144,6 +1144,26 @@
       "change_pct": 1.4,
       "observed_at_utc": null,
       "note": "Reuters 2026-11-11 보도, 정확한 호가 시각 불명"
+    },
+    "brent_nov11_reuters_latest": {
+      "value": 92.77,
+      "unit": "USD/barrel",
+      "change_pct": 1.4,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 11 report; precise quote timestamp not available; delayed"
+    },
+    "wti_nov11_reuters_latest": {
+      "value": 86.8,
+      "unit": "USD/barrel",
+      "change_pct": 0.9,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 11 report; precise quote timestamp unavailable"
+    },
+    "us_crude_inventory_api_preliminary": {
+      "value": 9,
+      "unit": "million barrels increase",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 11 citing preliminary industry data; official EIA pending, not independently verified"
     }
   },
   "sources": [
@@ -1264,9 +1284,10 @@
     "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
   ],
   "data_limitations": [
-    "미국 정규장 최신 가격은 11월 10일 종가; 선물/아시아 지수 Reuters 보도는 관측 시각 불명",
-    "최신 SOXX, VIX, 신용스프레드, 실질금리, 시장 폭, 천연가스·구리, USD/KRW, ETF 호가를 동일 시점 검증하지 못함",
-    "GitHub analysis/events 및 analysis/daily 디렉터리 조회 실패, 대화의 기존 경고와 비교",
-    "critical은 11월 6일 과거 사건에서 이월한 잠정 등급으로 이번 점검에서 재산정하지 않음"
+    "Reuters 원유 가격은 11월 11일 보도 기준이며 정확한 체결·관측 시각 불명, 실시간 아님",
+    "미국 현물 증시는 11월 10일 종가; 11월 11일 미국 국채시장은 Veterans Day 휴장",
+    "최신 SOXX, VIX, 광범위 신용스프레드, 실질금리, 시장 폭, 천연가스, 구리, USD/KRW 동시점 검증 불가",
+    "11월 6일 critical은 과거 경고의 잠정 이월 등급이며 현재 독립 재산정 불가",
+    "기존 사건·일일 기록 전체 개별 대조 미완료"
   ]
 }
