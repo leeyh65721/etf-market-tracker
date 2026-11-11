@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T00:33:56Z",
+  "checked_at_utc": "2026-11-11T01:47:39Z",
   "market_date": "2026-11-10",
   "risk_level": "critical",
-  "change_since_previous": "No newly verified urgent event or material deterioration versus 2026-11-10T23:50:15Z. Reuters/AP Nov 10 closing reports reconfirm already-covered CPI/rate shock; Nvidia and AI infrastructure weakness warrant monitoring but not independently proven new broad credit/liquidity escalation. Prior critical label remains inherited/provisional, not independently re-scored. No new alert.",
+  "change_since_previous": "신규 경고 없음. Nov 10 US close and Reuters Nov 11 reporting remain consistent with previously covered CPI/yield shock; no independently verified new systemic escalation. Prior critical rating remains historical/provisional, not freshly scored.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1045,6 +1045,13 @@
       "unit": "percent",
       "observed_at_utc": null,
       "note": "WSJ Nov 10 report, precise quote time not verified; existing inflation/rates event"
+    },
+    "us_october_cpi_mom_reuters_nov10": {
+      "value": 0.4,
+      "unit": "percent",
+      "consensus": 0.3,
+      "observed_at_utc": "2026-11-10T13:30:00Z",
+      "note": "Previously covered CPI release, not new event; Reuters Nov 10."
     }
   },
   "sources": [
@@ -1176,6 +1183,7 @@
     "2026-11-10T23:07:44Z: AP/WSJ confirmed Nov 10 equity close; precise 2y yield timestamp unknown. No synchronized verified current SOXX, VIX, broad IG/HY spreads, real yields, breadth, WTI/Brent settlements, natural gas, copper, USD/KRW, ETF bid-ask. Historical event/daily full directory audit unavailable. Critical carried historically, not freshly scored.",
     "Nov 11 08:50 KST check: latest synchronized SOXX/VIX/credit spreads/real yields/breadth/natural gas/copper/USD-KRW unavailable; last US session close used, no fabricated intraday readings.",
     "Nov 11 00:33:56 UTC check: no synchronized latest SOXX, VIX, broad HY/IG spreads, real yields, breadth, gas, copper, USD/KRW or ETF bid-ask independently verified; source reports are delayed and not synchronized.",
-    "GitHub analysis/events and analysis/daily directory listing failed; full prior-event reconciliation unavailable."
+    "GitHub analysis/events and analysis/daily directory listing failed; full prior-event reconciliation unavailable.",
+    "2026-11-11T01:47:39Z: US Nov 10 close and delayed Reuters/FT snapshots, not live synchronized quotes. Current broad IG/HY spreads, real yields, VIX, breadth, gas, copper, USD/KRW and ETF bid/ask unverified. No new independently confirmed escalation; historical critical classification provisional."
   ]
 }
