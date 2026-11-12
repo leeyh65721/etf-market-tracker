@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-12T09:18:10Z",
+  "checked_at_utc": "2026-11-12T10:17:35Z",
   "market_date": "2026-11-12",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 12일 Nvidia 이사회/아시아 시장 및 유럽 증시 후속 보도 대조. 기존 Nvidia 경영진 위험은 아시아 반도체로 전이되었으나 이전 경고에 이미 반영된 범위이며, 08:00:56 UTC 이후 공식 해임 결정 또는 새 신용·유동성 충격은 검증되지 않음. 잠정 high 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 12일 Reuters 미국 개장 전 보도: NVDA 프리마켓 약 -7%, Nasdaq100 선물 -0.79%, S&P500 선물 -0.38%; Intel/Marvell/Micron 약 -2.6~-3.4%. 기존 CEO 교체 가능성 사건의 예상된 업종 전이이며 이전 경고 대비 위험 단계 상승이나 공식 해임, 새로운 신용·유동성 충격은 검증되지 않음. 잠정 high 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -118,6 +118,21 @@
       "price_usd": 159.97,
       "observed_at_utc": "2026-11-12T00:26:51Z",
       "note": "Yahoo Finance after-hours Nov 11 19:26:51 EST; delayed indicative quote, not regular-session close; no material worsening vs prior reported -8.1%"
+    },
+    "nvda_premarket_reported": {
+      "change_pct": -7,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 12 US premarket article; approximate, exact exchange quote timestamp not supplied; not regular close"
+    },
+    "nasdaq100_futures_nov12": {
+      "change_pct": -0.79,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 12 premarket snapshot; precise quote timestamp unknown"
+    },
+    "sp500_futures_nov12": {
+      "change_pct": -0.38,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 12 premarket snapshot; precise quote timestamp unknown"
     }
   },
   "sources": [
@@ -148,7 +163,10 @@
     "https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/",
     "https://www.reuters.com/business/retail-consumer/global-markets-view-europe-2026-11-12/",
     "https://www.reuters.com/business/finance/after-us-market-shake-out-signs-suggest-too-soon-say-worst-is-over-2026-11-11/",
-    "https://www.reuters.com/business/europes-stoxx-600-hits-record-high-strong-earnings-easing-mideast-tensions-2026-11-12/"
+    "https://www.reuters.com/business/europes-stoxx-600-hits-record-high-strong-earnings-easing-mideast-tensions-2026-11-12/",
+    "https://www.reuters.com/business/nasdaq-futures-fall-nvidia-turmoil-rattles-ai-stocks-2026-11-12/",
+    "https://www.reuters.com/world/asia-pacific/dollar-near-one-month-high-yen-edges-toward-160-2026-11-12/",
+    "https://www.reuters.com/world/india/gold-falls-over-one-week-low-firm-dollar-fed-rate-hike-bets-2026-11-12/"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -171,6 +189,7 @@
     "2026-11-12T05:35:25Z: Reuters oil quotes observed 04:26 UTC and are delayed; AP Asian stock movements are session snapshots without synchronized exchange timestamps. No new official Nvidia board decision verified. Current SOXX/VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW not verified; older indicators preserve original timestamps.",
     "2026-11-12T06:43:13Z: Reuters 06:26 UTC analysis checked; no official board decision independently confirmed. No fresh synchronized SOXX/VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or market breadth; older observations preserved. Historical directory audit incomplete.",
     "2026-11-12T08:00:56Z: Reuters reports are delayed and mostly cover previously reported Nvidia leadership risk; no new official board decision verified. No synchronized current SOXX, VIX, corporate credit spreads, nominal/real yields, natural gas, gold, copper, USD/KRW or market breadth. Historical analysis directories not fully audited. Existing observations retain their original timestamps.",
-    "2026-11-12T09:18:10Z: Reuters reports include delayed session snapshots and a live article without verified new board decision. Synchronized SOXX, VIX, credit spreads, real yields, gas, gold, copper, USD/KRW and market breadth unavailable; older observations preserve original times. Historical directories not fully audited."
+    "2026-11-12T09:18:10Z: Reuters reports include delayed session snapshots and a live article without verified new board decision. Synchronized SOXX, VIX, credit spreads, real yields, gas, gold, copper, USD/KRW and market breadth unavailable; older observations preserve original times. Historical directories not fully audited.",
+    "2026-11-12T10:17:35Z: Reuters premarket percentage snapshots have no exact quote timestamps; no synchronized SOXX, VIX, credit spreads, Treasury real yields, gas, copper or USD/KRW. Dollar 19-month high and gold weakness reported qualitatively, not invented as fresh quotes. No confirmed Nvidia board decision; full historical directories not audited."
   ]
 }
