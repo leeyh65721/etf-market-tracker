@@ -1,0 +1,41 @@
+{
+  "schema_version": "public_stock_judgment_v1",
+  "record_id": "2026-11-11-NVDA-watch_only",
+  "ticker": "NVDA",
+  "security_type": "common_stock",
+  "stance": "watch_only",
+  "us_market_date": "2026-11-11",
+  "original_report_date_kst": "2026-11-12",
+  "archived_on_utc_date": "2026-11-12",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/stocks/daily/2026-11-12.md",
+  "verbatim_source_excerpt": "NVDA는 CEO 교체 검토 보도에 따른 경영 연속성 위험으로 watch_only이며, 시간외 약 -8%를 정규장 종가나 확정 체결가로 취급하지 않는다.",
+  "original_close_usd": 173.73,
+  "original_spy_close_usd": 759.8,
+  "source_price_url": "https://finance.yahoo.com/quote/NVDA/history/ ; https://chartexchange.com/symbol/nyse-spy/historical/",
+  "thesis": "WSJ-reported possible CEO ouster creates material company-specific leadership and gap risk; not a semiconductor-sector demand statistic.",
+  "counterevidence": "No official board decision verified; stock rallied in 2026-11-11 regular session, and no new company-wide revenue deterioration confirmed.",
+  "invalidation": "Official board clarification and durable relative-strength recovery can weaken the risk thesis; adverse confirmed governance decision strengthens it.",
+  "entry_trigger": "Only consider after official leadership clarity and regular-session price support with verified intraday volume and SPY relative strength.",
+  "trigger_status": "unverified_not_triggered",
+  "trigger_validity": "Next 1-5 NYSE sessions; reassess on material board announcement.",
+  "reference_price_timestamp": "2026-11-11 16:00 America/New_York regular close, not after-hours",
+  "execution_verified": false,
+  "trade_instruction": false,
+  "target_and_stop_basis": "No numeric target/stop or R:R asserted; ATR, gap and executable spread unverified. Invalidation on renewed low break or adverse official board action.",
+  "review_horizons_nyse_sessions": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "evaluation_status": "pending",
+  "after_hours_risk_note": "Reuters Nov 11 reported ~8% NVDA after-hours drop; not an executable close baseline.",
+  "sources": [
+    "https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/",
+    "https://finance.yahoo.com/quote/NVDA/history/",
+    "https://chartexchange.com/symbol/nyse-spy/historical/"
+  ]
+}
