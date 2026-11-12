@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-11T23:48:09Z",
+  "checked_at_utc": "2026-11-12T00:51:10Z",
   "market_date": "2026-11-11",
   "risk_level": "high",
-  "change_since_previous": "기존 Nvidia 경영진·안보 의혹의 중대한 악화: 11월 11일 미국 장 마감 후 WSJ가 이사회 CEO 교체 준비를 보도하고 Nvidia 시간외 주가 약 -8%로 반응. 직전 23:16Z 점검에 반영되지 않은 새로운 경영 연속성 위험. 이사회 결정·퇴임은 미확인, 전 시장 전이와 신용충격도 미확인. 잠정 high(사건 위험), 계좌 낙폭 추정 아님.",
+  "change_since_previous": "신규 독립 긴급 경고 없음. 11월 11일 Reuters는 미 상원의원 Kevin Cramer의 Huang 사임 요구를 보도했으나 기존 CEO 교체 검토 및 정치적 압박 경고의 연속. 이사회 최종 결정·반도체 전반 시간외 전이·신용 유동성 악화는 미확인. 기존 high 사건 위험 유지; 최신 동시점 가격 부재.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -133,7 +133,8 @@
     "https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/",
     "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
     "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/",
-    "https://news.sbs.co.kr/english/article.do?news_id=N1008842159"
+    "https://news.sbs.co.kr/english/article.do?news_id=N1008842159",
+    "https://www.reuters.com/world/china/senior-republican-us-senate-banking-panel-calls-nvidia-ceo-huang-resign-2026-11-11/"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -147,6 +148,7 @@
     "2026-11-11T20:28:46Z check: no fresh synchronized cross-asset observations; previous indicators retained with their original timestamps; no new numbers fabricated.",
     "2026-11-11T22:20:24Z: Latest Reuters revisions differ from earlier intraday/closing snapshots; source timestamp is not exchange quote timestamp. No synchronized VIX, SOXX, credit, real yields, gas, gold, copper or KRW data verified; analysis directories could not be enumerated via fetch_file.",
     "2026-11-11T23:16:27Z: Reuters/AP Nov 11 closing figures reconfirmed, not fresh live quotes. Nov 11 Treasury cash market closed. Current synchronized SOXX, VIX, credit spreads, real yields, metals, natural gas, USD/KRW and market breadth unavailable. No full analysis directory audit.",
-    "Nov 11 late-hours Nvidia board ouster remains a sourced media report, not an official board decision; Reuters could not independently verify. NVDA after-hours quotes are delayed/indicative, broad ETF/futures and credit spillover unverified. Risk level high is provisional event risk, not a portfolio drawdown estimate."
+    "Nov 11 late-hours Nvidia board ouster remains a sourced media report, not an official board decision; Reuters could not independently verify. NVDA after-hours quotes are delayed/indicative, broad ETF/futures and credit spillover unverified. Risk level high is provisional event risk, not a portfolio drawdown estimate.",
+    "2026-11-12 00:51 UTC check: no independently confirmed board decision or fresh synchronized SOXX, VIX, credit spread, real yield, metals, natural gas, USD/KRW prices; previously recorded indicator timestamps remain unchanged."
   ]
 }
