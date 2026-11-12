@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-12T17:15:49Z",
+  "checked_at_utc": "2026-11-12T18:02:05Z",
   "market_date": "2026-11-12",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 12일 Nvidia CEO 사임 관련 기존 high 경고 이후 Reuters 최신 장중 보도에서 미국 지수는 개장 하락을 회복(Dow +0.40%, S&P500 +0.29%, Nasdaq +0.31%), NVDA 약 -4%, AMD +7%, AVGO +5.4%. 10년물 약 5.066%, Brent 약 $93.82, WTI 약 $86.81로 금리·원유 부담은 남지만, 기존 경고 대비 새롭고 검증된 시장 전반 신용·유동성 전이 또는 즉시 방어 필요성은 확인되지 않음. 보도 시각과 실제 호가 시각 불일치; high 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP 11월 12일 장중 후속 자료에서 미국 주요 지수는 개장 하락을 회복하고 NVDA 낙폭 축소, AMD/AVGO 상대적 강세로 기존 CEO 사임 충격의 시장 전반 전이가 심화됐다는 증거는 부족. 다만 Nebius 2026 매출 가이던스 하향과 AI 데이터센터 용량 지연, 높은 금리/유가 부담은 관찰 필요. 신용스프레드/VIX/SOXX 동시점 독립 검증 불가; 기존 high 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -208,6 +208,22 @@
       "unit": "USD/barrel",
       "observed_at_utc": null,
       "note": "Reuters Nov 12 intraday reported; precise quote timestamp unknown"
+    },
+    "us_market_reuters_1138_et_nov12": {
+      "observed_at_utc": "2026-11-12T16:38:00Z",
+      "sp500_change_pct": 0.17,
+      "nasdaq_change_pct": 0.14,
+      "dow_change_pct": 0.24,
+      "nvda_change_pct": -4.2,
+      "sector_positive_count": 8,
+      "sector_total_count": 11,
+      "note": "Reuters Nov 12 11:38 ET reported snapshot; NVDA approximate; not current synchronized market quotes"
+    },
+    "nebius_nov12_guidance": {
+      "observed_at_utc": null,
+      "fy2026_revenue_guidance_low_usd_billion": 3,
+      "fy2026_revenue_guidance_high_usd_billion": 3.2,
+      "note": "Reuters Nov 12: capacity delays shift openings into H1 2027; company-specific execution/financing watch, not proven systemic credit shock"
     }
   },
   "sources": [
@@ -251,7 +267,8 @@
     "https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns",
     "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
     "https://www.ft.com/content/a93307a7-e2cd-4abd-bd89-c38832d8c40e",
-    "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board"
+    "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board",
+    "https://www.reuters.com/technology/nebius-beats-quarterly-revenue-estimates-strong-ai-demand-2026-11-12/"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -282,6 +299,7 @@
     "2026-11-12T14:17:16Z: Confirmed CEO transition; reported premarket declines are delayed. No synchronized regular-session SOXX, VIX, market breadth, high-yield spreads, real yields, gas, copper, gold or USD/KRW verified. Existing indicator observation times unchanged.",
     "At 14:51 UTC Nov 12, opening index values are delayed snapshots, not live quotes; synchronized SOXX, VIX, credit spreads, Treasury real yields, FX and commodity measurements unavailable.",
     "2026-11-12T16:09:51Z: Reuters 09:45 ET and AP morning observations are delayed and non-synchronous; no independently verified same-time SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or quantitative breadth. No comprehensive historical directory audit; existing older observations retain original timestamps.",
-    "2026-11-12T17:15:49Z: Reuters/AP/MarketWatch Nov 12 intraday reports are delayed and nonsynchronous; no independently verified simultaneous SOXX, VIX, HY credit spread, Treasury real yield, natural gas, gold, copper, USD/KRW or numeric market breadth. Historical analysis directory audit incomplete; older indicators retain original timestamps."
+    "2026-11-12T17:15:49Z: Reuters/AP/MarketWatch Nov 12 intraday reports are delayed and nonsynchronous; no independently verified simultaneous SOXX, VIX, HY credit spread, Treasury real yield, natural gas, gold, copper, USD/KRW or numeric market breadth. Historical analysis directory audit incomplete; older indicators retain original timestamps.",
+    "2026-11-12T18:02Z 점검: SOXX, VIX, HY/IG 신용스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 수치 시장 폭의 동시점 원시자료 미확보. 이전 지표는 각 관측 시각을 보존하며 실시간으로 해석하지 말 것."
   ]
 }
