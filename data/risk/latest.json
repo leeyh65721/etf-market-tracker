@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-12T19:16:40Z",
+  "checked_at_utc": "2026-11-12T19:26:05Z",
   "market_date": "2026-11-12",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. AP 11월 12일 오후 S&P500 약 -0.2%, Nasdaq 약 -0.3%, NVDA 약 -5.1%로 Reuters 이전 장중 반등(+0.17%, +0.14%, NVDA -4.2%) 대비 소폭 재약세. Brent 약 $95.18, 10년물 약 5.11%로 유가·금리 부담은 증가했지만 기존 Nvidia 사임 충격의 중대한 전이 또는 신용·유동성 위기 증거는 확인되지 않음. 기존 high 유지; 동시점 데이터 부족.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP/Barron's 11월 12일 후속 보도상 NVDA CEO 사임은 기존 경고 사건이며, NVDA 약 -4.9%, AMD +5.5%, AVGO +5.4% 등 업종 내 차별화가 확인됨. 직전 AP 오후 NVDA -5.1%와 관측시각이 다른 지연 자료로 중대한 추가 악화 판단 불가. Brent $95.18·10년물 5.11%는 이전 관측치로 신규 상승으로 재분류하지 않음. 신용스프레드·VIX·SOXX 동시점 원자료 부재로 전체 시장 전이 검증은 제한됨.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -244,6 +244,21 @@
       "unit": "percent",
       "observed_at_utc": null,
       "note": "AP Nov 12 afternoon reported snapshot; exact timestamp unavailable"
+    },
+    "nvda_barrons_nov12": {
+      "change_pct": -4.9,
+      "observed_at_utc": null,
+      "note": "Barron's Nov 12 market report; approximate delayed quote, exact exchange timestamp unavailable"
+    },
+    "amd_barrons_nov12": {
+      "change_pct": 5.5,
+      "observed_at_utc": null,
+      "note": "Barron's Nov 12 market report, delayed"
+    },
+    "avgo_barrons_nov12": {
+      "change_pct": 5.4,
+      "observed_at_utc": null,
+      "note": "Barron's Nov 12 market report, delayed"
     }
   },
   "sources": [
@@ -288,7 +303,8 @@
     "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
     "https://www.ft.com/content/a93307a7-e2cd-4abd-bd89-c38832d8c40e",
     "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board",
-    "https://www.reuters.com/technology/nebius-beats-quarterly-revenue-estimates-strong-ai-demand-2026-11-12/"
+    "https://www.reuters.com/technology/nebius-beats-quarterly-revenue-estimates-strong-ai-demand-2026-11-12/",
+    "https://www.barrons.com/articles/stock-movers-cd2d0ebf"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -321,6 +337,8 @@
     "2026-11-12T16:09:51Z: Reuters 09:45 ET and AP morning observations are delayed and non-synchronous; no independently verified same-time SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or quantitative breadth. No comprehensive historical directory audit; existing older observations retain original timestamps.",
     "2026-11-12T17:15:49Z: Reuters/AP/MarketWatch Nov 12 intraday reports are delayed and nonsynchronous; no independently verified simultaneous SOXX, VIX, HY credit spread, Treasury real yield, natural gas, gold, copper, USD/KRW or numeric market breadth. Historical analysis directory audit incomplete; older indicators retain original timestamps.",
     "2026-11-12T18:02Z 점검: SOXX, VIX, HY/IG 신용스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 수치 시장 폭의 동시점 원시자료 미확보. 이전 지표는 각 관측 시각을 보존하며 실시간으로 해석하지 말 것.",
-    "2026-11-12T19:16:40Z: AP afternoon values delayed, no exact exchange quote timestamp; latest synchronized SOXX, VIX, credit spreads, real yields, gas, gold, copper, USD/KRW and quantitative breadth not independently verified. No full historical directory audit; prior timestamps retained."
+    "2026-11-12T19:16:40Z: AP afternoon values delayed, no exact exchange quote timestamp; latest synchronized SOXX, VIX, credit spreads, real yields, gas, gold, copper, USD/KRW and quantitative breadth not independently verified. No full historical directory audit; prior timestamps retained.",
+    "Nov 12 19:26 UTC check: latest synchronized SOXX, VIX, credit spreads, real yields, market breadth, USD/KRW, gas, copper, gold not independently verified; quoted market figures are delayed and not simultaneous.",
+    "No new critical event independently verified; prior alert entries preserved."
   ]
 }
