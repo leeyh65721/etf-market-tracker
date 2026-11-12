@@ -1,0 +1,27 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-13-MARKET-no_new_candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-11-12",
+  "original_report_date_kst": "2026-11-13",
+  "archived_on_utc_date": "2026-11-12",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-11-13.md",
+  "verbatim_source_excerpt": "**새 매수 후보 없음. 초단기 적격 확정 진입 후보 없음.**",
+  "original_close_usd": null,
+  "original_spy_close_usd": null,
+  "thesis": "No validated 2026-11-12 ETF scanner; no confirmed executable entry.",
+  "counterevidence": "New leadership event and market rotation may produce a verified future opportunity.",
+  "invalidation": "Updated dated ETF OHLCV, official catalyst, AUM, fees, spreads and volume/relative-strength trigger confirmed.",
+  "revisit_trigger": "Next NYSE close and 5/10/20 NYSE sessions; do not score untriggered signals.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false,
+  "trigger_status": "unverified_not_triggered",
+  "evaluation_status": "pending"
+}
