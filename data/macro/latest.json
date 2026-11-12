@@ -1,6 +1,6 @@
 {
-  "market_date": "2026-11-10",
-  "generated_at_utc": "2026-11-10T23:57:50.184066+00:00",
+  "market_date": "2026-11-11",
+  "generated_at_utc": "2026-11-12T00:10:08.373466+00:00",
   "status": "ok",
   "requested_series_count": 22,
   "retrieved_series_count": 22,
@@ -8,7 +8,7 @@
   "source": "US Treasury, BLS, EIA, Cboe, ECB, and New York Fed official public sources",
   "credit_etf_proxies": {
     "status": "ok",
-    "asof": "2026-11-10",
+    "asof": "2026-11-11",
     "metric_type": "difference in ETF price returns, not yield spread/OAS",
     "caveats": [
       "ETF price returns exclude FX and may differ in duration, fees and distributions.",
@@ -19,14 +19,14 @@
       "HY_vs_treasury": {
         "credit_etf": "HYG",
         "treasury_etf": "IEF",
-        "5d_price_return_gap_pp": 0.425,
-        "21d_price_return_gap_pp": -1.909
+        "5d_price_return_gap_pp": 0.567,
+        "21d_price_return_gap_pp": -1.227
       },
       "IG_vs_treasury": {
         "credit_etf": "LQD",
         "treasury_etf": "IEF",
-        "5d_price_return_gap_pp": 0.319,
-        "21d_price_return_gap_pp": -0.5
+        "5d_price_return_gap_pp": 0.269,
+        "21d_price_return_gap_pp": -0.189
       }
     }
   },
@@ -222,15 +222,15 @@
       "frequency": "daily",
       "unit": "index",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-      "observation_date": "2026-11-09",
-      "value": 19.92,
-      "previous_date": "2026-11-06",
-      "previous_value": 25.64,
-      "change_previous": -5.72,
+      "observation_date": "2026-11-10",
+      "value": 19.46,
+      "previous_date": "2026-11-09",
+      "previous_value": 19.92,
+      "change_previous": -0.46,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-02",
-      "five_observation_change": -1.23,
-      "five_observation_pct": -5.8156
+      "five_observation_reference_date": "2026-11-03",
+      "five_observation_change": -1.37,
+      "five_observation_pct": -6.5771
     },
     {
       "series_id": "VVIX",
@@ -238,15 +238,15 @@
       "frequency": "daily",
       "unit": "index",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VVIX_History.csv",
-      "observation_date": "2026-11-10",
-      "value": 96.63,
-      "previous_date": "2026-11-09",
-      "previous_value": 98.43,
-      "change_previous": -1.8,
+      "observation_date": "2026-11-11",
+      "value": 90.47,
+      "previous_date": "2026-11-10",
+      "previous_value": 96.63,
+      "change_previous": -6.16,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-03",
-      "five_observation_change": -10.77,
-      "five_observation_pct": -10.0279
+      "five_observation_reference_date": "2026-11-04",
+      "five_observation_change": 0.06,
+      "five_observation_pct": 0.0664
     },
     {
       "series_id": "USD_KRW_ECB",
@@ -254,15 +254,15 @@
       "frequency": "daily",
       "unit": "KRW/USD",
       "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml",
-      "observation_date": "2026-11-10",
-      "value": 1339.00482,
-      "previous_date": "2026-11-09",
-      "previous_value": 1346.78817,
-      "change_previous": -7.78336,
+      "observation_date": "2026-11-11",
+      "value": 1336.90123,
+      "previous_date": "2026-11-10",
+      "previous_value": 1339.00482,
+      "change_previous": -2.10358,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-03",
-      "five_observation_change": -5.58772,
-      "five_observation_pct": -0.4156
+      "five_observation_reference_date": "2026-11-04",
+      "five_observation_change": -1.68047,
+      "five_observation_pct": -0.1255
     },
     {
       "series_id": "EUR_USD_ECB",
@@ -270,15 +270,15 @@
       "frequency": "daily",
       "unit": "USD/EUR",
       "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml",
-      "observation_date": "2026-11-10",
-      "value": 1.1214,
-      "previous_date": "2026-11-09",
-      "previous_value": 1.1193,
-      "change_previous": 0.0021,
+      "observation_date": "2026-11-11",
+      "value": 1.1127,
+      "previous_date": "2026-11-10",
+      "previous_value": 1.1214,
+      "change_previous": -0.0087,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-03",
-      "five_observation_change": 0.0035,
-      "five_observation_pct": 0.3131
+      "five_observation_reference_date": "2026-11-04",
+      "five_observation_change": -0.014,
+      "five_observation_pct": -1.2426
     },
     {
       "series_id": "EFFR",
