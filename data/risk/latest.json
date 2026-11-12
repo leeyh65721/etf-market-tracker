@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-12T14:17:16Z",
+  "checked_at_utc": "2026-11-12T14:51:35Z",
   "market_date": "2026-11-12",
   "risk_level": "high",
-  "change_since_previous": "긴급 위험 경고 — 기존 CEO 교체 가능성 보도에서 Nvidia 공식 CEO 사임·CFO 임시 CEO 선임으로 확정된 중대한 악화. Reuters/AP 교차 확인. 약 -10% 프리마켓 보도는 지연 자료이며 동시점 신용/시장 폭 전이 검증 불가. 기존 high 유지하되 경영 실행 위험의 확실성 상승; 정규장 SOXX/VIX/신용지표 재확인 필요.",
+  "change_since_previous": "신규 긴급 경고 없음. 직전 Nvidia CEO 사임 경고 이후 미국 정규장 개장 하락 확인: Reuters 개장 시 Nasdaq -1.47%, S&P500 -0.90%, Dow -0.11%. 이는 이미 경고한 CEO 사임 사건의 시장 반영이며, 추가 위험 단계 상승 또는 신용·유동성 전이는 동시점 검증되지 않음. 기존 high 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -151,6 +151,13 @@
       "change_pct": -0.31,
       "observed_at_utc": null,
       "note": "Reuters Nov 12 later premarket snapshot; exact quote time unavailable"
+    },
+    "us_market_open_nov12": {
+      "observed_at_utc": "2026-11-12T14:30:00Z",
+      "note": "Reuters Nov 12 opening snapshot, approximate market open time; not current 14:51 UTC quote",
+      "nasdaq_composite_change_pct": -1.47,
+      "sp500_change_pct": -0.9,
+      "dow_change_pct": -0.11
     }
   },
   "sources": [
@@ -191,7 +198,8 @@
     "https://www.reuters.com/business/media-telecom/nvidias-asian-supply-chain-prepares-life-after-huang-2026-11-12/",
     "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/",
     "https://apnews.com/article/5403f152a601cf82ce939f1d24fffa0f",
-    "https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns"
+    "https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns",
+    "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -219,6 +227,7 @@
     "2026-11-12T11:11:51Z: Reuters and Barron's premarket snapshots are delayed and lack synchronized exchange timestamps. No independently verified official CEO removal, live SOXX/VIX, HY credit spread, Treasury real yields, natural gas, copper, USD/KRW, or quantitative breadth. Existing indicator timestamps retained. No complete analysis directory audit.",
     "2026-11-12T11:40:09Z: Reuters 11:34 UTC commentary checked; US regular session not yet open. No synchronized current SOXX/VIX, credit spreads, Treasury nominal/real yields, natural gas, copper, USD/KRW or numeric breadth independently confirmed. Previous indicator timestamps retained; full analysis directory audit not performed.",
     "2026-11-12T12:49:22Z: Reuters premarket figures delayed and without exchange quote timestamp. No confirmed CEO dismissal; no synchronized SOXX/VIX, credit spreads, real yields, natural gas, copper, USD/KRW, market breadth. Existing other indicator observation times preserved; historical directories not fully audited.",
-    "2026-11-12T14:17:16Z: Confirmed CEO transition; reported premarket declines are delayed. No synchronized regular-session SOXX, VIX, market breadth, high-yield spreads, real yields, gas, copper, gold or USD/KRW verified. Existing indicator observation times unchanged."
+    "2026-11-12T14:17:16Z: Confirmed CEO transition; reported premarket declines are delayed. No synchronized regular-session SOXX, VIX, market breadth, high-yield spreads, real yields, gas, copper, gold or USD/KRW verified. Existing indicator observation times unchanged.",
+    "At 14:51 UTC Nov 12, opening index values are delayed snapshots, not live quotes; synchronized SOXX, VIX, credit spreads, Treasury real yields, FX and commodity measurements unavailable."
   ]
 }
