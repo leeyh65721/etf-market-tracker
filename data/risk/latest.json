@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-12T22:19:39Z",
+  "checked_at_utc": "2026-11-12T23:19:20Z",
   "market_date": "2026-11-12",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 12일 마감 재확인: NVDA 약 -4.3%, S&P500 -0.35%, Nasdaq -0.39%, Dow -0.36%. AP는 Brent $95.82(+3.3%), 미국 10년물 약 5.12% 보도. 기존 CEO 사임 및 유가/금리 위험의 지속이며 새로운 위험 단계 상승은 검증되지 않음. 신용스프레드/VIX/SOXX 동시점 자료 부재.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 12일 미국장 마감 S&P500 약 -0.35%, Nasdaq -0.39%, Dow -0.36%, NVDA 약 -4.3%로 직전 점검과 일치. Reuters 19:27 UTC 추가 관계 보도는 직전 점검 이전 보도이며 기존 CEO 사임 사건의 재보도/후속 내용; 추가 시장 전이 또는 위험 단계 상승 미검증. AP에 따르면 Russell 2000 -1.7%, Brent $95.82, 10년물 약 5.12%; 동시점 신용·변동성 자료 부재.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -284,6 +284,11 @@
       "unit": "percent",
       "observed_at_utc": null,
       "note": "AP Nov 12 end-of-day report, exact quote time unavailable"
+    },
+    "russell2000_nov12_close": {
+      "change_pct": -1.7,
+      "observed_at_utc": "2026-11-12T21:00:00Z",
+      "note": "AP Nov 12 close; approximate, scheduled closing time not verified quote timestamp"
     }
   },
   "sources": [
@@ -330,7 +335,9 @@
     "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board",
     "https://www.reuters.com/technology/nebius-beats-quarterly-revenue-estimates-strong-ai-demand-2026-11-12/",
     "https://www.barrons.com/articles/stock-movers-cd2d0ebf",
-    "https://www.reuters.com/business/retail-consumer/retail-buyers-limit-nvidia-stock-rout-2026-11-12/"
+    "https://www.reuters.com/business/retail-consumer/retail-buyers-limit-nvidia-stock-rout-2026-11-12/",
+    "https://apnews.com/article/3f3668a937a11535103e3a5c8d82c9fc",
+    "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -367,6 +374,7 @@
     "Nov 12 19:26 UTC check: latest synchronized SOXX, VIX, credit spreads, real yields, market breadth, USD/KRW, gas, copper, gold not independently verified; quoted market figures are delayed and not simultaneous.",
     "No new critical event independently verified; prior alert entries preserved.",
     "2026-11-12T21:22:11Z: SOXX, VIX closing, HY/IG spreads, real yields, natural gas, gold, copper, USD/KRW, breadth not independently synchronized; delayed media closing reports, not live exchange feed. Full event/daily directory audit not performed.",
-    "2026-11-12T22:19:39Z: Closing data Reuters/AP delayed and not synchronized with SOXX, VIX, IG/HY spreads, real yields, natural gas, gold, copper, USD/KRW or breadth; historical analysis folders not comprehensively audited. No fresh post-close event confirmed."
+    "2026-11-12T22:19:39Z: Closing data Reuters/AP delayed and not synchronized with SOXX, VIX, IG/HY spreads, real yields, natural gas, gold, copper, USD/KRW or breadth; historical analysis folders not comprehensively audited. No fresh post-close event confirmed.",
+    "2026-11-12T23:19:20Z: SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW and numerical market breadth not independently synchronized; no inference of absence of liquidity shock. Reuters/AP closing reports are delayed and individual quote timestamps not independently verified."
   ]
 }
