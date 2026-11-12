@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-12T18:02:05Z",
+  "checked_at_utc": "2026-11-12T19:16:40Z",
   "market_date": "2026-11-12",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP 11월 12일 장중 후속 자료에서 미국 주요 지수는 개장 하락을 회복하고 NVDA 낙폭 축소, AMD/AVGO 상대적 강세로 기존 CEO 사임 충격의 시장 전반 전이가 심화됐다는 증거는 부족. 다만 Nebius 2026 매출 가이던스 하향과 AI 데이터센터 용량 지연, 높은 금리/유가 부담은 관찰 필요. 신용스프레드/VIX/SOXX 동시점 독립 검증 불가; 기존 high 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. AP 11월 12일 오후 S&P500 약 -0.2%, Nasdaq 약 -0.3%, NVDA 약 -5.1%로 Reuters 이전 장중 반등(+0.17%, +0.14%, NVDA -4.2%) 대비 소폭 재약세. Brent 약 $95.18, 10년물 약 5.11%로 유가·금리 부담은 증가했지만 기존 Nvidia 사임 충격의 중대한 전이 또는 신용·유동성 위기 증거는 확인되지 않음. 기존 high 유지; 동시점 데이터 부족.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -224,6 +224,26 @@
       "fy2026_revenue_guidance_low_usd_billion": 3,
       "fy2026_revenue_guidance_high_usd_billion": 3.2,
       "note": "Reuters Nov 12: capacity delays shift openings into H1 2027; company-specific execution/financing watch, not proven systemic credit shock"
+    },
+    "us_market_ap_afternoon_nov12": {
+      "observed_at_utc": null,
+      "sp500_change_pct": -0.2,
+      "nasdaq_change_pct": -0.3,
+      "nvda_change_pct": -5.1,
+      "note": "AP Nov 12 afternoon report; approximate and delayed; precise exchange observation timestamp unavailable; not closing prices"
+    },
+    "brent_ap_afternoon_nov12": {
+      "value": 95.18,
+      "unit": "USD/barrel",
+      "change_pct": 2.6,
+      "observed_at_utc": null,
+      "note": "AP Nov 12 afternoon reported snapshot; exact timestamp unavailable"
+    },
+    "us10y_ap_afternoon_nov12": {
+      "value": 5.11,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "AP Nov 12 afternoon reported snapshot; exact timestamp unavailable"
     }
   },
   "sources": [
@@ -300,6 +320,7 @@
     "At 14:51 UTC Nov 12, opening index values are delayed snapshots, not live quotes; synchronized SOXX, VIX, credit spreads, Treasury real yields, FX and commodity measurements unavailable.",
     "2026-11-12T16:09:51Z: Reuters 09:45 ET and AP morning observations are delayed and non-synchronous; no independently verified same-time SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or quantitative breadth. No comprehensive historical directory audit; existing older observations retain original timestamps.",
     "2026-11-12T17:15:49Z: Reuters/AP/MarketWatch Nov 12 intraday reports are delayed and nonsynchronous; no independently verified simultaneous SOXX, VIX, HY credit spread, Treasury real yield, natural gas, gold, copper, USD/KRW or numeric market breadth. Historical analysis directory audit incomplete; older indicators retain original timestamps.",
-    "2026-11-12T18:02Z 점검: SOXX, VIX, HY/IG 신용스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 수치 시장 폭의 동시점 원시자료 미확보. 이전 지표는 각 관측 시각을 보존하며 실시간으로 해석하지 말 것."
+    "2026-11-12T18:02Z 점검: SOXX, VIX, HY/IG 신용스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 수치 시장 폭의 동시점 원시자료 미확보. 이전 지표는 각 관측 시각을 보존하며 실시간으로 해석하지 말 것.",
+    "2026-11-12T19:16:40Z: AP afternoon values delayed, no exact exchange quote timestamp; latest synchronized SOXX, VIX, credit spreads, real yields, gas, gold, copper, USD/KRW and quantitative breadth not independently verified. No full historical directory audit; prior timestamps retained."
   ]
 }
