@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-12T02:38:07Z",
-  "market_date": "2026-11-11",
+  "checked_at_utc": "2026-11-12T03:28:51Z",
+  "market_date": "2026-11-12",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 기존 Nvidia CEO 교체 검토 및 시간외 약 -8% 사건 지속. MarketWatch는 당시 Nasdaq100 선물 약 -1%, SOXX 시간외 약 -2% 전이를 보도했으나 이는 기존 사건의 동시간대 반응이며 직전 점검 이후 새로 심화된 증거는 아님. 이사회 공식 해임 결정과 신용·유동성 충격 미확인. 잠정 high 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 12일 01:53 UTC 아시아 시장 보도 및 11월 11일 23:19 UTC 이사회 회의 보도 확인. 기존 Nvidia CEO 교체 검토 사건의 후속이며 공식 해임 결정 또는 직전 대비 추가 가격·신용·유동성 악화는 확인되지 않음. 잠정 high 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -136,7 +136,9 @@
     "https://news.sbs.co.kr/english/article.do?news_id=N1008842159",
     "https://www.reuters.com/world/china/senior-republican-us-senate-banking-panel-calls-nvidia-ceo-huang-resign-2026-11-11/",
     "https://finance.yahoo.com/quote/NVDA/history/",
-    "https://www.marketwatch.com/story/nasdaq-futures-fall-as-nvidia-sinks-8-after-hours-on-report-board-may-oust-huang-e99b898d"
+    "https://www.marketwatch.com/story/nasdaq-futures-fall-as-nvidia-sinks-8-after-hours-on-report-board-may-oust-huang-e99b898d",
+    "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/",
+    "https://www.reuters.com/world/china/view-nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -153,6 +155,7 @@
     "Nov 11 late-hours Nvidia board ouster remains a sourced media report, not an official board decision; Reuters could not independently verify. NVDA after-hours quotes are delayed/indicative, broad ETF/futures and credit spillover unverified. Risk level high is provisional event risk, not a portfolio drawdown estimate.",
     "2026-11-12 00:51 UTC check: no independently confirmed board decision or fresh synchronized SOXX, VIX, credit spread, real yield, metals, natural gas, USD/KRW prices; previously recorded indicator timestamps remain unchanged.",
     "2026-11-12T01:51:29Z: no independently verified board decision or synchronized SOXX, VIX, credit spreads, Treasury real yields, natural gas, gold, copper, USD/KRW; Nov 11 after-hours NVDA Yahoo quote is delayed and indicative. Prior market indicators retain original observation timestamps.",
-    "2026-11-12T02:38:07Z: MarketWatch futures/SOXX after-hours percentages refer to Nov 11 evening and are not fresh synchronized quotes. Official Nvidia board resolution, current credit spreads, real yields, VIX, metals, energy, USD/KRW not independently verified. Previous indicators retain original timestamps."
+    "2026-11-12T02:38:07Z: MarketWatch futures/SOXX after-hours percentages refer to Nov 11 evening and are not fresh synchronized quotes. Official Nvidia board resolution, current credit spreads, real yields, VIX, metals, energy, USD/KRW not independently verified. Previous indicators retain original timestamps.",
+    "2026-11-12T03:28:51Z: Reuters latest Asia market report checked; no independently verified Nvidia board resolution or synchronized current SOXX, VIX, credit spreads, Treasury yields/real yields, natural gas, metals, FX. Prior indicator observation times unchanged; no fabricated prices."
   ]
 }
