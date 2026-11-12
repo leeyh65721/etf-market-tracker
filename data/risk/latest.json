@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-12T05:35:25Z",
+  "checked_at_utc": "2026-11-12T06:43:13Z",
   "market_date": "2026-11-12",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 기존 Nvidia CEO 교체 검토 및 상원 수출통제 조사 위험 유지. 11월 12일 Reuters/AP의 아시아 증시 약세는 기존 사건의 전이이나 직전 경고 대비 위험 단계 상승을 확증할 신용·변동성 동시점 증거 없음. Reuters 04:26 GMT 원유 하락은 전일 상승의 일부 되돌림.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 06:26 UTC 분석은 Nvidia CEO 교체 가능성이 AI 투자 자금지원 전략에 미칠 위험을 설명하지만 기존 CEO 교체 경고의 추가 해설이며 공식 해임 결정이나 직전 점검 대비 신용·변동성·반도체 업종 전이의 중대한 악화는 확인되지 않음. 기존 잠정 high 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -143,7 +143,9 @@
     "https://www.reuters.com/world/china/view-nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/",
     "https://www.reuters.com/world/china/senior-us-democratic-senators-urge-administration-preserve-nvidia-export-records-2026-11-12/",
     "https://www.reuters.com/business/energy/oil-prices-drop-more-than-1-hopes-iran-ukraine-peace-talks-pressure-markets-2026-11-12/",
-    "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a"
+    "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a",
+    "https://www.reuters.com/business/finance/investors-worry-ai-trade-needs-nvidias-huang-its-largesse-2026-11-12/",
+    "https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -163,6 +165,7 @@
     "2026-11-12T02:38:07Z: MarketWatch futures/SOXX after-hours percentages refer to Nov 11 evening and are not fresh synchronized quotes. Official Nvidia board resolution, current credit spreads, real yields, VIX, metals, energy, USD/KRW not independently verified. Previous indicators retain original timestamps.",
     "2026-11-12T03:28:51Z: Reuters latest Asia market report checked; no independently verified Nvidia board resolution or synchronized current SOXX, VIX, credit spreads, Treasury yields/real yields, natural gas, metals, FX. Prior indicator observation times unchanged; no fabricated prices.",
     "2026-11-12T05:19:19Z: Reuters follow-up reviewed; no verified new board resolution or synchronized live SOXX, VIX, credit spreads, yields, energy/metals, USD/KRW. Previous observations retain original timestamps; comprehensive historical directory comparison not completed.",
-    "2026-11-12T05:35:25Z: Reuters oil quotes observed 04:26 UTC and are delayed; AP Asian stock movements are session snapshots without synchronized exchange timestamps. No new official Nvidia board decision verified. Current SOXX/VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW not verified; older indicators preserve original timestamps."
+    "2026-11-12T05:35:25Z: Reuters oil quotes observed 04:26 UTC and are delayed; AP Asian stock movements are session snapshots without synchronized exchange timestamps. No new official Nvidia board decision verified. Current SOXX/VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW not verified; older indicators preserve original timestamps.",
+    "2026-11-12T06:43:13Z: Reuters 06:26 UTC analysis checked; no official board decision independently confirmed. No fresh synchronized SOXX/VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or market breadth; older observations preserved. Historical directory audit incomplete."
   ]
 }
