@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-12T11:40:09Z",
+  "checked_at_utc": "2026-11-12T12:49:22Z",
   "market_date": "2026-11-12",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11:34 UTC 후속 분석에서 Nvidia CEO 공식 교체 발표는 없으며 기존 사건의 반복; Fed 12월 50bp 인상 소폭 확률은 전일 대비 사라졌다는 보도. 위험 단계 상승 또는 즉시 비중 변경을 뒷받침하는 새로운 시장 전이·신용 충격 미확인.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 12일 미국 개장 전 NVDA 약 -6%, Nasdaq100 선물 -0.64%, S&P500 선물 -0.31% 보도는 기존 CEO 불확실성의 연장선이며 직전 보고 대비 명백한 위험 단계 상승이나 공식 CEO 교체 결정은 확인되지 않음. 신용시장 전이 검증 불가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -120,19 +120,19 @@
       "note": "Yahoo Finance after-hours Nov 11 19:26:51 EST; delayed indicative quote, not regular-session close; no material worsening vs prior reported -8.1%"
     },
     "nvda_premarket_reported": {
-      "change_pct": -7,
+      "change_pct": -6,
       "observed_at_utc": null,
-      "note": "Reuters Nov 12 US premarket article; approximate, exact exchange quote timestamp not supplied; not regular close"
+      "note": "Reuters Nov 12 later premarket snapshot; approximate and delayed; exact exchange timestamp unavailable"
     },
     "nasdaq100_futures_nov12": {
-      "change_pct": -0.79,
+      "change_pct": -0.64,
       "observed_at_utc": null,
-      "note": "Reuters Nov 12 premarket snapshot; precise quote timestamp unknown"
+      "note": "Reuters Nov 12 later premarket snapshot; exact quote time unavailable"
     },
     "sp500_futures_nov12": {
-      "change_pct": -0.38,
+      "change_pct": -0.31,
       "observed_at_utc": null,
-      "note": "Reuters Nov 12 premarket snapshot; precise quote timestamp unknown"
+      "note": "Reuters Nov 12 later premarket snapshot; exact quote time unavailable"
     }
   },
   "sources": [
@@ -169,7 +169,8 @@
     "https://www.reuters.com/world/india/gold-falls-over-one-week-low-firm-dollar-fed-rate-hike-bets-2026-11-12/",
     "https://www.barrons.com/livecoverage/stock-market-news-today-111226/card/chip-rivals-cushion-nvidia-drop-as-sector-falls-premarket-S5ammt3GJeVg51XJlS33",
     "https://www.reuters.com/video/watch/idRW781212112026RP1/",
-    "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-12/"
+    "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-12/",
+    "https://www.reuters.com/business/media-telecom/nvidias-asian-supply-chain-prepares-life-after-huang-2026-11-12/"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -195,6 +196,7 @@
     "2026-11-12T09:18:10Z: Reuters reports include delayed session snapshots and a live article without verified new board decision. Synchronized SOXX, VIX, credit spreads, real yields, gas, gold, copper, USD/KRW and market breadth unavailable; older observations preserve original times. Historical directories not fully audited.",
     "2026-11-12T10:17:35Z: Reuters premarket percentage snapshots have no exact quote timestamps; no synchronized SOXX, VIX, credit spreads, Treasury real yields, gas, copper or USD/KRW. Dollar 19-month high and gold weakness reported qualitatively, not invented as fresh quotes. No confirmed Nvidia board decision; full historical directories not audited.",
     "2026-11-12T11:11:51Z: Reuters and Barron's premarket snapshots are delayed and lack synchronized exchange timestamps. No independently verified official CEO removal, live SOXX/VIX, HY credit spread, Treasury real yields, natural gas, copper, USD/KRW, or quantitative breadth. Existing indicator timestamps retained. No complete analysis directory audit.",
-    "2026-11-12T11:40:09Z: Reuters 11:34 UTC commentary checked; US regular session not yet open. No synchronized current SOXX/VIX, credit spreads, Treasury nominal/real yields, natural gas, copper, USD/KRW or numeric breadth independently confirmed. Previous indicator timestamps retained; full analysis directory audit not performed."
+    "2026-11-12T11:40:09Z: Reuters 11:34 UTC commentary checked; US regular session not yet open. No synchronized current SOXX/VIX, credit spreads, Treasury nominal/real yields, natural gas, copper, USD/KRW or numeric breadth independently confirmed. Previous indicator timestamps retained; full analysis directory audit not performed.",
+    "2026-11-12T12:49:22Z: Reuters premarket figures delayed and without exchange quote timestamp. No confirmed CEO dismissal; no synchronized SOXX/VIX, credit spreads, real yields, natural gas, copper, USD/KRW, market breadth. Existing other indicator observation times preserved; historical directories not fully audited."
   ]
 }
