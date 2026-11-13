@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T14:17:42Z",
+  "checked_at_utc": "2026-11-13T14:35:48Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(검증 가능한 자료 범위). 11월 13일 미국 10월 PPI 전월비 +0.3%는 예상 +0.4% 하회, 50bp 연준 인상 확률 약 14%로 보고되어 금리 위험 추가 악화보다는 완화의 반대 근거. Nvidia 관련 변동은 기존 사건 후속이며 신용·유동성·시장 폭의 동시점 전이 증거 미확보. 기존 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(확인 가능한 자료 범위). Reuters 11월 13일 12:40 UTC 유럽 주식 실적 강세와 기술주 대비 상대적 견조함은 광범위한 전이의 반대 근거. WSJ 11월 13일 미국 10월 PPI +0.3%(예상 +0.4%), 2년물 4.836%, 10년물 5.127%는 기존 금리 위험의 추가 악화를 입증하지 않음. Nvidia CEO 사임, CPI 및 호르무즈 선박 주장은 기존 사건으로 중복 경고하지 않음. 동시점 SOXX/VIX/신용스프레드 미확인으로 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -522,6 +522,18 @@
       "unit": "USD/barrel",
       "observed_at_utc": "2026-11-13T12:00:00Z",
       "note": "Reuters Nov 13 12:00 GMT delayed snapshot"
+    },
+    "us_yields_nov13_wsj_ppi_followup": {
+      "us2y_pct": 4.836,
+      "us10y_pct": 5.127,
+      "observed_at_utc": null,
+      "note": "WSJ Nov 13 delayed reported levels after PPI; exact market observation times unavailable; non-synchronous"
+    },
+    "europe_equities_nov13_reuters": {
+      "value": "STOXX 600 near record highs; November month-to-date +2.8%; quarterly earnings growth on track +25%",
+      "observed_at_utc": null,
+      "source_report_time_utc": "2026-11-13T12:40:00Z",
+      "note": "Reuters November 13 report, historical MTD and forecast figures, not live index quote"
     }
   },
   "sources": [
@@ -549,7 +561,9 @@
     "https://www.reuters.com/business/finance/global-markets-flows-graphic-2026-11-13/",
     "https://www.barrons.com/articles/s-p-500-futures-up-in-premarket-trading-modine-manufacturing-cerebras-systems-lead-a8677105",
     "https://www.reuters.com/business/nasdaq-futures-dip-nvidia-tumult-keeps-investors-edge-2026-11-13/",
-    "https://www.barrons.com/livecoverage/stock-market-news-today-111326/card/treasury-yields-hold-above-5-after-bruising-weekly-selloff-kvupPpCdoVRCIio0oDyL"
+    "https://www.barrons.com/livecoverage/stock-market-news-today-111326/card/treasury-yields-hold-above-5-after-bruising-weekly-selloff-kvupPpCdoVRCIio0oDyL",
+    "https://www.reuters.com/business/finance/how-us-tech-pain-is-european-stock-markets-gain-2026-11-13/",
+    "https://www.wsj.com/finance/jgb-yields-rise-after-selloff-in-u-s-treasurys-overnight-1eeb83e2"
   ],
   "data_limitations": [
     "2026-11-13 07:39 UTC 점검; 최신 보도는 지연·비동시점 자료이며 거래소 개별 관측시각 확인 불가",
@@ -563,6 +577,7 @@
     "SOXX, VIX 현물, 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW 및 정량 시장 폭의 12:53 UTC 동시점 시세 미검증",
     "analysis/events/ 및 analysis/daily/ 디렉터리 전체 조회 실패; 이전 대화 및 risk/latest.json 경고 3건과 대조",
     "일부 기사 시세는 지연·비동시점이며 개별 거래소 관측 시각 불명",
-    "2026-11-13 14:17 UTC: SOXX/VIX, corporate credit spreads, real yields, natural gas, copper, USD/KRW and quantitative breadth not verified as synchronized live quotes; price/news snapshots delayed. Prior daily/event directories listed but not all historical files read."
+    "2026-11-13 14:17 UTC: SOXX/VIX, corporate credit spreads, real yields, natural gas, copper, USD/KRW and quantitative breadth not verified as synchronized live quotes; price/news snapshots delayed. Prior daily/event directories listed but not all historical files read.",
+    "2026-11-13T14:35:48Z 점검: SOXX/VIX/IG·HY 신용스프레드/실질금리/천연가스/구리/USD-KRW/정량 시장 폭의 동시점 수치 미확인; Reuters/WSJ 보도는 지연·비동시점. 이전 분석 파일 전체 내용 재검증 미완료. 과거 지표를 현재값으로 사용하지 않음."
   ]
 }
