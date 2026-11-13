@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T04:52:49Z",
+  "checked_at_utc": "2026-11-13T06:17:00Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 13일 Reuters 아시아 시장 반등 및 금리·달러 강세는 기존 점검에 반영됨. Reuters SMIC의 AI 칩 공급망 2027년까지 타이트 전망은 기존 반도체 위험의 반대 근거이며 새로운 구조적 악화가 아님. Nvidia 사건 추가 악화, 신규 확정 수출 제한 또는 신용·유동성 충격은 현재 확인한 자료로 검증되지 않음. 기존 잠정 high 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 13일 아시아 시장 혼조·반등, 미국 선물 소폭 상승, 유가 완화는 이전 경고의 중대한 악화 증거가 아님. AP는 지역별 혼조를 보도해 광범위한 전염 판단에 반대 근거. VIX·신용스프레드 등 동시점 미확보로 기존 잠정 high 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -338,6 +338,16 @@
       "spot_gold_usd_oz": 3888.01,
       "fed_50bp_december_probability_pct": 14.5,
       "note": "Reuters reported delayed/non-synchronous Asian-session snapshots; exchange quote timestamps unknown; FedWatch probability per Reuters."
+    },
+    "asia_nov13_ap_report": {
+      "observed_at_utc": null,
+      "nikkei_change_pct": 0.8,
+      "taiex_change_pct": 1.7,
+      "kospi_change_pct": -0.5,
+      "hang_seng_change_pct": -0.9,
+      "brent_usd_per_barrel": 95.7,
+      "wti_usd_per_barrel": 88.41,
+      "note": "AP 2026-11-13 보도 기준 서로 비동시점 지연 시세; 개별 관측시각 불명. Reuters와 수치가 다른 것은 관측시각 차이 가능."
     }
   },
   "sources": [
@@ -394,7 +404,8 @@
     "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-gain-after-nvidia-shakeup-oil-steady/articleshow/135785602.cms",
     "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/",
     "https://www.reuters.com/technology/smic-says-ai-chip-supply-chain-will-remain-tight-through-2027-2026-11-13/",
-    "https://www.wsj.com/world/asia/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15"
+    "https://www.wsj.com/world/asia/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15",
+    "https://apnews.com/article/f8edd0eeb1494d4d2584715686c5e619"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -438,6 +449,7 @@
     "2026-11-13T01:29:53Z: Bloomberg 전재 아시아·미국 선물 시세는 지연 보도이며 거래소 관측시각 불명. SOXX/VIX/HY·IG 스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 최신 동시점 검증 불가. analysis/events 및 analysis/daily 전체 목록 대조 불가.",
     "2026-11-13T02:57:04Z: Reuters Asian session figures are delayed at least 15 minutes, non-synchronous, exact exchange timestamps unknown. Current SOXX, VIX, IG/HY spreads, real yields, natural gas, USD/KRW, quantitative breadth unavailable; no complete historical analysis directory audit. Older readings remain historical.",
     "2026-11-13T04:15:05Z: Latest verified Reuters Asia market report was published 01:55 UTC, already reflected in previous check. No new synchronized SOXX, VIX, credit spreads, real yields, gas, copper, USD/KRW or numeric breadth; no full historical directory audit. Prior observations retain original timestamps.",
-    "2026-11-13T04:52:49Z: Reuters/WSJ Nov 13 Asian-session articles are delayed and non-synchronous. No synchronized current SOXX, VIX, IG/HY spreads, real yields, natural gas, copper, USD/KRW, quantitative breadth; earlier indicators preserve original times. Historical analysis folders not fully audited."
+    "2026-11-13T04:52:49Z: Reuters/WSJ Nov 13 Asian-session articles are delayed and non-synchronous. No synchronized current SOXX, VIX, IG/HY spreads, real yields, natural gas, copper, USD/KRW, quantitative breadth; earlier indicators preserve original times. Historical analysis folders not fully audited.",
+    "2026-11-13 06:17 UTC 점검: SOXX, VIX, 신용스프레드, 실질금리, USD/KRW, 천연가스, 정량적 시장 폭의 최신 동시점 독립 검증 불가; AP/Reuters 보도 지연, 원시 시세시각 불명. 분석 디렉터리 전체 파일 내용 대조 미완료."
   ]
 }
