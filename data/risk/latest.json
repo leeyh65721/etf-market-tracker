@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T09:38:08Z",
+  "checked_at_utc": "2026-11-13T11:01:18Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(잠정). Reuters 11월 13일 이란 측 LNG 운반선 기뢰 폭발 주장 새로 확인했으나 선박·피해·독립 확인 부재; 이미 경고된 호르무즈 운송 위험의 잠재 후속이며 즉시 위험단계 상향 증거 부족. IEA의 10월 원유 공급 초과 약 200만 배럴/일(FT 보도) 및 Reuters 브렌트 96.04달러/WTI 88.59달러는 공급충격 심화에 대한 반대 근거. 기존 Nvidia·CPI 위험 재경고 없음. 기존 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(잠정). Reuters/AP의 호르무즈 선박 기뢰 주장 독립 검증 미완료; 직전 점검에서 이미 다룬 동일 사건. WSJ 11월 13일 미국 2년물 4.849%, 10년물 5.126% 보도는 기존 금리 압박 지속이나 직전 대비 현저한 추가 악화 근거 아님. WSJ 브렌트 96.43달러/WTI 88.89달러는 기존 96.04/88.59 대비 제한적 변동이며 공급망의 구조적 충격 확인 안 됨. 기존 high 잠정 유지, 비중 긴급 변경 권고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -439,6 +439,18 @@
       "unit": "million barrels/day surplus",
       "observed_at_utc": null,
       "note": "FT Nov 13 reports IEA October estimate; monthly backward-looking estimate, not live quote"
+    },
+    "us_yields_nov13_wsj_later": {
+      "us2y_pct": 4.849,
+      "us10y_pct": 5.126,
+      "observed_at_utc": null,
+      "note": "WSJ Nov 13 delayed report; exact market quote time unknown; not synchronized"
+    },
+    "oil_nov13_wsj_later": {
+      "brent_usd_barrel": 96.43,
+      "wti_usd_barrel": 88.89,
+      "observed_at_utc": null,
+      "note": "WSJ Nov 13 reported indicative quotes; exact observation time unknown"
     }
   },
   "sources": [
@@ -504,7 +516,9 @@
     "https://www.wsj.com/economy/central-banking/upward-pressure-remains-in-treasury-yields-even-as-two-year-yield-stabilizes-0c267082",
     "https://www.reuters.com/world/iran-says-tanker-carrying-lng-hit-mine-suffered-explosion-hormuz-2026-11-13/",
     "https://www.ft.com/content/20b68fe2-9d60-4c0c-b714-1f3e03015823",
-    "https://www.reuters.com/markets/asia/smfg-second-quarter-profit-falls-10-raises-annual-earnings-forecast-2026-11-13/"
+    "https://www.reuters.com/markets/asia/smfg-second-quarter-profit-falls-10-raises-annual-earnings-forecast-2026-11-13/",
+    "https://www.wsj.com/business/energy-oil/oil-prices-rise-as-middle-east-supply-risks-persist-2066e758",
+    "https://apnews.com/article/5d73a23b5b8647d2515c35b267b36c08"
   ],
   "data_limitations": [
     "2026-11-13 07:39 UTC 점검; 최신 보도는 지연·비동시점 자료이며 거래소 개별 관측시각 확인 불가",
@@ -512,6 +526,7 @@
     "새로운 신용·유동성 충격 부재 확정 불가; analysis/events 및 analysis/daily 전체 파일 내용 대조 미완료",
     "기존 indicators의 과거 관측값은 최신 데이터가 아님",
     "Nov 13 08:46 UTC check: SOXX, VIX, high-yield/IG credit spreads, real yields, natural gas, gold, copper, USD/KRW, numeric breadth and liquidity not independently verified at synchronized timestamps; latest reported prices delayed and exact quote times unavailable.",
-    "2026-11-13 09:38 UTC: LNG tanker incident based on Iranian assertion, independent vessel/damage confirmation unavailable; Reuters/FT reported quotes and IEA monthly figures delayed and nonsynchronous. SOXX/VIX/credit spreads/real yields/natural gas/copper/USD-KRW/breadth not verified live. No claim of absent credit shock."
+    "2026-11-13 09:38 UTC: LNG tanker incident based on Iranian assertion, independent vessel/damage confirmation unavailable; Reuters/FT reported quotes and IEA monthly figures delayed and nonsynchronous. SOXX/VIX/credit spreads/real yields/natural gas/copper/USD-KRW/breadth not verified live. No claim of absent credit shock.",
+    "2026-11-13T11:01:18Z 점검: WSJ/Reuters/AP 보도는 지연된 비동시점 자료. SOXX·VIX·신용스프레드·실질금리·USD/KRW·천연가스·금·구리·정량적 시장 폭 동시점 미검증. 호르무즈 선박 사건 독립 검증 미완료. 과거 분석 디렉터리 전체 대조 미완료."
   ]
 }
