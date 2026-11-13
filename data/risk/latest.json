@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-12T23:19:20Z",
+  "checked_at_utc": "2026-11-13T00:13:56Z",
   "market_date": "2026-11-12",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 12일 미국장 마감 S&P500 약 -0.35%, Nasdaq -0.39%, Dow -0.36%, NVDA 약 -4.3%로 직전 점검과 일치. Reuters 19:27 UTC 추가 관계 보도는 직전 점검 이전 보도이며 기존 CEO 사임 사건의 재보도/후속 내용; 추가 시장 전이 또는 위험 단계 상승 미검증. AP에 따르면 Russell 2000 -1.7%, Brent $95.82, 10년물 약 5.12%; 동시점 신용·변동성 자료 부재.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP 11월 12일 마감 S&P500 약 -0.35%, Nasdaq -0.39%, Dow -0.36%, NVDA 약 -4.3% 기존 확인과 동일. Reuters 19:27 UTC의 전 CEO 추가 관계 보도 및 수출 규제 우려 분석은 기존 사건 후속이며 확정된 신규 수출 규제나 시장·신용 전이의 중대한 악화 미검증. 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -337,7 +337,9 @@
     "https://www.barrons.com/articles/stock-movers-cd2d0ebf",
     "https://www.reuters.com/business/retail-consumer/retail-buyers-limit-nvidia-stock-rout-2026-11-12/",
     "https://apnews.com/article/3f3668a937a11535103e3a5c8d82c9fc",
-    "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/"
+    "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
+    "https://www.reuters.com/world/china/tougher-curbs-ai-chip-sales-china-likely-after-nvidia-ceo-resigns-2026-11-12/",
+    "https://www.reuters.com/business/nvidia-pe-falls-14-year-low-ceo-exit-ai-worries-cloud-bargain-2026-11-12/"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -375,6 +377,7 @@
     "No new critical event independently verified; prior alert entries preserved.",
     "2026-11-12T21:22:11Z: SOXX, VIX closing, HY/IG spreads, real yields, natural gas, gold, copper, USD/KRW, breadth not independently synchronized; delayed media closing reports, not live exchange feed. Full event/daily directory audit not performed.",
     "2026-11-12T22:19:39Z: Closing data Reuters/AP delayed and not synchronized with SOXX, VIX, IG/HY spreads, real yields, natural gas, gold, copper, USD/KRW or breadth; historical analysis folders not comprehensively audited. No fresh post-close event confirmed.",
-    "2026-11-12T23:19:20Z: SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW and numerical market breadth not independently synchronized; no inference of absence of liquidity shock. Reuters/AP closing reports are delayed and individual quote timestamps not independently verified."
+    "2026-11-12T23:19:20Z: SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW and numerical market breadth not independently synchronized; no inference of absence of liquidity shock. Reuters/AP closing reports are delayed and individual quote timestamps not independently verified.",
+    "2026-11-13T00:13:56Z: Reuters/AP 11월 12일 마감 및 Reuters 후속 분석 확인; 새 동시점 SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 미검증. 기존 관측값은 시각 보존, 실시간 값 아님. analysis/events 및 analysis/daily 전체 대조 미완료."
   ]
 }
