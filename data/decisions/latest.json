@@ -1,16 +1,17 @@
 {
-  "generated_at_utc": "2026-11-12T00:12:16.459658+00:00",
+  "generated_at_utc": "2026-11-13T00:08:01.900425+00:00",
   "status": "ERROR",
   "valid_count": 24,
   "retrospective_count": 4,
   "prospective_count": 20,
-  "invalid_count": 5,
-  "reports_missing_structured_records_count": 4,
+  "invalid_count": 6,
+  "reports_missing_structured_records_count": 5,
   "reports_missing_structured_records": [
     "analysis/daily/2026-11-04.md",
     "analysis/daily/2026-11-10.md",
     "analysis/daily/2026-11-11.md",
-    "analysis/daily/2026-11-12.md"
+    "analysis/daily/2026-11-12.md",
+    "analysis/daily/2026-11-13.md"
   ],
   "entries": [
     {
@@ -634,6 +635,10 @@
     {
       "file": "2026-11-12-MARKET-no_new_candidate.json",
       "error": "ValueError: SPY benchmark must be explicit"
+    },
+    {
+      "file": "2026-11-13-MARKET-no_new_candidate.json",
+      "error": "ValueError: MARKET no-new-idea record must not fabricate ETF prices"
     }
   ],
   "limitations": [
