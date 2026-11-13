@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T15:25:26Z",
+  "checked_at_utc": "2026-11-13T16:45:04Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(검증 가능한 자료 범위). Reuters 11월 13일 미국 개장 시 S&P 500 +0.32%, Nasdaq +0.17%; 예상보다 낮은 10월 PPI가 금리 불안을 일부 완화. FT는 10년물 5.16%와 주간 약 30bp 상승, 2년물 4.88%와 주간 약 36bp 상승을 보도했으나 이는 이미 추적 중인 CPI/연준 재가격화의 연속이며 직전 14:35 UTC 이후 독립적인 추가 충격 입증은 아님. Barron's의 NVDA -2.1%, AMD -6%, AVGO -4.8%는 업종 약세 신호지만 동일 시점 SOXX/VIX/신용스프레드/시장 폭 검증 부족으로 위험 단계 상향은 보류. 이전 사건을 신규로 재경고하지 않음.",
+  "change_since_previous": "신규 긴급 경고 없음(검증 범위). Reuters 11월 13일 10:16 ET(15:16 UTC) 미국장 중 S&P 500 -0.93%, Nasdaq -1.42%, 필라델피아 반도체 지수 약 -5%, NVDA -3.3%로 앞선 개장 상승에서 반전. 기존 Nvidia CEO 사임·AI 업종 위험의 후속 약세이나, 신용스프레드·VIX·SOXX 및 시장 폭의 동시점 추가 충격 증거 부족으로 위험 단계 상향/긴급 배분 변경 보류. 예상보다 낮은 PPI, 일부 대형주 및 Cerebras 강세는 반대 근거. 과거 CPI/반도체 사건을 신규 사건으로 재분류하지 않음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -559,6 +559,16 @@
       "avgo_change_pct": -4.8,
       "observed_at_utc": null,
       "note": "Barron's Nov 13 intraday snapshot; quote times not verified; not a synchronized SOXX reading"
+    },
+    "us_market_nov13_reuters_1016et": {
+      "sp500_change_pct": -0.93,
+      "nasdaq_change_pct": -1.42,
+      "dow_change_pct": -0.41,
+      "phlx_semiconductor_change_pct": -5,
+      "nvda_change_pct": -3.3,
+      "observed_at_utc": null,
+      "source_report_time_utc": "2026-11-13T15:16:00Z",
+      "note": "Reuters 10:16 ET 보도 스냅샷; 개별 거래소 체결 시각 미확인, 약 89분 지연, 비동시점"
     }
   },
   "sources": [
@@ -590,22 +600,15 @@
     "https://www.reuters.com/business/finance/how-us-tech-pain-is-european-stock-markets-gain-2026-11-13/",
     "https://www.wsj.com/finance/jgb-yields-rise-after-selloff-in-u-s-treasurys-overnight-1eeb83e2",
     "https://www.ft.com/content/7bebace2-dc87-410a-ae29-ffd9f3176def",
-    "https://www.barrons.com/articles/stock-movers-9a030e1c"
+    "https://www.barrons.com/articles/stock-movers-9a030e1c",
+    "https://www.reuters.com/business/goldman-sachs-sees-sp-500-rising-8700-next-year-despite-slower-earnings-growth-2026-11-13/"
   ],
   "data_limitations": [
-    "2026-11-13 07:39 UTC 점검; 최신 보도는 지연·비동시점 자료이며 거래소 개별 관측시각 확인 불가",
-    "SOXX, VIX, 회사채 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량적 시장 폭의 최신 동시점 수치 미검증",
-    "새로운 신용·유동성 충격 부재 확정 불가; analysis/events 및 analysis/daily 전체 파일 내용 대조 미완료",
-    "기존 indicators의 과거 관측값은 최신 데이터가 아님",
-    "Nov 13 08:46 UTC check: SOXX, VIX, high-yield/IG credit spreads, real yields, natural gas, gold, copper, USD/KRW, numeric breadth and liquidity not independently verified at synchronized timestamps; latest reported prices delayed and exact quote times unavailable.",
-    "2026-11-13 09:38 UTC: LNG tanker incident based on Iranian assertion, independent vessel/damage confirmation unavailable; Reuters/FT reported quotes and IEA monthly figures delayed and nonsynchronous. SOXX/VIX/credit spreads/real yields/natural gas/copper/USD-KRW/breadth not verified live. No claim of absent credit shock.",
-    "2026-11-13T11:01:18Z 점검: WSJ/Reuters/AP 보도는 지연된 비동시점 자료. SOXX·VIX·신용스프레드·실질금리·USD/KRW·천연가스·금·구리·정량적 시장 폭 동시점 미검증. 호르무즈 선박 사건 독립 검증 미완료. 과거 분석 디렉터리 전체 대조 미완료.",
-    "2026-11-13T12:14:31Z 점검: 공개 보도는 지연/비동시점. SOXX, VIX, IG/HY 스프레드, 실질금리, 천연가스, 금·구리, USD/KRW, 정량 시장 폭 최신 동시점 검증 실패. Reuters 유가 10:15 GMT 관측은 직전 점검보다 오래된 시세로 새로운 움직임으로 해석 금지. 분석 디렉터리 전체 대조 미완료.",
-    "SOXX, VIX 현물, 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW 및 정량 시장 폭의 12:53 UTC 동시점 시세 미검증",
     "analysis/events/ 및 analysis/daily/ 디렉터리 전체 조회 실패; 이전 대화 및 risk/latest.json 경고 3건과 대조",
     "일부 기사 시세는 지연·비동시점이며 개별 거래소 관측 시각 불명",
     "2026-11-13 14:17 UTC: SOXX/VIX, corporate credit spreads, real yields, natural gas, copper, USD/KRW and quantitative breadth not verified as synchronized live quotes; price/news snapshots delayed. Prior daily/event directories listed but not all historical files read.",
     "2026-11-13T14:35:48Z 점검: SOXX/VIX/IG·HY 신용스프레드/실질금리/천연가스/구리/USD-KRW/정량 시장 폭의 동시점 수치 미확인; Reuters/WSJ 보도는 지연·비동시점. 이전 분석 파일 전체 내용 재검증 미완료. 과거 지표를 현재값으로 사용하지 않음.",
-    "2026-11-13 15:25 UTC: current synchronized SOXX/VIX, corporate credit spreads, real yields, natural gas, copper, USD/KRW and quantitative breadth unavailable; reported prices delayed/non-synchronous. No comprehensive comparison of analysis/events and analysis/daily this run."
+    "2026-11-13 15:25 UTC: current synchronized SOXX/VIX, corporate credit spreads, real yields, natural gas, copper, USD/KRW and quantitative breadth unavailable; reported prices delayed/non-synchronous. No comprehensive comparison of analysis/events and analysis/daily this run.",
+    "2026-11-13 16:45 UTC: Reuters 10:16 ET 시세 약 89분 지연; SOXX, VIX 현물, IG/HY 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량적 시장 폭 동시점 검증 실패. 이전 events/daily 전체 내용 미대조. 과거 indicators는 최신값이 아님."
   ]
 }
