@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T02:57:04Z",
+  "checked_at_utc": "2026-11-13T04:15:05Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 13일 01:55 UTC 보도: 아시아 주식 반등(KOSPI +2.35%, Nikkei +1.4%), 미국 주가지수 선물 +0.2% 이상으로 Nvidia 충격의 광범위한 추가 악화 근거 부족. 미국 2년물 장중 4.892%, 10년물 5.1433%, 구리 4개월 저점, 달러 강세는 주의 요인이지만 동시점 신용·변동성 충격 미확인. 기존 사건 반복 경고하지 않음.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 13일 01:55 UTC 아시아 증시 반등·미국 국채금리 상승·구리 약세 보도는 직전 02:57 UTC 점검에 이미 반영됨. 04:15 UTC 점검에서 추가 확정 정책, 시장 전반 신용·유동성 충격, 기존 Nvidia 사건의 중대한 추가 악화를 확인하지 못함. 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -434,6 +434,7 @@
     "2026-11-13T00:13:56Z: Reuters/AP 11월 12일 마감 및 Reuters 후속 분석 확인; 새 동시점 SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 미검증. 기존 관측값은 시각 보존, 실시간 값 아님. analysis/events 및 analysis/daily 전체 대조 미완료.",
     "2026-11-13T00:57:57Z: 11월 12일 미국장 마감과 11월 13일 아시아 초기 자료는 시차가 있는 보도. SOXX, VIX, HY/IG 스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 시장 폭 동시점 자료 미확보. 과거 분석 폴더 전체 대조 미완료.",
     "2026-11-13T01:29:53Z: Bloomberg 전재 아시아·미국 선물 시세는 지연 보도이며 거래소 관측시각 불명. SOXX/VIX/HY·IG 스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 최신 동시점 검증 불가. analysis/events 및 analysis/daily 전체 목록 대조 불가.",
-    "2026-11-13T02:57:04Z: Reuters Asian session figures are delayed at least 15 minutes, non-synchronous, exact exchange timestamps unknown. Current SOXX, VIX, IG/HY spreads, real yields, natural gas, USD/KRW, quantitative breadth unavailable; no complete historical analysis directory audit. Older readings remain historical."
+    "2026-11-13T02:57:04Z: Reuters Asian session figures are delayed at least 15 minutes, non-synchronous, exact exchange timestamps unknown. Current SOXX, VIX, IG/HY spreads, real yields, natural gas, USD/KRW, quantitative breadth unavailable; no complete historical analysis directory audit. Older readings remain historical.",
+    "2026-11-13T04:15:05Z: Latest verified Reuters Asia market report was published 01:55 UTC, already reflected in previous check. No new synchronized SOXX, VIX, credit spreads, real yields, gas, copper, USD/KRW or numeric breadth; no full historical directory audit. Prior observations retain original timestamps."
   ]
 }
