@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T18:05:05Z",
+  "checked_at_utc": "2026-11-13T18:29:07Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(확인 범위). Reuters 11월 13일 늦은 오전 보도에서 필라델피아 반도체지수 약 -6%(직전 -5%), Nasdaq -1.74%(직전 -1.42%), S&P500 -1.01%(직전 -0.93%), NVDA -4.3%, AMD 약 -10%, AVGO 약 -7%. Nvidia 관련 기존 위험이 AI 네오클라우드(CoreWeave/Nebius 약 -9%) 및 반도체 공급망으로 확산됐으나, 동시점 VIX·신용스프레드·SOXX·정량 시장 폭 미검증으로 새 구조적 신용 충격/즉시 배분 변경을 확정하지 않음. Reuters/AP/WSJ 보도 간 관측시각 차이 주의. 10월 PPI 전월 +0.3%와 S&P500 주간 상승 전망, 기업 실적 상회는 반대 근거. 기존 CPI 및 Nvidia 사건 중복 알림 금지.",
+  "change_since_previous": "신규 긴급 경고 없음(확인 가능한 공개 자료 범위). 직전 18:05 UTC 점검의 반도체 약 -6%, AI 네오클라우드 약 -9% 하락 이후 새로운 시각의 신뢰 가능한 동시점 시세나 정책·신용 충격 확인되지 않음. Reuters Nov 13 기술주 약세 및 WSJ 반도체 약 -6% 보도는 기존 사건의 재확인으로 중복 경고하지 않음. AP는 S&P500 주간 약 +2.2% 예상이라는 반대 근거 제시. high 잠정 유지, 추가 악화 부재 확정 아님.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -628,6 +628,7 @@
     "2026-11-13T14:35:48Z 점검: SOXX/VIX/IG·HY 신용스프레드/실질금리/천연가스/구리/USD-KRW/정량 시장 폭의 동시점 수치 미확인; Reuters/WSJ 보도는 지연·비동시점. 이전 분석 파일 전체 내용 재검증 미완료. 과거 지표를 현재값으로 사용하지 않음.",
     "2026-11-13 15:25 UTC: current synchronized SOXX/VIX, corporate credit spreads, real yields, natural gas, copper, USD/KRW and quantitative breadth unavailable; reported prices delayed/non-synchronous. No comprehensive comparison of analysis/events and analysis/daily this run.",
     "2026-11-13 16:45 UTC: Reuters 10:16 ET 시세 약 89분 지연; SOXX, VIX 현물, IG/HY 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량적 시장 폭 동시점 검증 실패. 이전 events/daily 전체 내용 미대조. 과거 indicators는 최신값이 아님.",
-    "2026-11-13T18:05:05Z 점검: Reuters/AP/WSJ 시세 지연·비동시점, 개별 체결시각 불명. SOXX, VIX, 회사채 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량 시장 폭 최신 동시점 수치 검증 실패. 과거 analysis/events 및 daily 전체 파일 미대조; 공개 위험 데이터 및 대화의 기존 경고와 비교. 신규 경고 없음은 검증 범위에 한정."
+    "2026-11-13T18:05:05Z 점검: Reuters/AP/WSJ 시세 지연·비동시점, 개별 체결시각 불명. SOXX, VIX, 회사채 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량 시장 폭 최신 동시점 수치 검증 실패. 과거 analysis/events 및 daily 전체 파일 미대조; 공개 위험 데이터 및 대화의 기존 경고와 비교. 신규 경고 없음은 검증 범위에 한정.",
+    "2026-11-13T18:29:07Z: 검색된 Reuters/WSJ/AP 기사들은 직전 점검과 중복되거나 관측시각이 불명확함. 최신 SOXX/VIX, IG/HY 스프레드, 실질금리, USD/KRW, 천연가스·금·구리, 정량 시장 폭의 동시점 값 확인 불가. indicators의 이전 값은 과거 관측값이며 이번 점검 현재값이 아님. events/daily 전체 파일 대조 미완료."
   ]
 }
