@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T11:01:18Z",
+  "checked_at_utc": "2026-11-13T12:14:31Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(잠정). Reuters/AP의 호르무즈 선박 기뢰 주장 독립 검증 미완료; 직전 점검에서 이미 다룬 동일 사건. WSJ 11월 13일 미국 2년물 4.849%, 10년물 5.126% 보도는 기존 금리 압박 지속이나 직전 대비 현저한 추가 악화 근거 아님. WSJ 브렌트 96.43달러/WTI 88.89달러는 기존 96.04/88.59 대비 제한적 변동이며 공급망의 구조적 충격 확인 안 됨. 기존 high 잠정 유지, 비중 긴급 변경 권고 없음.",
+  "change_since_previous": "신규 긴급 경고 없음(검증 범위 내). 직전 11:01 UTC 점검 대비 Reuters 11월 13일 달러·유가 기사 및 WSJ 국채금리 보도에서 독립적인 새로운 구조적 악화 증거 확인 못함. 기존 엔비디아 CEO 교체 및 호르무즈 선박 주장 반복 경고 제외. 기존 high 잠정 유지; 긴급 배분 변경 근거 부족.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -451,6 +451,24 @@
       "wti_usd_barrel": 88.89,
       "observed_at_utc": null,
       "note": "WSJ Nov 13 reported indicative quotes; exact observation time unknown"
+    },
+    "us_yields_nov13_wsj_followup": {
+      "us2y_pct": 4.849,
+      "us10y_pct": 5.126,
+      "observed_at_utc": null,
+      "note": "WSJ Nov 13 delayed, same previously reported levels; no fresh synchronized quote"
+    },
+    "oil_nov13_reuters_1015gmt": {
+      "brent_usd_barrel": 95.45,
+      "wti_usd_barrel": 88.06,
+      "observed_at_utc": "2026-11-13T10:15:00Z",
+      "note": "Reuters 10:15 GMT snapshot, earlier than preceding check; not newer quote"
+    },
+    "dollar_nov13_reuters_followup": {
+      "value": 103.17,
+      "weekly_change_pct": 0.9,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 delayed snapshot; exact quote timestamp unavailable"
     }
   },
   "sources": [
@@ -527,6 +545,7 @@
     "기존 indicators의 과거 관측값은 최신 데이터가 아님",
     "Nov 13 08:46 UTC check: SOXX, VIX, high-yield/IG credit spreads, real yields, natural gas, gold, copper, USD/KRW, numeric breadth and liquidity not independently verified at synchronized timestamps; latest reported prices delayed and exact quote times unavailable.",
     "2026-11-13 09:38 UTC: LNG tanker incident based on Iranian assertion, independent vessel/damage confirmation unavailable; Reuters/FT reported quotes and IEA monthly figures delayed and nonsynchronous. SOXX/VIX/credit spreads/real yields/natural gas/copper/USD-KRW/breadth not verified live. No claim of absent credit shock.",
-    "2026-11-13T11:01:18Z 점검: WSJ/Reuters/AP 보도는 지연된 비동시점 자료. SOXX·VIX·신용스프레드·실질금리·USD/KRW·천연가스·금·구리·정량적 시장 폭 동시점 미검증. 호르무즈 선박 사건 독립 검증 미완료. 과거 분석 디렉터리 전체 대조 미완료."
+    "2026-11-13T11:01:18Z 점검: WSJ/Reuters/AP 보도는 지연된 비동시점 자료. SOXX·VIX·신용스프레드·실질금리·USD/KRW·천연가스·금·구리·정량적 시장 폭 동시점 미검증. 호르무즈 선박 사건 독립 검증 미완료. 과거 분석 디렉터리 전체 대조 미완료.",
+    "2026-11-13T12:14:31Z 점검: 공개 보도는 지연/비동시점. SOXX, VIX, IG/HY 스프레드, 실질금리, 천연가스, 금·구리, USD/KRW, 정량 시장 폭 최신 동시점 검증 실패. Reuters 유가 10:15 GMT 관측은 직전 점검보다 오래된 시세로 새로운 움직임으로 해석 금지. 분석 디렉터리 전체 대조 미완료."
   ]
 }
