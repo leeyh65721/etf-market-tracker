@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T00:57:57Z",
-  "market_date": "2026-11-12",
+  "checked_at_utc": "2026-11-13T01:29:53Z",
+  "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 12일 미국장 마감 및 11월 13일 아시아 초기 보도 재검토: Nvidia CEO 사임과 유가·금리 상승은 기존 경고/관측에 포함. 일본 닛케이 초기 +1.1% 반등은 추가 전면 전이 판단의 반대 근거. 신규 정책 확정 또는 신용 충격 악화 확인 불가. 기존 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 13일 아시아 오전 보도(Bloomberg 전재)에서 MSCI 아시아태평양 +0.3%, 나스닥100 선물 +0.6%, S&P500 선물 +0.4%로 미국장 충격의 추가 전면 확산은 확인되지 않음. 기존 Nvidia CEO 사임, 11월 12일 미국장 약 -0.4% 및 유가·금리 상승은 반복 사건. 신용·유동성 지표 동시점 미확보로 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -309,6 +309,21 @@
       "change_pct": 3.3,
       "observed_at_utc": null,
       "note": "Reuters Nov 12 settlement report, already reflected in prior check"
+    },
+    "asia_pacific_nov13_bloomberg": {
+      "change_pct": 0.3,
+      "observed_at_utc": null,
+      "note": "Bloomberg via Economic Times published Nov 13 06:15 IST (00:45 UTC); exact quote timestamp unavailable; delayed report"
+    },
+    "nasdaq100_futures_nov13_bloomberg": {
+      "change_pct": 0.6,
+      "observed_at_utc": null,
+      "note": "Bloomberg via Economic Times published 2026-11-13T00:45:00Z; exact exchange timestamp unavailable; not live"
+    },
+    "sp500_futures_nov13_bloomberg": {
+      "change_pct": 0.4,
+      "observed_at_utc": null,
+      "note": "Bloomberg via Economic Times published 2026-11-13T00:45:00Z; exact exchange timestamp unavailable; not live"
     }
   },
   "sources": [
@@ -361,7 +376,8 @@
     "https://www.reuters.com/world/china/tougher-curbs-ai-chip-sales-china-likely-after-nvidia-ceo-resigns-2026-11-12/",
     "https://www.reuters.com/business/nvidia-pe-falls-14-year-low-ceo-exit-ai-worries-cloud-bargain-2026-11-12/",
     "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-12/",
-    "https://www.wsj.com/finance/stocks/nikkei-rises-1-1-led-by-chip-stocks-eb2ed881"
+    "https://www.wsj.com/finance/stocks/nikkei-rises-1-1-led-by-chip-stocks-eb2ed881",
+    "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-gain-after-nvidia-shakeup-oil-steady/articleshow/135785602.cms"
   ],
   "data_limitations": [
     "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
@@ -401,6 +417,7 @@
     "2026-11-12T22:19:39Z: Closing data Reuters/AP delayed and not synchronized with SOXX, VIX, IG/HY spreads, real yields, natural gas, gold, copper, USD/KRW or breadth; historical analysis folders not comprehensively audited. No fresh post-close event confirmed.",
     "2026-11-12T23:19:20Z: SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW and numerical market breadth not independently synchronized; no inference of absence of liquidity shock. Reuters/AP closing reports are delayed and individual quote timestamps not independently verified.",
     "2026-11-13T00:13:56Z: Reuters/AP 11월 12일 마감 및 Reuters 후속 분석 확인; 새 동시점 SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 미검증. 기존 관측값은 시각 보존, 실시간 값 아님. analysis/events 및 analysis/daily 전체 대조 미완료.",
-    "2026-11-13T00:57:57Z: 11월 12일 미국장 마감과 11월 13일 아시아 초기 자료는 시차가 있는 보도. SOXX, VIX, HY/IG 스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 시장 폭 동시점 자료 미확보. 과거 분석 폴더 전체 대조 미완료."
+    "2026-11-13T00:57:57Z: 11월 12일 미국장 마감과 11월 13일 아시아 초기 자료는 시차가 있는 보도. SOXX, VIX, HY/IG 스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 시장 폭 동시점 자료 미확보. 과거 분석 폴더 전체 대조 미완료.",
+    "2026-11-13T01:29:53Z: Bloomberg 전재 아시아·미국 선물 시세는 지연 보도이며 거래소 관측시각 불명. SOXX/VIX/HY·IG 스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 최신 동시점 검증 불가. analysis/events 및 analysis/daily 전체 목록 대조 불가."
   ]
 }
