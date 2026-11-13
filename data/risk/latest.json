@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T08:46:07Z",
+  "checked_at_utc": "2026-11-13T09:38:08Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월13일 달러·미국채 금리 상승 및 유가 보도, AP 아시아 혼조, FT 중국 AI 종목 하락 확인. 직전 07:39 UTC 점검 대비 별도 확정 규제·신용 충격·미국 반도체 광범위 추가 급락 증거는 미확보. 중국 AI 기업 약세는 기존 Nvidia CEO 사임/수출규제 우려의 후속 전이로 분류하며 아직 위험단계 상향 근거 부족. 기존 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(잠정). Reuters 11월 13일 이란 측 LNG 운반선 기뢰 폭발 주장 새로 확인했으나 선박·피해·독립 확인 부재; 이미 경고된 호르무즈 운송 위험의 잠재 후속이며 즉시 위험단계 상향 증거 부족. IEA의 10월 원유 공급 초과 약 200만 배럴/일(FT 보도) 및 Reuters 브렌트 96.04달러/WTI 88.59달러는 공급충격 심화에 대한 반대 근거. 기존 Nvidia·CPI 위험 재경고 없음. 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -433,6 +433,12 @@
       "value": "Z.ai -10%, MiniMax -8% Friday; Alibaba/Tencent weekly aggregate market cap decline USD 75bn",
       "observed_at_utc": null,
       "note": "FT Nov 13 report; existing Nvidia/export-policy uncertainty; not confirmed new regulation"
+    },
+    "iea_oil_balance_oct2026_reported": {
+      "value": 2,
+      "unit": "million barrels/day surplus",
+      "observed_at_utc": null,
+      "note": "FT Nov 13 reports IEA October estimate; monthly backward-looking estimate, not live quote"
     }
   },
   "sources": [
@@ -495,13 +501,17 @@
     "https://www.wsj.com/finance/stocks/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15",
     "https://www.reuters.com/business/energy/oil-prices-set-second-weekly-decline-trump-stay-with-iran-blockade-2026-11-13/",
     "https://www.ft.com/content/0d4e93e4-895e-4ae0-a01b-833a3ed440a8",
-    "https://www.wsj.com/economy/central-banking/upward-pressure-remains-in-treasury-yields-even-as-two-year-yield-stabilizes-0c267082"
+    "https://www.wsj.com/economy/central-banking/upward-pressure-remains-in-treasury-yields-even-as-two-year-yield-stabilizes-0c267082",
+    "https://www.reuters.com/world/iran-says-tanker-carrying-lng-hit-mine-suffered-explosion-hormuz-2026-11-13/",
+    "https://www.ft.com/content/20b68fe2-9d60-4c0c-b714-1f3e03015823",
+    "https://www.reuters.com/markets/asia/smfg-second-quarter-profit-falls-10-raises-annual-earnings-forecast-2026-11-13/"
   ],
   "data_limitations": [
     "2026-11-13 07:39 UTC 점검; 최신 보도는 지연·비동시점 자료이며 거래소 개별 관측시각 확인 불가",
     "SOXX, VIX, 회사채 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량적 시장 폭의 최신 동시점 수치 미검증",
     "새로운 신용·유동성 충격 부재 확정 불가; analysis/events 및 analysis/daily 전체 파일 내용 대조 미완료",
     "기존 indicators의 과거 관측값은 최신 데이터가 아님",
-    "Nov 13 08:46 UTC check: SOXX, VIX, high-yield/IG credit spreads, real yields, natural gas, gold, copper, USD/KRW, numeric breadth and liquidity not independently verified at synchronized timestamps; latest reported prices delayed and exact quote times unavailable."
+    "Nov 13 08:46 UTC check: SOXX, VIX, high-yield/IG credit spreads, real yields, natural gas, gold, copper, USD/KRW, numeric breadth and liquidity not independently verified at synchronized timestamps; latest reported prices delayed and exact quote times unavailable.",
+    "2026-11-13 09:38 UTC: LNG tanker incident based on Iranian assertion, independent vessel/damage confirmation unavailable; Reuters/FT reported quotes and IEA monthly figures delayed and nonsynchronous. SOXX/VIX/credit spreads/real yields/natural gas/copper/USD-KRW/breadth not verified live. No claim of absent credit shock."
   ]
 }
