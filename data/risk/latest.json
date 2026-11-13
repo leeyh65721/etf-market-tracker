@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T06:17:00Z",
+  "checked_at_utc": "2026-11-13T06:24:14Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 13일 아시아 시장 혼조·반등, 미국 선물 소폭 상승, 유가 완화는 이전 경고의 중대한 악화 증거가 아님. AP는 지역별 혼조를 보도해 광범위한 전염 판단에 반대 근거. VIX·신용스프레드 등 동시점 미확보로 기존 잠정 high 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 13일 달러 19개월 고점 부근·미국 2년물 금리 2거래일 +34bp 및 50bp 인상 가능성 14.5%는 기존 인플레이션·금리 상승 위험의 연속이며 직전 경고 대비 새 단계의 전이/신용 충격은 확인되지 않음. 아시아 혼조 및 미국 선물 반등은 반대 근거. 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -348,6 +348,44 @@
       "brent_usd_per_barrel": 95.7,
       "wti_usd_per_barrel": 88.41,
       "note": "AP 2026-11-13 보도 기준 서로 비동시점 지연 시세; 개별 관측시각 불명. Reuters와 수치가 다른 것은 관측시각 차이 가능."
+    },
+    "us_2y_yield_change_two_sessions_nov13": {
+      "value": 34,
+      "unit": "basis_points",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 report; two-session cumulative, not hourly or synchronized quote"
+    },
+    "fed_50bp_december_probability_nov13": {
+      "value": 14.5,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 reported market pricing; exact quote time unavailable"
+    },
+    "dollar_index_weekly_change_nov13": {
+      "value": 0.9,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 week-to-date indicative figure; delayed"
+    },
+    "brent_nov13_ap": {
+      "value": 95.7,
+      "unit": "USD/barrel",
+      "observed_at_utc": null,
+      "note": "AP Nov 13 Asian session reported indicative, exact quote timestamp unknown"
+    },
+    "wti_nov13_ap": {
+      "value": 88.41,
+      "unit": "USD/barrel",
+      "observed_at_utc": null,
+      "note": "AP Nov 13 Asian session reported indicative, exact quote timestamp unknown"
+    },
+    "asia_nov13_ap": {
+      "nikkei_change_pct": 0.8,
+      "taiex_change_pct": 1.7,
+      "kospi_change_pct": -0.5,
+      "hang_seng_change_pct": -0.9,
+      "observed_at_utc": null,
+      "note": "AP Nov 13 regional snapshots, not synchronized; Reuters earlier reports differ by observation time"
     }
   },
   "sources": [
@@ -405,51 +443,13 @@
     "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/",
     "https://www.reuters.com/technology/smic-says-ai-chip-supply-chain-will-remain-tight-through-2027-2026-11-13/",
     "https://www.wsj.com/world/asia/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15",
-    "https://apnews.com/article/f8edd0eeb1494d4d2584715686c5e619"
+    "https://apnews.com/article/f8edd0eeb1494d4d2584715686c5e619",
+    "https://www.reuters.com/world/africa/dollar-near-19-month-high-fed-hike-bets-yen-tests-160-2026-11-13/"
   ],
   "data_limitations": [
-    "No synchronized current SOXX, VIX, high-yield credit spreads, real yields, natural gas, gold, copper, USD/KRW, or ETF bid-ask spreads verified.",
-    "Reuters 11:44 ET market quotes are intraday and delayed relative to this check; Reuters dollar index and AP breadth exact observation times unavailable.",
-    "US Treasury cash market closed Nov 11 for Veterans Day; previous Treasury yield is not current.",
-    "Existing critical alert reflects historical Nov 6 event, not a newly assessed current critical risk.",
-    "Latest publicly verified data is delayed; no fresh synchronized SOXX, VIX numeric level, credit spreads, real yields, natural gas, gold, copper or USD/KRW available.",
-    "Past alerts compared to prior risk JSON and conversation; complete analysis/events and analysis/daily audit not performed.",
-    "Nov 11 US close sourced to Reuters article; AP article reports different percentage changes, likely different update snapshots. Exact price observation timestamp unavailable.",
-    "This check did not independently verify synchronized real-time Treasury yields, credit spreads, VIX level, SOXX, energy/metals or FX.",
-    "2026-11-11T20:28:46Z check: no fresh synchronized cross-asset observations; previous indicators retained with their original timestamps; no new numbers fabricated.",
-    "2026-11-11T22:20:24Z: Latest Reuters revisions differ from earlier intraday/closing snapshots; source timestamp is not exchange quote timestamp. No synchronized VIX, SOXX, credit, real yields, gas, gold, copper or KRW data verified; analysis directories could not be enumerated via fetch_file.",
-    "2026-11-11T23:16:27Z: Reuters/AP Nov 11 closing figures reconfirmed, not fresh live quotes. Nov 11 Treasury cash market closed. Current synchronized SOXX, VIX, credit spreads, real yields, metals, natural gas, USD/KRW and market breadth unavailable. No full analysis directory audit.",
-    "Nov 11 late-hours Nvidia board ouster remains a sourced media report, not an official board decision; Reuters could not independently verify. NVDA after-hours quotes are delayed/indicative, broad ETF/futures and credit spillover unverified. Risk level high is provisional event risk, not a portfolio drawdown estimate.",
-    "2026-11-12 00:51 UTC check: no independently confirmed board decision or fresh synchronized SOXX, VIX, credit spread, real yield, metals, natural gas, USD/KRW prices; previously recorded indicator timestamps remain unchanged.",
-    "2026-11-12T01:51:29Z: no independently verified board decision or synchronized SOXX, VIX, credit spreads, Treasury real yields, natural gas, gold, copper, USD/KRW; Nov 11 after-hours NVDA Yahoo quote is delayed and indicative. Prior market indicators retain original observation timestamps.",
-    "2026-11-12T02:38:07Z: MarketWatch futures/SOXX after-hours percentages refer to Nov 11 evening and are not fresh synchronized quotes. Official Nvidia board resolution, current credit spreads, real yields, VIX, metals, energy, USD/KRW not independently verified. Previous indicators retain original timestamps.",
-    "2026-11-12T03:28:51Z: Reuters latest Asia market report checked; no independently verified Nvidia board resolution or synchronized current SOXX, VIX, credit spreads, Treasury yields/real yields, natural gas, metals, FX. Prior indicator observation times unchanged; no fabricated prices.",
-    "2026-11-12T05:19:19Z: Reuters follow-up reviewed; no verified new board resolution or synchronized live SOXX, VIX, credit spreads, yields, energy/metals, USD/KRW. Previous observations retain original timestamps; comprehensive historical directory comparison not completed.",
-    "2026-11-12T05:35:25Z: Reuters oil quotes observed 04:26 UTC and are delayed; AP Asian stock movements are session snapshots without synchronized exchange timestamps. No new official Nvidia board decision verified. Current SOXX/VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW not verified; older indicators preserve original timestamps.",
-    "2026-11-12T06:43:13Z: Reuters 06:26 UTC analysis checked; no official board decision independently confirmed. No fresh synchronized SOXX/VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or market breadth; older observations preserved. Historical directory audit incomplete.",
-    "2026-11-12T08:00:56Z: Reuters reports are delayed and mostly cover previously reported Nvidia leadership risk; no new official board decision verified. No synchronized current SOXX, VIX, corporate credit spreads, nominal/real yields, natural gas, gold, copper, USD/KRW or market breadth. Historical analysis directories not fully audited. Existing observations retain their original timestamps.",
-    "2026-11-12T09:18:10Z: Reuters reports include delayed session snapshots and a live article without verified new board decision. Synchronized SOXX, VIX, credit spreads, real yields, gas, gold, copper, USD/KRW and market breadth unavailable; older observations preserve original times. Historical directories not fully audited.",
-    "2026-11-12T10:17:35Z: Reuters premarket percentage snapshots have no exact quote timestamps; no synchronized SOXX, VIX, credit spreads, Treasury real yields, gas, copper or USD/KRW. Dollar 19-month high and gold weakness reported qualitatively, not invented as fresh quotes. No confirmed Nvidia board decision; full historical directories not audited.",
-    "2026-11-12T11:11:51Z: Reuters and Barron's premarket snapshots are delayed and lack synchronized exchange timestamps. No independently verified official CEO removal, live SOXX/VIX, HY credit spread, Treasury real yields, natural gas, copper, USD/KRW, or quantitative breadth. Existing indicator timestamps retained. No complete analysis directory audit.",
-    "2026-11-12T11:40:09Z: Reuters 11:34 UTC commentary checked; US regular session not yet open. No synchronized current SOXX/VIX, credit spreads, Treasury nominal/real yields, natural gas, copper, USD/KRW or numeric breadth independently confirmed. Previous indicator timestamps retained; full analysis directory audit not performed.",
-    "2026-11-12T12:49:22Z: Reuters premarket figures delayed and without exchange quote timestamp. No confirmed CEO dismissal; no synchronized SOXX/VIX, credit spreads, real yields, natural gas, copper, USD/KRW, market breadth. Existing other indicator observation times preserved; historical directories not fully audited.",
-    "2026-11-12T14:17:16Z: Confirmed CEO transition; reported premarket declines are delayed. No synchronized regular-session SOXX, VIX, market breadth, high-yield spreads, real yields, gas, copper, gold or USD/KRW verified. Existing indicator observation times unchanged.",
-    "At 14:51 UTC Nov 12, opening index values are delayed snapshots, not live quotes; synchronized SOXX, VIX, credit spreads, Treasury real yields, FX and commodity measurements unavailable.",
-    "2026-11-12T16:09:51Z: Reuters 09:45 ET and AP morning observations are delayed and non-synchronous; no independently verified same-time SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or quantitative breadth. No comprehensive historical directory audit; existing older observations retain original timestamps.",
-    "2026-11-12T17:15:49Z: Reuters/AP/MarketWatch Nov 12 intraday reports are delayed and nonsynchronous; no independently verified simultaneous SOXX, VIX, HY credit spread, Treasury real yield, natural gas, gold, copper, USD/KRW or numeric market breadth. Historical analysis directory audit incomplete; older indicators retain original timestamps.",
-    "2026-11-12T18:02Z 점검: SOXX, VIX, HY/IG 신용스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 수치 시장 폭의 동시점 원시자료 미확보. 이전 지표는 각 관측 시각을 보존하며 실시간으로 해석하지 말 것.",
-    "2026-11-12T19:16:40Z: AP afternoon values delayed, no exact exchange quote timestamp; latest synchronized SOXX, VIX, credit spreads, real yields, gas, gold, copper, USD/KRW and quantitative breadth not independently verified. No full historical directory audit; prior timestamps retained.",
-    "Nov 12 19:26 UTC check: latest synchronized SOXX, VIX, credit spreads, real yields, market breadth, USD/KRW, gas, copper, gold not independently verified; quoted market figures are delayed and not simultaneous.",
-    "No new critical event independently verified; prior alert entries preserved.",
-    "2026-11-12T21:22:11Z: SOXX, VIX closing, HY/IG spreads, real yields, natural gas, gold, copper, USD/KRW, breadth not independently synchronized; delayed media closing reports, not live exchange feed. Full event/daily directory audit not performed.",
-    "2026-11-12T22:19:39Z: Closing data Reuters/AP delayed and not synchronized with SOXX, VIX, IG/HY spreads, real yields, natural gas, gold, copper, USD/KRW or breadth; historical analysis folders not comprehensively audited. No fresh post-close event confirmed.",
-    "2026-11-12T23:19:20Z: SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW and numerical market breadth not independently synchronized; no inference of absence of liquidity shock. Reuters/AP closing reports are delayed and individual quote timestamps not independently verified.",
-    "2026-11-13T00:13:56Z: Reuters/AP 11월 12일 마감 및 Reuters 후속 분석 확인; 새 동시점 SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 미검증. 기존 관측값은 시각 보존, 실시간 값 아님. analysis/events 및 analysis/daily 전체 대조 미완료.",
-    "2026-11-13T00:57:57Z: 11월 12일 미국장 마감과 11월 13일 아시아 초기 자료는 시차가 있는 보도. SOXX, VIX, HY/IG 스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 시장 폭 동시점 자료 미확보. 과거 분석 폴더 전체 대조 미완료.",
-    "2026-11-13T01:29:53Z: Bloomberg 전재 아시아·미국 선물 시세는 지연 보도이며 거래소 관측시각 불명. SOXX/VIX/HY·IG 스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 최신 동시점 검증 불가. analysis/events 및 analysis/daily 전체 목록 대조 불가.",
-    "2026-11-13T02:57:04Z: Reuters Asian session figures are delayed at least 15 minutes, non-synchronous, exact exchange timestamps unknown. Current SOXX, VIX, IG/HY spreads, real yields, natural gas, USD/KRW, quantitative breadth unavailable; no complete historical analysis directory audit. Older readings remain historical.",
-    "2026-11-13T04:15:05Z: Latest verified Reuters Asia market report was published 01:55 UTC, already reflected in previous check. No new synchronized SOXX, VIX, credit spreads, real yields, gas, copper, USD/KRW or numeric breadth; no full historical directory audit. Prior observations retain original timestamps.",
-    "2026-11-13T04:52:49Z: Reuters/WSJ Nov 13 Asian-session articles are delayed and non-synchronous. No synchronized current SOXX, VIX, IG/HY spreads, real yields, natural gas, copper, USD/KRW, quantitative breadth; earlier indicators preserve original times. Historical analysis folders not fully audited.",
-    "2026-11-13 06:17 UTC 점검: SOXX, VIX, 신용스프레드, 실질금리, USD/KRW, 천연가스, 정량적 시장 폭의 최신 동시점 독립 검증 불가; AP/Reuters 보도 지연, 원시 시세시각 불명. 분석 디렉터리 전체 파일 내용 대조 미완료."
+    "11월 13일 06:24 UTC 점검; 기사 기반 지연·비동시점 수치이며 거래소 정확 관측시각 확인 불가",
+    "SOXX, VIX, IG/HY 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량적 시장 폭의 최신 동시점 원자료 미확보",
+    "신용·유동성 충격 부재를 확정할 수 없음; 과거 분석 디렉터리 목록 확인했으나 개별 파일 전체 내용 대조 미완료",
+    "기존 indicators에 이전 날짜 관측값 포함: 최신 동시점 데이터로 오인 금지"
   ]
 }
