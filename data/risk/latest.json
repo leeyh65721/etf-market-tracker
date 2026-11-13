@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T12:53:10Z",
+  "checked_at_utc": "2026-11-13T14:17:42Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(검증 가능한 자료 범위). 11월 13일 12:14 UTC 점검 이후 신규 보도인 글로벌 주식펀드 순유입(11월 11일 종료 주간 509.9억 달러) 및 미국장 개장 전 선물의 소폭 상승은 전면적 위험 전이의 반대 근거. 호르무즈 유조선 폭발 주장은 Reuters가 독립 검증하지 못함. 엔비디아 사임·기존 CPI 충격 중복 경고 제외. 잠정 high 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(검증 가능한 자료 범위). 11월 13일 미국 10월 PPI 전월비 +0.3%는 예상 +0.4% 하회, 50bp 연준 인상 확률 약 14%로 보고되어 금리 위험 추가 악화보다는 완화의 반대 근거. Nvidia 관련 변동은 기존 사건 후속이며 신용·유동성·시장 폭의 동시점 전이 증거 미확보. 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -498,53 +498,33 @@
       "unit": "USD/barrel",
       "observed_at_utc": "2026-11-13T12:00:00Z",
       "note": "Reuters 12:00 GMT indicative quote, not settlement"
+    },
+    "us_october_ppi_reported": {
+      "value": 0.3,
+      "unit": "percent month-over-month",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 release report; consensus +0.4%; release exact time not independently verified"
+    },
+    "us_10y_nov13_reported": {
+      "value": 5.13,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "Barron's Nov 13 indicative reporting, delayed, not synchronized"
+    },
+    "brent_nov13_1200utc": {
+      "value": 96.21,
+      "unit": "USD/barrel",
+      "observed_at_utc": "2026-11-13T12:00:00Z",
+      "note": "Reuters Nov 13 12:00 GMT delayed snapshot"
+    },
+    "wti_nov13_1200utc": {
+      "value": 88.62,
+      "unit": "USD/barrel",
+      "observed_at_utc": "2026-11-13T12:00:00Z",
+      "note": "Reuters Nov 13 12:00 GMT delayed snapshot"
     }
   },
   "sources": [
-    "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/",
-    "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/",
-    "https://apnews.com/article/297d040c83844a9563327340b370c24e",
-    "https://www.reuters.com/world/china/coreweave-sparks-ai-cloud-stock-rally-lifts-nvidia-results-ease-bubble-fears-2026-11-11/",
-    "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/",
-    "https://www.reuters.com/world/china/foreign-investors-pull-out-50-billion-asian-equities-october-ai-cash-burn-woes-2026-11-11/",
-    "https://www.reuters.com/business/ai-rout-sets-off-market-alarm-signals-traders-brace-whats-next-2026-11-06/",
-    "https://apnews.com/article/027cd5f4583d1a11c1795150bf065afb",
-    "https://www.investors.com/news/technology/chip-stocks-rally-amd-txn-arm-mtsi-mu/",
-    "https://www.reuters.com/commentary/reuters-open-interest/bond-storm-2026-may-be-passing-fed-gusts-linger-2026-11-11/",
-    "https://www.wsj.com/finance/currencies/asian-currencies-soften-after-u-s-cpi-data-boosts-dollar-26f03632",
-    "https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/",
-    "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
-    "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/",
-    "https://news.sbs.co.kr/english/article.do?news_id=N1008842159",
-    "https://www.reuters.com/world/china/senior-republican-us-senate-banking-panel-calls-nvidia-ceo-huang-resign-2026-11-11/",
-    "https://finance.yahoo.com/quote/NVDA/history/",
-    "https://www.marketwatch.com/story/nasdaq-futures-fall-as-nvidia-sinks-8-after-hours-on-report-board-may-oust-huang-e99b898d",
-    "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-12/",
-    "https://www.reuters.com/world/china/view-nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/",
-    "https://www.reuters.com/world/china/senior-us-democratic-senators-urge-administration-preserve-nvidia-export-records-2026-11-12/",
-    "https://www.reuters.com/business/energy/oil-prices-drop-more-than-1-hopes-iran-ukraine-peace-talks-pressure-markets-2026-11-12/",
-    "https://apnews.com/article/8bf08407eafe1655ed73112f7494029a",
-    "https://www.reuters.com/business/finance/investors-worry-ai-trade-needs-nvidias-huang-its-largesse-2026-11-12/",
-    "https://www.reuters.com/live/nvidia-live-board-meets-fate-ceo-jensen-huang-after-affair-reports-2026-11-12/",
-    "https://www.reuters.com/business/retail-consumer/global-markets-view-europe-2026-11-12/",
-    "https://www.reuters.com/business/finance/after-us-market-shake-out-signs-suggest-too-soon-say-worst-is-over-2026-11-11/",
-    "https://www.reuters.com/business/europes-stoxx-600-hits-record-high-strong-earnings-easing-mideast-tensions-2026-11-12/",
-    "https://www.reuters.com/business/nasdaq-futures-fall-nvidia-turmoil-rattles-ai-stocks-2026-11-12/",
-    "https://www.reuters.com/world/asia-pacific/dollar-near-one-month-high-yen-edges-toward-160-2026-11-12/",
-    "https://www.reuters.com/world/india/gold-falls-over-one-week-low-firm-dollar-fed-rate-hike-bets-2026-11-12/",
-    "https://www.barrons.com/livecoverage/stock-market-news-today-111226/card/chip-rivals-cushion-nvidia-drop-as-sector-falls-premarket-S5ammt3GJeVg51XJlS33",
-    "https://www.reuters.com/video/watch/idRW781212112026RP1/",
-    "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-12/",
-    "https://www.reuters.com/business/media-telecom/nvidias-asian-supply-chain-prepares-life-after-huang-2026-11-12/",
-    "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/",
-    "https://apnews.com/article/5403f152a601cf82ce939f1d24fffa0f",
-    "https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns",
-    "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
-    "https://www.ft.com/content/a93307a7-e2cd-4abd-bd89-c38832d8c40e",
-    "https://www.marketwatch.com/livecoverage/nvidia-ceo-jensen-huang-stock-board",
-    "https://www.reuters.com/technology/nebius-beats-quarterly-revenue-estimates-strong-ai-demand-2026-11-12/",
-    "https://www.barrons.com/articles/stock-movers-cd2d0ebf",
-    "https://www.reuters.com/business/retail-consumer/retail-buyers-limit-nvidia-stock-rout-2026-11-12/",
     "https://apnews.com/article/3f3668a937a11535103e3a5c8d82c9fc",
     "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
     "https://www.reuters.com/world/china/tougher-curbs-ai-chip-sales-china-likely-after-nvidia-ceo-resigns-2026-11-12/",
@@ -567,7 +547,9 @@
     "https://www.wsj.com/business/energy-oil/oil-prices-rise-as-middle-east-supply-risks-persist-2066e758",
     "https://apnews.com/article/5d73a23b5b8647d2515c35b267b36c08",
     "https://www.reuters.com/business/finance/global-markets-flows-graphic-2026-11-13/",
-    "https://www.barrons.com/articles/s-p-500-futures-up-in-premarket-trading-modine-manufacturing-cerebras-systems-lead-a8677105"
+    "https://www.barrons.com/articles/s-p-500-futures-up-in-premarket-trading-modine-manufacturing-cerebras-systems-lead-a8677105",
+    "https://www.reuters.com/business/nasdaq-futures-dip-nvidia-tumult-keeps-investors-edge-2026-11-13/",
+    "https://www.barrons.com/livecoverage/stock-market-news-today-111326/card/treasury-yields-hold-above-5-after-bruising-weekly-selloff-kvupPpCdoVRCIio0oDyL"
   ],
   "data_limitations": [
     "2026-11-13 07:39 UTC 점검; 최신 보도는 지연·비동시점 자료이며 거래소 개별 관측시각 확인 불가",
@@ -580,6 +562,7 @@
     "2026-11-13T12:14:31Z 점검: 공개 보도는 지연/비동시점. SOXX, VIX, IG/HY 스프레드, 실질금리, 천연가스, 금·구리, USD/KRW, 정량 시장 폭 최신 동시점 검증 실패. Reuters 유가 10:15 GMT 관측은 직전 점검보다 오래된 시세로 새로운 움직임으로 해석 금지. 분석 디렉터리 전체 대조 미완료.",
     "SOXX, VIX 현물, 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW 및 정량 시장 폭의 12:53 UTC 동시점 시세 미검증",
     "analysis/events/ 및 analysis/daily/ 디렉터리 전체 조회 실패; 이전 대화 및 risk/latest.json 경고 3건과 대조",
-    "일부 기사 시세는 지연·비동시점이며 개별 거래소 관측 시각 불명"
+    "일부 기사 시세는 지연·비동시점이며 개별 거래소 관측 시각 불명",
+    "2026-11-13 14:17 UTC: SOXX/VIX, corporate credit spreads, real yields, natural gas, copper, USD/KRW and quantitative breadth not verified as synchronized live quotes; price/news snapshots delayed. Prior daily/event directories listed but not all historical files read."
   ]
 }
