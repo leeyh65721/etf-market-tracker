@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T19:54:37Z",
+  "checked_at_utc": "2026-11-13T21:11:28Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(검증 범위 내). Reuters 11월 13일 오후 업데이트는 반도체 SOX 약 -3.60%, 나스닥 약 -0.89%, S&P500 약 -0.48% 등 오전의 약 -6%/-1.74%/-1.01% 대비 낙폭 축소를 시사하나 기사 표기 수치의 정확한 관측 시각과 종가 여부는 미확인. 기존 Nvidia 사임 및 AI 자금조달 우려 반복; 신용·유동성 충격의 새 증거 미확보. 잠정 high 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 13일 미국 정규장 종가 보도에서 S&P500 약 -0.4%, Nasdaq 약 -0.9%, Dow 약 +0.1%; 반도체·AI 약세 지속이나 장중 최악 대비 낙폭 축소. Nasdaq 52주 신저가 301개/신고가 28개, Nasdaq 하락 종목 우세 1.78:1은 시장 폭 약화 증거로 추가 확인. 기존 Nvidia 사임/AI 금융 우려의 지속으로 분류, 새로운 광범위한 신용·유동성 충격은 검증 불가. high 유지, 신규 경고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -593,6 +593,20 @@
       "observed_at_utc": null,
       "source_report_time_utc": "2026-11-13T17:48:00Z",
       "note": "Reuters via Investing.com Nov 13 12:48 ET updated article market quote panel; values potentially dynamically updated; exact quote timestamp/close unverified; do not treat as official close."
+    },
+    "us_market_close_nov13_reported": {
+      "sp500_change_pct": -0.4,
+      "nasdaq_change_pct": -0.9,
+      "dow_change_pct": 0.1,
+      "observed_at_utc": null,
+      "note": "MarketWatch/FactSet Nov 13 preliminary close, rounded; exact quote timestamps not independently verified"
+    },
+    "nasdaq_breadth_nov13_reported": {
+      "decliners_to_advancers_ratio": 1.78,
+      "new_52week_highs": 28,
+      "new_52week_lows": 301,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 afternoon/close reporting via Investing.com; quote panel and exact snapshot time uncertain, not a live quote"
     }
   },
   "sources": [
@@ -628,7 +642,8 @@
     "https://www.reuters.com/business/goldman-sachs-sees-sp-500-rising-8700-next-year-despite-slower-earnings-growth-2026-11-13/",
     "https://www.reuters.com/business/neoclouds-ai-stocks-slide-again-nvidia-turmoil-rattles-sector-2026-11-13/",
     "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-13-2026/card/what-s-moving-markets-today--S60c43ZdaQe0YiiDxvsP",
-    "https://www.investing.com/news/stock-market-news/nasdaq-futures-dip-as-nvidia-tumult-keeps-investors-on-edge-5024713"
+    "https://www.investing.com/news/stock-market-news/nasdaq-futures-dip-as-nvidia-tumult-keeps-investors-on-edge-5024713",
+    "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-ceo-jensen-huang-resigns-ppi-inflation-data/card/s-p-500-nasdaq-end-lower-as-chip-stocks-sell-off-We8qJmzsgM0dPd2Ho6zH"
   ],
   "data_limitations": [
     "analysis/events/ 및 analysis/daily/ 디렉터리 전체 조회 실패; 이전 대화 및 risk/latest.json 경고 3건과 대조",
@@ -639,6 +654,7 @@
     "2026-11-13 16:45 UTC: Reuters 10:16 ET 시세 약 89분 지연; SOXX, VIX 현물, IG/HY 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량적 시장 폭 동시점 검증 실패. 이전 events/daily 전체 내용 미대조. 과거 indicators는 최신값이 아님.",
     "2026-11-13T18:05:05Z 점검: Reuters/AP/WSJ 시세 지연·비동시점, 개별 체결시각 불명. SOXX, VIX, 회사채 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량 시장 폭 최신 동시점 수치 검증 실패. 과거 analysis/events 및 daily 전체 파일 미대조; 공개 위험 데이터 및 대화의 기존 경고와 비교. 신규 경고 없음은 검증 범위에 한정.",
     "2026-11-13T18:29:07Z: 검색된 Reuters/WSJ/AP 기사들은 직전 점검과 중복되거나 관측시각이 불명확함. 최신 SOXX/VIX, IG/HY 스프레드, 실질금리, USD/KRW, 천연가스·금·구리, 정량 시장 폭의 동시점 값 확인 불가. indicators의 이전 값은 과거 관측값이며 이번 점검 현재값이 아님. events/daily 전체 파일 대조 미완료.",
-    "2026-11-13T19:54:37Z: 기사 가격 패널의 갱신 시각과 공식 종가 확인 불가; SOXX/VIX, 신용스프레드, 실질금리, 천연가스·구리·금, USD/KRW, 정량 시장 폭 동시점 검증 불가. 기존 과거 indicators는 최신값 아님. 전체 events/daily 대조 미완료."
+    "2026-11-13T19:54:37Z: 기사 가격 패널의 갱신 시각과 공식 종가 확인 불가; SOXX/VIX, 신용스프레드, 실질금리, 천연가스·구리·금, USD/KRW, 정량 시장 폭 동시점 검증 불가. 기존 과거 indicators는 최신값 아님. 전체 events/daily 대조 미완료.",
+    "2026-11-13T21:11:28Z: 종가 예비치와 시장 폭 보도는 비동시점/지연, SOXX·VIX·IG/HY 신용스프레드·실질금리·USD/KRW·천연가스·금·구리의 동시점 값 미검증; events/daily 전체 대조 미완료. 기존 indicators 다수는 과거 값."
   ]
 }
