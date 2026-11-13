@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T07:39:15Z",
+  "checked_at_utc": "2026-11-13T08:46:07Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 13일 AP 아시아 혼조와 WSJ의 반등 약화 보도 비교: 코스피 약 -1%, 닛케이 약 +0.5%, 대만 약 +1.35%의 서로 다른 시점 관측. 전일 Nvidia 경영진 교체 및 금리·유가 위험의 지속으로 판단; 이전 경고 이후 광범위한 신용·유동성 충격 또는 위험 단계 상승은 검증되지 않음. 기존 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월13일 달러·미국채 금리 상승 및 유가 보도, AP 아시아 혼조, FT 중국 AI 종목 하락 확인. 직전 07:39 UTC 점검 대비 별도 확정 규제·신용 충격·미국 반도체 광범위 추가 급락 증거는 미확보. 중국 AI 기업 약세는 기존 Nvidia CEO 사임/수출규제 우려의 후속 전이로 분류하며 아직 위험단계 상향 근거 부족. 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -395,6 +395,44 @@
       "spot_gold_usd_per_oz": 3902,
       "observed_at_utc": null,
       "note": "WSJ Nov 13 Asia session delayed approximate quotes, exact exchange timestamp unknown; distinct from earlier AP observations"
+    },
+    "dollar_index_nov13_reuters": {
+      "value": 103.18,
+      "unit": "index",
+      "weekly_change_pct": 0.9,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 reported, exact exchange observation time not provided; delayed and not synchronized"
+    },
+    "us2y_nov13_ws_j": {
+      "value": 4.861,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "WSJ Nov 13 Asia session reported, quote timestamp unknown"
+    },
+    "us10y_nov13_ws_j": {
+      "value": 5.128,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "WSJ Nov 13 Asia session reported, quote timestamp unknown"
+    },
+    "brent_nov13_reuters": {
+      "value": 96.04,
+      "unit": "USD/barrel",
+      "change_pct": 0.26,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 snapshot, exact quote time unknown"
+    },
+    "wti_nov13_reuters": {
+      "value": 88.59,
+      "unit": "USD/barrel",
+      "change_pct": -0.2,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 snapshot, exact quote time unknown"
+    },
+    "china_ai_equities_nov13_ft": {
+      "value": "Z.ai -10%, MiniMax -8% Friday; Alibaba/Tencent weekly aggregate market cap decline USD 75bn",
+      "observed_at_utc": null,
+      "note": "FT Nov 13 report; existing Nvidia/export-policy uncertainty; not confirmed new regulation"
     }
   },
   "sources": [
@@ -454,12 +492,16 @@
     "https://www.wsj.com/world/asia/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15",
     "https://apnews.com/article/f8edd0eeb1494d4d2584715686c5e619",
     "https://www.reuters.com/world/africa/dollar-near-19-month-high-fed-hike-bets-yen-tests-160-2026-11-13/",
-    "https://www.wsj.com/finance/stocks/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15"
+    "https://www.wsj.com/finance/stocks/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15",
+    "https://www.reuters.com/business/energy/oil-prices-set-second-weekly-decline-trump-stay-with-iran-blockade-2026-11-13/",
+    "https://www.ft.com/content/0d4e93e4-895e-4ae0-a01b-833a3ed440a8",
+    "https://www.wsj.com/economy/central-banking/upward-pressure-remains-in-treasury-yields-even-as-two-year-yield-stabilizes-0c267082"
   ],
   "data_limitations": [
     "2026-11-13 07:39 UTC 점검; 최신 보도는 지연·비동시점 자료이며 거래소 개별 관측시각 확인 불가",
     "SOXX, VIX, 회사채 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량적 시장 폭의 최신 동시점 수치 미검증",
     "새로운 신용·유동성 충격 부재 확정 불가; analysis/events 및 analysis/daily 전체 파일 내용 대조 미완료",
-    "기존 indicators의 과거 관측값은 최신 데이터가 아님"
+    "기존 indicators의 과거 관측값은 최신 데이터가 아님",
+    "Nov 13 08:46 UTC check: SOXX, VIX, high-yield/IG credit spreads, real yields, natural gas, gold, copper, USD/KRW, numeric breadth and liquidity not independently verified at synchronized timestamps; latest reported prices delayed and exact quote times unavailable."
   ]
 }
