@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-13T06:24:14Z",
+  "checked_at_utc": "2026-11-13T07:39:15Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 13일 달러 19개월 고점 부근·미국 2년물 금리 2거래일 +34bp 및 50bp 인상 가능성 14.5%는 기존 인플레이션·금리 상승 위험의 연속이며 직전 경고 대비 새 단계의 전이/신용 충격은 확인되지 않음. 아시아 혼조 및 미국 선물 반등은 반대 근거. 기존 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 13일 AP 아시아 혼조와 WSJ의 반등 약화 보도 비교: 코스피 약 -1%, 닛케이 약 +0.5%, 대만 약 +1.35%의 서로 다른 시점 관측. 전일 Nvidia 경영진 교체 및 금리·유가 위험의 지속으로 판단; 이전 경고 이후 광범위한 신용·유동성 충격 또는 위험 단계 상승은 검증되지 않음. 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -386,6 +386,15 @@
       "hang_seng_change_pct": -0.9,
       "observed_at_utc": null,
       "note": "AP Nov 13 regional snapshots, not synchronized; Reuters earlier reports differ by observation time"
+    },
+    "asia_nov13_wsj_later": {
+      "kospi_change_pct": -1,
+      "nikkei_change_pct": 0.5,
+      "taiex_change_pct": 1.35,
+      "brent_usd_per_barrel": 96.03,
+      "spot_gold_usd_per_oz": 3902,
+      "observed_at_utc": null,
+      "note": "WSJ Nov 13 Asia session delayed approximate quotes, exact exchange timestamp unknown; distinct from earlier AP observations"
     }
   },
   "sources": [
@@ -444,12 +453,13 @@
     "https://www.reuters.com/technology/smic-says-ai-chip-supply-chain-will-remain-tight-through-2027-2026-11-13/",
     "https://www.wsj.com/world/asia/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15",
     "https://apnews.com/article/f8edd0eeb1494d4d2584715686c5e619",
-    "https://www.reuters.com/world/africa/dollar-near-19-month-high-fed-hike-bets-yen-tests-160-2026-11-13/"
+    "https://www.reuters.com/world/africa/dollar-near-19-month-high-fed-hike-bets-yen-tests-160-2026-11-13/",
+    "https://www.wsj.com/finance/stocks/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15"
   ],
   "data_limitations": [
-    "11월 13일 06:24 UTC 점검; 기사 기반 지연·비동시점 수치이며 거래소 정확 관측시각 확인 불가",
-    "SOXX, VIX, IG/HY 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량적 시장 폭의 최신 동시점 원자료 미확보",
-    "신용·유동성 충격 부재를 확정할 수 없음; 과거 분석 디렉터리 목록 확인했으나 개별 파일 전체 내용 대조 미완료",
-    "기존 indicators에 이전 날짜 관측값 포함: 최신 동시점 데이터로 오인 금지"
+    "2026-11-13 07:39 UTC 점검; 최신 보도는 지연·비동시점 자료이며 거래소 개별 관측시각 확인 불가",
+    "SOXX, VIX, 회사채 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량적 시장 폭의 최신 동시점 수치 미검증",
+    "새로운 신용·유동성 충격 부재 확정 불가; analysis/events 및 analysis/daily 전체 파일 내용 대조 미완료",
+    "기존 indicators의 과거 관측값은 최신 데이터가 아님"
   ]
 }
