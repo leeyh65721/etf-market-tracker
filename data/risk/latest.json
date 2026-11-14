@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T20:32:59Z",
+  "checked_at_utc": "2026-11-14T21:48:03Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 14일 보스턴 연은 Collins 총재의 점진적 추가 금리 인상 지지 발언은 기존 인플레이션·긴축 위험을 강화하지만 새 정책 결정이나 시장 전이 증거는 아님. 기존 호르무즈 피격 주장과 반도체 약세 반복 경고 제외. 주말 휴장, 위험등급 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 14일 Reuters 호르무즈 유조선 기뢰 피격 주장은 이전 점검에서 이미 다뤘고 독립 검증 불가. 11월 13일 미국 종가 및 원유 자료도 기존 사건과 중복. 주말 휴장으로 새로운 시장 전이·신용 충격 확인 불가; 잠정 high 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -847,9 +847,9 @@
     "https://www.reuters.com/business/feds-jefferson-says-he-is-taking-his-policy-cues-inflation-2026-11-14/"
   ],
   "data_limitations": [
-    "2026-11-14T17:35:46Z: 미국 주말 휴장; SOXX/VIX, IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW, 시장폭 최신 동시점 수치 미검증. Reuters의 호르무즈 피격 주장 독립 확인 불가. 기존 지표는 관측일 기준 과거 자료. analysis/events 및 analysis/daily 전체 본문 대조 미완료.",
     "2026-11-14T18:46:08Z 점검: 주말 휴장, 최신 동시점 SOXX/VIX/신용스프레드/실질금리/원자재/환율/시장 폭 미검증; analysis/events 및 analysis/daily 전체 대조 미완료. 기존 indicators는 과거 시각 자료로 현재 시세가 아님.",
     "2026-11-14T19:50:21Z: 미국 주말 휴장. 신규 동시점 SOXX/VIX/IG·HY 스프레드/실질금리/천연가스·금·구리/USD-KRW/시장폭 검증 불가. 기존 indicators는 과거 시점이며 현재 시세가 아님. GitHub 사건·일일 분석 전체 본문 전수 대조 미완료.",
-    "2026-11-14T20:32:59Z: 미국 주말 휴장으로 최신 정규장 11월 13일 종가. SOXX/VIX/IG·HY 신용스프레드/실질금리/천연가스·금·구리/USD-KRW/시장 폭의 동시점 자료 독립 검증 불가. 이전 indicators는 각 관측일의 과거 값. analysis/events 및 analysis/daily 전체 본문 대조 미완료."
+    "2026-11-14T20:32:59Z: 미국 주말 휴장으로 최신 정규장 11월 13일 종가. SOXX/VIX/IG·HY 신용스프레드/실질금리/천연가스·금·구리/USD-KRW/시장 폭의 동시점 자료 독립 검증 불가. 이전 indicators는 각 관측일의 과거 값. analysis/events 및 analysis/daily 전체 본문 대조 미완료.",
+    "2026-11-14T21:48:03Z: 주말 휴장. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 동시점 최신값 미확인. 기존 지표는 과거 관측치이며 최신 시세 아님. GitHub 분석 폴더 전체 본문 대조 미완료."
   ]
 }
