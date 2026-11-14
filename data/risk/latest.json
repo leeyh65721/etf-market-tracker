@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T00:01:05Z",
+  "checked_at_utc": "2026-11-14T01:00:49Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음(확인 범위 내). Reuters/AP/WSJ 11월 13일 종가 S&P 500 약 -0.4%, Nasdaq -0.91%, Dow +0.1%, SOX 약 -3.4% 재확인. 반도체 장중 -6%에서 낙폭 축소; 기존 Nvidia CEO 사임/AI 금융 불확실성의 추가 구조적 악화 확인되지 않음. 미국 주식시장 주간 +2.3~2.5%는 광범위 전이의 반대 근거. 기존 high 유지(잠정).",
+  "change_since_previous": "신규 긴급 경고 없음(확인 범위 내). 11월 13일 미국 종가 S&P 500 약 -0.4%, Nasdaq -0.91%, Dow +0.1%, SOX 약 -3.4%는 이전 점검과 동일한 사건. Reuters/AP/WSJ 11월 14일 오전 보도에서 기존 Nvidia CEO 사임·AI 자금조달 불확실성의 별도 중대한 추가 악화는 확인되지 않음. 시장 전체 주간 상승 및 유럽 강세는 반대 근거. 기존 잠정 high 유지; 신용/유동성 동시점 검증 미완료.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -644,6 +644,16 @@
       "change_pct": -2.01,
       "observed_at_utc": "2026-11-13T21:00:00Z",
       "note": "Reuters 11월 13일 종가 보도; 개별 거래소 타임스탬프 미확인"
+    },
+    "us_market_nov13_ap_confirmed": {
+      "sp500_close": 7561.67,
+      "nasdaq_close": 25136.27,
+      "dow_close": 52347.55,
+      "sp500_change_pct": -0.4,
+      "nasdaq_change_pct": -0.9,
+      "dow_change_pct": 0.1,
+      "observed_at_utc": "2026-11-13T21:00:00Z",
+      "note": "AP Nov 14 06:15 KST 보도 기반 11월 13일 정규장 종가. 정규장 종료 예정시각 기입, 개별 체결시각 미검증; 이전 점검과 중복."
     }
   },
   "sources": [
@@ -697,6 +707,7 @@
     "2026-11-13T21:11:28Z: 종가 예비치와 시장 폭 보도는 비동시점/지연, SOXX·VIX·IG/HY 신용스프레드·실질금리·USD/KRW·천연가스·금·구리의 동시점 값 미검증; events/daily 전체 대조 미완료. 기존 indicators 다수는 과거 값.",
     "2026-11-13T21:33:25Z: 장 마감 후 기사 기반 점검; SOXX/VIX/신용스프레드/실질금리/천연가스/구리/USD-KRW 동시점 값 미검증, 일부 종가 정밀 시각 불명. 과거 events/daily 전체 대조 미완료. indicators에 이전 날짜 관측치 다수 존재.",
     "2026-11-13T23:07:42Z: 미국 장 마감 후 Reuters/AP/WSJ 보도 교차 확인; SOXX·VIX·IG/HY 신용스프레드·실질금리·천연가스·금·구리·USD/KRW·정량 시장 폭 동시점 검증 불가. 과거 indicators는 실시간값이 아님. events/daily 전체 대조 미완료.",
-    "2026-11-14T00:01:05Z: 주말 미국 정규장 종료 후 기사/종가 재검토. SOXX, VIX, IG/HY 신용스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 동시점 시장 폭 최신 수치 미검증. 기존 분석 디렉터리 전체 대조 미완료. 이전 indicators 대부분 과거 관측값."
+    "2026-11-14T00:01:05Z: 주말 미국 정규장 종료 후 기사/종가 재검토. SOXX, VIX, IG/HY 신용스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 동시점 시장 폭 최신 수치 미검증. 기존 분석 디렉터리 전체 대조 미완료. 이전 indicators 대부분 과거 관측값.",
+    "2026-11-14T01:00:49Z: 주말 장 종료 후 11월 13일 종가와 기존 뉴스만 재확인. SOXX/VIX/IG-HY 신용스프레드/실질금리/천연가스/구리/금/USD-KRW 최신 동시점 값 미확보; 이전 지표는 과거 관측치. events/daily 전체 파일 대조 미완료. 신규 경고 없음은 확인 범위 한정."
   ]
 }
