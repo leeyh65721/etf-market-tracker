@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T15:42:12Z",
+  "checked_at_utc": "2026-11-14T17:14:39Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 15일 00:42 KST 점검: 11월 13일 미국 정규장 종가 및 반도체 약세는 기존 사건. 11월 14일 Reuters는 Microsoft 서비스 장애 복구를 확인했고 AP는 호르무즈 해협 유조선 3척 기뢰 피격 관련 이란 국영방송 주장을 보도했으나 독립 검증 및 금융시장 전이 확인 불가. 시장 휴장 중 새 가격 충격 입증 안 됨. 기존 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 14일 이란 해군의 호르무즈 유조선 추가 기뢰 피격 주장은 Reuters 보도되었으나 독립 검증되지 않았고 기존 11월 13일 유사 주장과 동일 위험 계열. 주말 미국 정규장 휴장으로 가격·신용·시장폭 전이 새 증거 없음. high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -835,12 +835,16 @@
     "https://www.barrons.com/articles/stockstoday-rotation-after-nvidia-3d0dbe00",
     "https://www.reuters.com/commentary/reuters-open-interest/wall-street-withstands-ai-blues-what-about-nvidia-shock-mcgeever-2026-11-12/",
     "https://www.reuters.com/technology/microsoft-365-outlook-down-thousands-us-users-downdetector-shows-2026-11-12/",
-    "https://apnews.com/article/ade76bebaf22135168aac6eb3016bc19"
+    "https://apnews.com/article/ade76bebaf22135168aac6eb3016bc19",
+    "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
+    "https://www.reuters.com/world/middle-east/irans-irgc-says-two-tankers-hit-sea-mines-hormuz-2026-11-13/",
+    "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february"
   ],
   "data_limitations": [
     "analysis/events 및 analysis/daily 폴더 목록 확인; 전체 파일 본문 전수 대조는 미완료.",
     "2026-11-14T14:20:52Z: 주말 휴장. 신규 동시점 SOXX/VIX, IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW, 시장 폭 미검증. 기존 indicators는 과거 관측치. events/daily 전체 본문 전수 대조 미완료. 보도별 지수 주간 수치 일부 불일치로 AP/WSJ 수치를 우선; 새로운 거래 발생으로 해석하지 않음.",
     "2026-11-14T14:24:30Z: US cash markets closed for weekend; synchronized SOXX/VIX/real yields/credit spreads/natural gas/gold/copper/USD-KRW/breadth not independently validated; GitHub analysis folders full-text comparison unavailable. Existing indicator observations retain their original timestamps.",
-    "2026-11-14T15:42:12Z: 주말 휴장. SOXX/VIX/실질금리/신용스프레드/천연가스/금/구리/USD-KRW/시장폭 최신 동시점 수치 미검증. 이란 국영방송 유조선 3척 주장 독립 확인 불가. 기존 indicators 과거 수치이며 현재값 아님. analysis/events 및 analysis/daily 전체 본문 대조 미완료."
+    "2026-11-14T15:42:12Z: 주말 휴장. SOXX/VIX/실질금리/신용스프레드/천연가스/금/구리/USD-KRW/시장폭 최신 동시점 수치 미검증. 이란 국영방송 유조선 3척 주장 독립 확인 불가. 기존 indicators 과거 수치이며 현재값 아님. analysis/events 및 analysis/daily 전체 본문 대조 미완료.",
+    "2026-11-14T17:14:39Z: 미국 주말 휴장. 이란 유조선 기뢰 피격 추가 주장은 독립 검증 불가. SOXX/VIX, IG/HY, 실질금리, 천연가스/금/구리, USD/KRW 및 시장 폭 동시점 수치 확인 불가. 기존 지표는 과거 시점 자료이며 현재 시세 아님. 기존 analysis 파일 전체 본문 대조 미완료."
   ]
 }
