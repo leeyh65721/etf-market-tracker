@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T12:21:27Z",
+  "checked_at_utc": "2026-11-14T12:37:27Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(확인 범위). 미국 주말 휴장으로 11월 13일 종가 이후 현물 가격 변화 없음. 11월 13일 Goldman Sachs의 S&P 500 12개월 8700 전망은 기존 AI 투자위험에 대한 반대 의견이지 검증된 신용 충격이나 즉시 ETF 재배분 사유 아님. 11월 13일 PPI 6.5% 및 Nvidia CEO 교체는 이전 점검에서 반영됨.",
+  "change_since_previous": "신규 긴급 경고 없음. 기존 반도체·AI 경영진 교체, 금리/인플레이션 압력은 이전 경고와 동일. 11월 13일 미국 Jones Act 운송 면제 90일 연장 및 재무장관-연준 인플레이션 해석 차이는 정책·공급 완충과 논쟁의 추가 맥락이지만, 새 신용·유동성 충격 또는 즉시 ETF 배분 변경 근거로 검증되지 않음. 미국 주말 휴장; 최신 현물은 11월 13일 종가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -755,6 +755,30 @@
       "unit": "percentage points",
       "observed_at_utc": null,
       "note": "2026-11-12 FRED 기반 2차 집계(aitrader.kr), 동시점 독립 원자료 검증 불가; 현재값 아님"
+    },
+    "sp500_nov13_close": {
+      "value": 7561.67,
+      "unit": "index points",
+      "change_pct": -0.4,
+      "observed_at_utc": "2026-11-13T21:00:00Z",
+      "note": "AP Nov 13 close; scheduled session close timestamp, precise tick time not independently verified"
+    },
+    "nasdaq_nov13_close": {
+      "change_pct": -0.9,
+      "observed_at_utc": "2026-11-13T21:00:00Z",
+      "note": "AP Nov 13 rounded close, delayed"
+    },
+    "brent_nov13_settlement": {
+      "value": 95.84,
+      "unit": "USD/barrel",
+      "observed_at_utc": null,
+      "note": "AP Nov 13 settlement; exact timestamp not verified"
+    },
+    "global_equity_fund_flows_week_nov11": {
+      "value": 50.99,
+      "unit": "USD billion net inflow",
+      "observed_at_utc": null,
+      "note": "Reuters/LSEG Lipper week ending Nov 11; not intraday liquidity"
     }
   },
   "sources": [
@@ -804,7 +828,9 @@
     "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
     "https://www.reuters.com/business/energy/oil-releases-iea-emergency-stocks-pick-up-through-february-agency-says-2026-11-13/",
     "https://www.aitrader.kr/",
-    "https://apnews.com/article/5f427443fd31a4aa2bd2a1b6cebfe549"
+    "https://apnews.com/article/5f427443fd31a4aa2bd2a1b6cebfe549",
+    "https://www.reuters.com/world/us/us-extends-shipping-law-waiver-90-days-allow-freer-movement-oil-commodities-2026-11-13/",
+    "https://www.reuters.com/business/us-treasury-chief-says-fed-should-not-hike-rates-over-energy-shock-tied-iran-war-2026-11-13/"
   ],
   "data_limitations": [
     "2026-11-14T07:15:54Z: 주말 휴장. FAA 전국 출발편 운항중지의 지속시간·해제 여부 및 시장 전이 추가 독립 검증 미완료. SOXX/VIX, IG/HY 신용스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 정량 시장 폭 동시점 최신 수치 미검증. 기존 indicators 다수 과거 관측값. events/daily 전체 내용 대조 미완료.",
@@ -812,6 +838,8 @@
     "2026-11-14 09:15 UTC 주말 휴장: 신규 미국 정규장 가격 없음. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW 동시점 수치 및 시장 폭 미검증. analysis/events 및 analysis/daily 전체 파일 내용 대조 불가. IEA 방출 계획은 미래 일정이며 실행 확인 아님.",
     "2026-11-14T09:45:10Z: 미국 주말 휴장, 최신 미국 정규장 시세는 11월 13일 종가. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW 동시점 관측 불가. 기존 indicators는 과거 관측치. analysis/events 및 daily 전체 파일 재검증 미완료.",
     "2026-11-14T10:39:39Z: 미국 주말 휴장. Reuters/AP/WSJ 11월 13일 종가 및 연준 AI 위험 보고서 재확인; SOXX/VIX, IG/HY 신용스프레드, 실질금리, 천연가스/금/구리, USD/KRW 동시점 수치 검증 불가. 기존 indicators는 과거값이며 현재값 아님. analysis/events 및 daily 전체 파일 내용 대조 미완료.",
-    "2026-11-14T12:21:27Z: 주말 미국 시장 휴장. SOXX/VIX, 실질금리, 천연가스·금·구리, USD/KRW 및 시장 폭 동시점 검증 불가. 신용스프레드는 11월 12일 FRED 기반 2차 집계로만 확인, 원자료 미검증. 기존 events/daily 전체 파일 대조 미완료."
+    "2026-11-14T12:21:27Z: 주말 미국 시장 휴장. SOXX/VIX, 실질금리, 천연가스·금·구리, USD/KRW 및 시장 폭 동시점 검증 불가. 신용스프레드는 11월 12일 FRED 기반 2차 집계로만 확인, 원자료 미검증. 기존 events/daily 전체 파일 대조 미완료.",
+    "주말 휴장; 동시점 SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW/정량 시장폭 미검증. 기존 지표에는 오래된 관측치가 포함되어 현재값으로 사용 금지.",
+    "analysis/events 및 analysis/daily 폴더 목록 확인; 전체 파일 본문 전수 대조는 미완료."
   ]
 }
