@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T17:35:46Z",
+  "checked_at_utc": "2026-11-14T18:46:08Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 14일 호르무즈 유조선 기뢰 피격 주장은 이전 점검에서 이미 확인했으며 Reuters 독립 검증 불가. 11월 14일 Apollo 인플레이션 전망은 신규 확정 경제지표나 즉각적 구조 충격이 아닌 분석 의견. 주말 미국 정규장 휴장; high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 14일 호르무즈 유조선 기뢰 피격 주장은 이전 점검에서 이미 다뤘고 독립 검증되지 않음. 11월 13일 IEA 4분기 원유 공급 초과 전망(일 170만 배럴) 및 글로벌 주식형 펀드 유입 509.9억 달러는 위험 전이의 반대 근거. 미국 주말 휴장으로 신규 정규장 가격 없음; 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -840,7 +840,8 @@
     "https://www.reuters.com/world/middle-east/irans-irgc-says-two-tankers-hit-sea-mines-hormuz-2026-11-13/",
     "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february",
     "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
-    "https://www.mufgresearch.com/macro/middle-east-daily-13-november-2026/"
+    "https://www.mufgresearch.com/macro/middle-east-daily-13-november-2026/",
+    "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/"
   ],
   "data_limitations": [
     "analysis/events 및 analysis/daily 폴더 목록 확인; 전체 파일 본문 전수 대조는 미완료.",
@@ -848,6 +849,7 @@
     "2026-11-14T14:24:30Z: US cash markets closed for weekend; synchronized SOXX/VIX/real yields/credit spreads/natural gas/gold/copper/USD-KRW/breadth not independently validated; GitHub analysis folders full-text comparison unavailable. Existing indicator observations retain their original timestamps.",
     "2026-11-14T15:42:12Z: 주말 휴장. SOXX/VIX/실질금리/신용스프레드/천연가스/금/구리/USD-KRW/시장폭 최신 동시점 수치 미검증. 이란 국영방송 유조선 3척 주장 독립 확인 불가. 기존 indicators 과거 수치이며 현재값 아님. analysis/events 및 analysis/daily 전체 본문 대조 미완료.",
     "2026-11-14T17:14:39Z: 미국 주말 휴장. 이란 유조선 기뢰 피격 추가 주장은 독립 검증 불가. SOXX/VIX, IG/HY, 실질금리, 천연가스/금/구리, USD/KRW 및 시장 폭 동시점 수치 확인 불가. 기존 지표는 과거 시점 자료이며 현재 시세 아님. 기존 analysis 파일 전체 본문 대조 미완료.",
-    "2026-11-14T17:35:46Z: 미국 주말 휴장; SOXX/VIX, IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW, 시장폭 최신 동시점 수치 미검증. Reuters의 호르무즈 피격 주장 독립 확인 불가. 기존 지표는 관측일 기준 과거 자료. analysis/events 및 analysis/daily 전체 본문 대조 미완료."
+    "2026-11-14T17:35:46Z: 미국 주말 휴장; SOXX/VIX, IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW, 시장폭 최신 동시점 수치 미검증. Reuters의 호르무즈 피격 주장 독립 확인 불가. 기존 지표는 관측일 기준 과거 자료. analysis/events 및 analysis/daily 전체 본문 대조 미완료.",
+    "2026-11-14T18:46:08Z 점검: 주말 휴장, 최신 동시점 SOXX/VIX/신용스프레드/실질금리/원자재/환율/시장 폭 미검증; analysis/events 및 analysis/daily 전체 대조 미완료. 기존 indicators는 과거 시각 자료로 현재 시세가 아님."
   ]
 }
