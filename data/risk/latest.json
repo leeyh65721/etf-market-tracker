@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T07:15:54Z",
+  "checked_at_utc": "2026-11-14T08:22:31Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 ETF 긴급 경고 없음(검증 범위). Reuters 11월 13일 마감 보도에서 FAA 미국 전역 출발편 일시 운항 중지 및 항공업종 지수 -1.4% 확인. 기존 반도체·금리 위험과 별개 사건이나 시장 전체·신용시장으로의 전이 또는 장기화 증거가 없어 ETF 긴급 경고 기준 미충족. 기존 경고 3건 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(확인 범위). 11월 13일 미국 종가·반도체 약세는 기존 경고에 반영. FAA 운항중지 조치는 11월 13일 20:15 ET 해제된 것으로 후속 보도 확인; 항공 운항 지연은 남았으나 금융시장 전반 신용·유동성 충격의 새 증거는 확인되지 않음. 기존 경고 3건 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -732,6 +732,11 @@
       "airline_index_change_pct": -1.4,
       "observed_at_utc": null,
       "note": "Reuters Nov 13 close: nationwide FAA departure ground stop after ATC communication issues; duration and subsequent recovery not verified; not evidence of broad credit contagion"
+    },
+    "faa_ground_stop_resolution_nov13": {
+      "value": "FAA nationwide departure ground stop lifted at 20:15 ET Nov 13; delays/cancellations continued",
+      "observed_at_utc": null,
+      "note": "Guardian Nov 13 live report; policy/operations update, not live financial market quote"
     }
   },
   "sources": [
@@ -777,7 +782,8 @@
     "https://www.wsj.com/finance/stocks/tech-stocks-fall-as-next-week-brings-big-tests-for-the-ai-trade-6a346b49",
     "https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/",
     "https://www.business-standard.com/world-news/us-stocks-mostly-ease-with-tech-nvidia-concerns-airline-shares-fall-126111400058_1.html",
-    "https://www.straitstimes.com/business/companies-markets/sp-500-nasdaq-end-lower-as-nvidia-uncertainty-weighs-on-tech-shares"
+    "https://www.straitstimes.com/business/companies-markets/sp-500-nasdaq-end-lower-as-nvidia-uncertainty-weighs-on-tech-shares",
+    "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer"
   ],
   "data_limitations": [
     "analysis/events/ 및 analysis/daily/ 디렉터리 전체 조회 실패; 이전 대화 및 risk/latest.json 경고 3건과 대조",
@@ -799,6 +805,7 @@
     "2026-11-14 12:36 KST: weekend market closed; no simultaneous latest SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or quantitative breadth independently verified. Prior analysis directory full contents not compared.",
     "2026-11-14T04:35:31Z: 미국 현물시장 주말 휴장; 11월 13일 종가와 FT/WSJ/AP 보도는 과거 관측. SOXX/VIX, 회사채 IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 시장 폭의 동시점 신규 수치 미검증. analysis/events 및 daily 전체 파일 재대조 미완료. 기존 indicators의 과거 수치를 현시점 수치로 간주하지 않음.",
     "2026-11-14 05:30 UTC 점검: 주말 휴장, SOXX/VIX/회사채 스프레드/실질금리/천연가스/금/구리/USD-KRW의 최신 동시점 수치 독립 확인 불가; 기존 indicators에는 이전 날짜 관측치 포함. 과거 analysis 파일 전체 내용 대조 미완료.",
-    "2026-11-14T07:15:54Z: 주말 휴장. FAA 전국 출발편 운항중지의 지속시간·해제 여부 및 시장 전이 추가 독립 검증 미완료. SOXX/VIX, IG/HY 신용스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 정량 시장 폭 동시점 최신 수치 미검증. 기존 indicators 다수 과거 관측값. events/daily 전체 내용 대조 미완료."
+    "2026-11-14T07:15:54Z: 주말 휴장. FAA 전국 출발편 운항중지의 지속시간·해제 여부 및 시장 전이 추가 독립 검증 미완료. SOXX/VIX, IG/HY 신용스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 정량 시장 폭 동시점 최신 수치 미검증. 기존 indicators 다수 과거 관측값. events/daily 전체 내용 대조 미완료.",
+    "2026-11-14T08:22:31Z: 미국 주말 휴장으로 11월 13일 종가 재확인만 가능. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW 최신 동시점 수치 및 정량 시장 폭 독립 검증 불가. 과거 events/daily 전체 파일 대조 미완료; indicators 기존 값은 역사적 관측."
   ]
 }
