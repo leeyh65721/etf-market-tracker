@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T01:41:23Z",
+  "checked_at_utc": "2026-11-14T02:30:18Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(검증 가능한 범위). 11월 13일 종가 S&P 500 -0.4%, Nasdaq -0.91%, Dow +0.1% 및 반도체 약세는 직전 점검에서 반영. Reuters/AP/WSJ 추가 확인에서 신용·유동성 충격 또는 직전 대비 위험단계 상승의 확증 없음. Reuters의 중국 AI 프로젝트 30억 달러 이상 관련 수출통제 노출은 기존 Nvidia/중국 규제 위험의 구체화로, 새로운 금지 조치나 실제 계약 취소 확인 없음. 주말 미국 정규장 휴장; high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(검증 범위). 11월 13일 미국 종가 및 Nvidia/AI 약세는 기존 경고에 반영된 내용. 새로 확인한 10년물 5.15%, 2년물 4.88%, 브렌트 종가 $95.84, PPI 전년동월비 +6.5%는 11월 13일 과거 시점 자료로, 직전 10:41 KST 점검 이후 새로운 시장 충격을 입증하지 않음. 주말 정규장 휴장; 위험등급 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -661,6 +661,25 @@
       "nasdaq_change_pct": -0.91,
       "dow_change_pct": 0.1,
       "note": "Reuters/AP/WSJ 2026-11-13 regular close, 16:00 ET approximate closing timestamp; published figures rounded; not a live quote"
+    },
+    "us_rates_nov13_forbes": {
+      "us_2y_pct": 4.88,
+      "us_10y_pct": 5.15,
+      "us_30y_pct": 5.47,
+      "observed_at_utc": null,
+      "note": "Forbes Nov 13 16:23 ET report, individual quote timestamp unverified; not current live data"
+    },
+    "ppi_october_yoy_nov13": {
+      "value": 6.5,
+      "unit": "percent YoY",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 report; historical October PPI, not new since prior monitoring"
+    },
+    "vix_nov13_stonex_morning": {
+      "value": 18,
+      "unit": "index points approximately",
+      "observed_at_utc": null,
+      "note": "StoneX Nov 13 morning commentary; stale and not closing VIX"
     }
   },
   "sources": [
@@ -700,7 +719,9 @@
     "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-ceo-jensen-huang-resigns-ppi-inflation-data/card/s-p-500-nasdaq-end-lower-as-chip-stocks-sell-off-We8qJmzsgM0dPd2Ho6zH",
     "https://apnews.com/article/12c1e8155fb85c3c7b09e058ed6d3c74",
     "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-on-nvidia-fallout-fears-f9946e8d",
-    "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/"
+    "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
+    "https://www.forbes.com/advisor/investing/treasury-rates/",
+    "https://www.stonex.com/en-us/insights/perspective-morning-commentary-for-november-13-2026-11-13/"
   ],
   "data_limitations": [
     "analysis/events/ 및 analysis/daily/ 디렉터리 전체 조회 실패; 이전 대화 및 risk/latest.json 경고 3건과 대조",
@@ -717,6 +738,7 @@
     "2026-11-13T23:07:42Z: 미국 장 마감 후 Reuters/AP/WSJ 보도 교차 확인; SOXX·VIX·IG/HY 신용스프레드·실질금리·천연가스·금·구리·USD/KRW·정량 시장 폭 동시점 검증 불가. 과거 indicators는 실시간값이 아님. events/daily 전체 대조 미완료.",
     "2026-11-14T00:01:05Z: 주말 미국 정규장 종료 후 기사/종가 재검토. SOXX, VIX, IG/HY 신용스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 동시점 시장 폭 최신 수치 미검증. 기존 분석 디렉터리 전체 대조 미완료. 이전 indicators 대부분 과거 관측값.",
     "2026-11-14T01:00:49Z: 주말 장 종료 후 11월 13일 종가와 기존 뉴스만 재확인. SOXX/VIX/IG-HY 신용스프레드/실질금리/천연가스/구리/금/USD-KRW 최신 동시점 값 미확보; 이전 지표는 과거 관측치. events/daily 전체 파일 대조 미완료. 신규 경고 없음은 확인 범위 한정.",
-    "2026-11-14T01:41:23Z: 주말 장 종료 후 기사 재확인. SOXX/VIX/IG-HY 신용스프레드/실질금리/천연가스/금/구리/USD-KRW 동시점 최신 수치 확보 불가. 기존 indicators의 오래된 수치는 현재값이 아님. events/daily 디렉터리 목록은 확인했으나 전체 파일 내용 대조 미완료."
+    "2026-11-14T01:41:23Z: 주말 장 종료 후 기사 재확인. SOXX/VIX/IG-HY 신용스프레드/실질금리/천연가스/금/구리/USD-KRW 동시점 최신 수치 확보 불가. 기존 indicators의 오래된 수치는 현재값이 아님. events/daily 디렉터리 목록은 확인했으나 전체 파일 내용 대조 미완료.",
+    "2026-11-14T02:30:18Z: 주말 미국 현물시장 휴장. SOXX/VIX 종가, IG/HY 신용스프레드, 실질금리, 천연가스·구리·금, USD/KRW, 정량 시장 폭의 동시점 최신값 검증 불가. 11월 13일 기사 및 금리 자료는 지연/비동시점; events/daily 전체 내용 미대조. 기존 지표는 시점별 과거 관측값."
   ]
 }
