@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T04:35:31Z",
+  "checked_at_utc": "2026-11-14T05:30:05Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(확인 범위 내). 11월 13일 미국 정규장 종가 및 Nvidia/AI 약세, 금리 상승은 이전 점검에 이미 반영됨. 11월 14일 주말 휴장; 새 동시점 가격 악화 확인 불가. FT의 국채 주간 급락 분석은 기존 금리 상승의 추가 맥락이며 새로운 독립 충격으로 분류하지 않음. 잠정 high 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(검증 가능한 범위). 주말 휴장으로 새 미국 정규장 가격 없음. 11월 13일 연준 금융안정보고서의 AI 관련 금융연계 우려(응답자 87%)를 추가 확인했으나 기존 AI 자금조달/신용 위험의 구조적 배경으로 분류; 실제 신용스프레드 급등 또는 유동성 충격의 새로운 증거는 미확인. 기존 경고 3건 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -695,6 +695,18 @@
       "us_10y_weekly_change_bp": 28,
       "observed_at_utc": null,
       "note": "FT Nov 13 retrospective weekly report; exact quote timestamps unavailable, not synchronized or current Saturday quotes"
+    },
+    "fed_financial_stability_survey_nov13": {
+      "ai_risk_respondents_pct": 87,
+      "previous_may_pct": 50,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 reporting of Federal Reserve semiannual financial stability survey; survey sentiment, not observed credit distress"
+    },
+    "global_equity_fund_inflows_week_nov11": {
+      "value": 50.99,
+      "unit": "USD billion",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 / LSEG Lipper, week ended Nov 11; counterevidence to generalized risk-off"
     }
   },
   "sources": [
@@ -737,7 +749,8 @@
     "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
     "https://www.forbes.com/advisor/investing/treasury-rates/",
     "https://www.stonex.com/en-us/insights/perspective-morning-commentary-for-november-13-2026-11-13/",
-    "https://www.wsj.com/finance/stocks/tech-stocks-fall-as-next-week-brings-big-tests-for-the-ai-trade-6a346b49"
+    "https://www.wsj.com/finance/stocks/tech-stocks-fall-as-next-week-brings-big-tests-for-the-ai-trade-6a346b49",
+    "https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/"
   ],
   "data_limitations": [
     "analysis/events/ 및 analysis/daily/ 디렉터리 전체 조회 실패; 이전 대화 및 risk/latest.json 경고 3건과 대조",
@@ -757,6 +770,7 @@
     "2026-11-14T01:41:23Z: 주말 장 종료 후 기사 재확인. SOXX/VIX/IG-HY 신용스프레드/실질금리/천연가스/금/구리/USD-KRW 동시점 최신 수치 확보 불가. 기존 indicators의 오래된 수치는 현재값이 아님. events/daily 디렉터리 목록은 확인했으나 전체 파일 내용 대조 미완료.",
     "2026-11-14T02:30:18Z: 주말 미국 현물시장 휴장. SOXX/VIX 종가, IG/HY 신용스프레드, 실질금리, 천연가스·구리·금, USD/KRW, 정량 시장 폭의 동시점 최신값 검증 불가. 11월 13일 기사 및 금리 자료는 지연/비동시점; events/daily 전체 내용 미대조. 기존 지표는 시점별 과거 관측값.",
     "2026-11-14 12:36 KST: weekend market closed; no simultaneous latest SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or quantitative breadth independently verified. Prior analysis directory full contents not compared.",
-    "2026-11-14T04:35:31Z: 미국 현물시장 주말 휴장; 11월 13일 종가와 FT/WSJ/AP 보도는 과거 관측. SOXX/VIX, 회사채 IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 시장 폭의 동시점 신규 수치 미검증. analysis/events 및 daily 전체 파일 재대조 미완료. 기존 indicators의 과거 수치를 현시점 수치로 간주하지 않음."
+    "2026-11-14T04:35:31Z: 미국 현물시장 주말 휴장; 11월 13일 종가와 FT/WSJ/AP 보도는 과거 관측. SOXX/VIX, 회사채 IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 시장 폭의 동시점 신규 수치 미검증. analysis/events 및 daily 전체 파일 재대조 미완료. 기존 indicators의 과거 수치를 현시점 수치로 간주하지 않음.",
+    "2026-11-14 05:30 UTC 점검: 주말 휴장, SOXX/VIX/회사채 스프레드/실질금리/천연가스/금/구리/USD-KRW의 최신 동시점 수치 독립 확인 불가; 기존 indicators에는 이전 날짜 관측치 포함. 과거 analysis 파일 전체 내용 대조 미완료."
   ]
 }
