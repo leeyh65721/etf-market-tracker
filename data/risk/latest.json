@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T05:30:05Z",
+  "checked_at_utc": "2026-11-14T07:15:54Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(검증 가능한 범위). 주말 휴장으로 새 미국 정규장 가격 없음. 11월 13일 연준 금융안정보고서의 AI 관련 금융연계 우려(응답자 87%)를 추가 확인했으나 기존 AI 자금조달/신용 위험의 구조적 배경으로 분류; 실제 신용스프레드 급등 또는 유동성 충격의 새로운 증거는 미확인. 기존 경고 3건 유지.",
+  "change_since_previous": "신규 ETF 긴급 경고 없음(검증 범위). Reuters 11월 13일 마감 보도에서 FAA 미국 전역 출발편 일시 운항 중지 및 항공업종 지수 -1.4% 확인. 기존 반도체·금리 위험과 별개 사건이나 시장 전체·신용시장으로의 전이 또는 장기화 증거가 없어 ETF 긴급 경고 기준 미충족. 기존 경고 3건 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -707,6 +707,31 @@
       "unit": "USD billion",
       "observed_at_utc": null,
       "note": "Reuters Nov 13 / LSEG Lipper, week ended Nov 11; counterevidence to generalized risk-off"
+    },
+    "us_market_nov13_reuters_latest": {
+      "sp500_change_pct": -0.4,
+      "nasdaq_change_pct": -0.91,
+      "dow_change_pct": 0.1,
+      "phlx_semiconductor_change_pct": -3.4,
+      "observed_at_utc": "2026-11-13T21:00:00Z",
+      "note": "Reuters 11월 13일 정규장 마감, 예정 종료 시각; 개별 체결 시각 미검증. 기존 점검과 중복."
+    },
+    "us_2y_nov13_reuters_latest": {
+      "value": 4.867,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "Reuters 11월 13일 종가 근처 보도; 개별 관측시각 불명, 11월 14일 실시간 아님"
+    },
+    "dollar_index_nov13_reuters_latest": {
+      "value": 103.4,
+      "unit": "index",
+      "observed_at_utc": null,
+      "note": "Reuters 11월 13일 보도, 관측시각 불명"
+    },
+    "faa_airline_nov13": {
+      "airline_index_change_pct": -1.4,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 close: nationwide FAA departure ground stop after ATC communication issues; duration and subsequent recovery not verified; not evidence of broad credit contagion"
     }
   },
   "sources": [
@@ -750,7 +775,9 @@
     "https://www.forbes.com/advisor/investing/treasury-rates/",
     "https://www.stonex.com/en-us/insights/perspective-morning-commentary-for-november-13-2026-11-13/",
     "https://www.wsj.com/finance/stocks/tech-stocks-fall-as-next-week-brings-big-tests-for-the-ai-trade-6a346b49",
-    "https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/"
+    "https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/",
+    "https://www.business-standard.com/world-news/us-stocks-mostly-ease-with-tech-nvidia-concerns-airline-shares-fall-126111400058_1.html",
+    "https://www.straitstimes.com/business/companies-markets/sp-500-nasdaq-end-lower-as-nvidia-uncertainty-weighs-on-tech-shares"
   ],
   "data_limitations": [
     "analysis/events/ 및 analysis/daily/ 디렉터리 전체 조회 실패; 이전 대화 및 risk/latest.json 경고 3건과 대조",
@@ -771,6 +798,7 @@
     "2026-11-14T02:30:18Z: 주말 미국 현물시장 휴장. SOXX/VIX 종가, IG/HY 신용스프레드, 실질금리, 천연가스·구리·금, USD/KRW, 정량 시장 폭의 동시점 최신값 검증 불가. 11월 13일 기사 및 금리 자료는 지연/비동시점; events/daily 전체 내용 미대조. 기존 지표는 시점별 과거 관측값.",
     "2026-11-14 12:36 KST: weekend market closed; no simultaneous latest SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or quantitative breadth independently verified. Prior analysis directory full contents not compared.",
     "2026-11-14T04:35:31Z: 미국 현물시장 주말 휴장; 11월 13일 종가와 FT/WSJ/AP 보도는 과거 관측. SOXX/VIX, 회사채 IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 시장 폭의 동시점 신규 수치 미검증. analysis/events 및 daily 전체 파일 재대조 미완료. 기존 indicators의 과거 수치를 현시점 수치로 간주하지 않음.",
-    "2026-11-14 05:30 UTC 점검: 주말 휴장, SOXX/VIX/회사채 스프레드/실질금리/천연가스/금/구리/USD-KRW의 최신 동시점 수치 독립 확인 불가; 기존 indicators에는 이전 날짜 관측치 포함. 과거 analysis 파일 전체 내용 대조 미완료."
+    "2026-11-14 05:30 UTC 점검: 주말 휴장, SOXX/VIX/회사채 스프레드/실질금리/천연가스/금/구리/USD-KRW의 최신 동시점 수치 독립 확인 불가; 기존 indicators에는 이전 날짜 관측치 포함. 과거 analysis 파일 전체 내용 대조 미완료.",
+    "2026-11-14T07:15:54Z: 주말 휴장. FAA 전국 출발편 운항중지의 지속시간·해제 여부 및 시장 전이 추가 독립 검증 미완료. SOXX/VIX, IG/HY 신용스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 정량 시장 폭 동시점 최신 수치 미검증. 기존 indicators 다수 과거 관측값. events/daily 전체 내용 대조 미완료."
   ]
 }
