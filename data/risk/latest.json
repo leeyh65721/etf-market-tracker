@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T08:22:31Z",
+  "checked_at_utc": "2026-11-14T09:15:00Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(확인 범위). 11월 13일 미국 종가·반도체 약세는 기존 경고에 반영. FAA 운항중지 조치는 11월 13일 20:15 ET 해제된 것으로 후속 보도 확인; 항공 운항 지연은 남았으나 금융시장 전반 신용·유동성 충격의 새 증거는 확인되지 않음. 기존 경고 3건 유지.",
+  "change_since_previous": "신규 긴급 경고 없음(검증 범위). 11월 13일 종가와 기존 Nvidia/반도체 하락 및 FAA 운항중단 해제는 직전 기록과 동일. 11월 13일 IEA 비축유 방출 일정 보도(2027년 2월까지 약 7100만 배럴)는 유가 공급 완충 요인으로 추가 확인했으나 신규 시스템 충격 또는 긴급 ETF 배분 변경 근거는 아님. 기존 경고 3건 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -737,6 +737,12 @@
       "value": "FAA nationwide departure ground stop lifted at 20:15 ET Nov 13; delays/cancellations continued",
       "observed_at_utc": null,
       "note": "Guardian Nov 13 live report; policy/operations update, not live financial market quote"
+    },
+    "iea_emergency_oil_release_nov13": {
+      "value": 71,
+      "unit": "million barrels planned through February 2027",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 13 report; forward release plan, not spot quote or executed release"
     }
   },
   "sources": [
@@ -783,7 +789,8 @@
     "https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/",
     "https://www.business-standard.com/world-news/us-stocks-mostly-ease-with-tech-nvidia-concerns-airline-shares-fall-126111400058_1.html",
     "https://www.straitstimes.com/business/companies-markets/sp-500-nasdaq-end-lower-as-nvidia-uncertainty-weighs-on-tech-shares",
-    "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer"
+    "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
+    "https://www.reuters.com/business/energy/oil-releases-iea-emergency-stocks-pick-up-through-february-agency-says-2026-11-13/"
   ],
   "data_limitations": [
     "analysis/events/ 및 analysis/daily/ 디렉터리 전체 조회 실패; 이전 대화 및 risk/latest.json 경고 3건과 대조",
@@ -806,6 +813,7 @@
     "2026-11-14T04:35:31Z: 미국 현물시장 주말 휴장; 11월 13일 종가와 FT/WSJ/AP 보도는 과거 관측. SOXX/VIX, 회사채 IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 시장 폭의 동시점 신규 수치 미검증. analysis/events 및 daily 전체 파일 재대조 미완료. 기존 indicators의 과거 수치를 현시점 수치로 간주하지 않음.",
     "2026-11-14 05:30 UTC 점검: 주말 휴장, SOXX/VIX/회사채 스프레드/실질금리/천연가스/금/구리/USD-KRW의 최신 동시점 수치 독립 확인 불가; 기존 indicators에는 이전 날짜 관측치 포함. 과거 analysis 파일 전체 내용 대조 미완료.",
     "2026-11-14T07:15:54Z: 주말 휴장. FAA 전국 출발편 운항중지의 지속시간·해제 여부 및 시장 전이 추가 독립 검증 미완료. SOXX/VIX, IG/HY 신용스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 정량 시장 폭 동시점 최신 수치 미검증. 기존 indicators 다수 과거 관측값. events/daily 전체 내용 대조 미완료.",
-    "2026-11-14T08:22:31Z: 미국 주말 휴장으로 11월 13일 종가 재확인만 가능. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW 최신 동시점 수치 및 정량 시장 폭 독립 검증 불가. 과거 events/daily 전체 파일 대조 미완료; indicators 기존 값은 역사적 관측."
+    "2026-11-14T08:22:31Z: 미국 주말 휴장으로 11월 13일 종가 재확인만 가능. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW 최신 동시점 수치 및 정량 시장 폭 독립 검증 불가. 과거 events/daily 전체 파일 대조 미완료; indicators 기존 값은 역사적 관측.",
+    "2026-11-14 09:15 UTC 주말 휴장: 신규 미국 정규장 가격 없음. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW 동시점 수치 및 시장 폭 미검증. analysis/events 및 analysis/daily 전체 파일 내용 대조 불가. IEA 방출 계획은 미래 일정이며 실행 확인 아님."
   ]
 }
