@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T10:39:39Z",
+  "checked_at_utc": "2026-11-14T12:21:27Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(검증 범위 내). 11월 13일 미국 종가, Nvidia/반도체 약세, 연준 AI 금융안정 우려는 기존 점검에 반영. 11월 14일 새 독립 신용·유동성 충격 또는 기존 사건의 중대한 추가 악화 입증 불가. AP의 S&P 500 주간 +2.5% 및 비기술 업종 상승은 광범위 전이 판단의 반대 근거.",
+  "change_since_previous": "신규 긴급 경고 없음(확인 범위). 미국 주말 휴장으로 11월 13일 종가 이후 현물 가격 변화 없음. 11월 13일 Goldman Sachs의 S&P 500 12개월 8700 전망은 기존 AI 투자위험에 대한 반대 의견이지 검증된 신용 충격이나 즉시 ETF 재배분 사유 아님. 11월 13일 PPI 6.5% 및 Nvidia CEO 교체는 이전 점검에서 반영됨.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -743,6 +743,18 @@
       "unit": "million barrels planned through February 2027",
       "observed_at_utc": null,
       "note": "Reuters Nov 13 report; forward release plan, not spot quote or executed release"
+    },
+    "us_high_yield_spread_nov12_secondary": {
+      "value": 3.2,
+      "unit": "percentage points",
+      "observed_at_utc": null,
+      "note": "2026-11-12 FRED 기반 2차 집계(aitrader.kr), 동시점 독립 원자료 검증 불가; 현재값 아님"
+    },
+    "us_ig_spread_nov12_secondary": {
+      "value": 0.89,
+      "unit": "percentage points",
+      "observed_at_utc": null,
+      "note": "2026-11-12 FRED 기반 2차 집계(aitrader.kr), 동시점 독립 원자료 검증 불가; 현재값 아님"
     }
   },
   "sources": [
@@ -790,32 +802,16 @@
     "https://www.business-standard.com/world-news/us-stocks-mostly-ease-with-tech-nvidia-concerns-airline-shares-fall-126111400058_1.html",
     "https://www.straitstimes.com/business/companies-markets/sp-500-nasdaq-end-lower-as-nvidia-uncertainty-weighs-on-tech-shares",
     "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
-    "https://www.reuters.com/business/energy/oil-releases-iea-emergency-stocks-pick-up-through-february-agency-says-2026-11-13/"
+    "https://www.reuters.com/business/energy/oil-releases-iea-emergency-stocks-pick-up-through-february-agency-says-2026-11-13/",
+    "https://www.aitrader.kr/",
+    "https://apnews.com/article/5f427443fd31a4aa2bd2a1b6cebfe549"
   ],
   "data_limitations": [
-    "analysis/events/ 및 analysis/daily/ 디렉터리 전체 조회 실패; 이전 대화 및 risk/latest.json 경고 3건과 대조",
-    "일부 기사 시세는 지연·비동시점이며 개별 거래소 관측 시각 불명",
-    "2026-11-13 14:17 UTC: SOXX/VIX, corporate credit spreads, real yields, natural gas, copper, USD/KRW and quantitative breadth not verified as synchronized live quotes; price/news snapshots delayed. Prior daily/event directories listed but not all historical files read.",
-    "2026-11-13T14:35:48Z 점검: SOXX/VIX/IG·HY 신용스프레드/실질금리/천연가스/구리/USD-KRW/정량 시장 폭의 동시점 수치 미확인; Reuters/WSJ 보도는 지연·비동시점. 이전 분석 파일 전체 내용 재검증 미완료. 과거 지표를 현재값으로 사용하지 않음.",
-    "2026-11-13 15:25 UTC: current synchronized SOXX/VIX, corporate credit spreads, real yields, natural gas, copper, USD/KRW and quantitative breadth unavailable; reported prices delayed/non-synchronous. No comprehensive comparison of analysis/events and analysis/daily this run.",
-    "2026-11-13 16:45 UTC: Reuters 10:16 ET 시세 약 89분 지연; SOXX, VIX 현물, IG/HY 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량적 시장 폭 동시점 검증 실패. 이전 events/daily 전체 내용 미대조. 과거 indicators는 최신값이 아님.",
-    "2026-11-13T18:05:05Z 점검: Reuters/AP/WSJ 시세 지연·비동시점, 개별 체결시각 불명. SOXX, VIX, 회사채 신용스프레드, 실질금리, 천연가스, 구리, USD/KRW, 정량 시장 폭 최신 동시점 수치 검증 실패. 과거 analysis/events 및 daily 전체 파일 미대조; 공개 위험 데이터 및 대화의 기존 경고와 비교. 신규 경고 없음은 검증 범위에 한정.",
-    "2026-11-13T18:29:07Z: 검색된 Reuters/WSJ/AP 기사들은 직전 점검과 중복되거나 관측시각이 불명확함. 최신 SOXX/VIX, IG/HY 스프레드, 실질금리, USD/KRW, 천연가스·금·구리, 정량 시장 폭의 동시점 값 확인 불가. indicators의 이전 값은 과거 관측값이며 이번 점검 현재값이 아님. events/daily 전체 파일 대조 미완료.",
-    "2026-11-13T19:54:37Z: 기사 가격 패널의 갱신 시각과 공식 종가 확인 불가; SOXX/VIX, 신용스프레드, 실질금리, 천연가스·구리·금, USD/KRW, 정량 시장 폭 동시점 검증 불가. 기존 과거 indicators는 최신값 아님. 전체 events/daily 대조 미완료.",
-    "2026-11-13T21:11:28Z: 종가 예비치와 시장 폭 보도는 비동시점/지연, SOXX·VIX·IG/HY 신용스프레드·실질금리·USD/KRW·천연가스·금·구리의 동시점 값 미검증; events/daily 전체 대조 미완료. 기존 indicators 다수는 과거 값.",
-    "2026-11-13T21:33:25Z: 장 마감 후 기사 기반 점검; SOXX/VIX/신용스프레드/실질금리/천연가스/구리/USD-KRW 동시점 값 미검증, 일부 종가 정밀 시각 불명. 과거 events/daily 전체 대조 미완료. indicators에 이전 날짜 관측치 다수 존재.",
-    "2026-11-13T23:07:42Z: 미국 장 마감 후 Reuters/AP/WSJ 보도 교차 확인; SOXX·VIX·IG/HY 신용스프레드·실질금리·천연가스·금·구리·USD/KRW·정량 시장 폭 동시점 검증 불가. 과거 indicators는 실시간값이 아님. events/daily 전체 대조 미완료.",
-    "2026-11-14T00:01:05Z: 주말 미국 정규장 종료 후 기사/종가 재검토. SOXX, VIX, IG/HY 신용스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 동시점 시장 폭 최신 수치 미검증. 기존 분석 디렉터리 전체 대조 미완료. 이전 indicators 대부분 과거 관측값.",
-    "2026-11-14T01:00:49Z: 주말 장 종료 후 11월 13일 종가와 기존 뉴스만 재확인. SOXX/VIX/IG-HY 신용스프레드/실질금리/천연가스/구리/금/USD-KRW 최신 동시점 값 미확보; 이전 지표는 과거 관측치. events/daily 전체 파일 대조 미완료. 신규 경고 없음은 확인 범위 한정.",
-    "2026-11-14T01:41:23Z: 주말 장 종료 후 기사 재확인. SOXX/VIX/IG-HY 신용스프레드/실질금리/천연가스/금/구리/USD-KRW 동시점 최신 수치 확보 불가. 기존 indicators의 오래된 수치는 현재값이 아님. events/daily 디렉터리 목록은 확인했으나 전체 파일 내용 대조 미완료.",
-    "2026-11-14T02:30:18Z: 주말 미국 현물시장 휴장. SOXX/VIX 종가, IG/HY 신용스프레드, 실질금리, 천연가스·구리·금, USD/KRW, 정량 시장 폭의 동시점 최신값 검증 불가. 11월 13일 기사 및 금리 자료는 지연/비동시점; events/daily 전체 내용 미대조. 기존 지표는 시점별 과거 관측값.",
-    "2026-11-14 12:36 KST: weekend market closed; no simultaneous latest SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or quantitative breadth independently verified. Prior analysis directory full contents not compared.",
-    "2026-11-14T04:35:31Z: 미국 현물시장 주말 휴장; 11월 13일 종가와 FT/WSJ/AP 보도는 과거 관측. SOXX/VIX, 회사채 IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 시장 폭의 동시점 신규 수치 미검증. analysis/events 및 daily 전체 파일 재대조 미완료. 기존 indicators의 과거 수치를 현시점 수치로 간주하지 않음.",
-    "2026-11-14 05:30 UTC 점검: 주말 휴장, SOXX/VIX/회사채 스프레드/실질금리/천연가스/금/구리/USD-KRW의 최신 동시점 수치 독립 확인 불가; 기존 indicators에는 이전 날짜 관측치 포함. 과거 analysis 파일 전체 내용 대조 미완료.",
     "2026-11-14T07:15:54Z: 주말 휴장. FAA 전국 출발편 운항중지의 지속시간·해제 여부 및 시장 전이 추가 독립 검증 미완료. SOXX/VIX, IG/HY 신용스프레드, 실질금리, 천연가스/금/구리, USD/KRW 및 정량 시장 폭 동시점 최신 수치 미검증. 기존 indicators 다수 과거 관측값. events/daily 전체 내용 대조 미완료.",
     "2026-11-14T08:22:31Z: 미국 주말 휴장으로 11월 13일 종가 재확인만 가능. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW 최신 동시점 수치 및 정량 시장 폭 독립 검증 불가. 과거 events/daily 전체 파일 대조 미완료; indicators 기존 값은 역사적 관측.",
     "2026-11-14 09:15 UTC 주말 휴장: 신규 미국 정규장 가격 없음. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW 동시점 수치 및 시장 폭 미검증. analysis/events 및 analysis/daily 전체 파일 내용 대조 불가. IEA 방출 계획은 미래 일정이며 실행 확인 아님.",
     "2026-11-14T09:45:10Z: 미국 주말 휴장, 최신 미국 정규장 시세는 11월 13일 종가. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW 동시점 관측 불가. 기존 indicators는 과거 관측치. analysis/events 및 daily 전체 파일 재검증 미완료.",
-    "2026-11-14T10:39:39Z: 미국 주말 휴장. Reuters/AP/WSJ 11월 13일 종가 및 연준 AI 위험 보고서 재확인; SOXX/VIX, IG/HY 신용스프레드, 실질금리, 천연가스/금/구리, USD/KRW 동시점 수치 검증 불가. 기존 indicators는 과거값이며 현재값 아님. analysis/events 및 daily 전체 파일 내용 대조 미완료."
+    "2026-11-14T10:39:39Z: 미국 주말 휴장. Reuters/AP/WSJ 11월 13일 종가 및 연준 AI 위험 보고서 재확인; SOXX/VIX, IG/HY 신용스프레드, 실질금리, 천연가스/금/구리, USD/KRW 동시점 수치 검증 불가. 기존 indicators는 과거값이며 현재값 아님. analysis/events 및 daily 전체 파일 내용 대조 미완료.",
+    "2026-11-14T12:21:27Z: 주말 미국 시장 휴장. SOXX/VIX, 실질금리, 천연가스·금·구리, USD/KRW 및 시장 폭 동시점 검증 불가. 신용스프레드는 11월 12일 FRED 기반 2차 집계로만 확인, 원자료 미검증. 기존 events/daily 전체 파일 대조 미완료."
   ]
 }
