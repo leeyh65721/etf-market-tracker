@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T14:20:52Z",
+  "checked_at_utc": "2026-11-14T14:24:30Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 14일 WSJ/AP/Barron's/Reuters 재검토: 기존 Nvidia CEO 사임·반도체 약세·금리 및 유가 위험의 중대한 추가 악화 검증되지 않음. 미국 주말 휴장으로 새로운 정규장 가격 없음. Reuters 11월 14일 AI 관련 금속 수요 논평은 장기 시나리오로 즉시 충격 아님.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 14일 23:24 KST 점검: Reuters 11월 13일 유가 주간 약세와 중동 공급위험, WSJ/Barron's 11월 13일 미국 증시 및 반도체 업종 기존 사건 재확인. 새로운 정규장 거래 없음; 기존 경고 대비 추가 악화나 신용·유동성 전이 검증되지 않음. 일부 실시간 지표와 분석 폴더 전체 대조 불가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -839,6 +839,7 @@
     "2026-11-14T12:21:27Z: 주말 미국 시장 휴장. SOXX/VIX, 실질금리, 천연가스·금·구리, USD/KRW 및 시장 폭 동시점 검증 불가. 신용스프레드는 11월 12일 FRED 기반 2차 집계로만 확인, 원자료 미검증. 기존 events/daily 전체 파일 대조 미완료.",
     "주말 휴장; 동시점 SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW/정량 시장폭 미검증. 기존 지표에는 오래된 관측치가 포함되어 현재값으로 사용 금지.",
     "analysis/events 및 analysis/daily 폴더 목록 확인; 전체 파일 본문 전수 대조는 미완료.",
-    "2026-11-14T14:20:52Z: 주말 휴장. 신규 동시점 SOXX/VIX, IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW, 시장 폭 미검증. 기존 indicators는 과거 관측치. events/daily 전체 본문 전수 대조 미완료. 보도별 지수 주간 수치 일부 불일치로 AP/WSJ 수치를 우선; 새로운 거래 발생으로 해석하지 않음."
+    "2026-11-14T14:20:52Z: 주말 휴장. 신규 동시점 SOXX/VIX, IG/HY 스프레드, 실질금리, 천연가스/금/구리, USD/KRW, 시장 폭 미검증. 기존 indicators는 과거 관측치. events/daily 전체 본문 전수 대조 미완료. 보도별 지수 주간 수치 일부 불일치로 AP/WSJ 수치를 우선; 새로운 거래 발생으로 해석하지 않음.",
+    "2026-11-14T14:24:30Z: US cash markets closed for weekend; synchronized SOXX/VIX/real yields/credit spreads/natural gas/gold/copper/USD-KRW/breadth not independently validated; GitHub analysis folders full-text comparison unavailable. Existing indicator observations retain their original timestamps."
   ]
 }
