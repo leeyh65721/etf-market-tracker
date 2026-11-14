@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T02:30:18Z",
+  "checked_at_utc": "2026-11-14T03:36:48Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음(검증 범위). 11월 13일 미국 종가 및 Nvidia/AI 약세는 기존 경고에 반영된 내용. 새로 확인한 10년물 5.15%, 2년물 4.88%, 브렌트 종가 $95.84, PPI 전년동월비 +6.5%는 11월 13일 과거 시점 자료로, 직전 10:41 KST 점검 이후 새로운 시장 충격을 입증하지 않음. 주말 정규장 휴장; 위험등급 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 13일 미국 종가와 반도체·Nvidia 관련 악재는 기존 경고와 동일 사건. Reuters/AP/WSJ 재확인 결과 종가 반도체지수 약 -3.4%, Nasdaq -0.91%, S&P500 -0.40%, Dow +0.10%; S&P500 주간 +2.5%. Reuters 원유 종가 Brent $95.84, WTI $88.56. 11월 14일 주말 휴장으로 새 동시점 가격 악화 미확인. 잠정 high 유지; 신용/변동성 실시간 검증 불완전.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -609,11 +609,12 @@
       "note": "Reuters Nov 13 afternoon/close reporting via Investing.com; quote panel and exact snapshot time uncertain, not a live quote"
     },
     "us_market_close_nov13_confirmed": {
-      "sp500_change_pct": -0.42,
-      "nasdaq_change_pct": -0.91,
-      "dow_change_pct": 0.09,
       "observed_at_utc": "2026-11-13T21:00:00Z",
-      "note": "Reuters Nov 13 closing report; 21:00Z scheduled cash close, precise exchange observation timestamps unverified; AP corroborates rounded numbers"
+      "sp500_change_pct": -0.4,
+      "nasdaq_change_pct": -0.91,
+      "dow_change_pct": 0.1,
+      "phlx_semiconductor_change_pct": -3.4,
+      "note": "Reuters/AP/WSJ Nov 13 close; 21:00 UTC scheduled close, exact individual quote times not independently verified; not new market move"
     },
     "us_market_week_nov13_ap": {
       "sp500_change_pct": 2.5,
@@ -680,6 +681,12 @@
       "unit": "index points approximately",
       "observed_at_utc": null,
       "note": "StoneX Nov 13 morning commentary; stale and not closing VIX"
+    },
+    "oil_nov13_settlement_confirmed": {
+      "observed_at_utc": null,
+      "brent_usd_per_barrel": 95.84,
+      "wti_usd_per_barrel": 88.56,
+      "note": "Reuters Nov 13 settlement; exact contract settlement timestamp not independently verified"
     }
   },
   "sources": [
@@ -739,6 +746,7 @@
     "2026-11-14T00:01:05Z: 주말 미국 정규장 종료 후 기사/종가 재검토. SOXX, VIX, IG/HY 신용스프레드, 실질금리, 천연가스, 금, 구리, USD/KRW, 동시점 시장 폭 최신 수치 미검증. 기존 분석 디렉터리 전체 대조 미완료. 이전 indicators 대부분 과거 관측값.",
     "2026-11-14T01:00:49Z: 주말 장 종료 후 11월 13일 종가와 기존 뉴스만 재확인. SOXX/VIX/IG-HY 신용스프레드/실질금리/천연가스/구리/금/USD-KRW 최신 동시점 값 미확보; 이전 지표는 과거 관측치. events/daily 전체 파일 대조 미완료. 신규 경고 없음은 확인 범위 한정.",
     "2026-11-14T01:41:23Z: 주말 장 종료 후 기사 재확인. SOXX/VIX/IG-HY 신용스프레드/실질금리/천연가스/금/구리/USD-KRW 동시점 최신 수치 확보 불가. 기존 indicators의 오래된 수치는 현재값이 아님. events/daily 디렉터리 목록은 확인했으나 전체 파일 내용 대조 미완료.",
-    "2026-11-14T02:30:18Z: 주말 미국 현물시장 휴장. SOXX/VIX 종가, IG/HY 신용스프레드, 실질금리, 천연가스·구리·금, USD/KRW, 정량 시장 폭의 동시점 최신값 검증 불가. 11월 13일 기사 및 금리 자료는 지연/비동시점; events/daily 전체 내용 미대조. 기존 지표는 시점별 과거 관측값."
+    "2026-11-14T02:30:18Z: 주말 미국 현물시장 휴장. SOXX/VIX 종가, IG/HY 신용스프레드, 실질금리, 천연가스·구리·금, USD/KRW, 정량 시장 폭의 동시점 최신값 검증 불가. 11월 13일 기사 및 금리 자료는 지연/비동시점; events/daily 전체 내용 미대조. 기존 지표는 시점별 과거 관측값.",
+    "2026-11-14 12:36 KST: weekend market closed; no simultaneous latest SOXX, VIX, credit spreads, real yields, natural gas, gold, copper, USD/KRW or quantitative breadth independently verified. Prior analysis directory full contents not compared."
   ]
 }
