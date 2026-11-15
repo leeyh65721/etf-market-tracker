@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T10:16:45Z",
+  "checked_at_utc": "2026-11-15T11:10:19Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 15일 Reuters가 예멘 정부측 병력의 바브엘만데브 인근 철수 및 후티의 요충지 장악을 보도. 기존 중동 분쟁의 새로운 군사적 전개이나 실제 해상운송 중단·보험료 급등·원유 공급 차질 또는 ETF/신용시장 전이는 아직 검증되지 않아 경고 기준 미충족. 기존 바레인 요격·사우디 공격과 과거 SOXX 하락은 재경고하지 않음.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 15일 바레인 요격, 사우디 요격 및 바브엘만데브 인근 후티 장악 보도 재검토: 모두 직전 점검에서 이미 반영된 사건이며 추가 시설 피해·원유 공급 중단·해운 차질·신용시장 전이의 독립 검증 없음. IEA 11월 13일 4분기 공급초과 170만 배럴/일 전망은 에너지 충격 확대에 대한 반대 근거. 미국 주말 휴장으로 가격·시장 폭 악화 새 검증 불가. 기존 위험 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -205,10 +205,10 @@
     "https://www.thenationalnews.com/news/gulf/2026/11/15/bahrain-issues-first-nationwide-alert-in-months-as-iran-claims-attack-on-base-hosting-us-helicopters/"
   ],
   "data_limitations": [
-    "2026-11-15T10:16:45Z 확인, 미국 일요일 휴장; 최근 미국 정규장은 11월 13일",
-    "바브엘만데브 주변 군사적 변화 확인, 실물 해운 차질·원유 수급 영향 및 금융시장 전이 미확인",
-    "SOXX/VIX/미 국채 장단기·실질금리/신용스프레드/유동성/시장 폭/천연가스·금·구리/달러·USD/KRW의 최신 동시점 수치 미확인",
-    "기존 공유 위험 파일과 대화 비교; events/daily 폴더 전체 파일 본문 대조 미완료",
+    "2026-11-15T11:10:19Z 확인; 미국 일요일 휴장, 마지막 미국 정규장 11월 13일",
+    "SOXX/VIX/장단기 및 실질금리/신용스프레드/유동성/시장 폭/천연가스·금·구리/달러·USD/KRW 최신 동시점 관측치 미확인; 이전 관측치를 실시간으로 해석하지 않음",
+    "Reuters 및 FT의 기존 중동 사건 재검토, 새로운 시설 피해·원유/해운 실제 차질 확인 불가",
+    "GitHub 공유 위험 파일과 이전 대화 비교; analysis/events 및 analysis/daily 전체 본문 비교 미완료",
     "신규 긴급 경고 없음, 기존 경고 3건 유지"
   ]
 }
