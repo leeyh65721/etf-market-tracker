@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T02:51:36Z",
+  "checked_at_utc": "2026-11-15T03:40:43Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 사건 또는 기존 사건의 중대한 추가 악화 미확인. 11월 12일 Reuters 원유 상승 및 11월 9일 Nvidia 약세는 기존 위험으로 중복 경고하지 않음. 11월 15일 일요일 미국 정규장 휴장. 최신 동시점 신용·변동성·금리·시장 폭 검증 불충분으로 high 잠정 유지.",
+  "change_since_previous": "11월 15일 Reuters 보도: 사우디 측이 리야드 향한 미사일 2발과 동부 지역 드론 3대 요격 발표. 기존 후티 공격 위험의 연장선이며 신규 피해·원유 공급 차질·금융시장 전이 검증되지 않아 긴급 경고 승격 보류. 11월 15일 원자재 전망은 전망 기사로 새 시장 충격 아님. 미국 일요일 휴장; 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -164,18 +164,25 @@
       "unit": "USD/gallon",
       "observed_at_utc": null,
       "note": "Reuters 2026-11-15 보도, 정확한 가격 측정 시각 미확인; 경유 전국 평균 소매가격, 실시간 선물 아님"
+    },
+    "saudi_interceptions_nov15": {
+      "missiles_reported_intercepted": 2,
+      "drones_reported_intercepted": 3,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-15, Saudi-led coalition statement; precise occurrence time and independent damage verification unavailable; not a market quote"
     }
   },
   "sources": [
-    "https://www.reuters.com/business/energy/oil-prices-drop-more-than-1-hopes-iran-ukraine-peace-talks-pressure-markets-2026-11-12/",
-    "https://www.reuters.com/world/asia-pacific/global-markets-global-markets-2026-11-09/",
-    "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary"
+    "https://www.reuters.com/world/middle-east/saudi-led-coalition-intercepts-missiles-towards-riyadh-drones-eastern-province-2026-11-15/",
+    "https://www.reuters.com/business/energy/us-diesel-below-6-gallon-2-month-low-easing-tensions-weaker-demand-2026-11-15/",
+    "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/",
+    "https://www.moneycontrol.com/news/opinion/commodity-markets-eye-fed-signals-nvidia-earnings-and-iran-risks-14080281.html"
   ],
   "data_limitations": [
-    "11월 15일 일요일 미국 주식 정규장 휴장; 최신 정규장 11월 13일",
-    "SOXX·VIX·회사채 신용스프레드·실질금리·유동성·천연가스·금·구리·USD/KRW·시장 폭 최신 동시점 수치 검증 불가",
-    "이번 검색에서 확인된 Reuters 11월 12일 유가 급등은 이전 점검에 반영된 사건으로 새로운 시세가 아님",
-    "GitHub analysis/events/ 및 analysis/daily/ 전체 본문 대조 미완료; 이전 위험 파일과 대화 기록 비교",
-    "기존 경고 3건 유지; 신규 경고 없음"
+    "미국 일요일 휴장, 최신 주식 정규장 11월 13일",
+    "사우디 요격 사건의 정확한 발생 시각·독립 피해 확인 및 시장 전이 확인 불가",
+    "SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 최신 동시점 가격 미검증",
+    "GitHub events/daily 디렉터리 전체 본문 대조 미완료; 이전 위험 파일 및 대화와 비교",
+    "새 긴급 경고 없음; 기존 경고 3건 보존"
   ]
 }
