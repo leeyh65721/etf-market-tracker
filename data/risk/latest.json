@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T00:35:59Z",
+  "checked_at_utc": "2026-11-15T02:03:43Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 14일 Fortune의 연준·이란발 인플레이션 장기화 분석은 기존 금리·유가 위험의 해설이며 새 정책 결정이나 시장 전이 증거가 아님. 11월 14일 호르무즈 유조선 3척 기뢰 피격 이란 측 주장은 Reuters 독립 검증 불가이며 이전 점검에서 이미 다룬 사건. 11월 13일 StoneX 증시 분석은 기존 가격 움직임. 미국 주말 휴장으로 신규 정규장 데이터 없음; high 잠정 유지, 실시간 신용·변동성 데이터 부재.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 15일 원자재 주간 전망은 기존 연준·이란·Nvidia 위험의 전망 반복. Reuters 11월 15일 미국 경유 평균 소매가격 $5.998/gal 보도는 유가 완화의 반대 근거이며 신규 시장 충격 아님. FT 11월 14일 중국 AI주 매도는 기존 Nvidia CEO 사임·수출규제 우려의 해외 전이로 관찰되지만 직전 경고 대비 긴급 위험 단계 상승을 입증할 신규 동시점 신용·시장 폭 데이터 부재. high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -158,18 +158,24 @@
       "change_pct": -0.9,
       "observed_at_utc": "2026-11-13T21:00:00Z",
       "note": "AP Nov 13 rounded close, delayed"
+    },
+    "us_diesel_retail_nov15_reuters": {
+      "value": 5.998,
+      "unit": "USD/gallon",
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-15 보도, 정확한 가격 측정 시각 미확인; 경유 전국 평균 소매가격, 실시간 선물 아님"
     }
   },
   "sources": [
-    "https://fortune.com/2026/11/14/federal-reserve-inflation-forever-war-iran-oil-prices-diesel-fed-rate-hikes/",
-    "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
-    "https://www.stonex.com/en-gb/news-and-analysis/sandp-500-forecast-spx-struggles-for-direction-ahead-of-ppi-data/"
+    "https://www.reuters.com/business/energy/us-diesel-below-6-gallon-2-month-low-easing-tensions-weaker-demand-2026-11-15/",
+    "https://www.ft.com/content/0d4e93e4-895e-4ae0-a01b-833a3ed440a8",
+    "https://www.moneycontrol.com/news/opinion/commodity-markets-eye-fed-signals-nvidia-earnings-and-iran-risks-14080281.html"
   ],
   "data_limitations": [
-    "미국 주말 휴장, 마지막 미국 정규장 2026-11-13; 새 실시간 정규장 가격 없음",
-    "SOXX, VIX, 미국 실질금리, 신용스프레드, 유동성, 천연가스, 금, 구리, USD/KRW, 시장 폭의 최신 동시점 원자료 미검증",
-    "이란 측 유조선 기뢰 피격 주장은 Reuters가 독립 검증하지 못함",
-    "기존 GitHub analysis/events 및 analysis/daily 전체 본문 대조 미완료; 직전 위험 데이터 및 대화와 비교",
-    "기존 alerts 3건은 과거 기록으로 보존; 신규 경고 0건"
+    "미국 일요일 휴장, 마지막 정규장 2026-11-13; 11월 15일 경유 가격 보도는 정규장 시세가 아님",
+    "SOXX·VIX·실질금리·신용스프레드·유동성·천연가스·금·구리·USD/KRW·시장 폭 최신 동시점 수치 미검증",
+    "중국 AI주 하락은 11월 13일 거래에 관한 11월 14일 보도이며 신규 거래일 충격 아님",
+    "GitHub analysis/events 및 analysis/daily 전체 본문 대조 미완료; 기존 경고 및 대화와 비교",
+    "기존 경고 3건 보존; 신규 경고 0건"
   ]
 }
