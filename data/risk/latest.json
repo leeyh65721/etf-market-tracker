@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T22:05:41Z",
+  "checked_at_utc": "2026-11-15T22:34:15Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "직전 2026-11-15T21:11:41Z 대비 새롭게 검증된 긴급 사건 또는 기존 사건의 중대한 악화 증거 없음. Reuters 11월 15일 사우디 요격·바레인 공격은 기존 점검에 반영됨. Reuters 11월 13일 IEA 4분기 원유 공급초과 170만 배럴/일 전망은 기존 반대 근거. 미국 일요일 휴장 및 아시아 월요일 장 개시 전으로 SOXX/VIX/금리/신용/환율 등 최신 동시점 가격 미검증. 기존 high 잠정 유지; 신규 경고 없음.",
+  "change_since_previous": "직전 2026-11-15T22:05:41Z 대비 새롭게 독립 검증된 긴급 사건이나 기존 사건의 중대한 악화 없음. Reuters 11월 15일 사우디 요격 및 11월 14일 호르무즈 기뢰 주장, 11월 13일 IEA 공급초과 전망은 이미 반영된 정보. 미국 주식 주말 휴장, 11월 16일 아시아 장 개시 전; 최신 동시점 위험지표 확인 부족. 기존 high 잠정 유지; 신규 경고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -233,6 +233,7 @@
     "2026-11-15T21:11:41Z 점검: 미국 주식시장 주말 휴장; SOXX, VIX, 국채 장단기/실질금리, 신용스프레드, 시장 폭, WTI/Brent/가스/금/구리, DXY/USD-KRW의 동일 시점 신규 시세 미검증. Reuters 11월 13일 자료는 과거 자료로 신규 이벤트 아님.",
     "GitHub analysis/events/ 및 analysis/daily/ 전체 본문 대조 미완료 (디렉터리 fetch 오류).",
     "2026-11-15T22:05:41Z: 미국 주식 일요일 휴장; 마지막 정규장 11월 13일. SOXX/VIX/미국 장단기·실질금리/회사채 신용스프레드/시장 폭/WTI·Brent·가스·금·구리/USD·USD-KRW 최신 동시점 시세 미확인.",
-    "2026-11-15T22:05:41Z: GitHub analysis/events 및 analysis/daily 디렉터리는 fetch_file로 조회 불가; 전체 본문 대조 미완료."
+    "2026-11-15T22:05:41Z: GitHub analysis/events 및 analysis/daily 디렉터리는 fetch_file로 조회 불가; 전체 본문 대조 미완료.",
+    "2026-11-15T22:34:15Z: Reuters 및 시장 관련 검색으로 새 위험을 탐색했으나 미국 주식 주말 휴장, 아시아 월요일 장 개시 전. SOXX/VIX/금리/실질금리/신용스프레드/시장 폭/원자재/USD-KRW 동시점 최신값 미검증. GitHub 기존 경고 3건 대조; 과거 분석 전체 본문 대조 미완료."
   ]
 }
