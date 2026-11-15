@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-14T22:30:04Z",
+  "checked_at_utc": "2026-11-15T00:12:31Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 13일 미국 장 마감 및 원유 가격은 기존 점검과 중복; 11월 14~15일 주말 휴장. 11월 14일 이후 새로운 독립 검증된 신용·유동성 충격 또는 기존 위험의 현저한 악화 미확인. 기존 high 잠정 유지. 일부 뉴스 출처의 종가 수치가 서로 달라 동시점 가격으로 채택하지 않음.",
+  "change_since_previous": "신규 긴급 경고 확인되지 않음. 주말 미국 현물시장 휴장. 11월 13일 IEA 원유 4분기 공급초과 전망(하루 170만 배럴) 및 비축유 방출은 기존 사건에 대한 완충 근거이며 신규 사건 아님. 호르무즈 선박 공격 관련 기존 보도는 독립적 신규 피해 및 시장 전이 검증 부족. 기존 high 잠정 유지; 최신 동시점 시장·신용 데이터 미확인.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -61,431 +61,17 @@
     }
   ],
   "indicators": {
-    "sp500_futures": {
-      "change_pct": 0.86,
-      "observed_at_utc": "2026-11-11T11:39:00Z",
-      "note": "Reuters reported as of 06:39 ET; delayed versus check"
-    },
-    "nasdaq100_futures": {
-      "change_pct": 1.9,
-      "observed_at_utc": "2026-11-11T11:39:00Z",
-      "note": "Reuters reported as of 06:39 ET; delayed versus check"
-    },
-    "brent": {
-      "value": 91.29,
-      "unit": "USD/barrel",
-      "change_pct": -1.58,
-      "observed_at_utc": "2026-11-12T04:26:00Z",
-      "note": "Reuters Nov 12 04:26 GMT indicative quote, not settlement"
-    },
-    "wti": {
-      "value": 85.29,
-      "unit": "USD/barrel",
-      "change_pct": -1.43,
-      "observed_at_utc": "2026-11-12T04:26:00Z",
-      "note": "Reuters Nov 12 04:26 GMT indicative quote, not settlement"
-    },
-    "us_treasury_10y": {
-      "value": 4.992,
-      "unit": "percent",
+    "oil_q4_surplus_iea_forecast": {
+      "value": 1.7,
+      "unit": "million barrels/day",
       "observed_at_utc": null,
-      "note": "Nov 10 delayed; US Treasury cash market closed Nov 11"
-    },
-    "kospi": {
-      "change_pct": 2.4,
-      "observed_at_utc": null,
-      "note": "AP Nov 11 session, exact quote time unknown"
-    },
-    "taiwan_taiex": {
-      "change_pct": 3.6,
-      "observed_at_utc": null,
-      "note": "AP Nov 11 session, exact quote time unknown"
-    },
-    "sp500_cash_reported": {
-      "change_pct": 1.31,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 11 closing article, latest revised report; not live, exact observation time unavailable"
-    },
-    "nasdaq_composite_reported": {
-      "change_pct": 1.6,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 11 closing article latest revision; AP independently reports 1.6%; exact quote time unknown"
-    },
-    "dow_reported": {
-      "change_pct": 0.49,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 11 closing article latest revision; AP independently reports approximately 0.5%"
-    },
-    "phlx_semiconductor_reported": {
-      "change_pct": 5.7,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 11 latest closing article and Investors Business Daily; supersedes earlier approximate +7%; not SOXX"
-    },
-    "dollar_index_reported": {
-      "change_pct": 0.64,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 11 global markets article; exact observation time unknown"
-    },
-    "market_breadth_qualitative": {
-      "value": "Technology-led rally; AP reports only slightly more S&P 500 advancers than decliners",
-      "observed_at_utc": null,
-      "note": "AP Nov 11 article; no synchronized numeric breadth"
-    },
-    "nvda_afterhours_reported": {
-      "change_pct": -7.92,
-      "price_usd": 159.97,
-      "observed_at_utc": "2026-11-12T00:26:51Z",
-      "note": "Yahoo Finance after-hours Nov 11 19:26:51 EST; delayed indicative quote, not regular-session close; no material worsening vs prior reported -8.1%"
-    },
-    "nvda_premarket_reported": {
-      "change_pct": -6,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 12 later premarket snapshot; approximate and delayed; exact exchange timestamp unavailable"
-    },
-    "nasdaq100_futures_nov12": {
-      "change_pct": -0.64,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 12 later premarket snapshot; exact quote time unavailable"
-    },
-    "sp500_futures_nov12": {
-      "change_pct": -0.31,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 12 later premarket snapshot; exact quote time unavailable"
-    },
-    "us_market_open_nov12": {
-      "observed_at_utc": "2026-11-12T14:30:00Z",
-      "note": "Reuters Nov 12 opening snapshot, approximate market open time; not current 14:51 UTC quote",
-      "nasdaq_composite_change_pct": -1.47,
-      "sp500_change_pct": -0.9,
-      "dow_change_pct": -0.11
-    },
-    "us_market_intraday_nov12": {
-      "observed_at_utc": null,
-      "source_report_time_utc": "2026-11-12T14:45:00Z",
-      "sp500_change_pct": -0.29,
-      "nasdaq_change_pct": -0.56,
-      "dow_change_pct": 0.07,
-      "nvda_change_pct": -7.6,
-      "note": "Reuters reported 09:45 ET snapshot; exact exchange quote timestamps unavailable; delayed"
-    },
-    "brent_nov12_ap": {
-      "value": 93.79,
-      "unit": "USD/barrel",
-      "change_pct": 1.1,
-      "observed_at_utc": null,
-      "note": "AP Nov 12 morning snapshot, exact observation time unknown; not simultaneous with Reuters quotes"
-    },
-    "us_10y_nov12_ap": {
-      "value": 5.07,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "AP Nov 12 morning snapshot, exact quote timestamp unavailable"
-    },
-    "us_market_later_nov12": {
-      "observed_at_utc": null,
-      "sp500_change_pct": 0.29,
-      "nasdaq_change_pct": 0.31,
-      "dow_change_pct": 0.4,
-      "nvda_change_pct": -4,
-      "amd_change_pct": 7,
-      "avgo_change_pct": 5.4,
-      "note": "Reuters Nov 12 later intraday report; approximate, precise exchange quote timestamps unavailable; not synchronized"
-    },
-    "us_10y_nov12_reuters": {
-      "value": 5.066,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 12 intraday reported; precise quote timestamp unknown"
-    },
-    "brent_nov12_reuters": {
-      "value": 93.82,
-      "unit": "USD/barrel",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 12 intraday reported; precise quote timestamp unknown"
-    },
-    "wti_nov12_reuters": {
-      "value": 86.81,
-      "unit": "USD/barrel",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 12 intraday reported; precise quote timestamp unknown"
-    },
-    "us_market_reuters_1138_et_nov12": {
-      "observed_at_utc": "2026-11-12T16:38:00Z",
-      "sp500_change_pct": 0.17,
-      "nasdaq_change_pct": 0.14,
-      "dow_change_pct": 0.24,
-      "nvda_change_pct": -4.2,
-      "sector_positive_count": 8,
-      "sector_total_count": 11,
-      "note": "Reuters Nov 12 11:38 ET reported snapshot; NVDA approximate; not current synchronized market quotes"
-    },
-    "nebius_nov12_guidance": {
-      "observed_at_utc": null,
-      "fy2026_revenue_guidance_low_usd_billion": 3,
-      "fy2026_revenue_guidance_high_usd_billion": 3.2,
-      "note": "Reuters Nov 12: capacity delays shift openings into H1 2027; company-specific execution/financing watch, not proven systemic credit shock"
-    },
-    "us_market_ap_afternoon_nov12": {
-      "observed_at_utc": null,
-      "sp500_change_pct": -0.2,
-      "nasdaq_change_pct": -0.3,
-      "nvda_change_pct": -5.1,
-      "note": "AP Nov 12 afternoon report; approximate and delayed; precise exchange observation timestamp unavailable; not closing prices"
-    },
-    "brent_ap_afternoon_nov12": {
-      "value": 95.18,
-      "unit": "USD/barrel",
-      "change_pct": 2.6,
-      "observed_at_utc": null,
-      "note": "AP Nov 12 afternoon reported snapshot; exact timestamp unavailable"
-    },
-    "us10y_ap_afternoon_nov12": {
-      "value": 5.11,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "AP Nov 12 afternoon reported snapshot; exact timestamp unavailable"
-    },
-    "nvda_barrons_nov12": {
-      "change_pct": -4.9,
-      "observed_at_utc": null,
-      "note": "Barron's Nov 12 market report; approximate delayed quote, exact exchange timestamp unavailable"
-    },
-    "amd_barrons_nov12": {
-      "change_pct": 5.5,
-      "observed_at_utc": null,
-      "note": "Barron's Nov 12 market report, delayed"
-    },
-    "avgo_barrons_nov12": {
-      "change_pct": 5.4,
-      "observed_at_utc": null,
-      "note": "Barron's Nov 12 market report, delayed"
-    },
-    "us_market_close_nov12": {
-      "sp500_change_pct": -0.35,
-      "nasdaq_change_pct": -0.39,
-      "dow_change_pct": -0.36,
-      "observed_at_utc": "2026-11-12T21:00:00Z",
-      "note": "Reuters Nov 12 regular-session closing report; scheduled close timestamp, individual quote timestamps not independently verified"
-    },
-    "nvda_nov12_close_reported": {
-      "change_pct": -4.3,
-      "observed_at_utc": null,
-      "note": "Reuters/AP Nov 12 closing report; replaces earlier approximate -5.4% intraday or preliminary report; not a new price move"
-    },
-    "brent_nov12_close_reported": {
-      "value": 95.82,
-      "unit": "USD/barrel",
-      "change_pct": 3.3,
-      "observed_at_utc": null,
-      "note": "AP Nov 12 closing report, exact commodity settlement timestamp unverified"
-    },
-    "us10y_nov12_close_reported": {
-      "value": 5.12,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "AP Nov 12 end-of-day report, exact quote time unavailable"
-    },
-    "russell2000_nov12_close": {
-      "change_pct": -1.7,
-      "observed_at_utc": "2026-11-12T21:00:00Z",
-      "note": "AP Nov 12 close; approximate, scheduled closing time not verified quote timestamp"
-    },
-    "nikkei_nov13_early": {
-      "value": 61494.24,
-      "change_pct": 1.1,
-      "observed_at_utc": null,
-      "note": "WSJ Nov 13 early Tokyo trading snapshot; not a close or live synchronized quote"
-    },
-    "wti_nov12_settlement": {
-      "value": 88.74,
-      "unit": "USD/barrel",
-      "change_pct": 2.6,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 12 settlement report; precise timestamp unavailable"
-    },
-    "brent_nov12_settlement": {
-      "value": 95.82,
-      "unit": "USD/barrel",
-      "change_pct": 3.3,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 12 settlement report, already reflected in prior check"
-    },
-    "asia_pacific_nov13_bloomberg": {
-      "change_pct": 0.3,
-      "observed_at_utc": null,
-      "note": "Bloomberg via Economic Times published Nov 13 06:15 IST (00:45 UTC); exact quote timestamp unavailable; delayed report"
-    },
-    "nasdaq100_futures_nov13_bloomberg": {
-      "change_pct": 0.6,
-      "observed_at_utc": null,
-      "note": "Bloomberg via Economic Times published 2026-11-13T00:45:00Z; exact exchange timestamp unavailable; not live"
-    },
-    "sp500_futures_nov13_bloomberg": {
-      "change_pct": 0.4,
-      "observed_at_utc": null,
-      "note": "Bloomberg via Economic Times published 2026-11-13T00:45:00Z; exact exchange timestamp unavailable; not live"
-    },
-    "reuters_asia_nov13": {
-      "reported_at_utc": "2026-11-13T01:55:00Z",
-      "observed_at_utc": null,
-      "kospi_change_pct": 2.35,
-      "nikkei_change_pct": 1.4,
-      "msci_asia_ex_japan_change_pct": 0.26,
-      "us_2y_yield_peak_pct": 4.892,
-      "us_10y_yield_peak_pct": 5.1433,
-      "brent_usd_barrel": 95.45,
-      "wti_usd_barrel": 88.39,
-      "spot_gold_usd_oz": 3888.01,
-      "fed_50bp_december_probability_pct": 14.5,
-      "note": "Reuters reported delayed/non-synchronous Asian-session snapshots; exchange quote timestamps unknown; FedWatch probability per Reuters."
-    },
-    "asia_nov13_ap_report": {
-      "observed_at_utc": null,
-      "nikkei_change_pct": 0.8,
-      "taiex_change_pct": 1.7,
-      "kospi_change_pct": -0.5,
-      "hang_seng_change_pct": -0.9,
-      "brent_usd_per_barrel": 95.7,
-      "wti_usd_per_barrel": 88.41,
-      "note": "AP 2026-11-13 보도 기준 서로 비동시점 지연 시세; 개별 관측시각 불명. Reuters와 수치가 다른 것은 관측시각 차이 가능."
-    },
-    "us_2y_yield_change_two_sessions_nov13": {
-      "value": 34,
-      "unit": "basis_points",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 report; two-session cumulative, not hourly or synchronized quote"
-    },
-    "fed_50bp_december_probability_nov13": {
-      "value": 14.5,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 reported market pricing; exact quote time unavailable"
-    },
-    "dollar_index_weekly_change_nov13": {
-      "value": 0.9,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 week-to-date indicative figure; delayed"
-    },
-    "brent_nov13_ap": {
-      "value": 95.7,
-      "unit": "USD/barrel",
-      "observed_at_utc": null,
-      "note": "AP Nov 13 Asian session reported indicative, exact quote timestamp unknown"
-    },
-    "wti_nov13_ap": {
-      "value": 88.41,
-      "unit": "USD/barrel",
-      "observed_at_utc": null,
-      "note": "AP Nov 13 Asian session reported indicative, exact quote timestamp unknown"
-    },
-    "asia_nov13_ap": {
-      "nikkei_change_pct": 0.8,
-      "taiex_change_pct": 1.7,
-      "kospi_change_pct": -0.5,
-      "hang_seng_change_pct": -0.9,
-      "observed_at_utc": null,
-      "note": "AP Nov 13 regional snapshots, not synchronized; Reuters earlier reports differ by observation time"
-    },
-    "asia_nov13_wsj_later": {
-      "kospi_change_pct": -1,
-      "nikkei_change_pct": 0.5,
-      "taiex_change_pct": 1.35,
-      "brent_usd_per_barrel": 96.03,
-      "spot_gold_usd_per_oz": 3902,
-      "observed_at_utc": null,
-      "note": "WSJ Nov 13 Asia session delayed approximate quotes, exact exchange timestamp unknown; distinct from earlier AP observations"
-    },
-    "dollar_index_nov13_reuters": {
-      "value": 103.18,
-      "unit": "index",
-      "weekly_change_pct": 0.9,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 reported, exact exchange observation time not provided; delayed and not synchronized"
-    },
-    "us2y_nov13_ws_j": {
-      "value": 4.861,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "WSJ Nov 13 Asia session reported, quote timestamp unknown"
-    },
-    "us10y_nov13_ws_j": {
-      "value": 5.128,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "WSJ Nov 13 Asia session reported, quote timestamp unknown"
-    },
-    "brent_nov13_reuters": {
-      "value": 96.04,
-      "unit": "USD/barrel",
-      "change_pct": 0.26,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 snapshot, exact quote time unknown"
-    },
-    "wti_nov13_reuters": {
-      "value": 88.59,
-      "unit": "USD/barrel",
-      "change_pct": -0.2,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 snapshot, exact quote time unknown"
-    },
-    "china_ai_equities_nov13_ft": {
-      "value": "Z.ai -10%, MiniMax -8% Friday; Alibaba/Tencent weekly aggregate market cap decline USD 75bn",
-      "observed_at_utc": null,
-      "note": "FT Nov 13 report; existing Nvidia/export-policy uncertainty; not confirmed new regulation"
-    },
-    "iea_oil_balance_oct2026_reported": {
-      "value": 2,
-      "unit": "million barrels/day surplus",
-      "observed_at_utc": null,
-      "note": "FT Nov 13 reports IEA October estimate; monthly backward-looking estimate, not live quote"
-    },
-    "us_yields_nov13_wsj_later": {
-      "us2y_pct": 4.849,
-      "us10y_pct": 5.126,
-      "observed_at_utc": null,
-      "note": "WSJ Nov 13 delayed report; exact market quote time unknown; not synchronized"
-    },
-    "oil_nov13_wsj_later": {
-      "brent_usd_barrel": 96.43,
-      "wti_usd_barrel": 88.89,
-      "observed_at_utc": null,
-      "note": "WSJ Nov 13 reported indicative quotes; exact observation time unknown"
-    },
-    "us_yields_nov13_wsj_followup": {
-      "us2y_pct": 4.849,
-      "us10y_pct": 5.126,
-      "observed_at_utc": null,
-      "note": "WSJ Nov 13 delayed, same previously reported levels; no fresh synchronized quote"
+      "note": "IEA outlook reported by Reuters Nov 13; forecast, not market quote"
     },
     "oil_nov13_reuters_1015gmt": {
       "brent_usd_barrel": 95.45,
       "wti_usd_barrel": 88.06,
       "observed_at_utc": "2026-11-13T10:15:00Z",
       "note": "Reuters 10:15 GMT snapshot, earlier than preceding check; not newer quote"
-    },
-    "dollar_nov13_reuters_followup": {
-      "value": 103.17,
-      "weekly_change_pct": 0.9,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 delayed snapshot; exact quote timestamp unavailable"
-    },
-    "global_equity_fund_flows_nov11": {
-      "value": 50.99,
-      "unit": "USD billion net inflows",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 report for week ending Nov 11, not live market breadth"
-    },
-    "us_sp500_premarket_nov13": {
-      "change_pct": 0.27,
-      "observed_at_utc": null,
-      "note": "Barron's Nov 13 premarket snapshot; exact quote time unavailable, delayed"
-    },
-    "us_10y_nov13_premarket": {
-      "value": 5.14,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "Barron's Nov 13 premarket, approximate, exact quote time unavailable"
     },
     "brent_nov13_reuters_1200gmt": {
       "value": 96.21,
@@ -499,18 +85,6 @@
       "observed_at_utc": "2026-11-13T12:00:00Z",
       "note": "Reuters 12:00 GMT indicative quote, not settlement"
     },
-    "us_october_ppi_reported": {
-      "value": 0.3,
-      "unit": "percent month-over-month",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 release report; consensus +0.4%; release exact time not independently verified"
-    },
-    "us_10y_nov13_reported": {
-      "value": 5.13,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "Barron's Nov 13 indicative reporting, delayed, not synchronized"
-    },
     "brent_nov13_1200utc": {
       "value": 96.21,
       "unit": "USD/barrel",
@@ -523,91 +97,6 @@
       "observed_at_utc": "2026-11-13T12:00:00Z",
       "note": "Reuters Nov 13 12:00 GMT delayed snapshot"
     },
-    "us_yields_nov13_wsj_ppi_followup": {
-      "us2y_pct": 4.836,
-      "us10y_pct": 5.127,
-      "observed_at_utc": null,
-      "note": "WSJ Nov 13 delayed reported levels after PPI; exact market observation times unavailable; non-synchronous"
-    },
-    "europe_equities_nov13_reuters": {
-      "value": "STOXX 600 near record highs; November month-to-date +2.8%; quarterly earnings growth on track +25%",
-      "observed_at_utc": null,
-      "source_report_time_utc": "2026-11-13T12:40:00Z",
-      "note": "Reuters November 13 report, historical MTD and forecast figures, not live index quote"
-    },
-    "us_open_nov13_reuters": {
-      "sp500_change_pct": 0.32,
-      "nasdaq_change_pct": 0.17,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 opening snapshot; exact exchange quote time unverified, delayed vs check"
-    },
-    "us_10y_nov13_ft": {
-      "value": 5.16,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "FT Nov 13 report, intraday high/observation not synchronized; weekly increase ~30bp"
-    },
-    "us_2y_nov13_ft": {
-      "value": 4.88,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "FT Nov 13 reported level; weekly increase ~36bp; exact quote time unknown"
-    },
-    "semiconductor_stocks_nov13_barrons": {
-      "nvda_change_pct": -2.1,
-      "amd_change_pct": -6,
-      "avgo_change_pct": -4.8,
-      "observed_at_utc": null,
-      "note": "Barron's Nov 13 intraday snapshot; quote times not verified; not a synchronized SOXX reading"
-    },
-    "us_market_nov13_reuters_1016et": {
-      "sp500_change_pct": -0.93,
-      "nasdaq_change_pct": -1.42,
-      "dow_change_pct": -0.41,
-      "phlx_semiconductor_change_pct": -5,
-      "nvda_change_pct": -3.3,
-      "observed_at_utc": null,
-      "source_report_time_utc": "2026-11-13T15:16:00Z",
-      "note": "Reuters 10:16 ET 보도 스냅샷; 개별 거래소 체결 시각 미확인, 약 89분 지연, 비동시점"
-    },
-    "us_market_nov13_reuters_late_morning": {
-      "sp500_change_pct": -1.01,
-      "nasdaq_change_pct": -1.74,
-      "phlx_semiconductor_change_pct": -6,
-      "nvda_change_pct": -4.3,
-      "amd_change_pct": -10,
-      "avgo_change_pct": -7,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 late-morning report, approximate delayed and non-synchronized quotes; exact exchange timestamp unavailable"
-    },
-    "ai_neocloud_nov13": {
-      "coreweave_change_pct": -9,
-      "nebius_change_pct": -9,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 approximate intraday drops; concerns about Nvidia vendor financing, not confirmed cessation or credit default"
-    },
-    "us_market_nov13_reuters_afternoon": {
-      "sp500_change_pct": -0.48,
-      "nasdaq_change_pct": -0.89,
-      "phlx_semiconductor_change_pct": -3.6,
-      "observed_at_utc": null,
-      "source_report_time_utc": "2026-11-13T17:48:00Z",
-      "note": "Reuters via Investing.com Nov 13 12:48 ET updated article market quote panel; values potentially dynamically updated; exact quote timestamp/close unverified; do not treat as official close."
-    },
-    "us_market_close_nov13_reported": {
-      "sp500_change_pct": -0.4,
-      "nasdaq_change_pct": -0.9,
-      "dow_change_pct": 0.1,
-      "observed_at_utc": null,
-      "note": "MarketWatch/FactSet Nov 13 preliminary close, rounded; exact quote timestamps not independently verified"
-    },
-    "nasdaq_breadth_nov13_reported": {
-      "decliners_to_advancers_ratio": 1.78,
-      "new_52week_highs": 28,
-      "new_52week_lows": 301,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 afternoon/close reporting via Investing.com; quote panel and exact snapshot time uncertain, not a live quote"
-    },
     "us_market_close_nov13_confirmed": {
       "observed_at_utc": "2026-11-13T21:00:00Z",
       "sp500_change_pct": -0.4,
@@ -616,25 +105,12 @@
       "phlx_semiconductor_change_pct": -3.4,
       "note": "Reuters/AP/WSJ Nov 13 close; 21:00 UTC scheduled close, exact individual quote times not independently verified; not new market move"
     },
-    "us_market_week_nov13_ap": {
-      "sp500_change_pct": 2.5,
-      "nasdaq_change_pct": 2.3,
-      "dow_change_pct": 2.1,
-      "observed_at_utc": null,
-      "note": "AP Nov 13 weekly close report, not current intraday prices"
-    },
     "us_market_close_nov13_rechecked": {
       "sp500_change_pct": -0.4,
       "nasdaq_change_pct": -0.91,
       "dow_change_pct": 0.1,
       "observed_at_utc": "2026-11-13T21:00:00Z",
       "note": "Reuters/AP/WSJ Nov 13 close; rounded and scheduled close timestamp, not individual quote timestamps"
-    },
-    "brent_nov13_ap_close": {
-      "value": 95.84,
-      "unit": "USD/barrel",
-      "observed_at_utc": null,
-      "note": "AP Nov 13 settlement report; exact settlement timestamp unavailable"
     },
     "phlx_semiconductor_nov13_close_reuters": {
       "change_pct": -3.43,
@@ -663,51 +139,6 @@
       "dow_change_pct": 0.1,
       "note": "Reuters/AP/WSJ 2026-11-13 regular close, 16:00 ET approximate closing timestamp; published figures rounded; not a live quote"
     },
-    "us_rates_nov13_forbes": {
-      "us_2y_pct": 4.88,
-      "us_10y_pct": 5.15,
-      "us_30y_pct": 5.47,
-      "observed_at_utc": null,
-      "note": "Forbes Nov 13 16:23 ET report, individual quote timestamp unverified; not current live data"
-    },
-    "ppi_october_yoy_nov13": {
-      "value": 6.5,
-      "unit": "percent YoY",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 report; historical October PPI, not new since prior monitoring"
-    },
-    "vix_nov13_stonex_morning": {
-      "value": 18,
-      "unit": "index points approximately",
-      "observed_at_utc": null,
-      "note": "StoneX Nov 13 morning commentary; stale and not closing VIX"
-    },
-    "oil_nov13_settlement_confirmed": {
-      "observed_at_utc": null,
-      "brent_usd_per_barrel": 95.84,
-      "wti_usd_per_barrel": 88.56,
-      "note": "Reuters Nov 13 settlement; exact contract settlement timestamp not independently verified"
-    },
-    "us_treasury_week_nov13_ft": {
-      "us_2y_yield_pct": 4.85,
-      "us_10y_yield_pct": 5.14,
-      "us_2y_weekly_change_bp": 33,
-      "us_10y_weekly_change_bp": 28,
-      "observed_at_utc": null,
-      "note": "FT Nov 13 retrospective weekly report; exact quote timestamps unavailable, not synchronized or current Saturday quotes"
-    },
-    "fed_financial_stability_survey_nov13": {
-      "ai_risk_respondents_pct": 87,
-      "previous_may_pct": 50,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 reporting of Federal Reserve semiannual financial stability survey; survey sentiment, not observed credit distress"
-    },
-    "global_equity_fund_inflows_week_nov11": {
-      "value": 50.99,
-      "unit": "USD billion",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 / LSEG Lipper, week ended Nov 11; counterevidence to generalized risk-off"
-    },
     "us_market_nov13_reuters_latest": {
       "sp500_change_pct": -0.4,
       "nasdaq_change_pct": -0.91,
@@ -715,46 +146,6 @@
       "phlx_semiconductor_change_pct": -3.4,
       "observed_at_utc": "2026-11-13T21:00:00Z",
       "note": "Reuters 11월 13일 정규장 마감, 예정 종료 시각; 개별 체결 시각 미검증. 기존 점검과 중복."
-    },
-    "us_2y_nov13_reuters_latest": {
-      "value": 4.867,
-      "unit": "percent",
-      "observed_at_utc": null,
-      "note": "Reuters 11월 13일 종가 근처 보도; 개별 관측시각 불명, 11월 14일 실시간 아님"
-    },
-    "dollar_index_nov13_reuters_latest": {
-      "value": 103.4,
-      "unit": "index",
-      "observed_at_utc": null,
-      "note": "Reuters 11월 13일 보도, 관측시각 불명"
-    },
-    "faa_airline_nov13": {
-      "airline_index_change_pct": -1.4,
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 close: nationwide FAA departure ground stop after ATC communication issues; duration and subsequent recovery not verified; not evidence of broad credit contagion"
-    },
-    "faa_ground_stop_resolution_nov13": {
-      "value": "FAA nationwide departure ground stop lifted at 20:15 ET Nov 13; delays/cancellations continued",
-      "observed_at_utc": null,
-      "note": "Guardian Nov 13 live report; policy/operations update, not live financial market quote"
-    },
-    "iea_emergency_oil_release_nov13": {
-      "value": 71,
-      "unit": "million barrels planned through February 2027",
-      "observed_at_utc": null,
-      "note": "Reuters Nov 13 report; forward release plan, not spot quote or executed release"
-    },
-    "us_high_yield_spread_nov12_secondary": {
-      "value": 3.2,
-      "unit": "percentage points",
-      "observed_at_utc": null,
-      "note": "2026-11-12 FRED 기반 2차 집계(aitrader.kr), 동시점 독립 원자료 검증 불가; 현재값 아님"
-    },
-    "us_ig_spread_nov12_secondary": {
-      "value": 0.89,
-      "unit": "percentage points",
-      "observed_at_utc": null,
-      "note": "2026-11-12 FRED 기반 2차 집계(aitrader.kr), 동시점 독립 원자료 검증 불가; 현재값 아님"
     },
     "sp500_nov13_close": {
       "value": 7561.67,
@@ -767,92 +158,17 @@
       "change_pct": -0.9,
       "observed_at_utc": "2026-11-13T21:00:00Z",
       "note": "AP Nov 13 rounded close, delayed"
-    },
-    "brent_nov13_settlement": {
-      "value": 95.84,
-      "unit": "USD/barrel",
-      "observed_at_utc": null,
-      "note": "AP Nov 13 settlement; exact timestamp not verified"
-    },
-    "global_equity_fund_flows_week_nov11": {
-      "value": 50.99,
-      "unit": "USD billion net inflow",
-      "observed_at_utc": null,
-      "note": "Reuters/LSEG Lipper week ending Nov 11; not intraday liquidity"
     }
   },
   "sources": [
-    "https://apnews.com/article/3f3668a937a11535103e3a5c8d82c9fc",
-    "https://www.reuters.com/technology/former-nvidia-ceo-huang-had-relationship-with-second-employee-sources-say-2026-11-12/",
-    "https://www.reuters.com/world/china/tougher-curbs-ai-chip-sales-china-likely-after-nvidia-ceo-resigns-2026-11-12/",
-    "https://www.reuters.com/business/nvidia-pe-falls-14-year-low-ceo-exit-ai-worries-cloud-bargain-2026-11-12/",
-    "https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-12/",
-    "https://www.wsj.com/finance/stocks/nikkei-rises-1-1-led-by-chip-stocks-eb2ed881",
-    "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-gain-after-nvidia-shakeup-oil-steady/articleshow/135785602.cms",
-    "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-13/",
-    "https://www.reuters.com/technology/smic-says-ai-chip-supply-chain-will-remain-tight-through-2027-2026-11-13/",
-    "https://www.wsj.com/world/asia/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15",
-    "https://apnews.com/article/f8edd0eeb1494d4d2584715686c5e619",
-    "https://www.reuters.com/world/africa/dollar-near-19-month-high-fed-hike-bets-yen-tests-160-2026-11-13/",
-    "https://www.wsj.com/finance/stocks/asia-stocks-stage-tentative-rebound-as-nvidia-uncertainty-lingers-c0953e15",
-    "https://www.reuters.com/business/energy/oil-prices-set-second-weekly-decline-trump-stay-with-iran-blockade-2026-11-13/",
-    "https://www.ft.com/content/0d4e93e4-895e-4ae0-a01b-833a3ed440a8",
-    "https://www.wsj.com/economy/central-banking/upward-pressure-remains-in-treasury-yields-even-as-two-year-yield-stabilizes-0c267082",
-    "https://www.reuters.com/world/iran-says-tanker-carrying-lng-hit-mine-suffered-explosion-hormuz-2026-11-13/",
-    "https://www.ft.com/content/20b68fe2-9d60-4c0c-b714-1f3e03015823",
-    "https://www.reuters.com/markets/asia/smfg-second-quarter-profit-falls-10-raises-annual-earnings-forecast-2026-11-13/",
-    "https://www.wsj.com/business/energy-oil/oil-prices-rise-as-middle-east-supply-risks-persist-2066e758",
-    "https://apnews.com/article/5d73a23b5b8647d2515c35b267b36c08",
-    "https://www.reuters.com/business/finance/global-markets-flows-graphic-2026-11-13/",
-    "https://www.barrons.com/articles/s-p-500-futures-up-in-premarket-trading-modine-manufacturing-cerebras-systems-lead-a8677105",
-    "https://www.reuters.com/business/nasdaq-futures-dip-nvidia-tumult-keeps-investors-edge-2026-11-13/",
-    "https://www.barrons.com/livecoverage/stock-market-news-today-111326/card/treasury-yields-hold-above-5-after-bruising-weekly-selloff-kvupPpCdoVRCIio0oDyL",
-    "https://www.reuters.com/business/finance/how-us-tech-pain-is-european-stock-markets-gain-2026-11-13/",
-    "https://www.wsj.com/finance/jgb-yields-rise-after-selloff-in-u-s-treasurys-overnight-1eeb83e2",
-    "https://www.ft.com/content/7bebace2-dc87-410a-ae29-ffd9f3176def",
-    "https://www.barrons.com/articles/stock-movers-9a030e1c",
-    "https://www.reuters.com/business/goldman-sachs-sees-sp-500-rising-8700-next-year-despite-slower-earnings-growth-2026-11-13/",
-    "https://www.reuters.com/business/neoclouds-ai-stocks-slide-again-nvidia-turmoil-rattles-sector-2026-11-13/",
-    "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-13-2026/card/what-s-moving-markets-today--S60c43ZdaQe0YiiDxvsP",
-    "https://www.investing.com/news/stock-market-news/nasdaq-futures-dip-as-nvidia-tumult-keeps-investors-on-edge-5024713",
-    "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-ceo-jensen-huang-resigns-ppi-inflation-data/card/s-p-500-nasdaq-end-lower-as-chip-stocks-sell-off-We8qJmzsgM0dPd2Ho6zH",
-    "https://apnews.com/article/12c1e8155fb85c3c7b09e058ed6d3c74",
-    "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-on-nvidia-fallout-fears-f9946e8d",
-    "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
-    "https://www.forbes.com/advisor/investing/treasury-rates/",
-    "https://www.stonex.com/en-us/insights/perspective-morning-commentary-for-november-13-2026-11-13/",
-    "https://www.wsj.com/finance/stocks/tech-stocks-fall-as-next-week-brings-big-tests-for-the-ai-trade-6a346b49",
-    "https://www.reuters.com/business/finance/ai-rockets-top-worries-about-financial-system-latest-fed-survey-2026-11-13/",
-    "https://www.business-standard.com/world-news/us-stocks-mostly-ease-with-tech-nvidia-concerns-airline-shares-fall-126111400058_1.html",
-    "https://www.straitstimes.com/business/companies-markets/sp-500-nasdaq-end-lower-as-nvidia-uncertainty-weighs-on-tech-shares",
-    "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
-    "https://www.reuters.com/business/energy/oil-releases-iea-emergency-stocks-pick-up-through-february-agency-says-2026-11-13/",
-    "https://www.aitrader.kr/",
-    "https://apnews.com/article/5f427443fd31a4aa2bd2a1b6cebfe549",
-    "https://www.reuters.com/world/us/us-extends-shipping-law-waiver-90-days-allow-freer-movement-oil-commodities-2026-11-13/",
-    "https://www.reuters.com/business/us-treasury-chief-says-fed-should-not-hike-rates-over-energy-shock-tied-iran-war-2026-11-13/",
-    "https://www.reuters.com/commentary/reuters-open-interest/metals-age-ai-game-changer-or-hyperscale-hype-2026-11-14/",
-    "https://www.barrons.com/articles/stockstoday-rotation-after-nvidia-3d0dbe00",
-    "https://www.reuters.com/commentary/reuters-open-interest/wall-street-withstands-ai-blues-what-about-nvidia-shock-mcgeever-2026-11-12/",
-    "https://www.reuters.com/technology/microsoft-365-outlook-down-thousands-us-users-downdetector-shows-2026-11-12/",
-    "https://apnews.com/article/ade76bebaf22135168aac6eb3016bc19",
-    "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
-    "https://www.reuters.com/world/middle-east/irans-irgc-says-two-tankers-hit-sea-mines-hormuz-2026-11-13/",
-    "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february",
-    "https://www.apollo.com/wealth/insights-news/insights/daily-spark",
-    "https://www.mufgresearch.com/macro/middle-east-daily-13-november-2026/",
     "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/",
-    "https://www.theguardian.com/business/2026/nov/14/interest-rate-rises-inflation-bank-of-england-chief-economist",
-    "https://www.reuters.com/business/feds-collins-says-gradual-rate-hikes-best-manage-economic-risks-2026-11-14/",
-    "https://www.reuters.com/business/feds-jefferson-says-he-is-taking-his-policy-cues-inflation-2026-11-14/",
-    "https://www.stonex.com/en-gb/news-and-analysis/sandp-500-forecast-spx-struggles-for-direction-ahead-of-ppi-data/",
-    "https://www.reuters.com/business/energy/oil-prices-drop-more-than-1-hopes-iran-ukraine-peace-talks-pressure-markets-2026-11-12/"
+    "https://www.reuters.com/business/energy/oil-releases-iea-emergency-stocks-pick-up-through-february-agency-says-2026-11-13/",
+    "https://www.reuters.com/business/finance/global-markets-flows-graphic-2026-11-13/"
   ],
   "data_limitations": [
-    "2026-11-14T18:46:08Z 점검: 주말 휴장, 최신 동시점 SOXX/VIX/신용스프레드/실질금리/원자재/환율/시장 폭 미검증; analysis/events 및 analysis/daily 전체 대조 미완료. 기존 indicators는 과거 시각 자료로 현재 시세가 아님.",
-    "2026-11-14T19:50:21Z: 미국 주말 휴장. 신규 동시점 SOXX/VIX/IG·HY 스프레드/실질금리/천연가스·금·구리/USD-KRW/시장폭 검증 불가. 기존 indicators는 과거 시점이며 현재 시세가 아님. GitHub 사건·일일 분석 전체 본문 전수 대조 미완료.",
-    "2026-11-14T20:32:59Z: 미국 주말 휴장으로 최신 정규장 11월 13일 종가. SOXX/VIX/IG·HY 신용스프레드/실질금리/천연가스·금·구리/USD-KRW/시장 폭의 동시점 자료 독립 검증 불가. 이전 indicators는 각 관측일의 과거 값. analysis/events 및 analysis/daily 전체 본문 대조 미완료.",
-    "2026-11-14T21:48:03Z: 주말 휴장. SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 동시점 최신값 미확인. 기존 지표는 과거 관측치이며 최신 시세 아님. GitHub 분석 폴더 전체 본문 대조 미완료.",
-    "2026-11-14T22:30:04Z 점검: 주말 휴장; 11월 13일 종가 이후 동시점 SOXX/VIX/신용스프레드/실질금리/원자재/달러·USD/KRW/시장 폭 독립 검증 불가. 분석 디렉터리 전체 파일 대조 미완료. 최신 검색 자료의 일부 가격 불일치로 미검증 수치 추가하지 않음."
+    "미국 주말 휴장: 신규 정규장 가격 없음; 마지막 거래일 2026-11-13",
+    "SOXX/VIX/회사채 스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 최신 동시점 독립 검증 불가",
+    "GitHub analysis/events 및 analysis/daily 전체 본문 대조 미완료",
+    "기존 alerts는 이전 검증 기록을 보존하며 이번 점검의 신규 사건으로 간주하지 않음"
   ]
 }
