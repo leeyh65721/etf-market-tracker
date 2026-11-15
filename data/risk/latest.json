@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T02:03:43Z",
+  "checked_at_utc": "2026-11-15T02:51:36Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 15일 원자재 주간 전망은 기존 연준·이란·Nvidia 위험의 전망 반복. Reuters 11월 15일 미국 경유 평균 소매가격 $5.998/gal 보도는 유가 완화의 반대 근거이며 신규 시장 충격 아님. FT 11월 14일 중국 AI주 매도는 기존 Nvidia CEO 사임·수출규제 우려의 해외 전이로 관찰되지만 직전 경고 대비 긴급 위험 단계 상승을 입증할 신규 동시점 신용·시장 폭 데이터 부재. high 잠정 유지.",
+  "change_since_previous": "신규 검증된 긴급 사건 또는 기존 사건의 중대한 추가 악화 미확인. 11월 12일 Reuters 원유 상승 및 11월 9일 Nvidia 약세는 기존 위험으로 중복 경고하지 않음. 11월 15일 일요일 미국 정규장 휴장. 최신 동시점 신용·변동성·금리·시장 폭 검증 불충분으로 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -167,15 +167,15 @@
     }
   },
   "sources": [
-    "https://www.reuters.com/business/energy/us-diesel-below-6-gallon-2-month-low-easing-tensions-weaker-demand-2026-11-15/",
-    "https://www.ft.com/content/0d4e93e4-895e-4ae0-a01b-833a3ed440a8",
-    "https://www.moneycontrol.com/news/opinion/commodity-markets-eye-fed-signals-nvidia-earnings-and-iran-risks-14080281.html"
+    "https://www.reuters.com/business/energy/oil-prices-drop-more-than-1-hopes-iran-ukraine-peace-talks-pressure-markets-2026-11-12/",
+    "https://www.reuters.com/world/asia-pacific/global-markets-global-markets-2026-11-09/",
+    "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary"
   ],
   "data_limitations": [
-    "미국 일요일 휴장, 마지막 정규장 2026-11-13; 11월 15일 경유 가격 보도는 정규장 시세가 아님",
-    "SOXX·VIX·실질금리·신용스프레드·유동성·천연가스·금·구리·USD/KRW·시장 폭 최신 동시점 수치 미검증",
-    "중국 AI주 하락은 11월 13일 거래에 관한 11월 14일 보도이며 신규 거래일 충격 아님",
-    "GitHub analysis/events 및 analysis/daily 전체 본문 대조 미완료; 기존 경고 및 대화와 비교",
-    "기존 경고 3건 보존; 신규 경고 0건"
+    "11월 15일 일요일 미국 주식 정규장 휴장; 최신 정규장 11월 13일",
+    "SOXX·VIX·회사채 신용스프레드·실질금리·유동성·천연가스·금·구리·USD/KRW·시장 폭 최신 동시점 수치 검증 불가",
+    "이번 검색에서 확인된 Reuters 11월 12일 유가 급등은 이전 점검에 반영된 사건으로 새로운 시세가 아님",
+    "GitHub analysis/events/ 및 analysis/daily/ 전체 본문 대조 미완료; 이전 위험 파일과 대화 기록 비교",
+    "기존 경고 3건 유지; 신규 경고 없음"
   ]
 }
