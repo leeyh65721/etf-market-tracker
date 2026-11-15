@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T14:50:00Z",
+  "checked_at_utc": "2026-11-15T15:54:38Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 23:11 KST 이전 점검과 비교해 Reuters의 걸프 증시 약세·호르무즈 유조선 기뢰 피격 주장, 예멘 바브엘만데브 철수, 바레인 공격의 새로운 독립 검증 피해나 미국 ETF·신용시장 전이 미확인. IEA 11월 13일 4분기 공급초과 전망은 반대 근거. 기존 잠정 high 유지, 새 사건 기록 없음.",
+  "change_since_previous": "신규 긴급 경고 없음(확인 범위 내). 직전 2026-11-15T14:50Z 대비 기존 호르무즈 기뢰 주장·걸프 증시 하락·중동 공격에 대한 독립 검증된 추가 피해 또는 미국 ETF/신용시장 전이 확인 불가. 11월 13일 Reuters는 원유 공급초과 징후로 Brent/WTI 주간 약 -2.5% 보도(과거 데이터). 11월 15일 보도된 11월 18일 FOMC 의사록 공개 예정은 신규 충격이 아닌 향후 일정. 최신 동시점 시장 지표 부재로 위험 단계 확정 재평가 불가; 기존 잠정 high 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -221,12 +221,13 @@
     "https://www.reuters.com/world/middle-east/gulf-bourses-slide-hormuz-tensions-houthi-strikes-rattle-traders-2026-11-15/",
     "https://www.reuters.com/business/energy/shell-starts-gas-production-egypts-mina-west-field-2026-11-15/",
     "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
-    "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-earnings-anthropic-ipo-spacex-starship-flight-15/"
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-earnings-anthropic-ipo-spacex-starship-flight-15/",
+    "https://www.moneycontrol.com/news/business/markets/dalal-street-week-ahead-wpi-inflation-crude-oil-among-10-key-factors-to-watch-14080497.html"
   ],
   "data_limitations": [
-    "점검 시각 2026-11-15T14:50:00Z (23:50 KST). 미국 일요일 휴장, 미국 주식 최근 정규장 11월 13일; 동시점 가격 아님",
-    "SOXX, VIX, 국채 장단기·실질금리, 회사채 신용스프레드, 유동성·시장 폭, WTI/Brent·천연가스·금·구리, 달러·USD/KRW의 최신 동시점 시세 미검증",
-    "이란 측 유조선 3척 기뢰 피해 주장은 Reuters가 독립 검증하지 못함. 운송·보험료·실제 공급 피해의 새 증거 부족",
-    "GitHub 기존 경고 3건 및 대화 속 이전 판단과 비교. analysis/events/ 및 analysis/daily/ 디렉터리 열람 실패로 전체 대조 불가"
+    "점검 2026-11-15T15:54:38Z (11월 16일 00:54 KST), 미국 주식 일요일 휴장. 마지막 정규장 11월 13일; 가격 지연",
+    "SOXX, VIX, 장단기·실질금리, 회사채 스프레드·유동성, 시장 폭, WTI/Brent·천연가스·금·구리, 달러·USD/KRW 최신 동시점 시세 미검증",
+    "호르무즈 유조선 기뢰 피해 주장 독립 검증 미완료. 신규 피해·공급 차질·전이 수치 없음",
+    "기존 alerts 3건 및 직전 기록과 비교했으나 analysis/events/·analysis/daily/ 디렉터리 조회 오류로 전체 대조 불가"
   ]
 }
