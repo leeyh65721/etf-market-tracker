@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T16:43:18Z",
+  "checked_at_utc": "2026-11-15T17:33:51Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음(확인 범위 내). 2026-11-15T15:54:38Z 이후 새로 독립 확인된 시장 전이·공급 중단·신용 충격 없음. 11월 15일 사우디 요격 및 바레인 공격, 11월 14일 호르무즈 기뢰 피해 주장은 기존 반영 사건. Reuters/FT/Guardian 보도 대조; 시장 동시점 가격 검증 불가로 기존 잠정 high 유지.",
+  "change_since_previous": "2026-11-15T16:43:18Z 이후 독립 검증된 신규 긴급 사건 또는 기존 사건의 중대한 악화 증거 없음(확인 범위). 11월 15일 경유 소매가 하락 및 11월 13일 IEA 공급초과 전망은 기존 에너지 공급 충격 위험에 대한 반대 증거. 미국 주식시장 일요일 휴장 및 최신 동시점 위험지표 미확보로 잠정 high 유지; 신규 경고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -226,9 +226,9 @@
     "https://www.reuters.com/world/middle-east/two-oil-tankers-disabled-by-explosions-strait-hormuz-irgc-says-2026-11-12/"
   ],
   "data_limitations": [
-    "점검 2026-11-15T16:43:18Z (11월 16일 01:43 KST). 미국 일요일 휴장, 마지막 정규장 11월 13일; 시세 지연",
-    "SOXX·VIX·미국 장단기 및 실질금리·신용스프레드·시장 폭·원자재·USD/KRW의 최신 동시점 원자료 미검증",
-    "호르무즈 기뢰 피해 주장 및 실제 공급·운송 차질 독립 검증 미완료",
-    "GitHub 기존 alerts 3건과 직전 기록 비교. analysis/events/ 및 analysis/daily/ 전체 대조 미완료"
+    "점검 2026-11-15T17:33:51Z (11월 16일 02:33 KST). 미국 일요일 휴장, 마지막 정규장 11월 13일; 기존 가격 자료 지연",
+    "SOXX·VIX·장단기/실질금리·회사채 신용스프레드·유동성·시장 폭·WTI/Brent·천연가스·금·구리·달러·USD/KRW 최신 동시점 원자료 미검증; 새 숫자 생성하지 않음",
+    "호르무즈 유조선 기뢰 피해 주장 및 실제 공급/해운 차질 독립 검증 미완료",
+    "GitHub 기존 alerts 3건 비교 완료; analysis/events/ 및 analysis/daily/ 디렉터리 조회 실패로 전체 기록 대조 미완료"
   ]
 }
