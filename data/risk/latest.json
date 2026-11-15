@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T06:46:36Z",
+  "checked_at_utc": "2026-11-15T07:26:50Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 사우디 미사일·드론 요격은 이전 점검에서 반영된 동일 사건이며 Reuters/Al Jazeera 보도 재확인 결과 신규 피해·공급 차질·신용시장 전이 확인 불가. 미국 회사채 강세 보도는 신용경색 가설의 반대 근거이나 최신 스프레드 수치 미확인. 기존 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. WSJ 11월 15일 이란의 바레인 레이더 기지 드론 공격 주장(6대)을 새 보도로 확인했으나 피해·시장/원유/신용 전이 독립 검증 불가. 사우디 요격은 이미 반영된 동일 사건. FT의 AI 데이터센터 관련 시총 4.2조 달러 감소는 6월 이후 누적치로 새 당일 충격 아님. 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -170,6 +170,17 @@
       "drones_reported_intercepted": 3,
       "observed_at_utc": null,
       "note": "Reuters 2026-11-15, Saudi-led coalition statement; precise occurrence time and independent damage verification unavailable; not a market quote"
+    },
+    "bahrain_drone_claim_nov15": {
+      "drones_claimed": 6,
+      "observed_at_utc": null,
+      "note": "WSJ 2026-11-15, 이란 혁명수비대 주장; 실제 타격·피해 독립 확인 불가, 시세 아님"
+    },
+    "ai_infrastructure_cumulative_loss_ft_nov15": {
+      "value": 4.2,
+      "unit": "USD trillion",
+      "observed_at_utc": null,
+      "note": "FT 2026-11-15 기사: 6월 이후 누적 시총 감소 추정, 당일 하락 아님"
     }
   },
   "sources": [
@@ -179,13 +190,15 @@
     "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/",
     "https://www.moneycontrol.com/news/opinion/commodity-markets-eye-fed-signals-nvidia-earnings-and-iran-risks-14080281.html",
     "https://www.business-standard.com/world-news/us-corporate-bonds-attract-investors-as-stock-market-turbulence-grows-126111500065_1.html",
-    "https://www.reuters.com/business/energy/oil-prices-drop-more-than-1-hopes-iran-ukraine-peace-talks-pressure-markets-2026-11-12/"
+    "https://www.reuters.com/business/energy/oil-prices-drop-more-than-1-hopes-iran-ukraine-peace-talks-pressure-markets-2026-11-12/",
+    "https://www.wsj.com/world/middle-east/iran-attacks-bahrain-as-conflict-escalates-62ffd1b3",
+    "https://www.ft.com/content/d5adde7e-68cc-455b-ba78-b39cc3676b7a"
   ],
   "data_limitations": [
-    "2026-11-15 06:46 UTC 공개 보도 확인; 미국 일요일 휴장, 주식 최신 정규장 11월 13일",
+    "2026-11-15 07:26 UTC 점검; 미국 일요일 휴장, 주식 최신 정규장 11월 13일",
+    "바레인 드론 공격 주장 관련 피해 및 유가·금융시장 전이 독립 검증 불가",
     "SOXX·VIX·회사채 신용스프레드·실질금리·천연가스·금·구리·USD/KRW·시장 폭 최신 동시점 수치 미검증",
-    "사우디 요격 정확한 발생 시각·신규 피해·공급 중단 독립 검증 불가",
     "GitHub events/daily 전체 본문 대조 미완료; 기존 공유 위험 파일 및 대화와 비교",
-    "신규 경고 없음; 기존 경고 3건 유지"
+    "신규 긴급 경고 없음; 기존 경고 3건 유지"
   ]
 }
