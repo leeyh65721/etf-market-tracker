@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T14:11:12Z",
+  "checked_at_utc": "2026-11-15T14:50:00Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 15일 걸프 증시 하락(사우디 -0.7%, 카타르 -1.8%)과 이란 측 호르무즈 유조선 3척 기뢰 피격 주장을 확인. 유조선 피해는 이란 측 주장으로 독립 검증되지 않았고, 이전 중동 분쟁과 비교한 신규 광범위 신용·유동성 충격 또는 미국 ETF 즉시 대응 필요성 미입증. 기존 high 잠정 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 23:11 KST 이전 점검과 비교해 Reuters의 걸프 증시 약세·호르무즈 유조선 기뢰 피격 주장, 예멘 바브엘만데브 철수, 바레인 공격의 새로운 독립 검증 피해나 미국 ETF·신용시장 전이 미확인. IEA 11월 13일 4분기 공급초과 전망은 반대 근거. 기존 잠정 high 유지, 새 사건 기록 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -219,12 +219,14 @@
     "https://www.ft.com/content/fc7ccc23-c051-49e6-85e5-8d8ba0a83ef9",
     "https://www.reuters.com/business/energy/oil-prices-set-second-weekly-decline-trump-stay-with-iran-blockade-2026-11-13/",
     "https://www.reuters.com/world/middle-east/gulf-bourses-slide-hormuz-tensions-houthi-strikes-rattle-traders-2026-11-15/",
-    "https://www.reuters.com/business/energy/shell-starts-gas-production-egypts-mina-west-field-2026-11-15/"
+    "https://www.reuters.com/business/energy/shell-starts-gas-production-egypts-mina-west-field-2026-11-15/",
+    "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-earnings-anthropic-ipo-spacex-starship-flight-15/"
   ],
   "data_limitations": [
-    "점검 기준 2026-11-15T14:11:12Z; 미국 일요일 휴장, 주식 마지막 정규장 11월 13일",
-    "SOXX/VIX/장단기·실질금리/신용스프레드/유동성/시장 폭/원자재 현물·선물/USD·USD/KRW 최신 동시점 수치 검증 불가",
-    "이란의 유조선 3척 기뢰 피격 주장 독립 검증 불가; 걸프 증시 장중 변동의 미국 ETF 전이 확인 불가",
-    "GitHub 기존 alerts 3건 대조. analysis/events 및 analysis/daily 전체 파일 대조 미완료"
+    "점검 시각 2026-11-15T14:50:00Z (23:50 KST). 미국 일요일 휴장, 미국 주식 최근 정규장 11월 13일; 동시점 가격 아님",
+    "SOXX, VIX, 국채 장단기·실질금리, 회사채 신용스프레드, 유동성·시장 폭, WTI/Brent·천연가스·금·구리, 달러·USD/KRW의 최신 동시점 시세 미검증",
+    "이란 측 유조선 3척 기뢰 피해 주장은 Reuters가 독립 검증하지 못함. 운송·보험료·실제 공급 피해의 새 증거 부족",
+    "GitHub 기존 경고 3건 및 대화 속 이전 판단과 비교. analysis/events/ 및 analysis/daily/ 디렉터리 열람 실패로 전체 대조 불가"
   ]
 }
