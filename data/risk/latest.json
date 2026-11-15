@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T00:12:31Z",
+  "checked_at_utc": "2026-11-15T00:35:59Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 확인되지 않음. 주말 미국 현물시장 휴장. 11월 13일 IEA 원유 4분기 공급초과 전망(하루 170만 배럴) 및 비축유 방출은 기존 사건에 대한 완충 근거이며 신규 사건 아님. 호르무즈 선박 공격 관련 기존 보도는 독립적 신규 피해 및 시장 전이 검증 부족. 기존 high 잠정 유지; 최신 동시점 시장·신용 데이터 미확인.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 14일 Fortune의 연준·이란발 인플레이션 장기화 분석은 기존 금리·유가 위험의 해설이며 새 정책 결정이나 시장 전이 증거가 아님. 11월 14일 호르무즈 유조선 3척 기뢰 피격 이란 측 주장은 Reuters 독립 검증 불가이며 이전 점검에서 이미 다룬 사건. 11월 13일 StoneX 증시 분석은 기존 가격 움직임. 미국 주말 휴장으로 신규 정규장 데이터 없음; high 잠정 유지, 실시간 신용·변동성 데이터 부재.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -161,14 +161,15 @@
     }
   },
   "sources": [
-    "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/",
-    "https://www.reuters.com/business/energy/oil-releases-iea-emergency-stocks-pick-up-through-february-agency-says-2026-11-13/",
-    "https://www.reuters.com/business/finance/global-markets-flows-graphic-2026-11-13/"
+    "https://fortune.com/2026/11/14/federal-reserve-inflation-forever-war-iran-oil-prices-diesel-fed-rate-hikes/",
+    "https://www.reuters.com/world/middle-east/irans-navy-says-oil-tanker-fire-after-hitting-mine-hormuz-2026-11-14/",
+    "https://www.stonex.com/en-gb/news-and-analysis/sandp-500-forecast-spx-struggles-for-direction-ahead-of-ppi-data/"
   ],
   "data_limitations": [
-    "미국 주말 휴장: 신규 정규장 가격 없음; 마지막 거래일 2026-11-13",
-    "SOXX/VIX/회사채 스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 최신 동시점 독립 검증 불가",
-    "GitHub analysis/events 및 analysis/daily 전체 본문 대조 미완료",
-    "기존 alerts는 이전 검증 기록을 보존하며 이번 점검의 신규 사건으로 간주하지 않음"
+    "미국 주말 휴장, 마지막 미국 정규장 2026-11-13; 새 실시간 정규장 가격 없음",
+    "SOXX, VIX, 미국 실질금리, 신용스프레드, 유동성, 천연가스, 금, 구리, USD/KRW, 시장 폭의 최신 동시점 원자료 미검증",
+    "이란 측 유조선 기뢰 피격 주장은 Reuters가 독립 검증하지 못함",
+    "기존 GitHub analysis/events 및 analysis/daily 전체 본문 대조 미완료; 직전 위험 데이터 및 대화와 비교",
+    "기존 alerts 3건은 과거 기록으로 보존; 신규 경고 0건"
   ]
 }
