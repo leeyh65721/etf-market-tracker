@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T09:01:01Z",
+  "checked_at_utc": "2026-11-15T10:16:45Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP 11월 15일 바레인 방공망의 이란 발사체 요격 및 전국 경보를 확인. 직전 점검의 이란 드론 6대 공격 주장과 동일 사건의 추가 확인이며 레이더 파괴 주장 미확인. 원유시설 피해·공급 차질·시장 전이 확인되지 않아 위험 단계 변경 보류. 11월 13일 미국 종가 및 과거 반도체 약세를 새 사건으로 재분류하지 않음.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 15일 Reuters가 예멘 정부측 병력의 바브엘만데브 인근 철수 및 후티의 요충지 장악을 보도. 기존 중동 분쟁의 새로운 군사적 전개이나 실제 해상운송 중단·보험료 급등·원유 공급 차질 또는 ETF/신용시장 전이는 아직 검증되지 않아 경고 기준 미충족. 기존 바레인 요격·사우디 공격과 과거 SOXX 하락은 재경고하지 않음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -181,6 +181,10 @@
       "unit": "USD trillion",
       "observed_at_utc": null,
       "note": "FT 2026-11-15 기사: 6월 이후 누적 시총 감소 추정, 당일 하락 아님"
+    },
+    "bab_el_mandeb_redeployment_nov15": {
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-15 보도: 사우디 지원 예멘 정부군의 Dhubab/바브엘만데브 인근 철수. 정확한 철수 시각 및 선박 통항량·운임·보험료 변화 수치 미검증. 시장가격 아님."
     }
   },
   "sources": [
@@ -196,13 +200,15 @@
     "https://www.reuters.com/world/middle-east/bahrains-interior-ministry-issues-alerts-potential-threats-2026-11-15/",
     "https://apnews.com/article/3b4adde832dadd333451fd2f7a51908c",
     "https://www.reuters.com/world/middle-east/irans-guards-say-they-targeted-us-early-warning-radar-bahrain-2026-11-13/",
-    "https://www.reuters.com/legal/transactional/ai-debt-faces-pressure-democrats-prepare-take-over-congress-2026-11-10/"
+    "https://www.reuters.com/legal/transactional/ai-debt-faces-pressure-democrats-prepare-take-over-congress-2026-11-10/",
+    "https://www.reuters.com/world/middle-east/yemen-government-forces-withdraw-area-near-bab-el-mandeb-strait-houthis-control-2026-11-15/",
+    "https://www.thenationalnews.com/news/gulf/2026/11/15/bahrain-issues-first-nationwide-alert-in-months-as-iran-claims-attack-on-base-hosting-us-helicopters/"
   ],
   "data_limitations": [
-    "2026-11-15T09:01:01Z 점검; 미국 일요일 휴장, 마지막 정규장 11월 13일",
-    "바레인 방공망 요격 보도 확인, 레이더 피격·시설 피해 및 원유 공급 차질 독립 검증 불가",
-    "SOXX·VIX·미 국채 장단기/실질금리·회사채 스프레드·시장 폭·원자재·USD/KRW 최신 동시점 수치 미검증",
-    "GitHub 기존 events/daily 전체 대조 미완료; 기존 공유 위험 파일과 직전 대화 대조",
-    "신규 긴급 경고 없음; 기존 경고 3건 유지"
+    "2026-11-15T10:16:45Z 확인, 미국 일요일 휴장; 최근 미국 정규장은 11월 13일",
+    "바브엘만데브 주변 군사적 변화 확인, 실물 해운 차질·원유 수급 영향 및 금융시장 전이 미확인",
+    "SOXX/VIX/미 국채 장단기·실질금리/신용스프레드/유동성/시장 폭/천연가스·금·구리/달러·USD/KRW의 최신 동시점 수치 미확인",
+    "기존 공유 위험 파일과 대화 비교; events/daily 폴더 전체 파일 본문 대조 미완료",
+    "신규 긴급 경고 없음, 기존 경고 3건 유지"
   ]
 }
