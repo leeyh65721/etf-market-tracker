@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T04:29:14Z",
+  "checked_at_utc": "2026-11-15T05:42:21Z",
   "market_date": "2026-11-13",
   "risk_level": "high",
-  "change_since_previous": "11월 15일 사우디 요격 보도는 직전 점검에 반영된 사건. Al Jazeera는 리야드 미사일 2발·드론 2대라고 보도해 Reuters의 동부 지역 드론 3대와 집계 범위 차이가 있음. 신규 시설 피해·공급 차질·금융시장 전이 미확인. 11월 15일 미국 우량 회사채 강세 보도는 신용 경색 확정과 반대되는 근거이나 스프레드 동시점 수치 미확인. 기존 high 잠정 유지, 신규 긴급 경고 없음.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 15일 사우디 미사일 2발·동부 드론 3대 요격 보도는 이전 점검에 이미 반영. Al Jazeera의 드론 5대 집계는 토요일 2대와 일요일 3대를 합한 수치로 확인되어 동일 일요일 사건의 추가 악화가 아님. 신규 에너지 시설 피해·원유 공급 중단·신용시장 전이 미확인. 기존 high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -174,18 +174,17 @@
   },
   "sources": [
     "https://www.reuters.com/world/middle-east/saudi-led-coalition-intercepts-missiles-towards-riyadh-drones-eastern-province-2026-11-15/",
+    "https://www.aljazeera.com/news/2026/11/15/saudi-led-coalition-intercepts-two-missiles-two-drones-in-riyadh",
     "https://www.reuters.com/business/energy/us-diesel-below-6-gallon-2-month-low-easing-tensions-weaker-demand-2026-11-15/",
     "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/",
     "https://www.moneycontrol.com/news/opinion/commodity-markets-eye-fed-signals-nvidia-earnings-and-iran-risks-14080281.html",
-    "https://www.aljazeera.com/news/2026/11/15/saudi-led-coalition-intercepts-two-missiles-two-drones-in-riyadh",
     "https://www.business-standard.com/world-news/us-corporate-bonds-attract-investors-as-stock-market-turbulence-grows-126111500065_1.html"
   ],
   "data_limitations": [
-    "미국 일요일 휴장, 최신 주식 정규장 11월 13일",
-    "SOXX/VIX/신용스프레드/실질금리/천연가스/금/구리/USD-KRW/시장 폭 최신 동시점 가격 미검증",
-    "GitHub events/daily 디렉터리 전체 본문 대조 미완료; 이전 위험 파일 및 대화와 비교",
-    "새 긴급 경고 없음; 기존 경고 3건 보존",
-    "Reuters/Al Jazeera 요격 드론 수치의 보도 범위 차이; 신규 시설 피해 및 공급 차질 독립 검증 불가",
-    "2026-11-15 04:29 UTC 확인, 미국 주말 휴장; 실시간 동시점 시세 없음"
+    "2026-11-15 05:42 UTC 공개 보도 확인; 미국 일요일 휴장, 주식 최신 정규장 11월 13일",
+    "SOXX·VIX·회사채 신용스프레드·실질금리·천연가스·금·구리·USD/KRW·시장 폭 최신 동시점 수치 미검증",
+    "사우디 요격 정확한 발생 시각·신규 피해·공급 중단 독립 검증 불가",
+    "GitHub events/daily 전체 본문 대조 미완료; 기존 공유 위험 파일 및 대화와 비교",
+    "신규 경고 없음; 기존 경고 3건 유지"
   ]
 }
