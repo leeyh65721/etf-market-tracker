@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-16T22:19:10Z",
+  "checked_at_utc": "2026-11-16T22:40:32Z",
   "market_date": "2026-11-16",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 16일 미국 정규장 종가 Reuters/AP 교차확인: S&P500 -1.92%, Nasdaq -2.49%, Dow -1.41%, PHLX 반도체 -5.3%, NVDA -4.1%. Nasdaq 10월 6일 고점 대비 10% 이상 조정 진입, NYSE 하락/상승 3.45배·Nasdaq 3.27배로 시장 폭 약세 확인. 직전 장후반 Nasdaq -2.3%, S&P500 -1.9%, FT Nasdaq100 -2.8%와 비교해 위험이 새 단계로 현저히 상승했다는 증거는 부족. 기존 AI/반도체 약세 및 Nvidia CEO 사임의 연속. 반대 근거: S&P500 기업 이익 성장 전망 및 일부 비기술 업종으로의 자금 이동; 공식 신용 OAS·실질금리 동시점 확인 불가. 비중 긴급 변경 없음.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP 11월16일 미국 정규장 종가 및 기존 Nvidia/반도체 하락 사건 재확인; 직전 22:19 UTC 점검 대비 새로운 가격·시장폭·신용·정책 악화 증거 미확보. AP 10년물 5.13%, Brent $92.44(-3.5%) 보도는 이전 11월16일 시점이며 신용 경색의 신규 근거 아님. 11월17일 아시아 개장 전, 즉시 비중 변경 근거 부족.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -476,6 +476,12 @@
       "change_pct": -3.5,
       "observed_at_utc": null,
       "note": "AP 11월16일 보도, 거래소 개별 관측시각 미제공"
+    },
+    "us_treasury_10y_nov16_ap": {
+      "value": 5.13,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "AP 2026-11-16 종가 기사, 정확한 채권시장 관측시각 미제공; 현재 실시간 아님"
     }
   },
   "sources": [
@@ -565,6 +571,7 @@
     "Nov16 후속 AP/FT 시세 정확한 관측시각 및 종가 여부 불명. SOXX/VIX/공식 신용 OAS/실질금리/시장 폭/환율/원자재 동시점 재검증 불가; 전체 과거 사건·일일 파일 대조 미완료.",
     "2026-11-16T20:16:48Z 점검: 공식 동시점 SOXX/VIX/OAS/시장폭/실질금리 및 원자재·환율 전체 최신 관측 미확보. 기사 수치 관측시각·종가 여부 미확인. analysis/events 및 analysis/daily 전체 기록 대조 미완료.",
     "2026-11-16T20:50:34Z: SOXX·VIX·공식 OAS·실질금리·시장 폭 및 원자재·환율의 동시점 최신값 검증 불가. Reuters·FT·IBD 시세 관측시각 불일치. 기존 alerts 3건 비교; events/daily 전체 본문 대조 미완료.",
-    "2026-11-16T22:19:10Z: Reuters/AP 정규장 종가·시장 폭 검증. SOXX 직접 종가, 공식 VIX·OAS·실질금리, 2년물·환율·천연가스·구리의 최신 동시점 원자료 미확보. 기사 시세 및 브렌트 원거래소 체결시각 불명. GitHub 과거 events/daily 전체 본문 대조 미완료."
+    "2026-11-16T22:19:10Z: Reuters/AP 정규장 종가·시장 폭 검증. SOXX 직접 종가, 공식 VIX·OAS·실질금리, 2년물·환율·천연가스·구리의 최신 동시점 원자료 미확보. 기사 시세 및 브렌트 원거래소 체결시각 불명. GitHub 과거 events/daily 전체 본문 대조 미완료.",
+    "2026-11-16T22:40:32Z: Reuters/AP/WSJ/FT 11월16일 종가 보도 재확인. SOXX 직접 종가, 공식 VIX/OAS/실질금리, 2년물·가스·구리·USD/KRW 최신 동시점 원자료 미검증. 11월17일 아시아 장 개시 전. 기존 alerts 3건 비교, events/daily 전체 본문 대조 미완료."
   ]
 }
