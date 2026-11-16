@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-16T03:31:28Z",
+  "checked_at_utc": "2026-11-16T04:50:37Z",
   "market_date": "2026-11-16",
   "risk_level": "high",
-  "change_since_previous": "직전 02:49:45Z 대비 WSJ 아시아 반도체주 하락 심화 보도(Advantest -9.4%, Lasertec -8.8%, KOSPI -2.0%) 확인. 다만 기사별 장중 관측시각 불명, 미국 나스닥100 선물 +0.5% 및 S&P500 선물 +0.2% 보도와 유가 약세가 반대 근거이며 신규 신용·유동성 전이 확인 안 됨. 기존 Nvidia/반도체 사건의 추가 관찰 사항이나 즉시 비중 변경을 정당화하는 검증된 위험 단계 상승은 아님. 신규 긴급 경고 없음.",
+  "change_since_previous": "직전 03:31:28Z 대비 11월 16일 한국 코스피 -1.76%(01:12 UTC), SK하이닉스 -3.95%, 삼성전자 -1.82% Reuters 재인용 보도 확인. 직전 WSJ 코스피 -2.0%와 관측시각이 달라 악화로 단정 불가. 일본 반도체 약세·Nvidia CEO 관련 불확실성은 기존 사건의 연속. Reuters 원유 약세/IEA 공급초과 및 직전 미국 선물 상승은 반대 근거. 신규 광범위 신용·유동성 충격 검증 안 됨. 신규 긴급 경고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -267,6 +267,28 @@
       "sp500_change_pct": 0.2,
       "observed_at_utc": null,
       "note": "Bloomberg 재인용 Economic Times 2026-11-16 06:27 IST 보도, 실시간 동시점 확인 불가"
+    },
+    "kospi_nov16_reuters_via_et": {
+      "value": 5197.46,
+      "change_pct": -1.76,
+      "observed_at_utc": "2026-11-16T01:12:00Z",
+      "sk_hynix_change_pct": -3.95,
+      "samsung_change_pct": -1.82,
+      "note": "Economic Times 2026-11-16 09:28 IST, Reuters 인용. 이전 WSJ 스냅샷과 시점 불일치; 최신 종가 아님"
+    },
+    "oil_nov16_reuters_followup": {
+      "brent_usd_barrel": 95.3,
+      "wti_usd_barrel": 88.34,
+      "brent_change_pct": -0.6,
+      "wti_change_pct": -0.3,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-16 보도, 정확한 관측시각 미제공. 이전 기사 시세와 비교해 실시간 방향 판단 불가"
+    },
+    "us_treasury_nov16_secondary": {
+      "two_year_yield_pct": 4.86,
+      "ten_year_yield_pct": 5.14,
+      "observed_at_utc": null,
+      "note": "Ethivo 2026-11-16 2차 집계, 원거래소 시각 및 원자료 직접 검증 미완료. 당일 동시점 호가 아님"
     }
   },
   "sources": [
@@ -306,7 +328,9 @@
     "https://www.wsj.com/finance/stocks/nikkei-falls-0-1-dragged-by-electronics-metals-stocks-258e75e8",
     "https://www.wsj.com/finance/stocks/asian-equities-fall-as-u-s-chip-maker-share-selloff-spills-over-f6edc8d5",
     "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-subdued-as-us-futures-gain-nvidia-earnings-fed-minutes-in-focus/articleshow/135868964.cms",
-    "https://www.reuters.com/world/india/gold-edges-higher-investors-await-warsh-remarks-rate-signals-2026-11-16/"
+    "https://www.reuters.com/world/india/gold-edges-higher-investors-await-warsh-remarks-rate-signals-2026-11-16/",
+    "https://m.economictimes.com/markets/us-stocks/news/kospi-slips-as-samsung-sk-hynix-weigh-ahead-of-nvidia-earnings/articleshow/135872116.cms",
+    "https://www.ethivo-briefing.com/"
   ],
   "data_limitations": [
     "호르무즈 유조선 기뢰 피해 주장 및 실제 공급/해운 차질 독립 검증 미완료",
@@ -322,6 +346,7 @@
     "2026-11-16T01:06:20Z: 미국 현물시장 주말 휴장 후 월요일 개장 전. SOXX/VIX/실질금리/공식 OAS/시장 폭/천연가스·금·구리 최신 동시점 시세 미검증. 일본 GDP·원유·USD/KRW는 11월 16일 기사 기반이며 정확한 체결·발표 시각 불명. GitHub 사건/일일 디렉터리 목록 조회 성공, 전체 파일 본문 대조는 미완료.",
     "2026-11-16 01:24:57Z: 미국 정규장 개장 전. SOXX/VIX/국채 실질금리/공식 OAS/시장 폭/천연가스·금·구리 동시점 검증 불가. 일부 보도는 관측시각 미제공. Nvidia 복귀 가능성은 미확정 보도.",
     "2026-11-16T02:49:45Z: 미국 정규장 개장 전. SOXX/VIX/실질금리/공식 OAS/시장 폭/가스·금·구리 및 달러의 동시점 검증값 미확보. Reuters/WSJ 보도 시세는 정확한 관측시각 미제공. 기존 alerts 3건 비교; 과거 analysis/events·daily 전체 본문 대조 미완료.",
-    "2026-11-16T03:31:28Z: 미국 정규장 개장 전, 아시아 주식과 미국 선물의 보도 관측시각 불일치. SOXX/VIX/실질금리/공식 OAS/시장 폭/천연가스·금·구리 및 달러 동시점 검증 불가. 과거 사건 파일 전체 본문 대조 미완료."
+    "2026-11-16T03:31:28Z: 미국 정규장 개장 전, 아시아 주식과 미국 선물의 보도 관측시각 불일치. SOXX/VIX/실질금리/공식 OAS/시장 폭/천연가스·금·구리 및 달러 동시점 검증 불가. 과거 사건 파일 전체 본문 대조 미완료.",
+    "2026-11-16T04:50:37Z: 미국 정규장 개장 전. Reuters 재인용 한국 증시 시세는 01:12 UTC, WSJ 보도와 비동시점. 공식 OAS, 실질금리, 시장 폭, SOXX/VIX, 천연가스·구리, 달러·환율의 최신 동시점 검증 미완료. 과거 사건·일일 본문 전체 대조 미완료."
   ]
 }
