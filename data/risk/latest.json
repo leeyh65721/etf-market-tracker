@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-15T23:35:21Z",
-  "market_date": "2026-11-13",
+  "checked_at_utc": "2026-11-16T01:06:20Z",
+  "market_date": "2026-11-16",
   "risk_level": "high",
-  "change_since_previous": "직전 2026-11-15T22:34:15Z 대비 검증된 신규 긴급 사건 또는 기존 사건의 중대한 추가 악화 확인되지 않음. 11월 13일 미국 정규장 이후 주말 휴장; 11월 16일 아시아 장 시작 전. 기존 Nvidia 경영진 이슈, 중동 공격 및 원유 공급초과는 중복 보도. 신규 경고 없음. 기존 high 잠정 유지(실시간 위험지표 검증 부족).",
+  "change_since_previous": "직전 2026-11-15T23:35:21Z 대비 신규 긴급 경고 또는 기존 위험의 중대한 추가 악화 확인되지 않음. 일본 3분기 GDP 예상 하회(-0.1% 연율 대 +0.3% 예상)는 새 거시지표이나 광범위한 시장/신용 충격으로 전이된 증거 부족. 월요일 아시아 오전 WTI/Brent 소폭 하락 및 공급초과 전망은 기존 중동 위험에 대한 반대 근거. 기존 high 잠정 유지; 새 경고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -210,6 +210,28 @@
       "ten_year_yield_pct": 5.15,
       "observed_at_utc": null,
       "note": "Faircurve 11월 16일 게시, 11월 13일 종가 기반 수익률 추정/집계, 정확한 관측시각 미제공; 신규 실시간 시세 아님."
+    },
+    "japan_q3_gdp_nov16_reuters": {
+      "value": -0.1,
+      "unit": "percent annualized",
+      "forecast": 0.3,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-16 발표, 원자료 발표 정확한 시각 미확인; 예상보다 부진하나 일본 단독 지표"
+    },
+    "oil_nov16_wsjsnapshot": {
+      "wti_usd_barrel": 88.49,
+      "brent_usd_barrel": 95.48,
+      "wti_change_pct": -0.1,
+      "brent_change_pct": -0.4,
+      "observed_at_utc": null,
+      "note": "WSJ 2026-11-16 아시아 오전 보도; 체결시각 미표시·지연 가능, 동시점 정확성 미검증"
+    },
+    "usdkrw_nov16_wsjsnapshot": {
+      "value": 1333.9,
+      "unit": "KRW/USD",
+      "change_pct": -0.1,
+      "observed_at_utc": null,
+      "note": "WSJ 2026-11-16 아시아 오전 보도; 실시간 호가 아님"
     }
   },
   "sources": [
@@ -237,7 +259,11 @@
     "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-market-rally-nvidia-earnings-anthropic-ipo-spacex-starship-flight-15/",
     "https://www.moneycontrol.com/news/business/markets/dalal-street-week-ahead-wpi-inflation-crude-oil-among-10-key-factors-to-watch-14080497.html",
     "https://www.reuters.com/world/middle-east/two-oil-tankers-disabled-by-explosions-strait-hormuz-irgc-says-2026-11-12/",
-    "https://faircurve.io/insights/global-pulse/global-market-pulse-2026-11-16"
+    "https://faircurve.io/insights/global-pulse/global-market-pulse-2026-11-16",
+    "https://www.reuters.com/business/japans-economy-unexpectedly-shrinks-july-september-consumption-falters-2026-11-16/",
+    "https://www.wsj.com/finance/commodities-futures/oil-edges-lower-as-supply-surplus-prospects-offset-mideast-tensions-9105d9bf",
+    "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-but-may-be-weighed-by-risk-off-sentiment-bf41acaa",
+    "https://news.sbs.co.kr/english/article.do?news_id=N1008847082"
   ],
   "data_limitations": [
     "호르무즈 유조선 기뢰 피해 주장 및 실제 공급/해운 차질 독립 검증 미완료",
@@ -249,6 +275,7 @@
     "2026-11-15T22:05:41Z: 미국 주식 일요일 휴장; 마지막 정규장 11월 13일. SOXX/VIX/미국 장단기·실질금리/회사채 신용스프레드/시장 폭/WTI·Brent·가스·금·구리/USD·USD-KRW 최신 동시점 시세 미확인.",
     "2026-11-15T22:05:41Z: GitHub analysis/events 및 analysis/daily 디렉터리는 fetch_file로 조회 불가; 전체 본문 대조 미완료.",
     "2026-11-15T22:34:15Z: Reuters 및 시장 관련 검색으로 새 위험을 탐색했으나 미국 주식 주말 휴장, 아시아 월요일 장 개시 전. SOXX/VIX/금리/실질금리/신용스프레드/시장 폭/원자재/USD-KRW 동시점 최신값 미검증. GitHub 기존 경고 3건 대조; 과거 분석 전체 본문 대조 미완료.",
-    "2026-11-15T23:35:21Z 점검: 미국 주말 휴장, 11월 13일 종가 및 제3자 추정 신용/국채 수치만 일부 확인. SOXX/VIX/실질금리/시장 폭/원자재·환율의 최신 동시점 시세와 공식 신용 OAS 미확인. 기존 경고 3건 대조, analysis/events·daily 전체 본문 대조 미완료."
+    "2026-11-15T23:35:21Z 점검: 미국 주말 휴장, 11월 13일 종가 및 제3자 추정 신용/국채 수치만 일부 확인. SOXX/VIX/실질금리/시장 폭/원자재·환율의 최신 동시점 시세와 공식 신용 OAS 미확인. 기존 경고 3건 대조, analysis/events·daily 전체 본문 대조 미완료.",
+    "2026-11-16T01:06:20Z: 미국 현물시장 주말 휴장 후 월요일 개장 전. SOXX/VIX/실질금리/공식 OAS/시장 폭/천연가스·금·구리 최신 동시점 시세 미검증. 일본 GDP·원유·USD/KRW는 11월 16일 기사 기반이며 정확한 체결·발표 시각 불명. GitHub 사건/일일 디렉터리 목록 조회 성공, 전체 파일 본문 대조는 미완료."
   ]
 }
