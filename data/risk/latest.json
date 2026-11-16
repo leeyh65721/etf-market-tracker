@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-16T01:06:20Z",
+  "checked_at_utc": "2026-11-16T01:24:57Z",
   "market_date": "2026-11-16",
   "risk_level": "high",
-  "change_since_previous": "직전 2026-11-15T23:35:21Z 대비 신규 긴급 경고 또는 기존 위험의 중대한 추가 악화 확인되지 않음. 일본 3분기 GDP 예상 하회(-0.1% 연율 대 +0.3% 예상)는 새 거시지표이나 광범위한 시장/신용 충격으로 전이된 증거 부족. 월요일 아시아 오전 WTI/Brent 소폭 하락 및 공급초과 전망은 기존 중동 위험에 대한 반대 근거. 기존 high 잠정 유지; 새 경고 없음.",
+  "change_since_previous": "직전 01:06:20Z 대비 신규 긴급 위험 또는 기존 위험의 검증된 중대한 악화 없음. 11월 16일 SK하이닉스 공급망 투자 발표는 신규 정보지만 SOXX 투자 논리 훼손 또는 시장 전이 근거 없음. Nvidia CEO 관련 보도는 기존 11월 12일 사임 사건의 후속이며 복귀 검토는 미확정. 기존 high 잠정 유지; 신규 경고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -231,7 +231,13 @@
       "unit": "KRW/USD",
       "change_pct": -0.1,
       "observed_at_utc": null,
-      "note": "WSJ 2026-11-16 아시아 오전 보도; 실시간 호가 아님"
+      "note": "WSJ 11월 16일 아시아 오전 보도; 실시간 동시점 호가 아님"
+    },
+    "vix_nov12_fred_secondary": {
+      "value": 18.7,
+      "unit": "index",
+      "observed_at_utc": null,
+      "note": "FRED 재인용 사이트 11월 12일 종가, 공식 원자료 직접 대조 미완료; 11월 16일 시세 아님"
     }
   },
   "sources": [
@@ -263,7 +269,10 @@
     "https://www.reuters.com/business/japans-economy-unexpectedly-shrinks-july-september-consumption-falters-2026-11-16/",
     "https://www.wsj.com/finance/commodities-futures/oil-edges-lower-as-supply-surplus-prospects-offset-mideast-tensions-9105d9bf",
     "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-but-may-be-weighed-by-risk-off-sentiment-bf41acaa",
-    "https://news.sbs.co.kr/english/article.do?news_id=N1008847082"
+    "https://news.sbs.co.kr/english/article.do?news_id=N1008847082",
+    "https://www.reuters.com/world/asia-pacific/sk-hynix-spend-1-billion-over-five-years-support-chip-suppliers-2026-11-16/",
+    "https://maria.care/markets/rates/",
+    "https://www.investors.com/news/technology/jensen-huang-considers-returning-to-nvidia-stock/"
   ],
   "data_limitations": [
     "호르무즈 유조선 기뢰 피해 주장 및 실제 공급/해운 차질 독립 검증 미완료",
@@ -276,6 +285,7 @@
     "2026-11-15T22:05:41Z: GitHub analysis/events 및 analysis/daily 디렉터리는 fetch_file로 조회 불가; 전체 본문 대조 미완료.",
     "2026-11-15T22:34:15Z: Reuters 및 시장 관련 검색으로 새 위험을 탐색했으나 미국 주식 주말 휴장, 아시아 월요일 장 개시 전. SOXX/VIX/금리/실질금리/신용스프레드/시장 폭/원자재/USD-KRW 동시점 최신값 미검증. GitHub 기존 경고 3건 대조; 과거 분석 전체 본문 대조 미완료.",
     "2026-11-15T23:35:21Z 점검: 미국 주말 휴장, 11월 13일 종가 및 제3자 추정 신용/국채 수치만 일부 확인. SOXX/VIX/실질금리/시장 폭/원자재·환율의 최신 동시점 시세와 공식 신용 OAS 미확인. 기존 경고 3건 대조, analysis/events·daily 전체 본문 대조 미완료.",
-    "2026-11-16T01:06:20Z: 미국 현물시장 주말 휴장 후 월요일 개장 전. SOXX/VIX/실질금리/공식 OAS/시장 폭/천연가스·금·구리 최신 동시점 시세 미검증. 일본 GDP·원유·USD/KRW는 11월 16일 기사 기반이며 정확한 체결·발표 시각 불명. GitHub 사건/일일 디렉터리 목록 조회 성공, 전체 파일 본문 대조는 미완료."
+    "2026-11-16T01:06:20Z: 미국 현물시장 주말 휴장 후 월요일 개장 전. SOXX/VIX/실질금리/공식 OAS/시장 폭/천연가스·금·구리 최신 동시점 시세 미검증. 일본 GDP·원유·USD/KRW는 11월 16일 기사 기반이며 정확한 체결·발표 시각 불명. GitHub 사건/일일 디렉터리 목록 조회 성공, 전체 파일 본문 대조는 미완료.",
+    "2026-11-16 01:24:57Z: 미국 정규장 개장 전. SOXX/VIX/국채 실질금리/공식 OAS/시장 폭/천연가스·금·구리 동시점 검증 불가. 일부 보도는 관측시각 미제공. Nvidia 복귀 가능성은 미확정 보도."
   ]
 }
