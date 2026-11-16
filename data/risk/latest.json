@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-16T12:52:03Z",
+  "checked_at_utc": "2026-11-16T13:51:03Z",
   "market_date": "2026-11-16",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. FT 11월16일 미국 개장 전 Nasdaq100 선물 -1.5%, NVDA 프리마켓 -4.2%로 앞선 Reuters 보도(-0.97%, -2.2%)보다 약세가 심화된 정황. 보도별 개별 관측시각 불명으로 동일 시점 비교 불가. 필라델피아 반도체지수 10월 초 대비 -20% 이상은 누적 손실이지 신규 급락 아님. 유럽 STOXX600 +0.1%, Moody's 글로벌 은행 전망 stable, 유가 공급초과 전망은 광범위한 신용/유동성 전이 반대 근거. 미국 현물 개장 전 공식 OAS/VIX/SOXX 동시점 미확인. 기존 high 유지; 중대한 악화 경고 임계치 미확인.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월16일 미국 개장 전 FT Nasdaq100 선물 -1.5%, NVDA -4.2% 및 WSJ Nasdaq 선물 -1.7%, AMD/Intel/Micron 프리마켓 -5% 초과 보도는 기존 반도체 위험 지속·추가 약세 정황. 각 기사 시세 관측시각 불명, 12:52 UTC 직전 점검 대비 동시점 검증된 중대한 악화·신용 전이 확인 불가. Reuters 10:43 UTC 선물 -0.95%는 더 이른 관측. 유럽 STOXX600 안정, 유가 약세가 반대 근거. 기존 high 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -360,6 +360,18 @@
       "us_10y_yield_pct": 5.154,
       "observed_at_utc": "2026-11-16T10:34:00Z",
       "note": "Morgan Downey commodity dashboard: as of 05:34 ET (10:34 UTC); 2차 집계, 시장별 원거래소 체결시각 미검증. 현 점검보다 약 2시간 전."
+    },
+    "us_futures_nov16_wsj_preopen": {
+      "nasdaq100_change_pct": -1.7,
+      "sp500_change_pct": -0.7,
+      "observed_at_utc": null,
+      "note": "WSJ 2026-11-16 미국 개장 전 보도; 개별 호가시각 불명, 이전 FT·Reuters 자료와 비동시점"
+    },
+    "us_futures_nov16_reuters_1043utc": {
+      "nasdaq100_change_pct": -0.95,
+      "sp500_change_pct": -0.35,
+      "observed_at_utc": null,
+      "note": "Reuters 기사 10:43 UTC 게시, 호가 관측시각은 별도 미제공; 게시시각을 체결시각으로 간주하지 않음"
     }
   },
   "sources": [
@@ -414,7 +426,8 @@
     "https://www.reuters.com/markets/europe/european-shares-hover-near-record-highs-tech-stocks-lag-2026-11-16/",
     "https://www.ft.com/content/12d927a9-98b1-40b9-8f75-01fb56a693d1",
     "https://www.reuters.com/business/finance/global-banks-set-enter-2027-strong-footing-moodys-report-says-2026-11-16/",
-    "https://commoditynews.morgandowney.com/news/2026-11-16"
+    "https://commoditynews.morgandowney.com/news/2026-11-16",
+    "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-16/"
   ],
   "data_limitations": [
     "호르무즈 유조선 기뢰 피해 주장 및 실제 공급/해운 차질 독립 검증 미완료",
@@ -437,6 +450,7 @@
     "2026-11-16T09:59:09Z: 미국 현물시장 개장 전. 아시아 지수/미국 선물의 보도별 관측시각 비동기; SOXX/VIX/공식 OAS/실질금리/시장 폭/가스·구리·USD-KRW 최신 동시점 자료 미확보. 11월 16일 금리·금·원유 일부 2차 자료는 정확한 관측시각 미제공. 기존 경고 3건 대조, analysis/events·daily 전체 본문 대조 미완료.",
     "이번 점검 미국 SOXX/VIX/공식 OAS/시장 폭/실질금리/천연가스/구리/USD-KRW 최신 동시점 검증 불가; 일부 Reuters 기사 시세는 정확한 관측시각 미제공.",
     "analysis/events 및 analysis/daily 디렉터리 전체 본문 조회 실패; 이전 경고 JSON 및 대화와 비교함.",
-    "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료."
+    "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
+    "2026-11-16T13:51:03Z: 미국 정규장 개장 전, WSJ/Reuters/FT 선물 및 프리마켓 수치의 정확한 호가 시각 불명. SOXX·VIX·공식 신용 OAS·실질금리·시장 폭·USD/KRW 동시점 최신값 미검증. 기존 경고 3건 비교, events/daily 전체 본문 미대조."
   ]
 }
