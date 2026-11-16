@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-16T09:59:09Z",
+  "checked_at_utc": "2026-11-16T10:55:59Z",
   "market_date": "2026-11-16",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 16일 후속 보도에서 대만 Taiex -6%, 코스피 약 -3.6~4%, 닛케이 -2.4%로 이전 관측(-4.1/-2.8/-1.6%)보다 약세 확대. Nasdaq100 선물 -0.9%(06:46 CET 보도)로 이전 -0.2% 보도보다 약화했으나 서로 다른 관측시각이며 SOXX/VIX/공식 OAS/시장 폭 동시점 자료 없어 미국 신용·유동성 전이 또는 새로운 즉시 매매 필요성을 확정하지 못함. Nvidia CEO 사임 및 AI 투자 우려의 기존 사건 후속; high 유지, critical 격상 보류. FT는 광범위한 S&P500 전염이 아직 제한적이라고 평가.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월16일 미국 Nasdaq100 선물 -0.97%, S&P500 선물 -0.36%, NVDA 프리마켓 -2.2% 보도. 직전 나스닥 선물 -0.9%와 유사한 위험 수준이며 시세 관측시각 상이. 아시아 반도체 급락은 앞선 점검에서 이미 반영. 유럽 STOXX600 +0.1%로 광범위한 전이 반대 근거. 미국 신용 OAS/VIX/시장 폭 실시간 검증 부재로 critical 격상 근거 부족. 기존 high 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -329,6 +329,19 @@
       "wti_usd_barrel": 88.5,
       "observed_at_utc": null,
       "note": "WSJ 2026-11-16 보도, 정확한 관측시각 미제공"
+    },
+    "us_futures_nov16_reuters_later": {
+      "nasdaq100_change_pct": -0.97,
+      "sp500_change_pct": -0.36,
+      "nvda_premarket_change_pct": -2.2,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-16 기사; 정확한 개별 호가시각 미제공. 이전 관측과 비동시점."
+    },
+    "europe_stoxx600_nov16_reuters": {
+      "value": 664.97,
+      "change_pct": 0.1,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-16 유럽 장중, 정확한 시세 관측시각 미제공"
     }
   },
   "sources": [
@@ -378,7 +391,9 @@
     "https://uk.investing.com/news/stock-market-news/asia-stocks-slide-as-ai-jitters-deepen-ahead-of-nvidia-results-4983557",
     "https://www.reuters.com/markets/europe/global-markets-view-europe-2026-11-16/",
     "https://www.wsj.com/finance/investing/stock-futures-slip-ahead-of-pivotal-week-for-ai-trade-with-nvidia-anthropic-in-focus-c1768330",
-    "https://www.ft.com/content/a61f1fe9-55d9-498e-9ecc-c3a66980d63a"
+    "https://www.ft.com/content/a61f1fe9-55d9-498e-9ecc-c3a66980d63a",
+    "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/",
+    "https://www.reuters.com/markets/europe/european-shares-hover-near-record-highs-tech-stocks-lag-2026-11-16/"
   ],
   "data_limitations": [
     "호르무즈 유조선 기뢰 피해 주장 및 실제 공급/해운 차질 독립 검증 미완료",
@@ -398,6 +413,8 @@
     "2026-11-16T04:50:37Z: 미국 정규장 개장 전. Reuters 재인용 한국 증시 시세는 01:12 UTC, WSJ 보도와 비동시점. 공식 OAS, 실질금리, 시장 폭, SOXX/VIX, 천연가스·구리, 달러·환율의 최신 동시점 검증 미완료. 과거 사건·일일 본문 전체 대조 미완료.",
     "2026-11-16T05:34Z: 미국 11월 16일 정규장 개장 전; SOXX/VIX/공식 OAS/실질금리/시장 폭/가스·금·구리/USD-KRW 동시점 검증 미완료. AP 아시아 지수는 장중 기사이며 관측시각 미제공. GitHub 과거 전체 분석 본문 대조 미완료.",
     "2026-11-16T06:35:51Z: 미국 정규장 개장 전. SOXX/VIX/공식 신용 OAS/실질금리/시장 폭/천연가스·금·구리·DXY·USD/KRW 최신 동시점 검증 미완료; 아시아 지수·미국 선물 보도 시점 불일치. 기존 경고 3건 비교, 과거 분석 전체 본문 대조 미완료.",
-    "2026-11-16T09:59:09Z: 미국 현물시장 개장 전. 아시아 지수/미국 선물의 보도별 관측시각 비동기; SOXX/VIX/공식 OAS/실질금리/시장 폭/가스·구리·USD-KRW 최신 동시점 자료 미확보. 11월 16일 금리·금·원유 일부 2차 자료는 정확한 관측시각 미제공. 기존 경고 3건 대조, analysis/events·daily 전체 본문 대조 미완료."
+    "2026-11-16T09:59:09Z: 미국 현물시장 개장 전. 아시아 지수/미국 선물의 보도별 관측시각 비동기; SOXX/VIX/공식 OAS/실질금리/시장 폭/가스·구리·USD-KRW 최신 동시점 자료 미확보. 11월 16일 금리·금·원유 일부 2차 자료는 정확한 관측시각 미제공. 기존 경고 3건 대조, analysis/events·daily 전체 본문 대조 미완료.",
+    "이번 점검 미국 SOXX/VIX/공식 OAS/시장 폭/실질금리/천연가스/구리/USD-KRW 최신 동시점 검증 불가; 일부 Reuters 기사 시세는 정확한 관측시각 미제공.",
+    "analysis/events 및 analysis/daily 디렉터리 전체 본문 조회 실패; 이전 경고 JSON 및 대화와 비교함."
   ]
 }
