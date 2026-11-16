@@ -1,0 +1,25 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-17-MARKET-no_new_candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-11-16",
+  "original_report_date_kst": "2026-11-17",
+  "archived_on_utc_date": "2026-11-16",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-11-17.md",
+  "verbatim_source_excerpt": "**새 매수 후보 없음**: 현재 공식 확인된 즉시 체결 가능 신규 ETF 진입 신호 없음. 11월 13일 기술 후보는 별도 watch_only.",
+  "original_close_usd": null,
+  "original_spy_close_usd": null,
+  "thesis": "No newly confirmed executable ETF buy signal because current ETF OHLCV, intraday triggers, AUM/spread and health are not validated.",
+  "counterevidence": "A rapid reversal may create opportunities before the next daily report; stale technical screen shows PHO/FSTA/JETS/VDC watch candidates.",
+  "invalidation": "Fresh November 16/17 ETF prices, AUM/spreads, SPY relative strength and an observed intraday trigger meeting risk/reward requirements.",
+  "revisit_trigger": "Review intraday on the next US session and evaluate after 5/10/20 NYSE sessions, not a filled trade.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false
+}
