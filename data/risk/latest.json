@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-16T04:50:37Z",
+  "checked_at_utc": "2026-11-16T05:34:00Z",
   "market_date": "2026-11-16",
   "risk_level": "high",
-  "change_since_previous": "직전 03:31:28Z 대비 11월 16일 한국 코스피 -1.76%(01:12 UTC), SK하이닉스 -3.95%, 삼성전자 -1.82% Reuters 재인용 보도 확인. 직전 WSJ 코스피 -2.0%와 관측시각이 달라 악화로 단정 불가. 일본 반도체 약세·Nvidia CEO 관련 불확실성은 기존 사건의 연속. Reuters 원유 약세/IEA 공급초과 및 직전 미국 선물 상승은 반대 근거. 신규 광범위 신용·유동성 충격 검증 안 됨. 신규 긴급 경고 없음.",
+  "change_since_previous": "11월 16일 AP 장중 보도: 대만 -4.1%, 한국 코스피 -2.8%, 일본 닛케이 -1.6%로 아시아 반도체 중심 약세 지속. 직전 코스피 -1.76%와 시점이 달라 낙폭 확대 가능성은 있으나 미국 현물·공식 신용지표 전이 미확인. Reuters LNG 유럽 재고 부족(11월 11일 기준 810TWh, 10년 평균보다 약 20% 낮음)은 에너지 위험 지속 근거지만 신규 공급 차질 아님. 원유 약세와 기존 글로벌 주식자금 유입은 반대 근거. 기존 Nvidia/반도체 사건의 새 긴급 악화 기준 충족 미확인; 신규 경고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -289,6 +289,20 @@
       "ten_year_yield_pct": 5.14,
       "observed_at_utc": null,
       "note": "Ethivo 2026-11-16 2차 집계, 원거래소 시각 및 원자료 직접 검증 미완료. 당일 동시점 호가 아님"
+    },
+    "asia_nov16_ap_later": {
+      "kospi_change_pct": -2.8,
+      "nikkei_change_pct": -1.6,
+      "taiex_change_pct": -4.1,
+      "observed_at_utc": null,
+      "note": "AP 2026-11-16 장중 기사; 개별 지수 정확한 관측시각 미제공, 이전 보도와 비동시점"
+    },
+    "europe_gas_storage_nov11_reuters": {
+      "value": 810,
+      "unit": "TWh EU+UK",
+      "below_ten_year_average_pct": 20,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-16 commentary, 11월 11일 재고 관측, 실시간 가격 아님"
     }
   },
   "sources": [
@@ -330,7 +344,11 @@
     "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-subdued-as-us-futures-gain-nvidia-earnings-fed-minutes-in-focus/articleshow/135868964.cms",
     "https://www.reuters.com/world/india/gold-edges-higher-investors-await-warsh-remarks-rate-signals-2026-11-16/",
     "https://m.economictimes.com/markets/us-stocks/news/kospi-slips-as-samsung-sk-hynix-weigh-ahead-of-nvidia-earnings/articleshow/135872116.cms",
-    "https://www.ethivo-briefing.com/"
+    "https://www.ethivo-briefing.com/",
+    "https://apnews.com/article/35786b8f539ec95f16ae0500f71cfcc7",
+    "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-16/",
+    "https://www.reuters.com/commentary/reuters-open-interest/europe-draws-lng-asia-not-fast-enough-2026-11-16/",
+    "https://www.reuters.com/business/finance/global-markets-flows-graphic-2026-11-13/"
   ],
   "data_limitations": [
     "호르무즈 유조선 기뢰 피해 주장 및 실제 공급/해운 차질 독립 검증 미완료",
@@ -347,6 +365,7 @@
     "2026-11-16 01:24:57Z: 미국 정규장 개장 전. SOXX/VIX/국채 실질금리/공식 OAS/시장 폭/천연가스·금·구리 동시점 검증 불가. 일부 보도는 관측시각 미제공. Nvidia 복귀 가능성은 미확정 보도.",
     "2026-11-16T02:49:45Z: 미국 정규장 개장 전. SOXX/VIX/실질금리/공식 OAS/시장 폭/가스·금·구리 및 달러의 동시점 검증값 미확보. Reuters/WSJ 보도 시세는 정확한 관측시각 미제공. 기존 alerts 3건 비교; 과거 analysis/events·daily 전체 본문 대조 미완료.",
     "2026-11-16T03:31:28Z: 미국 정규장 개장 전, 아시아 주식과 미국 선물의 보도 관측시각 불일치. SOXX/VIX/실질금리/공식 OAS/시장 폭/천연가스·금·구리 및 달러 동시점 검증 불가. 과거 사건 파일 전체 본문 대조 미완료.",
-    "2026-11-16T04:50:37Z: 미국 정규장 개장 전. Reuters 재인용 한국 증시 시세는 01:12 UTC, WSJ 보도와 비동시점. 공식 OAS, 실질금리, 시장 폭, SOXX/VIX, 천연가스·구리, 달러·환율의 최신 동시점 검증 미완료. 과거 사건·일일 본문 전체 대조 미완료."
+    "2026-11-16T04:50:37Z: 미국 정규장 개장 전. Reuters 재인용 한국 증시 시세는 01:12 UTC, WSJ 보도와 비동시점. 공식 OAS, 실질금리, 시장 폭, SOXX/VIX, 천연가스·구리, 달러·환율의 최신 동시점 검증 미완료. 과거 사건·일일 본문 전체 대조 미완료.",
+    "2026-11-16T05:34Z: 미국 11월 16일 정규장 개장 전; SOXX/VIX/공식 OAS/실질금리/시장 폭/가스·금·구리/USD-KRW 동시점 검증 미완료. AP 아시아 지수는 장중 기사이며 관측시각 미제공. GitHub 과거 전체 분석 본문 대조 미완료."
   ]
 }
