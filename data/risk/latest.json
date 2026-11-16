@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-16T17:27:27Z",
+  "checked_at_utc": "2026-11-16T18:50:44Z",
   "market_date": "2026-11-16",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. AP 11월16일 후속 장중 S&P500 -1.2%, Nasdaq -1.7%, Dow -0.8%, NVDA -2.3%, 미국 10년물 약 5.14%: 직전 AP 장중 -1.1%/-1.6% 대비 소폭 약세지만 정확한 개별 관측시각 불명, 반도체 약세·Nvidia 경영진/실적 불확실성의 연속. FT의 Nasdaq100 -2% 초과 및 Nvidia -3.2%도 기존 추적 사건. 신규 공식 신용·유동성 충격 또는 긴급 비중 변경 필요성을 검증하지 못함.",
+  "change_since_previous": "신규 긴급 경고 없음. AP 11월16일 후속 보도 S&P500 -2%, Nasdaq -1.9%, Dow -1.4%, Nvidia -4.6%: 이전 장중 관측보다 광범위한 약세 심화 정황. FT Nasdaq100 -2.5% 초과 및 유럽 증시 상대적 안정. 기존 AI·반도체 매도 및 Nvidia 경영진 사임 사건의 연속이며, 공식 동시점 SOXX/VIX/신용스프레드·시장폭 미확보로 새로운 위험 단계 상승이나 즉시 비중 변경을 확정할 수 없음. 보도 시세의 정확한 거래시각 미확인.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -414,6 +414,19 @@
       "us_10y_yield_pct": 5.14,
       "observed_at_utc": null,
       "note": "AP 2026-11-16 후속 기사, 개별 호가 관측시각 미표시. Reuters 09:58 ET 및 이전 AP 수치와 동시점 아님."
+    },
+    "us_market_nov16_ap_later_report": {
+      "sp500_change_pct": -2,
+      "nasdaq_change_pct": -1.9,
+      "dow_change_pct": -1.4,
+      "nvda_change_pct": -4.6,
+      "observed_at_utc": null,
+      "note": "AP Nov 16 후속 보도, 정확한 거래소 관측시각 미제공. 정규장 최종 종가 여부 미확인. 직전 장중 값과 비동시점."
+    },
+    "nasdaq100_nov16_ft_later": {
+      "change_pct_upper_bound": -2.5,
+      "observed_at_utc": null,
+      "note": "FT Nov16 'more than 2.5%' 장중, 정확한 시각 불명"
     }
   },
   "sources": [
@@ -498,6 +511,7 @@
     "2026-11-16T15:40:08Z: 미국 장중 Reuters 14:58 UTC와 AP/FT 시세는 관측시각 불일치. SOXX·VIX·공식 회사채 OAS·실질금리·시장 폭·USD/KRW·천연가스·구리의 최신 동시점 자료 미확보. 과거 analysis/events·daily 전체 본문 대조 미완료.",
     "2026-11-16T15:57:11Z: 미국 장중 SOXX/VIX/공식 신용 OAS/실질금리/시장 폭/원자재·환율의 최신 동시점 원자료 미검증. AP/FT 보도는 직전 점검과 중복; 기존 경고 3건 대조, events/daily 전체 본문 미대조.",
     "2026-11-16T17:03:10Z: AP 후속 지수 수치는 정확한 관측시각 불명, 앞선 AP 수치와 동시점 아님. SOXX/VIX/공식 OAS/실질금리/시장 폭/원자재·환율의 최신 동시점 원자료 미확보. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
-    "2026-11-16T17:27:27Z: AP/FT/Reuters 미국 장중 기사 시세의 개별 관측시각 불명. SOXX·VIX·공식 회사채 OAS·실질금리·시장 폭·가스·구리·USD/KRW의 최신 동시점 원자료 미검증. 과거 events/daily 전체 본문 대조 미완료."
+    "2026-11-16T17:27:27Z: AP/FT/Reuters 미국 장중 기사 시세의 개별 관측시각 불명. SOXX·VIX·공식 회사채 OAS·실질금리·시장 폭·가스·구리·USD/KRW의 최신 동시점 원자료 미검증. 과거 events/daily 전체 본문 대조 미완료.",
+    "Nov16 후속 AP/FT 시세 정확한 관측시각 및 종가 여부 불명. SOXX/VIX/공식 신용 OAS/실질금리/시장 폭/환율/원자재 동시점 재검증 불가; 전체 과거 사건·일일 파일 대조 미완료."
   ]
 }
