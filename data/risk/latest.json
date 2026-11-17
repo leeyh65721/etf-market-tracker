@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T20:19:13Z",
+  "checked_at_utc": "2026-11-17T21:11:39Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 최신 접근 가능 기사 지수 하락(다우 -1.58%, S&P500 -1.21%, 나스닥 -1.13%)과 AP 13:24 ET 장중(다우 약 -1.4%, S&P500 -1.1%, 나스닥 -1.0%)은 기존 11:58 ET 시장 폭 악화 경고를 넘어서는 중대한 추가 악화를 입증하지 않음. 서로 다른 시점 수치를 직접 증감 비교하지 않음. HIGH 유지, 기존 경고 4건 유지. Nvidia 실적 발표 전.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP 11월17일 미국 정규장 종가 보도에서 장중 급락 후 일부 낙폭 축소; 기존 17:45 UTC 미국 시장 폭 악화 경고의 새로운 위험 단계 상승은 입증되지 않음. AI/반도체 불확실성 지속, HIGH 유지. 기존 경고 4건 보존.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -712,6 +712,13 @@
       "brent_usd_barrel": 93.4,
       "observed_at_utc": "2026-11-17T18:24:00Z",
       "note": "AP 13:24 ET 장중 기사, 지수 반올림; 금리·원유는 기사 내 값으로 개별 체결시각 불명. Reuters 이전 관측과 비교해 반등/악화 단정 금지."
+    },
+    "us_equities_nov17_ap_close": {
+      "sp500_change_pct": -1,
+      "dow_change_pct": -1.6,
+      "nasdaq_change_pct": -0.7,
+      "observed_at_utc": "2026-11-17T21:00:00Z",
+      "note": "AP Nov17 regular session closing report, rounded; 21:00Z scheduled close, precise quote timestamps not verified; Reuters separately confirms lower close"
     }
   },
   "sources": [
@@ -809,6 +816,7 @@
     "2026-11-17T18:34:20Z: Reuters intraday article latest update inaccessible; secondary 17:30Z quote is older than prior 17:58Z Reuters observation; cannot infer subsequent price move.",
     "Current official SOXX/VIX/credit OAS/real yield/market breadth/natural gas/copper/USD-KRW synchronized observations unavailable; no definitive liquidity-crisis exclusion.",
     "Prior analysis/events and analysis/daily full-text comparison not completed this run; preserved existing alert IDs.",
-    "2026-11-17T20:19:13Z: Reuters 최신 기사 정확한 시세 관측시각 불명, AP 13:24 ET는 장중/지연 가격. SOXX 직접 시세, 공식 VIX/회사채 OAS/실질금리/시장 폭 최신, 천연가스·구리·USD/KRW 동시점 원자료 미검증. Nvidia 실적 발표 여부 직접 확인 미완료; events/daily 전체 본문 대조 미완료. 신용·유동성 충격 부재 확정 불가."
+    "2026-11-17T20:19:13Z: Reuters 최신 기사 정확한 시세 관측시각 불명, AP 13:24 ET는 장중/지연 가격. SOXX 직접 시세, 공식 VIX/회사채 OAS/실질금리/시장 폭 최신, 천연가스·구리·USD/KRW 동시점 원자료 미검증. Nvidia 실적 발표 여부 직접 확인 미완료; events/daily 전체 본문 대조 미완료. 신용·유동성 충격 부재 확정 불가.",
+    "2026-11-17T21:11:39Z: Reuters/AP 종가 보도 확인. Nvidia 장마감후 실적 발표 결과 직접 확인 불가. SOXX 직접 종가·공식 VIX/OAS/실질금리·가스·구리·USD/KRW 최신 동시점 원자료 미검증. Reuters/AP 정규장 종가와 이전 장중 시세는 비동시점. 과거 events/daily 전체 본문 대조 미완료."
   ]
 }
