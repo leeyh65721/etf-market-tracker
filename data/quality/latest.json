@@ -1,28 +1,28 @@
 {
-  "asof": "2026-11-13",
-  "locked_sessions": 19,
+  "asof": "2026-11-16",
+  "locked_sessions": 20,
   "signal_count": 76,
   "summaries": {
     "5": {
       "signals": 76,
-      "observed": 59,
-      "pending": 17,
+      "observed": 60,
+      "pending": 16,
       "unverifiable": 0,
       "outperformed_spy_count": 37,
-      "observed_outperformance_fraction": 0.62712,
-      "mean_excess_pp": -0.42833,
-      "median_excess_pp": 1.65099,
+      "observed_outperformance_fraction": 0.61667,
+      "mean_excess_pp": -0.57669,
+      "median_excess_pp": 1.61416,
       "assessment": "exploratory_only"
     },
     "10": {
       "signals": 76,
-      "observed": 42,
-      "pending": 34,
+      "observed": 46,
+      "pending": 30,
       "unverifiable": 0,
-      "outperformed_spy_count": 30,
-      "observed_outperformance_fraction": 0.71429,
-      "mean_excess_pp": 0.95569,
-      "median_excess_pp": 2.81185,
+      "outperformed_spy_count": 31,
+      "observed_outperformance_fraction": 0.67391,
+      "mean_excess_pp": 0.58957,
+      "median_excess_pp": 2.74961,
       "assessment": "exploratory_only"
     },
     "20": {
@@ -1400,7 +1400,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-02",
       "reference_exit_day": "2026-11-16",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -4.854,
+      "spy_price_return_pct": -1.61548,
+      "excess_vs_spy_pp": -3.23852,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-10-30",
@@ -1428,7 +1432,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-02",
       "reference_exit_day": "2026-11-16",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -7.58646,
+      "spy_price_return_pct": -1.61548,
+      "excess_vs_spy_pp": -5.97098,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-10-30",
@@ -1456,7 +1464,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-02",
       "reference_exit_day": "2026-11-16",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": 1.19895,
+      "spy_price_return_pct": -1.61548,
+      "excess_vs_spy_pp": 2.81443,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-10-30",
@@ -1484,7 +1496,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-02",
       "reference_exit_day": "2026-11-16",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -8.23914,
+      "spy_price_return_pct": -1.61548,
+      "excess_vs_spy_pp": -6.62366,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-10-30",
@@ -1864,7 +1880,11 @@
       "sessions_held": 5,
       "reference_entry_day": "2026-11-09",
       "reference_exit_day": "2026-11-16",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -11.02258,
+      "spy_price_return_pct": -1.6926,
+      "excess_vs_spy_pp": -9.32998,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-11-06",
@@ -2267,12 +2287,12 @@
       "result": "pending"
     }
   ],
-  "generated_at_utc": "2026-11-13T23:59:04.005399+00:00",
+  "generated_at_utc": "2026-11-17T00:05:03.040890+00:00",
   "new_daily_lock_created": true,
-  "locked_current_us_date": "2026-11-13",
-  "current_technical_candidate_entries": 1,
+  "locked_current_us_date": "2026-11-16",
+  "current_technical_candidate_entries": 0,
   "latest_verified_universe_fraction": 0.95467,
-  "last_expected_closed_us_session": "2026-11-13",
+  "last_expected_closed_us_session": "2026-11-16",
   "warnings": [],
   "status": "OK",
   "interpretation": "Audit of technical-screen transitions ONLY, not ChatGPT ETF buy/hold recommendations. Next-session-close to subsequent-close is an observation proxy, NOT a tradable fill. The Yahoo auto-adjusted closes in separate frozen downloads may be revised around distributions, splits and provider corrections. Do not claim total-return accuracy, causality, live execution, or strategy superiority. No fees, FX or slippage included. A prospective sample of 30+ observations is exploratory, not proof."

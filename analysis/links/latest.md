@@ -1,8 +1,8 @@
-# 경제지표 관측과 ETF 시장 움직임 — 2026-11-13 미국장
+# 경제지표 관측과 ETF 시장 움직임 — 2026-11-16 미국장
 
 > **단순 동시 관측 표. 인과관계·예측력·매수신호가 아님.**
-- 작성(UTC): 2026-11-14T00:00:54.389604+00:00
-- ETF 가격 관측일: 2026-11-12 → 2026-11-13
+- 작성(UTC): 2026-11-17T00:06:31.041366+00:00
+- ETF 가격 관측일: 2026-11-13 → 2026-11-16
 - 검증된 대표 ETF 종가 쌍: 17/17
 - 거시지표 관측 기간과 실제 발표 시각은 다를 수 있음. 경제지표가 ETF를 움직였다고 단정하지 않음.
 
@@ -10,38 +10,38 @@
 
 |ETF|시장 노출|가격 변화(%)|SPY 대비(pp)|데이터 상태|
 |---|---|---:|---:|---|
-|SPY|미국 대형주 기준|-0.363%|+0.000pp|observed|
-|SOXX|반도체|-3.671%|-3.308pp|observed|
-|XLK|기술|-2.008%|-1.645pp|observed|
-|XLE|에너지|+0.979%|+1.343pp|observed|
-|XLF|금융|+0.807%|+1.171pp|observed|
-|XLP|필수소비재|+1.417%|+1.780pp|observed|
-|XLV|헬스케어|+0.543%|+0.906pp|observed|
-|XLI|산업재|-0.390%|-0.026pp|observed|
-|XLU|유틸리티|+0.525%|+0.888pp|observed|
-|XLY|경기소비재|-0.399%|-0.035pp|observed|
-|XLB|소재|-0.210%|+0.153pp|observed|
-|XLC|커뮤니케이션서비스|+1.051%|+1.414pp|observed|
-|IWM|중소형주|-0.323%|+0.040pp|observed|
-|TLT|장기 국채|-0.426%|-0.063pp|observed|
-|IEF|중기 국채|-0.188%|+0.175pp|observed|
-|HYG|하이일드 채권 ETF|-0.052%|+0.311pp|observed|
-|LQD|우량 회사채 ETF|-0.233%|+0.130pp|observed|
+|SPY|미국 대형주 기준|-1.911%|+0.000pp|observed|
+|SOXX|반도체|-5.412%|-3.500pp|observed|
+|XLK|기술|-3.242%|-1.330pp|observed|
+|XLE|에너지|-1.955%|-0.043pp|observed|
+|XLF|금융|-0.852%|+1.059pp|observed|
+|XLP|필수소비재|+0.271%|+2.182pp|observed|
+|XLV|헬스케어|-0.514%|+1.398pp|observed|
+|XLI|산업재|-1.849%|+0.063pp|observed|
+|XLU|유틸리티|+0.182%|+2.093pp|observed|
+|XLY|경기소비재|-1.525%|+0.386pp|observed|
+|XLB|소재|-1.455%|+0.456pp|observed|
+|XLC|커뮤니케이션서비스|-1.720%|+0.191pp|observed|
+|IWM|중소형주|-1.657%|+0.254pp|observed|
+|TLT|장기 국채|+0.000%|+1.911pp|observed|
+|IEF|중기 국채|+0.222%|+2.134pp|observed|
+|HYG|하이일드 채권 ETF|-0.273%|+1.639pp|observed|
+|LQD|우량 회사채 ETF|-0.010%|+1.902pp|observed|
 
 ## 공식 수집 거시지표 — 각 지표의 자체 관측 시차
 
 |지표|최근 관측일|측정값|전 관측 변화|같은 시장일 관측?|출처|
 |---|---|---:|---:|---|---|
-|T2Y|2026-11-13|4.88 %|+0.02 %|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
-|T10Y|2026-11-13|5.15 %|+0.05 %|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
-|T10Y_REAL|2026-11-13|2.91 %|+0.05 %|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
-|T10Y2Y|2026-11-13|0.27 %p|+0.03 %p|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
-|VIX|2026-11-12|18.7 index|+1.21 index|아니오|[기관](https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv)|
-|VVIX|2026-11-13|101.53 index|+4.82 index|예(발표시각 미확인)|[기관](https://cdn.cboe.com/api/global/us_indices/daily_prices/VVIX_History.csv)|
+|T2Y|2026-11-16|4.83 %|-0.05 %|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
+|T10Y|2026-11-16|5.12 %|-0.03 %|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
+|T10Y_REAL|2026-11-16|2.92 %|+0.01 %|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
+|T10Y2Y|2026-11-16|0.29 %p|+0.02 %p|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
+|VIX|2026-11-13|19.3 index|+0.6 index|아니오|[기관](https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv)|
+|VVIX|2026-11-16|114.23 index|+12.7 index|예(발표시각 미확인)|[기관](https://cdn.cboe.com/api/global/us_indices/daily_prices/VVIX_History.csv)|
 |WTI|2026-11-11|89.62 USD/barrel|+0 USD/barrel|아니오|[기관](https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls)|
 |BRENT|2026-11-11|92.14 USD/barrel|+1.98 USD/barrel|아니오|[기관](https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls)|
-|EFFR|2026-11-12|3.88 %|+0 %|아니오|[기관](https://markets.newyorkfed.org/api/rates/unsecured/effr/last/120.json)|
-|SOFR|2026-11-12|3.9 %|+0.01 %|아니오|[기관](https://markets.newyorkfed.org/api/rates/secured/sofr/last/120.json)|
+|EFFR|2026-11-13|3.88 %|+0 %|아니오|[기관](https://markets.newyorkfed.org/api/rates/unsecured/effr/last/120.json)|
+|SOFR|2026-11-13|3.9 %|+0 %|아니오|[기관](https://markets.newyorkfed.org/api/rates/secured/sofr/last/120.json)|
 |CPI_HEADLINE|2026-10-01|337.476 index|+1.178 index|아니오|[기관](https://api.bls.gov/publicAPI/v2/timeseries/data/CUSR0000SA0)|
 |CPI_CORE|2026-10-01|339.9 index|+1.004 index|아니오|[기관](https://api.bls.gov/publicAPI/v2/timeseries/data/CUSR0000SA0L1E)|
 |PPI_FD|2026-10-01|160.248 index|+0.713 index|아니오|[기관](https://api.bls.gov/publicAPI/v2/timeseries/data/WPUFD4)|
@@ -55,12 +55,12 @@
 |MFG_NEW_ORDERS|2026-09-01|1.8 % m/m|비교 원자료 없음|아니오|[기관](https://www.census.gov/manufacturing/m3/current/index.html)|
 |DURABLE_NEW_ORDERS|2026-09-01|1.8 % m/m|비교 원자료 없음|아니오|[기관](https://www.census.gov/manufacturing/m3/adv/current/index.html)|
 |REAL_GDP|2026-07-01|3.4 % q/q annualized|비교 원자료 없음|아니오|[기관](https://www.bea.gov/data/gdp/gross-domestic-product)|
-|SP500_BREADTH|2026-11-13|62.6243 % constituents up|비교 원자료 없음|예(발표시각 미확인)|[기관](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies)|
+|SP500_BREADTH|2026-11-16|28.827 % constituents up|비교 원자료 없음|예(발표시각 미확인)|[기관](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies)|
 |AVG_WEEKLY_HOURS|2026-10-01|34.4 hours|+0 hours|아니오|[기관](https://api.bls.gov/publicAPI/v2/timeseries/data/CES0500000002)|
 |CPI_SHELTER|2026-10-01|433.224 index|+1.316 index|아니오|[기관](https://api.bls.gov/publicAPI/v2/timeseries/data/CUSR0000SAH1)|
-|EUR_USD_ECB|2026-11-13|1.1052 USD/EUR|-0.0029 USD/EUR|예(발표시각 미확인)|[기관](https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml)|
+|EUR_USD_ECB|2026-11-16|1.1014 USD/EUR|-0.0038 USD/EUR|예(발표시각 미확인)|[기관](https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml)|
 |LFPR|2026-10-01|61.9 %|+0.1 %|아니오|[기관](https://api.bls.gov/publicAPI/v2/timeseries/data/LNS11300000)|
-|USD_KRW_ECB|2026-11-13|1337.13 KRW/USD|+3.03013 KRW/USD|예(발표시각 미확인)|[기관](https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml)|
+|USD_KRW_ECB|2026-11-16|1334.87 KRW/USD|-2.25975 KRW/USD|예(발표시각 미확인)|[기관](https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml)|
 
 ## 자료 품질 및 해석 범위
 
