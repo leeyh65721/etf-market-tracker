@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T05:58:39Z",
+  "checked_at_utc": "2026-11-17T06:24:50Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 17일 아시아 기술주 하락과 미국 AI칩 해외 데이터센터 접근 제한은 이전 점검에서 이미 반영. Reuters/AP/FT/WSJ 및 Bloomberg 보도에서 확인된 추가 정보는 동일 위험의 연속으로, 직전 대비 위험단계 상향이나 긴급 배분 변경을 입증할 동시점 신용·변동성 자료 부족.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP/FT/Bloomberg 11월17일 보도는 기존 AI칩 수출·원격컴퓨팅 제한과 아시아 기술주 약세의 연속. Bloomberg MSCI 아시아태평양 -1.2%, Nasdaq100 선물 +0.3%는 기사 관측시각 불명이며 이전 위험단계 상향 근거 부족. 기존 alerts 3건 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -559,6 +559,12 @@
       "brent_usd_barrel": 92.15,
       "wti_usd_barrel": 85.39,
       "note": "WSJ 2026-11-17 보도 시세, 정확한 체결시각 미표시, 실시간 아님"
+    },
+    "asia_nov17_bloomberg_followup": {
+      "msci_asia_pacific_change_pct": -1.2,
+      "nasdaq100_futures_change_pct": 0.3,
+      "observed_at_utc": null,
+      "note": "Bloomberg 2026-11-17 보도, 개별 호가 시각 미표시; Reuters/FT 장중 수치와 동시점 비교 불가"
     }
   },
   "sources": [
@@ -605,7 +611,8 @@
     "https://dailymarket.report/archive/2026-11-16.html",
     "https://apnews.com/article/4d5a35288288389d894e63e6bebe8240",
     "https://www.ft.com/content/4a3b9892-67c6-4177-8503-80c0a5eb3b60",
-    "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812"
+    "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812",
+    "https://www.swissinfo.ch/eng/asia-stock-selloff-enters-fourth-day%2C-oil-declines%3A-markets-wrap/92391739"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -624,6 +631,7 @@
     "2026-11-17T01:36:26Z: 미국 11월16일 정규장 종가만 Reuters/AP/FT로 재확인; 11월17일 신규 정규장 거래 전. SOXX 직접 종가, 공식 VIX/OAS/실질금리, 2년물·가스·구리·USD/KRW 최신 동시점 검증 미완료. 기존 alerts 3건 대조, analysis/events 및 daily 전체 본문 대조 미완료.",
     "2026-11-17 02:40 UTC: Reuters 기사 내 아시아 지수/원유의 정확한 개별 관측시각 미표시; 최신 SOXX, VIX, 공식 OAS, 실질금리, USD/KRW, 천연가스, 구리, 시장폭 동시점 직접 확인 미완료. 11월17일 미국 정규장 미개장.",
     "2026-11-17 04:05 UTC: 미국 정규장 미개장. Reuters 아시아 관측시각 불명. VIX/OAS/실질금리는 전일 2차 집계 참고용, 공식 최신 원자료 미검증. SOXX, USD/KRW, 천연가스 및 구리 정확한 호가 미확보. 기존 alerts 3건 대조, events/daily 전체 본문 미대조.",
-    "2026-11-17 05:58 UTC 점검: SOXX/VIX/공식 OAS/실질금리/천연가스/USD-KRW 동시점 원자료 미검증. GitHub analysis/events 및 analysis/daily 디렉터리 전체 대조 실패. 가격은 기사 게시시점과 관측시점이 다를 수 있음."
+    "2026-11-17 05:58 UTC 점검: SOXX/VIX/공식 OAS/실질금리/천연가스/USD-KRW 동시점 원자료 미검증. GitHub analysis/events 및 analysis/daily 디렉터리 전체 대조 실패. 가격은 기사 게시시점과 관측시점이 다를 수 있음.",
+    "2026-11-17T06:24:50Z: 미국 정규장 개장 전. Bloomberg/Reuters/FT/AP 아시아 장중 가격과 선물은 개별 관측시각 불명·비동시점. SOXX/VIX/공식 OAS/실질금리/천연가스/USD-KRW 최신 동시점 원자료 미확보. 기존 alerts 3건 비교; analysis/events·daily 전체 본문 대조 미완료."
   ]
 }
