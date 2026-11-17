@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T23:16:47Z",
+  "checked_at_utc": "2026-11-17T23:39:37Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Nvidia 공식 실적 원문 확인 및 분기 매출 전망 1300억달러(Reuters), 시간외 +3.5~3.7% 보도. 기존 수요 우려의 반대 증거이나 경영·규제·시장 폭 위험 미해소. HIGH 유지.",
+  "change_since_previous": "신규 경고 없음. 미국 11월17일 종가 재확인; VIX 2차 집계 간 불일치, 11월16일 신용·실질금리 참고치 확보. 이전 경고 이후 중대한 악화 검증되지 않음. HIGH 유지(잠정).",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -759,6 +759,25 @@
       "nasdaq_change_pct": -0.74,
       "observed_at_utc": "2026-11-17T21:00:00Z",
       "note": "WSJ/AP regular close; scheduled closing timestamp."
+    },
+    "credit_rates_nov16_secondary": {
+      "observed_at_utc": null,
+      "market_date": "2026-11-16",
+      "high_yield_spread_pct": 3.34,
+      "high_yield_spread_weekly_change_bp": 4,
+      "real_10y_pct": 2.92,
+      "nominal_10y_pct": 5.12,
+      "nominal_2y_pct": 4.83,
+      "note": "FrontierPicks secondary compilation; official FRED/Treasury series not verified; daily lag."
+    },
+    "vix_nov17_conflicting_secondary": {
+      "observed_at_utc": null,
+      "market_date": "2026-11-17",
+      "reported_values": [
+        25.46,
+        25.64
+      ],
+      "note": "FrontierPicks and Journalarta disagree; no verified Cboe close."
     }
   },
   "sources": [
@@ -828,7 +847,9 @@
     "https://www.reuters.com/business/view-nvidia-earnings-beat-estimates-attention-turns-call-2026-11-17/",
     "https://www.ft.com/content/3a8881b8-068c-4950-9238-4f8eb1efc870",
     "https://www.barrons.com/livecoverage/nvidia-earnings-stock-huang-departure/card/nvidia-interim-ceo-we-ve-got-this--BCydjc4Z7p57EqJvYhvq",
-    "https://www.wsj.com/finance/stocks/u-s-stocks-fall-as-ai-doubts-fester-a0979bdb"
+    "https://www.wsj.com/finance/stocks/u-s-stocks-fall-as-ai-doubts-fester-a0979bdb",
+    "https://frontierpicks.com/journal/2026-11-17/",
+    "https://journalarta.com/en/2026/11/18/wall-street-close-dow-sheds-1-65-as-chip-shares-sink-and-vix-jumps-ahead-of-nvidia/"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -866,6 +887,7 @@
     "2026-11-17T20:19:13Z: Reuters 최신 기사 정확한 시세 관측시각 불명, AP 13:24 ET는 장중/지연 가격. SOXX 직접 시세, 공식 VIX/회사채 OAS/실질금리/시장 폭 최신, 천연가스·구리·USD/KRW 동시점 원자료 미검증. Nvidia 실적 발표 여부 직접 확인 미완료; events/daily 전체 본문 대조 미완료. 신용·유동성 충격 부재 확정 불가.",
     "2026-11-17T21:11:39Z: Reuters/AP 종가 보도 확인. Nvidia 장마감후 실적 발표 결과 직접 확인 불가. SOXX 직접 종가·공식 VIX/OAS/실질금리·가스·구리·USD/KRW 최신 동시점 원자료 미검증. Reuters/AP 정규장 종가와 이전 장중 시세는 비동시점. 과거 events/daily 전체 본문 대조 미완료.",
     "2026-11-17T22:04:52Z: Nvidia primary release and call not verified; after-hours exact quote time unknown. SOXX, official VIX/OAS/real yields, latest breadth, gas/copper/USD-KRW and liquidity not independently verified. Compared existing four alerts and latest breadth event file; full events/daily comparison incomplete.",
-    "2026-11-17T23:16:47Z: official Nvidia earnings release confirmed; call via media only. SOXX, official VIX/OAS/real yields, current liquidity, natural gas/copper/USD-KRW and synchronized quotes not verified. Existing four alerts compared; full events/daily files not reviewed."
+    "2026-11-17T23:16:47Z: official Nvidia earnings release confirmed; call via media only. SOXX, official VIX/OAS/real yields, current liquidity, natural gas/copper/USD-KRW and synchronized quotes not verified. Existing four alerts compared; full events/daily files not reviewed.",
+    "2026-11-17T23:39:37Z: US regular session closed; no verified new post-earnings quote. VIX secondary close values conflict. Official SOXX, Cboe VIX, credit OAS, real yields, current liquidity, gas/copper/USD-KRW and synchronized breadth not verified. Prior four alerts compared; full event/daily review incomplete. No new emergency evidence, not proof of absence."
   ]
 }
