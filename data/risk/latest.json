@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T01:12:33Z",
+  "checked_at_utc": "2026-11-17T01:36:26Z",
   "market_date": "2026-11-16",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월16일 미국 종가·반도체 급락은 직전 점검에서 이미 확인한 사건. Reuters 11월16일 금 1년 저점 및 강달러·고금리 압박을 추가 확인했으나 11월17일 01:12 UTC 현재 신용·유동성 충격의 신규 확증이나 긴급 배분 변경 근거 없음.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP/FT의 11월16일 미국 종가 및 반도체·Nvidia 관련 충격은 이전 점검에 반영된 사건으로, 11월17일 01:36 UTC 점검에서 추가 중대 악화의 독립 증거 미확보. 11월17일 미국 정규장 개장 전이며 새로운 신용·유동성 위기 여부는 공식 동시점 자료 부족으로 미확정.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -499,6 +499,17 @@
       "unit": "USD/troy ounce",
       "observed_at_utc": null,
       "note": "Reuters 2026-11-16 기사: 장중 1년 저점; 정확한 체결시각 미제공, 현재 호가 아님"
+    },
+    "us_close_nov16_reconfirmed_20261117": {
+      "sp500_close": 7416.59,
+      "sp500_change_pct": -1.92,
+      "nasdaq_close": 24509.76,
+      "nasdaq_change_pct": -2.49,
+      "dow_close": 51608.17,
+      "dow_change_pct": -1.41,
+      "phlx_semiconductor_change_pct": -5.3,
+      "observed_at_utc": "2026-11-16T21:00:00Z",
+      "note": "Reuters/AP Nov16 regular-session close, rechecked Nov17 01:36 UTC; closing time scheduled, not tick-level timestamp; previously reported, not a fresh price."
     }
   },
   "sources": [
@@ -536,7 +547,8 @@
     "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-16/",
     "https://www.reuters.com/markets/global-markets-technicals-graphic-2026-11-16/",
     "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-stock-nvda-jensen-huang/",
-    "https://www.reuters.com/markets/europe/gold-sinks-1-year-low-treasury-yields-dollar-bite-set-worst-year-since-2015-2026-11-16/"
+    "https://www.reuters.com/markets/europe/gold-sinks-1-year-low-treasury-yields-dollar-bite-set-worst-year-since-2015-2026-11-16/",
+    "https://apnews.com/article/2e6a9c41b6336e9240c1b01585d20cd4"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -551,6 +563,7 @@
     "2026-11-16T22:19:10Z: Reuters/AP 정규장 종가·시장 폭 검증. SOXX 직접 종가, 공식 VIX·OAS·실질금리, 2년물·환율·천연가스·구리의 최신 동시점 원자료 미확보. 기사 시세 및 브렌트 원거래소 체결시각 불명. GitHub 과거 events/daily 전체 본문 대조 미완료.",
     "2026-11-16T22:40:32Z: Reuters/AP/WSJ/FT 11월16일 종가 보도 재확인. SOXX 직접 종가, 공식 VIX/OAS/실질금리, 2년물·가스·구리·USD/KRW 최신 동시점 원자료 미검증. 11월17일 아시아 장 개시 전. 기존 alerts 3건 비교, events/daily 전체 본문 대조 미완료.",
     "2026-11-17T00:06:30Z: 미국 현물장 마감 이후 새 정규장 시세 없음. SOXX 직접 종가, 공식 VIX/OAS/실질금리, 2년물·가스·구리·USD/KRW 동시점 원자료 미검증. 기존 alerts 3건과 직전 점검 대조, events/daily 전체 본문 대조 미완료.",
-    "11월17일 01:12 UTC 점검: SOXX·VIX·공식 OAS·실질금리·시장 폭·USD/KRW·천연가스·구리 최신 동시점 원자료 미검증; 종가 외 시세는 지연 가능. 전체 과거 분석 파일 대조 미완료."
+    "11월17일 01:12 UTC 점검: SOXX·VIX·공식 OAS·실질금리·시장 폭·USD/KRW·천연가스·구리 최신 동시점 원자료 미검증; 종가 외 시세는 지연 가능. 전체 과거 분석 파일 대조 미완료.",
+    "2026-11-17T01:36:26Z: 미국 11월16일 정규장 종가만 Reuters/AP/FT로 재확인; 11월17일 신규 정규장 거래 전. SOXX 직접 종가, 공식 VIX/OAS/실질금리, 2년물·가스·구리·USD/KRW 최신 동시점 검증 미완료. 기존 alerts 3건 대조, analysis/events 및 daily 전체 본문 대조 미완료."
   ]
 }
