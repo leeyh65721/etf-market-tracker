@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T09:22:45Z",
+  "checked_at_utc": "2026-11-17T10:16:39Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP/FT/WSJ 11월17일 확인: 아시아 반도체 약세와 미국 AI칩 원격접근 규제는 이미 보고한 동일 사건. 11월16일 미국 정규장 종가 이후 새로운 구조적 충격·공식 신용경색·즉시 배분 변경 근거는 검증되지 않음. 미국 정규장 개장 전, Nvidia 실적 대기. 11월16일 VIX 22.91(2차 출처)은 기존 11월16일 종가 관련 수치이며 신규 급등 아님.",
+  "change_since_previous": "신규 긴급 경고 없음. 18:22 KST 이전 점검 대비 Reuters 11월17일 유럽 기술주 약세·동남아 데이터센터 AI칩 제한 영향 및 엔비디아 실적 대기 확인. 기존 AI칩 규제·반도체 하락의 연속으로 판단; 새로운 광범위 신용/유동성 충격이나 위험 단계 상향은 검증되지 않음. 최신 미국 정규장 개장 전.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -578,6 +578,20 @@
       "unit": "index points",
       "observed_at_utc": null,
       "note": "Goodman Macro / Nexqual 11월16일 종가 재인용, 공식 CBOE 원자료 미대조; 11월17일 실시간 아님. 다른 2차 출처 23.72와 불일치하므로 잠정 참고만."
+    },
+    "europe_stoxx600_nov17_reuters_0809gmt": {
+      "value": 658.07,
+      "change_pct": -0.64,
+      "unit": "index points",
+      "observed_at_utc": "2026-11-17T08:09:00Z",
+      "note": "Reuters 08:09 GMT; 이전 점검 전 관측치, 신규 급락 아님"
+    },
+    "oil_nov17_reuters_secondary": {
+      "wti_usd_barrel": 85.37,
+      "wti_change_pct": -0.41,
+      "gold_spot_usd_oz": 3852.62,
+      "observed_at_utc": null,
+      "note": "Reuters 11월17일 12:32 현지 게시 재인용, 개별 호가 시각 미제공; 동시점 실시간 수치 아님"
     }
   },
   "sources": [
@@ -626,7 +640,10 @@
     "https://www.ft.com/content/4a3b9892-67c6-4177-8503-80c0a5eb3b60",
     "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812",
     "https://www.swissinfo.ch/eng/asia-stock-selloff-enters-fourth-day%2C-oil-declines%3A-markets-wrap/92391739",
-    "https://www.goodman-macro.com/en/articles/20261117-main/"
+    "https://www.goodman-macro.com/en/articles/20261117-main/",
+    "https://www.reuters.com/markets/europe/european-shares-ease-tech-stocks-deutsche-bank-slide-2026-11-17/",
+    "https://www.reuters.com/world/asia-pacific/us-ai-chip-curbs-threaten-southeast-asia-data-centre-boom-shares-tumble-2026-11-17/",
+    "https://www.reuters.com/world/india/gold-hovers-near-over-one-year-low-firm-dollar-fed-hike-bets-weigh-2026-11-17/"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -648,6 +665,7 @@
     "2026-11-17 05:58 UTC 점검: SOXX/VIX/공식 OAS/실질금리/천연가스/USD-KRW 동시점 원자료 미검증. GitHub analysis/events 및 analysis/daily 디렉터리 전체 대조 실패. 가격은 기사 게시시점과 관측시점이 다를 수 있음.",
     "2026-11-17T06:24:50Z: 미국 정규장 개장 전. Bloomberg/Reuters/FT/AP 아시아 장중 가격과 선물은 개별 관측시각 불명·비동시점. SOXX/VIX/공식 OAS/실질금리/천연가스/USD-KRW 최신 동시점 원자료 미확보. 기존 alerts 3건 비교; analysis/events·daily 전체 본문 대조 미완료.",
     "2026-11-17T08:22:16Z: 미국 정규장 개장 전. 아시아 종가/장중 및 미국 선물 보도는 비동시점·개별 체결시각 미검증. SOXX 직접 호가, 공식 VIX·OAS·실질금리, 천연가스·구리·USD/KRW 동시점 확인 미완료. 기존 경고 3건 비교, 과거 events/daily 전체 본문 대조 미완료.",
-    "2026-11-17T09:22:45Z: 미국 정규장 개장 전. Reuters/AP/FT 보도는 개별 호가시각 미제공. VIX 11월16일 종가 2차 출처 간 불일치(22.91 대 23.72), 공식 CBOE 미대조. SOXX 직접 종가, 공식 OAS/실질금리, 천연가스·USD/KRW 최신 동시점 원자료 미확보. 기존 alerts 3건 대조, analysis/events·daily 전체 본문 대조 미완료."
+    "2026-11-17T09:22:45Z: 미국 정규장 개장 전. Reuters/AP/FT 보도는 개별 호가시각 미제공. VIX 11월16일 종가 2차 출처 간 불일치(22.91 대 23.72), 공식 CBOE 미대조. SOXX 직접 종가, 공식 OAS/실질금리, 천연가스·USD/KRW 최신 동시점 원자료 미확보. 기존 alerts 3건 대조, analysis/events·daily 전체 본문 대조 미완료.",
+    "19:16 KST 점검: SOXX/VIX/공식 OAS/시장폭/실질금리/천연가스/USD-KRW 최신 동시점 직접 검증 미완료. Reuters 보도 시세는 지연 가능. GitHub analysis/events 및 analysis/daily 전체 본문 대조 미완료."
   ]
 }
