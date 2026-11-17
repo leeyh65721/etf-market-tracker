@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T18:34:20Z",
+  "checked_at_utc": "2026-11-17T20:19:13Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 17:45:51Z 기존 미국 시장 폭 악화 경고 이후 추가 위험 단계 상승을 검증할 동시점 원자료 부족. 17:30Z 2차 시장 집계는 다우 -1.28%, S&P500 -0.88%, 나스닥 -0.81%, VIX 25.46을 제시하나 직전 Reuters 11:58 ET 수치보다 앞선 관측이므로 반등/추가 악화로 단정 불가. 기존 HIGH 유지; 신용 OAS 및 SOXX 직접 시세 미검증.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 최신 접근 가능 기사 지수 하락(다우 -1.58%, S&P500 -1.21%, 나스닥 -1.13%)과 AP 13:24 ET 장중(다우 약 -1.4%, S&P500 -1.1%, 나스닥 -1.0%)은 기존 11:58 ET 시장 폭 악화 경고를 넘어서는 중대한 추가 악화를 입증하지 않음. 서로 다른 시점 수치를 직접 증감 비교하지 않음. HIGH 유지, 기존 경고 4건 유지. Nvidia 실적 발표 전.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -696,6 +696,22 @@
       "us10y_yield_pct": 5.097,
       "wti_usd_barrel": 86.41,
       "note": "JournalArta secondary delayed snapshot (up to 15 minutes), 17:30 UTC, earlier than Reuters 11:58 ET snapshot; not a newer market change; figures not independently verified against exchange"
+    },
+    "us_equities_nov17_reuters_followup_accessed_2019utc": {
+      "dow_change_pct": -1.58,
+      "sp500_change_pct": -1.21,
+      "nasdaq_change_pct": -1.13,
+      "observed_at_utc": null,
+      "note": "Reuters 11월17일 기사 최신 접근 본문 요약; 정확한 개별 호가시각 불명, 최소 15분 지연 가능. 11:58 ET 기존 경고 수치와 동시점 아님."
+    },
+    "us_equities_nov17_ap_1324et": {
+      "dow_change_pct": -1.4,
+      "sp500_change_pct": -1.1,
+      "nasdaq_change_pct": -1,
+      "us10y_yield_pct": 5.1,
+      "brent_usd_barrel": 93.4,
+      "observed_at_utc": "2026-11-17T18:24:00Z",
+      "note": "AP 13:24 ET 장중 기사, 지수 반올림; 금리·원유는 기사 내 값으로 개별 체결시각 불명. Reuters 이전 관측과 비교해 반등/악화 단정 금지."
     }
   },
   "sources": [
@@ -757,7 +773,8 @@
     "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-17/",
     "https://www.stonex.com/en-gb/news-and-analysis/vix-short-covering-surges-as-traders-reassess-stock-market-risk-2026-11-17/",
     "https://journalarta.com/en/2026/11/18/wall-street-midday-dow-leads-losses-as-chip-shares-slide-before-nvidia-earnings/",
-    "https://www.reuters.com/commentary/reuters-open-interest/timing-market-tops-is-tricky-red-flags-are-emerging-mcgeever-2026-11-17/"
+    "https://www.reuters.com/commentary/reuters-open-interest/timing-market-tops-is-tricky-red-flags-are-emerging-mcgeever-2026-11-17/",
+    "https://apnews.com/article/stock-markets-ai-earnings-oil-4d5a35288288389d894e63e6bebe8240"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -791,6 +808,7 @@
     "2026-11-17T17:45:51Z: Reuters 11:58 ET 지수·시장폭 관측, 최소 15분 지연. SOXX 직접 가격, 공식 VIX·신용 OAS·실질금리·천연가스·구리·USD/KRW 동시점 미검증. Nvidia 실적 발표 전. 과거 events/daily 전체 본문 대조 미완료.",
     "2026-11-17T18:34:20Z: Reuters intraday article latest update inaccessible; secondary 17:30Z quote is older than prior 17:58Z Reuters observation; cannot infer subsequent price move.",
     "Current official SOXX/VIX/credit OAS/real yield/market breadth/natural gas/copper/USD-KRW synchronized observations unavailable; no definitive liquidity-crisis exclusion.",
-    "Prior analysis/events and analysis/daily full-text comparison not completed this run; preserved existing alert IDs."
+    "Prior analysis/events and analysis/daily full-text comparison not completed this run; preserved existing alert IDs.",
+    "2026-11-17T20:19:13Z: Reuters 최신 기사 정확한 시세 관측시각 불명, AP 13:24 ET는 장중/지연 가격. SOXX 직접 시세, 공식 VIX/회사채 OAS/실질금리/시장 폭 최신, 천연가스·구리·USD/KRW 동시점 원자료 미검증. Nvidia 실적 발표 여부 직접 확인 미완료; events/daily 전체 본문 대조 미완료. 신용·유동성 충격 부재 확정 불가."
   ]
 }
