@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T12:50:19Z",
+  "checked_at_utc": "2026-11-17T14:20:09Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월17일 미국 개장 전 나스닥100 선물 +0.47%, S&P500 +0.08%, 다우 -0.42%라는 후속 2차 보도는 10:51 UTC Reuters의 하락 선물과 비동시점이며 기존 반도체 위험의 중대한 악화를 뒷받침하지 않음. Reuters 금 반등·유가 소폭 반등 역시 기존 달러·금리 및 중동 위험의 연속. 기존 high 유지; 신용·유동성 충격 여부는 공식 최신 자료 미검증.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월17일 미국 개장 전 발표된 10월 소매판매 이후 2년물 4.849%, 10년물 약 5.14%로 상승했다는 MarketWatch 후속 보도는 매파적 금리 위험을 강화하지만 기존 high를 critical로 올릴 신용·시장폭 동시 악화는 검증되지 않음. Reuters 나스닥 선물 +0.32% 및 다우 -0.69%는 개장 전 비동시점 보도. 기존 반도체·엔비디아 위험과 구별되는 신규 긴급 사건 미확인.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -627,6 +627,19 @@
       "wti_change_pct": 0.5,
       "observed_at_utc": null,
       "note": "Reuters 11월17일 기사 내 가격, 개별 호가 시각 미확인; 지연 가능."
+    },
+    "us_rates_nov17_retail_sales_followup": {
+      "two_year_yield_pct": 4.849,
+      "ten_year_yield_pct": 5.14,
+      "observed_at_utc": null,
+      "note": "MarketWatch 2026-11-17 미국 소매판매 발표 직후 보도. 정확한 개별 호가시각 미표시, 지연 가능; 공식 Treasury 직접 검증 미완료."
+    },
+    "us_futures_nov17_reuters_followup": {
+      "dow_change_pct": -0.69,
+      "sp500_change_pct": -0.1,
+      "nasdaq_change_pct": 0.32,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-17 기사 후속 갱신, 미국 개장 전 선물. 개별 호가시각 불명; 직전 수치와 동시점 아님."
     }
   },
   "sources": [
@@ -682,7 +695,9 @@
     "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/",
     "https://www.reuters.com/business/nvidia-shares-set-335-billion-swing-after-earnings-options-show-2026-11-17/",
     "https://www.reuters.com/business/shaky-semiconductor-trade-faces-big-week-investors-look-bottom-2026-11-17/",
-    "https://www.tradingkey.com/analysis/stocks/us-stocks/262308986-nvidia-earnings-ai-chip-remote-access-restrictions-tradingkey"
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262308986-nvidia-earnings-ai-chip-remote-access-restrictions-tradingkey",
+    "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-nvidia-q3-financial-results-retail-sales-import-prices/card/treasury-yields-climb-after-retail-sales-data-while-stocks-dip-K4d3TauOt7c7XIf4UUD3",
+    "https://www.wsj.com/finance/jgbs-rise-tracking-gains-in-u-s-treasurys-79322f27"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -708,6 +723,7 @@
     "19:16 KST 점검: SOXX/VIX/공식 OAS/시장폭/실질금리/천연가스/USD-KRW 최신 동시점 직접 검증 미완료. Reuters 보도 시세는 지연 가능. GitHub analysis/events 및 analysis/daily 전체 본문 대조 미완료.",
     "2026-11-17T10:50:29Z: 미국 정규장 개장 전. Reuters/FT/IBD 선물 시세는 관측시각 상이, 동일 시점 비교 불가. SOXX 직접 시세, 공식 CBOE VIX, ICE/FRED 회사채 OAS, 재무부 실질금리, 원자재·USD/KRW·시장 폭 최신 동시점 검증 미완료. 기존 alerts 3건 비교, analysis/events 및 daily 전체 본문 대조 미완료.",
     "2026-11-17T12:18:13Z: 미국 정규장 개장 전; Reuters 선물 개별 관측시각 미제공. SOXX 직접 시세·공식 VIX·회사채 OAS·실질금리·시장 폭·천연가스·구리·USD/KRW 최신 동시점 원자료 미검증. 기존 alerts 3건과 직전 점검 비교; events/daily 전체 본문 대조 미완료.",
-    "2026-11-17T12:50:19Z: 미국 정규장 개장 전. Reuters·TradingKey 선물 호가 비동시점/정확한 체결시각 미확인. SOXX 직접 시세, 공식 VIX·신용 OAS·실질금리, 시장 폭, 천연가스·구리·USD/KRW 최신 동시점 원자료 미검증. 기존 경고 3건 비교, events/daily 전체 본문 미대조."
+    "2026-11-17T12:50:19Z: 미국 정규장 개장 전. Reuters·TradingKey 선물 호가 비동시점/정확한 체결시각 미확인. SOXX 직접 시세, 공식 VIX·신용 OAS·실질금리, 시장 폭, 천연가스·구리·USD/KRW 최신 동시점 원자료 미검증. 기존 경고 3건 비교, events/daily 전체 본문 미대조.",
+    "2026-11-17T14:20:09Z: 미국 개장 전 Reuters·MarketWatch 후속 보도 관측시각 불명. SOXX·공식 VIX·OAS·실질금리·시장 폭·가스·구리·USD/KRW 최신 동시점 검증 불가. 과거 analysis/events·daily 전체 본문 대조 미완료. 소매판매 후 금리 상승만으로 긴급 경고 조건 충족하지 않음."
   ]
 }
