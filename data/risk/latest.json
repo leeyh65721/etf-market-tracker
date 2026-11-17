@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T17:09:27Z",
+  "checked_at_utc": "2026-11-17T17:45:51Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월17일 미국 장중 기사에서 다우 -0.71%, S&P500 -0.39%, 나스닥 -0.33%, 필라델피아 반도체 +0.5%로 직전 점검과 같은 관측치. 별도 신규 확정 신용·유동성 충격이나 기존 사건의 중대한 악화 미검증. 기존 high 유지; 새로운 실시간 호가를 확보한 것으로 해석 금지.",
+  "change_since_previous": "기존 반도체·AI 위험의 중대한 장중 악화: 10:09 ET Reuters 관측 대비 11:58 ET 다우 -0.71→-1.59%, S&P500 -0.39→-1.31%, 나스닥 -0.33→-1.39%. 나스닥 52주 신저가 271→437, 하락/상승 비율 1.82→3.11, S&P500 11개 섹터 전부 하락. 필라델피아 반도체 +0.5→-1.4%. 신용 OAS·SOXX 직접 호가 미확인으로 critical 격상은 보류. Reuters 최소 15분 지연.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -56,6 +56,23 @@
         "https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/",
         "https://apnews.com/article/5403f152a601cf82ce939f1d24fffa0f",
         "https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns"
+      ],
+      "status": "active"
+    },
+    {
+      "event_id": "20261117-us-equity-breadth-deterioration",
+      "detected_at_utc": "2026-11-17T17:45:51Z",
+      "severity": "high",
+      "summary": "기존 AI·반도체 매도세의 중대한 악화: 미국 주요지수 하락 확대, 전 섹터 약세, 나스닥 신저가 437개",
+      "evidence": [
+        "Reuters 10:09 ET vs 11:58 ET: Nasdaq -0.33% to -1.39%, S&P500 -0.39% to -1.31%, Dow -0.71% to -1.59%",
+        "Nasdaq 52-week lows 271 to 437; declining/advancing 1.82 to 3.11; all 11 S&P500 sectors negative",
+        "PHLX semiconductor +0.5% to -1.4%; direct SOXX quote and credit OAS unavailable",
+        "Counterpoint: Nvidia earnings not yet published; intraday moves may reverse; no confirmed credit/liquidity shock"
+      ],
+      "source_urls": [
+        "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/",
+        "https://apnews.com/article/4d5a35288288389d894e63e6bebe8240"
       ],
       "status": "active"
     }
@@ -656,6 +673,19 @@
       "nasdaq_new_52week_lows": 271,
       "nasdaq_new_52week_highs": 11,
       "note": "Reuters Nov 17 10:09 ET snapshot; quotes delayed at least 15 minutes. Not simultaneous with credit, FX or commodities."
+    },
+    "us_equities_nov17_reuters_1158et": {
+      "observed_at_utc": "2026-11-17T16:58:00Z",
+      "dow_change_pct": -1.59,
+      "sp500_change_pct": -1.31,
+      "nasdaq_change_pct": -1.39,
+      "phlx_semiconductor_change_pct": -1.4,
+      "nyse_decliners_to_advancers": 3.4,
+      "nasdaq_decliners_to_advancers": 3.11,
+      "nasdaq_new_52week_lows": 437,
+      "nasdaq_new_52week_highs": 13,
+      "sp500_sectors_negative": 11,
+      "note": "Reuters 11:58 ET intraday, minimum 15-minute delayed quotes; not synchronized with credit/FX/commodities"
     }
   },
   "sources": [
@@ -716,7 +746,9 @@
     "https://www.wsj.com/finance/jgbs-rise-tracking-gains-in-u-s-treasurys-79322f27",
     "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-17/",
     "https://www.stonex.com/en-gb/news-and-analysis/vix-short-covering-surges-as-traders-reassess-stock-market-risk-2026-11-17/",
-    "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/"
+    "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/",
+    "https://www.reuters.com/business/us-stock-futures-slip-ahead-nvidia-results-fed-speakers-focus-2026-11-17/",
+    "https://apnews.com/article/4d5a35288288389d894e63e6bebe8240"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -746,6 +778,7 @@
     "2026-11-17T14:20:09Z: 미국 개장 전 Reuters·MarketWatch 후속 보도 관측시각 불명. SOXX·공식 VIX·OAS·실질금리·시장 폭·가스·구리·USD/KRW 최신 동시점 검증 불가. 과거 analysis/events·daily 전체 본문 대조 미완료. 소매판매 후 금리 상승만으로 긴급 경고 조건 충족하지 않음.",
     "2026-11-17 14:42:54 UTC: SOXX/VIX 현물·공식 신용 OAS·실질금리·시장폭·천연가스·구리·USD/KRW 최신 동시점 시세 직접 검증 불가. 신규 숫자 미기입. 과거 이벤트·일일 분석 디렉터리 목록 확인, 전체 본문 대조 미완료.",
     "2026-11-17T16:18:27Z: Reuters 미국 현물 시세 최소 15분 지연, 10:09 ET 관측. SOXX 직접 실시간 시세, 공식 VIX·OAS·실질금리, 천연가스·구리·USD/KRW 최신 동시점 원자료 미검증. Reuters 10:09 ET 수치와 다른 2차 출처 11:03 ET 수치는 시점 차이로 직접 비교 불가. GitHub events/daily 전체 본문 미대조.",
-    "2026-11-17T17:09:27Z: 최신 확인 Reuters 11월17일 장중 자료는 직전 점검과 중복되고 최소 15분 지연 가능. SOXX 직접 시세·공식 VIX/OAS/실질금리·천연가스/구리/USD-KRW 동시점 최신 원자료 미확보. 과거 events/daily 전체 본문 미대조. 신규 위험 부재를 확정할 수 없음."
+    "2026-11-17T17:09:27Z: 최신 확인 Reuters 11월17일 장중 자료는 직전 점검과 중복되고 최소 15분 지연 가능. SOXX 직접 시세·공식 VIX/OAS/실질금리·천연가스/구리/USD-KRW 동시점 최신 원자료 미확보. 과거 events/daily 전체 본문 미대조. 신규 위험 부재를 확정할 수 없음.",
+    "2026-11-17T17:45:51Z: Reuters 11:58 ET 지수·시장폭 관측, 최소 15분 지연. SOXX 직접 가격, 공식 VIX·신용 OAS·실질금리·천연가스·구리·USD/KRW 동시점 미검증. Nvidia 실적 발표 전. 과거 events/daily 전체 본문 대조 미완료."
   ]
 }
