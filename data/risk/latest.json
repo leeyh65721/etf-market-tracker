@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T06:24:50Z",
+  "checked_at_utc": "2026-11-17T08:22:16Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters/AP/FT/Bloomberg 11월17일 보도는 기존 AI칩 수출·원격컴퓨팅 제한과 아시아 기술주 약세의 연속. Bloomberg MSCI 아시아태평양 -1.2%, Nasdaq100 선물 +0.3%는 기사 관측시각 불명이며 이전 위험단계 상향 근거 부족. 기존 alerts 3건 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월17일 AP/FT/WSJ 종합: 코스피 -2.6%, 대만 -2.3%, 닛케이 -1.3% 등 아시아 기술주 하락은 직전 점검의 AI 칩 수출·원격접근 규제와 Nvidia 경영 불확실성의 연속. 기존 경고 대비 신규 구조적 충격·신용경색·긴급 배분 변경 증거 부족. 수치 관측시각 불명.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -565,6 +565,13 @@
       "nasdaq100_futures_change_pct": 0.3,
       "observed_at_utc": null,
       "note": "Bloomberg 2026-11-17 보도, 개별 호가 시각 미표시; Reuters/FT 장중 수치와 동시점 비교 불가"
+    },
+    "asia_nov17_ap_ft_wsj_followup": {
+      "kospi_change_pct": -2.6,
+      "taiex_change_pct": -2.3,
+      "nikkei_change_pct": -1.3,
+      "observed_at_utc": null,
+      "note": "2026-11-17 AP/FT/WSJ 보도, 정확한 개별 거래 시각 미제공. 직전 아시아 장중 값과 비동시점; 새 독립 위험 사건 아님."
     }
   },
   "sources": [
@@ -632,6 +639,7 @@
     "2026-11-17 02:40 UTC: Reuters 기사 내 아시아 지수/원유의 정확한 개별 관측시각 미표시; 최신 SOXX, VIX, 공식 OAS, 실질금리, USD/KRW, 천연가스, 구리, 시장폭 동시점 직접 확인 미완료. 11월17일 미국 정규장 미개장.",
     "2026-11-17 04:05 UTC: 미국 정규장 미개장. Reuters 아시아 관측시각 불명. VIX/OAS/실질금리는 전일 2차 집계 참고용, 공식 최신 원자료 미검증. SOXX, USD/KRW, 천연가스 및 구리 정확한 호가 미확보. 기존 alerts 3건 대조, events/daily 전체 본문 미대조.",
     "2026-11-17 05:58 UTC 점검: SOXX/VIX/공식 OAS/실질금리/천연가스/USD-KRW 동시점 원자료 미검증. GitHub analysis/events 및 analysis/daily 디렉터리 전체 대조 실패. 가격은 기사 게시시점과 관측시점이 다를 수 있음.",
-    "2026-11-17T06:24:50Z: 미국 정규장 개장 전. Bloomberg/Reuters/FT/AP 아시아 장중 가격과 선물은 개별 관측시각 불명·비동시점. SOXX/VIX/공식 OAS/실질금리/천연가스/USD-KRW 최신 동시점 원자료 미확보. 기존 alerts 3건 비교; analysis/events·daily 전체 본문 대조 미완료."
+    "2026-11-17T06:24:50Z: 미국 정규장 개장 전. Bloomberg/Reuters/FT/AP 아시아 장중 가격과 선물은 개별 관측시각 불명·비동시점. SOXX/VIX/공식 OAS/실질금리/천연가스/USD-KRW 최신 동시점 원자료 미확보. 기존 alerts 3건 비교; analysis/events·daily 전체 본문 대조 미완료.",
+    "2026-11-17T08:22:16Z: 미국 정규장 개장 전. 아시아 종가/장중 및 미국 선물 보도는 비동시점·개별 체결시각 미검증. SOXX 직접 호가, 공식 VIX·OAS·실질금리, 천연가스·구리·USD/KRW 동시점 확인 미완료. 기존 경고 3건 비교, 과거 events/daily 전체 본문 대조 미완료."
   ]
 }
