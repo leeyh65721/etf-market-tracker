@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T10:16:39Z",
+  "checked_at_utc": "2026-11-17T10:50:29Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 18:22 KST 이전 점검 대비 Reuters 11월17일 유럽 기술주 약세·동남아 데이터센터 AI칩 제한 영향 및 엔비디아 실적 대기 확인. 기존 AI칩 규제·반도체 하락의 연속으로 판단; 새로운 광범위 신용/유동성 충격이나 위험 단계 상향은 검증되지 않음. 최신 미국 정규장 개장 전.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters·FT 11월17일 유럽 및 아시아 기술주 약세, 미국 AI칩 접근 규제, Nvidia 실적 대기 재확인. 직전 19:16 KST 점검 대비 독립적 중대 사건이나 검증된 신용·유동성 전이 및 위험 단계 상향 근거 부족. 기존 경고 3건 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -592,6 +592,13 @@
       "gold_spot_usd_oz": 3852.62,
       "observed_at_utc": null,
       "note": "Reuters 11월17일 12:32 현지 게시 재인용, 개별 호가 시각 미제공; 동시점 실시간 수치 아님"
+    },
+    "us_treasury_nov16_secondary_nov17_recheck": {
+      "two_year_yield_pct": 4.83,
+      "ten_year_yield_pct": 5.12,
+      "real_ten_year_yield_pct": 2.92,
+      "observed_at_utc": null,
+      "note": "Goodman Macro 2026-11-17 2차 집계, 11월16일 종가 기준. 미국 재무부 원자료 직접 검증 미완료, 현재 실시간 수치 아님."
     }
   },
   "sources": [
@@ -666,6 +673,7 @@
     "2026-11-17T06:24:50Z: 미국 정규장 개장 전. Bloomberg/Reuters/FT/AP 아시아 장중 가격과 선물은 개별 관측시각 불명·비동시점. SOXX/VIX/공식 OAS/실질금리/천연가스/USD-KRW 최신 동시점 원자료 미확보. 기존 alerts 3건 비교; analysis/events·daily 전체 본문 대조 미완료.",
     "2026-11-17T08:22:16Z: 미국 정규장 개장 전. 아시아 종가/장중 및 미국 선물 보도는 비동시점·개별 체결시각 미검증. SOXX 직접 호가, 공식 VIX·OAS·실질금리, 천연가스·구리·USD/KRW 동시점 확인 미완료. 기존 경고 3건 비교, 과거 events/daily 전체 본문 대조 미완료.",
     "2026-11-17T09:22:45Z: 미국 정규장 개장 전. Reuters/AP/FT 보도는 개별 호가시각 미제공. VIX 11월16일 종가 2차 출처 간 불일치(22.91 대 23.72), 공식 CBOE 미대조. SOXX 직접 종가, 공식 OAS/실질금리, 천연가스·USD/KRW 최신 동시점 원자료 미확보. 기존 alerts 3건 대조, analysis/events·daily 전체 본문 대조 미완료.",
-    "19:16 KST 점검: SOXX/VIX/공식 OAS/시장폭/실질금리/천연가스/USD-KRW 최신 동시점 직접 검증 미완료. Reuters 보도 시세는 지연 가능. GitHub analysis/events 및 analysis/daily 전체 본문 대조 미완료."
+    "19:16 KST 점검: SOXX/VIX/공식 OAS/시장폭/실질금리/천연가스/USD-KRW 최신 동시점 직접 검증 미완료. Reuters 보도 시세는 지연 가능. GitHub analysis/events 및 analysis/daily 전체 본문 대조 미완료.",
+    "2026-11-17T10:50:29Z: 미국 정규장 개장 전. Reuters/FT/IBD 선물 시세는 관측시각 상이, 동일 시점 비교 불가. SOXX 직접 시세, 공식 CBOE VIX, ICE/FRED 회사채 OAS, 재무부 실질금리, 원자재·USD/KRW·시장 폭 최신 동시점 검증 미완료. 기존 alerts 3건 비교, analysis/events 및 daily 전체 본문 대조 미완료."
   ]
 }
