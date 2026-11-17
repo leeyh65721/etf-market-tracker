@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T04:05:28Z",
+  "checked_at_utc": "2026-11-17T05:58:39Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월17일 아시아 기술주 약세는 직전 점검과 동일. 강달러와 구리 4개월 이상 저점 보도, 영국 2년물 5.03%는 긴축 위험을 뒷받침하나 새로운 신용 충격은 검증되지 않음. 기존 high 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 17일 아시아 기술주 하락과 미국 AI칩 해외 데이터센터 접근 제한은 이전 점검에서 이미 반영. Reuters/AP/FT/WSJ 및 Bloomberg 보도에서 확인된 추가 정보는 동일 위험의 연속으로, 직전 대비 위험단계 상향이나 긴급 배분 변경을 입증할 동시점 신용·변동성 자료 부족.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -546,6 +546,19 @@
       "vix": 21.05,
       "observed_at_utc": null,
       "note": "Daily Market Report 11월16일 17:03 UTC 집계 게시, 개별 시각 및 공식 원자료 미검증; 참고용 과거 수치"
+    },
+    "asia_nov17_crosschecked": {
+      "observed_at_utc": null,
+      "kospi_change_pct_approx": -2,
+      "nikkei_change_pct_approx": -1,
+      "taiex_change_pct_approx": -1.4,
+      "note": "Reuters 2026-11-17 아시아 장중 스냅샷; 기사별 관측시각 미확인, 이후 FT 대만 -2.6% 등 시점 차이. 확정 종가 아님"
+    },
+    "oil_nov17_wsj": {
+      "observed_at_utc": null,
+      "brent_usd_barrel": 92.15,
+      "wti_usd_barrel": 85.39,
+      "note": "WSJ 2026-11-17 보도 시세, 정확한 체결시각 미표시, 실시간 아님"
     }
   },
   "sources": [
@@ -589,7 +602,10 @@
     "https://www.reuters.com/business/energy/oil-slips-supply-surplus-outlook-despite-gulf-tensions-2026-11-17/",
     "https://www.ft.com/content/aad29fc8-1b1b-4b7a-9e60-99989887ad89",
     "https://www.wsj.com/finance/currencies/singapore-dollar-consolidates-but-may-be-weighed-by-risk-off-sentiment-1a00f31b",
-    "https://dailymarket.report/archive/2026-11-16.html"
+    "https://dailymarket.report/archive/2026-11-16.html",
+    "https://apnews.com/article/4d5a35288288389d894e63e6bebe8240",
+    "https://www.ft.com/content/4a3b9892-67c6-4177-8503-80c0a5eb3b60",
+    "https://www.wsj.com/finance/stocks/asia-stocks-fall-as-u-s-commerce-department-cracks-down-on-chip-shipments-689af812"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -607,6 +623,7 @@
     "11월17일 01:12 UTC 점검: SOXX·VIX·공식 OAS·실질금리·시장 폭·USD/KRW·천연가스·구리 최신 동시점 원자료 미검증; 종가 외 시세는 지연 가능. 전체 과거 분석 파일 대조 미완료.",
     "2026-11-17T01:36:26Z: 미국 11월16일 정규장 종가만 Reuters/AP/FT로 재확인; 11월17일 신규 정규장 거래 전. SOXX 직접 종가, 공식 VIX/OAS/실질금리, 2년물·가스·구리·USD/KRW 최신 동시점 검증 미완료. 기존 alerts 3건 대조, analysis/events 및 daily 전체 본문 대조 미완료.",
     "2026-11-17 02:40 UTC: Reuters 기사 내 아시아 지수/원유의 정확한 개별 관측시각 미표시; 최신 SOXX, VIX, 공식 OAS, 실질금리, USD/KRW, 천연가스, 구리, 시장폭 동시점 직접 확인 미완료. 11월17일 미국 정규장 미개장.",
-    "2026-11-17 04:05 UTC: 미국 정규장 미개장. Reuters 아시아 관측시각 불명. VIX/OAS/실질금리는 전일 2차 집계 참고용, 공식 최신 원자료 미검증. SOXX, USD/KRW, 천연가스 및 구리 정확한 호가 미확보. 기존 alerts 3건 대조, events/daily 전체 본문 미대조."
+    "2026-11-17 04:05 UTC: 미국 정규장 미개장. Reuters 아시아 관측시각 불명. VIX/OAS/실질금리는 전일 2차 집계 참고용, 공식 최신 원자료 미검증. SOXX, USD/KRW, 천연가스 및 구리 정확한 호가 미확보. 기존 alerts 3건 대조, events/daily 전체 본문 미대조.",
+    "2026-11-17 05:58 UTC 점검: SOXX/VIX/공식 OAS/실질금리/천연가스/USD-KRW 동시점 원자료 미검증. GitHub analysis/events 및 analysis/daily 디렉터리 전체 대조 실패. 가격은 기사 게시시점과 관측시점이 다를 수 있음."
   ]
 }
