@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-17T22:04:52Z",
+  "checked_at_utc": "2026-11-17T23:16:47Z",
   "market_date": "2026-11-17",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Nvidia 3분기 실적 및 다음 분기 매출 전망 예상 상회(Reuters/Barron's), 기존 AI 수요 붕괴 우려의 반대 증거. 경영·수출규제 및 시장 폭 위험은 미해소, HIGH 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. Nvidia 공식 실적 원문 확인 및 분기 매출 전망 1300억달러(Reuters), 시간외 +3.5~3.7% 보도. 기존 수요 우려의 반대 증거이나 경영·규제·시장 폭 위험 미해소. HIGH 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -736,6 +736,29 @@
       "wti_change_pct": 0.34,
       "observed_at_utc": null,
       "note": "Reuters Nov 17 settlement report; exact settlement timestamps not verified."
+    },
+    "nvidia_nov17_official": {
+      "revenue_usd_billion": 115.8,
+      "data_center_revenue_usd_billion": 107.6,
+      "adjusted_gross_margin_pct": 74.9,
+      "adjusted_eps_usd": 2.68,
+      "observed_at_utc": null,
+      "note": "NVIDIA official Nov17 earnings release; exact publication timestamp not verified."
+    },
+    "nvidia_nov17_call_media": {
+      "q4_revenue_guidance_midpoint_usd_billion": 130,
+      "q4_revenue_guidance_low_usd_billion": 126,
+      "q4_revenue_guidance_high_usd_billion": 134,
+      "after_hours_change_pct_approx": 3.7,
+      "observed_at_utc": null,
+      "note": "Reuters/FT/Barrons Nov17; after-hours quote timestamp unknown, not synchronized."
+    },
+    "us_nov17_close_crosscheck": {
+      "sp500_change_pct": -1.03,
+      "dow_change_pct": -1.64,
+      "nasdaq_change_pct": -0.74,
+      "observed_at_utc": "2026-11-17T21:00:00Z",
+      "note": "WSJ/AP regular close; scheduled closing timestamp."
     }
   },
   "sources": [
@@ -800,7 +823,12 @@
     "https://www.reuters.com/commentary/reuters-open-interest/timing-market-tops-is-tricky-red-flags-are-emerging-mcgeever-2026-11-17/",
     "https://apnews.com/article/stock-markets-ai-earnings-oil-4d5a35288288389d894e63e6bebe8240",
     "https://www.reuters.com/business/nvidia-forecasts-quarterly-revenue-above-estimates-first-report-since-huangs-2026-11-17/",
-    "https://www.barrons.com/livecoverage/nvidia-earnings-stock-huang-departure/card/nvidia-stock-climbs-on-solid-earnings-that-was-the-easy-part--asyfiCcUpsdjXesKyulE"
+    "https://www.barrons.com/livecoverage/nvidia-earnings-stock-huang-departure/card/nvidia-stock-climbs-on-solid-earnings-that-was-the-easy-part--asyfiCcUpsdjXesKyulE",
+    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+    "https://www.reuters.com/business/view-nvidia-earnings-beat-estimates-attention-turns-call-2026-11-17/",
+    "https://www.ft.com/content/3a8881b8-068c-4950-9238-4f8eb1efc870",
+    "https://www.barrons.com/livecoverage/nvidia-earnings-stock-huang-departure/card/nvidia-interim-ceo-we-ve-got-this--BCydjc4Z7p57EqJvYhvq",
+    "https://www.wsj.com/finance/stocks/u-s-stocks-fall-as-ai-doubts-fester-a0979bdb"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -837,6 +865,7 @@
     "Prior analysis/events and analysis/daily full-text comparison not completed this run; preserved existing alert IDs.",
     "2026-11-17T20:19:13Z: Reuters 최신 기사 정확한 시세 관측시각 불명, AP 13:24 ET는 장중/지연 가격. SOXX 직접 시세, 공식 VIX/회사채 OAS/실질금리/시장 폭 최신, 천연가스·구리·USD/KRW 동시점 원자료 미검증. Nvidia 실적 발표 여부 직접 확인 미완료; events/daily 전체 본문 대조 미완료. 신용·유동성 충격 부재 확정 불가.",
     "2026-11-17T21:11:39Z: Reuters/AP 종가 보도 확인. Nvidia 장마감후 실적 발표 결과 직접 확인 불가. SOXX 직접 종가·공식 VIX/OAS/실질금리·가스·구리·USD/KRW 최신 동시점 원자료 미검증. Reuters/AP 정규장 종가와 이전 장중 시세는 비동시점. 과거 events/daily 전체 본문 대조 미완료.",
-    "2026-11-17T22:04:52Z: Nvidia primary release and call not verified; after-hours exact quote time unknown. SOXX, official VIX/OAS/real yields, latest breadth, gas/copper/USD-KRW and liquidity not independently verified. Compared existing four alerts and latest breadth event file; full events/daily comparison incomplete."
+    "2026-11-17T22:04:52Z: Nvidia primary release and call not verified; after-hours exact quote time unknown. SOXX, official VIX/OAS/real yields, latest breadth, gas/copper/USD-KRW and liquidity not independently verified. Compared existing four alerts and latest breadth event file; full events/daily comparison incomplete.",
+    "2026-11-17T23:16:47Z: official Nvidia earnings release confirmed; call via media only. SOXX, official VIX/OAS/real yields, current liquidity, natural gas/copper/USD-KRW and synchronized quotes not verified. Existing four alerts compared; full events/daily files not reviewed."
   ]
 }
