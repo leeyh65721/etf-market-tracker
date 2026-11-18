@@ -74,12 +74,16 @@ jobs:
         continue-on-error: true
         run: python decision_journal.py
       - name: Experimental research replay
+        id: research_replay
+        if: always()
         continue-on-error: true
         run: |
           set -e
           python -m unittest discover -s tests -p 'test_research_engine.py' -v
+          rm -f data/research/latest.json data/research/paper_latest.json
           python research_engine.py
           python paper_portfolio.py
+          python -c 'import json; a=json.load(open("data/research/latest.json")); b=json.load(open("data/research/paper_latest.json")); print("RESEARCH",a["status"],a["sessions"],"PAPER",b["status"],b["asof"]); assert a["status"]!="ERROR" and b["status"]!="ERROR"'
       - name: Publish comprehensive data health report
         id: system_health
         if: always()
@@ -135,6 +139,10 @@ jobs:
             analysis/macro/
             analysis/diagnostics/macro-health-latest.md
           if-no-files-found: warn
+
+      - name: Verify research output after archival
+        if: always() && steps.research_replay.outcome != 'success'
+        run: exit 1
 
       - name: Fail run only after report is saved, if essential data are unsafe
         if: always()
