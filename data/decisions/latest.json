@@ -1,19 +1,12 @@
 {
-  "generated_at_utc": "2026-11-17T00:06:32.179413+00:00",
-  "status": "ERROR",
-  "valid_count": 24,
-  "retrospective_count": 4,
-  "prospective_count": 20,
-  "invalid_count": 8,
-  "reports_missing_structured_records_count": 6,
-  "reports_missing_structured_records": [
-    "analysis/daily/2026-11-04.md",
-    "analysis/daily/2026-11-10.md",
-    "analysis/daily/2026-11-11.md",
-    "analysis/daily/2026-11-12.md",
-    "analysis/daily/2026-11-13.md",
-    "analysis/daily/2026-11-17.md"
-  ],
+  "generated_at_utc": "2026-11-18T00:32:01.546756+00:00",
+  "status": "OK",
+  "valid_count": 33,
+  "retrospective_count": 5,
+  "prospective_count": 14,
+  "invalid_count": 0,
+  "reports_missing_structured_records_count": 0,
+  "reports_missing_structured_records": [],
   "entries": [
     {
       "record_id": "2026-10-19-IGV-watch",
@@ -136,8 +129,8 @@
         20
       ],
       "first_theoretical_reference_session": "2026-10-22",
-      "eligible_for_prospective_judgment_scoring": true,
-      "assessment": "awaiting_forward_observation",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
       "not_a_buy_recommendation": true
     },
     {
@@ -161,8 +154,8 @@
         20
       ],
       "first_theoretical_reference_session": "2026-10-23",
-      "eligible_for_prospective_judgment_scoring": true,
-      "assessment": "awaiting_forward_observation",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
       "not_a_buy_recommendation": true
     },
     {
@@ -211,8 +204,8 @@
         20
       ],
       "first_theoretical_reference_session": "2026-10-26",
-      "eligible_for_prospective_judgment_scoring": true,
-      "assessment": "awaiting_forward_observation",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
       "not_a_buy_recommendation": true
     },
     {
@@ -236,8 +229,8 @@
         20
       ],
       "first_theoretical_reference_session": "2026-10-27",
-      "eligible_for_prospective_judgment_scoring": true,
-      "assessment": "awaiting_forward_observation",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
       "not_a_buy_recommendation": true
     },
     {
@@ -311,8 +304,8 @@
         20
       ],
       "first_theoretical_reference_session": "2026-10-29",
-      "eligible_for_prospective_judgment_scoring": true,
-      "assessment": "awaiting_forward_observation",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
       "not_a_buy_recommendation": true
     },
     {
@@ -361,8 +354,8 @@
         20
       ],
       "first_theoretical_reference_session": "2026-11-02",
-      "eligible_for_prospective_judgment_scoring": true,
-      "assessment": "awaiting_forward_observation",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
       "not_a_buy_recommendation": true
     },
     {
@@ -491,6 +484,31 @@
       "not_a_buy_recommendation": true
     },
     {
+      "record_id": "2026-11-04-MARKET-no-new-candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-11-03",
+      "original_report_date_kst": "2026-11-04",
+      "archived_on_utc_date": "2026-11-04",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-11-04.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "Latest Nov 3 ETF OHLCV and trigger execution are unverified; judgment archive ERROR prevents confirmed new ETF entries. No new eligible buy signal.",
+      "counterevidence": "Nasdaq rose 0.83% and semiconductor shares rebounded on Nov 3; XLP demonstrated strong 21-session relative strength on Nov 2.",
+      "invalidation": "Verified Nov 3 onward ETF OHLCV, liquidity, AUM, fee, holdings, valuation and SPY-relative triggers plus repaired archive could justify a new decision.",
+      "revisit_trigger": "Review after 5, 10, 20 NYSE sessions; MARKET entry is not a ticker return prediction.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-04",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
       "record_id": "2026-11-05-SOXX-watch-weaker",
       "ticker": "SOXX",
       "stance": "watch_weaker",
@@ -538,6 +556,31 @@
       "first_theoretical_reference_session": "2026-11-04",
       "eligible_for_prospective_judgment_scoring": true,
       "assessment": "awaiting_forward_observation",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-06-MARKET-no-new-candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-11-06",
+      "original_report_date_kst": "2026-11-07",
+      "archived_on_utc_date": "2026-11-07",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/weekly/2026-11-07.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "Risk and macro data errors plus unverified ETF product fundamentals prevent promotion of technical watch candidates to actionable new ETF buys.",
+      "counterevidence": "IHI, ITB and XLV relative strength and Friday semiconductor rebound imply cash opportunity cost.",
+      "invalidation": "Data integrity restored, issuer fund liquidity/AUM/fees verified, market breadth/credit/volatility stable and confirmed trigger.",
+      "revisit_trigger": "Recheck in 5/10/20 NYSE trading sessions with same-window SPY comparison where applicable.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-09",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
       "not_a_buy_recommendation": true
     },
     {
@@ -614,42 +657,186 @@
       "eligible_for_prospective_judgment_scoring": true,
       "assessment": "awaiting_forward_observation",
       "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-10-MARKET-no_new_candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-11-09",
+      "original_report_date_kst": "2026-11-10",
+      "archived_on_utc_date": "2026-11-09",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-11-10.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "Nov 9 market rally verified, but Nov 9 ETF OHLCV and trigger execution not verified and repository health ERROR; no newly validated entry.",
+      "counterevidence": "A broad rebound may continue after the CPI release and liquid ETFs could present entry opportunities with updated OHLCV.",
+      "invalidation": "Verified fresh ETF OHLCV, liquidity, official catalysts and actual entry triggers after CPI would warrant a new independent decision.",
+      "revisit_trigger": "Reassess after the next US session and at 5/10/20 NYSE sessions; no hypothetical trade outcome scoring.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-10",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-11-MARKET-no_new_candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-11-10",
+      "original_report_date_kst": "2026-11-11",
+      "archived_on_utc_date": "2026-11-11",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-11-11.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "Market-wide conditional ETF observations are not validated executable new buys; CPI surprise and unresolved validation gaps.",
+      "counterevidence": "Some ETFs show positive 21-day relative strength; opportunities may develop after trigger verification.",
+      "invalidation": "Validated intraday entry trigger, liquidity/AUM/fees and primary-source catalysts would permit new candidate reconsideration.",
+      "revisit_trigger": "Reassess next NYSE session and at 5/10/20 NYSE sessions with verified SPY-relative outcomes.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-11",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-12-MARKET-no_new_candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-11-11",
+      "original_report_date_kst": "2026-11-12",
+      "archived_on_utc_date": "2026-11-12",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-11-12.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "Fresh NVDA governance shock after the 11/11 close; ETF scanner remains stale and executable new entries unverified.",
+      "counterevidence": "SOXX and SPY rallied in regular trading; CEO ouster not confirmed.",
+      "invalidation": "Updated ETF screening, official leadership clarification and validated intraday execution/liquidity can change the conclusion.",
+      "revisit_trigger": "Re-evaluate next NYSE session and at 1/3/5/10/20 NYSE sessions without claiming fill.",
+      "review_horizons_nyse_sessions": [
+        1,
+        3,
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-12",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-13-MARKET-no_new_candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-11-12",
+      "original_report_date_kst": "2026-11-13",
+      "archived_on_utc_date": "2026-11-12",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-11-13.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "No validated 2026-11-12 ETF scanner; no confirmed executable entry.",
+      "counterevidence": "New leadership event and market rotation may produce a verified future opportunity.",
+      "invalidation": "Updated dated ETF OHLCV, official catalyst, AUM, fees, spreads and volume/relative-strength trigger confirmed.",
+      "revisit_trigger": "Next NYSE close and 5/10/20 NYSE sessions; do not score untriggered signals.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-13",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-14-MARKET-no_new_candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-11-13",
+      "original_report_date_kst": "2026-11-14",
+      "archived_on_utc_date": "2026-11-14",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/weekly/2026-11-14.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "ETF technical candidates exist but no verified executable new ETF entry given missing AUM, spread, issuer and independent catalysts; avoid aggressive new allocation.",
+      "counterevidence": "S&P 500 gained about 2.5% for the week; defensive sectors show relative strength and could continue.",
+      "invalidation": "New issuer-verified catalysts, AUM/fee/spread/flow confirmation, and market-relative price/volume entry triggers would invalidate the no-new-candidate assessment.",
+      "revisit_trigger": "Review after 5/10/20 NYSE sessions with SPY matched baselines, and earlier if confirmed triggers change.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-16",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-17-MARKET-no_new_candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-11-16",
+      "original_report_date_kst": "2026-11-17",
+      "archived_on_utc_date": "2026-11-16",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-11-17.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "No newly confirmed executable ETF buy signal because current ETF OHLCV, intraday triggers, AUM/spread and health are not validated.",
+      "counterevidence": "A rapid reversal may create opportunities before the next daily report; stale technical screen shows PHO/FSTA/JETS/VDC watch candidates.",
+      "invalidation": "Fresh November 16/17 ETF prices, AUM/spreads, SPY relative strength and an observed intraday trigger meeting risk/reward requirements.",
+      "revisit_trigger": "Review intraday on the next US session and evaluate after 5/10/20 NYSE sessions, not a filled trade.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-17",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-18-MARKET-no_new_candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-11-17",
+      "original_report_date_kst": "2026-11-18",
+      "archived_on_utc_date": "2026-11-18",
+      "provenance": "retrospective_archived_report",
+      "source_report": "analysis/daily/2026-11-18.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "확정 신규 매수 검증 미완료; 기술적 후보와 실제 신호 구분",
+      "counterevidence": "눌림목 및 상대강도 후보는 있었으나 최신 자료 미확인",
+      "invalidation": "최신 가격, 유동성, 촉매 및 진입 조건 검증 시 재평가",
+      "revisit_trigger": "5/10/20 NYSE 거래일 후 검증 가능한 자료로 재평가",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-18",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
+      "not_a_buy_recommendation": true
     }
   ],
-  "errors": [
-    {
-      "file": "2026-11-04-MARKET-no-new-candidate.json",
-      "error": "ValueError: MARKET no-new-idea record must not fabricate ETF prices"
-    },
-    {
-      "file": "2026-11-06-MARKET-no-new-candidate.json",
-      "error": "ValueError: MARKET no-new-idea record must not fabricate ETF prices"
-    },
-    {
-      "file": "2026-11-10-MARKET-no_new_candidate.json",
-      "error": "ValueError: MARKET no-new-idea record must not fabricate ETF prices"
-    },
-    {
-      "file": "2026-11-11-MARKET-no_new_candidate.json",
-      "error": "ValueError: SPY benchmark must be explicit"
-    },
-    {
-      "file": "2026-11-12-MARKET-no_new_candidate.json",
-      "error": "ValueError: SPY benchmark must be explicit"
-    },
-    {
-      "file": "2026-11-13-MARKET-no_new_candidate.json",
-      "error": "ValueError: MARKET no-new-idea record must not fabricate ETF prices"
-    },
-    {
-      "file": "2026-11-14-MARKET-no_new_candidate.json",
-      "error": "ValueError: MARKET no-new-idea record must not fabricate ETF prices"
-    },
-    {
-      "file": "2026-11-17-MARKET-no_new_candidate.json",
-      "error": "ValueError: MARKET no-new-idea record must not fabricate ETF prices"
-    }
-  ],
+  "errors": [],
   "limitations": [
     "This is a ledger of manually saved dated public analyst research, not an automatically generated view.",
     "Past analysis uploaded afterward is NOT a validated forward-only call.",

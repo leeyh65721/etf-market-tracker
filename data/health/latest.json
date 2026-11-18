@@ -1,9 +1,9 @@
 {
-  "us_market_date": "2026-11-16",
-  "github_run_id": "43984496588",
-  "expected_latest_closed_nyse_session": "2026-11-16",
-  "generated_at_utc": "2026-11-17T00:06:32.726316+00:00",
-  "status": "ERROR",
+  "us_market_date": "2026-11-17",
+  "github_run_id": "44207943452",
+  "expected_latest_closed_nyse_session": "2026-11-17",
+  "generated_at_utc": "2026-11-18T00:32:03.959600+00:00",
+  "status": "OK",
   "counts": {
     "etf_verified": 337,
     "etf_universe": 353,
@@ -31,7 +31,7 @@
     "screen_audit": "OK",
     "macro_etf_links": "available",
     "industry_evidence": "OK",
-    "judgment_archive": "ERROR"
+    "judgment_archive": "OK"
   },
   "stage_outcomes": {
     "ETF_SCAN": "success",
@@ -47,16 +47,6 @@
       "level": "KNOWN",
       "code": "NFCI_NOT_LIVE",
       "detail": "NFCI latest official CSV status=stale, requires permitted manual verification"
-    },
-    {
-      "level": "ERROR",
-      "code": "MODULE_JUDGMENT_ARCHIVE_ERROR",
-      "detail": "data/decisions/latest.json reports status ERROR"
-    },
-    {
-      "level": "ERROR",
-      "code": "DECISIONS_INVALID_RECORD",
-      "detail": "ETF research decision evidence contains invalid records"
     }
   ],
   "new_alert_codes": [],

@@ -1,7 +1,7 @@
 # ETF 자동 수집 종합 품질 상태
 
-- 상태: **ERROR**
-- 미국 시장 기준일: 2026-11-16 (최신 마감일 2026-11-16)
+- 상태: **OK**
+- 미국 시장 기준일: 2026-11-17 (최신 마감일 2026-11-17)
 - 검증된 ETF: **337/353 (95.5%)**
 - 공식 22개 지표: **22/22**
 - 추가 10개 세부 지표: **7/10 자동 정상**
@@ -13,8 +13,6 @@
 | 수준 | 코드 | 내용 |
 |---|---|---|
 |KNOWN|NFCI_NOT_LIVE|NFCI latest official CSV status=stale, requires permitted manual verification|
-|ERROR|MODULE_JUDGMENT_ARCHIVE_ERROR|data/decisions/latest.json reports status ERROR|
-|ERROR|DECISIONS_INVALID_RECORD|ETF research decision evidence contains invalid records|
 
 ## 모듈별 최신 상태
 
@@ -23,7 +21,7 @@
 |screen_audit|OK|
 |macro_etf_links|available|
 |industry_evidence|OK|
-|judgment_archive|ERROR|
+|judgment_archive|OK|
 
 **기준:** 자동 수집 완료 자체가 발표자료·매매판단 정확도를 보장하지 않음. 변화가 확인되지 않은 지표를 '변화 없음'으로 처리하지 말 것.
 개인 계좌/비중/손익 등은 공개 GitHub에 기록하지 않음.

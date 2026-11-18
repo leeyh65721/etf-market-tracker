@@ -1,6 +1,6 @@
 {
-  "market_date": "2026-11-16",
-  "generated_at_utc": "2026-11-17T00:05:04.592447+00:00",
+  "market_date": "2026-11-17",
+  "generated_at_utc": "2026-11-18T00:29:47.773077+00:00",
   "status": "ok",
   "requested_series_count": 22,
   "retrieved_series_count": 22,
@@ -8,7 +8,7 @@
   "source": "US Treasury, BLS, EIA, Cboe, ECB, and New York Fed official public sources",
   "credit_etf_proxies": {
     "status": "ok",
-    "asof": "2026-11-16",
+    "asof": "2026-11-17",
     "metric_type": "difference in ETF price returns, not yield spread/OAS",
     "caveats": [
       "ETF price returns exclude FX and may differ in duration, fees and distributions.",
@@ -19,14 +19,14 @@
       "HY_vs_treasury": {
         "credit_etf": "HYG",
         "treasury_etf": "IEF",
-        "5d_price_return_gap_pp": 0.693,
-        "21d_price_return_gap_pp": 0.211
+        "5d_price_return_gap_pp": -0.054,
+        "21d_price_return_gap_pp": -0.449
       },
       "IG_vs_treasury": {
         "credit_etf": "LQD",
         "treasury_etf": "IEF",
-        "5d_price_return_gap_pp": -0.088,
-        "21d_price_return_gap_pp": -0.337
+        "5d_price_return_gap_pp": -0.438,
+        "21d_price_return_gap_pp": -0.46
       }
     }
   },
@@ -51,15 +51,15 @@
       "frequency": "daily",
       "unit": "%",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
-      "observation_date": "2026-11-16",
-      "value": 4.83,
-      "previous_date": "2026-11-13",
-      "previous_value": 4.88,
-      "change_previous": -0.05,
+      "observation_date": "2026-11-17",
+      "value": 4.8,
+      "previous_date": "2026-11-16",
+      "previous_value": 4.83,
+      "change_previous": -0.03,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-06",
-      "five_observation_change": 0.32,
-      "five_observation_pct": 7.0953
+      "five_observation_reference_date": "2026-11-09",
+      "five_observation_change": 0.24,
+      "five_observation_pct": 5.2632
     },
     {
       "series_id": "T10Y",
@@ -67,15 +67,15 @@
       "frequency": "daily",
       "unit": "%",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
-      "observation_date": "2026-11-16",
-      "value": 5.12,
-      "previous_date": "2026-11-13",
-      "previous_value": 5.15,
-      "change_previous": -0.03,
+      "observation_date": "2026-11-17",
+      "value": 5.1,
+      "previous_date": "2026-11-16",
+      "previous_value": 5.12,
+      "change_previous": -0.02,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-06",
-      "five_observation_change": 0.26,
-      "five_observation_pct": 5.3498
+      "five_observation_reference_date": "2026-11-09",
+      "five_observation_change": 0.22,
+      "five_observation_pct": 4.5082
     },
     {
       "series_id": "T10Y_REAL",
@@ -83,15 +83,15 @@
       "frequency": "daily",
       "unit": "%",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026&page&_format=csv",
-      "observation_date": "2026-11-16",
-      "value": 2.92,
-      "previous_date": "2026-11-13",
-      "previous_value": 2.91,
-      "change_previous": 0.01,
+      "observation_date": "2026-11-17",
+      "value": 2.89,
+      "previous_date": "2026-11-16",
+      "previous_value": 2.92,
+      "change_previous": -0.03,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-06",
-      "five_observation_change": 0.29,
-      "five_observation_pct": 11.0266
+      "five_observation_reference_date": "2026-11-09",
+      "five_observation_change": 0.23,
+      "five_observation_pct": 8.6466
     },
     {
       "series_id": "T10Y2Y",
@@ -99,15 +99,15 @@
       "frequency": "daily",
       "unit": "%p",
       "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
-      "observation_date": "2026-11-16",
-      "value": 0.29,
-      "previous_date": "2026-11-13",
-      "previous_value": 0.27,
-      "change_previous": 0.02,
+      "observation_date": "2026-11-17",
+      "value": 0.3,
+      "previous_date": "2026-11-16",
+      "previous_value": 0.29,
+      "change_previous": 0.01,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-06",
-      "five_observation_change": -0.06,
-      "five_observation_pct": -17.1429
+      "five_observation_reference_date": "2026-11-09",
+      "five_observation_change": -0.02,
+      "five_observation_pct": -6.25
     },
     {
       "series_id": "CPI_HEADLINE",
@@ -222,15 +222,15 @@
       "frequency": "daily",
       "unit": "index",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
-      "observation_date": "2026-11-13",
-      "value": 19.3,
-      "previous_date": "2026-11-12",
-      "previous_value": 18.7,
-      "change_previous": 0.6,
+      "observation_date": "2026-11-16",
+      "value": 22.91,
+      "previous_date": "2026-11-13",
+      "previous_value": 19.3,
+      "change_previous": 3.61,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-06",
-      "five_observation_change": -6.34,
-      "five_observation_pct": -24.727
+      "five_observation_reference_date": "2026-11-09",
+      "five_observation_change": 2.99,
+      "five_observation_pct": 15.01
     },
     {
       "series_id": "VVIX",
@@ -238,15 +238,15 @@
       "frequency": "daily",
       "unit": "index",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VVIX_History.csv",
-      "observation_date": "2026-11-16",
-      "value": 114.23,
-      "previous_date": "2026-11-13",
-      "previous_value": 101.53,
-      "change_previous": 12.7,
+      "observation_date": "2026-11-17",
+      "value": 121.28,
+      "previous_date": "2026-11-16",
+      "previous_value": 114.23,
+      "change_previous": 7.05,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-09",
-      "five_observation_change": 15.8,
-      "five_observation_pct": 16.052
+      "five_observation_reference_date": "2026-11-10",
+      "five_observation_change": 24.65,
+      "five_observation_pct": 25.5097
     },
     {
       "series_id": "USD_KRW_ECB",
@@ -254,15 +254,15 @@
       "frequency": "daily",
       "unit": "KRW/USD",
       "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml",
-      "observation_date": "2026-11-16",
-      "value": 1334.8738,
-      "previous_date": "2026-11-13",
-      "previous_value": 1337.13355,
-      "change_previous": -2.25975,
+      "observation_date": "2026-11-17",
+      "value": 1336.20894,
+      "previous_date": "2026-11-16",
+      "previous_value": 1334.8738,
+      "change_previous": 1.33514,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-09",
-      "five_observation_change": -11.91437,
-      "five_observation_pct": -0.8847
+      "five_observation_reference_date": "2026-11-10",
+      "five_observation_change": -2.79588,
+      "five_observation_pct": -0.2088
     },
     {
       "series_id": "EUR_USD_ECB",
@@ -270,15 +270,15 @@
       "frequency": "daily",
       "unit": "USD/EUR",
       "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml",
-      "observation_date": "2026-11-16",
-      "value": 1.1014,
-      "previous_date": "2026-11-13",
-      "previous_value": 1.1052,
-      "change_previous": -0.0038,
+      "observation_date": "2026-11-17",
+      "value": 1.0989,
+      "previous_date": "2026-11-16",
+      "previous_value": 1.1014,
+      "change_previous": -0.0025,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-09",
-      "five_observation_change": -0.0179,
-      "five_observation_pct": -1.5992
+      "five_observation_reference_date": "2026-11-10",
+      "five_observation_change": -0.0225,
+      "five_observation_pct": -2.0064
     },
     {
       "series_id": "EFFR",
@@ -286,13 +286,13 @@
       "frequency": "daily",
       "unit": "%",
       "source_url": "https://markets.newyorkfed.org/api/rates/unsecured/effr/last/120.json",
-      "observation_date": "2026-11-13",
+      "observation_date": "2026-11-16",
       "value": 3.88,
-      "previous_date": "2026-11-12",
+      "previous_date": "2026-11-13",
       "previous_value": 3.88,
       "change_previous": 0.0,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-05",
+      "five_observation_reference_date": "2026-11-06",
       "five_observation_change": 0.0,
       "five_observation_pct": 0.0
     },
@@ -302,15 +302,15 @@
       "frequency": "daily",
       "unit": "%",
       "source_url": "https://markets.newyorkfed.org/api/rates/secured/sofr/last/120.json",
-      "observation_date": "2026-11-13",
-      "value": 3.9,
-      "previous_date": "2026-11-12",
+      "observation_date": "2026-11-16",
+      "value": 3.93,
+      "previous_date": "2026-11-13",
       "previous_value": 3.9,
-      "change_previous": 0.0,
+      "change_previous": 0.03,
       "status": "ok",
-      "five_observation_reference_date": "2026-11-05",
-      "five_observation_change": -0.02,
-      "five_observation_pct": -0.5102
+      "five_observation_reference_date": "2026-11-06",
+      "five_observation_change": 0.04,
+      "five_observation_pct": 1.0283
     },
     {
       "series_id": "JOLTS_OPENINGS",
@@ -392,18 +392,10 @@
     {
       "indicator": "T10Y",
       "title": "미국 장기금리 변화",
-      "evidence": "+26.00",
-      "period": "2026-11-06 to 2026-11-16",
+      "evidence": "+22.00",
+      "period": "2026-11-09 to 2026-11-17",
       "conditional_interpretation": "상승은 기업 차입비용과 주식 할인율에 부담이 될 수 있으나 성장 기대로 움직였을 수도 있음",
       "independently_verify": "연준과 국채 실질금리·기대물가·입찰 및 증시를 재확인"
-    },
-    {
-      "indicator": "VIX",
-      "title": "VIX 단기 변동성 확대",
-      "evidence": "-6.34",
-      "period": "2026-11-06 to 2026-11-13",
-      "conditional_interpretation": "증시 옵션시장의 위험회피가 커질 수 있으나 단기 이벤트의 영향일 수도 있음",
-      "independently_verify": "신용시장과 시장 폭·증시 추세를 함께 확인"
     }
   ],
   "errors": {},
