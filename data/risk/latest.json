@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-18T13:26:24Z",
+  "checked_at_utc": "2026-11-18T14:24:22Z",
   "market_date": "2026-11-18",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음(확인 범위 내). 개장 전 반등은 지속되나 일부 보도에서 상승폭 제한 및 금리 인상 우려 확인. 기존 high 잠정 유지.",
+  "change_since_previous": "신규 경고 없음(확인 범위 내). Reuters/WSJ 달러 19개월 고점 및 Waller 발언 교차 확인; 기존 금리 위험의 연장. 개장 전 혼조, 신규 구조적 충격 미확인.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -884,6 +884,12 @@
       "dow_futures_change_pct": -0.2,
       "us_10y_yield_pct": 5.12,
       "note": "IBD Nov 18 premarket report; exact observation time and delay unknown; not synchronized with previous Reuters quotes."
+    },
+    "dxy_nov18_reuters": {
+      "value": 103.82,
+      "change_pct": 0.2,
+      "observed_at_utc": null,
+      "note": "Reuters 11월 18일 기사, 정확한 호가 시각 및 지연 미확인"
     }
   },
   "sources": [
@@ -972,7 +978,10 @@
     "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/",
     "https://www.barrons.com/articles/stock-movers-62881b61",
     "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-minutes-nvidia-earnings-nvda-stock-lowes-target/",
-    "https://www.barrons.com/articles/s-p-500-futures-rise-in-premarket-trading-global-e-online-stag-industrial-lag-5e31e38c"
+    "https://www.barrons.com/articles/s-p-500-futures-rise-in-premarket-trading-global-e-online-stag-industrial-lag-5e31e38c",
+    "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/",
+    "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/",
+    "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-but-may-be-weighed-by-risk-off-sentiment-d2acd03c"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -1018,6 +1027,7 @@
     "2026-11-18T06:48:18Z: US regular session closed; triggers not evaluated. FRED daily releases lag; latest 17 Nov VIX/OAS not verified. SOXX, gas, copper, USD/KRW, current breadth and funding liquidity not verified; Reuters/AP quotes asynchronous. Existing four alerts compared; full events/daily review incomplete.",
     "2026-11-18T09:32:13Z: 미국 정규장 개장 전, 트리거 평가 제외. 유럽/원유 스냅샷 약 84/107분 경과, 개별 호가 지연 미확인. 최신 SOXX/VIX/OAS/실질금리/유동성/시장폭/천연가스/구리/USD-KRW 직접 검증 미완료. 기존 경고 4건 비교, events/daily 전체 본문 미대조. 독립 교차 검증 제한.",
     "2026-11-18T12:11:15Z: 미국 정규장 개장 전, 트리거 평가 제외. 선물 관측 138분 전, 금 시각 불명. 최신 공식 VIX/OAS/실질금리/유동성/시장폭/SOXX/가스/구리/USD-KRW 직접 검증 미완료. 기존 경고 4건 비교, events/daily 전체 본문 미대조.",
-    "2026-11-18T13:26:24Z: US regular session not open; triggers not evaluated. IBD/AP/Barrons quotes asynchronous, exact timestamps/delays unknown. Waller remarks primary transcript not verified. Current official VIX/OAS/real yields/liquidity/breadth/SOXX/gas/copper/USD-KRW not independently verified. Four previous alerts compared; full events/daily review incomplete."
+    "2026-11-18T13:26:24Z: US regular session not open; triggers not evaluated. IBD/AP/Barrons quotes asynchronous, exact timestamps/delays unknown. Waller remarks primary transcript not verified. Current official VIX/OAS/real yields/liquidity/breadth/SOXX/gas/copper/USD-KRW not independently verified. Four previous alerts compared; full events/daily review incomplete.",
+    "2026-11-18T14:24:22Z: 미국 정규장 개장 6분 전, 트리거 평가 제외. 가격 관측시각/지연 불명. 공식 최신 SOXX/VIX/OAS/실질금리/시장폭/유동성/천연가스/구리/USD-KRW 및 주택 지표 원문 미검증. 기존 경고 4건 비교, events/daily 전체 본문 미대조."
   ]
 }
