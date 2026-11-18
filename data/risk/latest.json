@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-18T21:26:27Z",
+  "checked_at_utc": "2026-11-18T23:25:55Z",
   "market_date": "2026-11-18",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음(확인 범위). 미국 정규장 마감: S&P500 -0.2%, Dow -1.1%, Nasdaq +0.4%, Russell 2000 +0.5%, NVDA -2.9%. 금·구리 급락은 주시하되 광범위한 신용 충격 증거 미확보.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 18일 미국 정규장 마감과 금·구리 하락은 직전 점검에 이미 반영됨. 신규 신용·유동성 충격 확인 불가. 장중 트리거 파일 404, 미국 정규장 종료.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -941,6 +941,15 @@
       "gold_change_pct": -3.16,
       "ny_copper_futures_reported_change_pct": -6.1,
       "note": "WSJ Nov 18; copper exact timestamp and settlement status unclear"
+    },
+    "us_market_close_nov18_recheck": {
+      "sp500_change_pct": -0.2,
+      "nasdaq_change_pct": 0.4,
+      "dow_change_pct": -1.1,
+      "russell2000_change_pct": 0.5,
+      "nvda_change_pct": -2.9,
+      "observed_at_utc": "2026-11-18T21:00:00Z",
+      "note": "AP/Reuters Nov 18 closing reports; rounded, scheduled market close time, precise quote ticks not verified; repeated check not a new event"
     }
   },
   "sources": [
@@ -1087,6 +1096,8 @@
     "2026-11-18T15:35:39Z: 공식 최신 SOXX/XLP/XLF/SPY 호가·거래량·시장폭·VIX·OAS·실질금리·유동성·원자재·환율 동시점 미검증. analysis/triggers/latest.json 404; 사전 신호 미평가. 기존 경고 4건 비교, events/daily 전체 본문 미대조.",
     "2026-11-18T18:07:57Z: AP/Reuters quote timestamps unknown; secondary VIX/rates snapshot 112 minutes old. Official OAS, real yields, liquidity, market breadth, SOXX/XLP/XLF/SPY quotes, commodities and FX not verified. Four prior alerts compared; full events/daily not reviewed. Trigger file 404; no signal evaluation.",
     "2026-11-18T20:22:37Z: Reuters/Barrons asynchronous reports; official FOMC text, current SOXX, VIX, OAS, real yields, breadth, commodities, FX and liquidity not independently verified; four prior alerts compared; full event/daily review incomplete; trigger file 404.",
-    "2026-11-18T21:26:27Z: regular session closed; triggers not evaluated. Official OAS, funding liquidity, real yields, VIX, SOXX/XLP/XLF, USD/KRW and natural gas not verified; metals quotes asynchronous. Four prior alerts compared; full event/daily review incomplete."
+    "2026-11-18T21:26:27Z: regular session closed; triggers not evaluated. Official OAS, funding liquidity, real yields, VIX, SOXX/XLP/XLF, USD/KRW and natural gas not verified; metals quotes asynchronous. Four prior alerts compared; full event/daily review incomplete.",
+    "2026-11-18T23:25:55Z: 공식 동시점 VIX·신용 OAS·실질금리·유동성·시장 폭·SOXX/XLP/XLF 호가·USD/KRW·천연가스 미검증. 11월 18일 정규장 마감 보도는 지연 자료.",
+    "analysis/triggers/latest.json 404; 미국 정규장 외 시간이므로 장중 트리거 평가 제외."
   ]
 }
