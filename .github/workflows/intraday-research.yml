@@ -1,0 +1,36 @@
+name: Intraday research observer
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 14-21 * * 1-5'
+  push:
+    paths:
+      - '.github/workflows/intraday-research.yml'
+permissions:
+  contents: write
+concurrency:
+  group: daily-etf-scan
+  cancel-in-progress: false
+jobs:
+  observe:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -p 'test_intraday_observer.py' -v
+      - run: python intraday_observer.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/research/intraday_latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Record delayed intraday research observations"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
