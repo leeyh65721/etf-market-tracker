@@ -2,7 +2,7 @@
 import csv, json, math, statistics as st
 from pathlib import Path
 from datetime import datetime, timezone
-import pandas_market_calendars as mcal
+import exchange_calendars as xc
 
 ROOT=Path(__file__).resolve().parent
 def num(x):
@@ -23,7 +23,7 @@ def load(root):
             days[p.stem]=rows
         except (ValueError,KeyError,OSError) as e: issues.append([p.name,str(e)])
     if not days: return [],{},issues
-    dates=[str(x.date()) for x in mcal.get_calendar("NYSE").schedule(start_date=min(days),end_date=max(days)).index]
+    dates=[str(x.date()) for x in xc.get_calendar("XNYS").sessions_in_range(min(days),max(days))]
     issues += [[d,"missing session"] for d in dates if d not in days]
     return dates,days,issues
 
