@@ -21,7 +21,7 @@ def load(root):
                     rows[r["ticker"]]=r
             if "SPY" not in rows: raise ValueError("SPY missing")
             days[p.stem]=rows
-        except (ValueError,KeyError,OSError) as e: issues.append([p.name,str(e)])
+        except (ValueError,TypeError,KeyError,OSError) as e: issues.append([p.name,str(e)])
     if not days: return [],{},issues
     dates=[str(x.date()) for x in xc.get_calendar("XNYS").sessions_in_range(min(days),max(days))]
     issues += [[d,"missing session"] for d in dates if d not in days]
@@ -57,7 +57,7 @@ def trade(dates,days,i,t,h=5,cost=.002,stop=.04,target=.08):
                 net=exitp/entry*(1-cost/2)/(1+cost/2)-1
                 return {"status":"closed","entry":dates[i+1],"exit":dates[j+1],"net":net,"spy":price(days,dates[j+1],"SPY")/benchmark-1,"sessions":j-i}
         return {"status":"pending"}
-    except (KeyError,ValueError): return {"status":"missing_data"}
+    except (KeyError,ValueError,TypeError): return {"status":"missing_data"}
 
 def metrics(rows):
     a=[r for r in rows if r["status"]=="closed"]
@@ -79,7 +79,7 @@ def run(root=ROOT):
                     regime="above_ma50" if days[d]["SPY"]["above_ma50"]=="True" else "below_ma50"
                     for h in (5,10,20):
                         results.append(dict(trade(dates,days,i,t,h),ticker=t,signal_date=d,strategy=s,threshold=threshold,horizon=h,regime=regime))
-                except (KeyError,ValueError) as e:issues.append([d,t,str(e)])
+                except (KeyError,ValueError,TypeError) as e:issues.append([d,t,str(e)])
     cut=dates[int(len(dates)*.7)] if dates else ""
     # Purge trades spanning split. No optimization on test set.
     groups={}
