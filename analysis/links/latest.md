@@ -1,7 +1,7 @@
 # 경제지표 관측과 ETF 시장 움직임 — 2026-11-17 미국장
 
 > **단순 동시 관측 표. 인과관계·예측력·매수신호가 아님.**
-- 작성(UTC): 2026-11-18T00:32:00.241463+00:00
+- 작성(UTC): 2026-11-18T04:40:12.948602+00:00
 - ETF 가격 관측일: 2026-11-16 → 2026-11-17
 - 검증된 대표 ETF 종가 쌍: 17/17
 - 거시지표 관측 기간과 실제 발표 시각은 다를 수 있음. 경제지표가 ETF를 움직였다고 단정하지 않음.
@@ -36,7 +36,7 @@
 |T10Y|2026-11-17|5.1 %|-0.02 %|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
 |T10Y_REAL|2026-11-17|2.89 %|-0.03 %|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
 |T10Y2Y|2026-11-17|0.3 %p|+0.01 %p|예(발표시각 미확인)|[기관](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv)|
-|VIX|2026-11-16|22.91 index|+3.61 index|아니오|[기관](https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv)|
+|VIX|2026-11-17|25.46 index|+2.55 index|예(발표시각 미확인)|[기관](https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv)|
 |VVIX|2026-11-17|121.28 index|+7.05 index|예(발표시각 미확인)|[기관](https://cdn.cboe.com/api/global/us_indices/daily_prices/VVIX_History.csv)|
 |WTI|2026-11-11|89.62 USD/barrel|+0 USD/barrel|아니오|[기관](https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls)|
 |BRENT|2026-11-11|92.14 USD/barrel|+1.98 USD/barrel|아니오|[기관](https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls)|

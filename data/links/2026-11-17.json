@@ -1,6 +1,6 @@
 {
   "us_market_date": "2026-11-17",
-  "generated_at_utc": "2026-11-18T00:32:00.241463+00:00",
+  "generated_at_utc": "2026-11-18T04:40:12.948602+00:00",
   "market": {
     "status": "ok",
     "market_date": "2026-11-17",
@@ -231,16 +231,16 @@
       "series_id": "VIX",
       "source_group": "core",
       "name": "Cboe VIX 공포지수",
-      "value": 22.91,
+      "value": 25.46,
       "unit": "index",
-      "observation_date": "2026-11-16",
+      "observation_date": "2026-11-17",
       "source_url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
       "frequency": "daily",
       "publication_date_verified": false,
-      "same_market_date_observation": false,
-      "previous_value": 19.3,
-      "previous_observation_date": "2026-11-13",
-      "delta_observation_units": 3.61,
+      "same_market_date_observation": true,
+      "previous_value": 22.91,
+      "previous_observation_date": "2026-11-16",
+      "delta_observation_units": 2.55,
       "value_changed": true
     },
     {
