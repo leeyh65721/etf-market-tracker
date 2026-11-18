@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-18T04:25:17Z",
+  "checked_at_utc": "2026-11-18T06:48:18Z",
   "market_date": "2026-11-18",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. 아시아 초기 반등 약화 가능성 및 금 약세 확인; 관측시각 불명으로 직전 대비 급격한 구조 악화 미검증. 기존 위험 잠정 유지.",
+  "change_since_previous": "신규 경고 없음. 공식 재무부 및 FRED 일별 자료 확인으로 검증 개선; 신용과 변동성의 과거 악화는 확인되나 직전 경고 이후 새 충격은 미확인.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -821,6 +821,32 @@
       "change_pct": -1.4,
       "observed_at_utc": null,
       "note": "Reuters Nov 18 spot report, exact timestamp and delay unverified; not evidence of systemic liquidity shock alone."
+    },
+    "treasury_nov17_official": {
+      "observed_at_utc": "2026-11-17T20:30:00Z",
+      "two_year_yield_pct": 4.8,
+      "ten_year_yield_pct": 5.1,
+      "thirty_year_yield_pct": 5.46,
+      "note": "Treasury daily indicative curve, approximate observation time; not live"
+    },
+    "real_yield_nov16_fred": {
+      "observation_date": "2026-11-16",
+      "observed_at_utc": null,
+      "value": 2.92,
+      "unit": "percent",
+      "source": "https://fred.stlouisfed.org/series/DFII10"
+    },
+    "vix_nov16_fred": {
+      "observation_date": "2026-11-16",
+      "observed_at_utc": null,
+      "value": 22.91,
+      "source": "https://fred.stlouisfed.org/series/VIXCLS"
+    },
+    "credit_review_nov16": {
+      "observation_date": "2026-11-16",
+      "observed_at_utc": null,
+      "note": "FRED ICE high yield series reviewed; widening versus previous business day, restricted redistribution so see source for values.",
+      "source": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
     }
   },
   "sources": [
@@ -900,7 +926,11 @@
     "https://apnews.com/article/dad5715bc91b4aba23a567a40e22b1fc",
     "https://squawknews.com/news/951467-asian-session-market-picture-s-and-p-500-0-17-nasdaq-100-0-3-usd-jpy-0-05-wti-0-7-1810",
     "https://www.home.saxo/en-mena/content/articles/macro/asia-market-quick-take--18-november-2026-18112026",
-    "https://www.reuters.com/world/india/gold-slides-over-one-year-low-firm-dollar-us-rate-outlook-2026-11-18/"
+    "https://www.reuters.com/world/india/gold-slides-over-one-year-low-firm-dollar-us-rate-outlook-2026-11-18/",
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
+    "https://fred.stlouisfed.org/series/DFII10",
+    "https://fred.stlouisfed.org/series/VIXCLS",
+    "https://fred.stlouisfed.org/series/BAMLH0A0HYM2"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -942,6 +972,7 @@
     "2026-11-17T23:39:37Z: US regular session closed; no verified new post-earnings quote. VIX secondary close values conflict. Official SOXX, Cboe VIX, credit OAS, real yields, current liquidity, gas/copper/USD-KRW and synchronized breadth not verified. Prior four alerts compared; full event/daily review incomplete. No new emergency evidence, not proof of absence.",
     "2026-11-18T01:40:11Z: US regular session closed; no trigger evaluation. Futures and Asian quotes exact timestamps and delay unknown. Official VIX/OAS/real yields, current liquidity, SOXX, commodities and USD/KRW not verified this run. Four prior alerts compared; full events/daily review incomplete.",
     "2026-11-18T04:07:03Z: US regular session closed; no trigger evaluation. Oil snapshot over two hours old; other market quotes asynchronous and exact delays unknown. Official credit OAS, liquidity, VIX, real yields, SOXX, gas/copper and USD/KRW not independently verified. Existing four alerts compared; full events/daily review incomplete.",
-    "2026-11-18T04:25:17Z: US regular session closed; triggers not evaluated. Reuters/AP quote timestamps and publication update times not independently established. Official credit OAS, liquidity, VIX, real yields, SOXX, gas/copper, USD/KRW and current breadth not independently verified. Existing four alerts and prior conversation compared; full events/daily comparison incomplete."
+    "2026-11-18T04:25:17Z: US regular session closed; triggers not evaluated. Reuters/AP quote timestamps and publication update times not independently established. Official credit OAS, liquidity, VIX, real yields, SOXX, gas/copper, USD/KRW and current breadth not independently verified. Existing four alerts and prior conversation compared; full events/daily comparison incomplete.",
+    "2026-11-18T06:48:18Z: US regular session closed; triggers not evaluated. FRED daily releases lag; latest 17 Nov VIX/OAS not verified. SOXX, gas, copper, USD/KRW, current breadth and funding liquidity not verified; Reuters/AP quotes asynchronous. Existing four alerts compared; full events/daily review incomplete."
   ]
 }
