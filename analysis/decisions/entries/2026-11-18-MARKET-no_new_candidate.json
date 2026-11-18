@@ -1,0 +1,25 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-18-MARKET-no_new_candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-11-17",
+  "original_report_date_kst": "2026-11-18",
+  "archived_on_utc_date": "2026-11-18",
+  "provenance": "retrospective_archived_report",
+  "source_report": "analysis/daily/2026-11-18.md",
+  "verbatim_source_excerpt": "모두 기술적 선별 단계이며 최신 가격·호가·펀더멘털 등의 검증이 남아 있어.",
+  "original_close_usd": null,
+  "original_spy_close_usd": null,
+  "thesis": "확정 신규 매수 검증 미완료; 기술적 후보와 실제 신호 구분",
+  "counterevidence": "눌림목 및 상대강도 후보는 있었으나 최신 자료 미확인",
+  "invalidation": "최신 가격, 유동성, 촉매 및 진입 조건 검증 시 재평가",
+  "revisit_trigger": "5/10/20 NYSE 거래일 후 검증 가능한 자료로 재평가",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false
+}
