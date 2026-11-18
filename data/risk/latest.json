@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-18T01:40:11Z",
+  "checked_at_utc": "2026-11-18T04:07:03Z",
   "market_date": "2026-11-18",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. Nvidia 실적 후 아시아 및 미국 선물 반등 보도는 기존 위험의 반대 근거이나 정규장 회복 미확인.",
+  "change_since_previous": "신규 경고 없음. 아시아 및 미국 선물 반등 강도가 출처별 상이; 원유 공급 위험은 재고 증가로 일부 상쇄. 기존 위험 유지, 신규 중대한 악화 미검증.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -786,6 +786,23 @@
       "sp500_futures_change_pct": 0.7,
       "msci_asia_change_pct": 0.3,
       "note": "Bloomberg via Economic Times, report updated 06:38 IST; exact quote timestamps unknown; not live or regular US session."
+    },
+    "oil_nov18_reuters_0149": {
+      "observed_at_utc": "2026-11-18T01:49:00Z",
+      "wti_usd_barrel": 85.45,
+      "brent_usd_barrel": 92.98,
+      "wti_change_pct": -0.65,
+      "brent_change_pct": -0.17,
+      "source_url": "https://www.reuters.com/business/energy/oil-prices-fall-higher-us-crude-stocks-temper-supply-risks-2026-11-18/"
+    },
+    "futures_nov18_secondary_0200": {
+      "observed_at_utc": null,
+      "reported_at_utc": "2026-11-18T02:00:00Z",
+      "sp500_change_pct": 0.17,
+      "nasdaq100_change_pct": 0.3,
+      "dxy_change_pct": 0.14,
+      "source_url": "https://squawknews.com/news/951467-asian-session-market-picture-s-and-p-500-0-17-nasdaq-100-0-3-usd-jpy-0-05-wti-0-7-1810",
+      "note": "Secondary report, exact tick time unknown"
     }
   },
   "sources": [
@@ -859,7 +876,12 @@
     "https://frontierpicks.com/journal/2026-11-17/",
     "https://journalarta.com/en/2026/11/18/wall-street-close-dow-sheds-1-65-as-chip-shares-sink-and-vix-jumps-ahead-of-nvidia/",
     "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-shares-rebound-as-nvidia-forecast-eases-ai-trade-concerns/articleshow/135944698.cms",
-    "https://www.wsj.com/finance/stocks/nikkei-rises-1-0-led-by-chip-ai-stocks-b486ab61"
+    "https://www.wsj.com/finance/stocks/nikkei-rises-1-0-led-by-chip-ai-stocks-b486ab61",
+    "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-18/",
+    "https://www.reuters.com/business/energy/oil-prices-fall-higher-us-crude-stocks-temper-supply-risks-2026-11-18/",
+    "https://apnews.com/article/dad5715bc91b4aba23a567a40e22b1fc",
+    "https://squawknews.com/news/951467-asian-session-market-picture-s-and-p-500-0-17-nasdaq-100-0-3-usd-jpy-0-05-wti-0-7-1810",
+    "https://www.home.saxo/en-mena/content/articles/macro/asia-market-quick-take--18-november-2026-18112026"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -899,6 +921,7 @@
     "2026-11-17T22:04:52Z: Nvidia primary release and call not verified; after-hours exact quote time unknown. SOXX, official VIX/OAS/real yields, latest breadth, gas/copper/USD-KRW and liquidity not independently verified. Compared existing four alerts and latest breadth event file; full events/daily comparison incomplete.",
     "2026-11-17T23:16:47Z: official Nvidia earnings release confirmed; call via media only. SOXX, official VIX/OAS/real yields, current liquidity, natural gas/copper/USD-KRW and synchronized quotes not verified. Existing four alerts compared; full events/daily files not reviewed.",
     "2026-11-17T23:39:37Z: US regular session closed; no verified new post-earnings quote. VIX secondary close values conflict. Official SOXX, Cboe VIX, credit OAS, real yields, current liquidity, gas/copper/USD-KRW and synchronized breadth not verified. Prior four alerts compared; full event/daily review incomplete. No new emergency evidence, not proof of absence.",
-    "2026-11-18T01:40:11Z: US regular session closed; no trigger evaluation. Futures and Asian quotes exact timestamps and delay unknown. Official VIX/OAS/real yields, current liquidity, SOXX, commodities and USD/KRW not verified this run. Four prior alerts compared; full events/daily review incomplete."
+    "2026-11-18T01:40:11Z: US regular session closed; no trigger evaluation. Futures and Asian quotes exact timestamps and delay unknown. Official VIX/OAS/real yields, current liquidity, SOXX, commodities and USD/KRW not verified this run. Four prior alerts compared; full events/daily review incomplete.",
+    "2026-11-18T04:07:03Z: US regular session closed; no trigger evaluation. Oil snapshot over two hours old; other market quotes asynchronous and exact delays unknown. Official credit OAS, liquidity, VIX, real yields, SOXX, gas/copper and USD/KRW not independently verified. Existing four alerts compared; full events/daily review incomplete."
   ]
 }
