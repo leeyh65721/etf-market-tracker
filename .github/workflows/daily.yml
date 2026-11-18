@@ -76,8 +76,10 @@ jobs:
       - name: Experimental research replay
         continue-on-error: true
         run: |
+          set -e
           python -m unittest discover -s tests -p 'test_research_engine.py' -v
           python research_engine.py
+          python paper_portfolio.py
       - name: Publish comprehensive data health report
         id: system_health
         if: always()
