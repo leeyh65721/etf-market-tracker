@@ -1,6 +1,7 @@
 """Experimental public synthetic portfolio. Never reads user holdings."""
 import json, math
 from pathlib import Path
+from datetime import datetime, timezone
 from research_engine import ROOT, load, signal, price, num
 def simulate(dates,days,start_cash=10000,cost=.001):
     cash=start_cash; positions={}; orders={}; curve=[]; trades=[]; issues=[]; peak=start_cash; loss_streak=0
@@ -46,6 +47,9 @@ def simulate(dates,days,start_cash=10000,cost=.001):
 def main():
     dates,days,issues=load(ROOT)
     r=simulate(dates,days);r["source_issues"]=issues
+    r["generated_at_utc"]=datetime.now(timezone.utc).isoformat()
+    r["asof"]=r["curve"][-1]["date"] if r["curve"] else None
+    r["source_asof"]=dates[-1] if dates else None
     out=ROOT/"data/research";out.mkdir(parents=True,exist_ok=True)
     (out/"paper_latest.json").write_text(json.dumps(r,indent=2,allow_nan=False))
 if __name__=="__main__":main()
