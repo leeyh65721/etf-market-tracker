@@ -1,0 +1,29 @@
+name: Research validation
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -p 'test_research_engine.py' -v
+      - run: python -m unittest discover -s tests -p 'test_decision_journal.py' -v
+      - run: python research_engine.py && python paper_portfolio.py && python decision_journal.py
+      - run: python -m py_compile intraday_observer.py
+      - name: Require valid ledger
+        run: python -c 'import json; d=json.load(open("data/decisions/latest.json")); print(d["status"], d["invalid_count"], d["reports_missing_structured_records_count"]); assert d["invalid_count"] == 0'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: research-validation
+          path: |
+            data/research/
+            data/decisions/latest.json

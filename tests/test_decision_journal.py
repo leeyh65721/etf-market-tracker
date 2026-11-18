@@ -131,6 +131,17 @@ class DecisionsTest(unittest.TestCase):
         self.assertIsNone(check["original_close_usd"])
         self.assertFalse(check["eligible_for_prospective_judgment_scoring"])
 
+    def test_legacy_market_null_metadata(self):
+        item=record()
+        item.update(ticker="MARKET",stance="no_new_candidate",
+                    record_id="2026-10-19-MARKET-no-new-candidate",
+                    original_close_usd=None,original_spy_close_usd=None)
+        item.pop("comparison_baseline")
+        self.assertEqual(a.check_entry(item,self.root)["ticker"],"MARKET")
+        item["original_close_usd"]=1
+        with self.assertRaisesRegex(ValueError,"fabricate"):
+            a.check_entry(item,self.root)
+
     def test_missing_countercase_is_invalid(self):
         item=record()
         item["counterevidence"]="none"
