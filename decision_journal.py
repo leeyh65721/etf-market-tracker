@@ -136,11 +136,11 @@ def check_entry(item,root=ROOT):
             raise ValueError("SPY baseline does not match same-date saved scanner close")
     elif any(item.get(k) is not None for k in ("original_close_usd","original_spy_close_usd")):
         raise ValueError("MARKET no-new-idea record must not fabricate ETF prices")
-    if item.get("review_horizons_nyse_sessions")!=[5,10,20]:
+    if item.get("review_horizons_nyse_sessions")!=[5,10,20] and not (symbol=="MARKET" and item.get("review_horizons_nyse_sessions")==[1,3,5,10,20]):
         raise ValueError("Must preserve objective 5/10/20 NYSE sessions")
     # Retrospectively archived calls may be useful context but CANNOT claim
     # prospectively captured decision accuracy.
-    eligible=item["provenance"]=="contemporaneous_report"
+    eligible=item["provenance"]=="contemporaneous_report" and symbol!="MARKET" and item.get("eligible_for_prospective_judgment_scoring") is not False
     return {
         "record_id":rid,"ticker":symbol,"stance":stance,
         "us_market_date":market,"original_report_date_kst":kst,
@@ -149,11 +149,11 @@ def check_entry(item,root=ROOT):
         "original_spy_close_usd":item.get("original_spy_close_usd"),
         "thesis":item["thesis"],"counterevidence":item["counterevidence"],
         "invalidation":item["invalidation"],"revisit_trigger":item["revisit_trigger"],
-        "review_horizons_nyse_sessions":[5,10,20],
+        "review_horizons_nyse_sessions":item["review_horizons_nyse_sessions"],
         "first_theoretical_reference_session":session_plus(market,1),
         "eligible_for_prospective_judgment_scoring":eligible,
         "assessment":"awaiting_forward_observation" if eligible else
-                     "historical_backfill_not_prospectively_scored",
+                     ("market_observation_not_trade_scored" if symbol=="MARKET" else "historical_backfill_not_prospectively_scored"),
         "not_a_buy_recommendation":True,
     }
 
