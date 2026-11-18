@@ -123,7 +123,7 @@ def check_entry(item,root=ROOT):
         raise ValueError("Private account values must never enter the public ledger")
     if item.get("trade_instruction",None) is not False:
         raise ValueError("The public market observation cannot be a trade instruction")
-    if item.get("comparison_baseline")!="SPY":
+    if item.get("comparison_baseline")!="SPY" and not (symbol=="MARKET" and item.get("comparison_baseline") is None):
         raise ValueError("SPY benchmark must be explicit")
     if symbol!="MARKET":
         initial=number(item.get("original_close_usd"),"original ETF baseline")
@@ -134,7 +134,7 @@ def check_entry(item,root=ROOT):
             raise ValueError("ETF baseline does not match contemporaneous saved scanner close")
         if abs(benchmark-spy)>.015:
             raise ValueError("SPY baseline does not match same-date saved scanner close")
-    elif any(k in item for k in ("original_close_usd","original_spy_close_usd")):
+    elif any(item.get(k) is not None for k in ("original_close_usd","original_spy_close_usd")):
         raise ValueError("MARKET no-new-idea record must not fabricate ETF prices")
     if item.get("review_horizons_nyse_sessions")!=[5,10,20]:
         raise ValueError("Must preserve objective 5/10/20 NYSE sessions")
