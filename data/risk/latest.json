@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-18T15:35:39Z",
+  "checked_at_utc": "2026-11-18T18:07:57Z",
   "market_date": "2026-11-18",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음(확인 범위 내). Reuters 개장 지수 및 AP 장중 혼조, NVDA 초기 상승 반납; 기존 위험의 연장, 새로운 광범위 충격 미확인. 사전 트리거 파일 404로 평가 불가.",
+  "change_since_previous": "개장 반등 반납, AP 장중 S&P500 -0.6%, Nasdaq -0.3%, Dow -1.2%, NVDA -2.6%; Reuters도 NVDA 반전 확인. 11월17일 기존 광범위 매도 경고보다 중대한 악화 및 신규 신용 충격 미검증. 신규 경고 없음(확인 범위). 트리거 404.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -904,6 +904,20 @@
       "nasdaq_change_pct": 0.8,
       "dow_change_pct": -0.5,
       "note": "기사 스냅샷 정확한 시각 및 지연 미확인"
+    },
+    "nov18_ap_intraday_followup": {
+      "observed_at_utc": null,
+      "sp500_change_pct": -0.6,
+      "nasdaq_change_pct": -0.3,
+      "dow_change_pct": -1.2,
+      "nvda_change_pct": -2.6,
+      "note": "AP Nov18 intraday; exact quote time and delay unknown"
+    },
+    "nov18_rates_vix_secondary": {
+      "observed_at_utc": "2026-11-18T16:16:00Z",
+      "ten_year_yield_pct": 5.065,
+      "vix": 25.1,
+      "note": "Investing.com 11:16 EST snapshot, historical relative to check; not official live data"
     }
   },
   "sources": [
@@ -995,7 +1009,9 @@
     "https://www.barrons.com/articles/s-p-500-futures-rise-in-premarket-trading-global-e-online-stag-industrial-lag-5e31e38c",
     "https://www.reuters.com/world/middle-east/dollar-holds-near-19-month-high-data-supports-case-us-rate-hikes-2026-11-18/",
     "https://www.reuters.com/markets/us/waller-says-cnbc-fed-needs-get-more-aggressive-inflation-response-2026-11-18/",
-    "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-but-may-be-weighed-by-risk-off-sentiment-d2acd03c"
+    "https://www.wsj.com/finance/currencies/asian-currencies-consolidate-but-may-be-weighed-by-risk-off-sentiment-d2acd03c",
+    "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/",
+    "https://www.investing.com/news/stock-market-news/treasuries-rally-for-a-third-day-as-stocks-slip-and-oil-falls-93CH-5036642"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -1043,6 +1059,7 @@
     "2026-11-18T12:11:15Z: 미국 정규장 개장 전, 트리거 평가 제외. 선물 관측 138분 전, 금 시각 불명. 최신 공식 VIX/OAS/실질금리/유동성/시장폭/SOXX/가스/구리/USD-KRW 직접 검증 미완료. 기존 경고 4건 비교, events/daily 전체 본문 미대조.",
     "2026-11-18T13:26:24Z: US regular session not open; triggers not evaluated. IBD/AP/Barrons quotes asynchronous, exact timestamps/delays unknown. Waller remarks primary transcript not verified. Current official VIX/OAS/real yields/liquidity/breadth/SOXX/gas/copper/USD-KRW not independently verified. Four previous alerts compared; full events/daily review incomplete.",
     "2026-11-18T14:24:22Z: 미국 정규장 개장 6분 전, 트리거 평가 제외. 가격 관측시각/지연 불명. 공식 최신 SOXX/VIX/OAS/실질금리/시장폭/유동성/천연가스/구리/USD-KRW 및 주택 지표 원문 미검증. 기존 경고 4건 비교, events/daily 전체 본문 미대조.",
-    "2026-11-18T15:35:39Z: 공식 최신 SOXX/XLP/XLF/SPY 호가·거래량·시장폭·VIX·OAS·실질금리·유동성·원자재·환율 동시점 미검증. analysis/triggers/latest.json 404; 사전 신호 미평가. 기존 경고 4건 비교, events/daily 전체 본문 미대조."
+    "2026-11-18T15:35:39Z: 공식 최신 SOXX/XLP/XLF/SPY 호가·거래량·시장폭·VIX·OAS·실질금리·유동성·원자재·환율 동시점 미검증. analysis/triggers/latest.json 404; 사전 신호 미평가. 기존 경고 4건 비교, events/daily 전체 본문 미대조.",
+    "2026-11-18T18:07:57Z: AP/Reuters quote timestamps unknown; secondary VIX/rates snapshot 112 minutes old. Official OAS, real yields, liquidity, market breadth, SOXX/XLP/XLF/SPY quotes, commodities and FX not verified. Four prior alerts compared; full events/daily not reviewed. Trigger file 404; no signal evaluation."
   ]
 }
