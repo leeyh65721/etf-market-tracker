@@ -61,10 +61,10 @@ def trade(dates,days,i,t,h=5,cost=.002,stop=.04,target=.08):
 
 def metrics(rows):
     a=[r for r in rows if r["status"]=="closed"]
-    if not a:return {"n":0}
+    if not a:return {"n":0,"eligible":False}
     wins=[r["net"] for r in a if r["net"]>0]
     losses=[r["net"] for r in a if r["net"]<=0]
-    return {"n":len(a),"win_rate":len(wins)/len(a),"expectancy":st.mean(r["net"] for r in a),"mean_excess":st.mean(r["net"]-r["spy"] for r in a),"average_win":st.mean(wins) if wins else None,"average_loss":st.mean(losses) if losses else None,"mean_sessions":st.mean(r["sessions"] for r in a)}
+    return {"n":len(a),"eligible":False,"positive_net_fraction":len(wins)/len(a),"win_rate":len(wins)/len(a),"expectancy":st.mean(r["net"] for r in a),"mean_excess":st.mean(r["net"]-r["spy"] for r in a),"average_win":st.mean(wins) if wins else None,"average_loss":st.mean(losses) if losses else None,"mean_sessions":st.mean(r["sessions"] for r in a)}
 
 def run(root=ROOT):
     dates,days,issues=load(root); results=[]
@@ -75,9 +75,9 @@ def run(root=ROOT):
                 try:
                     s=signal(r,threshold)
                     prev=days[dates[i-1]].get(t)
-                    if not s or prev is None or signal(prev,threshold)==s:continue
+                    if t=="SPY" or not s or prev is None or signal(prev,threshold)==s:continue
                     regime="above_ma50" if days[d]["SPY"]["above_ma50"]=="True" else "below_ma50"
-                    for h in (5,10,20):
+                    for h in (1,3,5,10,20):
                         results.append(dict(trade(dates,days,i,t,h),ticker=t,signal_date=d,strategy=s,threshold=threshold,horizon=h,regime=regime))
                 except (KeyError,ValueError,TypeError) as e:issues.append([d,t,str(e)])
     cut=dates[int(len(dates)*.7)] if dates else ""
