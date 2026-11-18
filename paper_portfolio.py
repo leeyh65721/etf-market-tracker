@@ -50,6 +50,10 @@ def main():
     r["generated_at_utc"]=datetime.now(timezone.utc).isoformat()
     r["asof"]=r["curve"][-1]["date"] if r["curve"] else None
     r["source_asof"]=dates[-1] if dates else None
+    r["complete_through_source_asof"]=bool(r["asof"] and r["asof"]==r["source_asof"] and not r["issues"] and not issues)
+    if not r["complete_through_source_asof"]:r["status"]="WARN" if r["curve"] else "ERROR"
+    r["stopped_before_source_end"]=r["asof"]!=r["source_asof"]
+    r["performance_eligible"]=False
     out=ROOT/"data/research";out.mkdir(parents=True,exist_ok=True)
     (out/"paper_latest.json").write_text(json.dumps(r,indent=2,allow_nan=False))
 if __name__=="__main__":main()
