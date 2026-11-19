@@ -1,0 +1,23 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-20-MARKET-no_new_candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-11-19",
+  "original_report_date_kst": "2026-11-20",
+  "archived_on_utc_date": "2026-11-20",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-11-20.md",
+  "verbatim_source_excerpt": "**새 매수 후보 없음**",
+  "thesis": "Broad Nov 19 selloff but fresh ETF closes and executable entry conditions not verified.",
+  "counterevidence": "Defensive ETF relative strength as of Nov 18 and possible sharp rebound create cash opportunity cost.",
+  "invalidation": "Verified Nov 19 and next-session ETF OHLCV, liquidity, fund data and objective trigger support a new entry.",
+  "revisit_trigger": "Reassess after 5/10/20 NYSE sessions against SPY; no-price MARKET record excluded from trade hit rates.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false
+}
