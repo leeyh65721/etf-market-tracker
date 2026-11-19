@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-19T11:58:13Z",
+  "checked_at_utc": "2026-11-19T12:52:44Z",
   "market_date": "2026-11-19",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. Reuters/AP의 Anthropic IPO 및 미국 선물 상승 재확인; 나스닥100 선물 +2.15% 보도, 기존 AI·연준 위험의 구조적 해소 또는 추가 악화 입증 부족. WSJ 원유 소폭 상승, 22:30 KST 미국 고용·제조업 지표 발표 전.",
+  "change_since_previous": "신규 경고 없음. AP 미국 선물 상승 및 Reuters 원유 소폭 상승 재확인. 호르무즈 기뢰 피해 보도는 독립 확인 및 공급 충격 규모 미확인. 22:30 KST 미국 지표 발표 전.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1088,6 +1088,18 @@
       "wti_usd_barrel": 83.51,
       "observed_at_utc": null,
       "note": "Reuters 및 WSJ 11월19일 기사, 각각 시각 미상, 동시점 아님"
+    },
+    "nov19_1034utc_commodity_snapshot": {
+      "observed_at_utc": "2026-11-19T10:34:00Z",
+      "sp500_futures_change_pct": 1.2,
+      "us_10y_yield_pct": 5.066,
+      "dxy": 103.67,
+      "wti_usd_barrel": 83.46,
+      "brent_usd_barrel": 92.25,
+      "natural_gas_usd_mmbtu": 3.36,
+      "copper_usd_tonne": 12511,
+      "gold_usd_oz": 3731,
+      "note": "Morgan Downey 05:34 ET 2차 집계; 139분 경과, 원거래소 개별 시각 미검증"
     }
   },
   "sources": [
@@ -1200,7 +1212,9 @@
     "https://www.marketwatch.com/livecoverage/stock-market-today-nasdaq-leads-dow-sp500-higher-on-anthropic-ai-optimism-walmart-earnings/card/treasury-yields-nudge-higher-as-haven-demand-eases-4zcx4OGGC2Cn41PKoZne",
     "https://apnews.com/article/b6a74b8949021207dc162fcc876c4649",
     "https://www.wsj.com/business/energy-oil/oil-prices-mixed-as-traders-weigh-supply-outlook-middle-east-shipping-risks-224e2724",
-    "https://www.tipranks.com/news/markets-brace-for-u-s-jobless-claims-and-factory-data-after-fed-minutes-lock-in-rate-hike-bets"
+    "https://www.tipranks.com/news/markets-brace-for-u-s-jobless-claims-and-factory-data-after-fed-minutes-lock-in-rate-hike-bets",
+    "https://commoditynews.morgandowney.com/news/2026-11-19",
+    "https://www.reuters.com/world/india/gold-edges-up-14-month-low-markets-assess-fed-rate-outlook-2026-11-19/"
   ],
   "data_limitations": [
     "정규장 종료 후 점검; 장중 신호 평가 제외",
@@ -1217,6 +1231,7 @@
     "2026-11-19 09:36 UTC: 공식 동시점 신용스프레드, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스, ETF 호가 미검증; 미국 선물 시세는 08:30 UTC 기사 기준 지연 가능",
     "analysis/triggers/latest.json GitHub 조회 실패; 정규장 전이라 장중 트리거 평가 제외",
     "2026-11-19 11:22 UTC: 최신 공식 OAS, 실질금리, 시장 폭, 동시점 VIX, 천연가스, 구리, USD/KRW, ETF 호가 미검증; 기사 호가 관측시각 및 지연시간 불명. 미국 정규장 개장 전; triggers/latest.json 404.",
-    "2026-11-19 11:58 UTC: 공식 동시점 OAS, 유동성, 실질금리, 시장 폭, VIX, 천연가스, 구리, USD/KRW, ETF 호가 미검증. 기사 시세 관측시각 및 지연 미상. analysis/events/, analysis/daily/ 조회 오류. 미국 정규장 전 트리거 평가 제외."
+    "2026-11-19 11:58 UTC: 공식 동시점 OAS, 유동성, 실질금리, 시장 폭, VIX, 천연가스, 구리, USD/KRW, ETF 호가 미검증. 기사 시세 관측시각 및 지연 미상. analysis/events/, analysis/daily/ 조회 오류. 미국 정규장 전 트리거 평가 제외.",
+    "2026-11-19 12:52 UTC: 공식 OAS·유동성·실질금리·시장 폭·VIX·USD/KRW·ETF 호가 미검증; 원자재 2차 집계 지연, 정규장 전 트리거 평가 제외. 기존 경고 보존."
   ]
 }
