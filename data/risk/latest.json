@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-18T23:25:55Z",
+  "checked_at_utc": "2026-11-19T01:22:34Z",
   "market_date": "2026-11-18",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 18일 미국 정규장 마감과 금·구리 하락은 직전 점검에 이미 반영됨. 신규 신용·유동성 충격 확인 불가. 장중 트리거 파일 404, 미국 정규장 종료.",
+  "change_since_previous": "신규 검증된 긴급 위험 경고 없음. 11월 18일 미국장 혼조, 엔비디아 약세, FOMC 매파적 의사록, 달러 강세, 금·구리 약세는 이전 점검에서 반영한 사건. 11월 19일 오전 새로운 시장 전이·신용 충격의 동시점 원자료 미확인. 미국 정규장 종료로 장중 트리거 평가 제외.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -950,6 +950,10 @@
       "nvda_change_pct": -2.9,
       "observed_at_utc": "2026-11-18T21:00:00Z",
       "note": "AP/Reuters Nov 18 closing reports; rounded, scheduled market close time, precise quote ticks not verified; repeated check not a new event"
+    },
+    "nov18_close_nov19_recheck": {
+      "observed_at_utc": "2026-11-18T21:00:00Z",
+      "note": "11월 18일 미국 정규장 마감 혼조: Reuters 재배포 11월 19일 08:07 KST 업데이트 및 Business Times 05:49 KST. 종가 정확 수치 미기입(재검증 부족), 개별 거래소 체결 시각 미확인."
     }
   },
   "sources": [
@@ -1045,7 +1049,9 @@
     "https://www.reuters.com/business/ai-stocks-rally-nvidia-outlook-calms-demand-fears-2026-11-18/",
     "https://www.investing.com/news/stock-market-news/treasuries-rally-for-a-third-day-as-stocks-slip-and-oil-falls-93CH-5036642",
     "https://apnews.com/article/990749d3d269f7ef05b9f6c089713a58",
-    "https://www.wsj.com/finance/commodities-futures/gold-treads-water-as-fed-dollar-keep-weighing-3f6439e8"
+    "https://www.wsj.com/finance/commodities-futures/gold-treads-water-as-fed-dollar-keep-weighing-3f6439e8",
+    "https://www.straitstimes.com/business/companies-markets/wall-street-ends-mixed-after-nvidia-earnings-fed-minutes",
+    "https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-wall-street-ends-mixed-after-nvidia-earnings-fed-minutes"
   ],
   "data_limitations": [
     "2026-11-16T12:52:03Z: 미국 정규장 개장 전. FT·Reuters 선물 및 NVDA 프리마켓 관측시각 불명/비동시점. SOXX/VIX/공식 회사채 OAS/실질금리/시장 폭/USD-KRW 최신 동시점 미확보. 원자재·DXY·미국 10년물은 10:34 UTC 2차 집계이며 원거래소 검증 미완료. 기존 경고 3건 비교, events/daily 전체 본문 대조 미완료.",
@@ -1098,6 +1104,8 @@
     "2026-11-18T20:22:37Z: Reuters/Barrons asynchronous reports; official FOMC text, current SOXX, VIX, OAS, real yields, breadth, commodities, FX and liquidity not independently verified; four prior alerts compared; full event/daily review incomplete; trigger file 404.",
     "2026-11-18T21:26:27Z: regular session closed; triggers not evaluated. Official OAS, funding liquidity, real yields, VIX, SOXX/XLP/XLF, USD/KRW and natural gas not verified; metals quotes asynchronous. Four prior alerts compared; full event/daily review incomplete.",
     "2026-11-18T23:25:55Z: 공식 동시점 VIX·신용 OAS·실질금리·유동성·시장 폭·SOXX/XLP/XLF 호가·USD/KRW·천연가스 미검증. 11월 18일 정규장 마감 보도는 지연 자료.",
-    "analysis/triggers/latest.json 404; 미국 정규장 외 시간이므로 장중 트리거 평가 제외."
+    "analysis/triggers/latest.json 404; 미국 정규장 외 시간이므로 장중 트리거 평가 제외.",
+    "2026-11-19 01:22 UTC: 최신 공식 신용 OAS, 실질금리, VIX, 시장 폭, 원자재·환율 동시점 호가 및 지연시간 미검증; 실시간 감시 아님.",
+    "analysis/triggers/latest.json 404; 미국 정규장 외 시간이라 신호 평가 제외."
   ]
 }
