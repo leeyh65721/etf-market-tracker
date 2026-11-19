@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-19T01:22:34Z",
+  "checked_at_utc": "2026-11-19T01:55:56Z",
   "market_date": "2026-11-18",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 위험 경고 없음. 11월 18일 미국장 혼조, 엔비디아 약세, FOMC 매파적 의사록, 달러 강세, 금·구리 약세는 이전 점검에서 반영한 사건. 11월 19일 오전 새로운 시장 전이·신용 충격의 동시점 원자료 미확인. 미국 정규장 종료로 장중 트리거 평가 제외.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 18일 미국 종가 및 금·구리·원유 하락은 이전 점검에서 이미 반영. 장중 시장 폭·공식 신용 OAS·유동성 최신 원자료 부족으로 신규 위험 전이 단정 불가. 미국 정규장 종료, 트리거 평가 제외.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -954,6 +954,16 @@
     "nov18_close_nov19_recheck": {
       "observed_at_utc": "2026-11-18T21:00:00Z",
       "note": "11월 18일 미국 정규장 마감 혼조: Reuters 재배포 11월 19일 08:07 KST 업데이트 및 Business Times 05:49 KST. 종가 정확 수치 미기입(재검증 부족), 개별 거래소 체결 시각 미확인."
+    },
+    "us_market_nov18_close_crosschecked": {
+      "sp500": 7323.63,
+      "sp500_change_pct": -0.23,
+      "nasdaq": 24429.88,
+      "nasdaq_change_pct": 0.42,
+      "dow": 50198.17,
+      "dow_change_pct": -1.11,
+      "observed_at_utc": "2026-11-18T21:00:00Z",
+      "note": "11월18일 미국 정규장 종가. 정규장 종료 시각을 기입했으며 개별 틱 시각과 시세 지연은 미검증. AP/Reuters 보도 대조."
     }
   },
   "sources": [
@@ -1106,6 +1116,7 @@
     "2026-11-18T23:25:55Z: 공식 동시점 VIX·신용 OAS·실질금리·유동성·시장 폭·SOXX/XLP/XLF 호가·USD/KRW·천연가스 미검증. 11월 18일 정규장 마감 보도는 지연 자료.",
     "analysis/triggers/latest.json 404; 미국 정규장 외 시간이므로 장중 트리거 평가 제외.",
     "2026-11-19 01:22 UTC: 최신 공식 신용 OAS, 실질금리, VIX, 시장 폭, 원자재·환율 동시점 호가 및 지연시간 미검증; 실시간 감시 아님.",
-    "analysis/triggers/latest.json 404; 미국 정규장 외 시간이라 신호 평가 제외."
+    "analysis/triggers/latest.json 404; 미국 정규장 외 시간이라 신호 평가 제외.",
+    "2026-11-19T01:55:56Z: 동시점 공식 신용스프레드·시장 폭·유동성·실질금리·천연가스·USD/KRW·ETF 호가 미확인. 장중 트리거 파일 접근 실패, 정규장 외 시간. 신규 숫자 추정 금지."
   ]
 }
