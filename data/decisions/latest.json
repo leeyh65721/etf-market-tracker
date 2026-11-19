@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-11-18T04:40:14.424819+00:00",
+  "generated_at_utc": "2026-11-19T04:21:19.309921+00:00",
   "status": "OK",
-  "valid_count": 33,
+  "valid_count": 34,
   "retrospective_count": 5,
   "prospective_count": 14,
   "invalid_count": 0,
@@ -831,6 +831,31 @@
         20
       ],
       "first_theoretical_reference_session": "2026-11-18",
+      "eligible_for_prospective_judgment_scoring": false,
+      "assessment": "market_observation_not_trade_scored",
+      "not_a_buy_recommendation": true
+    },
+    {
+      "record_id": "2026-11-19-MARKET-no_new_candidate",
+      "ticker": "MARKET",
+      "stance": "no_new_candidate",
+      "us_market_date": "2026-11-18",
+      "original_report_date_kst": "2026-11-19",
+      "archived_on_utc_date": "2026-11-19",
+      "provenance": "contemporaneous_report",
+      "source_report": "analysis/daily/2026-11-19.md",
+      "original_close_usd": null,
+      "original_spy_close_usd": null,
+      "thesis": "Nov 18 ETF closes and executable triggers unverified; no confirmed new ETF entry.",
+      "counterevidence": "Nov 17 defensive ETFs screened well and a market rebound could make cash costly.",
+      "invalidation": "Fresh complete ETF bars, liquidity and issuer checks establish an actionable trigger.",
+      "revisit_trigger": "Review after 5/10/20 NYSE sessions versus SPY; MARKET no-price record is excluded from trade hit rates.",
+      "review_horizons_nyse_sessions": [
+        5,
+        10,
+        20
+      ],
+      "first_theoretical_reference_session": "2026-11-19",
       "eligible_for_prospective_judgment_scoring": false,
       "assessment": "market_observation_not_trade_scored",
       "not_a_buy_recommendation": true

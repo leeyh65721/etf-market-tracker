@@ -1,34 +1,34 @@
 {
-  "asof": "2026-11-17",
-  "locked_sessions": 21,
-  "signal_count": 76,
+  "asof": "2026-11-18",
+  "locked_sessions": 22,
+  "signal_count": 77,
   "summaries": {
     "5": {
-      "signals": 76,
-      "observed": 71,
+      "signals": 77,
+      "observed": 72,
       "pending": 5,
       "unverifiable": 0,
       "outperformed_spy_count": 40,
-      "observed_outperformance_fraction": 0.56338,
-      "mean_excess_pp": -0.68068,
-      "median_excess_pp": 0.717,
+      "observed_outperformance_fraction": 0.55556,
+      "mean_excess_pp": -0.73929,
+      "median_excess_pp": 0.64111,
       "assessment": "exploratory_only"
     },
     "10": {
-      "signals": 76,
-      "observed": 52,
+      "signals": 77,
+      "observed": 53,
       "pending": 24,
       "unverifiable": 0,
-      "outperformed_spy_count": 34,
-      "observed_outperformance_fraction": 0.65385,
-      "mean_excess_pp": -0.70509,
-      "median_excess_pp": 2.55229,
+      "outperformed_spy_count": 35,
+      "observed_outperformance_fraction": 0.66038,
+      "mean_excess_pp": -0.63214,
+      "median_excess_pp": 2.7231,
       "assessment": "exploratory_only"
     },
     "20": {
-      "signals": 76,
+      "signals": 77,
       "observed": 0,
-      "pending": 76,
+      "pending": 77,
       "unverifiable": 0,
       "outperformed_spy_count": 0,
       "observed_outperformance_fraction": null,
@@ -1720,7 +1720,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-04",
       "reference_exit_day": "2026-11-18",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -1.61311,
+      "spy_price_return_pct": -4.77432,
+      "excess_vs_spy_pp": 3.16121,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-11-03",
@@ -2240,7 +2244,11 @@
       "sessions_held": 5,
       "reference_entry_day": "2026-11-11",
       "reference_exit_day": "2026-11-18",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -8.79743,
+      "spy_price_return_pct": -3.89703,
+      "excess_vs_spy_pp": -4.9004,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-11-10",
@@ -2353,14 +2361,38 @@
       "reference_entry_day": "2026-11-16",
       "reference_exit_day": "2026-12-15",
       "result": "pending"
+    },
+    {
+      "signal_day": "2026-11-18",
+      "ticker": "IFRA",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-11-19",
+      "reference_exit_day": "2026-11-27",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-11-18",
+      "ticker": "IFRA",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-11-19",
+      "reference_exit_day": "2026-12-04",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-11-18",
+      "ticker": "IFRA",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-11-19",
+      "reference_exit_day": "2026-12-18",
+      "result": "pending"
     }
   ],
-  "generated_at_utc": "2026-11-18T04:38:25.281869+00:00",
-  "new_daily_lock_created": false,
-  "locked_current_us_date": "2026-11-17",
-  "current_technical_candidate_entries": 0,
-  "latest_verified_universe_fraction": 0.95467,
-  "last_expected_closed_us_session": "2026-11-17",
+  "generated_at_utc": "2026-11-19T04:20:00.893180+00:00",
+  "new_daily_lock_created": true,
+  "locked_current_us_date": "2026-11-18",
+  "current_technical_candidate_entries": 1,
+  "latest_verified_universe_fraction": 0.96034,
+  "last_expected_closed_us_session": "2026-11-18",
   "warnings": [],
   "status": "OK",
   "interpretation": "Audit of technical-screen transitions ONLY, not ChatGPT ETF buy/hold recommendations. Next-session-close to subsequent-close is an observation proxy, NOT a tradable fill. The Yahoo auto-adjusted closes in separate frozen downloads may be revised around distributions, splits and provider corrections. Do not claim total-return accuracy, causality, live execution, or strategy superiority. No fees, FX or slippage included. A prospective sample of 30+ observations is exploratory, not proof."
