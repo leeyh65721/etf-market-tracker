@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-19T08:21:16Z",
+  "checked_at_utc": "2026-11-19T09:06:21Z",
   "market_date": "2026-11-19",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. AP 11월 19일 아시아 시장 보도에서 대만 가권지수 -4.4%(이전 점검에서 언급된 -2.7%보다 하락 확대), 홍콩 -1.9%, 한국 +1%, 일본 +0.7%; 지역별 혼조로 광범위 전이·신용 충격 미확인. Reuters 아시아 시장 보도 및 미국 11월 18일 마감과 비교. 기존 AI/반도체·매파적 연준 위험의 중대한 추가 악화 확증 부족. 기사 가격 정확한 관측시각 불명.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 19일 대만 금융감독당국이 가권지수 약 -4.4% 하락 후 공매도 제한 강화 및 150억 달러 시장안정기금 가동을 보도. 직전 점검에서 대만 -4.4%는 이미 반영; 이번에 확인된 규제 대응은 새 정책이지만 미국 신용·유동성 충격 또는 SOXX 긴급 비중 변경의 확증은 아님. Investing.com의 -4.6%, 하락 816/상승 50은 기사 시점 불명, Reuters/AP -4.4%와 비동시점이므로 추가 하락으로 단정 금지. 기존 경고 반복 발송 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1046,6 +1046,13 @@
       "semiconductor_index_change_pct": 0.1,
       "observed_at_utc": null,
       "note": "Reuters 2026-11-18 정규장 종가; 정확한 개별 체결시각 미확인, 이전 점검과 중복"
+    },
+    "taiwan_nov19_policy_reuters": {
+      "taiex_change_pct": -4.4,
+      "stabilization_fund_usd_billion": 15,
+      "short_sale_trigger_decline_pct": 3.5,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-19; 보도상 시장 하락 및 규제 발표, 정확한 가격 관측시각 불명; 직전 점검과 동일 사건"
     }
   },
   "sources": [
@@ -1151,7 +1158,9 @@
     "https://www.reuters.com/business/energy/oil-prices-steady-supply-surplus-softens-sentiment-though-gulf-war-supports-2026-11-19/",
     "https://apnews.com/article/206c84045137824feabe052a29ff6140",
     "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/",
-    "https://wealthinsights.metrobank.com.ph/news/us-stocks-wall-street-ends-mixed-after-nvidia-earnings-fed-minutes"
+    "https://wealthinsights.metrobank.com.ph/news/us-stocks-wall-street-ends-mixed-after-nvidia-earnings-fed-minutes",
+    "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/",
+    "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-19/"
   ],
   "data_limitations": [
     "정규장 종료 후 점검; 장중 신호 평가 제외",
@@ -1163,6 +1172,7 @@
     "2026-11-19 05:01 UTC: 공식 동시점 OAS·실질금리·VIX·시장 폭·유동성·천연가스·USD/KRW·SOXX/XLP/XLF 호가 미검증; 기사 가격 개별 관측시각 미상. 장중 트리거 파일 조회 실패, 미국 정규장 외 시간.",
     "2026-11-19T05:31:55Z: 공식 동시점 OAS/VIX/실질금리/시장폭/유동성/천연가스/USD-KRW 및 ETF 호가 미검증. 기사 가격 정확한 호가시각 미제공. 정규장 외 트리거 미평가.",
     "2026-11-19 06:48 UTC: 공식 동시점 신용 OAS, VIX, 실질금리, 시장 폭, USD/KRW, 천연가스, ETF 호가 미검증. 뉴스 기사 가격은 정확한 관측시각 및 지연 불명. 미국 정규장 외 시간, 장중 트리거 평가 제외; 사전 트리거 파일 조회 실패.",
-    "2026-11-19 08:21 UTC: 실시간 VIX, 공식 OAS, 유동성, 실질금리, ETF 호가, 천연가스, USD/KRW 동시점 검증 미완료. 아시아 시세의 관측시각 불명. analysis/triggers/latest.json 404. 장중 미국 정규장 외 시간."
+    "2026-11-19 08:21 UTC: 실시간 VIX, 공식 OAS, 유동성, 실질금리, ETF 호가, 천연가스, USD/KRW 동시점 검증 미완료. 아시아 시세의 관측시각 불명. analysis/triggers/latest.json 404. 장중 미국 정규장 외 시간.",
+    "2026-11-19 09:06 UTC: 공식 동시점 신용 OAS, 실질금리, VIX, 유동성, ETF 호가/거래량, 천연가스, USD/KRW 검증 불가; 보도 시세 정확한 관측시각 및 지연 불명. 미국 정규장 전이므로 장중 트리거 평가 제외; triggers/latest.json 조회 실패."
   ]
 }
