@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-19T09:36:27Z",
+  "checked_at_utc": "2026-11-19T11:22:10Z",
   "market_date": "2026-11-19",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 직전 09:06 UTC 점검에서 대만 -4.4% 및 공매도 규제·안정기금 조치 이미 반영. Reuters 11월19일 03:30 ET 미국 나스닥100 선물 +1.92%, S&P500 선물 +1.12%, 다우 선물 +0.71%로 반대 방향 움직임 확인; 정규장 시세 아님. Anthropic IPO 가격 $83 및 810억 달러 공모는 이미 알려진 촉매. 신용·유동성 전이 악화 증거 미확보, 동시점 자료 부족으로 기존 HIGH 잠정 유지. 신규 사건 경고 및 동일 사건 재알림 없음.",
+  "change_since_previous": "신규 긴급 경고 없음. 이전 점검의 미국 선물 상승과 대만 급락·규제대응 이후 위험 단계 상승을 입증할 신규 동시점 신용/유동성/시장 폭 자료 없음. Reuters 11월19일 미국 선물 상승 및 Anthropic IPO $83, AP 아시아 혼조, MarketWatch 10년물 5.090% (보도 시점 기준)를 재확인. IPO 및 기존 연준·반도체 이슈 중복 경고 제외. 실시간 시세 아님.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1068,6 +1068,19 @@
       "wti_change_pct": -0.31,
       "observed_at_utc": null,
       "note": "Reuters Nov 19 기사 기준, 개별 시세 관측시각 불명, 이전 보도와 동시점 비교 불가"
+    },
+    "us_10y_nov19_marketwatch": {
+      "value": 5.09,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "MarketWatch Nov 19 early Thursday report, +1bp; exact tick time and delay unavailable"
+    },
+    "us_futures_nov19_reuters": {
+      "nasdaq100_change_pct": 1.83,
+      "sp500_change_pct": 1.04,
+      "dow_change_pct": 0.6,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 19 premarket article; earlier 03:30 ET snapshot +1.92/+1.12/+0.71, cannot establish latest chronological quote; not regular session"
     }
   },
   "sources": [
@@ -1176,7 +1189,8 @@
     "https://wealthinsights.metrobank.com.ph/news/us-stocks-wall-street-ends-mixed-after-nvidia-earnings-fed-minutes",
     "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/",
     "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-19/",
-    "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/"
+    "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/",
+    "https://www.marketwatch.com/livecoverage/stock-market-today-nasdaq-leads-dow-sp500-higher-on-anthropic-ai-optimism-walmart-earnings/card/treasury-yields-nudge-higher-as-haven-demand-eases-4zcx4OGGC2Cn41PKoZne"
   ],
   "data_limitations": [
     "정규장 종료 후 점검; 장중 신호 평가 제외",
@@ -1191,6 +1205,7 @@
     "2026-11-19 08:21 UTC: 실시간 VIX, 공식 OAS, 유동성, 실질금리, ETF 호가, 천연가스, USD/KRW 동시점 검증 미완료. 아시아 시세의 관측시각 불명. analysis/triggers/latest.json 404. 장중 미국 정규장 외 시간.",
     "2026-11-19 09:06 UTC: 공식 동시점 신용 OAS, 실질금리, VIX, 유동성, ETF 호가/거래량, 천연가스, USD/KRW 검증 불가; 보도 시세 정확한 관측시각 및 지연 불명. 미국 정규장 전이므로 장중 트리거 평가 제외; triggers/latest.json 조회 실패.",
     "2026-11-19 09:36 UTC: 공식 동시점 신용스프레드, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스, ETF 호가 미검증; 미국 선물 시세는 08:30 UTC 기사 기준 지연 가능",
-    "analysis/triggers/latest.json GitHub 조회 실패; 정규장 전이라 장중 트리거 평가 제외"
+    "analysis/triggers/latest.json GitHub 조회 실패; 정규장 전이라 장중 트리거 평가 제외",
+    "2026-11-19 11:22 UTC: 최신 공식 OAS, 실질금리, 시장 폭, 동시점 VIX, 천연가스, 구리, USD/KRW, ETF 호가 미검증; 기사 호가 관측시각 및 지연시간 불명. 미국 정규장 개장 전; triggers/latest.json 404."
   ]
 }
