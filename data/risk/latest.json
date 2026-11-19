@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-19T19:43:26Z",
+  "checked_at_utc": "2026-11-19T21:14:39Z",
   "market_date": "2026-11-19",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음; Reuters 장중 보도상 S&P500 -1.29%, Nasdaq -1.29%, Dow -1.60%로 기존 경고 대비 추가 악화 미확인. 정확한 관측시각 불명으로 회복 확정도 불가.",
+  "change_since_previous": "신규 경고 없음. 미국 종가 하락폭 확대 확인(S&P -2.03%, Nasdaq -2.23%, Dow -2.20% Reuters 잠정); 기존 AI 반등 실패 경고의 연장, 시장 폭 약 90% 하락 유지, 새로운 신용 경색이나 독립 촉매 미확인. 위험 해소 아님.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1175,6 +1175,31 @@
       "amd_change_pct": -9.2,
       "anthropic_change_pct": 15,
       "note": "Reuters Nov 19 intraday report, exact quote timestamp and delay unknown; not closing or live quotes"
+    },
+    "nov19_us_close": {
+      "observed_at_utc": "2026-11-19T21:00:00Z",
+      "sp500_change_pct": -2.03,
+      "nasdaq_change_pct": -2.23,
+      "dow_change_pct": -2.2,
+      "sp500_close": 7175.24,
+      "nasdaq_close": 23885.88,
+      "dow_close": 49095.46,
+      "note": "Reuters preliminary close; AP and MarketWatch broadly corroborate, rounded values differ; scheduled close 14m39s before check"
+    },
+    "nov19_europe_close": {
+      "observed_at_utc": null,
+      "stoxx600_change_pct": -0.88,
+      "note": "Reuters European close; exact timestamp unavailable"
+    },
+    "nov19_breadth_close": {
+      "observed_at_utc": "2026-11-19T21:00:00Z",
+      "declining_share_pct_lower_bound": 90,
+      "note": "AP close report; more than 90% declined; exact count unavailable"
+    },
+    "nov19_secondary_credit": {
+      "observed_at_utc": null,
+      "high_yield_spread_pct": 3.47,
+      "note": "capmkts intraday secondary report, official OAS and exact timestamp unverified; not closing quote"
     }
   },
   "sources": [
@@ -1297,7 +1322,10 @@
     "https://www.investors.com/news/technology/chip-stocks-anthropic-ipo-ai-prospects/",
     "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/",
     "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/the-ai-rally-finally-gets-a-win-87sn1lIR2ZeNP5CsqLVk",
-    "https://wiseview.ai/news/stock-market-today-2026-11-19"
+    "https://wiseview.ai/news/stock-market-today-2026-11-19",
+    "https://www.marketwatch.com/livecoverage/stock-market-today-nasdaq-leads-dow-sp500-higher-on-anthropic-ai-optimism-walmart-earnings/card/dow-s-p-500-nasdaq-end-sharply-lower-after-anthropic-s-public-market-debut-NqpTMwtQZb9Zxc3cLBRQ",
+    "https://www.reuters.com/markets/europe/european-stocks-rebound-tech-climbs-ai-optimism-2026-11-19/",
+    "https://capmkts.com/pulse/2026-11-19"
   ],
   "data_limitations": [
     "정규장 종료 후 점검; 장중 신호 평가 제외",
@@ -1319,6 +1347,7 @@
     "2026-11-19T16:10:38Z: 정규장 중이나 triggers/latest.json 404, events/daily 디렉터리 조회 오류. 최신 동시점 SOXX/XLP/XLF/SPY 가격·거래량·호가, 시장 폭, VIX, OAS, 실질금리, 유동성, 원자재·USD/KRW 미검증. 시간별 점검이며 신호 누락 가능.",
     "2026-11-19 17:44 UTC: trigger file 404; events/daily directory listing unavailable; current ETF quotes/volume/spreads, official VIX, credit OAS, real yields, liquidity, synchronized commodities/USD-KRW unavailable; hourly non-streaming.",
     "2026-11-19 18:28 UTC: trigger file 404; latest synchronized ETF quotes, volume, spreads, official VIX, credit OAS, real yields, liquidity, commodities and FX not verified; prior alert compared via risk file; hourly non-streaming.",
-    "2026-11-19 19:43 UTC: official synchronized credit OAS, liquidity, real yields, VIX, breadth, commodities, FX and ETF quotes/volume/spreads not verified; trigger file 404; events/daily directory fetch errors; hourly non-streaming."
+    "2026-11-19 19:43 UTC: official synchronized credit OAS, liquidity, real yields, VIX, breadth, commodities, FX and ETF quotes/volume/spreads not verified; trigger file 404; events/daily directory fetch errors; hourly non-streaming.",
+    "2026-11-19 21:14 UTC: official OAS, liquidity, real yields, current VIX, commodities, FX, ETF quotes and exact semiconductor close unverified; secondary credit figure not official. Regular session closed, triggers not evaluated; prior alert compared via risk file; hourly non-streaming."
   ]
 }
