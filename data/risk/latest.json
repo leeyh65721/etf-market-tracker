@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-19T03:24:56Z",
-  "market_date": "2026-11-18",
+  "checked_at_utc": "2026-11-19T05:01:31Z",
+  "market_date": "2026-11-19",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월 19일 아시아 오전 달러 19개월 고점 근접 및 호주 고용 둔화 확인. 미국 연준 매파적 의사록, 11월 18일 미국 종가, 원유·금·구리 약세는 기존 점검과 중복. 신규 시장 전반 신용·유동성 충격이나 기존 경고 대비 중대한 악화 입증 불가. 미국 정규장 외 시간으로 장중 트리거 평가 제외.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 19일 아시아 장중 대만·한국 기술주 약세와 11월 18일 미국 금리·원자재 하락을 검토했으나 기존 AI/반도체 및 매파 연준 위험의 중대한 추가 악화·신용 전이를 동시점 지표로 검증하지 못함. 미국 정규장 외로 트리거 미평가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -997,6 +997,27 @@
       "dxy": 103.79,
       "observed_at_utc": null,
       "note": "Reuters Nov 18 market wrap, exact quote timestamp not supplied; Nov 19 Reuters confirms near 19-month high without new verified level"
+    },
+    "us_nov18_close_reuters_nov19_check": {
+      "sp500_change_pct": -0.23,
+      "nasdaq_change_pct": 0.42,
+      "dow_change_pct": -1.11,
+      "us_2y_yield_pct": 4.802,
+      "us_10y_yield_pct": 5.068,
+      "dxy": 103.79,
+      "brent_usd_barrel": 91.84,
+      "wti_usd_barrel": 83.17,
+      "gold_usd_oz": 3725.1,
+      "copper_usd_tonne": 12626,
+      "observed_at_utc": null,
+      "note": "Reuters 11월 18일 미국 마감 및 11월 19일 게재 재인용. 수치별 정확한 관측 시각 불명; 동시점 시세 아님, 기존 판단 반복."
+    },
+    "asia_nov19_wsj": {
+      "taiex_change_pct": -2.7,
+      "kospi_change_pct": -0.9,
+      "hang_seng_tech_change_pct": -2.1,
+      "observed_at_utc": null,
+      "note": "WSJ 11월 19일 아시아 장중 기사; 개별 시세 시각 미제공, 종가 아님."
     }
   },
   "sources": [
@@ -1096,7 +1117,10 @@
     "https://www.straitstimes.com/business/companies-markets/wall-street-ends-mixed-after-nvidia-earnings-fed-minutes",
     "https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-wall-street-ends-mixed-after-nvidia-earnings-fed-minutes",
     "https://www.wsj.com/finance/commodities-futures/copper-at-lowest-since-april-amid-ai-market-turmoil-chinese-demand-concerns-4325361e",
-    "https://www.reuters.com/world/africa/us-dollar-hovers-near-19-month-high-aussie-falls-after-soft-jobs-data-2026-11-19/"
+    "https://www.reuters.com/world/africa/us-dollar-hovers-near-19-month-high-aussie-falls-after-soft-jobs-data-2026-11-19/",
+    "https://wealthinsights.metrobank.com.ph/news/global-markets-stocks-slip-with-eyes-on-anthropic-and-nvidia-oil-prices-slide",
+    "https://www.wsj.com/finance/asian-equities-decline-as-caution-prevails-eaf3c1e9",
+    "https://www.reuters.com/business/energy/oil-prices-steady-supply-surplus-softens-sentiment-though-gulf-war-supports-2026-11-19/"
   ],
   "data_limitations": [
     "정규장 종료 후 점검; 장중 신호 평가 제외",
@@ -1104,6 +1128,7 @@
     "Reuters/WSJ 기사 가격의 정확한 관측시각 및 지연 시간 확인 불가",
     "analysis/triggers/latest.json 조회 실패; 사전 계획 없음 또는 접근 불가",
     "실시간 연속 감시가 아닌 시간별 점검",
-    "2026-11-19T03:24:56Z: 최신 공식 OAS, 유동성, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스, ETF 동시점 호가 미검증. Reuters 기사 시세는 정확한 관측시각·지연 미표시. 장중 트리거 파일 404; 정규장 종료 후 점검."
+    "2026-11-19T03:24:56Z: 최신 공식 OAS, 유동성, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스, ETF 동시점 호가 미검증. Reuters 기사 시세는 정확한 관측시각·지연 미표시. 장중 트리거 파일 404; 정규장 종료 후 점검.",
+    "2026-11-19 05:01 UTC: 공식 동시점 OAS·실질금리·VIX·시장 폭·유동성·천연가스·USD/KRW·SOXX/XLP/XLF 호가 미검증; 기사 가격 개별 관측시각 미상. 장중 트리거 파일 조회 실패, 미국 정규장 외 시간."
   ]
 }
