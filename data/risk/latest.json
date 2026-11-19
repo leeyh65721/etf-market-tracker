@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-19T18:28:04Z",
+  "checked_at_utc": "2026-11-19T19:43:26Z",
   "market_date": "2026-11-19",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음; 기존 장중 반전 경고 유지. 12:15 ET 자료는 이전 경고 이전 관측으로 추가 악화 증거 아님.",
+  "change_since_previous": "신규 경고 없음; Reuters 장중 보도상 S&P500 -1.29%, Nasdaq -1.29%, Dow -1.60%로 기존 경고 대비 추가 악화 미확인. 정확한 관측시각 불명으로 회복 확정도 불가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1166,6 +1166,15 @@
       "decliners": 459,
       "advancers": 44,
       "note": "WiseView secondary snapshot, 73 minutes old at check; predates prior alert; not live or exchange verified"
+    },
+    "nov19_reuters_followup": {
+      "observed_at_utc": null,
+      "sp500_change_pct": -1.29,
+      "nasdaq_change_pct": -1.29,
+      "dow_change_pct": -1.6,
+      "amd_change_pct": -9.2,
+      "anthropic_change_pct": 15,
+      "note": "Reuters Nov 19 intraday report, exact quote timestamp and delay unknown; not closing or live quotes"
     }
   },
   "sources": [
@@ -1309,6 +1318,7 @@
     "2026-11-19 12:52 UTC: 공식 OAS·유동성·실질금리·시장 폭·VIX·USD/KRW·ETF 호가 미검증; 원자재 2차 집계 지연, 정규장 전 트리거 평가 제외. 기존 경고 보존.",
     "2026-11-19T16:10:38Z: 정규장 중이나 triggers/latest.json 404, events/daily 디렉터리 조회 오류. 최신 동시점 SOXX/XLP/XLF/SPY 가격·거래량·호가, 시장 폭, VIX, OAS, 실질금리, 유동성, 원자재·USD/KRW 미검증. 시간별 점검이며 신호 누락 가능.",
     "2026-11-19 17:44 UTC: trigger file 404; events/daily directory listing unavailable; current ETF quotes/volume/spreads, official VIX, credit OAS, real yields, liquidity, synchronized commodities/USD-KRW unavailable; hourly non-streaming.",
-    "2026-11-19 18:28 UTC: trigger file 404; latest synchronized ETF quotes, volume, spreads, official VIX, credit OAS, real yields, liquidity, commodities and FX not verified; prior alert compared via risk file; hourly non-streaming."
+    "2026-11-19 18:28 UTC: trigger file 404; latest synchronized ETF quotes, volume, spreads, official VIX, credit OAS, real yields, liquidity, commodities and FX not verified; prior alert compared via risk file; hourly non-streaming.",
+    "2026-11-19 19:43 UTC: official synchronized credit OAS, liquidity, real yields, VIX, breadth, commodities, FX and ETF quotes/volume/spreads not verified; trigger file 404; events/daily directory fetch errors; hourly non-streaming."
   ]
 }
