@@ -1,0 +1,23 @@
+{
+  "schema": "public_etf_judgment_v1",
+  "record_id": "2026-11-19-MARKET-no_new_candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-11-18",
+  "original_report_date_kst": "2026-11-19",
+  "archived_on_utc_date": "2026-11-19",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/daily/2026-11-19.md",
+  "verbatim_source_excerpt": "**새 매수 후보 없음**",
+  "thesis": "Nov 18 ETF closes and executable triggers unverified; no confirmed new ETF entry.",
+  "counterevidence": "Nov 17 defensive ETFs screened well and a market rebound could make cash costly.",
+  "invalidation": "Fresh complete ETF bars, liquidity and issuer checks establish an actionable trigger.",
+  "revisit_trigger": "Review after 5/10/20 NYSE sessions versus SPY; MARKET no-price record is excluded from trade hit rates.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "trade_instruction": false
+}
