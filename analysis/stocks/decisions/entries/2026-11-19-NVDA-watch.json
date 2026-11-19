@@ -23,5 +23,13 @@
     20
   ],
   "comparison_baseline": "SPY",
-  "trade_instruction": false
+  "trade_instruction": false,
+  "security_type": "common_stock",
+  "source_price_url": null,
+  "entry_trigger": "Official filing and intraday relative-strength/volume confirmation required",
+  "trigger_status": "unverified_not_triggered",
+  "trigger_validity": "next 5 NYSE sessions, revalidate daily",
+  "reference_price_timestamp": null,
+  "execution_verified": false,
+  "target_and_stop_basis": "not established; no validated ATR or executable quote"
 }
