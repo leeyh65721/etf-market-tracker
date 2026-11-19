@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-19T17:44:29Z",
+  "checked_at_utc": "2026-11-19T18:28:04Z",
   "market_date": "2026-11-19",
   "risk_level": "high",
-  "change_since_previous": "기존 AI·반도체 위험의 중대한 악화: IPO 흥행에도 장초 반등 반전 및 광범위한 매도",
+  "change_since_previous": "신규 경고 없음; 기존 장중 반전 경고 유지. 12:15 ET 자료는 이전 경고 이전 관측으로 추가 악화 증거 아님.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1156,6 +1156,16 @@
       "us_10y_yield_pct": 5.05,
       "dxy": 103.88,
       "note": "Reuters intraday updated article; exact quote time unknown"
+    },
+    "nov19_1215et_secondary": {
+      "observed_at_utc": "2026-11-19T17:15:00Z",
+      "sp500_change_pct": -1.51,
+      "nasdaq_change_pct": -1.43,
+      "dow_change_pct": -2.02,
+      "vix": 28.45,
+      "decliners": 459,
+      "advancers": 44,
+      "note": "WiseView secondary snapshot, 73 minutes old at check; predates prior alert; not live or exchange verified"
     }
   },
   "sources": [
@@ -1277,7 +1287,8 @@
     "https://www.reuters.com/legal/transactional/view-anthropic-set-soar-debut-will-ai-peers-follow-2026-11-19/",
     "https://www.investors.com/news/technology/chip-stocks-anthropic-ipo-ai-prospects/",
     "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/",
-    "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/the-ai-rally-finally-gets-a-win-87sn1lIR2ZeNP5CsqLVk"
+    "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/the-ai-rally-finally-gets-a-win-87sn1lIR2ZeNP5CsqLVk",
+    "https://wiseview.ai/news/stock-market-today-2026-11-19"
   ],
   "data_limitations": [
     "정규장 종료 후 점검; 장중 신호 평가 제외",
@@ -1297,6 +1308,7 @@
     "2026-11-19 11:58 UTC: 공식 동시점 OAS, 유동성, 실질금리, 시장 폭, VIX, 천연가스, 구리, USD/KRW, ETF 호가 미검증. 기사 시세 관측시각 및 지연 미상. analysis/events/, analysis/daily/ 조회 오류. 미국 정규장 전 트리거 평가 제외.",
     "2026-11-19 12:52 UTC: 공식 OAS·유동성·실질금리·시장 폭·VIX·USD/KRW·ETF 호가 미검증; 원자재 2차 집계 지연, 정규장 전 트리거 평가 제외. 기존 경고 보존.",
     "2026-11-19T16:10:38Z: 정규장 중이나 triggers/latest.json 404, events/daily 디렉터리 조회 오류. 최신 동시점 SOXX/XLP/XLF/SPY 가격·거래량·호가, 시장 폭, VIX, OAS, 실질금리, 유동성, 원자재·USD/KRW 미검증. 시간별 점검이며 신호 누락 가능.",
-    "2026-11-19 17:44 UTC: trigger file 404; events/daily directory listing unavailable; current ETF quotes/volume/spreads, official VIX, credit OAS, real yields, liquidity, synchronized commodities/USD-KRW unavailable; hourly non-streaming."
+    "2026-11-19 17:44 UTC: trigger file 404; events/daily directory listing unavailable; current ETF quotes/volume/spreads, official VIX, credit OAS, real yields, liquidity, synchronized commodities/USD-KRW unavailable; hourly non-streaming.",
+    "2026-11-19 18:28 UTC: trigger file 404; latest synchronized ETF quotes, volume, spreads, official VIX, credit OAS, real yields, liquidity, commodities and FX not verified; prior alert compared via risk file; hourly non-streaming."
   ]
 }
