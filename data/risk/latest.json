@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-19T12:52:44Z",
+  "checked_at_utc": "2026-11-19T16:10:38Z",
   "market_date": "2026-11-19",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. AP 미국 선물 상승 및 Reuters 원유 소폭 상승 재확인. 호르무즈 기뢰 피해 보도는 독립 확인 및 공급 충격 규모 미확인. 22:30 KST 미국 지표 발표 전.",
+  "change_since_previous": "신규 경고 없음. Guardian 장중 보도에서 AI주 초기 상승폭 축소, IPO 예상 시초가 100~105달러(실제 체결 미확인). 이전 장중 점검 대비 급격한 구조적 악화 검증 불가. high 잠정 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1100,6 +1100,22 @@
       "copper_usd_tonne": 12511,
       "gold_usd_oz": 3731,
       "note": "Morgan Downey 05:34 ET 2차 집계; 139분 경과, 원거래소 개별 시각 미검증"
+    },
+    "nov19_ipo_indication": {
+      "observed_at_utc": null,
+      "offer_usd": 83,
+      "indicated_open_low_usd": 100,
+      "indicated_open_high_usd": 105,
+      "note": "Guardian Nov 19 live report; indicative, not executed price; observation time unavailable"
+    },
+    "nov18_bank_daily_snapshot": {
+      "observed_at_utc": null,
+      "wti_usd_barrel": 83.26,
+      "brent_usd_barrel": 91.95,
+      "gold_usd_oz": 3741.9,
+      "copper_usd_tonne": 12471,
+      "dxy": 103.81,
+      "note": "HLB Nov 19 daily report, prior-session reference, not current intraday quotes"
     }
   },
   "sources": [
@@ -1214,7 +1230,10 @@
     "https://www.wsj.com/business/energy-oil/oil-prices-mixed-as-traders-weigh-supply-outlook-middle-east-shipping-risks-224e2724",
     "https://www.tipranks.com/news/markets-brace-for-u-s-jobless-claims-and-factory-data-after-fed-minutes-lock-in-rate-hike-bets",
     "https://commoditynews.morgandowney.com/news/2026-11-19",
-    "https://www.reuters.com/world/india/gold-edges-up-14-month-low-markets-assess-fed-rate-outlook-2026-11-19/"
+    "https://www.reuters.com/world/india/gold-edges-up-14-month-low-markets-assess-fed-rate-outlook-2026-11-19/",
+    "https://www.theguardian.com/business/live/2026/nov/19/anthropic-float-stock-market-nasdaq-raises-81bn-record-ipo-latest-news-updates",
+    "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-19/",
+    "https://www.hlb.com.my/content/dam/hlb/my/docs/pdf/Global_Markets/daily-market-watch/2026/19-11-2026.pdf"
   ],
   "data_limitations": [
     "정규장 종료 후 점검; 장중 신호 평가 제외",
@@ -1232,6 +1251,7 @@
     "analysis/triggers/latest.json GitHub 조회 실패; 정규장 전이라 장중 트리거 평가 제외",
     "2026-11-19 11:22 UTC: 최신 공식 OAS, 실질금리, 시장 폭, 동시점 VIX, 천연가스, 구리, USD/KRW, ETF 호가 미검증; 기사 호가 관측시각 및 지연시간 불명. 미국 정규장 개장 전; triggers/latest.json 404.",
     "2026-11-19 11:58 UTC: 공식 동시점 OAS, 유동성, 실질금리, 시장 폭, VIX, 천연가스, 구리, USD/KRW, ETF 호가 미검증. 기사 시세 관측시각 및 지연 미상. analysis/events/, analysis/daily/ 조회 오류. 미국 정규장 전 트리거 평가 제외.",
-    "2026-11-19 12:52 UTC: 공식 OAS·유동성·실질금리·시장 폭·VIX·USD/KRW·ETF 호가 미검증; 원자재 2차 집계 지연, 정규장 전 트리거 평가 제외. 기존 경고 보존."
+    "2026-11-19 12:52 UTC: 공식 OAS·유동성·실질금리·시장 폭·VIX·USD/KRW·ETF 호가 미검증; 원자재 2차 집계 지연, 정규장 전 트리거 평가 제외. 기존 경고 보존.",
+    "2026-11-19T16:10:38Z: 정규장 중이나 triggers/latest.json 404, events/daily 디렉터리 조회 오류. 최신 동시점 SOXX/XLP/XLF/SPY 가격·거래량·호가, 시장 폭, VIX, OAS, 실질금리, 유동성, 원자재·USD/KRW 미검증. 시간별 점검이며 신호 누락 가능."
   ]
 }
