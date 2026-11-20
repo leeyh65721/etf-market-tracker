@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T08:47:38Z",
+  "checked_at_utc": "2026-11-20T10:16:52Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. 17:20 KST 점검 대비 Reuters의 아시아 주간 하락 및 FT의 반도체 매도세는 동일 위험의 반복. 새 신용·유동성 충격 또는 별도 정책 발표 확인되지 않음. 미국 정규장 전이라 장중 트리거 평가 제외.",
+  "change_since_previous": "신규 경고 없음. Reuters/AP/FT 11월 20일 보도상 아시아 반도체 급락 및 유럽 약세는 앞선 점검에 반영된 기존 AI 매도세의 연장. 직전 대비 새 신용·유동성 충격 또는 위험 단계 상향을 입증할 동시점 증거 미확인. 미국 정규장 전이라 장중 트리거 평가 제외.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1307,6 +1307,12 @@
       "taiwan_weekly_change_pct": -17.5,
       "observed_at_utc": null,
       "note": "Reuters 2026-11-20 기사 집계; 개별 시세시각 미제공, 지연·잠정치; 기존 점검과 동일 정보"
+    },
+    "asia_nov20_reuters_weekly": {
+      "msci_asia_pacific_weekly_change_pct": -8.5,
+      "taiwan_weekly_change_pct": -17.5,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 20 기사에 제시된 장중/주간 집계; 개별 가격 관측시각 미확인, 기존 점검과 중복"
     }
   },
   "sources": [
@@ -1369,6 +1375,8 @@
     "2026-11-20 06:35 UTC: 동시점 공식 OAS, 실질금리, VIX, 시장 폭, 원자재 전종, USD/KRW, ETF 호가 미확인. Reuters 장중 보도는 정확한 시세시각 불명.",
     "2026-11-20 08:20 UTC: 공식 신용 OAS, 실질금리, 동시점 VIX·시장 폭·USD/KRW·원자재·ETF 호가 검증 미완료; Reuters/AP 시세 지연 및 개별 관측시각 미제공. analysis/triggers/latest.json 404.",
     "2026-11-20 08:47 UTC: 동시점 공식 신용 OAS·실질금리·시장 폭·USD/KRW·천연가스·구리·ETF 호가 미검증; Reuters/FT 보도 지연, 개별 시세시각 불명.",
-    "미국 정규장 시작 전, analysis/triggers/latest.json 404; 장중 발동 판정하지 않음."
+    "미국 정규장 시작 전, analysis/triggers/latest.json 404; 장중 발동 판정하지 않음.",
+    "2026-11-20 10:16 UTC: 동시점 공식 OAS·실질금리·유동성·시장 폭·USD/KRW·천연가스·구리·SOXX 호가 미검증; Reuters/AP/FT 기사 수치는 지연 또는 시각 미표기.",
+    "analysis/triggers/latest.json 404; 미국 정규장 전(09:30 ET 이전)이라 장중 트리거 미평가. 매시간 점검은 실시간 스트리밍 아님."
   ]
 }
