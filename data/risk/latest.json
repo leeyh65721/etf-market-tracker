@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T13:38:15Z",
+  "checked_at_utc": "2026-11-20T14:42:09Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 사건 없음. 11월 20일 13:38 UTC 점검: Reuters VIX 장전 30.04 고점 및 29.50 후속 수치는 기존 경고에 반영됨. FT의 AI/반도체 약세도 기존 전이 위험 연장. 미국 정규장 개장 전(09:30 ET 예정), 장중 트리거 미평가; 트리거 파일 조회 실패. 신용 OAS·실질금리·시장 폭·SOXX 호가 등 동시점 검증 불가.",
+  "change_since_previous": "14:42 UTC 점검: Reuters 11월 20일 미국 장전 Nasdaq100 선물 -1.64%, Anthropic 장전 -7.4%, VIX 장전 30.04 최고는 기존 AI·반도체 매도세의 연장. Guardian의 미국 개장 초기 Anthropic 약 -9% 보도는 장전 대비 추가 약세이나 광범위한 시장폭·신용 전이 동시 검증 불가, 신규 긴급 경고 요건 미충족. 정규장 개장 이후이나 사전 트리거 파일 404로 장중 발동 미평가. 신규 경고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1339,6 +1339,17 @@
       "unit": "USD billion net inflow",
       "observed_at_utc": null,
       "note": "LSEG Lipper data reported by Reuters 2026-11-20 12:44 UTC; weekly fund flows through Nov 18, not intraday quote; third consecutive inflow week"
+    },
+    "us_nov20_premarket_reuters": {
+      "nasdaq100_futures_change_pct": -1.64,
+      "anthropic_premarket_change_pct": -7.4,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-20 개장 전 보도; 개별 호가시각 미제공, 현재가 아님"
+    },
+    "us_nov20_open_guardian": {
+      "anthropic_open_change_pct_approx": -9,
+      "observed_at_utc": null,
+      "note": "Guardian 2026-11-20 미국 개장 직후 보도, 대략치, 정확한 호가 시각 미제공"
     }
   },
   "sources": [
@@ -1387,7 +1398,9 @@
     "https://www.reuters.com/legal/transactional/us-equity-funds-draw-inflows-third-straight-week-2026-11-20/",
     "https://www.reuters.com/markets/europe/global-markets-taiwan-urgent-2026-11-20/",
     "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/",
-    "https://www.reuters.com/business/wall-st-week-ahead-black-friday-brings-consumer-spending-into-focus-ai-rocked-2026-11-20/"
+    "https://www.reuters.com/business/wall-st-week-ahead-black-friday-brings-consumer-spending-into-focus-ai-rocked-2026-11-20/",
+    "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
+    "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news"
   ],
   "data_limitations": [
     "2026-11-20T05:20Z: 동시점 공식 OAS/실질금리/유동성/WTI/천연가스/구리/USD-KRW/SOXX·ETF 호가 미검증; Reuters 시세 최소 15분 지연, 개별 관측시각 미제공.",
@@ -1401,6 +1414,7 @@
     "2026-11-20 10:50 UTC: official synchronized credit OAS, real yields, breadth, USD/KRW, natural gas, copper, ETF quotes unavailable; VIX individual tick time unavailable; trigger file 404; premarket, not regular trading session.",
     "이번 점검: 신용 OAS, 실질금리, USD/KRW, 천연가스, 구리, ETF 호가 및 시장 폭 동시점 확인 불가. Reuters VIX 개별 관측시각 불명확. 장중 사전 트리거 파일 조회 실패.",
     "2026-11-20 13:23 UTC: 동시점 미국 정규장 ETF 가격/호가·SPY 상대강도·시장 폭·공식 신용스프레드·실질금리·USD/KRW·천연가스·구리 확인 불가. 기사 수치는 발표시각과 개별 시세시각이 다르며 지연 가능. analysis/triggers/latest.json 404; 장중 발동 여부 미확인.",
-    "2026-11-20 13:38 UTC: 공식 신용스프레드·실질금리·시장 폭·USD/KRW·천연가스·구리·ETF 호가 동시점 미검증; Reuters/FT 장전 시세 지연·개별 시각 불명; 트리거 파일 조회 실패. 매시간 스냅샷이며 실시간 스트리밍 아님."
+    "2026-11-20 13:38 UTC: 공식 신용스프레드·실질금리·시장 폭·USD/KRW·천연가스·구리·ETF 호가 동시점 미검증; Reuters/FT 장전 시세 지연·개별 시각 불명; 트리거 파일 조회 실패. 매시간 스냅샷이며 실시간 스트리밍 아님.",
+    "2026-11-20 14:42 UTC: 동시점 공식 신용 OAS, 실질금리, 시장 폭, SOXX/XLP/XLF·SPY 호가/거래량, 천연가스·구리·USD/KRW 검증 불가; Reuters/Guardian 기사 가격 관측시각 미제공; 매시간 점검은 실시간 연속 감시 아님; analysis/triggers/latest.json 404."
   ]
 }
