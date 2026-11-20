@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T08:20:53Z",
+  "checked_at_utc": "2026-11-20T08:47:38Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월20일 아시아 장 마감 근접 보도: MSCI 아태 -3.3% 일간/-8.5% 주간, 대만 주간 -17.5%, 한국·일본 주간 약 -8%. 기존 15:35 KST 점검의 AI·반도체 매도세 연장; 새로운 독립 촉매/동시점 신용·유동성 충격 확인 불가. 미국 정규장 외 장중 트리거 제외.",
+  "change_since_previous": "신규 경고 없음. 17:20 KST 점검 대비 Reuters의 아시아 주간 하락 및 FT의 반도체 매도세는 동일 위험의 반복. 새 신용·유동성 충격 또는 별도 정책 발표 확인되지 않음. 미국 정규장 전이라 장중 트리거 평가 제외.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1300,6 +1300,13 @@
       "taiwan_weekly_change_pct": -17.5,
       "observed_at_utc": null,
       "note": "Reuters 2026-11-20 기사 잠정 집계, 개별 관측시각 불명확; 과거 점검과 동일 사건. 지수 정의 및 시간 차이로 직접 악화폭 추론 금지"
+    },
+    "asia_nov20_reuters_late_report": {
+      "msci_asia_pacific_daily_change_pct": -3.3,
+      "msci_asia_pacific_weekly_change_pct": -8.5,
+      "taiwan_weekly_change_pct": -17.5,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-20 기사 집계; 개별 시세시각 미제공, 지연·잠정치; 기존 점검과 동일 정보"
     }
   },
   "sources": [
@@ -1341,7 +1348,8 @@
     "https://www.reuters.com/world/india/indian-stocks-seen-falling-nine-month-highs-asia-market-rout-deepens-2026-11-20/",
     "https://www.moneycontrol.com/news/business/markets/taiwan-stocks-face-worst-week-since-1991-despite-support-steps-14085397.html",
     "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad",
-    "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/"
+    "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
+    "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b"
   ],
   "data_limitations": [
     "2026-11-19T16:10:38Z: 정규장 중이나 triggers/latest.json 404, events/daily 디렉터리 조회 오류. 최신 동시점 SOXX/XLP/XLF/SPY 가격·거래량·호가, 시장 폭, VIX, OAS, 실질금리, 유동성, 원자재·USD/KRW 미검증. 시간별 점검이며 신호 누락 가능.",
@@ -1359,6 +1367,8 @@
     "2026-11-20T05:20Z: 동시점 공식 OAS/실질금리/유동성/WTI/천연가스/구리/USD-KRW/SOXX·ETF 호가 미검증; Reuters 시세 최소 15분 지연, 개별 관측시각 미제공.",
     "2026-11-20 05:48 UTC: 공식 HY/IG OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스·구리, SOXX/XLP/XLF 호가 동시점 검증 불가; Reuters 원유 관측 04:04 UTC, 아시아 지수 개별 시각 불명. 미국 정규장 외; analysis/triggers/latest.json 404.",
     "2026-11-20 06:35 UTC: 동시점 공식 OAS, 실질금리, VIX, 시장 폭, 원자재 전종, USD/KRW, ETF 호가 미확인. Reuters 장중 보도는 정확한 시세시각 불명.",
-    "2026-11-20 08:20 UTC: 공식 신용 OAS, 실질금리, 동시점 VIX·시장 폭·USD/KRW·원자재·ETF 호가 검증 미완료; Reuters/AP 시세 지연 및 개별 관측시각 미제공. analysis/triggers/latest.json 404."
+    "2026-11-20 08:20 UTC: 공식 신용 OAS, 실질금리, 동시점 VIX·시장 폭·USD/KRW·원자재·ETF 호가 검증 미완료; Reuters/AP 시세 지연 및 개별 관측시각 미제공. analysis/triggers/latest.json 404.",
+    "2026-11-20 08:47 UTC: 동시점 공식 신용 OAS·실질금리·시장 폭·USD/KRW·천연가스·구리·ETF 호가 미검증; Reuters/FT 보도 지연, 개별 시세시각 불명.",
+    "미국 정규장 시작 전, analysis/triggers/latest.json 404; 장중 발동 판정하지 않음."
   ]
 }
