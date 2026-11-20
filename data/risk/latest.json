@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T04:18:51Z",
+  "checked_at_utc": "2026-11-20T05:20:08Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월20일 후속 기사에서 MSCI 아시아(일본 제외) 장중 -3.2%, 주간 -8.3%로 앞선 -2.5%/-7%보다 확대. 동일 AI·반도체 위험의 연장; 별도 신용/유동성 충격, 계좌 위험 단계 상승, 동시점 ETF 가격 확인 부족으로 추가 긴급경고 보류. 미국 정규장 종료로 트리거 미평가.",
+  "change_since_previous": "신규 긴급 경고 없음. 13:18 KST 이전 확인된 아시아 AI·반도체 매도세 지속. Reuters 01:46 UTC 보도 MSCI 일본 제외 아시아 -3.2%/주간 -8.3%, 대만 주간 -16%; 이후 Bloomberg 보도 대만 장중 최대 -6.4%/주간 -17% 초과이나 서로 다른 시점 및 일중 최대치로 직접 비교 불가. 추가적인 신용경색 또는 독립적 구조 충격 검증 불가. 미국 정규장 외 트리거 미평가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1252,6 +1252,25 @@
       "week_change_pct": -8.3,
       "observed_at_utc": null,
       "note": "Reuters 2026-11-20 article, exact tick timestamp unavailable; intraday provisional, compare with prior broader Asia index carefully"
+    },
+    "asia_nov20_reuters_0146utc": {
+      "msci_ex_japan_change_pct": -3.2,
+      "msci_ex_japan_week_pct": -8.3,
+      "taiwan_week_pct": -16,
+      "us_10y_yield_pct": 5.02,
+      "us_2y_yield_pct": 4.749,
+      "dollar_index": 103.86,
+      "brent_usd_barrel": 92.37,
+      "gold_usd_oz": 3533.4,
+      "observed_at_utc": null,
+      "report_published_at_utc": "2026-11-20T01:46:00Z",
+      "note": "Reuters published snapshot; individual quote timestamps unavailable; Reuters quotes delayed at least 15 minutes; not current at 05:20 UTC"
+    },
+    "taiwan_nov20_intraday_bloomberg": {
+      "intraday_max_drop_pct": -6.4,
+      "weekly_drop_exceeded_pct": 17,
+      "observed_at_utc": null,
+      "note": "Bloomberg reported Nov20 09:42 IST; intraday extreme, not closing value; not synchronized with Reuters snapshot"
     }
   },
   "sources": [
@@ -1290,7 +1309,9 @@
     "https://apnews.com/article/2f178054aea79d282e5ccf8d62f26a28",
     "https://flashfinanceusa.com/news/stock-market-today-november-19-2026/",
     "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-20/",
-    "https://www.reuters.com/world/india/indian-stocks-seen-falling-nine-month-highs-asia-market-rout-deepens-2026-11-20/"
+    "https://www.reuters.com/world/india/indian-stocks-seen-falling-nine-month-highs-asia-market-rout-deepens-2026-11-20/",
+    "https://www.moneycontrol.com/news/business/markets/taiwan-stocks-face-worst-week-since-1991-despite-support-steps-14085397.html",
+    "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad"
   ],
   "data_limitations": [
     "2026-11-19T16:10:38Z: 정규장 중이나 triggers/latest.json 404, events/daily 디렉터리 조회 오류. 최신 동시점 SOXX/XLP/XLF/SPY 가격·거래량·호가, 시장 폭, VIX, OAS, 실질금리, 유동성, 원자재·USD/KRW 미검증. 시간별 점검이며 신호 누락 가능.",
@@ -1304,6 +1325,7 @@
     "2026-11-20T01:11Z: 최신 동시점 공식 신용스프레드, 실질금리, 시장폭, 유동성, FX, 에너지/금속 및 ETF 호가 미확인; 이전 관측값은 현재 시세가 아님. 장중 트리거 파일 404, 미국 정규장 종료로 신호 미평가.",
     "2026-11-20 01:43:50 UTC: 동시점 공식 신용 OAS·실질금리·원자재·USD/KRW·ETF 호가 및 장후 최신 시세 미검증; 정규장 종료, 사전 트리거 파일 조회 실패; 가격 지연·개별 체결시각 불명.",
     "2026-11-20 02:47 UTC: 아시아 지수 Reuters 장중 반올림 수치이며 개별 관측시각 불명. 동시점 SOXX/SPY/ETF 호가, 공식 OAS, 실질금리, USD/KRW, 천연가스·구리 및 유동성 지표 미검증. 트리거 파일 404. 미국 정규장 종료.",
-    "이번 점검: 공식 신용 OAS, 실질금리, 최신 USD/KRW, 천연가스/구리, ETF 호가, 동시점 VIX/시장폭 미검증. Reuters 아시아 수치는 개별 틱시각 미제공. 장중 트리거 파일 404; 미국 정규장 외 시간."
+    "이번 점검: 공식 신용 OAS, 실질금리, 최신 USD/KRW, 천연가스/구리, ETF 호가, 동시점 VIX/시장폭 미검증. Reuters 아시아 수치는 개별 틱시각 미제공. 장중 트리거 파일 404; 미국 정규장 외 시간.",
+    "2026-11-20T05:20Z: 동시점 공식 OAS/실질금리/유동성/WTI/천연가스/구리/USD-KRW/SOXX·ETF 호가 미검증; Reuters 시세 최소 15분 지연, 개별 관측시각 미제공."
   ]
 }
