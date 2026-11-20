@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T22:47:28Z",
+  "checked_at_utc": "2026-11-20T23:36:55Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. Reuters/AP 11월 20일 종가 및 FT의 기술주 약세·변동성 확대 후속 보도를 검토. 직전 광범위 급락 경고의 동일 사건이며 추가 신용·유동성 충격은 검증되지 않음. 기존 HIGH 유지.",
+  "change_since_previous": "신규 경고 없음. 11월 20일 미국 종가 및 Reuters 21:17 UTC 후속 분석 확인: Nasdaq -5.28%, S&P500 -3.70%, Dow -1.93%, SOX 약 -11%, VIX 37, 미국 10년물 4.93%. 기존 21:10 UTC 광범위 급락 경고의 종가 확정·후속 수치로 분류. 신용/유동성 시스템 충격 추가 확인 불가; HIGH 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1462,6 +1462,17 @@
       "dow_change_pct": -1.9,
       "observed_at_utc": "2026-11-20T21:00:00Z",
       "note": "AP Nov 21 report of Nov 20 regular-session close, rounded percentage; scheduled close timestamp, exact trade timestamp not verified; previously alerted event"
+    },
+    "us_nov20_close_reuters_nov21_recheck": {
+      "nasdaq_change_pct": -5.28,
+      "sp500_change_pct": -3.7,
+      "dow_change_pct": -1.93,
+      "semiconductor_index_change_pct_approx": -11,
+      "vix_approx": 37,
+      "us10y_yield_pct_approx": 4.93,
+      "observed_at_utc": null,
+      "source_published_at_utc": "2026-11-20T21:17:00Z",
+      "note": "Reuters 11월20일 마감 및 후속 분석; 개별 시세 관측시각 미제공. 정규장 종가/기사 기반, 실시간 호가 아님."
     }
   },
   "sources": [
@@ -1495,7 +1506,8 @@
     "https://www.barrons.com/livecoverage/stock-market-news-today-112026/card/nasdaq-sinks-3-5-the-ai-selloff-is-washing-out-the-market--ptTVzayCtYLRiJlyiJ7b",
     "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
     "https://nypost.com/2026/11/20/business/sp-500-and-dow-enter-correction-territory-nasdaq-loses-2026-gains-as-anthropic-dives/",
-    "https://www.ft.com/content/9f3c6ed6-c08f-4710-9683-ee2f5eb25841"
+    "https://www.ft.com/content/9f3c6ed6-c08f-4710-9683-ee2f5eb25841",
+    "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/"
   ],
   "data_limitations": [
     "2026-11-20 13:23 UTC: 동시점 미국 정규장 ETF 가격/호가·SPY 상대강도·시장 폭·공식 신용스프레드·실질금리·USD/KRW·천연가스·구리 확인 불가. 기사 수치는 발표시각과 개별 시세시각이 다르며 지연 가능. analysis/triggers/latest.json 404; 장중 발동 여부 미확인.",
@@ -1510,6 +1522,7 @@
     "analysis/triggers/latest.json 404; 미국 정규장 종료 후 장중 트리거 평가하지 않음; 매시간 점검은 실시간 스트리밍 아님",
     "2026-11-20 21:25 UTC: US regular session closed; contemporaneous HY/IG OAS, VIX, market breadth, real yields, USD/KRW, commodity prices and SOXX/XLP/XLF bid-ask/volume not independently synchronized; article closes are not executable quotes.",
     "analysis/triggers/latest.json returned 404; no retroactive trigger evaluation; hourly monitoring may miss intraday signals.",
-    "2026-11-20 22:47 UTC: official contemporaneous IG/HY OAS, real yields, full breadth, USD/KRW, gas/copper, ETF quotes/spreads not independently verified; market closed, no live executable quotes. analysis/triggers/latest.json 404; regular-session triggers not assessed."
+    "2026-11-20 22:47 UTC: official contemporaneous IG/HY OAS, real yields, full breadth, USD/KRW, gas/copper, ETF quotes/spreads not independently verified; market closed, no live executable quotes. analysis/triggers/latest.json 404; regular-session triggers not assessed.",
+    "2026-11-20T23:36:55Z: 미국 정규장 종료 후 주말. Reuters quotes >=15분 지연, 개별 관측시각 불명. 동시점 HY/IG OAS, 실질금리, 시장 폭, USD/KRW, WTI/Brent/천연가스/금/구리, ETF 호가·거래량 미검증. analysis/triggers/latest.json 404; 장중 트리거 평가 제외. 매시간 확인은 연속 실시간 감시가 아님."
   ]
 }
