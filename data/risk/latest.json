@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T18:19:01Z",
+  "checked_at_utc": "2026-11-20T18:40:43Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 독립 사건 또는 별도 긴급 경고 없음. Reuters 11월20일 미국 장중 후속 기사에서 SOX -8.6%, Nasdaq -3.3%, Anthropic -12.5%, S&P500·Dow 고점 대비 약 -10% 확인. 16:40 UTC 기존 SOX -7%·Nasdaq -2.5% 악화 경고의 연장. 신용 OAS·동시점 VIX·ETF 호가 검증 불가로 critical 격상 보류. 정규장 중이지만 사전 트리거 파일 조회 불가.",
+  "change_since_previous": "신규 독립 사건·추가 긴급 경고 없음. 직전 18:19 UTC 점검에서 Reuters SOX -8.6%, Nasdaq -3.3% 및 기존 16:40 UTC 반도체 급락 악화 경고 반영. 후속 보도(Reuters/Guardian/Times)에서 AI 관련 매도세 지속 확인했으나 관측시각 불일치·동시점 신용/시장 폭 자료 부재로 추가 위험 단계 상승을 검증하지 못함. 미국 정규장 중이나 사전 트리거 파일 404로 진입 신호 미확인.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1402,6 +1402,13 @@
       "anthropic_change_pct": -12.5,
       "sp500_dow_drawdown_from_high_approx_pct": -10,
       "note": "Reuters 2026-11-20 intraday article; individual quote times unspecified; delayed non-executable data; not a closing print"
+    },
+    "us_equities_nov20_followup_1840utc": {
+      "observed_at_utc": null,
+      "nasdaq_change_pct_reported": -3.3,
+      "phlx_semiconductor_change_pct_reported": -8.6,
+      "source_published_at_utc": null,
+      "note": "Reuters 11월20일 장중 기사에서 재확인된 기존 수치; 정확한 개별 시세시각 불명. 신규 시세 아님. Reuters/Guardian 후속 보도는 동일 AI 매도세를 설명하며 새로운 동시점 시장 폭/신용 지표 제공하지 않음."
     }
   },
   "sources": [
@@ -1453,7 +1460,8 @@
     "https://www.reuters.com/business/wall-st-week-ahead-black-friday-brings-consumer-spending-into-focus-ai-rocked-2026-11-20/",
     "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
     "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news",
-    "https://www.reuters.com/business/energy/global-markets-selloff-2026-11-20/"
+    "https://www.reuters.com/business/energy/global-markets-selloff-2026-11-20/",
+    "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off"
   ],
   "data_limitations": [
     "2026-11-20T05:20Z: 동시점 공식 OAS/실질금리/유동성/WTI/천연가스/구리/USD-KRW/SOXX·ETF 호가 미검증; Reuters 시세 최소 15분 지연, 개별 관측시각 미제공.",
@@ -1471,6 +1479,7 @@
     "2026-11-20 14:42 UTC: 동시점 공식 신용 OAS, 실질금리, 시장 폭, SOXX/XLP/XLF·SPY 호가/거래량, 천연가스·구리·USD/KRW 검증 불가; Reuters/Guardian 기사 가격 관측시각 미제공; 매시간 점검은 실시간 연속 감시 아님; analysis/triggers/latest.json 404.",
     "2026-11-20 16:05 UTC: official synchronized credit OAS, liquidity, real yields, VIX tick, SOXX/XLP/XLF quotes and order book, USD/KRW, natural gas and exact copper price unverified; Reuters quotes delayed >=15 min; preplanned trigger file missing (404).",
     "Nov20 16:40 UTC: current official credit OAS, live SOXX/XLP/XLF bid-ask, same-time VIX/market breadth, USDKRW, real yields and commodity quotes unverified; triggers/latest.json fetch failed; AP article exact quote times unavailable.",
-    "2026-11-20 18:19 UTC: no synchronized official credit OAS, VIX, market breadth, SOXX/XLP/XLF bid-ask/volume, Treasury real yields, USD/KRW, natural gas or copper quotes; no reliable intraday trigger plan; hourly snapshots may miss signals."
+    "2026-11-20 18:19 UTC: no synchronized official credit OAS, VIX, market breadth, SOXX/XLP/XLF bid-ask/volume, Treasury real yields, USD/KRW, natural gas or copper quotes; no reliable intraday trigger plan; hourly snapshots may miss signals.",
+    "2026-11-20 18:40 UTC: 동시점 공식 HY/IG OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스, 구리, SOXX/XLP/XLF 체결·호가/거래량, SPY 상대강도 미검증. 기사 가격은 실시간 호가 아님. analysis/triggers/latest.json 404. 매시간 샘플링으로 신호 누락 가능."
   ]
 }
