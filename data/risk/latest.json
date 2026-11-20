@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T21:25:25Z",
+  "checked_at_utc": "2026-11-20T22:47:28Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 독립 경고 없음. Reuters/AP 2026-11-20 정규장 마감 보도에서 S&P500 약 -3.6~-3.7%, Nasdaq 약 -5.1~-5.3%, Dow 약 -1.85~-1.9% 확인. 직전 21:10 UTC 장 후반 광범위 하락 경고의 종가 확정/수치 보강이며 동일 위험을 재경고하지 않음. 지수별 출처 반올림 차이 존재. 신용 OAS·동시점 시장 폭·VIX 검증 부족으로 HIGH 유지.",
+  "change_since_previous": "신규 경고 없음. Reuters/AP 11월 20일 종가 및 FT의 기술주 약세·변동성 확대 후속 보도를 검토. 직전 광범위 급락 경고의 동일 사건이며 추가 신용·유동성 충격은 검증되지 않음. 기존 HIGH 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1452,6 +1452,16 @@
       "nasdaq_change_pct_ap": -5.3,
       "dow_change_pct_ap": -1.9,
       "note": "2026-11-20 US regular-session close, Reuters/AP rounded differently; 21:00 UTC scheduled close, individual tick timestamps not verified. Delayed news report, not executable quote."
+    },
+    "us_market_nov20_close_ap_20261121": {
+      "sp500_close": 6910.39,
+      "sp500_change_pct": -3.7,
+      "nasdaq_close": 22617.73,
+      "nasdaq_change_pct": -5.3,
+      "dow_close": 48147.33,
+      "dow_change_pct": -1.9,
+      "observed_at_utc": "2026-11-20T21:00:00Z",
+      "note": "AP Nov 21 report of Nov 20 regular-session close, rounded percentage; scheduled close timestamp, exact trade timestamp not verified; previously alerted event"
     }
   },
   "sources": [
@@ -1484,7 +1494,8 @@
     "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
     "https://www.barrons.com/livecoverage/stock-market-news-today-112026/card/nasdaq-sinks-3-5-the-ai-selloff-is-washing-out-the-market--ptTVzayCtYLRiJlyiJ7b",
     "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
-    "https://nypost.com/2026/11/20/business/sp-500-and-dow-enter-correction-territory-nasdaq-loses-2026-gains-as-anthropic-dives/"
+    "https://nypost.com/2026/11/20/business/sp-500-and-dow-enter-correction-territory-nasdaq-loses-2026-gains-as-anthropic-dives/",
+    "https://www.ft.com/content/9f3c6ed6-c08f-4710-9683-ee2f5eb25841"
   ],
   "data_limitations": [
     "2026-11-20 13:23 UTC: 동시점 미국 정규장 ETF 가격/호가·SPY 상대강도·시장 폭·공식 신용스프레드·실질금리·USD/KRW·천연가스·구리 확인 불가. 기사 수치는 발표시각과 개별 시세시각이 다르며 지연 가능. analysis/triggers/latest.json 404; 장중 발동 여부 미확인.",
@@ -1498,6 +1509,7 @@
     "2026-11-20 21:10 UTC: 정확한 거래소 종가/동시점 신용 OAS, 실질금리, VIX, USD/KRW, 천연가스, 구리, SOXX/XLP/XLF 호가 및 SPY 상대강도 검증 불가; 뉴스 스냅샷은 지연·비동기",
     "analysis/triggers/latest.json 404; 미국 정규장 종료 후 장중 트리거 평가하지 않음; 매시간 점검은 실시간 스트리밍 아님",
     "2026-11-20 21:25 UTC: US regular session closed; contemporaneous HY/IG OAS, VIX, market breadth, real yields, USD/KRW, commodity prices and SOXX/XLP/XLF bid-ask/volume not independently synchronized; article closes are not executable quotes.",
-    "analysis/triggers/latest.json returned 404; no retroactive trigger evaluation; hourly monitoring may miss intraday signals."
+    "analysis/triggers/latest.json returned 404; no retroactive trigger evaluation; hourly monitoring may miss intraday signals.",
+    "2026-11-20 22:47 UTC: official contemporaneous IG/HY OAS, real yields, full breadth, USD/KRW, gas/copper, ETF quotes/spreads not independently verified; market closed, no live executable quotes. analysis/triggers/latest.json 404; regular-session triggers not assessed."
   ]
 }
