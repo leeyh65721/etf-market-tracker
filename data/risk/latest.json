@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T19:38:15Z",
+  "checked_at_utc": "2026-11-20T21:10:25Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 독립 사건 또는 기존 16:40 UTC 경고 대비 추가 긴급 위험 단계 상승 미확인. AP 후속 기사 Nasdaq -3.6%, S&P500 -2.2%, Dow -0.7%, Barron's Nasdaq -3.5%, SOXX -8.8% 보도는 앞선 Reuters Nasdaq -3.3%, SOX -8.6% 대비 소폭 추가 하락이나 관측 시각 불일치 및 신용·유동성 악화 미확인. 방어업종 상대 강세. 사전 트리거 파일 404. 신규 경고 없음.",
+  "change_since_previous": "기존 AI·반도체 매도세의 장 후반 광범위한 악화: 직전 Nasdaq -3.6%, S&P500 -2.2% 기사 관측 대비 후속 보도 Nasdaq 약 -4.7%, S&P500 약 -3.1%, Dow 약 -1.3%; S&P500/Dow 고점 대비 10% 이상 조정권 진입 보도. 독립 사건 아님. 장중/마감 근처 보도 시점 불일치·종가 미확정, 신용 OAS 동시점 미검증으로 CRITICAL 격상 불가. 기존 경고 대비 시장 전이 심화로 추가 위험 확인 권고.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -110,6 +110,23 @@
         "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad",
         "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b",
         "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
+      ],
+      "status": "active"
+    },
+    {
+      "event_id": "20261120-late-session-broad-market-contagion",
+      "detected_at_utc": "2026-11-20T21:10:25Z",
+      "severity": "high",
+      "summary": "기존 AI·반도체 급락의 중대한 악화: 장 후반 나스닥 약 -4.7%, S&P500 약 -3.1%, 다우 약 -1.3%로 매도세 광범위 확산, S&P500·다우 조정권 진입 보도",
+      "evidence": [
+        "Nov 20 NY Post later-session Nasdaq -4.7%, S&P500 -3.1%, Dow -1.3%; Reuters late Nov20 Nasdaq >-4%, growth-to-value rotation; not exchange-confirmed final closes",
+        "Prior check Nasdaq -3.6%, S&P500 -2.2%; quote snapshots not synchronized",
+        "Counterevidence: Reuters reports value/defensive rotation and Treasury bond bid, not verified systemic credit seizure; OAS, simultaneous VIX and market breadth missing"
+      ],
+      "source_urls": [
+        "https://nypost.com/2026/11/20/business/sp-500-and-dow-enter-correction-territory-nasdaq-loses-2026-gains-as-anthropic-dives/",
+        "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
+        "https://www.washingtonpost.com/business/2026/11/20/us-stock-market-slumps-amid-rising-tech-ai-worries/"
       ],
       "status": "active"
     }
@@ -1418,32 +1435,16 @@
       "dow_change_pct_ap": -0.7,
       "soxx_change_pct_barrons": -8.8,
       "note": "AP 및 Barron's 2026-11-20 후속 보도. 정확한 시세 관측시각·종가 여부 미검증; SOXX ETF와 SOX 지수 구분. 실시간 가격 아님."
+    },
+    "us_equities_nov20_late_report": {
+      "nasdaq_change_pct": -4.7,
+      "sp500_change_pct": -3.1,
+      "dow_change_pct": -1.3,
+      "observed_at_utc": null,
+      "note": "NY Post Nov20 later-session report; precise quote timestamp and exchange-verified final close unavailable. Do not treat as synchronized executable quote."
     }
   },
   "sources": [
-    "https://www.wsj.com/finance/commodities-futures/gold-treads-water-as-fed-dollar-keep-weighing-3f6439e8",
-    "https://www.straitstimes.com/business/companies-markets/wall-street-ends-mixed-after-nvidia-earnings-fed-minutes",
-    "https://www.businesstimes.com.sg/companies-markets/capital-markets-currencies/us-stocks-wall-street-ends-mixed-after-nvidia-earnings-fed-minutes",
-    "https://www.wsj.com/finance/commodities-futures/copper-at-lowest-since-april-amid-ai-market-turmoil-chinese-demand-concerns-4325361e",
-    "https://www.reuters.com/world/africa/us-dollar-hovers-near-19-month-high-aussie-falls-after-soft-jobs-data-2026-11-19/",
-    "https://wealthinsights.metrobank.com.ph/news/global-markets-stocks-slip-with-eyes-on-anthropic-and-nvidia-oil-prices-slide",
-    "https://www.wsj.com/finance/asian-equities-decline-as-caution-prevails-eaf3c1e9",
-    "https://www.reuters.com/business/energy/oil-prices-steady-supply-surplus-softens-sentiment-though-gulf-war-supports-2026-11-19/",
-    "https://apnews.com/article/206c84045137824feabe052a29ff6140",
-    "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-19/",
-    "https://wealthinsights.metrobank.com.ph/news/us-stocks-wall-street-ends-mixed-after-nvidia-earnings-fed-minutes",
-    "https://www.reuters.com/markets/europe/global-markets-taiwan-update-1-2026-11-19/",
-    "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-19/",
-    "https://www.reuters.com/business/nasdaq-futures-jump-anthropics-record-ipo-pricing-fuels-hopes-strong-debut-2026-11-19/",
-    "https://www.marketwatch.com/livecoverage/stock-market-today-nasdaq-leads-dow-sp500-higher-on-anthropic-ai-optimism-walmart-earnings/card/treasury-yields-nudge-higher-as-haven-demand-eases-4zcx4OGGC2Cn41PKoZne",
-    "https://apnews.com/article/b6a74b8949021207dc162fcc876c4649",
-    "https://www.wsj.com/business/energy-oil/oil-prices-mixed-as-traders-weigh-supply-outlook-middle-east-shipping-risks-224e2724",
-    "https://www.tipranks.com/news/markets-brace-for-u-s-jobless-claims-and-factory-data-after-fed-minutes-lock-in-rate-hike-bets",
-    "https://commoditynews.morgandowney.com/news/2026-11-19",
-    "https://www.reuters.com/world/india/gold-edges-up-14-month-low-markets-assess-fed-rate-outlook-2026-11-19/",
-    "https://www.theguardian.com/business/live/2026/nov/19/anthropic-float-stock-market-nasdaq-raises-81bn-record-ipo-latest-news-updates",
-    "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-19/",
-    "https://www.hlb.com.my/content/dam/hlb/my/docs/pdf/Global_Markets/daily-market-watch/2026/19-11-2026.pdf",
     "https://www.reuters.com/legal/transactional/view-anthropic-set-soar-debut-will-ai-peers-follow-2026-11-19/",
     "https://www.investors.com/news/technology/chip-stocks-anthropic-ipo-ai-prospects/",
     "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/",
@@ -1471,10 +1472,11 @@
     "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news",
     "https://www.reuters.com/business/energy/global-markets-selloff-2026-11-20/",
     "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-    "https://www.barrons.com/livecoverage/stock-market-news-today-112026/card/nasdaq-sinks-3-5-the-ai-selloff-is-washing-out-the-market--ptTVzayCtYLRiJlyiJ7b"
+    "https://www.barrons.com/livecoverage/stock-market-news-today-112026/card/nasdaq-sinks-3-5-the-ai-selloff-is-washing-out-the-market--ptTVzayCtYLRiJlyiJ7b",
+    "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
+    "https://nypost.com/2026/11/20/business/sp-500-and-dow-enter-correction-territory-nasdaq-loses-2026-gains-as-anthropic-dives/"
   ],
   "data_limitations": [
-    "미국 정규장 시작 전, analysis/triggers/latest.json 404; 장중 발동 판정하지 않음.",
     "2026-11-20 10:16 UTC: 동시점 공식 OAS·실질금리·유동성·시장 폭·USD/KRW·천연가스·구리·SOXX 호가 미검증; Reuters/AP/FT 기사 수치는 지연 또는 시각 미표기.",
     "analysis/triggers/latest.json 404; 미국 정규장 전(09:30 ET 이전)이라 장중 트리거 미평가. 매시간 점검은 실시간 스트리밍 아님.",
     "2026-11-20 10:50 UTC: official synchronized credit OAS, real yields, breadth, USD/KRW, natural gas, copper, ETF quotes unavailable; VIX individual tick time unavailable; trigger file 404; premarket, not regular trading session.",
@@ -1486,6 +1488,8 @@
     "Nov20 16:40 UTC: current official credit OAS, live SOXX/XLP/XLF bid-ask, same-time VIX/market breadth, USDKRW, real yields and commodity quotes unverified; triggers/latest.json fetch failed; AP article exact quote times unavailable.",
     "2026-11-20 18:19 UTC: no synchronized official credit OAS, VIX, market breadth, SOXX/XLP/XLF bid-ask/volume, Treasury real yields, USD/KRW, natural gas or copper quotes; no reliable intraday trigger plan; hourly snapshots may miss signals.",
     "2026-11-20 18:40 UTC: 동시점 공식 HY/IG OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스, 구리, SOXX/XLP/XLF 체결·호가/거래량, SPY 상대강도 미검증. 기사 가격은 실시간 호가 아님. analysis/triggers/latest.json 404. 매시간 샘플링으로 신호 누락 가능.",
-    "2026-11-20 19:38 UTC: 공식 동시점 OAS·실질금리·VIX·시장 폭·USD/KRW·가스·구리·SOXX 호가/거래량/상대강도 검증 불가. 기사 수치 관측시각 불명확, 장중 신호 파일 404, 매시간 비연속 점검."
+    "2026-11-20 19:38 UTC: 공식 동시점 OAS·실질금리·VIX·시장 폭·USD/KRW·가스·구리·SOXX 호가/거래량/상대강도 검증 불가. 기사 수치 관측시각 불명확, 장중 신호 파일 404, 매시간 비연속 점검.",
+    "2026-11-20 21:10 UTC: 정확한 거래소 종가/동시점 신용 OAS, 실질금리, VIX, USD/KRW, 천연가스, 구리, SOXX/XLP/XLF 호가 및 SPY 상대강도 검증 불가; 뉴스 스냅샷은 지연·비동기",
+    "analysis/triggers/latest.json 404; 미국 정규장 종료 후 장중 트리거 평가하지 않음; 매시간 점검은 실시간 스트리밍 아님"
   ]
 }
