@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T10:16:52Z",
+  "checked_at_utc": "2026-11-20T10:50:38Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. Reuters/AP/FT 11월 20일 보도상 아시아 반도체 급락 및 유럽 약세는 앞선 점검에 반영된 기존 AI 매도세의 연장. 직전 대비 새 신용·유동성 충격 또는 위험 단계 상향을 입증할 동시점 증거 미확인. 미국 정규장 전이라 장중 트리거 평가 제외.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월20일 VIX 장전 30.04(이전 28.44 대비 상승) 및 아시아/유럽 AI 관련 매도세 확인. 기존 위험의 연장이며 신용·유동성 동시점 충격 미검증으로 단계 상향 유보. 미국 정규장 시작 전, 트리거 파일 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1313,6 +1313,19 @@
       "taiwan_weekly_change_pct": -17.5,
       "observed_at_utc": null,
       "note": "Reuters Nov 20 기사에 제시된 장중/주간 집계; 개별 가격 관측시각 미확인, 기존 점검과 중복"
+    },
+    "vix_nov20_reuters_premarket": {
+      "peak": 30.04,
+      "last": 29.5,
+      "unit": "index points",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 20 premarket report; exact quote timestamp unavailable, not live synchronized quote"
+    },
+    "oil_nov20_reuters_1032gmt": {
+      "brent_usd_barrel": 90.33,
+      "wti_dec_usd_barrel": 81.59,
+      "observed_at_utc": "2026-11-20T10:32:00Z",
+      "note": "Reuters delayed market snapshot"
     }
   },
   "sources": [
@@ -1355,7 +1368,8 @@
     "https://www.moneycontrol.com/news/business/markets/taiwan-stocks-face-worst-week-since-1991-despite-support-steps-14085397.html",
     "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad",
     "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
-    "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b"
+    "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b",
+    "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/"
   ],
   "data_limitations": [
     "2026-11-19T16:10:38Z: 정규장 중이나 triggers/latest.json 404, events/daily 디렉터리 조회 오류. 최신 동시점 SOXX/XLP/XLF/SPY 가격·거래량·호가, 시장 폭, VIX, OAS, 실질금리, 유동성, 원자재·USD/KRW 미검증. 시간별 점검이며 신호 누락 가능.",
@@ -1377,6 +1391,7 @@
     "2026-11-20 08:47 UTC: 동시점 공식 신용 OAS·실질금리·시장 폭·USD/KRW·천연가스·구리·ETF 호가 미검증; Reuters/FT 보도 지연, 개별 시세시각 불명.",
     "미국 정규장 시작 전, analysis/triggers/latest.json 404; 장중 발동 판정하지 않음.",
     "2026-11-20 10:16 UTC: 동시점 공식 OAS·실질금리·유동성·시장 폭·USD/KRW·천연가스·구리·SOXX 호가 미검증; Reuters/AP/FT 기사 수치는 지연 또는 시각 미표기.",
-    "analysis/triggers/latest.json 404; 미국 정규장 전(09:30 ET 이전)이라 장중 트리거 미평가. 매시간 점검은 실시간 스트리밍 아님."
+    "analysis/triggers/latest.json 404; 미국 정규장 전(09:30 ET 이전)이라 장중 트리거 미평가. 매시간 점검은 실시간 스트리밍 아님.",
+    "2026-11-20 10:50 UTC: official synchronized credit OAS, real yields, breadth, USD/KRW, natural gas, copper, ETF quotes unavailable; VIX individual tick time unavailable; trigger file 404; premarket, not regular trading session."
   ]
 }
