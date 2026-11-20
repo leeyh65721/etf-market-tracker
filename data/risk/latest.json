@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-19T22:10:10Z",
+  "checked_at_utc": "2026-11-20T00:01:26Z",
   "market_date": "2026-11-19",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. AP/WSJ 종가 교차 확인, VIX 28.44(+15.8%)로 이전 장중 28.45와 유사. 기술 ETF 고점 대비 20% 이상 하락 보도는 누적 낙폭이며 새 충격으로 분류하지 않음. HIGH 잠정 유지.",
+  "change_since_previous": "신규 경고 없음. 11월 19일 종가 S&P500 약 -2.02%, Nasdaq 약 -2.25%, VIX 28.44 등은 이전 점검에서 이미 확인한 동일 사건. 새로운 독립 충격 또는 기존 경고 이후 현저한 악화 미확인. HIGH 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1212,6 +1212,17 @@
       "nvda_change_pct": -3.3,
       "coreweave_change_pct": -6.1,
       "note": "AP/WSJ close reports; scheduled close, not live; VIX exact sampling time not independently verified; figures rounded."
+    },
+    "us_close_nov19_nov20_recheck": {
+      "sp500_close": 7175.83,
+      "sp500_change_pct": -2.02,
+      "nasdaq_close": 23879.2,
+      "nasdaq_change_pct": -2.25,
+      "dow_close": 49097.06,
+      "dow_change_pct": -2.19,
+      "vix_close": 28.44,
+      "observed_at_utc": "2026-11-19T21:00:00Z",
+      "note": "AP/Reuters/WSJ Nov 19 regular-session close, scheduled market close time; precise tick timestamps not verified. Already covered previously; not a fresh price update."
     }
   },
   "sources": [
@@ -1338,7 +1349,8 @@
     "https://www.marketwatch.com/livecoverage/stock-market-today-nasdaq-leads-dow-sp500-higher-on-anthropic-ai-optimism-walmart-earnings/card/dow-s-p-500-nasdaq-end-sharply-lower-after-anthropic-s-public-market-debut-NqpTMwtQZb9Zxc3cLBRQ",
     "https://www.reuters.com/markets/europe/european-stocks-rebound-tech-climbs-ai-optimism-2026-11-19/",
     "https://capmkts.com/pulse/2026-11-19",
-    "https://www.wsj.com/finance/stocks/u-s-stocks-slide-as-ai-bust-continues-despite-anthropic-ipo-5a14e137"
+    "https://www.wsj.com/finance/stocks/u-s-stocks-slide-as-ai-bust-continues-despite-anthropic-ipo-5a14e137",
+    "https://apnews.com/article/2f178054aea79d282e5ccf8d62f26a28"
   ],
   "data_limitations": [
     "정규장 종료 후 점검; 장중 신호 평가 제외",
@@ -1362,6 +1374,8 @@
     "2026-11-19 18:28 UTC: trigger file 404; latest synchronized ETF quotes, volume, spreads, official VIX, credit OAS, real yields, liquidity, commodities and FX not verified; prior alert compared via risk file; hourly non-streaming.",
     "2026-11-19 19:43 UTC: official synchronized credit OAS, liquidity, real yields, VIX, breadth, commodities, FX and ETF quotes/volume/spreads not verified; trigger file 404; events/daily directory fetch errors; hourly non-streaming.",
     "2026-11-19 21:14 UTC: official OAS, liquidity, real yields, current VIX, commodities, FX, ETF quotes and exact semiconductor close unverified; secondary credit figure not official. Regular session closed, triggers not evaluated; prior alert compared via risk file; hourly non-streaming.",
-    "2026-11-19 22:10 UTC: official VIX/OAS, real yields, liquidity, current FX/commodities, ETF quotes and official breadth not independently verified; regular session closed; triggers not evaluated; prior alerts compared via risk file."
+    "2026-11-19 22:10 UTC: official VIX/OAS, real yields, liquidity, current FX/commodities, ETF quotes and official breadth not independently verified; regular session closed; triggers not evaluated; prior alerts compared via risk file.",
+    "2026-11-20 00:01 UTC: latest synchronized credit OAS, real yields, liquidity, oil, gas, gold, copper, USD/KRW and ETF quotes not independently verified; no new values fabricated.",
+    "US regular session closed; trigger file not queried for active signals. Hourly checks are not continuous monitoring."
   ]
 }
