@@ -1,7 +1,7 @@
 # ETF 분석 판단 보존 원장
 
 > 실제 분석에 적힌 표현과 기준가격을 대조한 공개 시장연구 원장. 자동 스크리너 후보·사용자 거래와 구분.
-- 유효하게 연결된 의견: **34건**
+- 유효하게 연결된 의견: **35건**
 - 원문을 사후 보관해 적중률 산정이 불가능한 의견: **5건**
 - 형식·출처 확인 실패: **0건**
 - 구조화되지 않은 일일 분석 파일: **0개**
@@ -43,6 +43,7 @@
 |2026-11-17-MARKET-no_new_candidate|MARKET|no_new_candidate|2026-11-16|2026-11-17|2026-11-16|backfill/no hit rate|
 |2026-11-18-MARKET-no_new_candidate|MARKET|no_new_candidate|2026-11-17|2026-11-18|2026-11-18|backfill/no hit rate|
 |2026-11-19-MARKET-no_new_candidate|MARKET|no_new_candidate|2026-11-18|2026-11-19|2026-11-19|backfill/no hit rate|
+|2026-11-20-MARKET-no_new_candidate|MARKET|no_new_candidate|2026-11-19|2026-11-20|2026-11-20|backfill/no hit rate|
 
 ## 아직 독립 기록이 없는 보고서
 
