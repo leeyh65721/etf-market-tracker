@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T11:34:09Z",
+  "checked_at_utc": "2026-11-20T13:23:06Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월 20일 Reuters VIX 장전 최고 30.04 및 29.50, 금 09:13 GMT $3576.09(-1.3%) 확인. 앞선 점검의 VIX 30.04와 동일 사건·수치이며 추가 위험 상향 증거 미확인. 미국 정규장 시작 전; 사전 트리거 파일 읽기 실패.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 12:44 UTC 보도: 11월 18일까지 미국 주식형 펀드 순유입 457.1억 달러(3주 연속), 기존 광범위 매도 우려에 대한 반대 증거. 대만 시장 안정화 발언 및 유럽 기술주 약세는 앞선 아시아 전이 경고의 연장. 동시점 신용·유동성/미국 정규장 가격 확인 불가. 사전 트리거 파일 404로 장중 발동 미평가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1333,6 +1333,12 @@
       "unit": "USD/troy ounce",
       "observed_at_utc": "2026-11-20T09:13:00Z",
       "note": "Reuters 09:13 GMT spot gold; 이번 점검 시점보다 과거"
+    },
+    "us_equity_fund_flows_week_ended_nov18": {
+      "value": 45.71,
+      "unit": "USD billion net inflow",
+      "observed_at_utc": null,
+      "note": "LSEG Lipper data reported by Reuters 2026-11-20 12:44 UTC; weekly fund flows through Nov 18, not intraday quote; third consecutive inflow week"
     }
   },
   "sources": [
@@ -1377,7 +1383,10 @@
     "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
     "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b",
     "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
-    "https://www.reuters.com/world/india/gold-set-worst-week-eight-months-firm-dollar-fed-hike-bets-weigh-2026-11-20/"
+    "https://www.reuters.com/world/india/gold-set-worst-week-eight-months-firm-dollar-fed-hike-bets-weigh-2026-11-20/",
+    "https://www.reuters.com/legal/transactional/us-equity-funds-draw-inflows-third-straight-week-2026-11-20/",
+    "https://www.reuters.com/markets/europe/global-markets-taiwan-urgent-2026-11-20/",
+    "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/"
   ],
   "data_limitations": [
     "2026-11-19T16:10:38Z: 정규장 중이나 triggers/latest.json 404, events/daily 디렉터리 조회 오류. 최신 동시점 SOXX/XLP/XLF/SPY 가격·거래량·호가, 시장 폭, VIX, OAS, 실질금리, 유동성, 원자재·USD/KRW 미검증. 시간별 점검이며 신호 누락 가능.",
@@ -1401,6 +1410,7 @@
     "2026-11-20 10:16 UTC: 동시점 공식 OAS·실질금리·유동성·시장 폭·USD/KRW·천연가스·구리·SOXX 호가 미검증; Reuters/AP/FT 기사 수치는 지연 또는 시각 미표기.",
     "analysis/triggers/latest.json 404; 미국 정규장 전(09:30 ET 이전)이라 장중 트리거 미평가. 매시간 점검은 실시간 스트리밍 아님.",
     "2026-11-20 10:50 UTC: official synchronized credit OAS, real yields, breadth, USD/KRW, natural gas, copper, ETF quotes unavailable; VIX individual tick time unavailable; trigger file 404; premarket, not regular trading session.",
-    "이번 점검: 신용 OAS, 실질금리, USD/KRW, 천연가스, 구리, ETF 호가 및 시장 폭 동시점 확인 불가. Reuters VIX 개별 관측시각 불명확. 장중 사전 트리거 파일 조회 실패."
+    "이번 점검: 신용 OAS, 실질금리, USD/KRW, 천연가스, 구리, ETF 호가 및 시장 폭 동시점 확인 불가. Reuters VIX 개별 관측시각 불명확. 장중 사전 트리거 파일 조회 실패.",
+    "2026-11-20 13:23 UTC: 동시점 미국 정규장 ETF 가격/호가·SPY 상대강도·시장 폭·공식 신용스프레드·실질금리·USD/KRW·천연가스·구리 확인 불가. 기사 수치는 발표시각과 개별 시세시각이 다르며 지연 가능. analysis/triggers/latest.json 404; 장중 발동 여부 미확인."
   ]
 }
