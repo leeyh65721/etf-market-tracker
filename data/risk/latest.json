@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T05:48:32Z",
+  "checked_at_utc": "2026-11-20T06:35:25Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 직전 14:20 KST 점검과 비교해 AI·반도체 주도 아시아 하락은 기존 경고의 연장. Reuters 11월20일 아시아 장중 MSCI 일본 제외 -3.2%/주간 -8.3%, 대만 주간 -16%; 동일 지표·동일 시점의 추가 악화 증거 부족. 호르무즈 유조선 피격 및 후티 공격 관련 Reuters 원유 보도는 위험요인이나 유가 주간 하락 및 물동량 회복 반증으로 독립적 신규 시스템 충격 확정 불가. 신용·유동성 동시점 지표 미검증. 미국 정규장 외 트리거 미평가.",
+  "change_since_previous": "신규 긴급 경고 없음. 14:48 KST 점검 대비 검증된 독립 충격/위험단계 상향 증거 없음. Reuters 11월20일 아시아 기술주 하락 및 FT/AP 보도는 기존 AI·반도체 매도세의 연장. 신용스프레드·실질금리·동시점 호가 미검증. 미국 정규장 외 트리거 평가 제외.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1286,6 +1286,13 @@
       "taiwan_week_pct": -16,
       "observed_at_utc": null,
       "note": "Reuters Nov20 intraday reporting, precise quote timestamps unverified; previously discussed"
+    },
+    "asia_nov20_reuters_intraday_recheck_1535kst": {
+      "msci_asia_ex_japan_change_pct": -3.2,
+      "msci_asia_ex_japan_week_pct": -8.3,
+      "taiwan_week_pct": -16,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-20 기사 장중 집계 재확인. 정확한 시세 시각 미제공; 14:48 KST 이전 점검과 중복이며 새로운 틱 아님."
     }
   },
   "sources": [
@@ -1343,6 +1350,7 @@
     "2026-11-20 02:47 UTC: 아시아 지수 Reuters 장중 반올림 수치이며 개별 관측시각 불명. 동시점 SOXX/SPY/ETF 호가, 공식 OAS, 실질금리, USD/KRW, 천연가스·구리 및 유동성 지표 미검증. 트리거 파일 404. 미국 정규장 종료.",
     "이번 점검: 공식 신용 OAS, 실질금리, 최신 USD/KRW, 천연가스/구리, ETF 호가, 동시점 VIX/시장폭 미검증. Reuters 아시아 수치는 개별 틱시각 미제공. 장중 트리거 파일 404; 미국 정규장 외 시간.",
     "2026-11-20T05:20Z: 동시점 공식 OAS/실질금리/유동성/WTI/천연가스/구리/USD-KRW/SOXX·ETF 호가 미검증; Reuters 시세 최소 15분 지연, 개별 관측시각 미제공.",
-    "2026-11-20 05:48 UTC: 공식 HY/IG OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스·구리, SOXX/XLP/XLF 호가 동시점 검증 불가; Reuters 원유 관측 04:04 UTC, 아시아 지수 개별 시각 불명. 미국 정규장 외; analysis/triggers/latest.json 404."
+    "2026-11-20 05:48 UTC: 공식 HY/IG OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스·구리, SOXX/XLP/XLF 호가 동시점 검증 불가; Reuters 원유 관측 04:04 UTC, 아시아 지수 개별 시각 불명. 미국 정규장 외; analysis/triggers/latest.json 404.",
+    "2026-11-20 06:35 UTC: 동시점 공식 OAS, 실질금리, VIX, 시장 폭, 원자재 전종, USD/KRW, ETF 호가 미확인. Reuters 장중 보도는 정확한 시세시각 불명."
   ]
 }
