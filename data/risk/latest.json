@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T16:05:50Z",
+  "checked_at_utc": "2026-11-20T16:40:06Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "16:05 UTC 점검: Reuters 15:12 UTC 글로벌 매도 분석에서 세계 주식 시총 8월 고점 대비 약 9조달러 감소, 구리 주간 급락, 미국 10년물 금리 주간 -17bp, 달러 19개월 최고 보도. 누적·주간 수치로 직전 14:42 UTC 경고 이후 발생한 독립 충격이 아님. Reuters 09:56 ET 미국 장중 Nasdaq -0.51%, SOX -3%, Nasdaq 신저가 407개·하락/상승 1.22:1, S&P 다수 업종 상승: 기존 반도체 매도 지속이나 11월 17일 경고의 신저가 437개보다 확대 증거 없음. MOVE/FX 변동성은 이전 고점 미만이라는 반증. 새로운 긴급 경고 없음. 트리거 파일 404로 장중 신호 평가 불가.",
+  "change_since_previous": "기존 사건의 중대한 악화 가능성: Reuters 09:56 ET Nasdaq -0.51%, SOX -3% 대비 AP 11월20일 후속 보도 Nasdaq -2.5%, SOX -7%, S&P500 -1.4%, NVDA -6%, AMD -9.4%, AVGO -9.2%. FT Nasdaq100 -2%, 10월 고점 대비 -15% 이상. 단, 후속 기사 개별 관측시각 불명확하고 Reuters/AP 수치 비동시점; 신용 OAS 미확인. AI/반도체 위험의 가격·업종 전이 심화로 기존 사건 악화 경고, critical 격상은 보류. 정규장 트리거 파일 조회 실패.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -93,6 +93,23 @@
         "https://www.investors.com/news/technology/chip-stocks-anthropic-ipo-ai-prospects/",
         "https://www.reuters.com/world/china/amd-shares-slide-report-says-china-links-could-invite-us-scrutiny-2026-11-19/",
         "https://www.barrons.com/livecoverage/stock-market-news-today-111926/card/the-ai-rally-finally-gets-a-win-87sn1lIR2ZeNP5CsqLVk"
+      ],
+      "status": "active"
+    },
+    {
+      "event_id": "20261120-us-semiconductor-rout-escalation",
+      "detected_at_utc": "2026-11-20T16:40:06Z",
+      "severity": "high",
+      "summary": "기존 AI·반도체 매도세의 중대한 악화: 미국 장중 SOX 약 -7%, Nasdaq 약 -2.5%로 앞선 Reuters 관측보다 낙폭 확대",
+      "evidence": [
+        "Reuters 09:56 ET Nasdaq -0.51%, SOX -3%; AP Nov20 later report Nasdaq -2.5%, SOX -7%, S&P500 -1.4%, Nvidia -6%, AMD -9.4%, Broadcom -9.2%",
+        "FT Nov20 Nasdaq100 -2% and >15% below October peak; 10Y Treasury yield AP 4.95%, down, suggesting duration bid not confirmed credit seizure",
+        "Counterpoint: AP most non-technology stocks advanced; credit OAS, ETF bid-ask, simultaneous breadth and VIX unverified; article individual price timestamps unavailable"
+      ],
+      "source_urls": [
+        "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad",
+        "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b",
+        "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/"
       ],
       "status": "active"
     }
@@ -1366,6 +1383,16 @@
       "world_equity_market_cap_loss_from_august_peak_usd_trillion_approx": 9,
       "us_10y_yield_weekly_change_bp_approx": -17,
       "note": "Reuters 15:12 UTC article: cumulative/weekly changes, not synchronized intraday quotes; copper steepest weekly decline since April 2025, DXY 19-month high"
+    },
+    "us_intraday_nov20_ap_later": {
+      "nasdaq_change_pct": -2.5,
+      "phlx_semiconductor_change_pct": -7,
+      "sp500_change_pct": -1.4,
+      "nvda_change_pct": -6,
+      "amd_change_pct": -9.4,
+      "avgo_change_pct": -9.2,
+      "observed_at_utc": null,
+      "note": "AP Nov20 article delayed intraday snapshots, individual quote timestamp not provided; not real-time synchronized data"
     }
   },
   "sources": [
@@ -1417,7 +1444,9 @@
     "https://www.reuters.com/business/wall-st-week-ahead-black-friday-brings-consumer-spending-into-focus-ai-rocked-2026-11-20/",
     "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
     "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news",
-    "https://www.reuters.com/business/energy/global-markets-selloff-2026-11-20/"
+    "https://www.reuters.com/business/energy/global-markets-selloff-2026-11-20/",
+    "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad",
+    "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b"
   ],
   "data_limitations": [
     "2026-11-20T05:20Z: 동시점 공식 OAS/실질금리/유동성/WTI/천연가스/구리/USD-KRW/SOXX·ETF 호가 미검증; Reuters 시세 최소 15분 지연, 개별 관측시각 미제공.",
@@ -1433,6 +1462,7 @@
     "2026-11-20 13:23 UTC: 동시점 미국 정규장 ETF 가격/호가·SPY 상대강도·시장 폭·공식 신용스프레드·실질금리·USD/KRW·천연가스·구리 확인 불가. 기사 수치는 발표시각과 개별 시세시각이 다르며 지연 가능. analysis/triggers/latest.json 404; 장중 발동 여부 미확인.",
     "2026-11-20 13:38 UTC: 공식 신용스프레드·실질금리·시장 폭·USD/KRW·천연가스·구리·ETF 호가 동시점 미검증; Reuters/FT 장전 시세 지연·개별 시각 불명; 트리거 파일 조회 실패. 매시간 스냅샷이며 실시간 스트리밍 아님.",
     "2026-11-20 14:42 UTC: 동시점 공식 신용 OAS, 실질금리, 시장 폭, SOXX/XLP/XLF·SPY 호가/거래량, 천연가스·구리·USD/KRW 검증 불가; Reuters/Guardian 기사 가격 관측시각 미제공; 매시간 점검은 실시간 연속 감시 아님; analysis/triggers/latest.json 404.",
-    "2026-11-20 16:05 UTC: official synchronized credit OAS, liquidity, real yields, VIX tick, SOXX/XLP/XLF quotes and order book, USD/KRW, natural gas and exact copper price unverified; Reuters quotes delayed >=15 min; preplanned trigger file missing (404)."
+    "2026-11-20 16:05 UTC: official synchronized credit OAS, liquidity, real yields, VIX tick, SOXX/XLP/XLF quotes and order book, USD/KRW, natural gas and exact copper price unverified; Reuters quotes delayed >=15 min; preplanned trigger file missing (404).",
+    "Nov20 16:40 UTC: current official credit OAS, live SOXX/XLP/XLF bid-ask, same-time VIX/market breadth, USDKRW, real yields and commodity quotes unverified; triggers/latest.json fetch failed; AP article exact quote times unavailable."
   ]
 }
