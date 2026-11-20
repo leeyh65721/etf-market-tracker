@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T01:11:34Z",
+  "checked_at_utc": "2026-11-20T01:43:50Z",
   "market_date": "2026-11-19",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. Reuters 11월19일 종가 S&P500 -2.02%, Nasdaq -2.25%, Dow -2.19% 및 VIX 28.44는 이전 경고에 반영됨. 직전 확인 대비 새 위험 단계 상승 증거 미확인. 미국 정규장 종료 후 점검.",
+  "change_since_previous": "신규 경고 없음. 11월 19일 미국 증시 마감 후 기존 AI·반도체 매도세 및 달러 강세를 Reuters/AP와 재확인했으나 직전 10:11 KST 점검 이후 새로운 독립 충격 또는 현저한 추가 악화 증거 없음. 정규장 종료로 장중 트리거 미평가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1231,6 +1231,13 @@
       "dow_change_pct": -2.19,
       "vix_close": 28.44,
       "note": "Reuters 2026-11-19 close and secondary market recap; scheduled close time, exact exchange tick timestamps not verified; already reported earlier"
+    },
+    "us_close_nov19_rechecked_1043kst": {
+      "sp500_change_pct": -2.03,
+      "nasdaq_change_pct": -2.23,
+      "dow_change_pct": -2.2,
+      "observed_at_utc": "2026-11-19T21:00:00Z",
+      "note": "Guardian 11월 19일 마감 집계; 예정 정규장 종료시각 기입, 개별 시세 관측시각 미확인; 기존 경고에 반영된 수치, 실시간 아님"
     }
   },
   "sources": [
@@ -1386,6 +1393,7 @@
     "2026-11-19 22:10 UTC: official VIX/OAS, real yields, liquidity, current FX/commodities, ETF quotes and official breadth not independently verified; regular session closed; triggers not evaluated; prior alerts compared via risk file.",
     "2026-11-20 00:01 UTC: latest synchronized credit OAS, real yields, liquidity, oil, gas, gold, copper, USD/KRW and ETF quotes not independently verified; no new values fabricated.",
     "US regular session closed; trigger file not queried for active signals. Hourly checks are not continuous monitoring.",
-    "2026-11-20T01:11Z: 최신 동시점 공식 신용스프레드, 실질금리, 시장폭, 유동성, FX, 에너지/금속 및 ETF 호가 미확인; 이전 관측값은 현재 시세가 아님. 장중 트리거 파일 404, 미국 정규장 종료로 신호 미평가."
+    "2026-11-20T01:11Z: 최신 동시점 공식 신용스프레드, 실질금리, 시장폭, 유동성, FX, 에너지/금속 및 ETF 호가 미확인; 이전 관측값은 현재 시세가 아님. 장중 트리거 파일 404, 미국 정규장 종료로 신호 미평가.",
+    "2026-11-20 01:43:50 UTC: 동시점 공식 신용 OAS·실질금리·원자재·USD/KRW·ETF 호가 및 장후 최신 시세 미검증; 정규장 종료, 사전 트리거 파일 조회 실패; 가격 지연·개별 체결시각 불명."
   ]
 }
