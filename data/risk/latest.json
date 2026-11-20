@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-20T14:42:09Z",
+  "checked_at_utc": "2026-11-20T16:05:50Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "14:42 UTC 점검: Reuters 11월 20일 미국 장전 Nasdaq100 선물 -1.64%, Anthropic 장전 -7.4%, VIX 장전 30.04 최고는 기존 AI·반도체 매도세의 연장. Guardian의 미국 개장 초기 Anthropic 약 -9% 보도는 장전 대비 추가 약세이나 광범위한 시장폭·신용 전이 동시 검증 불가, 신규 긴급 경고 요건 미충족. 정규장 개장 이후이나 사전 트리거 파일 404로 장중 발동 미평가. 신규 경고 없음.",
+  "change_since_previous": "16:05 UTC 점검: Reuters 15:12 UTC 글로벌 매도 분석에서 세계 주식 시총 8월 고점 대비 약 9조달러 감소, 구리 주간 급락, 미국 10년물 금리 주간 -17bp, 달러 19개월 최고 보도. 누적·주간 수치로 직전 14:42 UTC 경고 이후 발생한 독립 충격이 아님. Reuters 09:56 ET 미국 장중 Nasdaq -0.51%, SOX -3%, Nasdaq 신저가 407개·하락/상승 1.22:1, S&P 다수 업종 상승: 기존 반도체 매도 지속이나 11월 17일 경고의 신저가 437개보다 확대 증거 없음. MOVE/FX 변동성은 이전 고점 미만이라는 반증. 새로운 긴급 경고 없음. 트리거 파일 404로 장중 신호 평가 불가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1350,6 +1350,22 @@
       "anthropic_open_change_pct_approx": -9,
       "observed_at_utc": null,
       "note": "Guardian 2026-11-20 미국 개장 직후 보도, 대략치, 정확한 호가 시각 미제공"
+    },
+    "us_intraday_nov20_reuters_0956et": {
+      "observed_at_utc": "2026-11-20T14:56:00Z",
+      "nasdaq_change_pct": -0.51,
+      "dow_change_pct": 0.7,
+      "sp500_change_pct": 0.04,
+      "phlx_semiconductor_change_pct": -3,
+      "nasdaq_52week_lows": 407,
+      "nasdaq_decliners_to_advancers": 1.22,
+      "note": "Reuters Nov 20 09:56 ET delayed snapshot, Reuters quotes at least 15 minutes delayed; no ETF execution quote"
+    },
+    "global_selloff_nov20_reuters_1512utc": {
+      "observed_at_utc": null,
+      "world_equity_market_cap_loss_from_august_peak_usd_trillion_approx": 9,
+      "us_10y_yield_weekly_change_bp_approx": -17,
+      "note": "Reuters 15:12 UTC article: cumulative/weekly changes, not synchronized intraday quotes; copper steepest weekly decline since April 2025, DXY 19-month high"
     }
   },
   "sources": [
@@ -1400,7 +1416,8 @@
     "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/",
     "https://www.reuters.com/business/wall-st-week-ahead-black-friday-brings-consumer-spending-into-focus-ai-rocked-2026-11-20/",
     "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
-    "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news"
+    "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news",
+    "https://www.reuters.com/business/energy/global-markets-selloff-2026-11-20/"
   ],
   "data_limitations": [
     "2026-11-20T05:20Z: 동시점 공식 OAS/실질금리/유동성/WTI/천연가스/구리/USD-KRW/SOXX·ETF 호가 미검증; Reuters 시세 최소 15분 지연, 개별 관측시각 미제공.",
@@ -1415,6 +1432,7 @@
     "이번 점검: 신용 OAS, 실질금리, USD/KRW, 천연가스, 구리, ETF 호가 및 시장 폭 동시점 확인 불가. Reuters VIX 개별 관측시각 불명확. 장중 사전 트리거 파일 조회 실패.",
     "2026-11-20 13:23 UTC: 동시점 미국 정규장 ETF 가격/호가·SPY 상대강도·시장 폭·공식 신용스프레드·실질금리·USD/KRW·천연가스·구리 확인 불가. 기사 수치는 발표시각과 개별 시세시각이 다르며 지연 가능. analysis/triggers/latest.json 404; 장중 발동 여부 미확인.",
     "2026-11-20 13:38 UTC: 공식 신용스프레드·실질금리·시장 폭·USD/KRW·천연가스·구리·ETF 호가 동시점 미검증; Reuters/FT 장전 시세 지연·개별 시각 불명; 트리거 파일 조회 실패. 매시간 스냅샷이며 실시간 스트리밍 아님.",
-    "2026-11-20 14:42 UTC: 동시점 공식 신용 OAS, 실질금리, 시장 폭, SOXX/XLP/XLF·SPY 호가/거래량, 천연가스·구리·USD/KRW 검증 불가; Reuters/Guardian 기사 가격 관측시각 미제공; 매시간 점검은 실시간 연속 감시 아님; analysis/triggers/latest.json 404."
+    "2026-11-20 14:42 UTC: 동시점 공식 신용 OAS, 실질금리, 시장 폭, SOXX/XLP/XLF·SPY 호가/거래량, 천연가스·구리·USD/KRW 검증 불가; Reuters/Guardian 기사 가격 관측시각 미제공; 매시간 점검은 실시간 연속 감시 아님; analysis/triggers/latest.json 404.",
+    "2026-11-20 16:05 UTC: official synchronized credit OAS, liquidity, real yields, VIX tick, SOXX/XLP/XLF quotes and order book, USD/KRW, natural gas and exact copper price unverified; Reuters quotes delayed >=15 min; preplanned trigger file missing (404)."
   ]
 }
