@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "record_id": "2026-11-21-MARKET-no_new_candidate",
+  "ticker": "MARKET",
+  "stance": "no_new_candidate",
+  "us_market_date": "2026-11-20",
+  "original_report_date_kst": "2026-11-21",
+  "archived_on_utc_date": "2026-11-21",
+  "provenance": "contemporaneous_report",
+  "source_report": "analysis/weekly/2026-11-21.md",
+  "verbatim_source_excerpt": "새 후보 없음 — 11월 20일 종가의 전 ETF 검증 가격 기록이 없고 11월 19일 스크리너 검증률 213/353(60.3%)로 기준 85% 미달이므로 신규 확정 매수 후보가 없다.",
+  "thesis": "ETF screening coverage below minimum; market selloff confirmed, no verified new entry.",
+  "counterevidence": "NVIDIA official revenue grew 103% YoY; possible rebound, but this does not validate new ETF entry.",
+  "invalidation": "Reassess if 20 Nov market price and sufficient ETF coverage, liquidity, fund structure and fundamental catalysts verified and volatility stabilizes.",
+  "revisit_trigger": "Revisit after 5/10/20 NYSE sessions, no trade performance attribution.",
+  "review_horizons_nyse_sessions": [
+    5,
+    10,
+    20
+  ],
+  "comparison_baseline": "SPY",
+  "comparison_reference_market_date": "2026-11-20",
+  "trade_instruction": false,
+  "not_a_buy_recommendation": true,
+  "evaluation_status": "pending",
+  "eligible_for_prospective_judgment_scoring": false
+}
