@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T06:31:17Z",
+  "checked_at_utc": "2026-11-21T07:40:22Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. 11월 20일 미국 종가와 AI·반도체 급락의 글로벌 전이는 기존 11월 20일 경고에 포함. 11월 21일 토요일 미국 정규장 휴장. 추가로 검증된 위험 단계 상승 없음; 동시점 신용·유동성 지표 부족.",
+  "change_since_previous": "신규 경고 없음. 11월 20일 미국 증시 및 반도체 종가 급락은 기존 11월 20일 장후반 경고와 동일 사건. 11월 21일 토요일 미국 정규장 휴장; 신규 독립 충격 또는 직전 경고 이후의 검증된 추가 악화 없음. 신용·유동성 동시점 자료 미확보.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1490,10 +1490,13 @@
     },
     "us_close_nov20_nov21_recheck": {
       "observed_at_utc": "2026-11-20T21:00:00Z",
+      "sp500_close": 6910.39,
       "sp500_change_pct": -3.7,
+      "nasdaq_close": 22617.73,
       "nasdaq_change_pct": -5.28,
+      "dow_close": 48147.33,
       "dow_change_pct": -1.93,
-      "note": "Reuters 2026-11-20 US regular-session close; 21:00 UTC scheduled close, individual tick timestamps unverified; AP rounded figures; delayed historical data, not live prices"
+      "note": "AP Nov 21 report for Nov 20 close; scheduled close time, not verified tick time; already reflected in previous alert"
     },
     "us_market_nov20_close_rechecked_nov21": {
       "observed_at_utc": "2026-11-20T21:00:00Z",
@@ -1592,6 +1595,7 @@
     "2026-11-21 06:00 UTC 점검: 미국 주말 휴장, 수치는 11월 20일 지연 종가/보도 자료. 최신 동시점 IG/HY OAS, 실질금리, USD/KRW, 천연가스·구리, ETF 호가/거래량 검증 부족. analysis/triggers/latest.json 404; 장중 신호 평가 제외. 매시간 샘플링은 실시간 스트리밍이 아님.",
     "2026-11-21 Saturday US cash market closed; quoted November 20 closing levels are delayed historical values.",
     "Same-time official credit OAS, real yields, market breadth, FX, energy/metals and ETF bid-ask unavailable; cannot establish absence of systemic stress.",
-    "analysis/triggers/latest.json returned 404; no intraday trigger evaluation outside US regular trading hours."
+    "analysis/triggers/latest.json returned 404; no intraday trigger evaluation outside US regular trading hours.",
+    "2026-11-21 07:40 UTC: Saturday US market closed; fresh synchronized credit OAS, real yields, breadth, FX, commodities and ETF spreads not independently verified; no real-time quote; trigger plan unavailable in prior checks."
   ]
 }
