@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T22:49:56Z",
+  "checked_at_utc": "2026-11-21T23:50:43Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 21일 호르무즈 Khasab 인근 유조선 피격은 기존 20261121-hormuz-tanker-attacks 경고와 동일한 사건. 직전 21:57:50 UTC 점검 이후 추가 독립 확인된 피해·공급 차질·시장 전이 없음. 11월 20일 AI/반도체 급락은 기존 경고. 미국 일요일 휴장으로 장중 트리거 평가 제외.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 21일 호르무즈 선박 피격은 기존 경고와 중복; 직전 22:49:56 UTC 대비 독립 검증된 중대 악화 미확인. 11월 20일 반도체 급락도 기존 경고. 미국 일요일 휴장, 장중 트리거 평가 제외.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1602,6 +1602,18 @@
       "wti_weekly_change_pct": -5.2,
       "observed_at_utc": null,
       "note": "WSJ 2026-11-20 Friday settlement, contract January Brent / December WTI; exact settlement timestamp not independently checked, NOT current live prices."
+    },
+    "brent_nov20_settlement": {
+      "value": 92.57,
+      "unit": "USD/barrel",
+      "observed_at_utc": "2026-11-20T21:00:00Z",
+      "note": "Reuters 11월20일 종가; 거래소 개별 체결 시각 미검증, 실시간 아님"
+    },
+    "wti_dec_nov20_settlement": {
+      "value": 83.98,
+      "unit": "USD/barrel",
+      "observed_at_utc": "2026-11-20T21:00:00Z",
+      "note": "Reuters 11월20일 12월물 종가; 거래소 개별 체결 시각 미검증"
     }
   },
   "sources": [
@@ -1634,7 +1646,8 @@
     "https://www.advisorperspectives.com/dshort/updates/2026/11/20/treasury-yields-snapshot-november-20-2026",
     "https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e",
     "https://www.barrons.com/articles/stocks-today-indexes-enter-correction-tech-downturn-12e9de94",
-    "https://www.reuters.com/world/middle-east/saudi-arabia-issues-two-riyadh-alerts-says-danger-has-passed-2026-11-20/"
+    "https://www.reuters.com/world/middle-east/saudi-arabia-issues-two-riyadh-alerts-says-danger-has-passed-2026-11-20/",
+    "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/"
   ],
   "data_limitations": [
     "호르무즈 선박 피격 2건의 동일 선박 여부, 추가 공급 차질, 최신 보험료 변화 미확인.",
@@ -1657,6 +1670,7 @@
     "2026-11-21T20:54:46Z 점검: 미국 주말 휴장; 신규 동시점 국채/실질금리, OAS, VIX, 시장 폭, 원자재, FX, ETF 호가 미검증. 11월21일 호르무즈 선박 공격 보도 중복 여부 미확인. 실시간 스트리밍 아님.",
     "2026-11-22 Sunday US cash market closed; intraday triggers not evaluated; triggers/latest.json 404.",
     "이번 점검에서 동시점 신용 OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스·금·구리 및 ETF 호가 미확인. 이전 지표는 지연 자료.",
-    "2026-11-21T22:49:56Z: US Sunday market closed; intraday trigger checks not applicable. analysis/triggers/latest.json returned 404. No synchronized new credit OAS, real yields, VIX, breadth, USD/KRW, natural gas, gold, copper, ETF bid-ask data; oil Friday settlement only. Hourly sampling is not continuous streaming."
+    "2026-11-21T22:49:56Z: US Sunday market closed; intraday trigger checks not applicable. analysis/triggers/latest.json returned 404. No synchronized new credit OAS, real yields, VIX, breadth, USD/KRW, natural gas, gold, copper, ETF bid-ask data; oil Friday settlement only. Hourly sampling is not continuous streaming.",
+    "2026-11-21 23:50 UTC 점검: 미국 주말 휴장. 동시점 국채/실질금리, 신용 OAS, VIX, 시장 폭, USD/KRW, 천연가스/금/구리, ETF 호가 검증 불충분. Reuters 원유 종가는 11월20일 지연 데이터. analysis/triggers/latest.json 404."
   ]
 }
