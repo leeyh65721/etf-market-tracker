@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T03:47:53Z",
+  "checked_at_utc": "2026-11-21T04:27:20Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. 11월20일 미국장 종가 급락은 기존 AI·반도체 매도세 및 광범위 전이 경고에 반영됨. 11월21일 토요일 미국 정규장 휴장; 직전 점검 이후 독립 신규 사건이나 추가 중대한 악화 확인되지 않음. 신규 경고 없음.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월 20일 종가 급락과 AI/반도체 전이는 기존 경고에 반영됨. 11월 21일 토요일 미국 정규장 휴장; 새롭게 검증된 독립 사건 또는 기존 사건의 추가 중대한 악화 없음. 신용·유동성 동시점 검증 부족.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1494,6 +1494,22 @@
       "nasdaq_change_pct": -5.28,
       "dow_change_pct": -1.93,
       "note": "Reuters 2026-11-20 US regular-session close; 21:00 UTC scheduled close, individual tick timestamps unverified; AP rounded figures; delayed historical data, not live prices"
+    },
+    "us_market_nov20_close_rechecked_nov21": {
+      "observed_at_utc": "2026-11-20T21:00:00Z",
+      "sp500_close": 6910.39,
+      "sp500_change_pct": -3.7,
+      "nasdaq_close": 22617.73,
+      "nasdaq_change_pct": -5.3,
+      "dow_close": 48147.33,
+      "dow_change_pct": -1.9,
+      "note": "AP Nov 20 regular-session closing report, rounded percentages; scheduled session close timestamp, not tick-by-tick live quote. Previously alerted event."
+    },
+    "us_treasury_10y_nov20_reuters": {
+      "value": 4.948,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "Reuters Nov20 late-session report; exact quote timestamp not independently verified, not live"
     }
   },
   "sources": [
@@ -1550,6 +1566,8 @@
     "2026-11-21 00:39 UTC: official synchronized credit OAS, real yields, market breadth, USD/KRW, oil/gas/metals, ETF order books not independently validated; do not interpret old values as live. US regular session closed; triggers file 404. Hourly snapshots may miss intraday signals.",
     "2026-11-21 02:17 UTC: 주말 휴장, 실시간 시세 아님. 동시점 공식 신용 OAS·실질금리·USD/KRW·천연가스·구리·호가·시장 폭 독립 검증 불충분. analysis/triggers/latest.json 404; 주말 장중 신호 평가 제외.",
     "2026-11-21 03:01 UTC: Saturday US cash session closed; no live intraday quotes. Official contemporaneous credit OAS, real yields, commodity settlement, USD/KRW, ETF bid-ask and breadth not independently verified. analysis/triggers/latest.json returned 404; no intraday signal assessment. Reuters/FT articles refer to Nov 20 session and are delayed/not executable quotes.",
-    "2026-11-21 03:47 UTC: US Saturday regular-session closed; no intraday trigger evaluation. analysis/triggers/latest.json 404. No synchronized fresh official HY/IG spreads, real yields, breadth, USD/KRW, energy/metals or ETF bid/ask; no inference of absence of credit stress."
+    "2026-11-21 03:47 UTC: US Saturday regular-session closed; no intraday trigger evaluation. analysis/triggers/latest.json 404. No synchronized fresh official HY/IG spreads, real yields, breadth, USD/KRW, energy/metals or ETF bid/ask; no inference of absence of credit stress.",
+    "2026-11-21 04:27 UTC: US Saturday closed; no new intraday ETF signal. analysis/triggers/latest.json returned 404.",
+    "2026-11-21 04:27 UTC: contemporaneous official HY/IG credit OAS, real yields, market breadth, USD/KRW, natural gas, copper and ETF executable quotes not independently verified; no invented prices."
   ]
 }
