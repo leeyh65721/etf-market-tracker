@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T15:08:17Z",
+  "checked_at_utc": "2026-11-21T15:51:52Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters/FT 11월21일 호르무즈 피격·통항 감소 및 ABC 11월18일까지 누적 공격 통계는 기존 10:36 UTC 경고와 중복; 직전 13:54 UTC 점검 이후 중대한 추가 악화 검증 안 됨. 미국 토요일 휴장, 장중 신호 평가 제외.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월21일 호르무즈 Khasab 인근 유조선 피격 보도는 기존 10:36 UTC 경고와 중복; 15:08 UTC 이후 검증된 중대한 추가 악화 없음. 11월20일 미국 AI·반도체 급락 역시 기존 경고와 중복. 미국 토요일 휴장으로 장중 트리거 미평가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1617,29 +1617,6 @@
     "https://abcnews.com/International/strait-hormuz-attacks-increased-highest-level-iran-war/story?id=138304456"
   ],
   "data_limitations": [
-    "2026-11-20 18:40 UTC: 동시점 공식 HY/IG OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스, 구리, SOXX/XLP/XLF 체결·호가/거래량, SPY 상대강도 미검증. 기사 가격은 실시간 호가 아님. analysis/triggers/latest.json 404. 매시간 샘플링으로 신호 누락 가능.",
-    "2026-11-20 19:38 UTC: 공식 동시점 OAS·실질금리·VIX·시장 폭·USD/KRW·가스·구리·SOXX 호가/거래량/상대강도 검증 불가. 기사 수치 관측시각 불명확, 장중 신호 파일 404, 매시간 비연속 점검.",
-    "2026-11-20 21:10 UTC: 정확한 거래소 종가/동시점 신용 OAS, 실질금리, VIX, USD/KRW, 천연가스, 구리, SOXX/XLP/XLF 호가 및 SPY 상대강도 검증 불가; 뉴스 스냅샷은 지연·비동기",
-    "analysis/triggers/latest.json 404; 미국 정규장 종료 후 장중 트리거 평가하지 않음; 매시간 점검은 실시간 스트리밍 아님",
-    "2026-11-20 21:25 UTC: US regular session closed; contemporaneous HY/IG OAS, VIX, market breadth, real yields, USD/KRW, commodity prices and SOXX/XLP/XLF bid-ask/volume not independently synchronized; article closes are not executable quotes.",
-    "analysis/triggers/latest.json returned 404; no retroactive trigger evaluation; hourly monitoring may miss intraday signals.",
-    "2026-11-20 22:47 UTC: official contemporaneous IG/HY OAS, real yields, full breadth, USD/KRW, gas/copper, ETF quotes/spreads not independently verified; market closed, no live executable quotes. analysis/triggers/latest.json 404; regular-session triggers not assessed.",
-    "2026-11-20T23:36:55Z: 미국 정규장 종료 후 주말. Reuters quotes >=15분 지연, 개별 관측시각 불명. 동시점 HY/IG OAS, 실질금리, 시장 폭, USD/KRW, WTI/Brent/천연가스/금/구리, ETF 호가·거래량 미검증. analysis/triggers/latest.json 404; 장중 트리거 평가 제외. 매시간 확인은 연속 실시간 감시가 아님.",
-    "2026-11-21 00:39 UTC: official synchronized credit OAS, real yields, market breadth, USD/KRW, oil/gas/metals, ETF order books not independently validated; do not interpret old values as live. US regular session closed; triggers file 404. Hourly snapshots may miss intraday signals.",
-    "2026-11-21 02:17 UTC: 주말 휴장, 실시간 시세 아님. 동시점 공식 신용 OAS·실질금리·USD/KRW·천연가스·구리·호가·시장 폭 독립 검증 불충분. analysis/triggers/latest.json 404; 주말 장중 신호 평가 제외.",
-    "2026-11-21 03:01 UTC: Saturday US cash session closed; no live intraday quotes. Official contemporaneous credit OAS, real yields, commodity settlement, USD/KRW, ETF bid-ask and breadth not independently verified. analysis/triggers/latest.json returned 404; no intraday signal assessment. Reuters/FT articles refer to Nov 20 session and are delayed/not executable quotes.",
-    "2026-11-21 03:47 UTC: US Saturday regular-session closed; no intraday trigger evaluation. analysis/triggers/latest.json 404. No synchronized fresh official HY/IG spreads, real yields, breadth, USD/KRW, energy/metals or ETF bid/ask; no inference of absence of credit stress.",
-    "2026-11-21 04:27 UTC: US Saturday closed; no new intraday ETF signal. analysis/triggers/latest.json returned 404.",
-    "2026-11-21 04:27 UTC: contemporaneous official HY/IG credit OAS, real yields, market breadth, USD/KRW, natural gas, copper and ETF executable quotes not independently verified; no invented prices.",
-    "2026-11-21 06:00 UTC 점검: 미국 주말 휴장, 수치는 11월 20일 지연 종가/보도 자료. 최신 동시점 IG/HY OAS, 실질금리, USD/KRW, 천연가스·구리, ETF 호가/거래량 검증 부족. analysis/triggers/latest.json 404; 장중 신호 평가 제외. 매시간 샘플링은 실시간 스트리밍이 아님.",
-    "2026-11-21 Saturday US cash market closed; quoted November 20 closing levels are delayed historical values.",
-    "Same-time official credit OAS, real yields, market breadth, FX, energy/metals and ETF bid-ask unavailable; cannot establish absence of systemic stress.",
-    "analysis/triggers/latest.json returned 404; no intraday trigger evaluation outside US regular trading hours.",
-    "2026-11-21 07:40 UTC: Saturday US market closed; fresh synchronized credit OAS, real yields, breadth, FX, commodities and ETF spreads not independently verified; no real-time quote; trigger plan unavailable in prior checks.",
-    "2026-11-21 09:06 UTC: 토요일 휴장; 11월20일 종가만 확인. 최신 공식 동시점 신용 OAS, 실질금리, 원자재, USD/KRW, 시장 폭, ETF 호가/체결량 확인 불가. 장중 트리거는 휴장으로 평가 제외. 매시간 점검은 실시간 스트리밍이 아님.",
-    "2026-11-21 09:50 UTC: 주말 휴장, 11월 20일 종가/기사 재확인만 가능. 동시점 공식 신용 OAS, 실질금리, USD/KRW, 천연가스·구리, 시장 폭, ETF 호가·거래량 미검증. 실시간 스트리밍 아님.",
-    "analysis/triggers/latest.json 404: 장중 신호 계획 미확인; 토요일 정규장 휴장으로 신호 평가 생략.",
-    "2026-11-21 10:36 UTC: 토요일 미국 정규장 휴장. 신규 선박 공격의 주말 가격 반응 및 공급 중단 미확인. 동일 선박 피격 2회 여부 미확인. 동시점 OAS·실질금리·VIX·USD/KRW·Brent/WTI·천연가스·금·구리·ETF 호가/거래량 검증 불가. analysis/triggers/latest.json 접근 실패; 장중 트리거 평가 제외. 매시간 점검은 연속 시세 감시 아님.",
     "2026-11-21 12:08 UTC 점검: 토요일 미국 정규장 휴장; SOXX/XLP/XLF 장중 호가·거래량 및 사전 트리거 평가 불가. analysis/triggers/latest.json 404.",
     "동시점 신용스프레드·실질금리·USD/KRW·WTI/Brent·천연가스·금·구리·시장 폭·VIX 새 관측치 불충분; 기존 지표는 관측 시각이 다른 과거 값이며 현재가로 해석 금지.",
     "호르무즈 선박 피격 2건의 동일 선박 여부, 추가 공급 차질, 최신 보험료 변화 미확인.",
@@ -1647,6 +1624,9 @@
     "analysis/triggers/latest.json 404; 정규장 외이므로 트리거 검사 제외.",
     "2026-11-21 13:54 UTC: 토요일 미국 정규장 휴장. 최신 동시점 신용 OAS, 실질금리, VIX, 시장 폭, 원자재, USD/KRW, ETF 호가 검증 부족. analysis/triggers/latest.json 404. 보도된 선박 피격은 기존 경고와 중복.",
     "2026-11-21 15:08 UTC 점검: 주말 휴장, 동시점 공식 신용 OAS·실질금리·VIX·시장 폭·USD/KRW·원자재·ETF 호가 미확인; 11월20일 이전 가격은 지연 자료. 매시간 점검은 실시간 스트리밍 아님.",
-    "analysis/triggers/latest.json GitHub 404; 주말 장중 신호 평가 제외."
+    "analysis/triggers/latest.json GitHub 404; 주말 장중 신호 평가 제외.",
+    "미국 11월21일 토요일 정규장 휴장; 장중 가격/호가/거래량 신규 검증 없음",
+    "실질금리·신용 OAS·시장 폭·USD/KRW·천연가스·구리 동시점 공식 관측값 미확보; 오래된 값은 최신으로 간주하지 않음",
+    "이번 점검은 연속 실시간 스트리밍이 아니며 11월20일 종가 및 11월21일 보도 기준"
   ]
 }
