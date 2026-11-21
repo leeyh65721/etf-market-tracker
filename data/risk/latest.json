@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T16:23:10Z",
+  "checked_at_utc": "2026-11-21T17:28:47Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. 11월21일 호르무즈 유조선 피격 및 통항 감소는 기존 20261121-hormuz-tanker-attacks 경고에 포함; 15:51 UTC 점검 이후 중대한 추가 악화는 검증되지 않음. AP의 세 번째 유조선/기뢰 주장은 UKMTO 두 건과 동일 선박·사건 중복 가능성 및 독립 검증 부족으로 별도 경고 보류. 미국 주말 휴장, 장중 트리거 제외.",
+  "change_since_previous": "신규 경고 없음. 11월21일 호르무즈 피격은 기존 경고에 포함. Reuters 11월20일 Brent $92.57, WTI $83.98 종가 재확인; 추가 위험 단계 상승 검증 불가. 미국 주말 휴장으로 장중 신호 평가 제외.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1582,6 +1582,12 @@
       "wti_week_change_pct": -5.2,
       "observed_at_utc": null,
       "note": "WSJ 2026-11-21 report of 2026-11-20 futures settlement; contract months differ (Brent Jan, WTI Dec); exact exchange timestamp not verified; not live. Oil price declines counterbalance shipping supply risk."
+    },
+    "oil_nov20_reuters_settlement": {
+      "brent_usd_barrel": 92.57,
+      "wti_usd_barrel": 83.98,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 20 settlement; exact exchange timestamp unverified, delayed historical prices"
     }
   },
   "sources": [
@@ -1638,6 +1644,7 @@
     "미국 11월21일 토요일 정규장 휴장; 장중 가격/호가/거래량 신규 검증 없음",
     "실질금리·신용 OAS·시장 폭·USD/KRW·천연가스·구리 동시점 공식 관측값 미확보; 오래된 값은 최신으로 간주하지 않음",
     "이번 점검은 연속 실시간 스트리밍이 아니며 11월20일 종가 및 11월21일 보도 기준",
-    "2026-11-21 16:23 UTC: 미국 주말 휴장. 호르무즈 피격 2건과 이란 기뢰 주장 간 중복/독립 확인 미완료; 공식 동시점 신용 OAS·실질금리·VIX·시장 폭·원자재·USD/KRW·ETF 호가 미확보. WTI/Brent는 11월20일 지연 종가. 장중 트리거 파일 404."
+    "2026-11-21 16:23 UTC: 미국 주말 휴장. 호르무즈 피격 2건과 이란 기뢰 주장 간 중복/독립 확인 미완료; 공식 동시점 신용 OAS·실질금리·VIX·시장 폭·원자재·USD/KRW·ETF 호가 미확보. WTI/Brent는 11월20일 지연 종가. 장중 트리거 파일 404.",
+    "2026-11-21 17:28 UTC: weekend US market closed; no contemporaneous ETF quotes, VIX, credit OAS, Treasury real yields, breadth, USD/KRW, natural gas, gold, copper verified; intraday triggers file 404."
   ]
 }
