@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T21:57:50Z",
+  "checked_at_utc": "2026-11-21T22:49:56Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월20~21일 호르무즈 선박 피격과 사우디 미사일 사건은 기존 지정학 위험의 연속이며 05:54 KST 점검 이후 추가 독립 검증된 중대 악화 없음. 미국 주말 휴장; 동시점 시장·신용·원자재 지표 부족.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 21일 호르무즈 Khasab 인근 유조선 피격은 기존 20261121-hormuz-tanker-attacks 경고와 동일한 사건. 직전 21:57:50 UTC 점검 이후 추가 독립 확인된 피해·공급 차질·시장 전이 없음. 11월 20일 AI/반도체 급락은 기존 경고. 미국 일요일 휴장으로 장중 트리거 평가 제외.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1594,6 +1594,14 @@
       "ten_year_yield_pct": 4.92,
       "observed_at_utc": null,
       "note": "Advisor Perspectives Nov 20 closing snapshot, individual quote time unavailable, secondary source; not real-time"
+    },
+    "oil_nov20_wsj_settlement": {
+      "brent_usd_barrel": 92.57,
+      "wti_usd_barrel": 83.98,
+      "brent_weekly_change_pct": -3.4,
+      "wti_weekly_change_pct": -5.2,
+      "observed_at_utc": null,
+      "note": "WSJ 2026-11-20 Friday settlement, contract January Brent / December WTI; exact settlement timestamp not independently checked, NOT current live prices."
     }
   },
   "sources": [
@@ -1648,6 +1656,7 @@
     "analysis/triggers/latest.json 404",
     "2026-11-21T20:54:46Z 점검: 미국 주말 휴장; 신규 동시점 국채/실질금리, OAS, VIX, 시장 폭, 원자재, FX, ETF 호가 미검증. 11월21일 호르무즈 선박 공격 보도 중복 여부 미확인. 실시간 스트리밍 아님.",
     "2026-11-22 Sunday US cash market closed; intraday triggers not evaluated; triggers/latest.json 404.",
-    "이번 점검에서 동시점 신용 OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스·금·구리 및 ETF 호가 미확인. 이전 지표는 지연 자료."
+    "이번 점검에서 동시점 신용 OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스·금·구리 및 ETF 호가 미확인. 이전 지표는 지연 자료.",
+    "2026-11-21T22:49:56Z: US Sunday market closed; intraday trigger checks not applicable. analysis/triggers/latest.json returned 404. No synchronized new credit OAS, real yields, VIX, breadth, USD/KRW, natural gas, gold, copper, ETF bid-ask data; oil Friday settlement only. Hourly sampling is not continuous streaming."
   ]
 }
