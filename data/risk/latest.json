@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T03:01:31Z",
+  "checked_at_utc": "2026-11-21T03:47:53Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. 11월20일 미국 정규장 종가 및 AI·반도체 급락은 기존 7건 경고와 동일한 사건. 11월21일 토요일 휴장 중 새 독립 사건 또는 추가 중대한 악화의 검증된 근거 없음. Reuters/FT 후속 보도는 동일 사건의 재확인. 신규 경고 없음.",
+  "change_since_previous": "신규 경고 없음. 11월20일 미국장 종가 급락은 기존 AI·반도체 매도세 및 광범위 전이 경고에 반영됨. 11월21일 토요일 미국 정규장 휴장; 직전 점검 이후 독립 신규 사건이나 추가 중대한 악화 확인되지 않음. 신규 경고 없음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1487,6 +1487,13 @@
       "dow_change_pct": -1.93,
       "observed_at_utc": "2026-11-20T21:00:00Z",
       "note": "Reuters/AP 11월20일 정규장 종가 재확인; 정규장 종료 예정 시각으로 개별 시세 타임스탬프 미검증; 이전 점검에서 이미 반영됨"
+    },
+    "us_close_nov20_nov21_recheck": {
+      "observed_at_utc": "2026-11-20T21:00:00Z",
+      "sp500_change_pct": -3.7,
+      "nasdaq_change_pct": -5.28,
+      "dow_change_pct": -1.93,
+      "note": "Reuters 2026-11-20 US regular-session close; 21:00 UTC scheduled close, individual tick timestamps unverified; AP rounded figures; delayed historical data, not live prices"
     }
   },
   "sources": [
@@ -1522,7 +1529,8 @@
     "https://nypost.com/2026/11/20/business/sp-500-and-dow-enter-correction-territory-nasdaq-loses-2026-gains-as-anthropic-dives/",
     "https://www.ft.com/content/9f3c6ed6-c08f-4710-9683-ee2f5eb25841",
     "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/",
-    "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-193-5042683"
+    "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-193-5042683",
+    "https://apnews.com/article/c10b797a17c2acf37924d834efebe135"
   ],
   "data_limitations": [
     "2026-11-20 13:23 UTC: 동시점 미국 정규장 ETF 가격/호가·SPY 상대강도·시장 폭·공식 신용스프레드·실질금리·USD/KRW·천연가스·구리 확인 불가. 기사 수치는 발표시각과 개별 시세시각이 다르며 지연 가능. analysis/triggers/latest.json 404; 장중 발동 여부 미확인.",
@@ -1541,6 +1549,7 @@
     "2026-11-20T23:36:55Z: 미국 정규장 종료 후 주말. Reuters quotes >=15분 지연, 개별 관측시각 불명. 동시점 HY/IG OAS, 실질금리, 시장 폭, USD/KRW, WTI/Brent/천연가스/금/구리, ETF 호가·거래량 미검증. analysis/triggers/latest.json 404; 장중 트리거 평가 제외. 매시간 확인은 연속 실시간 감시가 아님.",
     "2026-11-21 00:39 UTC: official synchronized credit OAS, real yields, market breadth, USD/KRW, oil/gas/metals, ETF order books not independently validated; do not interpret old values as live. US regular session closed; triggers file 404. Hourly snapshots may miss intraday signals.",
     "2026-11-21 02:17 UTC: 주말 휴장, 실시간 시세 아님. 동시점 공식 신용 OAS·실질금리·USD/KRW·천연가스·구리·호가·시장 폭 독립 검증 불충분. analysis/triggers/latest.json 404; 주말 장중 신호 평가 제외.",
-    "2026-11-21 03:01 UTC: Saturday US cash session closed; no live intraday quotes. Official contemporaneous credit OAS, real yields, commodity settlement, USD/KRW, ETF bid-ask and breadth not independently verified. analysis/triggers/latest.json returned 404; no intraday signal assessment. Reuters/FT articles refer to Nov 20 session and are delayed/not executable quotes."
+    "2026-11-21 03:01 UTC: Saturday US cash session closed; no live intraday quotes. Official contemporaneous credit OAS, real yields, commodity settlement, USD/KRW, ETF bid-ask and breadth not independently verified. analysis/triggers/latest.json returned 404; no intraday signal assessment. Reuters/FT articles refer to Nov 20 session and are delayed/not executable quotes.",
+    "2026-11-21 03:47 UTC: US Saturday regular-session closed; no intraday trigger evaluation. analysis/triggers/latest.json 404. No synchronized fresh official HY/IG spreads, real yields, breadth, USD/KRW, energy/metals or ETF bid/ask; no inference of absence of credit stress."
   ]
 }
