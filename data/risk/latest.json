@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T07:40:22Z",
+  "checked_at_utc": "2026-11-21T09:06:39Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. 11월 20일 미국 증시 및 반도체 종가 급락은 기존 11월 20일 장후반 경고와 동일 사건. 11월 21일 토요일 미국 정규장 휴장; 신규 독립 충격 또는 직전 경고 이후의 검증된 추가 악화 없음. 신용·유동성 동시점 자료 미확보.",
+  "change_since_previous": "신규 경고 없음. 11월 20일 미국 시장 급락, AI·반도체 매도 및 VIX 상승은 기존 경고에 포함된 사건의 종가·주간 재확인. 11월 21일 토요일 정규장 휴장. 직전 확인 이후 추가 중대한 악화는 검증되지 않았으며 동시점 신용 OAS 등 미확인.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1539,6 +1539,16 @@
       "dow_change_pct": -1.9,
       "observed_at_utc": "2026-11-20T21:00:00Z",
       "note": "AP 2026-11-21 published Nov 20 close; scheduled close time, not tick timestamp; previously alerted event, not new quote"
+    },
+    "us_market_nov20_close_nov21_recheck": {
+      "observed_at_utc": "2026-11-20T21:00:00Z",
+      "sp500_close": 6910.39,
+      "sp500_change_pct": -3.7,
+      "nasdaq_close": 22617.73,
+      "nasdaq_change_pct": -5.28,
+      "dow_close": 48147.33,
+      "dow_change_pct": -1.93,
+      "note": "AP/Reuters 11월20일 종가 재확인. 21:00 UTC는 예정 정규장 종료시각이며 개별 체결시각 아님. 기존 사건, 신규 경고 아님."
     }
   },
   "sources": [
@@ -1596,6 +1606,7 @@
     "2026-11-21 Saturday US cash market closed; quoted November 20 closing levels are delayed historical values.",
     "Same-time official credit OAS, real yields, market breadth, FX, energy/metals and ETF bid-ask unavailable; cannot establish absence of systemic stress.",
     "analysis/triggers/latest.json returned 404; no intraday trigger evaluation outside US regular trading hours.",
-    "2026-11-21 07:40 UTC: Saturday US market closed; fresh synchronized credit OAS, real yields, breadth, FX, commodities and ETF spreads not independently verified; no real-time quote; trigger plan unavailable in prior checks."
+    "2026-11-21 07:40 UTC: Saturday US market closed; fresh synchronized credit OAS, real yields, breadth, FX, commodities and ETF spreads not independently verified; no real-time quote; trigger plan unavailable in prior checks.",
+    "2026-11-21 09:06 UTC: 토요일 휴장; 11월20일 종가만 확인. 최신 공식 동시점 신용 OAS, 실질금리, 원자재, USD/KRW, 시장 폭, ETF 호가/체결량 확인 불가. 장중 트리거는 휴장으로 평가 제외. 매시간 점검은 실시간 스트리밍이 아님."
   ]
 }
