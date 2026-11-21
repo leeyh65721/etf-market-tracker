@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T20:11:36Z",
+  "checked_at_utc": "2026-11-21T20:54:46Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월21일 호르무즈 선박 공격 및 11월20일 AI·반도체 급락은 기존 경고와 중복. 11월21일 추가 보도의 3척 피격 주장은 UKMTO 두 건과 중복 가능하고 독립 확인 부족; 미국 주말 휴장.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월21일 호르무즈 선박 피격 및 11월20일 미국 AI·반도체 급락은 기존 8개 경고와 중복. AP의 3척 주장과 Reuters UKMTO 2건은 사건 중복 여부 불확실; WSJ의 UAE 원유 수송 회복은 공급 차질 반대 근거. 주말 미국 정규장 휴장, 동시점 가격·신용 자료 불충분.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1623,7 +1623,9 @@
     "https://apnews.com/article/29159a6f3365ff447c0ccbd1d7260f75",
     "https://www.wsj.com/business/energy-oil/oil-prices-edge-higher-as-traders-assess-middle-east-shipping-risks-supply-outlook-faf8f60a",
     "https://www.latimes.com/world-nation/story/2026-11-21/iran-strikes-3-tankers-as-it-shows-off-missile-launchers",
-    "https://www.advisorperspectives.com/dshort/updates/2026/11/20/treasury-yields-snapshot-november-20-2026"
+    "https://www.advisorperspectives.com/dshort/updates/2026/11/20/treasury-yields-snapshot-november-20-2026",
+    "https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e",
+    "https://www.barrons.com/articles/stocks-today-indexes-enter-correction-tech-downturn-12e9de94"
   ],
   "data_limitations": [
     "호르무즈 선박 피격 2건의 동일 선박 여부, 추가 공급 차질, 최신 보험료 변화 미확인.",
@@ -1642,6 +1644,7 @@
     "11월21일 추가 피격 보도는 동일 선박/기존 UKMTO 사건과 중복 가능, 독립 검증 미완료",
     "11월20일 미 국채 2년 4.63%, 10년 4.92%는 2차 출처의 종가로 동시점 실시간 금리 아님",
     "실시간 신용 OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스·금·구리 및 ETF 호가 동시 검증 불가",
-    "analysis/triggers/latest.json 404"
+    "analysis/triggers/latest.json 404",
+    "2026-11-21T20:54:46Z 점검: 미국 주말 휴장; 신규 동시점 국채/실질금리, OAS, VIX, 시장 폭, 원자재, FX, ETF 호가 미검증. 11월21일 호르무즈 선박 공격 보도 중복 여부 미확인. 실시간 스트리밍 아님."
   ]
 }
