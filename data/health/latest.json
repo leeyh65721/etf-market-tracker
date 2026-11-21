@@ -1,13 +1,13 @@
 {
-  "us_market_date": "2026-11-19",
-  "github_run_id": "44672174619",
-  "expected_latest_closed_nyse_session": "2026-11-19",
-  "generated_at_utc": "2026-11-20T04:08:57.147060+00:00",
+  "us_market_date": "2026-11-20",
+  "github_run_id": "44864415036",
+  "expected_latest_closed_nyse_session": "2026-11-20",
+  "generated_at_utc": "2026-11-21T04:09:18.545171+00:00",
   "status": "ERROR",
   "counts": {
-    "etf_verified": 213,
+    "etf_verified": 339,
     "etf_universe": 353,
-    "etf_fraction": 0.6034,
+    "etf_fraction": 0.96034,
     "base_macro_ok": 22,
     "base_macro_expected": 22,
     "supplemental_ok": 7,
@@ -28,10 +28,10 @@
     "SP500_BREADTH": "ok"
   },
   "module_status": {
-    "screen_audit": "WARN",
+    "screen_audit": "OK",
     "macro_etf_links": "available",
     "industry_evidence": "OK",
-    "judgment_archive": "OK"
+    "judgment_archive": "ERROR"
   },
   "stage_outcomes": {
     "ETF_SCAN": "success",
@@ -44,24 +44,24 @@
   },
   "findings": [
     {
-      "level": "ERROR",
-      "code": "ETF_COVERAGE_LOW",
-      "detail": "Verified 213/353 (60.3%), required >=85%"
-    },
-    {
       "level": "KNOWN",
       "code": "NFCI_NOT_LIVE",
       "detail": "NFCI latest official CSV status=stale, requires permitted manual verification"
     },
     {
-      "level": "WARN",
-      "code": "MODULE_SCREEN_AUDIT_WARN",
-      "detail": "data/quality/latest.json reports status WARN"
+      "level": "ERROR",
+      "code": "MODULE_JUDGMENT_ARCHIVE_ERROR",
+      "detail": "data/decisions/latest.json reports status ERROR"
+    },
+    {
+      "level": "ERROR",
+      "code": "DECISIONS_INVALID_RECORD",
+      "detail": "ETF research decision evidence contains invalid records"
     }
   ],
   "new_alert_codes": [
-    "ETF_COVERAGE_LOW",
-    "MODULE_SCREEN_AUDIT_WARN"
+    "MODULE_JUDGMENT_ARCHIVE_ERROR",
+    "DECISIONS_INVALID_RECORD"
   ],
   "alert_summary": "new non-expected warning/error codes only; KNOWN values excluded",
   "not_a_market_signal": true,
