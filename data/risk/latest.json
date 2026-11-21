@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T09:50:49Z",
+  "checked_at_utc": "2026-11-21T10:36:08Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. 11월 20일 AI·반도체 및 미국 증시 급락은 이미 기록된 사건으로, 11월 21일 09:50 UTC 점검에서 별도 중대한 악화가 검증되지 않음. 토요일 미국 정규장 휴장. 신규 신용·유동성 충격 확인 불가.",
+  "change_since_previous": "신규 중대한 사건: 11월 21일 호르무즈 Khasab 인근 상선 피격 2건 보고(동일 선박 여부 미확인). FT는 11월 18일까지 주간 통항 263척(-15%), 유조선 52→37척 보도. 기존 AI/반도체 매도세와 별개 에너지 공급망 위험 악화. 주말 휴장으로 추가 가격·신용 전이 미검증; 긴급 비중 변경은 권고하지 않음.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -127,6 +127,23 @@
         "https://nypost.com/2026/11/20/business/sp-500-and-dow-enter-correction-territory-nasdaq-loses-2026-gains-as-anthropic-dives/",
         "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
         "https://www.washingtonpost.com/business/2026/11/20/us-stock-market-slumps-amid-rising-tech-ai-worries/"
+      ],
+      "status": "active"
+    },
+    {
+      "event_id": "20261121-hormuz-tanker-attacks",
+      "detected_at_utc": "2026-11-21T10:36:08Z",
+      "severity": "high",
+      "summary": "호르무즈 Khasab 인근 상선 발사체 피격 추가 보고 및 통항 감소: 에너지 공급망 위험 확대",
+      "evidence": [
+        "UKMTO/Reuters: 11월21일 약 05:00 UTC 선미 피격, 약 05:50 UTC 기관실 피격; 동일 선박 여부 미확인, 사상자 보고 없음",
+        "FT 11월21일: 11월18일까지 일주일 263척 통항, 전주 대비 -15%; 유조선 52→37척",
+        "미국 주말 휴장; 신규 가격 반응·실물 공급 차질·신용 전이 미확인"
+      ],
+      "source_urls": [
+        "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/",
+        "https://www.ft.com/content/5fbc2b9d-0360-4a1f-9e4a-3e86168cbbc5",
+        "https://www.reuters.com/world/middle-east/fire-reported-tanker-after-projectile-strike-off-oman-ukmto-says-2026-11-20/"
       ],
       "status": "active"
     }
@@ -1549,6 +1566,14 @@
       "dow_close": 48147.33,
       "dow_change_pct": -1.93,
       "note": "AP/Reuters 11월20일 종가 재확인. 21:00 UTC는 예정 정규장 종료시각이며 개별 체결시각 아님. 기존 사건, 신규 경고 아님."
+    },
+    "hormuz_week_to_nov18_ft": {
+      "vessel_transits": 263,
+      "change_pct": -15,
+      "oil_tanker_transits": 37,
+      "prior_week_oil_tanker_transits": 52,
+      "observed_at_utc": null,
+      "note": "FT 2026-11-21 보도, 집계기간 11월18일까지; 잠정 운송 통계, 실시간 시세 아님"
     }
   },
   "sources": [
@@ -1585,7 +1610,10 @@
     "https://www.ft.com/content/9f3c6ed6-c08f-4710-9683-ee2f5eb25841",
     "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/",
     "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-193-5042683",
-    "https://apnews.com/article/c10b797a17c2acf37924d834efebe135"
+    "https://apnews.com/article/c10b797a17c2acf37924d834efebe135",
+    "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/",
+    "https://www.ft.com/content/5fbc2b9d-0360-4a1f-9e4a-3e86168cbbc5",
+    "https://www.reuters.com/world/middle-east/fire-reported-tanker-after-projectile-strike-off-oman-ukmto-says-2026-11-20/"
   ],
   "data_limitations": [
     "2026-11-20 18:40 UTC: 동시점 공식 HY/IG OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스, 구리, SOXX/XLP/XLF 체결·호가/거래량, SPY 상대강도 미검증. 기사 가격은 실시간 호가 아님. analysis/triggers/latest.json 404. 매시간 샘플링으로 신호 누락 가능.",
@@ -1609,6 +1637,7 @@
     "2026-11-21 07:40 UTC: Saturday US market closed; fresh synchronized credit OAS, real yields, breadth, FX, commodities and ETF spreads not independently verified; no real-time quote; trigger plan unavailable in prior checks.",
     "2026-11-21 09:06 UTC: 토요일 휴장; 11월20일 종가만 확인. 최신 공식 동시점 신용 OAS, 실질금리, 원자재, USD/KRW, 시장 폭, ETF 호가/체결량 확인 불가. 장중 트리거는 휴장으로 평가 제외. 매시간 점검은 실시간 스트리밍이 아님.",
     "2026-11-21 09:50 UTC: 주말 휴장, 11월 20일 종가/기사 재확인만 가능. 동시점 공식 신용 OAS, 실질금리, USD/KRW, 천연가스·구리, 시장 폭, ETF 호가·거래량 미검증. 실시간 스트리밍 아님.",
-    "analysis/triggers/latest.json 404: 장중 신호 계획 미확인; 토요일 정규장 휴장으로 신호 평가 생략."
+    "analysis/triggers/latest.json 404: 장중 신호 계획 미확인; 토요일 정규장 휴장으로 신호 평가 생략.",
+    "2026-11-21 10:36 UTC: 토요일 미국 정규장 휴장. 신규 선박 공격의 주말 가격 반응 및 공급 중단 미확인. 동일 선박 피격 2회 여부 미확인. 동시점 OAS·실질금리·VIX·USD/KRW·Brent/WTI·천연가스·금·구리·ETF 호가/거래량 검증 불가. analysis/triggers/latest.json 접근 실패; 장중 트리거 평가 제외. 매시간 점검은 연속 시세 감시 아님."
   ]
 }
