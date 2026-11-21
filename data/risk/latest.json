@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-21T06:00:08Z",
+  "checked_at_utc": "2026-11-21T06:31:17Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 경고 없음. 11월 20일 미국 종가 및 글로벌 AI·반도체 매도세는 기존 경고와 동일; 11월 21일 토요일 미국 정규장 휴장. 신규 독립 사건/검증된 추가 중대 악화 없음. 동시점 신용 OAS·실질금리·ETF 호가 미확인.",
+  "change_since_previous": "신규 경고 없음. 11월 20일 미국 종가와 AI·반도체 급락의 글로벌 전이는 기존 11월 20일 경고에 포함. 11월 21일 토요일 미국 정규장 휴장. 추가로 검증된 위험 단계 상승 없음; 동시점 신용·유동성 지표 부족.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1526,6 +1526,16 @@
       "unit": "percent",
       "observed_at_utc": null,
       "note": "Reuters Nov 20 글로벌 마감 보도, 정확한 개별 호가 시각 불명, 실시간 아님."
+    },
+    "us_market_close_nov20_ap_nov21_recheck": {
+      "sp500_close": 6910.39,
+      "sp500_change_pct": -3.7,
+      "nasdaq_close": 22617.73,
+      "nasdaq_change_pct": -5.3,
+      "dow_close": 48147.33,
+      "dow_change_pct": -1.9,
+      "observed_at_utc": "2026-11-20T21:00:00Z",
+      "note": "AP 2026-11-21 published Nov 20 close; scheduled close time, not tick timestamp; previously alerted event, not new quote"
     }
   },
   "sources": [
@@ -1565,12 +1575,6 @@
     "https://apnews.com/article/c10b797a17c2acf37924d834efebe135"
   ],
   "data_limitations": [
-    "2026-11-20 13:23 UTC: 동시점 미국 정규장 ETF 가격/호가·SPY 상대강도·시장 폭·공식 신용스프레드·실질금리·USD/KRW·천연가스·구리 확인 불가. 기사 수치는 발표시각과 개별 시세시각이 다르며 지연 가능. analysis/triggers/latest.json 404; 장중 발동 여부 미확인.",
-    "2026-11-20 13:38 UTC: 공식 신용스프레드·실질금리·시장 폭·USD/KRW·천연가스·구리·ETF 호가 동시점 미검증; Reuters/FT 장전 시세 지연·개별 시각 불명; 트리거 파일 조회 실패. 매시간 스냅샷이며 실시간 스트리밍 아님.",
-    "2026-11-20 14:42 UTC: 동시점 공식 신용 OAS, 실질금리, 시장 폭, SOXX/XLP/XLF·SPY 호가/거래량, 천연가스·구리·USD/KRW 검증 불가; Reuters/Guardian 기사 가격 관측시각 미제공; 매시간 점검은 실시간 연속 감시 아님; analysis/triggers/latest.json 404.",
-    "2026-11-20 16:05 UTC: official synchronized credit OAS, liquidity, real yields, VIX tick, SOXX/XLP/XLF quotes and order book, USD/KRW, natural gas and exact copper price unverified; Reuters quotes delayed >=15 min; preplanned trigger file missing (404).",
-    "Nov20 16:40 UTC: current official credit OAS, live SOXX/XLP/XLF bid-ask, same-time VIX/market breadth, USDKRW, real yields and commodity quotes unverified; triggers/latest.json fetch failed; AP article exact quote times unavailable.",
-    "2026-11-20 18:19 UTC: no synchronized official credit OAS, VIX, market breadth, SOXX/XLP/XLF bid-ask/volume, Treasury real yields, USD/KRW, natural gas or copper quotes; no reliable intraday trigger plan; hourly snapshots may miss signals.",
     "2026-11-20 18:40 UTC: 동시점 공식 HY/IG OAS, 실질금리, VIX, 시장 폭, USD/KRW, 천연가스, 구리, SOXX/XLP/XLF 체결·호가/거래량, SPY 상대강도 미검증. 기사 가격은 실시간 호가 아님. analysis/triggers/latest.json 404. 매시간 샘플링으로 신호 누락 가능.",
     "2026-11-20 19:38 UTC: 공식 동시점 OAS·실질금리·VIX·시장 폭·USD/KRW·가스·구리·SOXX 호가/거래량/상대강도 검증 불가. 기사 수치 관측시각 불명확, 장중 신호 파일 404, 매시간 비연속 점검.",
     "2026-11-20 21:10 UTC: 정확한 거래소 종가/동시점 신용 OAS, 실질금리, VIX, USD/KRW, 천연가스, 구리, SOXX/XLP/XLF 호가 및 SPY 상대강도 검증 불가; 뉴스 스냅샷은 지연·비동기",
@@ -1585,6 +1589,9 @@
     "2026-11-21 03:47 UTC: US Saturday regular-session closed; no intraday trigger evaluation. analysis/triggers/latest.json 404. No synchronized fresh official HY/IG spreads, real yields, breadth, USD/KRW, energy/metals or ETF bid/ask; no inference of absence of credit stress.",
     "2026-11-21 04:27 UTC: US Saturday closed; no new intraday ETF signal. analysis/triggers/latest.json returned 404.",
     "2026-11-21 04:27 UTC: contemporaneous official HY/IG credit OAS, real yields, market breadth, USD/KRW, natural gas, copper and ETF executable quotes not independently verified; no invented prices.",
-    "2026-11-21 06:00 UTC 점검: 미국 주말 휴장, 수치는 11월 20일 지연 종가/보도 자료. 최신 동시점 IG/HY OAS, 실질금리, USD/KRW, 천연가스·구리, ETF 호가/거래량 검증 부족. analysis/triggers/latest.json 404; 장중 신호 평가 제외. 매시간 샘플링은 실시간 스트리밍이 아님."
+    "2026-11-21 06:00 UTC 점검: 미국 주말 휴장, 수치는 11월 20일 지연 종가/보도 자료. 최신 동시점 IG/HY OAS, 실질금리, USD/KRW, 천연가스·구리, ETF 호가/거래량 검증 부족. analysis/triggers/latest.json 404; 장중 신호 평가 제외. 매시간 샘플링은 실시간 스트리밍이 아님.",
+    "2026-11-21 Saturday US cash market closed; quoted November 20 closing levels are delayed historical values.",
+    "Same-time official credit OAS, real yields, market breadth, FX, energy/metals and ETF bid-ask unavailable; cannot establish absence of systemic stress.",
+    "analysis/triggers/latest.json returned 404; no intraday trigger evaluation outside US regular trading hours."
   ]
 }
