@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T03:22:28Z",
+  "checked_at_utc": "2026-11-22T03:29:34Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 21일 호르무즈 선박 피격과 11월 20일 AI·반도체 급락은 기존 경고와 중복. 11월 22일 이란 유조선 봉쇄 돌파 관련 보도는 기존 갈등의 연장으로, 새로운 실제 충돌·원유 공급 차질·시장 전이 확인 불가. 미국 일요일 휴장.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월21일 호르무즈 공격 및 11월22일 이란 유조선 봉쇄 관련 보도는 기존 위험의 연장; 직전 점검 이후 실제 신규 충돌·공급 차질·신용 전이 독립 검증 없음. 일요일 미국 정규장 휴장.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1593,7 +1593,7 @@
       "two_year_yield_pct": 4.63,
       "ten_year_yield_pct": 4.92,
       "observed_at_utc": null,
-      "note": "Advisor Perspectives Nov 20 closing snapshot, individual quote time unavailable, secondary source; not real-time"
+      "note": "Advisor Perspectives 2026-11-20 close, secondary report; exact observation timestamp not provided; not current quote"
     },
     "oil_nov20_wsj_settlement": {
       "brent_usd_barrel": 92.57,
@@ -1666,6 +1666,7 @@
     "2026-11-22 02:20 UTC: Sunday US market closed; synchronized credit OAS, real yields, VIX, breadth, USD/KRW, natural gas, gold, copper and ETF bid-ask unavailable; no live streaming; triggers/latest.json returned 404.",
     "2026-11-22 미국 일요일 휴장; 장중 트리거 평가 제외. analysis/triggers/latest.json 404.",
     "이번 점검에서 실질금리·공식 신용 OAS·VIX·시장 폭·USD/KRW·천연가스·금·구리·ETF 호가 동시점 검증 불가.",
-    "11월22일 이란 유조선 14척 봉쇄 돌파 준비 보도는 실제 항해·충돌·피해 독립 확인 전으로 신규 긴급 위험 확정 불가."
+    "11월22일 이란 유조선 14척 봉쇄 돌파 준비 보도는 실제 항해·충돌·피해 독립 확인 전으로 신규 긴급 위험 확정 불가.",
+    "2026-11-22 03:29 UTC: 미국 정규장 일요일 휴장, 실시간 동시점 VIX/시장 폭/신용 OAS/실질금리/FX/가스/금/구리/ETF 호가 미검증; 매시간 점검은 스트리밍 아님. analysis/triggers/latest.json 조회 실패/부재."
   ]
 }
