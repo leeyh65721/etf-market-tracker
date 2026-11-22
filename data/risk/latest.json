@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T15:06:47Z",
+  "checked_at_utc": "2026-11-22T16:13:15Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월22일 걸프 증시 사우디 -2.0%, 카타르 -1.6%, 바레인 -0.6%는 이전 점검에서 이미 확인됨. 이란 F-16 피격 주장은 미군 부인, 새로운 검증된 구조적 악화 없음. 미국 일요일 휴장으로 장중 신호 제외. 위험등급 high 유지(동시점 신용·변동성 데이터 부족).",
+  "change_since_previous": "신규 긴급 경고 없음. 11월22일 Reuters 미국 증시 조정 분석(S&P500 고점 대비 -11.6%, VIX 35.89)은 이미 경고된 11월20일 급락의 후속 분석이며 신규 장중 가격 변화가 아님. 걸프 증시 하락과 호르무즈 위험도 이전 점검 반영. 11월22일 미국 일요일 휴장; 동시점 신용·실질금리·시장 폭 자료 미확보.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1650,6 +1650,18 @@
       "wti_usd_barrel": 83.98,
       "observed_at_utc": null,
       "note": "Nov20 settlement, delayed; not Nov22 spot quote"
+    },
+    "vix_nov20_close_reuters_nov22": {
+      "value": 35.89,
+      "unit": "index points",
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-22 review cites Friday Nov 20 close; precise exchange quote timestamp unverified; delayed, not new observation"
+    },
+    "sp500_drawdown_oct6_peak_reuters_nov22": {
+      "value": -11.6,
+      "unit": "percent",
+      "observed_at_utc": null,
+      "note": "Reuters Nov 22 review of prior US session, not a new price observation"
     }
   },
   "sources": [
@@ -1697,7 +1709,8 @@
     "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-worst-week-covid-nvidia-anthropic-vix-fear-gauge/",
     "https://www.reuters.com/business/finance/correction-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-2026-11-22/",
     "https://www.reuters.com/business/aerospace-defense/us-denies-iranian-account-that-missile-damaged-f-16-over-gulf-2026-11-21/",
-    "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/"
+    "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
+    "https://www.wsj.com/finance/commodities-futures/oil-rises-amid-middle-east-tensions-cdf9de83"
   ],
   "data_limitations": [
     "2026-11-22T05:00:27Z: 일요일 미국 정규장 휴장; 신규 장중 시세·호가·SPY 상대강도 검증 불가. 동시점 VIX·공식 OAS·실질금리·시장 폭·원자재·USD/KRW 독립 확인 불충분. 기존 종가와 기사 가격은 지연 자료. 매시간 점검은 실시간 스트리밍 아님.",
@@ -1718,6 +1731,7 @@
     "2026-11-22 13:36 UTC: US Sunday regular-session closed; SOXX/XLP/XLF intraday trigger checks not applicable; trigger plan not retrievable.",
     "Synchronized latest VIX, Treasury real yields, corporate OAS, breadth, USD/KRW, natural gas, gold, copper, ETF quotes unavailable; prior observations stale.",
     "Reuters Gulf index figures lack exact quote timestamps; no independent US credit contagion verification.",
-    "2026-11-22T15:06:47Z: No synchronized latest VIX, Treasury real yields, official credit OAS, breadth, FX, gas/gold/copper, ETF bid-ask. US Sunday closed. Trigger plan 404."
+    "2026-11-22T15:06:47Z: No synchronized latest VIX, Treasury real yields, official credit OAS, breadth, FX, gas/gold/copper, ETF bid-ask. US Sunday closed. Trigger plan 404.",
+    "2026-11-22 16:13 UTC 점검: 미국 일요일 휴장; 실시간 가격·동시점 실질금리·신용 OAS·시장 폭·환율·천연가스·금·구리·ETF 호가 미검증. 11월20일 종가 및 주말 기사만 사용. analysis/triggers/latest.json 404; 장중 트리거 미평가."
   ]
 }
