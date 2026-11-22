@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T07:52:49Z",
+  "checked_at_utc": "2026-11-22T08:51:36.761Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월22일 이란 유조선 봉쇄 돌파 관련 선박 위치 신호가 허위였다는 추적업체 설명 확인; 실제 돌파·충돌 미검증. 기존 반도체·호르무즈 위험 HIGH 유지. 미국 일요일 휴장.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월22일 Reuters 걸프 증시 하락 및 바레인 요격·시설 화재 보도는 기존 중동 충돌 위험의 연속; 직전 경고 이후 광범위한 신용/미국 증시 전이 또는 위험 단계 상승 미검증. 미국 일요일 휴장.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1625,6 +1625,13 @@
       "observed_at_utc": "2026-11-22T04:14:00Z",
       "value": null,
       "note": "Iran International: TankerTrackers가 유조선 항적 신호 허위라고 설명; 실물 항행 확인 아님"
+    },
+    "gulf_equities_nov22_reuters": {
+      "saudi_index_change_pct": -1.7,
+      "qatar_index_change_pct": -1.5,
+      "bahrain_index_change_pct": -0.4,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-22 early Sunday market report; intraday, exact quote times unverified, not US market synchronous"
     }
   },
   "sources": [
@@ -1665,7 +1672,8 @@
     "https://www.reuters.com/business/energy/oil-prices-steady-supply-surplus-softens-sentiment-though-gulf-war-supports-2026-11-19/",
     "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/html/ecb.fsr202611~e03b919d36.en.html",
     "https://www.iranintl.com/en/202611211549",
-    "https://www.marketwatch.com/story/chip-stocks-see-2-3-trillion-weekly-wipeout-as-panic-grips-the-ai-trade-371f2f03"
+    "https://www.marketwatch.com/story/chip-stocks-see-2-3-trillion-weekly-wipeout-as-panic-grips-the-ai-trade-371f2f03",
+    "https://www.reuters.com/world/middle-east/most-gulf-bourses-retreat-sporadic-attacks-continue-2026-11-22/"
   ],
   "data_limitations": [
     "원유 수치는 11월 20일 종가이며 실시간 시세 아님",
@@ -1681,6 +1689,7 @@
     "2026-11-22 일요일 미국 정규장 휴장; 장중 트리거 미평가, analysis/triggers/latest.json 404",
     "동시점 실질금리·공식 신용 OAS·VIX·시장 폭·USD/KRW·천연가스·금·구리·ETF 호가 미검증; 과거 지표는 현재값 아님",
     "2026-11-22 일요일 미국 현물시장 휴장; 신용 OAS, 실질금리, VIX, 시장 폭, USD/KRW, 금·구리·천연가스, ETF 호가의 동시점 검증 불가. 기존 자료 지연.",
-    "analysis/triggers/latest.json 404; 장중 신호 평가 제외. 매시간 샘플링은 실시간 스트리밍 아님."
+    "analysis/triggers/latest.json 404; 장중 신호 평가 제외. 매시간 샘플링은 실시간 스트리밍 아님.",
+    "2026-11-22 미국 일요일 휴장; Reuters 걸프 지수 장중 수치의 정확한 관측시각 미제공; 실시간 VIX/OAS/실질금리/시장 폭/ETF 호가 및 다수 원자재·환율 동시점 미검증; triggers/latest.json 404"
   ]
 }
