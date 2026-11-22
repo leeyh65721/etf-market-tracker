@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T22:03:26Z",
+  "checked_at_utc": "2026-11-22T22:46:07Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증 긴급 경고 없음. 11월20일 미국 AI·반도체 매도세, 11월21일 호르무즈 선박 피격, 11월22일 후티 Rabigh 공격 주장 등은 이전 경고/점검에 반영됨. 11월23일 07:03 KST 기준 미국 정규장 휴장(일요일 17:03 ET), 새로운 동시점 신용·시장 폭·ETF 가격 확인 불가. 기존 HIGH는 이전 판단의 유지이며 이번에 완전히 재검증한 등급은 아님.",
+  "change_since_previous": "신규 검증 긴급 경고 없음. Reuters 11월20일 원유 결제가격 및 11월20일 AI/반도체 매도세는 이전 점검에 반영된 과거 자료. 11월23일 07:46 KST(11월22일 17:46 ET) 미국 정규장 휴장. 11월23일 신규 동시점 시장·신용·ETF 시세 검증 불충분; 기존 HIGH는 이전 판단 유지이며 이번에 전면 재검증한 등급은 아님.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1718,6 +1718,7 @@
     "No synchronized current VIX, official credit OAS, real yields, breadth, FX, commodities or ETF bid-ask quotes verified; previous figures delayed.",
     "2026-11-22T20:11:25Z: 미국 일요일 휴장; 실시간 VIX, OAS, 실질금리, 시장 폭, USD/KRW, 원자재 및 ETF 호가 동시점 확인 불가. 11월20일 원유 결제가격은 지연 자료. 정유시설 피해·가동중단 독립 확인 불가.",
     "2026-11-22T20:59:55Z 점검: 미국 일요일 휴장, VIX·실질금리·신용 OAS·시장 폭·USD/KRW·원자재·ETF 호가의 동시점 검증 불가; 11월20일 원유 결제가는 지연 자료. 정규장 트리거 미평가.",
-    "2026-11-22T22:03:26Z 점검: 미국 일요일 정규장 휴장. VIX/공식 신용 OAS/실질금리/시장 폭/USD-KRW/천연가스·금·구리/ETF 호가의 동일시각 수치 미검증. Reuters 11월20일 원유 기사와 11월20일 주가 하락 기사는 지연 자료이며 신규 시세 아님. analysis/triggers/latest.json 404. 이번 시간 새 경고 없음."
+    "2026-11-22T22:03:26Z 점검: 미국 일요일 정규장 휴장. VIX/공식 신용 OAS/실질금리/시장 폭/USD-KRW/천연가스·금·구리/ETF 호가의 동일시각 수치 미검증. Reuters 11월20일 원유 기사와 11월20일 주가 하락 기사는 지연 자료이며 신규 시세 아님. analysis/triggers/latest.json 404. 이번 시간 새 경고 없음.",
+    "2026-11-22T22:46:07Z 점검: 11월23일 최신 동시점 VIX, 공식 OAS, 실질금리, 시장 폭, USD/KRW, 천연가스·금·구리, ETF 호가 및 선물 확인 불충분. 11월20일 Brent $92.57/WTI $83.98는 과거 결제가격. 실시간 스트리밍 아님. 미국 정규장 휴장; analysis/triggers/latest.json 404."
   ]
 }
