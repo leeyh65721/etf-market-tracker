@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T00:39:02Z",
+  "checked_at_utc": "2026-11-22T02:20:03Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 21일 호르무즈 Khasab 선박 피격은 기존 8건 경고에 포함; 직전 점검 이후 독립적으로 확인된 중대한 악화 없음. 11월 20일 AI/반도체 급락도 기존 경고와 중복. 미국 일요일 휴장으로 장중 신호 제외.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 20일 미국 AI/반도체 급락과 11월 21일 호르무즈 선박 피격 및 통항 감소는 기존 8건 경고에 포함. 직전 점검 대비 독립 검증된 중대 악화 미확인. 미국 일요일 휴장으로 장중 신호 평가 제외.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1607,13 +1607,19 @@
       "value": 92.57,
       "unit": "USD/barrel",
       "observed_at_utc": "2026-11-20T21:00:00Z",
-      "note": "Reuters Nov 20 settlement; timestamp denotes regular US market close approximately, not verified exchange tick; delayed"
+      "note": "Reuters Nov20 settlement; 21:00 UTC is scheduled close reference, not independently verified tick time"
     },
     "wti_dec_nov20_settlement": {
       "value": 83.98,
       "unit": "USD/barrel",
       "observed_at_utc": "2026-11-20T21:00:00Z",
       "note": "Reuters Nov 20 December contract settlement; exact exchange settlement timestamp unverified, delayed"
+    },
+    "wti_nov20_settlement": {
+      "value": 83.98,
+      "unit": "USD/barrel",
+      "observed_at_utc": "2026-11-20T21:00:00Z",
+      "note": "Reuters Nov20 December WTI settlement; scheduled close reference, not live quote"
     }
   },
   "sources": [
@@ -1647,15 +1653,14 @@
     "https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e",
     "https://www.barrons.com/articles/stocks-today-indexes-enter-correction-tech-downturn-12e9de94",
     "https://www.reuters.com/world/middle-east/saudi-arabia-issues-two-riyadh-alerts-says-danger-has-passed-2026-11-20/",
-    "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/",
-    "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
-    "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/"
+    "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/"
   ],
   "data_limitations": [
     "미국 주식 정규장 일요일 휴장; 장중 매매 신호 평가 제외",
     "analysis/triggers/latest.json 404; 사전 트리거 미확인",
     "동시점 실질금리·회사채 OAS·VIX·시장 폭·USD/KRW·천연가스·금·구리·ETF 호가 미검증",
     "원유 수치는 11월 20일 종가이며 실시간 시세 아님",
-    "매시간 단발 점검으로 연속 시세 및 장중 신호 포착 보장 불가"
+    "매시간 단발 점검으로 연속 시세 및 장중 신호 포착 보장 불가",
+    "2026-11-22 02:20 UTC: Sunday US market closed; synchronized credit OAS, real yields, VIX, breadth, USD/KRW, natural gas, gold, copper and ETF bid-ask unavailable; no live streaming; triggers/latest.json returned 404."
   ]
 }
