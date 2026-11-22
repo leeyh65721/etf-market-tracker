@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T11:31:47Z",
+  "checked_at_utc": "2026-11-22T13:20:16Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. Reuters 11월22일 걸프 증시 하락 및 바레인 공격은 이전 점검에 반영. 11월22일 이란 유조선 14척 봉쇄 돌파 준비 보도는 독립 확인·실제 출항 없음. 미국 일요일 휴장, 장중 트리거 평가 제외. 기존 HIGH 유지; 신용·유동성 동시점 지표 검증 불충분.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월22일 Reuters 걸프 증시 및 바레인 관련 내용은 기존 점검에 반영됨. FT 11월22일 미국 항만 사이버 공격 증가 보도는 신규 시스템적 물류 마비 확인이 없어 긴급 경고 아님. 11월20일 미국 급락·VIX 상승은 기존 경고에 포함. 일요일 미국 정규장 휴장. 동시점 신용·시장폭·실질금리 등 검증 부족.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1674,7 +1674,9 @@
     "https://www.reuters.com/world/middle-east/most-gulf-bourses-retreat-sporadic-attacks-continue-2026-11-22/",
     "https://www.reuters.com/business/energy/oil-slips-supply-surplus-outlook-despite-gulf-tensions-2026-11-17/",
     "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
-    "https://jen.jiji.com/iran-media-tehran-ready-to-break-us-naval-blockade-with-over-14-oil-tankers/"
+    "https://jen.jiji.com/iran-media-tehran-ready-to-break-us-naval-blockade-with-over-14-oil-tankers/",
+    "https://www.ft.com/content/c269cf3e-2275-4244-9a86-f412c8521b4f",
+    "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-worst-week-covid-nvidia-anthropic-vix-fear-gauge/"
   ],
   "data_limitations": [
     "2026-11-22T05:00:27Z: 일요일 미국 정규장 휴장; 신규 장중 시세·호가·SPY 상대강도 검증 불가. 동시점 VIX·공식 OAS·실질금리·시장 폭·원자재·USD/KRW 독립 확인 불충분. 기존 종가와 기사 가격은 지연 자료. 매시간 점검은 실시간 스트리밍 아님.",
@@ -1688,6 +1690,9 @@
     "2026-11-22 09:25 UTC: US Sunday cash market closed; synchronized VIX, credit OAS, real yields, breadth, FX, commodities and ETF bid/ask unavailable; no live streaming. analysis/triggers/latest.json fetch unsuccessful; no intraday signals assessed.",
     "2026-11-22 10:29:59 UTC: 미국 일요일 휴장; 신용 OAS·실질금리·VIX·시장 폭·USD/KRW·원자재 및 ETF 동시점 실시간 호가 미검증. 기존 값은 과거 관측치.",
     "analysis/triggers/latest.json GitHub 404; 장중 트리거 계획 부재.",
-    "2026-11-22T11:31:47Z: 미국 정규장 일요일 휴장; VIX, 공식 OAS, 실질금리, 시장 폭, USD/KRW, 천연가스·금·구리, ETF 호가 동시점 검증 불충분. 뉴스 기사와 과거 종가 지연 자료. analysis/triggers/latest.json 404. 매시간 스냅샷은 실시간 스트리밍이 아님."
+    "2026-11-22T11:31:47Z: 미국 정규장 일요일 휴장; VIX, 공식 OAS, 실질금리, 시장 폭, USD/KRW, 천연가스·금·구리, ETF 호가 동시점 검증 불충분. 뉴스 기사와 과거 종가 지연 자료. analysis/triggers/latest.json 404. 매시간 스냅샷은 실시간 스트리밍이 아님.",
+    "2026-11-22 Sunday US cash market closed; no intraday trigger evaluation; analysis/triggers/latest.json 404.",
+    "This hourly check is not streaming. No synchronized verified latest official credit OAS, real yield, breadth, USD/KRW, full commodities or ETF bid-ask quotes; existing delayed data retained.",
+    "New FT cyber-risk report does not independently confirm market-wide operational disruption."
   ]
 }
