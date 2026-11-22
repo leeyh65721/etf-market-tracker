@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T18:26:58Z",
+  "checked_at_utc": "2026-11-22T20:11:25Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증 긴급 경고 없음. 11월22일 후티의 사우디 Rabigh 정유시설 타격 주장은 Reuters 보도되었으나 사우디 당국 확인·피해·실제 공급차질이 없어 미확인 주장으로 분류. 기존 중동 에너지 위험의 추가 악화 확정 불가. 중국 증거금 완화와 걸프 증시 하락, 11월20일 미국 AI·반도체 급락은 기반영. 미국 일요일 휴장으로 장중 신호 평가 제외. 동시점 VIX·OAS·실질금리·시장 폭·환율·원자재·ETF 호가 미확인.",
+  "change_since_previous": "신규 검증 긴급 경고 없음. 11월22일 Reuters 후티 Rabigh 정유시설 타격 주장에는 사우디 피해·가동중단 확인이 없어 기존 위험의 중대한 악화로 판단하지 않음. 11월20일 미국 반도체 급락 및 호르무즈 통항 위험은 기존 경고에 반영. 미국 정규장 휴장 중이며 최신 동시점 시장 지표 미확인.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1746,6 +1746,7 @@
     "2026-11-22T17:46:27Z: 미국 일요일 휴장. 가격 동시점 검증 미충족. 정규장 트리거 파일 조회 실패/미확인. 매시간 스냅샷은 실시간 스트리밍이 아님.",
     "2026-11-22 Rabigh refinery attack is a Houthi claim without Saudi confirmation, independently verified damage or supply outage.",
     "US regular session closed Sunday; intraday trigger file missing (404); no trigger assessment.",
-    "No synchronized current VIX, official credit OAS, real yields, breadth, FX, commodities or ETF bid-ask quotes verified; previous figures delayed."
+    "No synchronized current VIX, official credit OAS, real yields, breadth, FX, commodities or ETF bid-ask quotes verified; previous figures delayed.",
+    "2026-11-22T20:11:25Z: 미국 일요일 휴장; 실시간 VIX, OAS, 실질금리, 시장 폭, USD/KRW, 원자재 및 ETF 호가 동시점 확인 불가. 11월20일 원유 결제가격은 지연 자료. 정유시설 피해·가동중단 독립 확인 불가."
   ]
 }
