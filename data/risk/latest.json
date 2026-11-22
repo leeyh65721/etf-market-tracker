@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T06:22:07Z",
+  "checked_at_utc": "2026-11-22T07:01:13Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 기존 11월 20일 AI·반도체 급락과 11월 21일 호르무즈 피격 위험 유지. 11월 22일 일요일 미국 정규장 휴장. 신규 가격·신용 전이 자료 미확인.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 기존 AI·반도체 급락 및 11월21일 호르무즈 유조선 피격 위험 유지. 11월22일 일요일 미국 정규장 휴장; 새 시장가격·신용전이 검증 불가.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1587,7 +1587,7 @@
       "brent_usd_barrel": 92.57,
       "wti_usd_barrel": 83.98,
       "observed_at_utc": null,
-      "note": "Reuters Nov 20 settlement; exact exchange timestamp unverified, delayed historical prices"
+      "note": "Reuters Nov 20 settlement; exact individual settlement timestamp unverified, not live quote"
     },
     "us_treasury_nov20_secondary": {
       "two_year_yield_pct": 4.63,
@@ -1670,6 +1670,8 @@
     "2026-11-22 03:29 UTC: 미국 정규장 일요일 휴장, 실시간 동시점 VIX/시장 폭/신용 OAS/실질금리/FX/가스/금/구리/ETF 호가 미검증; 매시간 점검은 스트리밍 아님. analysis/triggers/latest.json 조회 실패/부재.",
     "2026-11-22T05:00:27Z: 일요일 미국 정규장 휴장; 신규 장중 시세·호가·SPY 상대강도 검증 불가. 동시점 VIX·공식 OAS·실질금리·시장 폭·원자재·USD/KRW 독립 확인 불충분. 기존 종가와 기사 가격은 지연 자료. 매시간 점검은 실시간 스트리밍 아님.",
     "2026-11-22 06:22 UTC: 미국 일요일 휴장; 동시점 실질금리, OAS, VIX, 시장 폭, USD/KRW, 원자재 및 ETF 호가 확인 불가. Reuters 11월19~20일과 ECB 11월 금융안정보고서는 지연·배경 자료이며 새로운 위험 사건 아님.",
-    "analysis/triggers/latest.json 조회 실패; 장중 조건 점검 비대상."
+    "analysis/triggers/latest.json 조회 실패; 장중 조건 점검 비대상.",
+    "2026-11-22 일요일 미국 정규장 휴장; 장중 트리거 미평가, analysis/triggers/latest.json 404",
+    "동시점 실질금리·공식 신용 OAS·VIX·시장 폭·USD/KRW·천연가스·금·구리·ETF 호가 미검증; 과거 지표는 현재값 아님"
   ]
 }
