@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T10:29:59Z",
+  "checked_at_utc": "2026-11-22T11:31:47Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월22일 Reuters 걸프 증시·바레인 공격은 이전 점검에 반영된 사건. 추가 검색에서 독립적인 위험 단계 상승·미국 신용시장 전이 확인 불가. 일요일 미국 정규장 휴장; 장중 트리거 평가 제외.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. Reuters 11월22일 걸프 증시 하락 및 바레인 공격은 이전 점검에 반영. 11월22일 이란 유조선 14척 봉쇄 돌파 준비 보도는 독립 확인·실제 출항 없음. 미국 일요일 휴장, 장중 트리거 평가 제외. 기존 HIGH 유지; 신용·유동성 동시점 지표 검증 불충분.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1635,8 +1635,6 @@
     }
   },
   "sources": [
-    "https://www.reuters.com/business/energy/oil-prices-edge-higher-houthi-attacks-riyadh-raise-supply-concerns-2026-11-20/",
-    "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b",
     "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
     "https://www.reuters.com/world/india/gold-set-worst-week-eight-months-firm-dollar-fed-hike-bets-weigh-2026-11-20/",
     "https://www.reuters.com/legal/transactional/us-equity-funds-draw-inflows-third-straight-week-2026-11-20/",
@@ -1675,16 +1673,10 @@
     "https://www.marketwatch.com/story/chip-stocks-see-2-3-trillion-weekly-wipeout-as-panic-grips-the-ai-trade-371f2f03",
     "https://www.reuters.com/world/middle-east/most-gulf-bourses-retreat-sporadic-attacks-continue-2026-11-22/",
     "https://www.reuters.com/business/energy/oil-slips-supply-surplus-outlook-despite-gulf-tensions-2026-11-17/",
-    "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/"
+    "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
+    "https://jen.jiji.com/iran-media-tehran-ready-to-break-us-naval-blockade-with-over-14-oil-tankers/"
   ],
   "data_limitations": [
-    "원유 수치는 11월 20일 종가이며 실시간 시세 아님",
-    "매시간 단발 점검으로 연속 시세 및 장중 신호 포착 보장 불가",
-    "2026-11-22 02:20 UTC: Sunday US market closed; synchronized credit OAS, real yields, VIX, breadth, USD/KRW, natural gas, gold, copper and ETF bid-ask unavailable; no live streaming; triggers/latest.json returned 404.",
-    "2026-11-22 미국 일요일 휴장; 장중 트리거 평가 제외. analysis/triggers/latest.json 404.",
-    "이번 점검에서 실질금리·공식 신용 OAS·VIX·시장 폭·USD/KRW·천연가스·금·구리·ETF 호가 동시점 검증 불가.",
-    "11월22일 이란 유조선 14척 봉쇄 돌파 준비 보도는 실제 항해·충돌·피해 독립 확인 전으로 신규 긴급 위험 확정 불가.",
-    "2026-11-22 03:29 UTC: 미국 정규장 일요일 휴장, 실시간 동시점 VIX/시장 폭/신용 OAS/실질금리/FX/가스/금/구리/ETF 호가 미검증; 매시간 점검은 스트리밍 아님. analysis/triggers/latest.json 조회 실패/부재.",
     "2026-11-22T05:00:27Z: 일요일 미국 정규장 휴장; 신규 장중 시세·호가·SPY 상대강도 검증 불가. 동시점 VIX·공식 OAS·실질금리·시장 폭·원자재·USD/KRW 독립 확인 불충분. 기존 종가와 기사 가격은 지연 자료. 매시간 점검은 실시간 스트리밍 아님.",
     "2026-11-22 06:22 UTC: 미국 일요일 휴장; 동시점 실질금리, OAS, VIX, 시장 폭, USD/KRW, 원자재 및 ETF 호가 확인 불가. Reuters 11월19~20일과 ECB 11월 금융안정보고서는 지연·배경 자료이며 새로운 위험 사건 아님.",
     "analysis/triggers/latest.json 조회 실패; 장중 조건 점검 비대상.",
@@ -1695,6 +1687,7 @@
     "2026-11-22 미국 일요일 휴장; Reuters 걸프 지수 장중 수치의 정확한 관측시각 미제공; 실시간 VIX/OAS/실질금리/시장 폭/ETF 호가 및 다수 원자재·환율 동시점 미검증; triggers/latest.json 404",
     "2026-11-22 09:25 UTC: US Sunday cash market closed; synchronized VIX, credit OAS, real yields, breadth, FX, commodities and ETF bid/ask unavailable; no live streaming. analysis/triggers/latest.json fetch unsuccessful; no intraday signals assessed.",
     "2026-11-22 10:29:59 UTC: 미국 일요일 휴장; 신용 OAS·실질금리·VIX·시장 폭·USD/KRW·원자재 및 ETF 동시점 실시간 호가 미검증. 기존 값은 과거 관측치.",
-    "analysis/triggers/latest.json GitHub 404; 장중 트리거 계획 부재."
+    "analysis/triggers/latest.json GitHub 404; 장중 트리거 계획 부재.",
+    "2026-11-22T11:31:47Z: 미국 정규장 일요일 휴장; VIX, 공식 OAS, 실질금리, 시장 폭, USD/KRW, 천연가스·금·구리, ETF 호가 동시점 검증 불충분. 뉴스 기사와 과거 종가 지연 자료. analysis/triggers/latest.json 404. 매시간 스냅샷은 실시간 스트리밍이 아님."
   ]
 }
