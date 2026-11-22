@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T17:09:19Z",
+  "checked_at_utc": "2026-11-22T17:46:27Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월22일 중국 거래소의 11월30일부터 증거금 최저비율 100%→80% 인하 발표는 새 정책이지만 중국 증시 유동성 지원책으로, 미국 ETF·신용시장에 즉시 전이된 증거는 미확인. 기존 11월20일 AI·반도체 급락과 중동 위험 재경고하지 않음. 미국 일요일 휴장. 동시점 VIX·공식 OAS·실질금리·시장 폭·환율·원자재·ETF 호가 미검증.",
+  "change_since_previous": "신규 긴급 경고 없음. 2026-11-22 중국 거래소 증거금 완화, 걸프 증시 하락, 이란 유조선 관련 보도는 직전 점검에 이미 반영된 내용이며 새로운 확정적 미국 시장·신용시장 전이 증거 없음. 미국 일요일 휴장으로 정규장 트리거 평가 제외. 원유 11월20일 결제가격은 지연 자료. 동시점 공식 OAS·실질금리·VIX·시장 폭·환율·일부 원자재·ETF 호가 미확인.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1741,6 +1741,7 @@
     "Reuters Gulf index figures lack exact quote timestamps; no independent US credit contagion verification.",
     "2026-11-22T15:06:47Z: No synchronized latest VIX, Treasury real yields, official credit OAS, breadth, FX, gas/gold/copper, ETF bid-ask. US Sunday closed. Trigger plan 404.",
     "2026-11-22 16:13 UTC 점검: 미국 일요일 휴장; 실시간 가격·동시점 실질금리·신용 OAS·시장 폭·환율·천연가스·금·구리·ETF 호가 미검증. 11월20일 종가 및 주말 기사만 사용. analysis/triggers/latest.json 404; 장중 트리거 미평가.",
-    "2026-11-22 17:09 UTC: US Sunday closed; no synchronized current VIX, credit OAS, real yields, breadth, USD/KRW, commodities or ETF bid/ask. Trigger plan 404; no intraday trigger evaluation."
+    "2026-11-22 17:09 UTC: US Sunday closed; no synchronized current VIX, credit OAS, real yields, breadth, USD/KRW, commodities or ETF bid/ask. Trigger plan 404; no intraday trigger evaluation.",
+    "2026-11-22T17:46:27Z: 미국 일요일 휴장. 가격 동시점 검증 미충족. 정규장 트리거 파일 조회 실패/미확인. 매시간 스냅샷은 실시간 스트리밍이 아님."
   ]
 }
