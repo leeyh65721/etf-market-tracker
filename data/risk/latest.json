@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T05:00:27Z",
+  "checked_at_utc": "2026-11-22T06:22:07Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 20일 미국 증시 급락과 11월 21일 호르무즈 선박 피격·통항 감소는 기존 경고와 중복. 11월 22일 추가 확인 기사에서도 직전 대비 독립적으로 검증된 새로운 시장·신용·공급 악화 없음. 미국 일요일 휴장.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 기존 11월 20일 AI·반도체 급락과 11월 21일 호르무즈 피격 위험 유지. 11월 22일 일요일 미국 정규장 휴장. 신규 가격·신용 전이 자료 미확인.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1656,12 +1656,11 @@
     "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/",
     "https://www.iea.org/reports/oil-market-report-november-2026",
     "https://gulfnews.com/world/mena/iran-readies-14-tankers-to-break-us-blockade-what-happens-if-they-try-1.500756460",
-    "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad"
+    "https://apnews.com/article/c4c3f4878b12989347f8a930ed813dad",
+    "https://www.reuters.com/business/energy/oil-prices-steady-supply-surplus-softens-sentiment-though-gulf-war-supports-2026-11-19/",
+    "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/html/ecb.fsr202611~e03b919d36.en.html"
   ],
   "data_limitations": [
-    "미국 주식 정규장 일요일 휴장; 장중 매매 신호 평가 제외",
-    "analysis/triggers/latest.json 404; 사전 트리거 미확인",
-    "동시점 실질금리·회사채 OAS·VIX·시장 폭·USD/KRW·천연가스·금·구리·ETF 호가 미검증",
     "원유 수치는 11월 20일 종가이며 실시간 시세 아님",
     "매시간 단발 점검으로 연속 시세 및 장중 신호 포착 보장 불가",
     "2026-11-22 02:20 UTC: Sunday US market closed; synchronized credit OAS, real yields, VIX, breadth, USD/KRW, natural gas, gold, copper and ETF bid-ask unavailable; no live streaming; triggers/latest.json returned 404.",
@@ -1669,6 +1668,8 @@
     "이번 점검에서 실질금리·공식 신용 OAS·VIX·시장 폭·USD/KRW·천연가스·금·구리·ETF 호가 동시점 검증 불가.",
     "11월22일 이란 유조선 14척 봉쇄 돌파 준비 보도는 실제 항해·충돌·피해 독립 확인 전으로 신규 긴급 위험 확정 불가.",
     "2026-11-22 03:29 UTC: 미국 정규장 일요일 휴장, 실시간 동시점 VIX/시장 폭/신용 OAS/실질금리/FX/가스/금/구리/ETF 호가 미검증; 매시간 점검은 스트리밍 아님. analysis/triggers/latest.json 조회 실패/부재.",
-    "2026-11-22T05:00:27Z: 일요일 미국 정규장 휴장; 신규 장중 시세·호가·SPY 상대강도 검증 불가. 동시점 VIX·공식 OAS·실질금리·시장 폭·원자재·USD/KRW 독립 확인 불충분. 기존 종가와 기사 가격은 지연 자료. 매시간 점검은 실시간 스트리밍 아님."
+    "2026-11-22T05:00:27Z: 일요일 미국 정규장 휴장; 신규 장중 시세·호가·SPY 상대강도 검증 불가. 동시점 VIX·공식 OAS·실질금리·시장 폭·원자재·USD/KRW 독립 확인 불충분. 기존 종가와 기사 가격은 지연 자료. 매시간 점검은 실시간 스트리밍 아님.",
+    "2026-11-22 06:22 UTC: 미국 일요일 휴장; 동시점 실질금리, OAS, VIX, 시장 폭, USD/KRW, 원자재 및 ETF 호가 확인 불가. Reuters 11월19~20일과 ECB 11월 금융안정보고서는 지연·배경 자료이며 새로운 위험 사건 아님.",
+    "analysis/triggers/latest.json 조회 실패; 장중 조건 점검 비대상."
   ]
 }
