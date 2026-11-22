@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T02:20:03Z",
+  "checked_at_utc": "2026-11-22T03:22:28Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 20일 미국 AI/반도체 급락과 11월 21일 호르무즈 선박 피격 및 통항 감소는 기존 8건 경고에 포함. 직전 점검 대비 독립 검증된 중대 악화 미확인. 미국 일요일 휴장으로 장중 신호 평가 제외.",
+  "change_since_previous": "신규 검증된 긴급 경고 없음. 11월 21일 호르무즈 선박 피격과 11월 20일 AI·반도체 급락은 기존 경고와 중복. 11월 22일 이란 유조선 봉쇄 돌파 관련 보도는 기존 갈등의 연장으로, 새로운 실제 충돌·원유 공급 차질·시장 전이 확인 불가. 미국 일요일 휴장.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1606,8 +1606,8 @@
     "brent_nov20_settlement": {
       "value": 92.57,
       "unit": "USD/barrel",
-      "observed_at_utc": "2026-11-20T21:00:00Z",
-      "note": "Reuters Nov20 settlement; 21:00 UTC is scheduled close reference, not independently verified tick time"
+      "observed_at_utc": "2026-11-20T19:30:00Z",
+      "note": "Reuters 11월20일 선물 결제가격; 결제 시각은 대략적인 기준시각, 정확한 거래시각 미검증"
     },
     "wti_dec_nov20_settlement": {
       "value": 83.98,
@@ -1618,8 +1618,8 @@
     "wti_nov20_settlement": {
       "value": 83.98,
       "unit": "USD/barrel",
-      "observed_at_utc": "2026-11-20T21:00:00Z",
-      "note": "Reuters Nov20 December WTI settlement; scheduled close reference, not live quote"
+      "observed_at_utc": "2026-11-20T19:30:00Z",
+      "note": "Reuters 11월20일 12월물 선물 결제가격; 결제 시각은 대략적인 기준시각, 정확한 거래시각 미검증"
     }
   },
   "sources": [
@@ -1653,7 +1653,9 @@
     "https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e",
     "https://www.barrons.com/articles/stocks-today-indexes-enter-correction-tech-downturn-12e9de94",
     "https://www.reuters.com/world/middle-east/saudi-arabia-issues-two-riyadh-alerts-says-danger-has-passed-2026-11-20/",
-    "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/"
+    "https://www.reuters.com/business/energy/world-oil-market-is-returning-surplus-gulf-exports-recover-iea-says-2026-11-13/",
+    "https://www.iea.org/reports/oil-market-report-november-2026",
+    "https://gulfnews.com/world/mena/iran-readies-14-tankers-to-break-us-blockade-what-happens-if-they-try-1.500756460"
   ],
   "data_limitations": [
     "미국 주식 정규장 일요일 휴장; 장중 매매 신호 평가 제외",
@@ -1661,6 +1663,9 @@
     "동시점 실질금리·회사채 OAS·VIX·시장 폭·USD/KRW·천연가스·금·구리·ETF 호가 미검증",
     "원유 수치는 11월 20일 종가이며 실시간 시세 아님",
     "매시간 단발 점검으로 연속 시세 및 장중 신호 포착 보장 불가",
-    "2026-11-22 02:20 UTC: Sunday US market closed; synchronized credit OAS, real yields, VIX, breadth, USD/KRW, natural gas, gold, copper and ETF bid-ask unavailable; no live streaming; triggers/latest.json returned 404."
+    "2026-11-22 02:20 UTC: Sunday US market closed; synchronized credit OAS, real yields, VIX, breadth, USD/KRW, natural gas, gold, copper and ETF bid-ask unavailable; no live streaming; triggers/latest.json returned 404.",
+    "2026-11-22 미국 일요일 휴장; 장중 트리거 평가 제외. analysis/triggers/latest.json 404.",
+    "이번 점검에서 실질금리·공식 신용 OAS·VIX·시장 폭·USD/KRW·천연가스·금·구리·ETF 호가 동시점 검증 불가.",
+    "11월22일 이란 유조선 14척 봉쇄 돌파 준비 보도는 실제 항해·충돌·피해 독립 확인 전으로 신규 긴급 위험 확정 불가."
   ]
 }
