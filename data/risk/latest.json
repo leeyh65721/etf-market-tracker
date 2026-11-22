@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T22:46:07Z",
+  "checked_at_utc": "2026-11-22T23:49:26Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증 긴급 경고 없음. Reuters 11월20일 원유 결제가격 및 11월20일 AI/반도체 매도세는 이전 점검에 반영된 과거 자료. 11월23일 07:46 KST(11월22일 17:46 ET) 미국 정규장 휴장. 11월23일 신규 동시점 시장·신용·ETF 시세 검증 불충분; 기존 HIGH는 이전 판단 유지이며 이번에 전면 재검증한 등급은 아님.",
+  "change_since_previous": "신규 검증 긴급 경고 없음. 11월22일 밤 미국 주가지수 선물 반등 보도(나스닥100 +2.4%, 다우 +0.9%; 보도 내 정확한 관측시각 미확인)는 이전 급락 이후 반등으로 기존 위험의 구조적 해소를 입증하지 않음. 11월22일 걸프 증시 약세 및 AI 위험 분석은 기존 사건. 11월23일 08:49 KST는 미국 일요일 18:49 ET로 정규장 휴장. 동시점 금리/신용/VIX/원자재/환율/ETF 호가 미검증; HIGH는 기존 판단 유지.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1669,6 +1669,12 @@
       "effective_date": "2026-11-30",
       "observed_at_utc": null,
       "note": "Reuters Nov22 policy announcement; not intraday market quote; mainland China exchanges"
+    },
+    "us_futures_nov22_sunday_ibd": {
+      "nasdaq100_change_pct": 2.4,
+      "dow_change_pct": 0.9,
+      "observed_at_utc": null,
+      "note": "Investors Business Daily 2026-11-22 Sunday night report; exact quote observation timestamp unverified, futures not cash close"
     }
   },
   "sources": [
@@ -1702,7 +1708,8 @@
     "https://www.wsj.com/finance/commodities-futures/oil-rises-amid-middle-east-tensions-cdf9de83",
     "https://www.reuters.com/world/chinese-exchanges-ease-margin-trading-requirements-aid-stock-markets-2026-11-22/",
     "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-rabigh-oil-refinery-2026-11-22/",
-    "https://www.straitstimes.com/business/asian-stocks-fall-anthropic-slips-in-after-hours-markets-wrap"
+    "https://www.straitstimes.com/business/asian-stocks-fall-anthropic-slips-in-after-hours-markets-wrap",
+    "https://www.reuters.com/commentary/reuters-open-interest/ai-bust-hurts-chinese-stocks-far-more-than-gdp-manishi-raychaudhuri-2026-11-22/"
   ],
   "data_limitations": [
     "New FT cyber-risk report does not independently confirm market-wide operational disruption.",
@@ -1719,6 +1726,7 @@
     "2026-11-22T20:11:25Z: 미국 일요일 휴장; 실시간 VIX, OAS, 실질금리, 시장 폭, USD/KRW, 원자재 및 ETF 호가 동시점 확인 불가. 11월20일 원유 결제가격은 지연 자료. 정유시설 피해·가동중단 독립 확인 불가.",
     "2026-11-22T20:59:55Z 점검: 미국 일요일 휴장, VIX·실질금리·신용 OAS·시장 폭·USD/KRW·원자재·ETF 호가의 동시점 검증 불가; 11월20일 원유 결제가는 지연 자료. 정규장 트리거 미평가.",
     "2026-11-22T22:03:26Z 점검: 미국 일요일 정규장 휴장. VIX/공식 신용 OAS/실질금리/시장 폭/USD-KRW/천연가스·금·구리/ETF 호가의 동일시각 수치 미검증. Reuters 11월20일 원유 기사와 11월20일 주가 하락 기사는 지연 자료이며 신규 시세 아님. analysis/triggers/latest.json 404. 이번 시간 새 경고 없음.",
-    "2026-11-22T22:46:07Z 점검: 11월23일 최신 동시점 VIX, 공식 OAS, 실질금리, 시장 폭, USD/KRW, 천연가스·금·구리, ETF 호가 및 선물 확인 불충분. 11월20일 Brent $92.57/WTI $83.98는 과거 결제가격. 실시간 스트리밍 아님. 미국 정규장 휴장; analysis/triggers/latest.json 404."
+    "2026-11-22T22:46:07Z 점검: 11월23일 최신 동시점 VIX, 공식 OAS, 실질금리, 시장 폭, USD/KRW, 천연가스·금·구리, ETF 호가 및 선물 확인 불충분. 11월20일 Brent $92.57/WTI $83.98는 과거 결제가격. 실시간 스트리밍 아님. 미국 정규장 휴장; analysis/triggers/latest.json 404.",
+    "2026-11-22T23:49:26Z: US regular market closed Sunday; no intraday trigger assessment. Futures quotes lack exact observation timestamp; contemporaneous VIX, OAS, real yields, breadth, FX, commodities and ETF order book not independently verified."
   ]
 }
