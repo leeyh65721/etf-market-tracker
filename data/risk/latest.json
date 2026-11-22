@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T20:11:25Z",
+  "checked_at_utc": "2026-11-22T20:59:55Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증 긴급 경고 없음. 11월22일 Reuters 후티 Rabigh 정유시설 타격 주장에는 사우디 피해·가동중단 확인이 없어 기존 위험의 중대한 악화로 판단하지 않음. 11월20일 미국 반도체 급락 및 호르무즈 통항 위험은 기존 경고에 반영. 미국 정규장 휴장 중이며 최신 동시점 시장 지표 미확인.",
+  "change_since_previous": "신규 검증 긴급 경고 없음. 11월22일 후티 Rabigh 정유시설 공격 주장은 사우디 피해·가동 중단 확인이 없고 직전 점검에 반영됨. 11월20일 미국 반도체 급락과 기존 중동 공급망 위험 재경고하지 않음. 미국 정규장 주말 휴장, 동시점 시장·신용 지표 부족으로 기존 HIGH 유지(완전 재검증 아님).",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1672,24 +1672,6 @@
     }
   },
   "sources": [
-    "https://www.reuters.com/business/wall-streets-fear-gauge-touches-seven-month-high-ai-worries-mount-2026-11-20/",
-    "https://www.reuters.com/world/india/gold-set-worst-week-eight-months-firm-dollar-fed-hike-bets-weigh-2026-11-20/",
-    "https://www.reuters.com/legal/transactional/us-equity-funds-draw-inflows-third-straight-week-2026-11-20/",
-    "https://www.reuters.com/markets/europe/global-markets-taiwan-urgent-2026-11-20/",
-    "https://www.reuters.com/markets/europe/european-shares-head-steepest-weekly-drop-since-march-2026-11-20/",
-    "https://www.reuters.com/business/wall-st-week-ahead-black-friday-brings-consumer-spending-into-focus-ai-rocked-2026-11-20/",
-    "https://www.reuters.com/legal/transactional/wall-st-futures-slip-anthropic-debut-fails-reassure-ai-investors-2026-11-20/",
-    "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news",
-    "https://www.reuters.com/business/energy/global-markets-selloff-2026-11-20/",
-    "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-    "https://www.barrons.com/livecoverage/stock-market-news-today-112026/card/nasdaq-sinks-3-5-the-ai-selloff-is-washing-out-the-market--ptTVzayCtYLRiJlyiJ7b",
-    "https://www.reuters.com/business/finance/ai-tech-rout-prompts-us-investors-rush-into-value-stocks-2026-11-20/",
-    "https://nypost.com/2026/11/20/business/sp-500-and-dow-enter-correction-territory-nasdaq-loses-2026-gains-as-anthropic-dives/",
-    "https://www.ft.com/content/9f3c6ed6-c08f-4710-9683-ee2f5eb25841",
-    "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/",
-    "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-193-5042683",
-    "https://apnews.com/article/c10b797a17c2acf37924d834efebe135",
-    "https://www.reuters.com/business/energy/tanker-hit-by-unknown-projectile-near-omans-khasab-ukmto-says-2026-11-21/",
     "https://www.ft.com/content/5fbc2b9d-0360-4a1f-9e4a-3e86168cbbc5",
     "https://www.reuters.com/world/middle-east/fire-reported-tanker-after-projectile-strike-off-oman-ukmto-says-2026-11-20/",
     "https://abcnews.com/International/strait-hormuz-attacks-increased-highest-level-iran-war/story?id=138304456",
@@ -1722,20 +1704,6 @@
     "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-rabigh-oil-refinery-2026-11-22/"
   ],
   "data_limitations": [
-    "2026-11-22T05:00:27Z: 일요일 미국 정규장 휴장; 신규 장중 시세·호가·SPY 상대강도 검증 불가. 동시점 VIX·공식 OAS·실질금리·시장 폭·원자재·USD/KRW 독립 확인 불충분. 기존 종가와 기사 가격은 지연 자료. 매시간 점검은 실시간 스트리밍 아님.",
-    "2026-11-22 06:22 UTC: 미국 일요일 휴장; 동시점 실질금리, OAS, VIX, 시장 폭, USD/KRW, 원자재 및 ETF 호가 확인 불가. Reuters 11월19~20일과 ECB 11월 금융안정보고서는 지연·배경 자료이며 새로운 위험 사건 아님.",
-    "analysis/triggers/latest.json 조회 실패; 장중 조건 점검 비대상.",
-    "2026-11-22 일요일 미국 정규장 휴장; 장중 트리거 미평가, analysis/triggers/latest.json 404",
-    "동시점 실질금리·공식 신용 OAS·VIX·시장 폭·USD/KRW·천연가스·금·구리·ETF 호가 미검증; 과거 지표는 현재값 아님",
-    "2026-11-22 일요일 미국 현물시장 휴장; 신용 OAS, 실질금리, VIX, 시장 폭, USD/KRW, 금·구리·천연가스, ETF 호가의 동시점 검증 불가. 기존 자료 지연.",
-    "analysis/triggers/latest.json 404; 장중 신호 평가 제외. 매시간 샘플링은 실시간 스트리밍 아님.",
-    "2026-11-22 미국 일요일 휴장; Reuters 걸프 지수 장중 수치의 정확한 관측시각 미제공; 실시간 VIX/OAS/실질금리/시장 폭/ETF 호가 및 다수 원자재·환율 동시점 미검증; triggers/latest.json 404",
-    "2026-11-22 09:25 UTC: US Sunday cash market closed; synchronized VIX, credit OAS, real yields, breadth, FX, commodities and ETF bid/ask unavailable; no live streaming. analysis/triggers/latest.json fetch unsuccessful; no intraday signals assessed.",
-    "2026-11-22 10:29:59 UTC: 미국 일요일 휴장; 신용 OAS·실질금리·VIX·시장 폭·USD/KRW·원자재 및 ETF 동시점 실시간 호가 미검증. 기존 값은 과거 관측치.",
-    "analysis/triggers/latest.json GitHub 404; 장중 트리거 계획 부재.",
-    "2026-11-22T11:31:47Z: 미국 정규장 일요일 휴장; VIX, 공식 OAS, 실질금리, 시장 폭, USD/KRW, 천연가스·금·구리, ETF 호가 동시점 검증 불충분. 뉴스 기사와 과거 종가 지연 자료. analysis/triggers/latest.json 404. 매시간 스냅샷은 실시간 스트리밍이 아님.",
-    "2026-11-22 Sunday US cash market closed; no intraday trigger evaluation; analysis/triggers/latest.json 404.",
-    "This hourly check is not streaming. No synchronized verified latest official credit OAS, real yield, breadth, USD/KRW, full commodities or ETF bid-ask quotes; existing delayed data retained.",
     "New FT cyber-risk report does not independently confirm market-wide operational disruption.",
     "2026-11-22 13:36 UTC: US Sunday regular-session closed; SOXX/XLP/XLF intraday trigger checks not applicable; trigger plan not retrievable.",
     "Synchronized latest VIX, Treasury real yields, corporate OAS, breadth, USD/KRW, natural gas, gold, copper, ETF quotes unavailable; prior observations stale.",
@@ -1747,6 +1715,7 @@
     "2026-11-22 Rabigh refinery attack is a Houthi claim without Saudi confirmation, independently verified damage or supply outage.",
     "US regular session closed Sunday; intraday trigger file missing (404); no trigger assessment.",
     "No synchronized current VIX, official credit OAS, real yields, breadth, FX, commodities or ETF bid-ask quotes verified; previous figures delayed.",
-    "2026-11-22T20:11:25Z: 미국 일요일 휴장; 실시간 VIX, OAS, 실질금리, 시장 폭, USD/KRW, 원자재 및 ETF 호가 동시점 확인 불가. 11월20일 원유 결제가격은 지연 자료. 정유시설 피해·가동중단 독립 확인 불가."
+    "2026-11-22T20:11:25Z: 미국 일요일 휴장; 실시간 VIX, OAS, 실질금리, 시장 폭, USD/KRW, 원자재 및 ETF 호가 동시점 확인 불가. 11월20일 원유 결제가격은 지연 자료. 정유시설 피해·가동중단 독립 확인 불가.",
+    "2026-11-22T20:59:55Z 점검: 미국 일요일 휴장, VIX·실질금리·신용 OAS·시장 폭·USD/KRW·원자재·ETF 호가의 동시점 검증 불가; 11월20일 원유 결제가는 지연 자료. 정규장 트리거 미평가."
   ]
 }
