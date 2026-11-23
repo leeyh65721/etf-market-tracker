@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-22T23:49:26Z",
+  "checked_at_utc": "2026-11-23T00:44:10Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 검증 긴급 경고 없음. 11월22일 밤 미국 주가지수 선물 반등 보도(나스닥100 +2.4%, 다우 +0.9%; 보도 내 정확한 관측시각 미확인)는 이전 급락 이후 반등으로 기존 위험의 구조적 해소를 입증하지 않음. 11월22일 걸프 증시 약세 및 AI 위험 분석은 기존 사건. 11월23일 08:49 KST는 미국 일요일 18:49 ET로 정규장 휴장. 동시점 금리/신용/VIX/원자재/환율/ETF 호가 미검증; HIGH는 기존 판단 유지.",
+  "change_since_previous": "신규 긴급 경고 없음. Reuters 11월22일 23:44 UTC 보도: 나스닥100 선물 약 +3%, S&P500 선물 약 +2% 반등, 한국 KOSPI 월요일 개장 직후 -3% 초과. 대만 주간 -17%와 SOX 금요일 -10%는 지난주 기존 급락의 연장/재확인으로 새로운 독립 충격 아님. 아시아 전이 지속하지만 선물 반등 및 정부 안정화 조치가 반대 근거; 신용경색/구조적 추가 악화 미검증. 미국 일요일 19:44 ET 정규장 휴장, 장중 트리거 파일 404. 동시점 금리·VIX·OAS·환율·원자재·호가 검증 부족.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1675,6 +1675,28 @@
       "dow_change_pct": 0.9,
       "observed_at_utc": null,
       "note": "Investors Business Daily 2026-11-22 Sunday night report; exact quote observation timestamp unverified, futures not cash close"
+    },
+    "us_futures_nov23_reuters_early": {
+      "nasdaq100_change_pct_approx": 3,
+      "sp500_change_pct_approx": 2,
+      "observed_at_utc": null,
+      "note": "Reuters published 2026-11-22 23:44 UTC; early Monday trade, precise quote time not given; delayed minimum 15 minutes, not regular session."
+    },
+    "kospi_nov23_reuters_early": {
+      "change_pct_less_than": -3,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 23 first minutes of KOSPI trading; approximate threshold, exact tick timestamp unknown"
+    },
+    "taiwan_week_nov20_reuters": {
+      "change_pct": -17,
+      "observed_at_utc": null,
+      "note": "Reuters Nov 23 recap of previous week, not a new Monday move"
+    },
+    "oil_nov23_wsj_secondary": {
+      "wti_usd_barrel": 82.84,
+      "brent_usd_barrel": 91.85,
+      "observed_at_utc": null,
+      "note": "WSJ Nov 23 article excerpt, prices -0.7%/-0.8%; exact quote timestamp unverified; not synchronized"
     }
   },
   "sources": [
@@ -1709,7 +1731,10 @@
     "https://www.reuters.com/world/chinese-exchanges-ease-margin-trading-requirements-aid-stock-markets-2026-11-22/",
     "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-rabigh-oil-refinery-2026-11-22/",
     "https://www.straitstimes.com/business/asian-stocks-fall-anthropic-slips-in-after-hours-markets-wrap",
-    "https://www.reuters.com/commentary/reuters-open-interest/ai-bust-hurts-chinese-stocks-far-more-than-gdp-manishi-raychaudhuri-2026-11-22/"
+    "https://www.reuters.com/commentary/reuters-open-interest/ai-bust-hurts-chinese-stocks-far-more-than-gdp-manishi-raychaudhuri-2026-11-22/",
+    "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
+    "https://www.wsj.com/finance/commodities-futures/oil-falls-amid-risk-off-sentiment-c478ebdc",
+    "https://news.sbs.co.kr/english/article.do?news_id=N1008858193"
   ],
   "data_limitations": [
     "New FT cyber-risk report does not independently confirm market-wide operational disruption.",
@@ -1727,6 +1752,7 @@
     "2026-11-22T20:59:55Z 점검: 미국 일요일 휴장, VIX·실질금리·신용 OAS·시장 폭·USD/KRW·원자재·ETF 호가의 동시점 검증 불가; 11월20일 원유 결제가는 지연 자료. 정규장 트리거 미평가.",
     "2026-11-22T22:03:26Z 점검: 미국 일요일 정규장 휴장. VIX/공식 신용 OAS/실질금리/시장 폭/USD-KRW/천연가스·금·구리/ETF 호가의 동일시각 수치 미검증. Reuters 11월20일 원유 기사와 11월20일 주가 하락 기사는 지연 자료이며 신규 시세 아님. analysis/triggers/latest.json 404. 이번 시간 새 경고 없음.",
     "2026-11-22T22:46:07Z 점검: 11월23일 최신 동시점 VIX, 공식 OAS, 실질금리, 시장 폭, USD/KRW, 천연가스·금·구리, ETF 호가 및 선물 확인 불충분. 11월20일 Brent $92.57/WTI $83.98는 과거 결제가격. 실시간 스트리밍 아님. 미국 정규장 휴장; analysis/triggers/latest.json 404.",
-    "2026-11-22T23:49:26Z: US regular market closed Sunday; no intraday trigger assessment. Futures quotes lack exact observation timestamp; contemporaneous VIX, OAS, real yields, breadth, FX, commodities and ETF order book not independently verified."
+    "2026-11-22T23:49:26Z: US regular market closed Sunday; no intraday trigger assessment. Futures quotes lack exact observation timestamp; contemporaneous VIX, OAS, real yields, breadth, FX, commodities and ETF order book not independently verified.",
+    "2026-11-23 00:44 UTC: Reuters quotes minimum 15min delayed; precise early-session tick times unknown. Current VIX, official credit OAS, real yields, USD/KRW, gas/gold/copper, ETF spreads and breadth not independently synchronized. US regular session closed; trigger plan missing (404)."
   ]
 }
