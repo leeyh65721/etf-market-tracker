@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "partial",
-  "checked_at_utc": "2026-11-23T01:26:27Z",
+  "checked_at_utc": "2026-11-23T03:06:17Z",
   "market_date": "2026-11-20",
   "risk_level": "high",
-  "change_since_previous": "신규 긴급 경고 없음. 11월23일 Reuters의 나스닥100/S&P500 선물 반등 및 아시아 주식 약세는 직전 점검과 동일 사건·방향. WSJ 11월23일 WTI $82.84(-0.7%), Brent $91.85(-0.8%) 보도는 원유 급등에 의한 추가 에너지 충격의 반대 근거이나 개별 시세 관측시각 미확인. 미국 11월22일 일요일 20:26 ET 정규장 휴장; 트리거 파일 404. 최신 공식 OAS·실질금리·시장 폭·동시점 VIX/환율/호가 검증 불충분.",
+  "change_since_previous": "신규 긴급 경고 없음. 11월23일 Reuters 아시아 장중 반도체/증시 약세 및 미국 지수선물 반등은 직전 09:44/10:26 KST 점검과 동일한 사건·방향. Reuters 11월23일 Brent $92.29(-0.30%), WTI $83.26(-0.18%) 기사 시세는 개별 관측시각 미확인; WSJ 기존 관측과 시점이 달라 반등/악화 확정 불가. 원유 공급차질 신규 확증 없음. 미국 11월22일 일요일 22:06 ET 정규장 휴장, triggers/latest.json 404. 공식 신용 OAS·실질금리·시장 폭·VIX·USD/KRW·천연가스·금·구리·SOXX 호가 동시점 검증 불충분.",
   "alerts": [
     {
       "event_id": "20261106-asia-semiconductor-contagion",
@@ -1705,6 +1705,14 @@
       "brent_change_pct": -0.8,
       "observed_at_utc": null,
       "note": "WSJ Nov 23 Asia session article; precise quote timestamp unavailable; delayed snapshot, not real-time"
+    },
+    "oil_nov23_reuters_asia": {
+      "brent_usd_barrel": 92.29,
+      "wti_usd_barrel": 83.26,
+      "brent_change_pct": -0.3,
+      "wti_change_pct": -0.18,
+      "observed_at_utc": null,
+      "note": "Reuters 2026-11-23 article; exact quote timestamp unavailable; not live or synchronized with earlier WSJ quote"
     }
   },
   "sources": [
@@ -1742,7 +1750,8 @@
     "https://www.reuters.com/commentary/reuters-open-interest/ai-bust-hurts-chinese-stocks-far-more-than-gdp-manishi-raychaudhuri-2026-11-22/",
     "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
     "https://www.wsj.com/finance/commodities-futures/oil-falls-amid-risk-off-sentiment-c478ebdc",
-    "https://news.sbs.co.kr/english/article.do?news_id=N1008858193"
+    "https://news.sbs.co.kr/english/article.do?news_id=N1008858193",
+    "https://www.reuters.com/business/energy/oil-prices-fall-amid-equity-selloff-though-iran-war-attacks-limit-losses-2026-11-23/"
   ],
   "data_limitations": [
     "New FT cyber-risk report does not independently confirm market-wide operational disruption.",
@@ -1762,6 +1771,7 @@
     "2026-11-22T22:46:07Z 점검: 11월23일 최신 동시점 VIX, 공식 OAS, 실질금리, 시장 폭, USD/KRW, 천연가스·금·구리, ETF 호가 및 선물 확인 불충분. 11월20일 Brent $92.57/WTI $83.98는 과거 결제가격. 실시간 스트리밍 아님. 미국 정규장 휴장; analysis/triggers/latest.json 404.",
     "2026-11-22T23:49:26Z: US regular market closed Sunday; no intraday trigger assessment. Futures quotes lack exact observation timestamp; contemporaneous VIX, OAS, real yields, breadth, FX, commodities and ETF order book not independently verified.",
     "2026-11-23 00:44 UTC: Reuters quotes minimum 15min delayed; precise early-session tick times unknown. Current VIX, official credit OAS, real yields, USD/KRW, gas/gold/copper, ETF spreads and breadth not independently synchronized. US regular session closed; trigger plan missing (404).",
-    "2026-11-23T01:26:27Z: US regular market closed; futures and oil quotes lack synchronized tick timestamps; no official contemporaneous OAS, real yields, breadth, VIX, USD/KRW, ETF bid-ask; triggers/latest.json 404."
+    "2026-11-23T01:26:27Z: US regular market closed; futures and oil quotes lack synchronized tick timestamps; no official contemporaneous OAS, real yields, breadth, VIX, USD/KRW, ETF bid-ask; triggers/latest.json 404.",
+    "2026-11-23T03:06:17Z: US regular session closed; intraday trigger file 404; Reuters oil article quote timestamps unavailable; no synchronized credit OAS, real yields, VIX, breadth, USD/KRW, gas, gold, copper or ETF order book."
   ]
 }
