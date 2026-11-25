@@ -1,12 +1,12 @@
 {
-  "asof": "2026-11-23",
-  "locked_sessions": 25,
-  "signal_count": 88,
+  "asof": "2026-11-24",
+  "locked_sessions": 26,
+  "signal_count": 90,
   "summaries": {
     "5": {
-      "signals": 88,
+      "signals": 90,
       "observed": 76,
-      "pending": 12,
+      "pending": 14,
       "unverifiable": 0,
       "outperformed_spy_count": 42,
       "observed_outperformance_fraction": 0.55263,
@@ -15,25 +15,25 @@
       "assessment": "exploratory_only"
     },
     "10": {
-      "signals": 88,
-      "observed": 60,
-      "pending": 28,
+      "signals": 90,
+      "observed": 71,
+      "pending": 19,
       "unverifiable": 0,
-      "outperformed_spy_count": 37,
-      "observed_outperformance_fraction": 0.61667,
-      "mean_excess_pp": -0.9059,
-      "median_excess_pp": 1.44527,
+      "outperformed_spy_count": 42,
+      "observed_outperformance_fraction": 0.59155,
+      "mean_excess_pp": -0.769,
+      "median_excess_pp": 1.26807,
       "assessment": "exploratory_only"
     },
     "20": {
-      "signals": 88,
-      "observed": 4,
-      "pending": 84,
+      "signals": 90,
+      "observed": 18,
+      "pending": 72,
       "unverifiable": 0,
-      "outperformed_spy_count": 2,
-      "observed_outperformance_fraction": 0.5,
-      "mean_excess_pp": 1.43297,
-      "median_excess_pp": 1.09864,
+      "outperformed_spy_count": 11,
+      "observed_outperformance_fraction": 0.61111,
+      "mean_excess_pp": 2.46612,
+      "median_excess_pp": 3.85079,
       "assessment": "insufficient_observations"
     }
   },
@@ -212,7 +212,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -10.32233,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": -3.71162,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-10-26",
@@ -244,7 +248,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -13.94437,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": -7.33366,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-10-26",
@@ -276,7 +284,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": 1.41773,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": 8.02844,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-10-26",
@@ -308,7 +320,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -10.58268,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": -3.97197,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-10-26",
@@ -340,7 +356,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": 3.43544,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": 10.04615,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-10-26",
@@ -372,7 +392,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -3.31517,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": 3.29554,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-10-26",
@@ -404,7 +428,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -3.88537,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": 2.72534,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-10-26",
@@ -436,7 +464,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": 2.5088,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": 9.11951,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-10-26",
@@ -468,7 +500,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -8.72865,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": -2.11794,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-10-26",
@@ -500,7 +536,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -16.76193,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": -10.15122,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-10-26",
@@ -532,7 +572,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": 1.50563,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": 8.11634,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-10-26",
@@ -564,7 +608,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": 0.4116,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": 7.02231,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-10-26",
@@ -596,7 +644,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": 2.40339,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": 9.0141,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-10-26",
@@ -628,7 +680,11 @@
       "sessions_held": 20,
       "reference_entry_day": "2026-10-27",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": 1.96622,
+      "spy_price_return_pct": -6.61071,
+      "excess_vs_spy_pp": 8.57693,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-10-27",
@@ -1992,7 +2048,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -6.6809,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": -2.52846,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-11-09",
@@ -2020,7 +2080,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -2.27589,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": 1.87655,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-11-09",
@@ -2048,7 +2112,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -5.84658,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": -1.69414,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-11-09",
@@ -2076,7 +2144,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -4.2734,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": -0.12096,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-11-09",
@@ -2104,7 +2176,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -8.33697,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": -4.18453,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-11-09",
@@ -2132,7 +2208,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -3.9728,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": 0.17964,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-11-09",
@@ -2160,7 +2240,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -6.02312,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": -1.87068,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-11-09",
@@ -2188,7 +2272,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": 1.13504,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": 5.28748,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-11-09",
@@ -2216,7 +2304,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -1.56043,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": 2.59201,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-11-09",
@@ -2244,7 +2336,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -3.72625,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": 0.42619,
+      "outperform_spy": true
     },
     {
       "signal_day": "2026-11-09",
@@ -2272,7 +2368,11 @@
       "sessions_held": 10,
       "reference_entry_day": "2026-11-10",
       "reference_exit_day": "2026-11-24",
-      "result": "pending"
+      "result": "observed",
+      "etf_price_return_pct": -4.36049,
+      "spy_price_return_pct": -4.15244,
+      "excess_vs_spy_pp": -0.20805,
+      "outperform_spy": false
     },
     {
       "signal_day": "2026-11-09",
@@ -2709,14 +2809,62 @@
       "reference_entry_day": "2026-11-24",
       "reference_exit_day": "2026-12-23",
       "result": "pending"
+    },
+    {
+      "signal_day": "2026-11-24",
+      "ticker": "FIW",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-11-25",
+      "reference_exit_day": "2026-12-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-11-24",
+      "ticker": "FIW",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-11-25",
+      "reference_exit_day": "2026-12-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-11-24",
+      "ticker": "FIW",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-11-25",
+      "reference_exit_day": "2026-12-24",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-11-24",
+      "ticker": "XPH",
+      "sessions_held": 5,
+      "reference_entry_day": "2026-11-25",
+      "reference_exit_day": "2026-12-03",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-11-24",
+      "ticker": "XPH",
+      "sessions_held": 10,
+      "reference_entry_day": "2026-11-25",
+      "reference_exit_day": "2026-12-10",
+      "result": "pending"
+    },
+    {
+      "signal_day": "2026-11-24",
+      "ticker": "XPH",
+      "sessions_held": 20,
+      "reference_entry_day": "2026-11-25",
+      "reference_exit_day": "2026-12-24",
+      "result": "pending"
     }
   ],
-  "generated_at_utc": "2026-11-24T07:01:24.087351+00:00",
+  "generated_at_utc": "2026-11-25T05:33:47.870326+00:00",
   "new_daily_lock_created": true,
-  "locked_current_us_date": "2026-11-23",
-  "current_technical_candidate_entries": 10,
+  "locked_current_us_date": "2026-11-24",
+  "current_technical_candidate_entries": 2,
   "latest_verified_universe_fraction": 0.96034,
-  "last_expected_closed_us_session": "2026-11-23",
+  "last_expected_closed_us_session": "2026-11-24",
   "warnings": [],
   "status": "OK",
   "interpretation": "Audit of technical-screen transitions ONLY, not ChatGPT ETF buy/hold recommendations. Next-session-close to subsequent-close is an observation proxy, NOT a tradable fill. The Yahoo auto-adjusted closes in separate frozen downloads may be revised around distributions, splits and provider corrections. Do not claim total-return accuracy, causality, live execution, or strategy superiority. No fees, FX or slippage included. A prospective sample of 30+ observations is exploratory, not proof."
