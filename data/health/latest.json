@@ -1,8 +1,8 @@
 {
-  "us_market_date": "2026-11-24",
-  "github_run_id": "45554282125",
-  "expected_latest_closed_nyse_session": "2026-11-24",
-  "generated_at_utc": "2026-11-25T05:35:07.547540+00:00",
+  "us_market_date": "2026-11-25",
+  "github_run_id": "45760359994",
+  "expected_latest_closed_nyse_session": "2026-11-25",
+  "generated_at_utc": "2026-11-26T05:19:24.340639+00:00",
   "status": "ERROR",
   "counts": {
     "etf_verified": 339,

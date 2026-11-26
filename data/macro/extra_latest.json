@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-11-25T05:35:03.982577+00:00",
-  "market_date": "2026-11-24",
+  "generated_at_utc": "2026-11-26T05:19:21.191082+00:00",
+  "market_date": "2026-11-25",
   "coverage": "8 named categories, 10 separately labelled indicators",
   "requested_indicators": 10,
   "ok_indicators": 7,
@@ -70,29 +70,29 @@
       "series_id": "CORE_PCE",
       "name": "근원 PCE 물가(전년대비)",
       "frequency": "monthly",
-      "value": 3.1,
+      "value": 3.3,
       "unit": "% YoY",
-      "observation_date": "2026-09-01",
+      "observation_date": "2026-10-01",
       "source_url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
       "collection_method": "BEA headline chart",
       "notes": "Released core PCE year-over-year rate; release date requires independent checking",
-      "previous_value": 3.0,
-      "previous_date": "2026-08-01",
+      "previous_value": 3.1,
+      "previous_date": "2026-09-01",
       "status": "ok",
-      "age_days": 84
+      "age_days": 55
     },
     {
       "series_id": "INITIAL_CLAIMS",
       "name": "미국 주간 신규 실업수당 청구(계절조정)",
       "frequency": "weekly",
-      "value": 203000.0,
+      "value": 189000.0,
       "unit": "persons",
-      "observation_date": "2026-11-14",
+      "observation_date": "2026-11-21",
       "source_url": "https://www.dol.gov/ui/data.pdf",
       "collection_method": "DOL Weekly Claims PDF",
       "notes": "Seasonally adjusted initial claims; week ending date",
       "status": "ok",
-      "age_days": 10
+      "age_days": 4
     },
     {
       "series_id": "RETAIL_SALES",
@@ -105,7 +105,7 @@
       "collection_method": "Census advance retail release summary",
       "notes": "Seasonally adjusted but nominal; retail plus food services, subject to revisions",
       "status": "ok",
-      "age_days": 54
+      "age_days": 55
     },
     {
       "series_id": "NFCI",
@@ -120,7 +120,7 @@
       "previous_value": -0.498,
       "previous_date": "2026-04-17",
       "status": "stale",
-      "age_days": 214
+      "age_days": 215
     },
     {
       "series_id": "MFG_NEW_ORDERS",
@@ -133,20 +133,20 @@
       "collection_method": "Census M3 release summary",
       "notes": "Nominal seasonally adjusted order change; zero may be rounded 'virtually unchanged'",
       "status": "ok",
-      "age_days": 84
+      "age_days": 85
     },
     {
       "series_id": "DURABLE_NEW_ORDERS",
       "name": "미국 내구재 신규주문(전월비)",
       "frequency": "monthly",
-      "value": 1.8,
+      "value": 0.2,
       "unit": "% m/m",
-      "observation_date": "2026-09-01",
+      "observation_date": "2026-10-01",
       "source_url": "https://www.census.gov/manufacturing/m3/adv/current/index.html",
       "collection_method": "Census M3 release summary",
       "notes": "Nominal seasonally adjusted order change; zero may be rounded 'virtually unchanged'",
       "status": "ok",
-      "age_days": 84
+      "age_days": 55
     },
     {
       "series_id": "ISM_MANUFACTURING",
@@ -166,7 +166,7 @@
       "series_id": "REAL_GDP",
       "name": "미국 실질 GDP 성장률(전기비 연율)",
       "frequency": "quarterly",
-      "value": 3.4,
+      "value": 4.3,
       "unit": "% q/q annualized",
       "observation_date": "2026-07-01",
       "source_url": "https://www.bea.gov/data/gdp/gross-domestic-product",
@@ -174,22 +174,22 @@
       "notes": "Quarterly real GDP, annualized; check latest revision",
       "previous_value": 2.2,
       "status": "ok",
-      "age_days": 146
+      "age_days": 147
     },
     {
       "series_id": "SP500_BREADTH",
       "name": "S&P 500 구성종목 상승 비율(자체 산출)",
       "frequency": "daily",
-      "value": 69.32271,
+      "value": 74.10359,
       "unit": "% constituents up",
-      "observation_date": "2026-11-24",
+      "observation_date": "2026-11-25",
       "source_url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
       "collection_method": "S&P 500 listed constituents via Wikipedia, adjusted daily close via yfinance",
       "notes": "Advancing / all valid constituents; not NYSE-wide A/D ratio; prices unofficial",
       "sample_size": 502,
-      "advanced": 348,
-      "declined": 153,
-      "unchanged": 1,
+      "advanced": 372,
+      "declined": 127,
+      "unchanged": 3,
       "universe_size": 503,
       "status": "ok",
       "age_days": 0
