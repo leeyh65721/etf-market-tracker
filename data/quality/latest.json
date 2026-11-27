@@ -2883,8 +2883,8 @@
       "result": "pending"
     }
   ],
-  "generated_at_utc": "2026-11-26T05:17:08.960624+00:00",
-  "new_daily_lock_created": true,
+  "generated_at_utc": "2026-11-27T05:14:58.813432+00:00",
+  "new_daily_lock_created": false,
   "locked_current_us_date": "2026-11-25",
   "current_technical_candidate_entries": 0,
   "latest_verified_universe_fraction": 0.96034,

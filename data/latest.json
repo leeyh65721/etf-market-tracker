@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-26T05:17:07.885154+00:00",
+  "generated_at_utc": "2026-11-27T05:14:57.944215+00:00",
   "us_market_date": "2026-11-25",
   "candidate_universe_count": 353,
   "downloaded_price_history_count": 339,
@@ -161,10 +161,10 @@
       "spy_excess_21d_pp": 12.79,
       "above_ma50": true,
       "ma20_rising": true,
-      "volume_ratio_20d": 1.046,
-      "avg_dollar_volume_20d_usd": 2044008863,
-      "median_dollar_volume_20d_usd": 2066750626,
-      "avg_shares_20d": 22499325,
+      "volume_ratio_20d": 1.048,
+      "avg_dollar_volume_20d_usd": 2044204539,
+      "median_dollar_volume_20d_usd": 2068707386,
+      "avg_shares_20d": 22501445,
       "liquid_enough": true,
       "screen": "candidate",
       "rank_score": 9.764
